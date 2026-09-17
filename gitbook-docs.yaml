@@ -1,0 +1,12 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+version: 1
+site:
+  title: JoyProxy Docs
+  structure:
+    - type: space
+      key: space-help-center
+      title: Help Center
+      path: help-center
+      default: true
+      content:
+        directory: ./
