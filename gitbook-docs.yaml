@@ -9,4 +9,4 @@ site:
       path: help-center
       default: true
       content:
-        directory: ./
+        directory: ./help-center
