@@ -3,3 +3,50 @@ root: ./
 structure:
   readme: ./README.md
   summary: ./SUMMARY.md
+
+redirects:
+  ai-customer-service: ai/assistant.md
+  ai-mcp: ai/mcp.md
+  ai-overview: ai/overview.md
+  android-client-soft: software/android-client.md
+  billing-records: support/billing.md
+  business-guide: proxy/business/overview.md
+  change-password: getting-started/change-password.md
+  custom-assign: proxy/residential/custom/assign-region.md
+  custom-auth: proxy/residential/custom/whitelist.md
+  custom-code: proxy/residential/custom/code.md
+  custom-extract: proxy/residential/custom/generate.md
+  custom-purchase: proxy/residential/custom/purchase.md
+  custom-rotation: proxy/residential/custom/rotation.md
+  custom-third-party: proxy/residential/custom/third-party.md
+  datacenter-guide: proxy/datacenter/overview.md
+  extension-soft: software/extension.md
+  intro: getting-started/intro.md
+  live-chat: support/live-chat.md
+  long-auth: proxy/residential/static/whitelist.md
+  long-browser: proxy/residential/static/browser.md
+  long-code: proxy/residential/static/code.md
+  long-extract: proxy/residential/static/generate.md
+  long-global: proxy/residential/static/system-wide.md
+  long-mobile: proxy/residential/static/mobile-devices.md
+  long-purchase: proxy/residential/static/purchase.md
+  long-third-party: proxy/residential/static/third-party.md
+  mobile-guide: proxy/mobile/rotating/overview.md
+  openclaw-skill: ai/openclaw-skill.md
+  proxy-overview: proxy/overview.md
+  proxy-server-soft: software/proxy-server.md
+  register-login: getting-started/register-login.md
+  scraping-api: proxy/scraping-api/setup/api.md
+  scraping-billing: proxy/scraping-api/billing.md
+  scraping-guide: proxy/scraping-api/overview.md
+  scraping-purchase: proxy/scraping-api/setup/purchase.md
+  short-ai: ai/integrate.md
+  short-auth: proxy/residential/rotating/whitelist.md
+  short-code: proxy/residential/rotating/code.md
+  short-extract: proxy/residential/rotating/generate.md
+  short-purchase: proxy/residential/rotating/purchase.md
+  short-third-party: proxy/residential/rotating/third-party.md
+  software-overview: software/overview.md
+  submit-ticket: support/ticket.md
+  terms-privacy: support/terms.md
+  tester-soft: software/tester.md

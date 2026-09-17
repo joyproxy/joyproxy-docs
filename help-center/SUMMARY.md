@@ -4,164 +4,127 @@
 
 ## 1. Getting Started
 
-* [1.1 Introduction](intro.md)
-* [1.2 Register & Login](register-login.md)
-* [1.3 Change Password](change-password.md)
+* [1.1 Introduction](getting-started/intro.md)
+* [1.2 Register & Login](getting-started/register-login.md)
+* [1.3 Change Password](getting-started/change-password.md)
 
 ## 2. Proxy IP Guides
 
-* [2.1 Product Overview](proxy-overview.md)
-
-### 2.2 Residential Proxies
-
-#### 2.2.1 Rotating
-
-* [Purchase (Rotating)](short-purchase.md)
-* [Whitelist & Users (Rotating)](short-auth.md)
-* [Generate endpoints (Rotating)](short-extract.md)
-* [Integrate in code (Rotating)](short-code.md)
-* [Third-party software (Rotating)](short-third-party.md)
-
-#### 2.2.2 Static
-
-* [Purchase (Static)](long-purchase.md)
-* [Whitelist & Users (Static)](long-auth.md)
-* [Generate endpoints (Static)](long-extract.md)
-* [Integrate in code (Static)](long-code.md)
-* [System-wide proxy](long-global.md)
-* [Browser proxy](long-browser.md)
-* [Mobile devices](long-mobile.md)
-* [Third-party software (Static)](long-third-party.md)
-
-#### 2.2.3 Custom
-
-* [Purchase (Custom)](custom-purchase.md)
-* [Assign region (Custom)](custom-assign.md)
-* [Rotation interval (Custom)](custom-rotation.md)
-* [Whitelist & Users (Custom)](custom-auth.md)
-* [Generate endpoints (Custom)](custom-extract.md)
-* [Integrate in code (Custom)](custom-code.md)
-* [Third-party software (Custom)](custom-third-party.md)
-* [System-wide proxy](long-global.md)
-* [Browser proxy](long-browser.md)
-* [Mobile devices](long-mobile.md)
-
-### 2.3 Mobile Proxies
-
-#### 2.3.1 Rotating
-
-* [Mobile Proxies Overview](mobile-guide.md)
-* [Purchase (Rotating)](short-purchase.md)
-* [Whitelist & Users (Rotating)](short-auth.md)
-* [Generate endpoints (Rotating)](short-extract.md)
-* [Integrate in code (Rotating)](short-code.md)
-* [Third-party software (Rotating)](short-third-party.md)
-* [System-wide proxy](long-global.md)
-* [Browser proxy](long-browser.md)
-* [Mobile devices](long-mobile.md)
-
-### 2.4 Business / ISP Proxies
-
-#### 2.4.1 Overview
-
-* [Business / ISP Proxies Overview](business-guide.md)
-
-#### 2.4.2 Rotating
-
-* [Purchase (Rotating)](short-purchase.md)
-* [Whitelist & Users (Rotating)](short-auth.md)
-* [Generate endpoints (Rotating)](short-extract.md)
-* [Integrate in code (Rotating)](short-code.md)
-* [Third-party software (Rotating)](short-third-party.md)
-
-#### 2.4.3 Static
-
-* [Purchase (Static)](long-purchase.md)
-* [Whitelist & Users (Static)](long-auth.md)
-* [Generate endpoints (Static)](long-extract.md)
-* [Integrate in code (Static)](long-code.md)
-* [System-wide proxy](long-global.md)
-* [Browser proxy](long-browser.md)
-* [Mobile devices](long-mobile.md)
-* [Third-party software (Static)](long-third-party.md)
-
-#### 2.4.4 Custom
-
-* [Purchase (Custom)](custom-purchase.md)
-* [Assign region (Custom)](custom-assign.md)
-* [Rotation interval (Custom)](custom-rotation.md)
-* [Whitelist & Users (Custom)](custom-auth.md)
-* [Generate endpoints (Custom)](custom-extract.md)
-* [Integrate in code (Custom)](custom-code.md)
-* [Third-party software (Custom)](custom-third-party.md)
-* [System-wide proxy](long-global.md)
-* [Browser proxy](long-browser.md)
-* [Mobile devices](long-mobile.md)
-
-### 2.5 Datacenter Proxies
-
-#### 2.5.1 Overview
-
-* [Datacenter Proxies Overview](datacenter-guide.md)
-
-#### 2.5.2 Static
-
-* [Purchase (Static)](long-purchase.md)
-* [Whitelist & Users (Static)](long-auth.md)
-* [Generate endpoints (Static)](long-extract.md)
-* [Integrate in code (Static)](long-code.md)
-* [System-wide proxy](long-global.md)
-* [Browser proxy](long-browser.md)
-* [Mobile devices](long-mobile.md)
-* [Third-party software (Static)](long-third-party.md)
-
-#### 2.5.3 Custom
-
-* [Purchase (Custom)](custom-purchase.md)
-* [Assign region (Custom)](custom-assign.md)
-* [Rotation interval (Custom)](custom-rotation.md)
-* [Whitelist & Users (Custom)](custom-auth.md)
-* [Generate endpoints (Custom)](custom-extract.md)
-* [Integrate in code (Custom)](custom-code.md)
-* [Third-party software (Custom)](custom-third-party.md)
-* [System-wide proxy](long-global.md)
-* [Browser proxy](long-browser.md)
-* [Mobile devices](long-mobile.md)
-
-### 2.6 Web Scraping API
-
-#### 2.6.1 Overview
-
-* [Web Scraping API Overview](scraping-guide.md)
-
-#### 2.6.2 Purchase & API
-
-* [Purchase credits](scraping-purchase.md)
-* [API Center & integration](scraping-api.md)
-
-#### 2.6.3 Credits & billing
-
-* [Credits & billing](scraping-billing.md)
+* [2.1 Product Overview](proxy/overview.md)
+* [2.2 Residential Proxies](proxy/residential/README.md)
+    * [2.2.1 Rotating](proxy/residential/rotating/README.md)
+        * [Purchase](proxy/residential/rotating/purchase.md)
+        * [Whitelist & Users](proxy/residential/rotating/whitelist.md)
+        * [Generate proxy endpoints](proxy/residential/rotating/generate.md)
+        * [Integrate in Code](proxy/residential/rotating/code.md)
+        * [Third-party Software](proxy/residential/rotating/third-party.md)
+    * [2.2.2 Static](proxy/residential/static/README.md)
+        * [Purchase](proxy/residential/static/purchase.md)
+        * [Whitelist & Users](proxy/residential/static/whitelist.md)
+        * [Generate proxy endpoints](proxy/residential/static/generate.md)
+        * [Integrate in Code](proxy/residential/static/code.md)
+        * [System-wide Proxy](proxy/residential/static/system-wide.md)
+        * [Browser Proxy](proxy/residential/static/browser.md)
+        * [Mobile Devices](proxy/residential/static/mobile-devices.md)
+        * [Third-party Software](proxy/residential/static/third-party.md)
+    * [2.2.3 Custom](proxy/residential/custom/README.md)
+        * [Purchase](proxy/residential/custom/purchase.md)
+        * [Assign Region](proxy/residential/custom/assign-region.md)
+        * [Set Rotation Interval](proxy/residential/custom/rotation.md)
+        * [Whitelist & Users](proxy/residential/custom/whitelist.md)
+        * [Generate proxy endpoints](proxy/residential/custom/generate.md)
+        * [Integrate in Code](proxy/residential/custom/code.md)
+        * [Third-party Software](proxy/residential/custom/third-party.md)
+        * [System-wide Proxy](proxy/residential/custom/system-wide.md)
+        * [Browser Proxy](proxy/residential/custom/browser.md)
+        * [Mobile Devices](proxy/residential/custom/mobile-devices.md)
+* [2.3 Mobile Proxies](proxy/mobile/README.md)
+    * [2.3.1 Rotating](proxy/mobile/rotating/README.md)
+        * [Mobile Proxies Overview](proxy/mobile/rotating/overview.md)
+        * [Purchase](proxy/mobile/rotating/purchase.md)
+        * [Whitelist & Users](proxy/mobile/rotating/whitelist.md)
+        * [Generate proxy endpoints](proxy/mobile/rotating/generate.md)
+        * [Integrate in Code](proxy/mobile/rotating/code.md)
+        * [Third-party Software](proxy/mobile/rotating/third-party.md)
+        * [System-wide Proxy](proxy/mobile/rotating/system-wide.md)
+        * [Browser Proxy](proxy/mobile/rotating/browser.md)
+        * [Mobile Devices](proxy/mobile/rotating/mobile-devices.md)
+* [2.4 Business / ISP Proxies](proxy/business/README.md)
+    * [2.4.1 Overview](proxy/business/overview.md)
+    * [2.4.2 Rotating](proxy/business/rotating/README.md)
+        * [Purchase](proxy/business/rotating/purchase.md)
+        * [Whitelist & Users](proxy/business/rotating/whitelist.md)
+        * [Generate proxy endpoints](proxy/business/rotating/generate.md)
+        * [Integrate in Code](proxy/business/rotating/code.md)
+        * [Third-party Software](proxy/business/rotating/third-party.md)
+    * [2.4.3 Static](proxy/business/static/README.md)
+        * [Purchase](proxy/business/static/purchase.md)
+        * [Whitelist & Users](proxy/business/static/whitelist.md)
+        * [Generate proxy endpoints](proxy/business/static/generate.md)
+        * [Integrate in Code](proxy/business/static/code.md)
+        * [System-wide Proxy](proxy/business/static/system-wide.md)
+        * [Browser Proxy](proxy/business/static/browser.md)
+        * [Mobile Devices](proxy/business/static/mobile-devices.md)
+        * [Third-party Software](proxy/business/static/third-party.md)
+    * [2.4.4 Custom](proxy/business/custom/README.md)
+        * [Purchase](proxy/business/custom/purchase.md)
+        * [Assign Region](proxy/business/custom/assign-region.md)
+        * [Set Rotation Interval](proxy/business/custom/rotation.md)
+        * [Whitelist & Users](proxy/business/custom/whitelist.md)
+        * [Generate proxy endpoints](proxy/business/custom/generate.md)
+        * [Integrate in Code](proxy/business/custom/code.md)
+        * [Third-party Software](proxy/business/custom/third-party.md)
+        * [System-wide Proxy](proxy/business/custom/system-wide.md)
+        * [Browser Proxy](proxy/business/custom/browser.md)
+        * [Mobile Devices](proxy/business/custom/mobile-devices.md)
+* [2.5 Datacenter Proxies](proxy/datacenter/README.md)
+    * [2.5.1 Overview](proxy/datacenter/overview.md)
+    * [2.5.2 Static](proxy/datacenter/static/README.md)
+        * [Purchase](proxy/datacenter/static/purchase.md)
+        * [Whitelist & Users](proxy/datacenter/static/whitelist.md)
+        * [Generate proxy endpoints](proxy/datacenter/static/generate.md)
+        * [Integrate in Code](proxy/datacenter/static/code.md)
+        * [System-wide Proxy](proxy/datacenter/static/system-wide.md)
+        * [Browser Proxy](proxy/datacenter/static/browser.md)
+        * [Mobile Devices](proxy/datacenter/static/mobile-devices.md)
+        * [Third-party Software](proxy/datacenter/static/third-party.md)
+    * [2.5.3 Custom](proxy/datacenter/custom/README.md)
+        * [Purchase](proxy/datacenter/custom/purchase.md)
+        * [Assign Region](proxy/datacenter/custom/assign-region.md)
+        * [Set Rotation Interval](proxy/datacenter/custom/rotation.md)
+        * [Whitelist & Users](proxy/datacenter/custom/whitelist.md)
+        * [Generate proxy endpoints](proxy/datacenter/custom/generate.md)
+        * [Integrate in Code](proxy/datacenter/custom/code.md)
+        * [Third-party Software](proxy/datacenter/custom/third-party.md)
+        * [System-wide Proxy](proxy/datacenter/custom/system-wide.md)
+        * [Browser Proxy](proxy/datacenter/custom/browser.md)
+        * [Mobile Devices](proxy/datacenter/custom/mobile-devices.md)
+* [2.6 Web Scraping API](proxy/scraping-api/README.md)
+    * [2.6.1 Overview](proxy/scraping-api/overview.md)
+    * [2.6.2 Purchase & API](proxy/scraping-api/setup/README.md)
+        * [Purchase credits](proxy/scraping-api/setup/purchase.md)
+        * [API Center & integration](proxy/scraping-api/setup/api.md)
+    * [2.6.3 Credits & billing](proxy/scraping-api/billing.md)
 
 ## 3. AI Guides
 
-* [3.1 AI Product Overview](ai-overview.md)
-* [3.2 OpenClaw Skill](openclaw-skill.md)
-* [3.3 AI MCP](ai-mcp.md)
-* [3.4 AI Assistant](ai-customer-service.md)
-* [3.5 Integrate Proxies in AI](short-ai.md)
+* [3.1 AI Product Overview](ai/overview.md)
+* [3.2 OpenClaw Skill](ai/openclaw-skill.md)
+* [3.3 AI MCP](ai/mcp.md)
+* [3.4 AI Assistant](ai/assistant.md)
+* [3.5 Integrate Proxies in AI](ai/integrate.md)
 
 ## 4. Software Guides
 
-* [4.1 Software Overview](software-overview.md)
-* [4.2 Proxy Server](proxy-server-soft.md)
-* [4.3 Proxy Client (Android)](android-client-soft.md)
-* [4.4 Proxy Tester](tester-soft.md)
-* [4.5 Browser Extension](extension-soft.md)
+* [4.1 Software Overview](software/overview.md)
+* [4.2 Proxy Server](software/proxy-server.md)
+* [4.3 Proxy Client (Android)](software/android-client.md)
+* [4.4 Proxy Tester](software/tester.md)
+* [4.5 Browser Extension](software/extension.md)
 
 ## 5. Service & Support
 
-* [3.1 Recharge & Consumption Records](billing-records.md)
-* [3.2 Submit a Ticket](submit-ticket.md)
-* [3.3 Live Chat](live-chat.md)
-* [3.4 Terms, Privacy & Cookies](terms-privacy.md)
+* [5.1 Recharge & Consumption Records](support/billing.md)
+* [5.2 Submit a Ticket](support/ticket.md)
+* [5.3 Live Chat](support/live-chat.md)
+* [5.4 Terms, Privacy & Cookies](support/terms.md)
