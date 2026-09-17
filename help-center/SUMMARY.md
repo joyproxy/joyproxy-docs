@@ -1,4 +1,4 @@
-# Table of contents
+# Summary
 * [JoyProxy Help Center](README.md)
 * [1.1 Introduction](intro.md)
 * [1.2 Register & Login](register-login.md)
