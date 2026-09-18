@@ -9,7 +9,7 @@ For carrier-class **Mobile rotating** traffic, pair [Mobile purchases](../gettin
 1. Generate static/custom endpoints on desktop first ([Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html)).
 2. On iPhone: **Settings → Wi‑Fi → (i) next to your network → Configure Proxy → Manual**.
 3. **Server** = host; **Port** = port.
-4. If the network requires authentication, enter username/password from [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html).
+4. If the network requires authentication, enter username/password from [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html).
 
 > **Note**
 >

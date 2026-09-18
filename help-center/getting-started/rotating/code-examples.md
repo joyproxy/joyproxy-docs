@@ -1,6 +1,6 @@
 # Code examples (Rotating)
 
-Replace `GENERATED_USER` with the username from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) and `YOUR_PASS` with the [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) password. Host and port stay `gate.joyproxy.com:9001`.
+Replace `GENERATED_USER` with the username from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) and `YOUR_PASS` with the [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) Username/Password. Host and port stay `gate.joyproxy.com:9001`.
 
 Test URL `https://api.ipify.org` only prints your exit IP. Point the same proxy at your real target when this succeeds.
 

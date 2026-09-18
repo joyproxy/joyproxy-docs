@@ -25,7 +25,7 @@ curl -x http://GENERATED_USER_CITY:YOUR_PASS@gate.joyproxy.com:9001 https://api.
 
 Confirm the exit with any IP-check URL you trust, or the same `api.ipify.org` call.
 
-HTTP, HTTPS, and SOCKS5 all use this same username. You do not switch host when you switch protocol.
+HTTP and SOCKS5 both use this same username. You do not switch host when you switch protocol. Either protocol can open HTTPS websites.
 
 ## API
 

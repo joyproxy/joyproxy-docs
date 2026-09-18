@@ -10,15 +10,15 @@ Authentication first: [Authentication methods](authentication.md).
 | --- | --- |
 | Host | `gate.joyproxy.com` |
 | Port | `9001` |
-| Protocols | HTTP, HTTPS, SOCKS5 |
+| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. |
 
 ## Web generator
 
 1. Open [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) or the **Endpoints** tab on your network console.
 2. Select **Rotating** and the order / network you paid for (Residential, Mobile, or Business).
-3. **Location** — country, then optionally state / city. See [Location targeting](location-targeting.md).
-4. **Session** — sticky (1–30 minutes) or rotate every request. See [Sticky sessions](sticky-sessions.md).
-5. **Protocol** — HTTP, HTTPS, or SOCKS5. The gateway stays `gate.joyproxy.com:9001`; only the URI scheme in the copied example changes.
+3. **Output format** — Endpoint:port, HTTP, or SOCKS5. Host and port stay `gate.joyproxy.com:9001`.
+4. **Location** — country, then optionally state / city. See [Location targeting](location-targeting.md).
+5. **Session type** — **Sticky session** (1–30 minutes) or **Rotating session**. See [Sticky sessions](sticky-sessions.md).
 6. Set how many lines to create → **Generate**.
 7. Copy **Host**, **Port**, **Username**, and **Password**, or the full example string.
 
@@ -43,7 +43,9 @@ The Endpoints page also shows language snippets (cURL, Python, and others) built
 
 ## Generate from the API
 
-Use your **API token** from [Account settings](https://www.joyproxy.com/admin-settings.html). You can pass it as `Authorization: Bearer` or as `token=` on the query string (handy for tools that cannot set headers).
+Copy the **API token** from [Account settings](https://www.joyproxy.com/admin-settings.html). Pass it as `Authorization: Bearer` or as `token=` on the query string.
+
+That token is for extract APIs. It is **not** the proxy password and **not** the [AI Access Token](../../integration/integrate-proxies-in-ai.md).
 
 ```http
 GET https://api.joyproxy.com/v2/extract?network_type=residential&count=5&duration=5m&format=json
@@ -60,7 +62,7 @@ curl "https://api.joyproxy.com/v2/extract?token=YOUR_API_TOKEN&network_type=resi
 | --- | --- |
 | `network_type` | `residential`, `cellular` (alias `mobile`), or `business` — must match the pack you bought |
 | `count` | How many usernames to return |
-| `duration` | Sticky length, for example `5m` or `30s`. Omit or follow the Endpoints UI for per-request rotation |
+| `duration` | Sticky length in minutes, for example `5m` or `30m`. Omit this for a rotating session |
 | `format` | `json`, or other formats shown in [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html) |
 
 The JSON includes `gate.joyproxy.com`, port `9001`, and a wire-ready username. Copy them into the client unchanged.
@@ -69,9 +71,7 @@ The JSON includes `gate.joyproxy.com`, port `9001`, and a wire-ready username. C
 >
 > URLs that contain `token=` are secrets. Do not paste them into tickets or public chats. Rotate the API token in Account settings if a link leaks.
 
-## Try it in OpenAPI Center
-
-[OpenAPI Center](https://www.joyproxy.com/admin-openapi.html) lets you run `/v2/extract` in the browser, inspect the JSON, and copy language snippets.
+Full parameter lists, try-it playground, and language snippets: [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html).
 
 ## Next
 

@@ -24,12 +24,12 @@ Copy the AI Access Token from [AI endpoint generator](https://www.joyproxy.com/a
 
 > **Important**
 >
-> AI Access Tokens drive **management tools**, not the rotating gateway socket itself. For rotating traffic, connect with the **generated username** and your **Whitelist & Users password**—the same as in [Rotating proxy](../getting-started/rotating/README.md).
+> AI Access Tokens drive **management tools**, not the rotating gateway socket itself. For rotating traffic, connect with the **generated username** and your **Users & Whitelist password**—the same as in [Rotating proxy](../getting-started/rotating/README.md).
 
 ## Scenario: spin up rotating residential from an IDE
 
 1. Purchase Residential rotating traffic if you have not already.
-2. Create username/password in [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html).
+2. Create username/password in [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html).
 3. Install **AI MCP** using the JSON template on the [product page](https://www.joyproxy.com/products/ai-mcp.html); paste your AI Access Token.
 4. Ask the agent to generate endpoints for a country (e.g. “US sticky 10 minutes”).
 5. Paste the returned `gate.joyproxy.com:9001` string into your script or [Proxy Tester](../getting-started/software/proxy-tester.md).

@@ -15,7 +15,7 @@ Windows desktop tool to check **HTTP**, **SOCKS5 TCP**, and **SOCKS5 UDP** befor
 1. Download the Windows build from [GitHub Releases](https://github.com/joyproxy/joyproxy-tester/releases/latest).
 2. Paste a proxy string (`host:port` or full URI with username/password).
 3. Run the test and read outbound IP / geo.
-4. For Rotating, generate a username in [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html), then test with the Whitelist & Users password — [Rotating first request](../rotating/first-request.md).
+4. For Rotating, generate a username in [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html), then test with the Users & Whitelist password — [Rotating first request](../rotating/first-request.md).
 
 | Line type | Paste |
 | --- | --- |

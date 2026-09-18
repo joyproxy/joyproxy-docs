@@ -10,6 +10,8 @@ Run a test **before** you point production scrapers at the gateway. When the res
 
 ## cURL (fastest check)
 
+This uses the **HTTP** proxy protocol to open an **HTTPS** website:
+
 ```bash
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
@@ -26,11 +28,11 @@ A single IPv4/IPv6 in the output means the gateway authenticated you and an exit
 
 | Label in the tool | JoyProxy value |
 | --- | --- |
-| Proxy type | HTTP, HTTPS, or SOCKS5 |
+| Proxy type | HTTP or SOCKS5 (both can open HTTPS websites) |
 | Server / Host | `gate.joyproxy.com` |
 | Port | `9001` |
 | Username | Full generated username |
-| Password | Whitelist & Users password |
+| Password | Users & Whitelist → Username/Password |
 
 URI form:
 
@@ -45,8 +47,8 @@ The Endpoints page can paste a ready-made snippet in cURL, Python, Node.js, PHP,
 
 Work through this list in order:
 
-1. **407 / Proxy Authentication Required** — Password must be the Whitelist & Users secret. Username must be the **generated** string, not your dashboard email and not the short credential name. Recreate the password and retry. See [Authentication methods](authentication.md).
-2. **Timeout** — Confirm `gate.joyproxy.com` and port `9001`. Corporate firewalls sometimes allow HTTPS but block SOCKS; try HTTP first.
+1. **407 / Proxy Authentication Required** — Password must be the Username/Password secret. Username must be the **generated** string, not your dashboard email and not the short User/Pass name. Edit the password and retry. See [Authentication methods](authentication.md).
+2. **Timeout** — Confirm `gate.joyproxy.com` and port `9001`. Try the HTTP proxy type first.
 3. **Wrong country** — Generate a new username with the country selected in Endpoints. Do not edit the old username.
 4. **Order inactive** — Check remaining GB in [My Proxies](https://www.joyproxy.com/admin-my-orders.html) or the Usage tab.
 

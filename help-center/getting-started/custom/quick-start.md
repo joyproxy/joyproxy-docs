@@ -63,7 +63,7 @@ Details: [Set rotation](rotation.md).
 
 ### 4. Authorize and generate
 
-1. Add an IP whitelist and/or username/password in [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html).
+1. Create Username/Password in [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) (IP whitelist is also available for dedicated ports).
 2. [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Custom Proxies → Web generator**.
 3. Select the allocation → **Generate now** → copy host and port.
 

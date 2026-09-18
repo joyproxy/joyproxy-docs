@@ -23,7 +23,7 @@ Rotating traffic deducts from your package as you use it. Static and custom run 
 
 ## Credits and top-up
 
-- Pay with **PayPal** or **account balance**
+- Pay in checkout: card, Apple Pay, Google Pay, PayPal, WeChat Pay, UPI, USDT (TRC20), or account balance
 - Apply **sign-up credit** on first orders when offered
 - Scraping credits **do not expire** after purchase
 

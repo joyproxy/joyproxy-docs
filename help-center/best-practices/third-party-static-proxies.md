@@ -8,11 +8,11 @@ Use when your order is Residential, Mobile, or Business **Rotating**.
 
 | Software label | Enter |
 | --- | --- |
-| Type | HTTP, HTTPS, or SOCKS5 |
+| Type | HTTP or SOCKS5 (both can open HTTPS websites) |
 | Host | `gate.joyproxy.com` |
 | Port | `9001` |
 | Username | Full string from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) |
-| Password | From [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) |
+| Password | From [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) |
 
 URI examples:
 
@@ -48,7 +48,7 @@ http://USER:PASS@us-ca.edge.joyproxy.com:10001
 ## Scenario: high-frequency scraper on rotating
 
 1. Purchase rotating traffic with headroom (monitor [Usage](https://www.joyproxy.com/admin-overview.html)).
-2. Use **sticky** sessions for login steps, **rotate every request** for catalog crawls.
+2. Use **sticky** sessions for login steps, **Rotating session** for catalog crawls.
 3. Regenerate username in Endpoints when you change geo—no need to buy a new package.
 
 ## Scenario: extract API powered tools

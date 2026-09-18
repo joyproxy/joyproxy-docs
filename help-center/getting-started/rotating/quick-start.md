@@ -18,9 +18,9 @@ An **endpoint** is the gateway into an IP pool. You do not pick a new host for e
 | --- | --- |
 | Host | `gate.joyproxy.com` |
 | Port | `9001` |
-| Protocols | HTTP, HTTPS, SOCKS5 |
+| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. |
 | Username | The **full generated string** from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) |
-| Password | From [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) |
+| Password | From [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) → **Username/Password** |
 
 Country, city, and sticky session live **inside the generated username**. Host and port stay the same.
 
@@ -145,8 +145,9 @@ New accounts: [Register](https://www.joyproxy.com/register.html) · [Pricing](ht
 
 1. Open [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term).
 2. Choose **Residential** (or **Mobile** / **Business / ISP** if that is your target).
-3. Pick a traffic pack and pay with **PayPal** or **account balance**.
-4. Confirm the order in [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
+3. Pick a traffic pack. Residential, Mobile, and Business / ISP each have their own price — see [Pricing](https://www.joyproxy.com/pricing.html).
+4. Pay in checkout: card, Apple Pay, Google Pay, PayPal, WeChat Pay, UPI, USDT (TRC20), or account balance.
+5. Confirm the order in [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
 
 Details: [Choose a network and buy traffic](purchase.md).
 
@@ -154,9 +155,9 @@ Details: [Choose a network and buy traffic](purchase.md).
 
 Dashboard login and proxy login are **different**.
 
-1. Open [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html).
-2. Under **Username / Password**, create a credential (label 3+ characters, password 6+).
-3. Keep the **password**. You will pair it with a **long generated username** in the next step — not with this short label.
+1. Open [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html).
+2. Under **Username/Password**, create a User/Pass (letter first, a–z and 0–9, max 16; password 6+).
+3. Keep the **password**. You will pair it with a **long generated username** in the next step — not with this short name.
 
 Full walkthrough: [Authentication methods](authentication.md).
 
@@ -165,8 +166,8 @@ Full walkthrough: [Authentication methods](authentication.md).
 In [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Rotating**:
 
 1. **Location** — country, then optionally state / city. See [Location targeting](location-targeting.md).
-2. **Session type** — rotate every request, or **sticky** (1–30 minutes). See [Sticky sessions](sticky-sessions.md).
-3. **Protocol** — HTTP, HTTPS, or SOCKS5. Host and port stay `gate.joyproxy.com:9001` for all three.
+2. **Session type** — **Sticky session** (1–30 minutes) or **Rotating session**. See [Sticky sessions](sticky-sessions.md).
+3. **Output format** — Endpoint:port, HTTP, or SOCKS5. Host and port stay `gate.joyproxy.com:9001`. Either protocol can open HTTPS websites.
 4. Set how many lines to create → **Generate**.
 
 > **Important**
@@ -185,8 +186,8 @@ http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 | --- | --- |
 | Host `gate.joyproxy.com` | Do not invent a country-specific host |
 | Port `9001` | Do not use a Static `*.edge.joyproxy.com` port here |
-| Full generated username | Do not type the short Whitelist label |
-| Password from Whitelist & Users | Do not use the website login password |
+| Full generated username | Do not type the short Users & Whitelist name |
+| Password from Username/Password | Do not use the website login password |
 
 ### 5. Confirm the IP
 
@@ -210,7 +211,7 @@ Open the **Usage** tab on the Residential / Mobile / Business console to watch r
 
 | Symptom | What to check |
 | --- | --- |
-| **407** / Proxy Authentication Required | Password from Whitelist & Users. Username is the **generated** string, not your email and not the short credential label. |
+| **407** / Proxy Authentication Required | Password from Users & Whitelist → Username/Password. Username is the **generated** string, not your email and not the short User/Pass name. |
 | Timeout | Host `gate.joyproxy.com`, port `9001`. Try HTTP before SOCKS if a firewall is involved. |
 | Wrong country | Generate a **new** username with the country selected. Do not edit the old string. |
 | Order inactive / no traffic | Remaining GB in [My Proxies](https://www.joyproxy.com/admin-my-orders.html) or Usage. |

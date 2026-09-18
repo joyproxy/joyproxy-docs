@@ -6,11 +6,11 @@ The gateway fields are the same in every client. Only the form labels change.
 
 | Software label | Enter |
 | --- | --- |
-| Type | HTTP, HTTPS, or SOCKS5 |
+| Type | HTTP or SOCKS5 (both can open HTTPS websites) |
 | Host / Server | `gate.joyproxy.com` |
 | Port | `9001` |
 | Username | Generated username from Endpoints |
-| Password | Whitelist & Users password — see [Authentication methods](authentication.md) |
+| Password | Users & Whitelist → Username/Password — see [Authentication methods](authentication.md) |
 
 ```text
 http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001

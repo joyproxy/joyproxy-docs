@@ -18,7 +18,7 @@ Exact widgets evolve with product releases; use the left navigation for authorit
 | --- | --- |
 | Buy or top up | [Purchase](https://www.joyproxy.com/admin-purchase.html) |
 | Generate proxy lines | [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) |
-| Manage credentials | [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) |
+| Manage credentials | [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) |
 | Review payments | [Transactions](invoices.md) |
 | Get help | [Support](https://www.joyproxy.com/admin-support.html) |
 

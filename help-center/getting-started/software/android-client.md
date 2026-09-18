@@ -13,7 +13,7 @@ Route mobile-app traffic through HTTP/SOCKS5 **without root**. Use it for on-dev
 ## Configure
 
 1. Enter **host**, **port**, and credentials from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html).
-   - Mobile / Residential rotating: `gate.joyproxy.com:9001` + generated username + Whitelist & Users password — [Rotating](../rotating/README.md)
+   - Mobile / Residential rotating: `gate.joyproxy.com:9001` + generated username + Users & Whitelist password — [Rotating](../rotating/README.md)
    - Static / Custom: dedicated host:port — [Static](../static/README.md)
 2. Routing:
    - **Global** — all supported apps

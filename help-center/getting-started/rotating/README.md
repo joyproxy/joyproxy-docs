@@ -10,15 +10,15 @@ Sold on **Residential**, **Mobile**, and **Business / ISP**. For a dedicated `ho
 Your app  →  gate.joyproxy.com:9001  →  exit IP in the region you selected
                  ▲
                  └── username = generated string (geo + session)
-                     password = from Whitelist & Users
+                     password = Username/Password on Users & Whitelist
 ```
 
 | Piece | What it is |
 | --- | --- |
 | Gateway | Always `gate.joyproxy.com` port `9001` |
-| Protocols | HTTP, HTTPS, SOCKS5 |
+| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. |
 | Generated username | Copy from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html). Do not edit. |
-| Password | The credential password you created under [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) |
+| Password | The **Username/Password** you created under [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) |
 | Billing | Per **GB** of traffic, while the pack is still valid |
 
 ## In this chapter
@@ -51,7 +51,7 @@ A public IP in the response means the gateway accepted the credentials. To chang
 | Mobile | Carrier 4G/5G exits, app and ad checks | [Mobile](https://www.joyproxy.com/products/proxy-mobile.html) |
 | Business / ISP | ISP-branded ASN, B2B portals | [Business / ISP](https://www.joyproxy.com/products/proxy-business.html) |
 
-The **console steps are the same**. Only the network type at [Purchase](https://www.joyproxy.com/admin-purchase.html?tab=short-term) and in Endpoints changes.
+The **console steps are the same**. Only the network type at [Purchase](https://www.joyproxy.com/admin-purchase.html?tab=short-term) and in Endpoints changes. Each network has its own per-GB price — compare on [Pricing](https://www.joyproxy.com/pricing.html).
 
 ## Related
 

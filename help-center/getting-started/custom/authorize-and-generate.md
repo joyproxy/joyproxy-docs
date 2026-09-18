@@ -2,7 +2,7 @@
 
 ## Authorization
 
-Same as Static: [IP whitelist or username/password](../static/authorization.md) in [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html). Product-wide methods: [Authentication methods](../rotating/authentication.md).
+Same as Static: [Username/password or whitelist](../static/authorization.md) in [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html). Product-wide methods: [Authentication methods](../rotating/authentication.md).
 
 ## Web generator
 

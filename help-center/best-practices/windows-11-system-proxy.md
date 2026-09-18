@@ -6,7 +6,7 @@ Windows can send **all compatible applications** through a proxy when you enable
 
 1. Generate endpoints in [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html).
 2. Decide auth:
-   - **Whitelist** — run from the IP you added in [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html).
+   - **Whitelist** — run from the IP you added in [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html).
    - **Username/password** — Windows will prompt or use your app’s embedded credentials.
 
 > **Security**
@@ -21,7 +21,7 @@ Windows can send **all compatible applications** through a proxy when you enable
 4. **Port** = endpoint port (e.g. `10001` or `9001`).
 5. Save.
 
-If Windows or an app prompts for credentials, enter your Whitelist & Users username and password (static/custom) or generated user + password (rotating).
+If Windows or an app prompts for credentials, enter your Users & Whitelist username and password (static/custom) or generated user + password (rotating).
 
 ## Edge and Chrome on Windows
 

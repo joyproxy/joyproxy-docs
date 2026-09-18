@@ -12,8 +12,8 @@ Need new IPs every request instead? [Rotating quick start](../rotating/quick-sta
 | --- | --- |
 | Host | From [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html), for example `us-ca.edge.joyproxy.com` |
 | Port | From Endpoints, for example `10001` |
-| Protocols | HTTP, HTTPS, SOCKS5 |
-| Auth | IP whitelist **and/or** username + password from [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) |
+| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. |
+| Auth | Username/Password **and/or** IP whitelist from [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) |
 
 > **Important**
 >
@@ -66,19 +66,19 @@ New accounts: [Register](https://www.joyproxy.com/register.html) · [Pricing](ht
 1. Open [Purchase → Static](https://www.joyproxy.com/admin-purchase.html?tab=long-term).
 2. Select **Residential**, **Business / ISP**, or **Datacenter**.
 3. Pick **country** (province / city when offered). This geo is **locked for the order**.
-4. Choose duration and quantity, then pay.
+4. Choose duration and quantity, then pay in checkout (card, Apple Pay, Google Pay, PayPal, WeChat Pay, UPI, USDT, or account balance).
 5. Wait until the allocation is active in [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
 
 Details: [Buy a dedicated line](purchase.md).
 
 ### 2. Authentication
 
-Set **at least one** method in [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html):
+Set **Username/Password** in [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) (recommended):
 
+- **Username/Password** — letter first, a–z and 0–9, max 16; password 6+. On Static, this username **is** the proxy user.
 - **IP whitelist** — add the public IPv4 of the machine that will connect, then use `host:port` only.
-- **Username / password** — create a credential (3+ / 6+ characters). On Static, this **short username** is the proxy user.
 
-Details: [Whitelist or username/password](authorization.md) · [Authentication methods](../rotating/authentication.md).
+Details: [Username/password or whitelist](authorization.md) · [Authentication methods](../rotating/authentication.md).
 
 ### 3. Generate endpoints
 

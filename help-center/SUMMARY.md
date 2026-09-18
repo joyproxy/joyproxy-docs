@@ -17,7 +17,7 @@
 * [Static proxy](getting-started/static/README.md)
     * [Quick start](getting-started/static/quick-start.md)
     * [Buy a dedicated line](getting-started/static/purchase.md)
-    * [Whitelist or username/password](getting-started/static/authorization.md)
+    * [Username/password or whitelist](getting-started/static/authorization.md)
     * [Generate endpoints](getting-started/static/generate-endpoints.md)
     * [Make your first request](getting-started/static/first-request.md)
     * [Code examples](getting-started/static/code-examples.md)

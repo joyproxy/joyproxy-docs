@@ -10,7 +10,7 @@ Available on **Residential**, **Business / ISP**, and **Datacenter**.
 | --- | --- | --- |
 | Server you connect to | `gate.joyproxy.com:9001` | Unique `host:port` per line (for example `us-ca.edge.joyproxy.com:10001`) |
 | Geo | Encoded in generated username | Chosen at checkout |
-| Auth | Generated user + password | IP whitelist **and/or** username/password you created |
+| Auth | Generated username + Username/Password | Username/Password; IP whitelist also available |
 | Billing | Per GB | Per IP for a duration |
 
 > **Important**
@@ -21,7 +21,7 @@ Available on **Residential**, **Business / ISP**, and **Datacenter**.
 
 1. [Quick start](quick-start.md)
 2. [Buy a dedicated line](purchase.md)
-3. [Whitelist or username/password](authorization.md)
+3. [Username/password or whitelist](authorization.md)
 4. [Generate endpoints](generate-endpoints.md)
 5. [Make your first request](first-request.md)
 6. [Code examples](code-examples.md)

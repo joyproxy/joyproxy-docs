@@ -29,7 +29,7 @@ Edge on Windows uses the same system proxy path. You can also install the JoyPro
 | Step | Done? |
 | --- | --- |
 | Static order active in [My Proxies](https://www.joyproxy.com/admin-my-orders.html) | |
-| Whitelist or credentials in [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) | |
+| Whitelist or credentials in [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) | |
 | Host/port copied from generator | |
 | Exit IP matches purchased region | |
 

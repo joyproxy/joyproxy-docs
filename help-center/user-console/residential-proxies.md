@@ -20,9 +20,9 @@ View active and expired orders, remaining traffic, validity dates, and custom po
 
 ### Users & Whitelist
 
-Create **username/password** pairs and **IP whitelist** entries used across modes. Rotating lines use password + generated username; static/custom can use whitelist from server IPs.
+Create **Username/Password** on this tab. Static and Custom can also use **IP whitelist** entries.
 
-[Whitelist & Users](https://www.joyproxy.com/admin-authorization.html)
+[Users & Whitelist](https://www.joyproxy.com/admin-authorization.html)
 
 ### Endpoints
 

@@ -28,7 +28,7 @@ Get your **AI Access Token** from [AI endpoint generator](https://www.joyproxy.c
 
 AI tools help you **produce** connection strings. Runtime HTTP traffic still uses:
 
-- Rotating: `gate.joyproxy.com:9001` + generated username + Whitelist & Users password
+- Rotating: `gate.joyproxy.com:9001` + generated username + Users & Whitelist password
 - Static/Custom: dedicated host:port from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html)
 
 See [Best practices → Integrate proxies in AI](../best-practices/integrate-proxies-in-ai.md) for scenarios and security habits.
