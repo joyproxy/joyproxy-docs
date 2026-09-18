@@ -28,6 +28,9 @@ Available on **Residential**, **Business / ISP**, and **Datacenter**.
 7. [Code examples](code-examples.md)
 8. [New IP](refresh-ip.md)
 9. [Windows, Chrome, and mobile](clients.md)
+10. [Protocols](protocols.md)
+11. [Restricted targets](restricted-targets.md)
+12. [Response codes](response-codes.md)
 
 ## First request shape
 

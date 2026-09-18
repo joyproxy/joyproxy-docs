@@ -123,4 +123,4 @@ See [Generate endpoints](generate-endpoints.md) for the extract **API URL**. Kee
 
 ## Next
 
-[Use in apps and browsers](apps-and-browsers.md)
+[Use in apps and browsers](apps-and-browsers.md) · [Protocols](protocols.md) · [Response codes](response-codes.md)

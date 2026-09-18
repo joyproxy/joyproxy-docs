@@ -16,7 +16,7 @@ Your app  →  gate.joyproxy.com:9001  →  exit IP in the region you selected
 | Piece | What it is |
 | --- | --- |
 | Gateway | Always `gate.joyproxy.com` port `9001` |
-| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. |
+| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. Details: [Protocols](protocols.md). |
 | Generated username | Copy from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html). Do not edit. |
 | Password | The **Username/Password** you created under [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) |
 | Billing | Per **GB** of traffic, while the pack is still valid |
@@ -35,7 +35,10 @@ Follow in order the first time. Later, jump from the sidebar.
 8. [Make your first request](first-request.md)
 9. [Code examples](code-examples.md)
 10. [Use in apps and browsers](apps-and-browsers.md)
-11. [Usage and orders](usage-and-orders.md)
+11. [Protocols](protocols.md)
+12. [Restricted targets](restricted-targets.md)
+13. [Response codes](response-codes.md)
+14. [Usage and orders](usage-and-orders.md)
 
 ## First request (after you have user + password)
 
@@ -59,5 +62,6 @@ The **console steps are the same**. Only the network type at [Purchase](https://
 
 - [Quick start](quick-start.md) — gateway, sample code, dashboard walkthrough
 - [Auto-buy traffic](auto-buy-traffic.md) · [Usage and orders](usage-and-orders.md)
+- [Protocols](protocols.md) · [Restricted targets](restricted-targets.md) · [Response codes](response-codes.md)
 - [Pricing](https://www.joyproxy.com/pricing.html) · [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html)
 - Console tabs: [Residential](../../user-console/residential-proxies.md) · [Mobile](../../user-console/mobile-proxies.md) · [Business / ISP](../../user-console/business-isp-proxies.md)

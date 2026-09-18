@@ -228,4 +228,6 @@ Still stuck? [Live chat](../../support/live-chat.md) with a **redacted** curl (n
 | Country / city targeting | [Location targeting](location-targeting.md) |
 | Keep the same IP for several minutes | [Sticky sessions](sticky-sessions.md) |
 | Copy-paste for more languages | [Code examples](code-examples.md) |
+| HTTP vs SOCKS5 | [Protocols](protocols.md) |
+| 407 / 403 / extract errors | [Response codes](response-codes.md) |
 | Use in Chrome, Windows, RPA | [Apps and browsers](apps-and-browsers.md) |

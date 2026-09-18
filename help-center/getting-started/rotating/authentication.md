@@ -60,6 +60,8 @@ Use **Edit** on the Username/Password row to set a new password, then update `YO
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
+Other hop and extract errors: [Response codes](response-codes.md).
+
 ## What you type for Static / Custom (User/Pass)
 
 On dedicated lines, the **Users & Whitelist username** *is* the proxy user. There is no second generated gateway user.

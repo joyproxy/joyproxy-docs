@@ -80,4 +80,6 @@ Run the curl above. When you see a public IP in the assigned region, the port is
 | Auto-renew | [Auto-renew](auto-renew.md) |
 | New IP | [New IP](new-ip.md) |
 | First request and code | [First request and code](first-request.md) |
+| HTTP vs SOCKS5 | [Protocols](protocols.md) |
+| 407 / 403 | [Response codes](response-codes.md) |
 | Auth methods | [Authentication methods](../rotating/authentication.md) |

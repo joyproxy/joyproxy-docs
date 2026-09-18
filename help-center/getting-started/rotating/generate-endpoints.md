@@ -10,13 +10,13 @@ Authentication first: [Authentication methods](authentication.md).
 | --- | --- |
 | Host | `gate.joyproxy.com` |
 | Port | `9001` |
-| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. |
+| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. See [Protocols](protocols.md). |
 
 ## Web generator
 
 1. Open [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) or the **Endpoints** tab on your network console.
 2. Select **Rotating** and the order / network you paid for (Residential, Mobile, or Business).
-3. **Output format** — Endpoint:port, HTTP, or SOCKS5. Host and port stay `gate.joyproxy.com:9001`.
+3. **Output format** — Endpoint:port, HTTP, or SOCKS5. Host and port stay `gate.joyproxy.com:9001`. Details: [Protocols](protocols.md).
 4. **Location** — country, then optionally state / city. See [Location targeting](location-targeting.md).
 5. **Session type** — **Sticky session** (1–30 minutes) or **Rotating session**. See [Sticky sessions](sticky-sessions.md).
 6. Set how many lines to create → **Generate**.

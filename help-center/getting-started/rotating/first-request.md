@@ -47,8 +47,8 @@ The Endpoints page can paste a ready-made snippet in cURL, Python, Node.js, PHP,
 
 Work through this list in order:
 
-1. **407 / Proxy Authentication Required** — Password must be the Username/Password secret. Username must be the **generated** string, not your dashboard email and not the short User/Pass name. Edit the password and retry. See [Authentication methods](authentication.md).
-2. **Timeout** — Confirm `gate.joyproxy.com` and port `9001`. Try the HTTP proxy type first.
+1. **407 / Proxy Authentication Required** — Password must be the Username/Password secret. Username must be the **generated** string, not your dashboard email and not the short User/Pass name. Edit the password and retry. See [Authentication methods](authentication.md). Full table: [Response codes](response-codes.md).
+2. **Timeout** — Confirm `gate.joyproxy.com` and port `9001`. Try the HTTP proxy type first. See [Protocols](protocols.md).
 3. **Wrong country** — Generate a new username with the country selected in Endpoints. Do not edit the old username.
 4. **Order inactive** — Check remaining GB in [My Proxies](https://www.joyproxy.com/admin-my-orders.html) or the Usage tab.
 
@@ -56,4 +56,4 @@ Still stuck? [Live chat](../../support/live-chat.md) with the **redacted** curl 
 
 ## Next
 
-Copy a snippet for your language: [Code examples](code-examples.md). For Chrome-only tests, use the [Browser extension](../software/browser-extension.md).
+Copy a snippet for your language: [Code examples](code-examples.md). Protocol choice: [Protocols](protocols.md). For Chrome-only tests, use the [Browser extension](../software/browser-extension.md).

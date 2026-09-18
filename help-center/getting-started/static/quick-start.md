@@ -12,7 +12,7 @@ Need new IPs every request instead? [Rotating quick start](../rotating/quick-sta
 | --- | --- |
 | Host | From [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html), for example `us-ca.edge.joyproxy.com` |
 | Port | From Endpoints, for example `10001` |
-| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. |
+| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. See [Protocols](protocols.md). |
 | Auth | Username/Password **and/or** IP whitelist from [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) |
 
 > **Important**
@@ -108,4 +108,6 @@ Run a snippet above. The printed address should match the region you purchased.
 | Auto-renew | [Auto-renew](auto-renew.md) |
 | New IP | [New IP](refresh-ip.md) |
 | Windows, Chrome, mobile | [Clients](clients.md) |
+| HTTP vs SOCKS5 | [Protocols](protocols.md) |
+| 407 / 403 | [Response codes](response-codes.md) |
 | More code | [Code examples](code-examples.md) |

@@ -22,4 +22,4 @@ OS / browser: [Static clients](../static/clients.md) — same forms, different h
 
 ## Chapter index
 
-[Custom proxy](README.md)
+[Custom proxy](README.md) · [Protocols](protocols.md) · [Response codes](response-codes.md)

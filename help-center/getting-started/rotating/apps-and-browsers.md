@@ -6,7 +6,7 @@ The gateway fields are the same in every client. Only the form labels change.
 
 | Software label | Enter |
 | --- | --- |
-| Type | HTTP or SOCKS5 (both can open HTTPS websites) |
+| Type | HTTP or SOCKS5 (both can open HTTPS websites). See [Protocols](protocols.md). |
 | Host / Server | `gate.joyproxy.com` |
 | Port | `9001` |
 | Username | Generated username from Endpoints |

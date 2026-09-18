@@ -20,6 +20,9 @@ Available on **Residential**, **Business / ISP**, and **Datacenter**.
 6. [New IP](new-ip.md)
 7. [Authorize and generate](authorize-and-generate.md)
 8. [First request and code](first-request.md)
+9. [Protocols](protocols.md)
+10. [Restricted targets](restricted-targets.md)
+11. [Response codes](response-codes.md)
 
 ## Order of operations
 
