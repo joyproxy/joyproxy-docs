@@ -10,6 +10,8 @@ Custom is billed **per port** for a validity period (similar to Static, with ext
 
 You assign cities **after** payment—no need to lock one country at checkout the way Static does.
 
+Enable [Auto-renew](auto-renew.md) so ports extend from account balance.
+
 ## Next
 
-[Assign region](assign-region.md)
+[Auto-renew](auto-renew.md) · [Assign region](assign-region.md)

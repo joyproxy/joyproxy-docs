@@ -77,6 +77,7 @@ Run the curl above. When you see a public IP in the assigned region, the port is
 
 | Task | Page |
 | --- | --- |
+| Auto-renew | [Auto-renew](auto-renew.md) |
+| New IP | [New IP](new-ip.md) |
 | First request and code | [First request and code](first-request.md) |
 | Auth methods | [Authentication methods](../rotating/authentication.md) |
-| Windows / Chrome / mobile | [Static clients](../static/clients.md) |

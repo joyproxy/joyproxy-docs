@@ -17,5 +17,5 @@ Need several cities under one order? [Custom](../custom/purchase.md) assigns reg
 
 ## After checkout
 
-- Renew or extend from My Proxies / Purchase when the period ends.
+- Enable [Auto-renew](auto-renew.md) so the line extends from account balance, or renew from My Proxies / Purchase.
 - Generate `host:port` next: [Authorization](authorization.md) then [Generate endpoints](generate-endpoints.md).

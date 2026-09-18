@@ -16,7 +16,7 @@ Rotating gateway traffic is available on Residential, Mobile, and Business / ISP
 ## Console tabs
 
 - **Buy** — choose **Datacenter**, then Static or Custom
-- **My Proxies** — active allocations
+- **My Proxies** — active allocations. [Auto-renew](../getting-started/static/auto-renew.md) and [New IP](../getting-started/static/refresh-ip.md) (Custom: [New IP](../getting-started/custom/new-ip.md))
 - **Users & Whitelist** — server IP whitelist or credentials
 - **Endpoints** — generate `host:port` lists
 - **Usage** — monitor where applicable

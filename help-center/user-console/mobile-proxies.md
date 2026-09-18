@@ -12,7 +12,7 @@
 
 ## My Proxies
 
-Monitor remaining GB and validity—renew before production campaigns stall.
+Monitor remaining GB and validity. Turn on [Auto-buy traffic](../getting-started/rotating/auto-buy-traffic.md) so the next pack is bought from account balance when remaining GB hits your trigger.
 
 ## Users & Whitelist
 
@@ -24,7 +24,7 @@ Generate usernames against `gate.joyproxy.com:9001`. Mobile orders appear in the
 
 ## Usage
 
-Track consumption trends; mobile traffic can spike during video or app-heavy tests.
+**Traffic** quota and **Orders** for Mobile Rotating. Details: [Usage and orders](../getting-started/rotating/usage-and-orders.md).
 
 ## API Center
 

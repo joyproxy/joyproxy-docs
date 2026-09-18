@@ -17,10 +17,10 @@
 Same structure as Residential:
 
 - **Buy** — select **Business / ISP** network before choosing Rotating, Static, or Custom
-- **My Proxies** — allocations and custom port tools
+- **My Proxies** — allocations and custom port tools. Rotating: [Auto-buy traffic](../getting-started/rotating/auto-buy-traffic.md). Static/Custom: [Auto-renew](../getting-started/static/auto-renew.md) and [New IP](../getting-started/static/refresh-ip.md)
 - **Users & Whitelist** — credentials and IP allow list
 - **Endpoints** — gateway or dedicated hosts
-- **Usage** — traffic analytics for rotating SKUs
+- **Usage** — [Traffic and orders](../getting-started/rotating/usage-and-orders.md)
 - **API Center** — extract and management APIs
 
 Only the **network type** changes at purchase; flows match Residential documentation.

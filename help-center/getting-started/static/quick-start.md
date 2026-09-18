@@ -105,6 +105,7 @@ Run a snippet above. The printed address should match the region you purchased.
 
 | Task | Page |
 | --- | --- |
-| Refresh the exit IP | [Refresh the exit IP](refresh-ip.md) |
+| Auto-renew | [Auto-renew](auto-renew.md) |
+| New IP | [New IP](refresh-ip.md) |
 | Windows, Chrome, mobile | [Clients](clients.md) |
 | More code | [Code examples](code-examples.md) |

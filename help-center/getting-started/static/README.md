@@ -1,6 +1,6 @@
 # Static proxy
 
-Static proxies give you a **dedicated host and port** for the life of the package. The same `host:port` is the address your client connects to until the order expires. Exit IP can be refreshed in My Proxies; **region stays as purchased**.
+Static proxies give you a **dedicated host and port** for the life of the package. The same `host:port` is the address your client connects to until the order expires. Use **New IP** in My Proxies to replace the exit IP; **region stays as purchased**.
 
 Available on **Residential**, **Business / ISP**, and **Datacenter**.
 
@@ -21,12 +21,13 @@ Available on **Residential**, **Business / ISP**, and **Datacenter**.
 
 1. [Quick start](quick-start.md)
 2. [Buy a dedicated line](purchase.md)
-3. [Username/password or whitelist](authorization.md)
-4. [Generate endpoints](generate-endpoints.md)
-5. [Make your first request](first-request.md)
-6. [Code examples](code-examples.md)
-7. [Refresh the exit IP](refresh-ip.md)
-8. [Windows, Chrome, and mobile](clients.md)
+3. [Auto-renew](auto-renew.md)
+4. [Username/password or whitelist](authorization.md)
+5. [Generate endpoints](generate-endpoints.md)
+6. [Make your first request](first-request.md)
+7. [Code examples](code-examples.md)
+8. [New IP](refresh-ip.md)
+9. [Windows, Chrome, and mobile](clients.md)
 
 ## First request shape
 

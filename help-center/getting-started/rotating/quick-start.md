@@ -222,6 +222,8 @@ Still stuck? [Live chat](../../support/live-chat.md) with a **redacted** curl (n
 
 | Task | Page |
 | --- | --- |
+| Auto-buy when GB runs low | [Auto-buy traffic](auto-buy-traffic.md) |
+| Usage tab and order APIs | [Usage and orders](usage-and-orders.md) |
 | Create or reset proxy users | [Authentication methods](authentication.md) |
 | Country / city targeting | [Location targeting](location-targeting.md) |
 | Keep the same IP for several minutes | [Sticky sessions](sticky-sessions.md) |

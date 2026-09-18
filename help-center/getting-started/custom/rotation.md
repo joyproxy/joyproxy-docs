@@ -17,6 +17,8 @@ Rotation refreshes the **exit IP** on a timer while keeping the port’s **regio
 
 These controls live on My Proxies. Continue connecting with the generated host and port.
 
+On-demand exit IP change: [New IP](new-ip.md).
+
 ## Next
 
-[Authorize and generate](authorize-and-generate.md)
+[New IP](new-ip.md) · [Authorize and generate](authorize-and-generate.md)

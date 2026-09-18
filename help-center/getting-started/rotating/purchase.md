@@ -28,10 +28,10 @@ You can hold more than one network on the same account. Each order appears separ
 
 ## After payment
 
-- **Usage** on the network console shows remaining GB.
+- **Usage** on the network console shows remaining GB. Details: [Usage and orders](usage-and-orders.md).
 - Endpoints keep working as long as traffic remains. You do not buy a new pack every time you generate a username.
-- When GB runs low, return to [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term) and add another pack on the same network.
+- When GB runs low, return to [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term), or turn on [Auto-buy traffic](auto-buy-traffic.md).
 
 ## Next
 
-Set up Username/Password: [Authentication methods](authentication.md).
+[Auto-buy traffic](auto-buy-traffic.md) · [Authentication methods](authentication.md).

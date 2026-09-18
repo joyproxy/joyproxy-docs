@@ -18,6 +18,10 @@ Purchase new traffic or lines.
 
 View active and expired orders, remaining traffic, validity dates, and custom port assignments ([assign region](../getting-started/custom/assign-region.md), [rotation](../getting-started/custom/rotation.md)).
 
+- Rotating — [Auto-buy traffic](../getting-started/rotating/auto-buy-traffic.md)
+- Static — [Auto-renew](../getting-started/static/auto-renew.md) and [New IP](../getting-started/static/refresh-ip.md)
+- Custom — [Auto-renew](../getting-started/custom/auto-renew.md) and [New IP](../getting-started/custom/new-ip.md)
+
 ### Users & Whitelist
 
 Create **Username/Password** on this tab. Static and Custom can also use **IP whitelist** entries.
@@ -35,7 +39,7 @@ Guide: [Rotating](../getting-started/rotating/README.md) · [Static](../getting-
 
 ### Usage
 
-Charts and logs for traffic consumption on rotating packages—useful before renewals.
+**Traffic** and **Orders** for the selected network. Rotating quota (used / remaining GB) and order lists: [Usage and orders](../getting-started/rotating/usage-and-orders.md).
 
 ### API Center
 

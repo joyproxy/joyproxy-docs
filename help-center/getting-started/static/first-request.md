@@ -28,4 +28,4 @@ Confirm the printed IP matches the region you purchased. If geo is wrong, check 
 
 ## Next
 
-[Code examples](code-examples.md) · [Refresh exit IP](refresh-ip.md)
+[Code examples](code-examples.md) · [New IP](refresh-ip.md)
