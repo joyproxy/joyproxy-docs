@@ -43,9 +43,7 @@ The Endpoints page also shows language snippets (cURL, Python, and others) built
 
 ## Generate from the API
 
-On the same Endpoints page, the **API URL** box is already filled from your location, session, format, and count. Copy that URL and call it — `token=` is already in the query. You do not look up a token in Account settings.
-
-<a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a> holds the **Master User Token** for order APIs.
+On the same Endpoints page, the **API URL** box is already filled from your location, session, format, and count. Copy that URL and call it — `token=` is already in the query. The extract token is only in that URL, not in <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a>.
 
 ```bash
 curl "PASTE_THE_COPIED_API_URL"
