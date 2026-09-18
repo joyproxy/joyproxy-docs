@@ -1,6 +1,6 @@
 # 静态线路首次请求
 
-把 `HOST`、`PORT`、`USER`、`PASS` 换成端点生成页的值（白名单机器可以省略账号密码）。
+将 `HOST`、`PORT`、`USER`、`PASS` 换成端点生成页的值（白名单机器可省略账号密码）。
 
 ```bash
 curl -x http://USER:PASS@HOST:PORT https://api.ipify.org

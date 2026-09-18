@@ -1,17 +1,15 @@
-# 自动续费（Auto-renew）
+# 自动续费
 
 定制端口按 **端口 × 时长** 计费。自动续费在到期前从**账户余额**扣款，端口可继续使用，随时可关。
 
-记得保持余额充足，套餐见 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>。
+请保持余额充足，套餐见 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>。
 
 ## 如何开启
 
-| 步骤 | 操作 |
-| --- | --- |
-| 1 | <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a> → Custom |
-| 2 | 在订单上打开 **Auto-renew** |
-| 3 | 选择 **Renewal period** |
-| 4 | 确认预估金额（目录价 × 端口数）与下次扣款日 → **Enable auto-renew** |
+1. <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> → Custom。
+2. 在订单上打开 **Auto-renew**。
+3. 选择 **Renewal period**。
+4. 确认预估金额（目录价 × 端口数）与下次扣款日 → **Enable auto-renew**。
 
 若已进入提前扣款窗口，可选 **Enable and charge now** 立即续期。
 
@@ -19,7 +17,7 @@
 
 扣款成功后有效期延长，已分配地区与 `host:port` 配置保留。
 
-手动续费与自动续费可以同时开：手动续会立刻延长，下次自动扣款按新到期日算。
+手动续费与自动续费可同时存在：手动续会立刻延长，下次自动扣款按新到期日算。
 
 ## 如何关闭
 

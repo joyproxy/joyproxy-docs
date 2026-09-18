@@ -1,32 +1,32 @@
 # 快速开始
 
-轮换代理永远连**同一个网关**。JoyProxy 会从你买的池子里（住宅、移动或商业 / ISP）挑一台出口，把每次请求转出去。
+轮换代理走**同一个网关**。JoyProxy 会把每次请求从你购买的池子里（住宅、移动或商业 / ISP）选一台出口转发出去。
 
 ```text
 gate.joyproxy.com:9001
 ```
 
-已有流量包和密码？直接看 [发一条测试请求](#发一条测试请求)。还没有就先按 [在控制台完成配置](#在控制台完成配置) 走一遍。
+若已有流量包和密码，可直接看 [发一条测试请求](#发一条测试请求)；否则先按 [在控制台完成配置](#在控制台完成配置)。
 
-要独享 `host:port`？看 <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">静态</a>、<a href="../custom/quick-start.md" target="_blank" rel="noopener noreferrer">定制</a>。不想自己管代理客户端、只要页面内容：<a href="../scraping-api/quick-start.md" target="_blank" rel="noopener noreferrer">网页抓取 API</a>。
+需要独享 `host:port`？见 <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">静态</a>、<a href="../custom/quick-start.md" target="_blank" rel="noopener noreferrer">定制</a>。不想自己管代理客户端、只要页面内容： <a href="../scraping-api/quick-start.md" target="_blank" rel="noopener noreferrer">网页抓取 API</a>。
 
 ## 端点是怎么组成的
 
-**端点**就是进 IP 池的入口。换国家时**不用**换主机名。
+**端点**就是进入 IP 池的入口。换国家时**不用**换主机名。
 
 | 字段 | 取值 |
 | --- | --- |
 | 主机 | `gate.joyproxy.com` |
 | 端口 | `9001` |
-| 协议 | HTTP、SOCKS5 都行；两种都能打开 **HTTPS 网站** |
-| 用户名 | 在 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成（Endpoints）</a> 里**整段复制**的生成用户名 |
-| 密码 | <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a> → **Username/Password** 里设好的密码 |
+| 协议 | HTTP、SOCKS5 均可；两种都能访问 **HTTPS 网站** |
+| 用户名 | 在 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> 里**完整复制**的那串生成用户名 |
+| 密码 | <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a> → **Username/Password** 里设好的密码 |
 
 国家、城市、是否粘性会话，都写在**生成用户名**里；主机和端口始终不变。
 
 ## 发一条测试请求
 
-把 `GENERATED_USER`、`YOUR_PASS` 换成你的值。返回的公网 IP **不是**你家或办公室出口，就说明代理在工作。
+把 `GENERATED_USER`、`YOUR_PASS` 换成你的值。若返回的公网 IP **不是**你家或办公室出口，说明代理已生效。
 
 {% tabs %}
 {% tab title="cURL" %}
@@ -144,10 +144,10 @@ curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ip
 ### 1. 购买轮换流量
 
 1. 打开 <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">购买 → 轮换</a>。
-2. 选 **住宅**（或场景需要的 **移动** / **商业 / ISP**）。
+2. 选择 **住宅**（或目标场景需要的 **移动** / **商业 / ISP**）。
 3. 选流量包。三类网络单价不同，以 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价页</a> 为准。
 4. 结账：银行卡、Apple Pay、Google Pay、PayPal、微信支付、UPI、USDT（TRC20）或账户余额。
-5. 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a> 确认订单已生效。
+5. 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> 确认订单已生效。
 
 细节见 <a href="purchase.md" target="_blank" rel="noopener noreferrer">选择网络并购买流量</a>。
 
@@ -157,7 +157,7 @@ curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ip
 
 1. 打开 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a>。
 2. 在 **Username/Password** 下新建一组 User/Pass（字母开头，a–z 与 0–9，最长 16 位；密码至少 6 位）。
-3. **记下密码**。下一步要把它和**长长的生成用户名**配对——不是用这里的短用户名。
+3. **记下密码**。下一步要把它和**长长的生成用户名**配对使用——不是用这里的短用户名。
 
 完整说明：<a href="authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。
 
@@ -172,7 +172,7 @@ curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ip
 
 > **重要**
 >
-> **生成用户名要整段粘贴**，手改可能导致地区错误或认证失败。
+> **生成用户名必须整段粘贴**，手改可能导致地区错误或认证失败。
 
 ### 4. 复制代理信息
 
@@ -186,12 +186,12 @@ http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 | --- | --- |
 | 主机 `gate.joyproxy.com` | 不要自编「某国专用主机」 |
 | 端口 `9001` | 不要混用静态线的 `*.edge.joyproxy.com` 端口 |
-| 完整生成用户名 | 不要用用户与白名单里的短用户名 |
+| 完整生成用户名 | 不要用 Users & Whitelist 里的短用户名 |
 | Username/Password 里的密码 | 不要用网站登录密码 |
 
 ### 5. 确认出口 IP
 
-用 [发一条测试请求](#发一条测试请求) 里的示例跑一遍。看到**代理出口 IP** 后，就可以接到爬虫、浏览器或其它工具。
+用 [发一条测试请求](#发一条测试请求) 里的示例跑一遍。看到**代理出口 IP** 后，即可接到爬虫、浏览器或其它工具。
 
 ## 接到你的工具链
 
@@ -205,20 +205,20 @@ http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 
 ## 查看剩余流量
 
-在住宅 / 移动 / 商业控制台打开 **Usage** 标签页。流量见底时在 <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">购买 → 轮换</a> 续购即可，**不用**每次换用户名。
+在住宅 / 移动 / 商业控制台打开 **Usage** 标签页。流量见底时在 <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">购买 → 轮换</a> 续购即可，**不必**每次换用户名。
 
 ## 常见问题
 
 | 现象 | 先查什么 |
 | --- | --- |
-| **407** Proxy Authentication Required | 密码来自用户与白名单 → Username/Password；用户名是**生成的那串**，不是邮箱或短 User/Pass 名 |
+| **407** Proxy Authentication Required | 密码来自 Users & Whitelist → Username/Password；用户名是**生成的那串**，不是邮箱或短 User/Pass 名 |
 | 超时 | 主机 `gate.joyproxy.com`、端口 `9001`；有防火墙时可先试 HTTP 再试 SOCKS5 |
 | 国家不对 | 在端点生成里**重新生成**用户名，不要手改旧串 |
 | 订单无效 / 没流量 | <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> 或 Usage 里的剩余 GB |
 
-还是搞不定？<a href="../../support/live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a>（curl 请打码，**不要发真实密码**）。
+仍解决不了？<a href="../../support/live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a>（请打码 curl，**勿发真实密码**）。
 
-## 相关文档
+## 接下来读什么
 
 | 任务 | 页面 |
 | --- | --- |
@@ -229,5 +229,5 @@ http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 | 几分钟内固定同一 IP | <a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">粘性会话</a> |
 | 更多语言示例 | <a href="code-examples.md" target="_blank" rel="noopener noreferrer">代码示例</a> |
 | HTTP 与 SOCKS5 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> |
-| 407 / 403 等 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">状态码</a> |
+| 407 / 403 等 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a> |
 | Chrome、Windows、RPA | <a href="apps-and-browsers.md" target="_blank" rel="noopener noreferrer">在应用与浏览器中使用</a> |

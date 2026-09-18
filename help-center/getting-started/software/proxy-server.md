@@ -1,10 +1,10 @@
 # 代理服务器
 
-**joyproxy-server** 是开源 **HTTP/SOCKS5 网关**（Linux / Windows）。放在 VPS 或办公室 PC 上，让只认 `127.0.0.1:端口` 的工具也能走 JoyProxy 云端线路。
+**joyproxy-server** 是开源 **HTTP/SOCKS5 网关**（Linux / Windows）。放在 VPS 或办公室 PC 上，让只认 `127.0.0.1:端口` 的工具也能用上 JoyProxy 云端线路。
 
 <a href="https://www.joyproxy.com/products/proxy-server.html" target="_blank" rel="noopener noreferrer">产品页</a> · <a href="https://github.com/joyproxy/joyproxy-server/releases/latest" target="_blank" rel="noopener noreferrer">Releases</a>
 
-## 典型用法
+## 典型架构
 
 1. **云端上游** — 转发到轮换 `gate.joyproxy.com:9001`，或 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> 的静态/定制 host:port。
 2. **团队入口** — 开发机统一指向你的服务器，你在一处轮换上游。
@@ -24,4 +24,4 @@
 | 本机端口给多 CLI | **代理服务器** |
 | 手机 App | <a href="android-client.md" target="_blank" rel="noopener noreferrer">Android 客户端</a> |
 
-程序**免费**；JoyProxy **云端流量**仍按订单在控制台计费。
+程序**免费**；JoyProxy **云端流量**仍按订单计费。

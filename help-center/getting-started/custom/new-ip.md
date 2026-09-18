@@ -1,15 +1,13 @@
-# 更换 IP（New IP）
+# 更换 IP
 
 **New IP** 更换定制端口的**出口 IP**，<a href="assign-region.md" target="_blank" rel="noopener noreferrer">已分配</a> 的地区不变；`host:port` 不变。
 
 ## 在「我的代理」操作
 
-| 步骤 | 操作 |
-| --- | --- |
-| 1 | 登录 → <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a> → Custom |
-| 2 | 在该端口点 **New IP** |
-| 3 | 阅读向导 → **Replace exit IP** |
-| 4 | 保持页面打开，等待约 1 分钟进度（有时需再等 1 分钟）。线路短暂中断后新出口生效，通常 **1–2 分钟** |
+1. 登录 → <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> → Custom。
+2. 在该端口点 **New IP**。
+3. 阅读向导 → **Replace exit IP**。
+4. 保持页面打开，等待约 1 分钟进度（有时需再等 1 分钟）。线路短暂中断后新出口生效，通常 **1–2 分钟**。
 
 继续用端点生成页**同一 host:port**。
 
