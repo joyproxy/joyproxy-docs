@@ -1,8 +1,8 @@
 # 静态代理
 
-静态代理在套餐有效期内给你**固定的 host 与端口**。客户端始终连这个 `host:port`，直到订单到期。出口 IP 变了可以在「我的代理」里用 **New IP** 更换；**购买时选的国家/地区不变**。
+套餐有效期内，你会拿到**固定的 host 和端口**。客户端一直连这个 `host:port`，直到订单到期。出口 IP 要换时，打开 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>，用 **更换 IP（New IP）**；**下单时选的国家/地区不变**。
 
-适用于 **住宅**、**商业 / ISP**、**数据中心**。
+住宅、商业 / ISP、数据中心都能买静态。
 
 ## 和轮换的区别
 
@@ -15,7 +15,7 @@
 
 > **重要**
 >
-> 请连接**端点生成页给出的 host 与 port**，不要拿订单卡片上的 **Exit IP** 当代理地址。Exit IP 是网站看到的出口；host:port 才是 JoyProxy 入口。
+> 连 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成（Endpoints）</a> 给出的 **host 和 port**，别把订单卡片上的 **Exit IP** 当代理地址。Exit IP 是目标站看到的出口；`host:port` 才是 JoyProxy 入口。
 
 ## 本章目录
 
@@ -38,7 +38,7 @@
 curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
 ```
 
-若本机 IP 已在白名单，多数客户端可省略 `USER:PASS`。
+本机 IP 已在白名单时，多数客户端可以省略 `USER:PASS`。
 
 ## 产品页
 

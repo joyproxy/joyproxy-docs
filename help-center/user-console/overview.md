@@ -1,18 +1,18 @@
 # 控制台概览
 
-**概览**页面是登录后的主页，汇总钱包余额、生效产品与进入购买、支持的快捷入口。
+登录后默认打开**概览**，集中展示钱包余额、生效产品与常用入口（购买、文档等）。
 
 **URL：** <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">admin-overview</a>
 
-## 常见内容
+## 页面上常见内容
 
-- **账户余额** — 用于代理套餐与抓取积分的资金
-- **生效订单** — 轮换流量、静态线路、定制端口或抓取余额的快捷状态
-- **快捷方式** — 购买、端点工具、文档链接
+- **账户余额** — 用于购买代理套餐与抓取积分
+- **生效订单** — 轮换流量、静态线路、定制端口或抓取余额的简要状态
+- **快捷入口** — 购买、端点工具、文档链接
 
-具体组件随产品迭代可能变化；各产品权威细节请使用左侧导航。
+界面会随产品迭代调整；各产品细节以左侧导航对应页面为准。
 
-## 常见下一步
+## 常用去向
 
 | 目标 | 前往 |
 | --- | --- |
@@ -22,4 +22,4 @@
 | 查看付款 | <a href="invoices.md" target="_blank" rel="noopener noreferrer">交易</a> |
 | 获取帮助 | <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">支持</a> |
 
-住宅、移动等产品专属页签说明见<a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">用户控制台代理分区</a>。
+住宅、移动等产品在控制台里的页签说明，见<a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">用户控制台代理分区</a>。

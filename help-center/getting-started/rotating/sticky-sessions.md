@@ -1,40 +1,42 @@
 # 粘性会话
 
-**粘性会话**在限定时间内保持同一出口 IP，使登录、购物车与多步表单停留在同一地址。计时结束或生成 **Rotating session** 用户名后，下次请求可使用新 IP。
+**Sticky session** 会在一段时间内尽量固定同一出口 IP，登录、购物车和多步表单不容易中途换地址。时间到了，或者你生成的是 **Rotating session** 用户名，下一次请求就可能换 IP。
 
-## 在 Endpoints 选择模式
+## 在端点生成里选模式
 
-| 生成器中的模式 | 行为 |
+| 生成器里的模式 | 行为 |
 | --- | --- |
-| **Rotating session** | 每次连接可使用新出口 IP。适合广泛采集。 |
-| **Sticky session**（1–30 分钟） | 复用**同一生成用户名**的请求在该窗口内保持 IP。 |
+| **Rotating session** | 每次连接可以用新出口 IP，适合大面积采集 |
+| **Sticky session**（1–30 分钟） | 同一条生成用户名，在窗口内尽量保持同一 IP |
 
-1. 打开 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> → **Rotating**。
-2. 设置 **Session type**。粘性时使用滑块（**1–30 分钟**）。
-3. 生成。用户名**已包含**会话策略 — 多数客户端无需额外标志。
+| 步骤 | 操作 |
+| --- | --- |
+| 1 | 打开 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成（Endpoints）</a> → **Rotating** |
+| 2 | 设 **Session type**；选粘性时用滑块（**1–30 分钟**） |
+| 3 | 点生成。会话策略已经写在用户名里，多数客户端不用再加参数 |
 
-## 用户名有效期 vs IP 保持时长
+## 用户名有效期 vs IP 保持多久
 
 | 概念 | 行为 |
 | --- | --- |
-| 生成用户名 | **流量套餐**有 GB 时有效 |
-| 粘性窗口 | 仅该用户名**保持单一出口 IP**的时长 |
+| 生成用户名 | 流量套餐还有 GB 就一直能用 |
+| 粘性窗口 | 这条用户名**尽量固定单一出口 IP** 的时长 |
 
-粘性过期后仍可使用同一用户名；下一窗口网关可能分配新 IP。刷新会话无需新购套餐。
+粘性窗口过了，用户名还能用，只是下一窗口网关可能换 IP。不用为了「刷新会话」再买套餐。
 
-自动化提取时设置粘性长度请用 Endpoints **API URL** 的 `duration` 查询参数 — 见 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>。
+API 批量提取时要设粘性时长，用端点生成 **API URL** 的 `duration` 查询参数——见 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>。
 
-## 何时用粘性 vs 轮换会话
+## 什么时候用粘性、什么时候轮换
 
-| 工作流 | 会话模式 |
+| 场景 | 建议 |
 | --- | --- |
 | 列表页、搜索、比价 | Rotating session |
-| 登录后带认证爬取 | Sticky session（常 5–15 分钟） |
-| 浏览器中单账号 QA | 粘性，或需数天时购买<a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态</a> |
+| 登录后带 Cookie 继续爬 | Sticky session（常见 5–15 分钟） |
+| 浏览器里单账号 QA | 粘性；要固定好几天就买 <a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态</a> |
 
 > **提示**
 >
-> 粘性为**分钟级**，非数周。若需计划期内固定的 host:port，请购买<a href="../static/purchase.md" target="_blank" rel="noopener noreferrer">静态</a>或<a href="../custom/purchase.md" target="_blank" rel="noopener noreferrer">定制</a>。
+> 粘性是**分钟级**，不是几周。计划期内要固定 `host:port`，买 <a href="../static/purchase.md" target="_blank" rel="noopener noreferrer">静态</a> 或 <a href="../custom/purchase.md" target="_blank" rel="noopener noreferrer">定制</a>。
 
 ## 下一步
 

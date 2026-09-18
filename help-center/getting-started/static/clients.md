@@ -4,7 +4,7 @@
 
 ## 仅浏览器
 
-<a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">JoyProxy 浏览器扩展</a> — 粘贴 `http://USER:PASS@HOST:PORT`，测试后应用。其它程序仍走直连。
+<a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">JoyProxy 浏览器扩展</a> — 粘贴 `http://USER:PASS@HOST:PORT`，测试后保存。其它程序仍走直连。
 
 ## Windows 上的 Chrome / Edge（系统代理）
 

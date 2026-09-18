@@ -1,6 +1,6 @@
 # 浏览器扩展
 
-JoyProxy **浏览器扩展**只给**一个 Chromium 内核浏览器**（Chrome、Edge、Brave 等）设代理，不改系统设置 — 适合手工 QA、账号检查、看地域效果。
+JoyProxy **浏览器扩展**只给**一个 Chromium 内核浏览器**（Chrome、Edge、Brave 等）设代理，不改系统设置。适合手工 QA、账号检查、看地域效果。
 
 <a href="https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng" target="_blank" rel="noopener noreferrer">Chrome 网上应用店</a> · <a href="https://www.joyproxy.com/products/browser-extension.html" target="_blank" rel="noopener noreferrer">产品页</a>
 

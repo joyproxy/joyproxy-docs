@@ -1,8 +1,8 @@
 # 代码示例（静态）
 
-请使用**端点生成页的 host 与 port**。下面用 `user`、`pass`、`us-ca.edge.joyproxy.com`、`10001` 作占位，请换成你的分配。
+用**端点生成页的 host 和 port**。下面用 `user`、`pass`、`us-ca.edge.joyproxy.com`、`10001` 作占位，换成你的分配。
 
-白名单服务器可从 URL 中去掉 `user:pass@`。
+白名单服务器可以从 URL 中去掉 `user:pass@`。
 
 ## Python
 
