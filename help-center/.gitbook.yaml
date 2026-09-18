@@ -50,3 +50,39 @@ redirects:
   submit-ticket: support/ticket.md
   terms-privacy: support/terms.md
   tester-soft: software/tester.md
+  2.-getting-started/browser-extension: getting-started/browser-extension.md
+  2.-getting-started/custom-proxy: getting-started/custom-proxy.md
+  2.-getting-started/proxy-android-client: getting-started/proxy-android-client.md
+  2.-getting-started/proxy-server: getting-started/proxy-server.md
+  2.-getting-started/proxy-tester: getting-started/proxy-tester.md
+  2.-getting-started/rotating-proxy: getting-started/rotating-proxy.md
+  2.-getting-started/static-proxy: getting-started/static-proxy.md
+  2.-getting-started/web-scraping-api: getting-started/web-scraping-api.md
+  3.-best-practices/chrome-static-proxy: best-practices/chrome-static-proxy.md
+  3.-best-practices/integrate-proxies-in-ai: best-practices/integrate-proxies-in-ai.md
+  3.-best-practices/mobile-static-proxy: best-practices/mobile-static-proxy.md
+  3.-best-practices/third-party-static-proxies: best-practices/third-party-static-proxies.md
+  3.-best-practices/windows-11-system-proxy: best-practices/windows-11-system-proxy.md
+  4.-user-console/business-isp-proxies: user-console/business-isp-proxies.md
+  4.-user-console/change-password: user-console/change-password.md
+  4.-user-console/datacenter-proxies: user-console/datacenter-proxies.md
+  4.-user-console/delete-account: user-console/delete-account.md
+  4.-user-console/email-activation: user-console/email-activation.md
+  4.-user-console/forgot-password: user-console/forgot-password.md
+  4.-user-console/idle-sign-out: user-console/idle-sign-out.md
+  4.-user-console/interface-language: user-console/interface-language.md
+  4.-user-console/invoices: user-console/invoices.md
+  4.-user-console/login: user-console/login.md
+  4.-user-console/mobile-proxies: user-console/mobile-proxies.md
+  4.-user-console/overview: user-console/overview.md
+  4.-user-console/register: user-console/register.md
+  4.-user-console/residential-proxies: user-console/residential-proxies.md
+  4.-user-console/rotate-token: user-console/rotate-token.md
+  4.-user-console/web-scraping-api: user-console/web-scraping-api.md
+  5.-integration/integrate-proxies-in-ai: integration/integrate-proxies-in-ai.md
+  5.-integration/openapi-center: integration/openapi-center.md
+  6.-service-and-support/live-chat: support/live-chat.md
+  6.-service-and-support/proxy-locations: support/proxy-locations.md
+  6.-service-and-support/proxy-pricing: support/proxy-pricing.md
+  6.-service-and-support/tickets: support/tickets.md
+  7.-faq: faq/README.md

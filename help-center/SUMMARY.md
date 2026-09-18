@@ -2,7 +2,7 @@
 
 * [Overview](README.md)
 
-## 2. Getting started
+## Getting started
 
 * [Rotating proxy (Residential, Mobile, Business / ISP)](getting-started/rotating-proxy.md)
 * [Static proxy (Residential, Business / ISP, Datacenter)](getting-started/static-proxy.md)
@@ -13,7 +13,7 @@
 * [Proxy Server](getting-started/proxy-server.md)
 * [Proxy Android client](getting-started/proxy-android-client.md)
 
-## 3. Best practices
+## Best practices
 
 * [Integrate proxies in AI](best-practices/integrate-proxies-in-ai.md)
 * [Third-party software with static proxies](best-practices/third-party-static-proxies.md)
@@ -21,7 +21,7 @@
 * [Chrome static proxy](best-practices/chrome-static-proxy.md)
 * [Mobile static proxy](best-practices/mobile-static-proxy.md)
 
-## 4. User console
+## User console
 
 * [Register](user-console/register.md)
 * [Email activation](user-console/email-activation.md)
@@ -40,18 +40,18 @@
 * [Datacenter proxies](user-console/datacenter-proxies.md)
 * [Web Scraping API (console)](user-console/web-scraping-api.md)
 
-## 5. Integration
+## Integration
 
 * [Integrate proxies in AI](integration/integrate-proxies-in-ai.md)
 * [OpenAPI Center](integration/openapi-center.md)
 
-## 6. Service & support
+## Service & support
 
 * [Live chat](support/live-chat.md)
 * [Ticket system](support/tickets.md)
 * [Proxy locations](support/proxy-locations.md)
 * [Proxy pricing](support/proxy-pricing.md)
 
-## 7. FAQ
+## FAQ
 
 * [Frequently asked questions](faq/README.md)
