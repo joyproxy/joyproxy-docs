@@ -4,7 +4,7 @@
 
 ## 入门
 
-* [轮换代理](ru-men/rotating/README.md)
+* [动态代理](ru-men/rotating/README.md)
   * [快速开始](ru-men/rotating/quick-start.md)
   * [选择网络并购买流量](ru-men/rotating/purchase.md)
   * [自动购买流量](ru-men/rotating/auto-buy-traffic.md)
@@ -19,7 +19,7 @@
   * [受限目标](ru-men/rotating/restricted-targets.md)
   * [响应码](ru-men/rotating/response-codes.md)
   * [用量与订单](ru-men/rotating/usage-and-orders.md)
-* [静态代理](ru-men/static/README.md)
+* [静态独享代理](ru-men/static/README.md)
   * [快速开始](ru-men/static/quick-start.md)
   * [购买独享线路](ru-men/static/purchase.md)
   * [自动续费](ru-men/static/auto-renew.md)
@@ -32,7 +32,7 @@
   * [协议](ru-men/static/protocols.md)
   * [受限目标](ru-men/static/restricted-targets.md)
   * [响应码](ru-men/static/response-codes.md)
-* [定制代理](ru-men/custom/README.md)
+* [自定义独享代理](ru-men/custom/README.md)
   * [快速开始](ru-men/custom/quick-start.md)
   * [购买端口](ru-men/custom/purchase.md)
   * [自动续费](ru-men/custom/auto-renew.md)
