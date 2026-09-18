@@ -1,50 +1,50 @@
-# Generate endpoints
+# 生成端点
 
-Rotating always uses **one gateway**. Generation creates a **username** (and shows the password you already stored). You can generate as often as you like while the traffic pack is active.
+轮换始终使用**同一网关**。生成会创建**用户名**（并显示您已保存的密码）。套餐生效期间可随意生成。
 
-Authentication first: <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
+先完成认证：<a href="authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。
 
-## Connection constants
+## 连接常量
 
-| Field | Always |
+| 字段 | 始终为 |
 | --- | --- |
-| Host | `gate.joyproxy.com` |
-| Port | `9001` |
-| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. See <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>. |
+| 主机 | `gate.joyproxy.com` |
+| 端口 | `9001` |
+| 协议 | HTTP 与 SOCKS5。任一协议均可打开 **HTTPS 网站**。见 <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a>。 |
 
-## Web generator
+## 网页生成器
 
-1. Open <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> or the **Endpoints** tab on your network console.
-2. Select **Rotating** and the order / network you paid for (Residential, Mobile, or Business).
-3. **Output format** — Endpoint:port, HTTP, or SOCKS5. Host and port stay `gate.joyproxy.com:9001`. Details: <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>.
-4. **Location** — country, then optionally state / city. See <a href="location-targeting.md" target="_blank" rel="noopener noreferrer">Location targeting</a>.
-5. **Session type** — **Sticky session** (1–30 minutes) or **Rotating session**. See <a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">Sticky sessions</a>.
-6. Set how many lines to create → **Generate**.
-7. Copy **Host**, **Port**, **Username**, and **Password**, or the full example string.
+1. 打开<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成/提取中心</a>或网络控制台的 **Endpoints** 页签。
+2. 选择 **Rotating** 与已付款的订单/网络（住宅、移动或商业）。
+3. **Output format** — Endpoint:port、HTTP 或 SOCKS5。主机与端口保持 `gate.joyproxy.com:9001`。详情：<a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a>。
+4. **Location** — 国家，可选州/省与城市。见 <a href="location-targeting.md" target="_blank" rel="noopener noreferrer">地域定向</a>。
+5. **Session type** — **Sticky session**（1–30 分钟）或 **Rotating session**。见 <a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">粘性会话</a>。
+6. 设置生成行数 → **Generate**。
+7. 复制 **Host**、**Port**、**Username**、**Password** 或完整示例字符串。
 
-The username stays valid while you have traffic. Sticky time only controls how long each session holds an exit IP — it does not expire the username.
+有流量时用户名持续有效。粘性时间仅控制每个会话保持出口 IP 的时长 — 不会使用户名过期。
 
-> **Important**
+> **重要**
 >
-> Paste the username **exactly**. It encodes targeting and session. Editing it can send you to the wrong region or fail authentication.
+> 请**原样**粘贴用户名。其中编码定向与会话。修改可能导致错误地域或认证失败。
 
-### Copy the list
+### 复制列表
 
-- Copy a single row, or copy **Host / Port / Username / Password** one field at a time for tools that use four boxes.
-- Copy the full URI when the client accepts `http://user:pass@host:port`.
-- Generate as many lines as you need for workers. Each line is another username against the same gateway.
+- 复制单行，或按字段复制 **Host / Port / Username / Password** 以适配四格表单工具。
+- 客户端支持 `http://user:pass@host:port` 时复制完整 URI。
+- 可为 worker 生成多行。每行是同一网关上的另一个用户名。
 
 ```text
 http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 ```
 
-The Endpoints page also shows language snippets (cURL, Python, and others) built from the same selection. Paste one into your environment to confirm the IP before you wire production.
+Endpoints 页亦显示基于相同选择的语言片段（cURL、Python 等）。上线前粘贴一条到环境确认 IP。
 
-To generate lines with HTTP instead of only the web UI, use the **API URL** on the same page and the reference in <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+若用 HTTP 而非仅网页 UI 生成行，请使用同页的 **API URL** 与 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> 参考。
 
-## Next
+## 下一步
 
-- Target a country or city: <a href="location-targeting.md" target="_blank" rel="noopener noreferrer">Location targeting</a>
-- Keep an IP for a login flow: <a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">Sticky sessions</a>
-- Prove the line works: <a href="first-request.md" target="_blank" rel="noopener noreferrer">First request</a>
+- 定向国家或城市：<a href="location-targeting.md" target="_blank" rel="noopener noreferrer">地域定向</a>
+- 登录流程保持同一 IP：<a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">粘性会话</a>
+- 验证线路：<a href="first-request.md" target="_blank" rel="noopener noreferrer">首次请求</a>

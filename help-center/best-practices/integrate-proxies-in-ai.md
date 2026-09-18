@@ -1,55 +1,55 @@
-# Integrate proxies in AI
+# 在 AI 中集成代理
 
-AI assistants and IDE agents can **generate JoyProxy endpoints**, check balance, and draft integration code—but they still need the same credentials and tokens you use in production. This guide maps common AI workflows to JoyProxy products.
+AI 助手与 IDE Agent 可以**生成 JoyProxy 端点**、查询余额并起草集成代码——但仍需与生产环境相同的凭据与 Token。本指南将常见 AI 工作流映射到 JoyProxy 产品。
 
-## Choose the right JoyProxy surface
+## 选择合适的 JoyProxy 入口
 
-| Goal | Use |
+| 目标 | 使用 |
 | --- | --- |
-| Natural language in OpenClaw | <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill</a> + AI Access Token |
-| Cursor, VS Code, Claude Desktop tools | <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">AI MCP</a> |
-| Billing / setup questions 24/7 | <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant</a> |
-| Production HTTP calls | Generated endpoints + <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> |
+| OpenClaw 自然语言 | <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill</a> + AI Access Token |
+| Cursor、VS Code、Claude Desktop 工具 | <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">AI MCP</a> |
+| 24/7 账单/配置问题 | <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant</a> |
+| 生产 HTTP 调用 | 生成的端点 + <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> |
 
-## Tokens you should know
+## 应了解的 Token
 
-| Token | Purpose |
+| Token | 用途 |
 | --- | --- |
-| **AI Access Token** | OpenClaw Skill and AI MCP tool calls |
-| Extract **API URL** | Endpoint generator — copy from Endpoints |
-| **Master User Token** | Order and balance APIs |
-| **Scraping API Token** | Web Scraping API |
+| **AI Access Token** | OpenClaw Skill 与 AI MCP 工具调用 |
+| 提取 **API URL** | 端点生成器 — 从 Endpoints 复制 |
+| **Master User Token** | 订单与余额 API |
+| **Scraping API Token** | 网页抓取 API |
 
-Full mapping: <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+完整映射：<a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>。
 
-Copy the AI Access Token from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai" target="_blank" rel="noopener noreferrer">AI endpoint generator</a>. Rotate it there if it appears in chat logs.
+在 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai" target="_blank" rel="noopener noreferrer">AI 端点生成器</a> 复制 AI Access Token。若出现在聊天记录中请在该处轮换。
 
-> **Important**
+> **重要**
 >
-> AI Access Tokens drive **management tools**, not the rotating gateway socket itself. For rotating traffic, connect with the **generated username** and your **Users & Whitelist password**—the same as in <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">Rotating proxy</a>.
+> AI Access Token 驱动**管理工具**，而非轮换网关套接字本身。轮换流量请用**生成的用户名**与 **Users & Whitelist 密码**连接——与<a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">轮换代理</a>相同。
 
-## Scenario: spin up rotating residential from an IDE
+## 场景：在 IDE 中启动住宅轮换
 
-1. Purchase Residential rotating traffic if you have not already.
-2. Create username/password in <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a>.
-3. Install **AI MCP** using the JSON template on the <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">product page</a>; paste your AI Access Token.
-4. Ask the agent to generate endpoints for a country (e.g. “US sticky 10 minutes”).
-5. Paste the returned `gate.joyproxy.com:9001` string into your script or <a href="../getting-started/software/proxy-tester.md" target="_blank" rel="noopener noreferrer">Proxy Tester</a>.
+1. 若尚未购买，请购买住宅轮换流量。
+2. 在 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> 创建用户名/密码。
+3. 使用 <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">产品页</a> JSON 模板安装 **AI MCP**；粘贴 AI Access Token。
+4. 让 Agent 为某国家生成端点（例如「美国粘性 10 分钟」）。
+5. 将返回的 `gate.joyproxy.com:9001` 字符串粘贴到脚本或<a href="../getting-started/software/proxy-tester.md" target="_blank" rel="noopener noreferrer">代理测试器</a>。
 
-## Scenario: OpenClaw operations team
+## 场景：OpenClaw 运营团队
 
-1. Follow the <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill</a> setup: teach the skill URL `https://api.joyproxy.com/Skill` with your AI Access Token.
-2. Use prompts on the product page to **generate lines** or **check remaining traffic**.
-3. Escalate to human support via <a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> for billing edge cases.
+1. 按 <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill</a> 配置：用 AI Access Token 配置 Skill URL `https://api.joyproxy.com/Skill`。
+2. 使用产品页提示**生成线路**或**查询剩余流量**。
+3. 账单边缘情况通过<a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a>升级人工。
 
-## Scenario: LLM pipeline that only needs HTML
+## 场景：仅需 HTML 的 LLM 流水线
 
-If the model consumes page text and you do not need raw proxies, evaluate <a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">Web Scraping API</a>—credits apply only on success and you skip gateway wiring entirely.
+若模型消费页面文本且不需要原始代理，可评估<a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">网页抓取 API</a>——积分仅在成功时扣费，且无需配置网关。
 
-## Security habits
+## 安全习惯
 
-- Never paste production passwords into public model threads; use environment variables in code the agent writes.
-- Prefer short-lived test credentials for demos.
-- Use separate API tokens for CI vs laptops.
+- 勿将生产密码粘贴到公开模型对话；在 Agent 编写的代码中使用环境变量。
+- 演示优先使用短期测试凭据。
+- CI 与笔记本使用不同 API Token。
 
-More detail: <a href="../integration/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">Integration → Integrate proxies in AI</a> · <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+更多细节：<a href="../integration/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">集成 → 在 AI 中集成代理</a> · <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>。

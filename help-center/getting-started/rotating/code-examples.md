@@ -1,8 +1,8 @@
-# Code examples (Rotating)
+# 代码示例（轮换）
 
-Replace `GENERATED_USER` with the username from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> and `YOUR_PASS` with the <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> Username/Password. Host and port stay `gate.joyproxy.com:9001`.
+将 `GENERATED_USER` 替换为 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> 的用户名，将 `YOUR_PASS` 替换为 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> Username/Password。主机与端口保持 `gate.joyproxy.com:9001`。
 
-Test URL `https://api.ipify.org` only prints your exit IP. Point the same proxy at your real target when this succeeds.
+测试 URL `https://api.ipify.org` 仅打印出口 IP。成功后将同一代理指向真实目标。
 
 {% tabs %}
 {% tab title="cURL" %}
@@ -111,16 +111,16 @@ Console.WriteLine(await client.GetStringAsync("https://api.ipify.org"));
 {% endtab %}
 {% endtabs %}
 
-SOCKS5 with cURL:
+cURL 使用 SOCKS5：
 
 ```bash
 curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
-## Extract usernames in bulk
+## 批量提取用户名
 
-Bulk export from Endpoints or <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>. Keep API URLs private; do not hard-code them in a public repo.
+从 Endpoints 或 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> 批量导出。API URL 请保密；勿写入公开仓库。
 
-## Next
+## 下一步
 
-<a href="apps-and-browsers.md" target="_blank" rel="noopener noreferrer">Use in apps and browsers</a> · <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>
+<a href="apps-and-browsers.md" target="_blank" rel="noopener noreferrer">在应用与浏览器中使用</a> · <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>

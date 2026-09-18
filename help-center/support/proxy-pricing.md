@@ -1,34 +1,34 @@
-# Proxy pricing
+# 代理定价
 
-JoyProxy publishes list pricing so you can model cost before integrating. Final checkout totals appear in the console with any active promotions or account credits applied.
+JoyProxy 公布标价，便于集成前估算成本。最终结账金额在控制台显示，并计入当前促销或账户赠金。
 
-## Official price lists
+## 官方价目
 
-| Product | Page |
+| 产品 | 页面 |
 | --- | --- |
-| All proxy networks | <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a> |
-| Business / ISP | <a href="https://www.joyproxy.com/pricing.html?network_type=business" target="_blank" rel="noopener noreferrer">Pricing (business)</a> |
-| Web Scraping API credits | <a href="https://www.joyproxy.com/pricing.html?network_type=smart-fetch" target="_blank" rel="noopener noreferrer">Pricing (smart-fetch)</a> |
+| 全部代理网络 | <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a> |
+| 商业 / ISP | <a href="https://www.joyproxy.com/pricing.html?network_type=business" target="_blank" rel="noopener noreferrer">定价（business）</a> |
+| 网页抓取 API 积分 | <a href="https://www.joyproxy.com/pricing.html?network_type=smart-fetch" target="_blank" rel="noopener noreferrer">定价（smart-fetch）</a> |
 
-## Billing models (summary)
+## 计费模式（摘要）
 
-| Mode | How you pay |
+| 模式 | 付费方式 |
 | --- | --- |
-| Rotating (Residential, Mobile, Business) | Traffic packages (GB) + validity window |
-| Static | Per IP for a chosen duration (day/week/month/year) |
-| Custom | Per port for a chosen duration |
-| Web Scraping API | Credit packs; spend per successful fetch |
+| 轮换（住宅、移动、商业） | 流量套餐（GB）+ 有效期 |
+| 静态 | 按 IP 与所选时长（日/周/月/年） |
+| 定制 | 按端口与所选时长 |
+| 网页抓取 API | 积分包；每次成功抓取消耗 |
 
-Rotating traffic deducts from your package as you use it. Static and custom run for the purchased period regardless of daily byte volume.
+轮换流量在使用时从套餐扣减。静态与定制在购买周期内有效，与每日字节量无关。
 
-## Credits and top-up
+## 赠金与充值
 
-- Pay in checkout: card, Apple Pay, Google Pay, PayPal, WeChat Pay, UPI, USDT (TRC20), or account balance
-- Apply **sign-up credit** on first orders when offered
-- Scraping credits **do not expire** after purchase
+- 结账支持：卡、Apple Pay、Google Pay、PayPal、微信支付、UPI、USDT（TRC20）或账户余额
+- 在提供选项时于首单使用**注册赠金**
+- 抓取积分购买后**不会过期**
 
-## Buy now
+## 立即购买
 
-<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase proxies</a> · <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">Buy scraping credits</a>
+<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a> · <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">购买抓取积分</a>
 
-Enterprise volume or multi-team needs? <a href="live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> can route you to the right pack size.
+企业批量或多团队需求？<a href="live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a>可协助选择合适套餐。

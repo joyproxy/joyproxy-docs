@@ -1,17 +1,17 @@
-# Buy scraping credits
+# 购买抓取积分
 
-Credits are purchased in the Web Scraping API console—separate from proxy GB packs.
+积分在**网页抓取 API 控制台**购买，与代理 GB 套餐分开。
 
-1. Sign in → <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">Web Scraping API → Buy</a>.
-2. Pick a preset pack (entry from **$5**) or a custom amount (**minimum 10K credits**).
-3. Pay in checkout: card, Apple Pay, Google Pay, PayPal, WeChat Pay, UPI, USDT (TRC20), or account balance.
-4. Credits appear immediately and **do not expire**.
-5. Larger balances raise **concurrency** limits—see the <a href="https://www.joyproxy.com/pricing.html?network_type=smart-fetch" target="_blank" rel="noopener noreferrer">pricing table</a>.
+1. 登录 → <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">网页抓取 API → 购买</a>。
+2. 选预设包（**$5** 起）或自定义数量（**最少 10K 积分**）。
+3. 结账：卡、Apple Pay、Google Pay、PayPal、微信、UPI、USDT 或余额。
+4. 积分即时到账，**不过期**。
+5. 余额越高，**并发**上限通常越高 — 见 <a href="https://www.joyproxy.com/pricing.html?network_type=smart-fetch" target="_blank" rel="noopener noreferrer">定价表</a>。
 
-> **Tip**
+> **提示**
 >
-> Apply the **$5 sign-up credit** toward your first scraping pack or proxy order when checkout offers it.
+> 结账时若出现 **$5 注册赠金**，可用于首包抓取积分或代理订单。
 
-## Next
+## 下一步
 
-<a href="token.md" target="_blank" rel="noopener noreferrer">Get your token</a>
+<a href="token.md" target="_blank" rel="noopener noreferrer">获取 Token</a>

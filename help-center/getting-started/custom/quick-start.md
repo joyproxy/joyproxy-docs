@@ -1,24 +1,24 @@
-# Quick start
+# 快速开始
 
-Custom ports are **dedicated `host:port` lines** you configure after purchase: assign a region, optionally set rotation, then generate endpoints like Static.
+定制端口是付款后配置的**独享 `host:port`**：先分配地区，可选定时轮换，再像静态一样生成端点。
 
-Already have ports assigned? Skip to [Send a test request](#send-a-test-request).
+端口已分配好？跳到 [发测试请求](#发测试请求)。
 
-Locked country at checkout instead: <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">Static quick start</a>. Shared gateway: <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">Rotating quick start</a>.
+下单即锁定国家？见 <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">静态快速开始</a>。共享网关见 <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">轮换快速开始</a>。
 
-## How you connect
+## 连接参数
 
-| Field | Value |
+| 字段 | 取值 |
 | --- | --- |
-| Host / port | From Endpoints after you assign region |
-| Auth | IP whitelist **and/or** the short credential username + password |
-| Geo | <a href="assign-region.md" target="_blank" rel="noopener noreferrer">Assign region</a> per port in My Proxies |
+| Host / port | 分配地区后在端点生成页获取 |
+| 认证 | IP 白名单 **和/或** 短用户名 + 密码 |
+| 地域 | 在「我的代理」<a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a> |
 
-Connect to the generated host:port, not the Exit IP on the order card.
+连生成的 host:port，不要连订单上的 Exit IP。
 
-## Send a test request
+## 发测试请求
 
-Replace `USER`, `PASS`, `HOST`, and `PORT`. Omit `USER:PASS@` if this machine is whitelisted.
+替换 `USER`、`PASS`、`HOST`、`PORT`。白名单机器可省略 `USER:PASS@`。
 
 ```bash
 curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
@@ -32,54 +32,54 @@ proxies = {"http": PROXY, "https": PROXY}
 print(requests.get("https://api.ipify.org", proxies=proxies, timeout=30).text)
 ```
 
-More languages: copy <a href="../static/code-examples.md" target="_blank" rel="noopener noreferrer">Static code examples</a> and swap in the Custom host:port.
+更多语言：复制 <a href="../static/code-examples.md" target="_blank" rel="noopener noreferrer">静态代码示例</a>，换成定制的 host:port。
 
-## Set up in the dashboard
+## 控制台配置
 
-> **Tip**
+> **提示**
 >
-> New accounts receive a **$5 sign-up credit**. Apply it on your first eligible pack at checkout.
+> 新账户可领 **$5 注册赠金**，首单可用。
 
-### 1. Buy ports
+### 1. 购买端口
 
-1. Open <a href="https://www.joyproxy.com/admin-purchase.html?tab=custom-ip" target="_blank" rel="noopener noreferrer">Purchase → Custom</a>.
-2. Select **Residential**, **Business / ISP**, or **Datacenter**.
-3. Choose validity, number of ports, and pay.
-4. Find units under <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies → Custom</a>.
+1. <a href="https://www.joyproxy.com/admin-purchase.html?tab=custom-ip" target="_blank" rel="noopener noreferrer">购买 → 定制</a>。
+2. 选网络类型。
+3. 选有效期、端口数量并付款。
+4. 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理 → Custom</a> 查看。
 
-Details: <a href="purchase.md" target="_blank" rel="noopener noreferrer">Buy ports</a>.
+详见 <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买端口</a>。
 
-### 2. Assign region
+### 2. 分配地区
 
-Assign country (then state / city when offered) **before** you generate endpoints. Rotation keeps new IPs inside that geo.
+生成端点**之前**先选国家（有则选省/市）。轮换出的 IP 不会跑出你分配的地域。
 
-Details: <a href="assign-region.md" target="_blank" rel="noopener noreferrer">Assign region</a>.
+详见 <a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a>。
 
-### 3. Set rotation (optional)
+### 3. 设置轮换（可选）
 
-Leave the IP until you refresh, or set a timer so the port picks a new exit on a schedule.
+可长期固定出口，也可设定时器按间隔换 IP。
 
-Details: <a href="rotation.md" target="_blank" rel="noopener noreferrer">Set rotation</a>.
+详见 <a href="rotation.md" target="_blank" rel="noopener noreferrer">设置轮换</a>。
 
-### 4. Authorize and generate
+### 4. 授权并生成
 
-1. Create Username/Password in <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> (IP whitelist is also available for dedicated ports).
-2. <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> → **Custom Proxies → Web generator**.
-3. Select the allocation → **Generate now** → copy host and port.
+1. 在 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a> 建 Username/Password（也可用 IP 白名单）。
+2. <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> → **Custom Proxies → Web generator**。
+3. 选分配 → **Generate now** → 复制 host、port。
 
-Details: <a href="authorize-and-generate.md" target="_blank" rel="noopener noreferrer">Authorize and generate</a>.
+详见 <a href="authorize-and-generate.md" target="_blank" rel="noopener noreferrer">授权与生成</a>。
 
-### 5. Confirm the IP
+### 5. 确认出口
 
-Run the curl above. When you see a public IP in the assigned region, the port is ready.
+跑上面的 curl，看到公网 IP 落在分配地区即可使用。
 
-## What to read next
+## 接下来
 
-| Task | Page |
+| 任务 | 页面 |
 | --- | --- |
-| Auto-renew | <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a> |
-| New IP | <a href="new-ip.md" target="_blank" rel="noopener noreferrer">New IP</a> |
-| First request and code | <a href="first-request.md" target="_blank" rel="noopener noreferrer">First request and code</a> |
-| HTTP vs SOCKS5 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> |
-| 407 / 403 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a> |
-| Auth methods | <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a> |
+| 自动续费 | <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a> |
+| 更换 IP | <a href="new-ip.md" target="_blank" rel="noopener noreferrer">更换 IP</a> |
+| 首次请求 | <a href="first-request.md" target="_blank" rel="noopener noreferrer">首次请求与代码</a> |
+| 协议 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> |
+| 407 / 403 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a> |
+| 认证说明 | <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a> |

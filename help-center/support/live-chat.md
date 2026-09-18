@@ -1,30 +1,30 @@
-# Live chat
+# 在线客服
 
-Reach JoyProxy support in real time for purchase advice, integration questions, and account issues.
+实时联系 JoyProxy 支持，获取购买建议、集成问题与账户协助。
 
-## From the console
+## 从控制台进入
 
-1. Sign in and open <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">Support</a>.
-2. Switch to the **Live Chat** tab.
-3. Describe your goal (product type, target region, error messages).
-4. Stay on the page until an agent joins—queue times vary by hour.
+1. 登录并打开<a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">支持</a>。
+2. 切换到 **Live Chat** 页签。
+3. 说明您的目标（产品类型、目标地域、错误信息）。
+4. 留在页面直至客服接入——排队时间因时段而异。
 
-## From the website
+## 从官网进入
 
-Use the **chat bubble** on <a href="https://www.joyproxy.com/" target="_blank" rel="noopener noreferrer">joyproxy.com</a> marketing pages or the <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant product page</a> when you want instant automated answers first.
+在 <a href="https://www.joyproxy.com/" target="_blank" rel="noopener noreferrer">joyproxy.com</a> 营销页使用**聊天气泡**，或先访问 <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant 产品页</a> 获取即时自动回答。
 
-## Get faster help
+## 更快获得帮助
 
-Include:
+请提供：
 
-- Account email (never your password)
-- Order ID or approximate purchase time
-- Endpoint type (rotating gateway vs static host)
-- Redacted screenshot of error text
+- 账户邮箱（切勿提供密码）
+- 订单 ID 或大致购买时间
+- 端点类型（轮换网关 vs 静态主机）
+- 已打码的错误截图
 
-For billing disputes attach transaction IDs from <a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">Transactions</a>.
+账单争议请附上<a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">交易</a>中的交易 ID。
 
-## Alternatives
+## 其他方式
 
-- Detailed technical paper trail: <a href="tickets.md" target="_blank" rel="noopener noreferrer">Ticket system</a>
-- Self-serve: this documentation and <a href="../faq/README.md" target="_blank" rel="noopener noreferrer">FAQ</a>
+- 需要详细技术留痕：<a href="tickets.md" target="_blank" rel="noopener noreferrer">工单系统</a>
+- 自助：本文档与 <a href="../faq/README.md" target="_blank" rel="noopener noreferrer">FAQ</a>

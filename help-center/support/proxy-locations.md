@@ -1,29 +1,29 @@
-# Proxy locations
+# 代理节点地域
 
-JoyProxy offers exits in many **countries and cities** across Residential, Mobile, Business / ISP, and Datacenter products. Exact availability depends on network, mode, and current pool inventory.
+JoyProxy 在住宅、移动、商业/ISP 与数据中心产品中提供多国**国家与城市**出口。具体可用性取决于网络、模式与当前池库存。
 
-## Where to see live availability
+## 查看实时可用性
 
-| Step | Location |
+| 步骤 | 位置 |
 | --- | --- |
-| Rotating geo in username | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> country/state/city pickers |
-| Static country at purchase | <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">Purchase → Static</a> search |
-| Custom per-port geo | <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies → Custom</a> → **Assign region** |
-| Scraping fetch geo | `geoCode` on Web Scraping API fetch — <a href="../getting-started/scraping-api/parameters.md" target="_blank" rel="noopener noreferrer">Parameters</a> |
+| 轮换用户名中的地域 | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> 国家/州/城市选择器 |
+| 静态购买时选国家 | <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">购买 → 静态</a> 搜索 |
+| 定制按端口地域 | <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies → 定制</a> → **Assign region** |
+| 抓取请求地域 | 网页抓取 API fetch 的 `geoCode` — <a href="../getting-started/scraping-api/parameters.md" target="_blank" rel="noopener noreferrer">参数</a> |
 
-Inventory updates as JoyProxy expands partnerships—if a region is greyed out at purchase, try a neighboring country or ask <a href="live-chat.md" target="_blank" rel="noopener noreferrer">sales via chat</a> about restock timing.
+库存随合作扩展而更新——若购买时某地区灰显，可尝试邻近国家或通过<a href="live-chat.md" target="_blank" rel="noopener noreferrer">在线客服联系销售</a>了解补货时间。
 
-## Choosing a region
+## 选择地区
 
-- **Residential rotating** — encode country (and finer geo) in the generated username.
-- **Static** — country is fixed at checkout; pick carefully for account registration flows.
-- **Mobile** — select mobile traffic for carrier-class exits in supported markets.
-- **Datacenter** — prioritize throughput; geo is still selectable where offered.
+- **住宅轮换** — 在生成的用户名中编码国家（及更细地域）。
+- **静态** — 结账时固定国家；注册类流程请谨慎选择。
+- **移动** — 选择移动流量以在支持市场获得运营商级出口。
+- **数据中心** — 优先吞吐；在提供处仍可选地域。
 
-## Web Scraping API
+## 网页抓取 API
 
-Use `geoCode` on fetch requests when you need a specific exit country without managing proxy strings. See <a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">Web Scraping API guide</a>.
+需要特定出口国家且不想管理代理字符串时，在 fetch 请求中使用 `geoCode`。见<a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">网页抓取 API 指南</a>。
 
-## Compliance reminder
+## 合规提醒
 
-Use JoyProxy only for lawful purposes described in the <a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">Terms</a>. You are responsible for how you apply geo targeting in your applications.
+仅按<a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">服务条款</a>所述合法用途使用 JoyProxy。您须对应用中地域定向的使用负责。

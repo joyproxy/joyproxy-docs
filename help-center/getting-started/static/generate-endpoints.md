@@ -1,24 +1,24 @@
-# Generate Static endpoints
+# 生成静态端点
 
-Each allocation has a stable **host** and **port** until the order expires.
+每个分配在订单到期前对应稳定的 **host** 与 **port**。
 
-## Web generator
+## 网页生成器
 
-1. Open <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a>.
-2. Choose **Static Proxies → Web generator**.
-3. Filter by order / allocation → **Generate now**.
-4. Copy host, port, and (if you use user/pass) credentials.
+1. 打开 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a>。
+2. **Static Proxies → Web generator**。
+3. 按订单/分配筛选 → **Generate now**。
+4. 复制 host、port（用账号密码时一并复制）。
 
-HTTP automation uses the **API URL** on the same page. Parameters and examples: <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+要用 HTTP 批量拉列表，复制同页的 **API URL**，参数与示例见 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>。
 
-## What you should copy
+## 该复制什么
 
-| Copy this | Skip this |
+| 要复制 | 不要误用 |
 | --- | --- |
-| Host (`*.edge.joyproxy.com` or as shown) | Exit IP on the order card |
-| Port | Dashboard login email |
-| User/pass **or** rely on whitelist | Random ports from old screenshots |
+| Host（`*.edge.joyproxy.com` 或页面所示） | 订单卡片上的 Exit IP |
+| Port | 控制台登录邮箱 |
+| 账号密码，或依赖白名单 | 旧截图里的随机端口 |
 
-## Next
+## 下一步
 
-<a href="first-request.md" target="_blank" rel="noopener noreferrer">First request</a>
+<a href="first-request.md" target="_blank" rel="noopener noreferrer">首次请求</a>

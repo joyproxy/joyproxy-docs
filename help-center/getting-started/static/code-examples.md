@@ -1,8 +1,8 @@
-# Code examples (Static)
+# 代码示例（静态）
 
-Use the **host and port from Endpoints**. Examples below use placeholders `user`, `pass`, `us-ca.edge.joyproxy.com`, and `10001`—replace them with your allocation.
+请使用**端点生成页的 host 与 port**。下面用 `user`、`pass`、`us-ca.edge.joyproxy.com`、`10001` 作占位，请换成你的分配。
 
-Whitelisted servers can drop `user:pass@` from the URL.
+白名单服务器可从 URL 中去掉 `user:pass@`。
 
 ## Python
 
@@ -82,4 +82,4 @@ const res = await fetch("https://api.ipify.org", { agent });
 console.log(await res.text());
 ```
 
-Bulk export: <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a> or <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+批量导出：<a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a> 或 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>。

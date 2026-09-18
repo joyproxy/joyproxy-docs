@@ -1,30 +1,30 @@
-# Auto-renew
+# 自动续费
 
-Custom ports are billed **per port for a duration**. Auto-renew charges **account balance** before expiry so the same ports stay yours. You can turn this off anytime.
+定制端口按 **端口 × 时长** 计费。自动续费在到期前从**账户余额**扣款，端口可继续使用，随时可关。
 
-Keep enough balance for the next period. Compare plans on <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>.
+请保持余额充足，套餐见 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>。
 
-## Turn it on
+## 如何开启
 
-1. Open <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> → Custom.
-2. Open **Auto-renew** on the order.
-3. Choose a **Renewal period**.
-4. Confirm the estimated amount (catalog price × port count) and next charge date, then **Enable auto-renew**.
+1. <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> → Custom。
+2. 在订单上打开 **Auto-renew**。
+3. 选择 **Renewal period**。
+4. 确认预估金额（目录价 × 端口数）与下次扣款日 → **Enable auto-renew**。
 
-If remaining time is already inside the lead window, the modal offers **Enable and charge now** — that extends validity immediately.
+若已进入提前扣款窗口，可选 **Enable and charge now** 立即续期。
 
-Charge timing matches Static: the modal shows **Next charge** and **Current expiry** (for example 12 hours before a daily plan, 2 days before weekly, 7 days before longer plans).
+扣款节奏与静态一致：弹窗显示 **Next charge**、**Current expiry**（例如日套餐提前 12 小时、周套餐提前 2 天、长周期提前 7 天）。
 
-After a successful charge, validity extends. Assigned region and `host:port` stay as you configured them.
+扣款成功后有效期延长，已分配地区与 `host:port` 配置保留。
 
-Paying a manual renew while auto-renew is on extends immediately; the next automatic charge follows the new expiry.
+手动续费与自动续费可同时存在：手动续会立刻延长，下次自动扣款按新到期日算。
 
-## Turn it off
+## 如何关闭
 
-Use **Turn off auto-renew**. The order stays active until the current expiry.
+**Turn off auto-renew**。当前周期内仍可用至原到期时间。
 
-Same control on Static: <a href="../static/auto-renew.md" target="_blank" rel="noopener noreferrer">Static auto-renew</a>.
+静态侧说明：<a href="../static/auto-renew.md" target="_blank" rel="noopener noreferrer">静态自动续费</a>。
 
-## Next
+## 下一步
 
-<a href="assign-region.md" target="_blank" rel="noopener noreferrer">Assign region</a>
+<a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a>

@@ -1,40 +1,40 @@
-# Location targeting
+# 地域定向
 
-On Rotating, geography is **not** a separate host. You select country (and optionally state and city) in <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a>, then JoyProxy **writes that choice into the generated username**.
+轮换上地域**不是**单独主机。在 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> 选择国家（可选州/省与城市），JoyProxy 将选择**写入生成用户名**。
 
-## Set geo in the web generator
+## 在网页生成器中设置地域
 
-1. Open **Endpoints → Rotating**.
-2. Choose **Country**.
-3. Optionally choose **State / Province**, then **City** when the list offers it (inventory varies by day).
-4. Generate and copy the username as-is.
+1. 打开 **Endpoints → Rotating**。
+2. 选择 **Country**。
+3. 可选 **State / Province**，再在列表提供时选 **City**（库存每日变化）。
+4. 生成并原样复制用户名。
 
-Every request that uses that username follows the targeting you selected. To change city, generate a **new** username—do not splice country codes into the old string by hand.
+使用该用户名的每次请求遵循所选定向。要改城市请**生成新**用户名 — 勿手工拼接国家代码到旧字符串。
 
-## Examples (after generation)
+## 示例（生成后）
 
-You still connect to `gate.joyproxy.com:9001`. Only the username changes:
+仍连接 `gate.joyproxy.com:9001`。仅用户名变化：
 
 ```bash
-# Username produced for a US exit (value comes from Endpoints — example shape only)
+# 美国出口对应的生成用户名（仅示例，以端点生成页为准）
 curl -x http://GENERATED_USER_US:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 
-# Username produced for a more specific city
+# 更细城市定向对应的生成用户名
 curl -x http://GENERATED_USER_CITY:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
-Confirm the exit with any IP-check URL you trust, or the same `api.ipify.org` call.
+用可信 IP 检测 URL 或同样的 `api.ipify.org` 调用确认出口。
 
-HTTP and SOCKS5 both use this same username. You do not switch host when you switch protocol. Either protocol can open HTTPS websites.
+HTTP 与 SOCKS5 使用相同用户名。切换协议时无需换主机。任一协议均可打开 HTTPS 网站。
 
-Automate the same country / state / city fields: <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> (Rotating endpoints and Geo reference).
+自动化相同国家/州/城市字段：<a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>（轮换端点与 Geo reference）。
 
-## Practical tips
+## 实用建议
 
-- Start with **country only** if you are validating connectivity; add city when the workflow needs a local storefront.
-- Sticky sessions (<a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">next page</a>) keep an IP **inside** that geo for the session length.
-- Static lines lock country at **purchase** instead. Custom lines assign geo **per port** in My Proxies. See <a href="../static/README.md" target="_blank" rel="noopener noreferrer">Static</a> and <a href="../custom/assign-region.md" target="_blank" rel="noopener noreferrer">Custom</a> if you need a dedicated host:port per region.
+- 验证连通性时先仅选**国家**；需要本地 storefront 时再加城市。
+- 粘性会话（<a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">下一页</a>）在会话时长内于该地域**保持** IP。
+- 静态线路在**购买**时锁定国家。定制在 My Proxies **按端口**分配地域。若需每地域专用 host:port 见 <a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态</a>与<a href="../custom/assign-region.md" target="_blank" rel="noopener noreferrer">定制</a>。
 
-## Next
+## 下一步
 
-<a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">Sticky sessions</a>
+<a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">粘性会话</a>

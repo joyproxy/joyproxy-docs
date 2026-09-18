@@ -1,16 +1,16 @@
-# Protocols
+# 协议
 
-Static uses the dedicated `host:port` from Endpoints. Proxy types are **HTTP** and **SOCKS5**. Either can open **HTTPS websites**.
+静态使用端点生成页给出的专用 `host:port`。支持 **HTTP** 与 **SOCKS5**，均可访问 **HTTPS 网站**。
 
 ```bash
 curl -x "http://USER:PASS@HOST:PORT" "https://api.ipify.org"
 curl -x "socks5h://USER:PASS@HOST:PORT" "https://api.ipify.org"
 ```
 
-`socks5h://` resolves the hostname on the proxy. If this machine is on the IP whitelist, omit `USER:PASS@`.
+`socks5h://` 表示由代理端解析域名。本机在 IP 白名单时可省略 `USER:PASS@`。
 
-Rotating uses the same two protocols on `gate.joyproxy.com:9001`. Full notes (Output format, UDP, extract `protocol` query): <a href="../rotating/protocols.md" target="_blank" rel="noopener noreferrer">Rotating → Protocols</a>.
+轮换在 `gate.joyproxy.com:9001` 上使用相同两种协议。输出格式、UDP、提取 API 的 `protocol` 等说明见 <a href="../rotating/protocols.md" target="_blank" rel="noopener noreferrer">轮换 → 协议</a>。
 
-## Next
+## 下一步
 
-<a href="clients.md" target="_blank" rel="noopener noreferrer">Windows, Chrome, and mobile</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>
+<a href="clients.md" target="_blank" rel="noopener noreferrer">Windows、Chrome 与手机</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>

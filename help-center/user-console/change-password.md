@@ -1,18 +1,18 @@
-# Change password
+# 修改密码
 
-Update your JoyProxy login password from the account area.
+在账户区域更新 JoyProxy 登录密码。
 
-## Steps
+## 步骤
 
-1. Sign in and open <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a>.
-2. Locate **Change password** (under security or profile).
-3. Enter your **current password**.
-4. Enter a **new password** (6+ characters) and confirm it.
-5. Click **Save changes**.
+1. 登录并打开<a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">账户设置</a>。
+2. 找到 **Change password**（在安全或资料下）。
+3. 输入**当前密码**。
+4. 输入**新密码**（6 位以上）并确认。
+5. 点击 **Save changes**。
 
-## After saving
+## 保存之后
 
-- Sign in again on other browsers or devices.
-- Update automation that mistakenly stored your login password (prefer the Endpoints **API URL** for extract scripts—see <a href="rotate-token.md" target="_blank" rel="noopener noreferrer">Rotate token</a>).
+- 在其他浏览器或设备上重新登录。
+- 更新误存登录密码的自动化（提取脚本请优先使用 Endpoints 的 **API URL**——参见<a href="rotate-token.md" target="_blank" rel="noopener noreferrer">轮换 Token</a>）。
 
-Forgot the current password? Use <a href="forgot-password.md" target="_blank" rel="noopener noreferrer">Forgot password</a> instead of this form.
+忘记当前密码？请使用<a href="forgot-password.md" target="_blank" rel="noopener noreferrer">忘记密码</a>，而非本表单。

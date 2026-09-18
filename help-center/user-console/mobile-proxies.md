@@ -1,35 +1,35 @@
-# Mobile proxies (console)
+# 移动代理（控制台）
 
-**Mobile** products deliver carrier (4G/5G) exits for app stores, mobile web, and ad verification. JoyProxy Mobile is offered in **Rotating** mode with per-GB billing.
+**移动**产品提供运营商（4G/5G）出口，用于应用商店、移动网页与广告验证。JoyProxy 移动仅提供**轮换**模式，按 GB 计费。
 
-<a href="https://www.joyproxy.com/products/proxy-mobile.html" target="_blank" rel="noopener noreferrer">Mobile product page</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
+<a href="https://www.joyproxy.com/products/proxy-mobile.html" target="_blank" rel="noopener noreferrer">移动产品页</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>
 
-## Buy
+## 购买
 
-1. <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">Purchase → Rotating</a>.
-2. Set network type to **Mobile**.
-3. Choose traffic package and pay.
+1. <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">购买 → 轮换</a>。
+2. 网络类型选 **Mobile**。
+3. 选择流量套餐并支付。
 
 ## My Proxies
 
-Monitor remaining GB and validity. Turn on <a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">Auto-buy traffic</a> so the next pack is bought from account balance when remaining GB hits your trigger.
+监控剩余 GB 与有效期。开启<a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a>，在剩余 GB 达到触发值时从账户余额购买下一包。
 
 ## Users & Whitelist
 
-Create username/password for the rotating gateway—the same rules as Residential rotating (<a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">Rotating proxy guide</a>).
+为轮换网关创建用户名/密码——规则与住宅轮换相同（<a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">轮换代理指南</a>）。
 
 ## Endpoints
 
-Generate usernames against `gate.joyproxy.com:9001`. Mobile orders appear in the same Endpoints UI; pick **Mobile** / your mobile order when filtering.
+针对 `gate.joyproxy.com:9001` 生成用户名。移动订单出现在同一 Endpoints UI；筛选时选择 **Mobile** / 您的移动订单。
 
-## Usage
+## 用量
 
-**Traffic** quota and **Orders** for Mobile Rotating. Details: <a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">Usage and orders</a>.
+移动轮换的**流量**配额与**订单**。详情：<a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">用量与订单</a>。
 
 ## API Center
 
-Automate extraction with the Endpoints **API URL** — <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+用 Endpoints **API URL** 自动化提取 — <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>。
 
-## On-device testing
+## 设备端测试
 
-Pair cloud mobile lines with the <a href="../getting-started/software/android-client.md" target="_blank" rel="noopener noreferrer">Android client</a> or Wi‑Fi proxy guides in <a href="../best-practices/mobile-static-proxy.md" target="_blank" rel="noopener noreferrer">Best practices</a> when you use static-style endpoints elsewhere.
+将云移动线路与 <a href="../getting-started/software/android-client.md" target="_blank" rel="noopener noreferrer">Android 客户端</a> 配合，或在其他场景使用静态式端点时参考<a href="../best-practices/mobile-static-proxy.md" target="_blank" rel="noopener noreferrer">最佳实践</a>中的 Wi‑Fi 代理指南。

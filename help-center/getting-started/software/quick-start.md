@@ -1,43 +1,43 @@
-# Quick start
+# 快速开始
 
-JoyProxy software sits **in front of** your cloud lines (or your own proxy). The apps are free; **traffic and scraping credits** are billed in the console.
+JoyProxy 软件放在云端线路（或自建代理）**前面**。应用本身免费；**流量与抓取积分**在控制台结算。
 
-Fastest path: install the **browser extension**, paste one line, test, apply. That only affects this Chromium browser.
+最快路径：装**浏览器扩展**，粘贴一行、测试、应用 — 只影响当前 Chromium 浏览器。
 
-## Pick a tool
+## 选哪个工具
 
-| You want | Tool | Then |
+| 需求 | 工具 | 接着看 |
 | --- | --- | --- |
-| Proxy this Chrome / Edge only | Browser Extension | Steps below |
-| Batch-check many HTTP / SOCKS lines | Proxy Tester | <a href="proxy-tester.md" target="_blank" rel="noopener noreferrer">Proxy Tester</a> |
-| A local `127.0.0.1` entry for a CLI | Proxy Server | <a href="proxy-server.md" target="_blank" rel="noopener noreferrer">Proxy Server</a> |
-| Per-app routing on a phone | Android client | <a href="android-client.md" target="_blank" rel="noopener noreferrer">Android client</a> |
+| 只代理本机 Chrome / Edge | 浏览器扩展 | 下文五步 |
+| 批量测很多 HTTP/SOCKS 线 | 代理检测工具 | <a href="proxy-tester.md" target="_blank" rel="noopener noreferrer">代理检测工具</a> |
+| 命令行只认 localhost | 代理服务器 | <a href="proxy-server.md" target="_blank" rel="noopener noreferrer">代理服务器</a> |
+| 手机按应用走代理 | Android 客户端 | <a href="android-client.md" target="_blank" rel="noopener noreferrer">Android 客户端</a> |
 
-You still need a working line from <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">Rotating</a>, <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">Static</a>, or <a href="../custom/quick-start.md" target="_blank" rel="noopener noreferrer">Custom</a>.
+仍需一条可用线路：<a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">轮换</a>、<a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">静态</a> 或 <a href="../custom/quick-start.md" target="_blank" rel="noopener noreferrer">定制</a>。
 
-## Five minutes with the extension
+## 五分钟：浏览器扩展
 
-1. Install from the <a href="https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng" target="_blank" rel="noopener noreferrer">Chrome Web Store</a> and pin **JoyProxy**.
-2. Paste a URI, or sign in to load purchases from <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>:
+1. 从 <a href="https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng" target="_blank" rel="noopener noreferrer">Chrome 网上应用店</a> 安装并固定 **JoyProxy**。
+2. 粘贴 URI，或登录后从 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> 加载：
 
 ```text
 http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 http://USER:PASS@HOST:PORT
 ```
 
-3. Run **Test**. Confirm the exit IP is not your home IP.
-4. Click **Apply**. System proxy stays unchanged.
+3. 点 **Test**，确认出口 IP 不是家里宽带 IP。
+4. 点 **Apply**。系统代理不会被改掉。
 
-Details: <a href="browser-extension.md" target="_blank" rel="noopener noreferrer">Browser extension</a>.
+详见 <a href="browser-extension.md" target="_blank" rel="noopener noreferrer">浏览器扩展</a>。
 
-## If a tool only accepts localhost
+## 工具只接受 localhost
 
-Run <a href="proxy-server.md" target="_blank" rel="noopener noreferrer">Proxy Server</a>, point its upstream at JoyProxy, then set the app to `127.0.0.1` and the local port.
+运行 <a href="proxy-server.md" target="_blank" rel="noopener noreferrer">代理服务器</a>，上游指向 JoyProxy，应用里填 `127.0.0.1` 与本地端口。
 
-## What to read next
+## 接下来
 
-| Task | Page |
+| 任务 | 页面 |
 | --- | --- |
-| Rotating gateway fields | <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">Rotating quick start</a> |
-| Dedicated host:port | <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">Static quick start</a> |
-| Windows / Chrome system proxy | <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Best practices</a> |
+| 轮换网关字段 | <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">轮换快速开始</a> |
+| 独享 host:port | <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">静态快速开始</a> |
+| Windows / Chrome 系统代理 | <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">最佳实践</a> |

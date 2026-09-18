@@ -1,41 +1,41 @@
-# Sticky sessions
+# 粘性会话
 
-A **sticky session** keeps the same exit IP for a limited time so logins, carts, and multi-step forms stay on one address. When the timer ends, or you generate a username with **Rotating session**, the next request can use a new IP.
+**粘性会话**在限定时间内保持同一出口 IP，使登录、购物车与多步表单停留在同一地址。计时结束或生成 **Rotating session** 用户名后，下次请求可使用新 IP。
 
-## Choose a mode in Endpoints
+## 在 Endpoints 选择模式
 
-| Mode in the generator | What happens |
+| 生成器中的模式 | 行为 |
 | --- | --- |
-| **Rotating session** | Each connection can take a new exit IP. Best for broad collection. |
-| **Sticky session** (1–30 minutes) | Requests that reuse the **same generated username** keep the IP for that window. |
+| **Rotating session** | 每次连接可使用新出口 IP。适合广泛采集。 |
+| **Sticky session**（1–30 分钟） | 复用**同一生成用户名**的请求在该窗口内保持 IP。 |
 
-1. Open <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> → **Rotating**.
-2. Set **Session type**. For sticky, use the slider (**1–30 minutes**).
-3. Generate. The username **already includes** the session policy — you do not add extra flags in most clients.
+1. 打开 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> → **Rotating**。
+2. 设置 **Session type**。粘性时使用滑块（**1–30 分钟**）。
+3. 生成。用户名**已包含**会话策略 — 多数客户端无需额外标志。
 
-## How long the username lasts vs how long the IP lasts
+## 用户名有效期 vs IP 保持时长
 
-| Concept | Behavior |
+| 概念 | 行为 |
 | --- | --- |
-| Generated username | Valid while your **traffic pack** has GB left |
-| Sticky window | Only how long that username **holds one exit IP** |
+| 生成用户名 | **流量套餐**有 GB 时有效 |
+| 粘性窗口 | 仅该用户名**保持单一出口 IP**的时长 |
 
-You can keep using the same username after sticky expires; the gateway may assign a new IP on the next window. You do not need to buy a new pack to refresh the session.
+粘性过期后仍可使用同一用户名；下一窗口网关可能分配新 IP。刷新会话无需新购套餐。
 
-To set sticky length when you automate extraction, use the `duration` query on the Endpoints **API URL** — see <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+自动化提取时设置粘性长度请用 Endpoints **API URL** 的 `duration` 查询参数 — 见 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>。
 
-## When to use sticky vs rotating session
+## 何时用粘性 vs 轮换会话
 
-| Workflow | Session mode |
+| 工作流 | 会话模式 |
 | --- | --- |
-| Listing pages, search, price checks | Rotating session |
-| Login, then crawl while authenticated | Sticky session (often 5–15 minutes) |
-| QA a single account in a browser | Sticky, or a <a href="../static/README.md" target="_blank" rel="noopener noreferrer">Static</a> line if you need days |
+| 列表页、搜索、比价 | Rotating session |
+| 登录后带认证爬取 | Sticky session（常 5–15 分钟） |
+| 浏览器中单账号 QA | 粘性，或需数天时购买<a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态</a> |
 
-> **Tip**
+> **提示**
 >
-> Sticky is **minutes**, not weeks. For a host:port that stays yours for a plan period, buy <a href="../static/purchase.md" target="_blank" rel="noopener noreferrer">Static</a> or <a href="../custom/purchase.md" target="_blank" rel="noopener noreferrer">Custom</a>.
+> 粘性为**分钟级**，非数周。若需计划期内固定的 host:port，请购买<a href="../static/purchase.md" target="_blank" rel="noopener noreferrer">静态</a>或<a href="../custom/purchase.md" target="_blank" rel="noopener noreferrer">定制</a>。
 
-## Next
+## 下一步
 
-<a href="first-request.md" target="_blank" rel="noopener noreferrer">Make your first request</a>
+<a href="first-request.md" target="_blank" rel="noopener noreferrer">发起首次请求</a>

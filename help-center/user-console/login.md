@@ -1,25 +1,25 @@
-# Login
+# 登录
 
-Access the JoyProxy dashboard to buy products, generate endpoints, and manage billing.
+登录 JoyProxy 控制台以购买产品、生成端点并管理账单。
 
-## Sign in
+## 登录步骤
 
-1. Visit <a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">Log in</a>.
-2. Enter your **email** and **password**.
-3. After success you are redirected to the <a href="overview.md" target="_blank" rel="noopener noreferrer">Overview</a> dashboard.
+1. 访问<a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">登录</a>。
+2. 输入**邮箱**与**密码**。
+3. 成功后将跳转到<a href="overview.md" target="_blank" rel="noopener noreferrer">概览</a>控制台。
 
-## Session and security
+## 会话与安全
 
-- Use <a href="change-password.md" target="_blank" rel="noopener noreferrer">Change password</a> regularly on shared machines.
-- Configure <a href="idle-sign-out.md" target="_blank" rel="noopener noreferrer">Idle sign-out</a> for shorter timeouts on office PCs.
-- Store <a href="rotate-token.md" target="_blank" rel="noopener noreferrer">API tokens</a> in secret managers—not in chat or tickets.
+- 在共享设备上请定期使用<a href="change-password.md" target="_blank" rel="noopener noreferrer">修改密码</a>。
+- 在办公室 PC 上可配置<a href="idle-sign-out.md" target="_blank" rel="noopener noreferrer">空闲自动退出</a>以缩短超时时间。
+- 将 <a href="rotate-token.md" target="_blank" rel="noopener noreferrer">API Token</a> 存放在密钥管理器中——不要放在聊天或工单里。
 
-## First login checklist
+## 首次登录检查清单
 
-| Task | Link |
+| 任务 | 链接 |
 | --- | --- |
-| Review balance and credits | <a href="overview.md" target="_blank" rel="noopener noreferrer">Overview</a> |
-| Copy extract API URL for automation | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> |
-| Buy first proxy or scraping pack | <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase</a> |
+| 查看余额与积分 | <a href="overview.md" target="_blank" rel="noopener noreferrer">概览</a> |
+| 复制提取 API URL 用于自动化 | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> |
+| 购买首个代理或抓取套餐 | <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买</a> |
 
-New user? Start at <a href="register.md" target="_blank" rel="noopener noreferrer">Register</a>.
+新用户？请从<a href="register.md" target="_blank" rel="noopener noreferrer">注册</a>开始。

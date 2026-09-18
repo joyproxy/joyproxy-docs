@@ -1,37 +1,37 @@
-# Choose a network and buy traffic
+# 选择网络并购买流量
 
-Rotating is billed **per GB**. The pack stays usable until the traffic is consumed (and any validity shown at checkout still applies). Larger packs usually lower the unit price.
+轮换按 **GB** 计费。在流量消耗完毕前（且结账显示的有效期仍适用时）套餐可继续使用。更大套餐通常单价更低。
 
-**Residential, Mobile, and Business / ISP each have their own price.** Compare packs on <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a> before you pay.
+**住宅、移动与商业 / ISP 各有独立价格。** 付款前请在 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a> 对比套餐。
 
-## Pick a network
+## 选择网络
 
-| Network | Choose it when | Product |
+| 网络 | 适用场景 | 产品 |
 | --- | --- | --- |
-| **Residential** | Home-ISP style exits and the widest geo menu | <a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">Residential</a> |
-| **Mobile** | Carrier (4G/5G) exits for apps or mobile ads | <a href="https://www.joyproxy.com/products/proxy-mobile.html" target="_blank" rel="noopener noreferrer">Mobile</a> |
-| **Business / ISP** | Targets expect an ISP / business ASN | <a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">Business / ISP</a> |
+| **住宅** | 家庭 ISP 风格出口与最广地域菜单 | <a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">住宅</a> |
+| **移动** | 运营商（4G/5G）出口，用于应用或移动广告 | <a href="https://www.joyproxy.com/products/proxy-mobile.html" target="_blank" rel="noopener noreferrer">移动</a> |
+| **商业 / ISP** | 目标期望 ISP / 商业 ASN | <a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">商业 / ISP</a> |
 
-You can hold more than one network on the same account. Each order appears separately in <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>.
+同一账户可持有多个网络。各订单在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> 单独显示。
 
-## Buy in the console
+## 在控制台购买
 
-1. Sign in and open <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">Purchase → Rotating</a>.
-2. Set **network type** to Residential, Mobile, or Business / ISP.
-3. Select a **traffic package**. Match size to a real workload (a few GB for trials; more for production crawls).
-4. Pay in checkout: **card**, **Apple Pay**, **Google Pay**, **PayPal**, **WeChat Pay**, **UPI**, **USDT (TRC20)**, or **account balance**.
-5. Wait until the order shows as active under <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>.
+1. 登录并打开 <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">购买 → 轮换</a>。
+2. 将**网络类型**设为住宅、移动或商业 / ISP。
+3. 选择**流量套餐**。按真实负载选大小（试用几 GB；生产爬虫更多）。
+4. 结账支付：**卡**、**Apple Pay**、**Google Pay**、**PayPal**、**微信支付**、**UPI**、**USDT（TRC20）**或**账户余额**。
+5. 等待订单在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> 显示为生效。
 
-> **Tip**
+> **提示**
 >
-> Apply the **$5 sign-up credit** on the first eligible pack if the checkout offers it.
+> 若结账提供选项，请在首个符合条件的套餐上使用 **$5 注册赠金**。
 
-## After payment
+## 付款之后
 
-- **Usage** on the network console shows remaining GB. Details: <a href="usage-and-orders.md" target="_blank" rel="noopener noreferrer">Usage and orders</a>.
-- Endpoints keep working as long as traffic remains. You do not buy a new pack every time you generate a username.
-- When GB runs low, return to <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">Purchase → Rotating</a>, or turn on <a href="auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">Auto-buy traffic</a>.
+- 网络控制台的 **Usage** 显示剩余 GB。详情：<a href="usage-and-orders.md" target="_blank" rel="noopener noreferrer">用量与订单</a>。
+- 有流量时 Endpoints 持续可用。每次生成用户名无需新购套餐。
+- GB 偏低时返回 <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">购买 → 轮换</a>，或开启 <a href="auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a>。
 
-## Next
+## 下一步
 
-<a href="auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">Auto-buy traffic</a> · <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
+<a href="auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a> · <a href="authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。

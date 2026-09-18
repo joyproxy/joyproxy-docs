@@ -1,27 +1,27 @@
-# Use Static on Windows, Chrome, and mobile
+# 在 Windows、Chrome 与手机上使用静态线
 
-Dedicated `host:port` lines work well in OS and browser forms.
+专用 `host:port` 适合填进系统或浏览器的代理表单。
 
-## Browser only
+## 仅浏览器
 
-<a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">JoyProxy Browser Extension</a> — paste `http://USER:PASS@HOST:PORT`, test, apply. Other apps stay direct.
+<a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">JoyProxy 浏览器扩展</a> — 粘贴 `http://USER:PASS@HOST:PORT`，测试后应用。其它程序仍走直连。
 
-## Chrome / Edge on Windows (system proxy)
+## Windows 上的 Chrome / Edge（系统代理）
 
-Chrome follows Windows. See <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 system proxy</a> and <a href="../../best-practices/chrome-static-proxy.md" target="_blank" rel="noopener noreferrer">Chrome static proxy</a>.
+Chrome 跟随 Windows 设置。见 <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 系统代理</a>、<a href="../../best-practices/chrome-static-proxy.md" target="_blank" rel="noopener noreferrer">Chrome 静态代理</a>。
 
-> **Security**
+> **安全**
 >
-> System proxy routes **all** compatible apps. Disable it after testing.
+> 系统代理会影响所有兼容应用。测完记得关闭。
 
 ## iOS / Android Wi‑Fi
 
-<a href="../../best-practices/mobile-static-proxy.md" target="_blank" rel="noopener noreferrer">Mobile devices</a> — manual proxy on the Wi‑Fi network, or the <a href="../software/android-client.md" target="_blank" rel="noopener noreferrer">Android client</a> for per-app routing.
+<a href="../../best-practices/mobile-static-proxy.md" target="_blank" rel="noopener noreferrer">移动设备</a> — Wi‑Fi 里填手动代理，或用 <a href="../software/android-client.md" target="_blank" rel="noopener noreferrer">Android 客户端</a> 做按应用分流。
 
-## Third-party tools
+## 第三方工具
 
-Host and port from Endpoints; auth = whitelist or user/pass. Table: <a href="../../best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">Third-party software</a>.
+Host、port 来自端点生成；认证用白名单或账号密码。工具对照表：<a href="../../best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">第三方软件</a>。
 
-## Chapter index
+## 本章索引
 
-<a href="README.md" target="_blank" rel="noopener noreferrer">Static proxy</a>
+<a href="README.md" target="_blank" rel="noopener noreferrer">静态代理</a>

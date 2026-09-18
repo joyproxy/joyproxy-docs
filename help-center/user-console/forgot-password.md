@@ -1,22 +1,22 @@
-# Forgot password
+# 忘记密码
 
-Reset your password if you cannot sign in to the JoyProxy console.
+若无法登录 JoyProxy 控制台，请重置密码。
 
-## Self-service reset
+## 自助重置
 
-1. Go to <a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">Log in</a>.
-2. Click **Forgot password** (or similar wording on the page).
-3. Enter the **email** registered to your account.
-4. Open the reset link in the email and choose a new password (minimum length shown on the form—typically 6+ characters).
-5. Sign in with the new password on all devices you use for JoyProxy.
+1. 打开<a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">登录</a>。
+2. 点击 **Forgot password**（或页面上类似文案）。
+3. 输入注册账户的**邮箱**。
+4. 打开邮件中的重置链接并设置新密码（表单会显示最小长度——通常为 6 位以上）。
+5. 在您用于 JoyProxy 的所有设备上用新密码登录。
 
-> **Security**
+> **安全**
 >
-> Reset links expire. If a link stops working, request a fresh email. JoyProxy staff will never ask for your password in chat—only whether you completed the reset flow.
+> 重置链接会过期。若链接失效，请重新申请邮件。JoyProxy 客服不会在聊天中索要密码——只会询问您是否完成重置流程。
 
-## Still cannot access?
+## 仍无法访问？
 
-- Confirm you are using the same email you registered with.
-- Contact <a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> or <a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">Support tickets</a> from an email domain you can prove you own.
+- 确认使用的是注册时的同一邮箱。
+- 通过您能证明归属的邮箱域名联系<a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a>或<a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">支持工单</a>。
 
-After reset, update saved passwords in scripts and CI secrets that used the old value.
+重置后，请更新脚本与 CI 密钥中保存的旧密码。

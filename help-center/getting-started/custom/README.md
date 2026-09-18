@@ -1,33 +1,33 @@
-# Custom proxy
+# 定制代理
 
-Custom proxies are **dedicated ports** you configure after purchase: **assign region** (country / state / city) and an optional **rotation timer**, then generate a stable `host:port` like Static.
+定制代理是付款后按**端口**配置的独享线路：为每个端口**分配地区**（国家/省/市），可选**定时轮换出口 IP**，再像静态一样生成稳定的 `host:port`。
 
-Available on **Residential**, **Business / ISP**, and **Datacenter**.
+适用于 **住宅**、**商业 / ISP**、**数据中心**。
 
-## When to use Custom
+## 适合什么场景
 
-- Several regions in one order (US checkout on port A, UK catalog on port B)
-- Keep a dedicated entry while refreshing the exit IP on a schedule
-- You outgrew a single-country Static pack but still want `host:port` in every tool
+- 同一订单里美国站走 A 端口、英国站走 B 端口
+- 要固定入口，又希望按时间表换出口 IP
+- 静态单国套餐不够用，但工具仍只认 `host:port`
 
-## In this chapter
+## 本章目录
 
-1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">Quick start</a>
-2. <a href="purchase.md" target="_blank" rel="noopener noreferrer">Buy ports</a>
-3. <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a>
-4. <a href="assign-region.md" target="_blank" rel="noopener noreferrer">Assign region</a>
-5. <a href="rotation.md" target="_blank" rel="noopener noreferrer">Set rotation</a>
-6. <a href="new-ip.md" target="_blank" rel="noopener noreferrer">New IP</a>
-7. <a href="authorize-and-generate.md" target="_blank" rel="noopener noreferrer">Authorize and generate</a>
-8. <a href="first-request.md" target="_blank" rel="noopener noreferrer">First request and code</a>
-9. <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>
-10. <a href="restricted-targets.md" target="_blank" rel="noopener noreferrer">Restricted targets</a>
-11. <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>
+1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">快速开始</a>
+2. <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买端口</a>
+3. <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>
+4. <a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a>
+5. <a href="rotation.md" target="_blank" rel="noopener noreferrer">设置轮换</a>
+6. <a href="new-ip.md" target="_blank" rel="noopener noreferrer">更换 IP</a>
+7. <a href="authorize-and-generate.md" target="_blank" rel="noopener noreferrer">授权与生成</a>
+8. <a href="first-request.md" target="_blank" rel="noopener noreferrer">首次请求与代码</a>
+9. <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a>
+10. <a href="restricted-targets.md" target="_blank" rel="noopener noreferrer">受限目标</a>
+11. <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>
 
-## Order of operations
+## 推荐顺序
 
-Assign **region first**, then rotation, then generate endpoints. Rotation keeps new IPs inside the geo you assigned.
+先 **分配地区**，再设轮换，最后生成端点。轮换换出的 IP 仍受已分配地域约束。
 
-Auth is the same as Static: <a href="../static/authorization.md" target="_blank" rel="noopener noreferrer">username/password or whitelist</a>.
+认证与静态相同：<a href="../static/authorization.md" target="_blank" rel="noopener noreferrer">用户名密码或白名单</a>。
 
-<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a> · <a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">Residential</a> · <a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">Business</a> · <a href="https://www.joyproxy.com/products/proxy-datacenter.html" target="_blank" rel="noopener noreferrer">Datacenter</a>
+<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a> · <a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">住宅</a> · <a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">商业</a> · <a href="https://www.joyproxy.com/products/proxy-datacenter.html" target="_blank" rel="noopener noreferrer">数据中心</a>

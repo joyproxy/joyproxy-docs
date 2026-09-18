@@ -1,61 +1,61 @@
-# Third-party software with static and rotating proxies
+# 第三方软件使用静态与轮换代理
 
-Many desktop tools—scrapers, RPA bots, social managers, SEO suites—expose the same proxy form: **type, host, port, username, password**. JoyProxy fills those fields differently for **rotating gateway** vs **dedicated static/custom** lines.
+许多桌面工具——爬虫、RPA、社交管理、SEO 套件——暴露相同代理表单：**类型、主机、端口、用户名、密码**。JoyProxy 对**轮换网关**与**专用静态/定制**线路的填写方式不同。
 
-## Rotating (shared gateway)
+## 轮换（共享网关）
 
-Use when your order is Residential, Mobile, or Business **Rotating**.
+订单为住宅、移动或商业 **轮换**时使用。
 
-| Software label | Enter |
+| 软件标签 | 填写 |
 | --- | --- |
-| Type | HTTP or SOCKS5 (both can open HTTPS websites) |
-| Host | `gate.joyproxy.com` |
-| Port | `9001` |
-| Username | Full string from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> |
-| Password | From <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> |
+| 类型 | HTTP 或 SOCKS5（均可打开 HTTPS 网站） |
+| 主机 | `gate.joyproxy.com` |
+| 端口 | `9001` |
+| 用户名 | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> 返回的完整字符串 |
+| 密码 | 来自 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> |
 
-URI examples:
+URI 示例：
 
 ```text
 http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 ```
 
-> **Important**
+> **重要**
 >
-> Do not shorten or edit the generated username. Geo and session live inside that string.
+> 请勿缩短或修改生成的用户名。地域与会话编码在该字符串内。
 
-## Static or custom (dedicated host)
+## 静态或定制（专用主机）
 
-Use host and port from the **Static** or **Custom** generator—often `*.edge.joyproxy.com` with a fixed port.
+使用 **静态**或**定制**生成器的 host 与 port——常为 `*.edge.joyproxy.com` 与固定端口。
 
-| Field | Source |
+| 字段 | 来源 |
 | --- | --- |
-| Host / Port | Endpoint generator output |
-| Auth | Whitelist (connect from listed server IP) **or** username/password you created |
+| Host / Port | 端点生成器输出 |
+| 认证 | 白名单（从所列服务器 IP 连接）**或**您创建的 username/password |
 
 ```text
 http://USER:PASS@us-ca.edge.joyproxy.com:10001
 ```
 
-## Scenario: multilogin browser with static residential
+## 场景：Multilogin 浏览器 + 静态住宅
 
-1. Buy <a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">Static residential</a> in the target country.
-2. Whitelist your runner’s public IP **or** create credentials.
-3. Generate one endpoint per profile in the tool’s required format.
-4. Assign each profile a **unique** port if the software maps 1:1 identity to line.
+1. 在目标国家购买<a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">静态住宅</a>。
+2. 将运行器公网 IP 加入白名单**或**创建凭据。
+3. 按工具要求格式为每个配置文件生成一个端点。
+4. 若软件将身份 1:1 映射到线路，为每个配置文件分配**唯一**端口。
 
-## Scenario: high-frequency scraper on rotating
+## 场景：轮换上的高频爬虫
 
-1. Purchase rotating traffic with headroom (monitor <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">Usage</a>).
-2. Use **sticky** sessions for login steps, **Rotating session** for catalog crawls.
-3. Regenerate username in Endpoints when you change geo—no need to buy a new package.
+1. 购买有足够余量的轮换流量（监控<a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">用量</a>）。
+2. 登录步骤用**粘性**会话，目录爬取用**轮换会话**。
+3. 更改地域时在 Endpoints 重新生成用户名——无需新购套餐。
 
-## Scenario: extract API powered tools
+## 场景：由提取 API 驱动的工具
 
-Some tools pull `host:port` lists from a URL. Point them at JoyProxy extract APIs documented in <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>, or paste lines from the web generator.
+部分工具从 URL 拉取 `host:port` 列表。指向 <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> 文档中的 JoyProxy 提取 API，或粘贴网页生成器行。
 
-## When pages still block you
+## 页面仍拦截时
 
-- Try <a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">Web Scraping API</a> for fetch-only workloads.
-- Open a <a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">support ticket</a> with target domain and request pattern (never share end-user passwords).
+- 仅抓取工作负载可试<a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">网页抓取 API</a>。
+- 提交<a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">支持工单</a>并说明目标域名与请求模式（切勿分享终端用户密码）。

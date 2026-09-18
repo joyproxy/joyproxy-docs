@@ -1,41 +1,41 @@
-# Browser extension
+# 浏览器扩展
 
-The JoyProxy **Browser Extension** applies a proxy to **one Chromium browser** (Chrome, Edge, Brave, and similar). System-wide settings stay untouched—ideal for manual QA, account checks, and geo checks.
+JoyProxy **浏览器扩展**只给**一个 Chromium 内核浏览器**（Chrome、Edge、Brave 等）设代理，不改系统设置 — 适合手工 QA、账号检查、看地域效果。
 
-<a href="https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng" target="_blank" rel="noopener noreferrer">Chrome Web Store</a> · <a href="https://www.joyproxy.com/products/browser-extension.html" target="_blank" rel="noopener noreferrer">Product page</a>
+<a href="https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng" target="_blank" rel="noopener noreferrer">Chrome 网上应用店</a> · <a href="https://www.joyproxy.com/products/browser-extension.html" target="_blank" rel="noopener noreferrer">产品页</a>
 
-## Install
+## 安装
 
-1. Install from the <a href="https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>.
-2. Pin **JoyProxy** on the toolbar.
+1. 从应用店安装。
+2. 在工具栏固定 **JoyProxy**。
 
-## Three ways to work
+## 三种用法
 
-| Mode | JoyProxy account | What you do |
+| 模式 | 是否登录 JoyProxy | 做什么 |
 | --- | --- | --- |
-| **Your own proxy** | Optional | Paste `host:port` or a URI, test, apply |
-| **Extract API** | Optional | Point at a provider URL; the extension pulls and tests lines |
-| **JoyProxy lines** | Sign in on joyproxy.com | Load rotating or static lines from your orders |
+| **自有代理** | 可选 | 粘贴 `host:port` 或 URI，测试后应用 |
+| **提取 API** | 可选 | 填提供商 URL，扩展拉列表并测试 |
+| **JoyProxy 线路** | 在 joyproxy.com 登录 | 从订单加载轮换或静态线 |
 
-You can test your own proxies without an account. Sign in when you want cloud lines from <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>.
+不登录也能测自己的代理；要从 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> 拉云端线路时再登录。
 
-## Recommended workflow
+## 推荐流程
 
-1. Open the popup or side panel.
-2. Paste a line **or** sign in to load purchases.
-   - Rotating: `http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001` — <a href="../rotating/first-request.md" target="_blank" rel="noopener noreferrer">Rotating first request</a>
-   - Static / Custom: `http://USER:PASS@HOST:PORT` from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a>
-3. Run **connectivity test** and confirm exit IP / country.
-4. Click **Apply**. Only this browser uses the proxy.
+1. 打开弹窗或侧栏。
+2. 粘贴一行 **或** 登录加载购买记录。
+   - 轮换：`http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001` — <a href="../rotating/first-request.md" target="_blank" rel="noopener noreferrer">轮换首次请求</a>
+   - 静态/定制：`http://USER:PASS@HOST:PORT`，来自 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a>
+3. **连通性测试**，确认出口 IP / 国家。
+4. **Apply** — 仅本浏览器走代理。
 
-## Advanced
+## 进阶
 
-- Scope: all sites or allow-list only
-- User-Agent, WebRTC limits, cookie cleanup, fingerprint-related controls
-- Saved profiles and list import
+- 全站或仅白名单站点
+- User-Agent、WebRTC 限制、清 Cookie、指纹相关选项
+- 保存配置、导入列表
 
-> **Tip**
+> **提示**
 >
-> Batch-validate many lines with <a href="proxy-tester.md" target="_blank" rel="noopener noreferrer">Proxy Tester</a>. For every app on the PC, see <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 system proxy</a>.
+> 大量线路用 <a href="proxy-tester.md" target="_blank" rel="noopener noreferrer">代理检测工具</a>。整机代理见 <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 系统代理</a>。
 
-Source: <a href="https://github.com/joyproxy/joyproxy-extension" target="_blank" rel="noopener noreferrer">GitHub — joyproxy-extension</a> · Privacy: <a href="https://www.joyproxy.com/privacy-extension.html" target="_blank" rel="noopener noreferrer">privacy-extension</a>
+源码：<a href="https://github.com/joyproxy/joyproxy-extension" target="_blank" rel="noopener noreferrer">GitHub — joyproxy-extension</a> · 隐私：<a href="https://www.joyproxy.com/privacy-extension.html" target="_blank" rel="noopener noreferrer">privacy-extension</a>

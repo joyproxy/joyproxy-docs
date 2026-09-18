@@ -1,16 +1,16 @@
-# Restricted targets
+# 受限目标
 
-Static lines follow the same destination policy as Rotating. Use Static from a network **outside mainland China**, and send traffic to destinations the catalog covers.
+静态线路与轮换共用同一套访问政策：请在**中国大陆以外**使用，目标站需在目录与政策允许范围内。
 
-## Summary
+## 摘要
 
-- **Mainland China** — no mainland-China proxy IPs; no access from mainland China; exits cannot reach mainland-China sites.
-- **Banking and financial institutions**, **government websites**, and **email / messaging** services are restricted or blocked for compliance and abuse prevention.
+- **中国大陆**：无大陆出口 IP；大陆网络无法连代理；出口不能访问大陆境内站。
+- **银行与金融机构、政府网站、邮件与即时通讯**等高风险类别通常受限。
 
-Full categories, acceptable use, and how to request a review: <a href="../rotating/restricted-targets.md" target="_blank" rel="noopener noreferrer">Rotating → Restricted targets</a>.
+完整说明与申诉方式：<a href="../rotating/restricted-targets.md" target="_blank" rel="noopener noreferrer">轮换 → 受限目标</a>。
 
-If a site returns **403** after a successful IP check through the same `host:port`, that is usually the website. See <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>.
+若在同一 `host:port` 上已能测通出口 IP，业务 URL 仍 **403**，多半是目标站拦截，见 <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>。
 
-## Next
+## 下一步
 
-<a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>
+<a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>

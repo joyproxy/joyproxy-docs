@@ -1,25 +1,25 @@
-# Dashboard overview
+# 控制台概览
 
-The **Overview** page is your home base after login. It summarizes wallet balance, active products, and shortcuts into purchase and support flows.
+**概览**页面是登录后的主页，汇总钱包余额、生效产品与进入购买、支持的快捷入口。
 
-**URL:** <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">admin-overview</a>
+**URL：** <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">admin-overview</a>
 
-## What you typically see
+## 常见内容
 
-- **Account balance** — funds for proxy packages and scraping credits
-- **Active orders** — quick status for rotating traffic, static lines, custom ports, or scraping balance
-- **Shortcuts** — purchase, endpoint tools, documentation links
+- **账户余额** — 用于代理套餐与抓取积分的资金
+- **生效订单** — 轮换流量、静态线路、定制端口或抓取余额的快捷状态
+- **快捷方式** — 购买、端点工具、文档链接
 
-Exact widgets evolve with product releases; use the left navigation for authoritative detail per product.
+具体组件随产品迭代可能变化；各产品权威细节请使用左侧导航。
 
-## Common next steps
+## 常见下一步
 
-| Goal | Go to |
+| 目标 | 前往 |
 | --- | --- |
-| Buy or top up | <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase</a> |
-| Generate proxy lines | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> |
-| Manage credentials | <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> |
-| Review payments | <a href="invoices.md" target="_blank" rel="noopener noreferrer">Transactions</a> |
-| Get help | <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">Support</a> |
+| 购买或充值 | <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买</a> |
+| 生成代理线路 | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成/提取中心</a> |
+| 管理凭据 | <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> |
+| 查看付款 | <a href="invoices.md" target="_blank" rel="noopener noreferrer">交易</a> |
+| 获取帮助 | <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">支持</a> |
 
-Product-specific tabs (Residential, Mobile, etc.) are documented under <a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">User console proxy sections</a>.
+住宅、移动等产品专属页签说明见<a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">用户控制台代理分区</a>。

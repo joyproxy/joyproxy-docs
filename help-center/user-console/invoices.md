@@ -1,33 +1,33 @@
-# Invoices and billing records
+# 发票与账单记录
 
-Track top-ups, package purchases, and consumption from the console.
+在控制台跟踪充值、套餐购买与消费。
 
-## Transactions
+## 交易
 
-<a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">Transactions</a> lists:
+<a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">交易</a>列出：
 
-- PayPal or balance **recharges**
-- Proxy package **payments**
-- Web Scraping API **credit purchases**
+- PayPal 或余额**充值**
+- 代理套餐**付款**
+- 网页抓取 API **积分购买**
 
-Use filters or export options when the UI provides them for accounting.
+做账时请使用 UI 提供的筛选或导出选项。
 
-## Proxy orders
+## 代理订单
 
-<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> shows:
+<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>显示：
 
-- **Active** rotating traffic, static allocations, custom ports
-- **Expired** history for renewal decisions
+- **生效中**的轮换流量、静态分配、定制端口
+- **已过期**历史，便于续费决策
 
-| Product type | Billing model |
+| 产品类型 | 计费模式 |
 | --- | --- |
-| Rotating | Traffic deducted from purchased GB while valid |
-| Static / Custom | Valid for the purchased period per IP or port |
-| Web Scraping API | Credits deducted per successful fetch |
+| 轮换 | 有效期内从已购 GB 扣减流量 |
+| 静态 / 定制 | 按 IP 或端口购买的有效期 |
+| 网页抓取 API | 每次成功抓取扣减积分 |
 
-## Buy more
+## 继续购买
 
-- <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase proxies</a>
-- <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">Buy scraping credits</a>
+- <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>
+- <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">购买抓取积分</a>
 
-Questions on a charge? <a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">Submit a ticket</a> with transaction ID and date.
+对某笔扣款有疑问？<a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">提交工单</a>并附上交易 ID 与日期。

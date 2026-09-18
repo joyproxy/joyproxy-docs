@@ -1,11 +1,11 @@
-# Monitor usage
+# 查看用量
 
-- <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=usage" target="_blank" rel="noopener noreferrer">Usage tab</a> — balance, concurrency, request log
-- Headers on each response — credits used and remaining
-- <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">Buy</a> when the balance is low (credits do not expire)
+- <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=usage" target="_blank" rel="noopener noreferrer">Usage 标签</a> — 余额、并发、请求日志
+- 每次响应头 — 本次消耗积分与剩余
+- 余额偏低时在 <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">购买</a> 补积分（积分不过期）
 
-Console tour: <a href="../../user-console/web-scraping-api.md" target="_blank" rel="noopener noreferrer">Web Scraping API (user console)</a>.
+控制台导览：<a href="../../user-console/web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取 API（用户控制台）</a>。
 
-## Chapter index
+## 本章索引
 
-<a href="README.md" target="_blank" rel="noopener noreferrer">Web Scraping API</a>
+<a href="README.md" target="_blank" rel="noopener noreferrer">网页抓取 API</a>

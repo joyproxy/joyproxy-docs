@@ -1,34 +1,34 @@
-# Business / ISP proxies (console)
+# 商业 / ISP 代理（控制台）
 
-**Business / ISP** lines use enterprise ISP ASN addressing—useful for B2B portals, finance-adjacent sites, and workflows that expect ISP-class reputation.
+**商业 / ISP** 线路使用企业 ISP ASN 地址——适用于 B2B 门户、金融相关站点及期望 ISP 级信誉的工作流。
 
-<a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">Product page</a> · <a href="https://www.joyproxy.com/pricing.html?network_type=business" target="_blank" rel="noopener noreferrer">Pricing</a>
+<a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">产品页</a> · <a href="https://www.joyproxy.com/pricing.html?network_type=business" target="_blank" rel="noopener noreferrer">定价</a>
 
-## Modes available
+## 可用模式
 
-| Mode | Billing | Guide |
+| 模式 | 计费 | 指南 |
 | --- | --- | --- |
-| Rotating | Per GB | <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">Rotating proxy</a> |
-| Static | Per IP / period | <a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">Static proxy</a> |
-| Custom | Per port / period | <a href="../getting-started/custom/README.md" target="_blank" rel="noopener noreferrer">Custom proxy</a> |
+| 轮换 | 按 GB | <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">轮换代理</a> |
+| 静态 | 按 IP / 周期 | <a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">静态代理</a> |
+| 定制 | 按端口 / 周期 | <a href="../getting-started/custom/README.md" target="_blank" rel="noopener noreferrer">定制代理</a> |
 
-## Console tabs
+## 控制台页签
 
-Same structure as Residential:
+结构与住宅相同：
 
-- **Buy** — select **Business / ISP** network before choosing Rotating, Static, or Custom
-- **My Proxies** — allocations and custom port tools. Rotating: <a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">Auto-buy traffic</a>. Static/Custom: <a href="../getting-started/static/auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a> and <a href="../getting-started/static/refresh-ip.md" target="_blank" rel="noopener noreferrer">New IP</a>
-- **Users & Whitelist** — credentials and IP allow list
-- **Endpoints** — gateway or dedicated hosts
-- **Usage** — <a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">Traffic and orders</a>
-- **API Center** — extract and management APIs
+- **购买** — 先选 **Business / ISP** 网络，再选轮换、静态或定制
+- **My Proxies** — 分配与定制端口工具。轮换：<a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a>。静态/定制：<a href="../getting-started/static/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>与<a href="../getting-started/static/refresh-ip.md" target="_blank" rel="noopener noreferrer">新 IP</a>
+- **Users & Whitelist** — 凭据与 IP 允许列表
+- **Endpoints** — 网关或专用主机
+- **用量** — <a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">流量与订单</a>
+- **API Center** — 提取与管理 API
 
-Only the **network type** changes at purchase; flows match Residential documentation.
+购买时仅**网络类型**不同；流程与住宅文档一致。
 
-## When to pick Business over Residential
+## 何时选商业而非住宅
 
-- Targets that score ASN/reputation differently for ISP ranges
-- Vendor dashboards that expect business ISP categories
-- Campaigns already validated on ISP-class exits
+- 目标对 ISP 段 ASN/信誉评分不同
+- 供应商控制台期望商业 ISP 类别
+- 已在 ISP 级出口验证过的投放
 
-Compare packs on the pricing page before committing to annual static lines.
+承诺年度静态线路前请在定价页对比套餐。

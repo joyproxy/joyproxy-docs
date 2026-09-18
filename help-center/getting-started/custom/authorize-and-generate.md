@@ -1,19 +1,19 @@
-# Authorize and generate Custom endpoints
+# 授权并生成定制端点
 
-## Authorization
+## 认证
 
-Same as Static: <a href="../static/authorization.md" target="_blank" rel="noopener noreferrer">Username/password or whitelist</a> in <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a>. Product-wide methods: <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
+与静态相同：在 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a> 配置 <a href="../static/authorization.md" target="_blank" rel="noopener noreferrer">用户名密码或白名单</a>。通用流程见 <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。
 
-## Web generator
+## 网页生成器
 
-1. <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> → **Custom Proxies → Web generator**.
-2. Select the allocation / order → **Generate now**.
-3. Copy host and port (plus user/pass if you are not using whitelist).
+1. <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> → **Custom Proxies → Web generator**。
+2. 选择分配/订单 → **Generate now**。
+3. 复制 host、port（未用白名单时连同账号密码）。
 
-Connect to this host:port, not the Exit IP on the order card.
+连接 host:port，不要连 Exit IP。
 
-HTTP automation uses the **API URL** on Endpoints. See <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+HTTP 自动化用端点页的 **API URL**，见 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>。
 
-## Next
+## 下一步
 
-<a href="first-request.md" target="_blank" rel="noopener noreferrer">First request and code</a>
+<a href="first-request.md" target="_blank" rel="noopener noreferrer">首次请求与代码</a>

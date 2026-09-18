@@ -1,38 +1,38 @@
-# Integrate proxies in AI
+# 在 AI 中集成代理
 
-JoyProxy ships first-party AI surfaces so you can generate endpoints and check balances without writing boilerplate API code.
+JoyProxy 提供一等方 AI 入口，无需编写样板 API 代码即可生成端点并查询余额。
 
-## Modules
+## 模块
 
-| Module | Best for | Start |
+| 模块 | 最适合 | 开始 |
 | --- | --- | --- |
-| **OpenClaw Skill** | OpenClaw chat workflows | <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">Product page</a> |
-| **AI MCP** | Cursor, VS Code, Claude Desktop | <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">Product page</a> |
-| **AI Assistant** | Product and billing Q&A | <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant</a> |
+| **OpenClaw Skill** | OpenClaw 聊天工作流 | <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">产品页</a> |
+| **AI MCP** | Cursor、VS Code、Claude Desktop | <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">产品页</a> |
+| **AI Assistant** | 产品与账单问答 | <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant</a> |
 
-Get your **AI Access Token** from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai" target="_blank" rel="noopener noreferrer">AI endpoint generator</a>.
+在 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai" target="_blank" rel="noopener noreferrer">AI 端点生成器</a> 获取 **AI Access Token**。
 
-## OpenClaw Skill setup
+## OpenClaw Skill 配置
 
-1. Read prompts and examples on the <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill product page</a>.
-2. In OpenClaw, teach the skill endpoint `https://api.joyproxy.com/Skill` with your AI Access Token.
-3. Ask for rotating endpoint generation or balance checks using the sample phrases on the product page.
+1. 阅读 <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill 产品页</a> 上的提示与示例。
+2. 在 OpenClaw 中配置 Skill 端点 `https://api.joyproxy.com/Skill` 并填入 AI Access Token。
+3. 使用产品页示例语句请求生成轮换端点或查询余额。
 
-## AI MCP setup
+## AI MCP 配置
 
-1. Copy the MCP JSON template from <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">AI MCP product page</a>.
-2. Insert your AI Access Token.
-3. Restart the MCP client in your IDE and invoke tools to generate lines or query account data.
+1. 从 <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">AI MCP 产品页</a> 复制 MCP JSON 模板。
+2. 填入 AI Access Token。
+3. 在 IDE 中重启 MCP 客户端，调用工具生成线路或查询账户数据。
 
-## Production traffic
+## 生产流量
 
-AI tools help you **produce** connection strings. Runtime HTTP traffic still uses:
+AI 工具帮助您**生成**连接字符串。运行时 HTTP 流量仍使用：
 
-- Rotating: `gate.joyproxy.com:9001` + generated username + Users & Whitelist password
-- Static/Custom: dedicated host:port from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a>
+- 轮换：`gate.joyproxy.com:9001` + 生成的用户名 + Users & Whitelist 密码
+- 静态/定制：<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> 返回的专用 host:port
 
-See <a href="../best-practices/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">Best practices → Integrate proxies in AI</a> for scenarios and security habits.
+场景与安全习惯见<a href="../best-practices/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">最佳实践 → 在 AI 中集成代理</a>。
 
 ## AI Assistant
 
-Visit <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant</a> or use floating chat on marketing pages for 24/7 guidance. Escalate to humans via <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">Support</a> when needed.
+访问 <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant</a> 或在营销页使用悬浮聊天获取 24/7 指导。需要时通过<a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">支持</a>升级人工。

@@ -1,48 +1,48 @@
-# Use Rotating in apps and browsers
+# 在应用与浏览器中使用轮换
 
-The gateway fields are the same in every client. Only the form labels change.
+网关字段在各客户端相同。仅表单标签不同。
 
-## Fill-in table
+## 填写表
 
-| Software label | Enter |
+| 软件标签 | 填写 |
 | --- | --- |
-| Type | HTTP or SOCKS5 (both can open HTTPS websites). See <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>. |
-| Host / Server | `gate.joyproxy.com` |
-| Port | `9001` |
-| Username | Generated username from Endpoints |
-| Password | Users & Whitelist → Username/Password — see <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a> |
+| 类型 | HTTP 或 SOCKS5（均可打开 HTTPS 网站）。见 <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a>。 |
+| 主机 / 服务器 | `gate.joyproxy.com` |
+| 端口 | `9001` |
+| 用户名 | Endpoints 生成的用户名 |
+| 密码 | Users & Whitelist → Username/Password — 见 <a href="authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a> |
 
 ```text
 http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 ```
 
-## Browser (this Chrome / Edge only)
+## 浏览器（仅本 Chrome / Edge）
 
-1. Install the <a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">JoyProxy Browser Extension</a>.
-2. Paste the HTTP URI above, run **Test**, then **Apply**.
-3. System proxy stays unchanged.
+1. 安装 <a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">JoyProxy 浏览器扩展</a>。
+2. 粘贴上方 HTTP URI，运行 **Test**，再 **Apply**。
+3. 系统代理保持不变。
 
-## Whole computer (Windows)
+## 整台电脑（Windows）
 
-Use <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 system proxy</a> with host `gate.joyproxy.com` and port `9001`. Turn it off when you finish—every app that respects Windows proxy will use the gateway.
+使用 <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 系统代理</a>，主机 `gate.joyproxy.com`、端口 `9001`。完成后关闭 — 遵循 Windows 代理的应用都会走网关。
 
-## Desktop scrapers and RPA
+## 桌面爬虫与 RPA
 
-See <a href="../../best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">Third-party software</a> for the rotating vs static field mapping. Rotating always uses the **shared gateway**, not a `*.edge.joyproxy.com` host.
+轮换与静态字段映射见<a href="../../best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">第三方软件</a>。轮换始终用**共享网关**，而非 `*.edge.joyproxy.com` 主机。
 
-## AI agents
+## AI Agent
 
-Generate usernames from <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill</a> or <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">AI MCP</a>, then connect with the same user/password pair. The AI Access Token does **not** replace the gateway password. Details: <a href="../../integration/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">Integrate proxies in AI</a>.
+从 <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill</a> 或 <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">AI MCP</a> 生成用户名，再用相同 user/password 连接。AI Access Token **不能**替代网关密码。详情：<a href="../../integration/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">在 AI 中集成代理</a>。
 
-## Local forward proxy
+## 本地转发代理
 
-If a tool only accepts `127.0.0.1`, run <a href="../software/proxy-server.md" target="_blank" rel="noopener noreferrer">Proxy Server</a> and point its upstream at this gateway.
+若工具只接受 `127.0.0.1`，运行 <a href="../software/proxy-server.md" target="_blank" rel="noopener noreferrer">代理服务器</a> 并将上游指向本网关。
 
-## Batch test lines
+## 批量测试线路
 
-<a href="../software/proxy-tester.md" target="_blank" rel="noopener noreferrer">Proxy Tester</a> can ping HTTP and SOCKS5 before you ship config to production.
+上线前可用 <a href="../software/proxy-tester.md" target="_blank" rel="noopener noreferrer">代理测试器</a> 测试 HTTP 与 SOCKS5。
 
-## Back to chapter index
+## 返回章节目录
 
-<a href="README.md" target="_blank" rel="noopener noreferrer">Rotating proxy</a>
+<a href="README.md" target="_blank" rel="noopener noreferrer">轮换代理</a>

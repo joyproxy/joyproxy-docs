@@ -1,31 +1,31 @@
-# Rotate tokens
+# 轮换 Token
 
-JoyProxy exposes several tokens for automation. Rotating a token invalidates the old value—update scripts before you rotate production keys.
+JoyProxy 提供多种 Token 用于自动化。轮换会使旧值失效——在生产环境轮换前请先更新脚本。
 
-## Token types
+## Token 类型
 
-| Token | Typical use | Where |
+| Token | 典型用途 | 位置 |
 | --- | --- | --- |
-| Extract **API URL** (`token=` inside it) | Endpoint generator, whitelist, credentials | Copy the URL on <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> |
-| **Master User Token** | Order and account management APIs | <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a> |
-| **Scraping API Token** | Web Scraping API | Web Scraping API → API Center |
-| **AI Access Token** | OpenClaw Skill / AI MCP | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai" target="_blank" rel="noopener noreferrer">AI endpoint generator</a> |
+| 提取 **API URL**（内含 `token=`） | 端点生成、白名单、凭据 | 在 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> 复制 URL |
+| **Master User Token** | 订单与账户管理 API | <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">账户设置</a> |
+| **Scraping API Token** | 网页抓取 API | 网页抓取 API → API Center |
+| **AI Access Token** | OpenClaw Skill / AI MCP | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai" target="_blank" rel="noopener noreferrer">AI 端点生成器</a> |
 
-Which operation uses which token: <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+各操作使用哪种 Token：<a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>。
 
-## Rotate Master User Token
+## 轮换 Master User Token
 
-1. Open <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a>.
-2. Locate **Master User Token**.
-3. Click **Rotate** and copy the new value immediately.
-4. Update CI, `.env` files, and <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> saved authorizations.
+1. 打开<a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">账户设置</a>。
+2. 找到 **Master User Token**。
+3. 点击 **Rotate** 并立即复制新值。
+4. 更新 CI、`.env` 与 <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> 中保存的授权。
 
-## Rotate the extract API token
+## 轮换提取 API Token
 
-Rotate from the <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a>. After rotation, copy a fresh **API URL** — existing extract URLs stop working.
+在<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成/提取中心</a>轮换。轮换后请复制新的 **API URL**——旧提取 URL 将失效。
 
-## After rotation
+## 轮换之后
 
-Run a smoke test in <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> or the Web Scraping API playground with the new token.
+在 <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> 或网页抓取 API  playground 用新 Token 做冒烟测试。
 
-If automation fails with `401`, search configs for the old URL or token string.
+若自动化返回 `401`，请在配置中搜索旧的 URL 或 Token 字符串。

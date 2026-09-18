@@ -1,56 +1,56 @@
-# Quick start
+# 快速开始
 
-Send a **target URL**; JoyProxy returns HTML or JSON. You pay **credits only when a fetch succeeds**.
+提交**目标 URL**，拿到 HTML 或 JSON。**仅成功抓取才扣积分**。
 
-Need `host:port` in your own scraper instead? <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">Rotating</a> · <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">Static</a>.
+要自己管 `host:port`？<a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">轮换</a> · <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">静态</a>。
 
-## How you connect
+## 如何调用
 
-Use the **Scraping API Token** from the console and the fetch operation documented in <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>. The interactive playground in <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center</a> runs the same call.
+在控制台复制 **Scraping API Token**，按 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a> 的抓取接口说明发请求。<a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center</a>  playground 与生产一致。
 
-## Send a test fetch
+## 试一次抓取
 
-1. Copy your token from <a href="token.md" target="_blank" rel="noopener noreferrer">Get your token</a>.
-2. Open <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> → **Web Scraping API** → **Fetch URL**, or use the in-console playground.
-3. Set `url` to `https://example.com` and execute.
+1. 按 <a href="token.md" target="_blank" rel="noopener noreferrer">获取 Token</a> 复制 Token。
+2. 打开 <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> → **Web Scraping API** → **Fetch URL**，或用控制台 playground。
+3. 将 `url` 设为 `https://example.com` 并执行。
 
-A successful body is the page (or JSON). Failed attempts, timeouts, and hard blocks **do not spend credits**.
+成功时 body 为页面（或 JSON）。失败、超时、硬拦截**不扣积分**。
 
-## Set up in the dashboard
+## 控制台配置
 
-> **Tip**
+> **提示**
 >
-> New accounts receive a **$5 sign-up credit**. Apply it toward scraping credits at checkout when the offer appears.
+> 新账户可领 **$5 注册赠金**，结账时可用于抓取积分。
 
-### 1. Buy credits
+### 1. 购买积分
 
-Open <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase</a> (Web Scraping API / credits) or the <a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">Web Scraping API console</a> and buy a credit pack.
+在 <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买</a>（网页抓取 API / 积分）或 <a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取控制台</a> 购买积分包。
 
-Details: <a href="buy-credits.md" target="_blank" rel="noopener noreferrer">Buy credits</a>.
+详见 <a href="buy-credits.md" target="_blank" rel="noopener noreferrer">购买积分</a>。
 
-### 2. Get your token
+### 2. 获取 Token
 
-Copy the Scraping API token from the <a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">Web Scraping API console</a> as shown on <a href="token.md" target="_blank" rel="noopener noreferrer">Get your token</a>. Keep it out of public repos and tickets.
+在 <a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取控制台</a> 复制 Token，勿提交到公开仓库或工单。步骤见 <a href="token.md" target="_blank" rel="noopener noreferrer">获取 Token</a>。
 
-### 3. Confirm a fetch
+### 3. 验证抓取
 
-Run a test against `https://example.com` in API Center or OpenAPI Center. Then point `url` at your real target.
+在 API Center 或 OpenAPI Center 对 `https://example.com` 试跑，再换成真实目标 URL。
 
-Optional flags such as `render=true`, `super=true`, and `geoCode` are listed in <a href="parameters.md" target="_blank" rel="noopener noreferrer">Parameters and credit costs</a> and the <a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">in-console documentation</a>.
+`render=true`、`super=true`、`geoCode` 等见 <a href="parameters.md" target="_blank" rel="noopener noreferrer">参数与积分消耗</a> 与 <a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">控制台文档</a>。
 
-## Troubleshooting
+## 排错
 
-| Symptom | What to check |
+| 现象 | 先查 |
 | --- | --- |
-| 401 / invalid token | Scraping API token, not the proxy password and not the AI Access Token |
-| Empty or error body | Credits remaining; try without `render` first |
-| Wrong country | Pass `geoCode` as documented in Parameters |
+| 401 / invalid token | 用的是 Scraping API Token，不是代理密码或 AI Access Token |
+| 空 body / 报错 | 积分是否充足；先不加 `render` 试 |
+| 国家不对 | 按参数文档传 `geoCode` |
 
-## What to read next
+## 接下来
 
-| Task | Page |
+| 任务 | 页面 |
 | --- | --- |
-| First fetch details | <a href="first-fetch.md" target="_blank" rel="noopener noreferrer">First fetch</a> |
-| Flags and credit costs | <a href="parameters.md" target="_blank" rel="noopener noreferrer">Parameters and credit costs</a> |
-| Remaining credits | <a href="usage.md" target="_blank" rel="noopener noreferrer">Monitor usage</a> |
-| HTTP reference | <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> |
+| 抓取细节 | <a href="first-fetch.md" target="_blank" rel="noopener noreferrer">首次抓取</a> |
+| 参数与积分 | <a href="parameters.md" target="_blank" rel="noopener noreferrer">参数与积分消耗</a> |
+| 剩余积分 | <a href="usage.md" target="_blank" rel="noopener noreferrer">查看用量</a> |
+| HTTP 参考 | <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a> |

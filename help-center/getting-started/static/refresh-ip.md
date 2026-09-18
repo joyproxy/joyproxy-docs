@@ -1,24 +1,24 @@
-# New IP
+# 更换 IP
 
-**New IP** replaces the **exit IP** on a Static port. Country and network stay as purchased. The `host:port` your client uses does **not** change.
+**New IP** 会更换该静态端口对外的**出口 IP**，国家与网络类型仍按购买不变。客户端继续连原来的 `host:port`。
 
-## In My Proxies
+## 在「我的代理」操作
 
-1. Sign in → <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> → Static.
-2. Open **New IP** on the port.
-3. Read the wizard (what changes, timing), then **Replace exit IP**.
-4. Do not close the page. You will see a 1-minute progress timer; if needed the wizard asks you to wait one more minute. The line drops briefly, then the new exit IP is live (about **1–2 minutes**, sometimes longer).
+1. 登录 → <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> → 静态。
+2. 在该端口点 **New IP**。
+3. 阅读向导说明 → **Replace exit IP**。
+4. **不要关页面**。会出现约 1 分钟的进度；有时需再等 1 分钟。线路会短暂中断，新出口一般 **1–2 分钟**内生效（偶发更久）。
 
-Keep connecting with the **same host:port** from Endpoints. Only the address websites see changes.
+仍使用端点生成页**同一个 host:port**，只有网站看到的 IP 会变。
 
-The wizard shows remaining allowance and the wait interval for that port. Use those values before running New IP again on the same port.
+向导会显示该端口剩余次数与两次操作间隔，同一端口再次更换前请先看提示。
 
-## When you need a new city
+## 需要换城市时
 
-Buy a new Static line in that city, or use <a href="../custom/assign-region.md" target="_blank" rel="noopener noreferrer">Custom</a> so each port can move independently.
+在该城市新购静态线，或使用 <a href="../custom/assign-region.md" target="_blank" rel="noopener noreferrer">定制</a> 按端口分配不同地区。
 
-Custom ports use the same **New IP** control: <a href="../custom/new-ip.md" target="_blank" rel="noopener noreferrer">Custom → New IP</a>.
+定制端口同样有 **New IP**：<a href="../custom/new-ip.md" target="_blank" rel="noopener noreferrer">定制 → 更换 IP</a>。
 
-## Next
+## 下一步
 
-<a href="clients.md" target="_blank" rel="noopener noreferrer">Windows, Chrome, and mobile</a>
+<a href="clients.md" target="_blank" rel="noopener noreferrer">Windows、Chrome 与手机</a>

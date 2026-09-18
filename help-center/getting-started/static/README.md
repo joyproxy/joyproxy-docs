@@ -1,45 +1,45 @@
-# Static proxy
+# 静态代理
 
-Static proxies give you a **dedicated host and port** for the life of the package. The same `host:port` is the address your client connects to until the order expires. Use **New IP** in My Proxies to replace the exit IP; **region stays as purchased**.
+静态代理在套餐有效期内给你**固定的 host 与端口**。客户端始终连这个 `host:port`，直到订单到期。出口 IP 变了可以在「我的代理」里用 **New IP** 更换；**购买时选的国家/地区不变**。
 
-Available on **Residential**, **Business / ISP**, and **Datacenter**.
+适用于 **住宅**、**商业 / ISP**、**数据中心**。
 
-## How it differs from Rotating
+## 和轮换的区别
 
-| | Rotating | Static |
+| | 轮换 | 静态 |
 | --- | --- | --- |
-| Server you connect to | `gate.joyproxy.com:9001` | Unique `host:port` per line (for example `us-ca.edge.joyproxy.com:10001`) |
-| Geo | Encoded in generated username | Chosen at checkout |
-| Auth | Generated username + Username/Password | Username/Password; IP whitelist also available |
-| Billing | Per GB | Per IP for a duration |
+| 连接地址 | `gate.joyproxy.com:9001` | 每条线路独立的 `host:port`（如 `us-ca.edge.joyproxy.com:10001`） |
+| 地域 | 写在生成用户名里 | 下单时选定 |
+| 认证 | 生成用户名 + Username/Password | 短用户名/密码，或 IP 白名单 |
+| 计费 | 按 GB 流量 | 按 IP × 时长 |
 
-> **Important**
+> **重要**
 >
-> Connect to the **generated host and port**, not the **Exit IP** shown on the order. Exit IP is what websites see; host:port is the JoyProxy entry.
+> 请连接**端点生成页给出的 host 与 port**，不要拿订单卡片上的 **Exit IP** 当代理地址。Exit IP 是网站看到的出口；host:port 才是 JoyProxy 入口。
 
-## In this chapter
+## 本章目录
 
-1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">Quick start</a>
-2. <a href="purchase.md" target="_blank" rel="noopener noreferrer">Buy a dedicated line</a>
-3. <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a>
-4. <a href="authorization.md" target="_blank" rel="noopener noreferrer">Username/password or whitelist</a>
-5. <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>
-6. <a href="first-request.md" target="_blank" rel="noopener noreferrer">Make your first request</a>
-7. <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a>
-8. <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">New IP</a>
-9. <a href="clients.md" target="_blank" rel="noopener noreferrer">Windows, Chrome, and mobile</a>
-10. <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>
-11. <a href="restricted-targets.md" target="_blank" rel="noopener noreferrer">Restricted targets</a>
-12. <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>
+1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">快速开始</a>
+2. <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买独享线路</a>
+3. <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>
+4. <a href="authorization.md" target="_blank" rel="noopener noreferrer">用户名密码或白名单</a>
+5. <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a>
+6. <a href="first-request.md" target="_blank" rel="noopener noreferrer">首次请求</a>
+7. <a href="code-examples.md" target="_blank" rel="noopener noreferrer">代码示例</a>
+8. <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">更换 IP</a>
+9. <a href="clients.md" target="_blank" rel="noopener noreferrer">Windows、Chrome 与手机</a>
+10. <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a>
+11. <a href="restricted-targets.md" target="_blank" rel="noopener noreferrer">受限目标</a>
+12. <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>
 
-## First request shape
+## 请求长什么样
 
 ```bash
 curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
 ```
 
-If the line is IP-whitelisted from this machine, many clients can omit `USER:PASS`.
+若本机 IP 已在白名单，多数客户端可省略 `USER:PASS`。
 
-## Product pages
+## 产品页
 
-<a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">Residential</a> · <a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">Business / ISP</a> · <a href="https://www.joyproxy.com/products/proxy-datacenter.html" target="_blank" rel="noopener noreferrer">Datacenter</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
+<a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">住宅</a> · <a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">商业 / ISP</a> · <a href="https://www.joyproxy.com/products/proxy-datacenter.html" target="_blank" rel="noopener noreferrer">数据中心</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>

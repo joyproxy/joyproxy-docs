@@ -1,27 +1,27 @@
-# Quick start
+# 快速开始
 
-Static gives you a **dedicated host and port** for the life of the package. Region is chosen at checkout. Connect to the generated `host:port` — not the Exit IP on the order card.
+静态线在套餐期内使用**固定的 host 与 port**；国家/地区在下单时选定。请连接端点生成出来的 `host:port`，**不要**用订单上的 Exit IP。
 
-Already have an allocation? Skip to [Send a test request](#send-a-test-request).
+已有分配？直接看 [发测试请求](#发测试请求)。
 
-Need new IPs every request instead? <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">Rotating quick start</a>. Per-port geo after purchase: <a href="../custom/quick-start.md" target="_blank" rel="noopener noreferrer">Custom quick start</a>.
+每次请求都要换 IP？见 <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">轮换快速开始</a>。要按端口分别定地区： <a href="../custom/quick-start.md" target="_blank" rel="noopener noreferrer">定制快速开始</a>。
 
-## How you connect
+## 连接参数
 
-| Field | Value |
+| 字段 | 取值 |
 | --- | --- |
-| Host | From <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a>, for example `us-ca.edge.joyproxy.com` |
-| Port | From Endpoints, for example `10001` |
-| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. See <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>. |
-| Auth | Username/Password **and/or** IP whitelist from <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> |
+| 主机 | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> 显示，如 `us-ca.edge.joyproxy.com` |
+| 端口 | 同上，如 `10001` |
+| 协议 | HTTP、SOCKS5，均可访问 **HTTPS 网站**。见 <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> |
+| 认证 | <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a> 的 Username/Password **和/或** IP 白名单 |
 
-> **Important**
+> **重要**
 >
-> Exit IP is what websites see. Your client must use the **generated host and port**.
+> Exit IP 是目标站看到的地址；客户端必须填**生成出来的 host 与 port**。
 
-## Send a test request
+## 发测试请求
 
-Replace `USER`, `PASS`, `HOST`, and `PORT`. If this machine is on the IP whitelist, omit `USER:PASS@`.
+替换 `USER`、`PASS`、`HOST`、`PORT`。本机在白名单时可去掉 `USER:PASS@`。
 
 {% tabs %}
 {% tab title="cURL" %}
@@ -51,63 +51,63 @@ console.log(await res.text());
 {% endtab %}
 {% endtabs %}
 
-More languages: <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a>.
+更多语言：<a href="code-examples.md" target="_blank" rel="noopener noreferrer">代码示例</a>。
 
-## Set up in the dashboard
+## 在控制台配置
 
-New accounts: <a href="https://www.joyproxy.com/register.html" target="_blank" rel="noopener noreferrer">Register</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
+新用户：<a href="https://www.joyproxy.com/register.html" target="_blank" rel="noopener noreferrer">注册</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>
 
-> **Tip**
+> **提示**
 >
-> New accounts receive a **$5 sign-up credit**. Apply it on your first eligible line at checkout.
+> 新账户可领 **$5 注册赠金**，首单符合条件时可在结账使用。
 
-### 1. Buy a dedicated line
+### 1. 购买静态线路
 
-1. Open <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">Purchase → Static</a>.
-2. Select **Residential**, **Business / ISP**, or **Datacenter**.
-3. Pick **country** (province / city when offered). This geo is **locked for the order**.
-4. Choose duration and quantity, then pay in checkout (card, Apple Pay, Google Pay, PayPal, WeChat Pay, UPI, USDT, or account balance).
-5. Wait until the allocation is active in <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>.
+1. <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">购买 → 静态</a>。
+2. 选 **住宅**、**商业 / ISP** 或 **数据中心**。
+3. 选**国家**（有则选省/市）。该地域在订单周期内**锁定**。
+4. 选时长与数量，结账（卡、Apple Pay、Google Pay、PayPal、微信、UPI、USDT 或余额）。
+5. 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> 等到分配生效。
 
-Details: <a href="purchase.md" target="_blank" rel="noopener noreferrer">Buy a dedicated line</a>.
+详见 <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买独享线路</a>。
 
-### 2. Authentication
+### 2. 认证
 
-Set **Username/Password** in <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> (recommended):
+在 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a> 配置 **Username/Password**（推荐）：
 
-- **Username/Password** — letter first, a–z and 0–9, max 16; password 6+. On Static, this username **is** the proxy user.
-- **IP whitelist** — add the public IPv4 of the machine that will connect, then use `host:port` only.
+- **Username/Password** — 字母开头，a–z 与 0–9，最长 16；密码至少 6 位。静态线下，这个用户名**就是**代理用户名。
+- **IP 白名单** — 填入会发起连接的机器的公网 IPv4，客户端只填 `host:port`。
 
-Details: <a href="authorization.md" target="_blank" rel="noopener noreferrer">Username/password or whitelist</a> · <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
+详见 <a href="authorization.md" target="_blank" rel="noopener noreferrer">用户名密码或白名单</a>、<a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。
 
-### 3. Generate endpoints
+### 3. 生成端点
 
-1. Open <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> → **Static Proxies → Web generator**.
-2. Select the order → **Generate now**.
-3. Copy **host** and **port** (plus user/pass if you are not using whitelist).
+1. <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> → **Static Proxies → Web generator**。
+2. 选订单 → **Generate now**。
+3. 复制 **host**、**port**（未用白名单时连同账号密码）。
 
-Details: <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>.
+详见 <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a>。
 
-### 4. Confirm the IP
+### 4. 确认出口
 
-Run a snippet above. The printed address should match the region you purchased.
+跑上面的示例，返回 IP 应接近你购买的地域。
 
-## Troubleshooting
+## 常见问题
 
-| Symptom | What to check |
+| 现象 | 先查 |
 | --- | --- |
-| **407** / auth failed | Short credential user/pass, or whitelist the **public** IPv4 of this machine |
-| Timeout / connection refused | Latest host:port from Endpoints; order still active |
-| Works on VPS, fails at home | Home IP is not on the whitelist — add it or switch to user/pass |
-| Connected to Exit IP | Use generated host:port, not the Exit IP on the order card |
+| **407** / 认证失败 | 短用户名密码，或把本机**公网 IPv4** 加入白名单 |
+| 超时 / 连接被拒 | 端点生成页最新 host:port；订单是否仍有效 |
+| VPS 能用、家里不行 | 家里 IP 未加白名单 — 加 IP 或改用账号密码 |
+| 连到了 Exit IP | 应使用生成的 host:port，不是订单卡片上的 Exit IP |
 
-## What to read next
+## 接下来
 
-| Task | Page |
+| 任务 | 页面 |
 | --- | --- |
-| Auto-renew | <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a> |
-| New IP | <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">New IP</a> |
-| Windows, Chrome, mobile | <a href="clients.md" target="_blank" rel="noopener noreferrer">Clients</a> |
-| HTTP vs SOCKS5 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> |
-| 407 / 403 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a> |
-| More code | <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a> |
+| 自动续费 | <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a> |
+| 更换出口 IP | <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">更换 IP</a> |
+| Windows / Chrome / 手机 | <a href="clients.md" target="_blank" rel="noopener noreferrer">客户端配置</a> |
+| HTTP / SOCKS5 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> |
+| 407 / 403 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a> |
+| 更多代码 | <a href="code-examples.md" target="_blank" rel="noopener noreferrer">代码示例</a> |

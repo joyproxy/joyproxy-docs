@@ -1,35 +1,35 @@
-# Auto-buy traffic
+# 自动购买流量
 
-When remaining GB on a Rotating **network line** (Residential, Mobile, or Business / ISP) reaches the trigger you set, JoyProxy buys the pack you chose and charges **account balance**. You can turn this off anytime.
+当轮换**网络线路**（住宅、移动或商业 / ISP）剩余 GB 达到您设置的触发值时，JoyProxy 会购买所选套餐并从**账户余额**扣款。可随时关闭。
 
-Keep enough balance for the next pack. Compare pack prices on <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>.
+请保持足够余额以支付下一包。在 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a> 对比套餐价格。
 
-## Turn it on
+## 开启
 
-1. Open <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> on the matching network (Residential / Mobile / Business).
-2. Open **Auto-buy traffic**.
-3. Choose **Pack to buy each time**.
-4. Set **Buy when remaining is at or below** (GB).
-5. Confirm the estimated amount, then **Turn on auto purchase**.
+1. 在对应网络（住宅 / 移动 / 商业）打开 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>。
+2. 打开 **Auto-buy traffic**。
+3. 选择 **Pack to buy each time**。
+4. 设置 **Buy when remaining is at or below**（GB）。
+5. 确认预估金额，然后 **Turn on auto purchase**。
 
-If remaining is already at or below the trigger, the modal offers **Enable and buy now** — that charges immediately and adds the pack’s GB.
+若剩余已低于或等于触发值，弹窗提供 **Enable and buy now** — 将立即扣费并增加该套餐 GB。
 
-## What you see in the modal
+## 弹窗字段
 
-| Field | Meaning |
+| 字段 | 含义 |
 | --- | --- |
-| Pack to buy each time | Catalog pack for this network |
-| Buy when remaining is at or below | Remaining GB on **this line** that starts a purchase |
-| Current remaining | GB left on the line right now |
-| Current balance | Account balance used for the charge |
-| Per-day count | The modal shows how many auto purchases this line can make per day |
+| Pack to buy each time | 该网络的目录套餐 |
+| Buy when remaining is at or below | **本线路**剩余 GB 触发购买 |
+| Current remaining | 当前线路剩余 GB |
+| Current balance | 用于扣款的账户余额 |
+| Per-day count | 弹窗显示本线路每日自动购买次数上限 |
 
-Each network line has its own Auto-buy rule. Residential, Mobile, and Business / ISP are set separately.
+每条网络线路有独立自动购买规则。住宅、移动与商业 / ISP 分别设置。
 
-## Turn it off
+## 关闭
 
-Use **Turn off auto purchase**. Remaining traffic is unchanged.
+使用 **Turn off auto purchase**。剩余流量不变。
 
-## Next
+## 下一步
 
-Watch remaining GB on <a href="usage-and-orders.md" target="_blank" rel="noopener noreferrer">Usage and orders</a>, or continue setup: <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
+在 <a href="usage-and-orders.md" target="_blank" rel="noopener noreferrer">用量与订单</a> 关注剩余 GB，或继续配置：<a href="authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。

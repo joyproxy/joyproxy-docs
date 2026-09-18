@@ -1,21 +1,21 @@
-# Buy a Static line
+# 购买静态线路
 
-Static is priced **per IP** for a duration (day, week, month, longer plans as shown at checkout). There is no GB cap on the line itself—you pay for the allocation and the period.
+静态按 **IP × 时长** 计费（日/周/月等以结账页为准）。线路本身没有 GB 上限，你为分配的有效期付费。
 
-**Residential, Business / ISP, and Datacenter each have their own Static price.** Compare on <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>.
+**住宅、商业 / ISP、数据中心** 的静态价各不相同，见 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>。
 
-## Steps
+## 步骤
 
-1. Open <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">Purchase → Static</a>.
-2. Select **Residential**, **Business / ISP**, or **Datacenter**.
-3. Search or pick **country** (province / city when the page offers it). This geo is **locked for the order**.
-4. Choose duration and quantity.
-5. Pay in checkout: card, Apple Pay, Google Pay, PayPal, WeChat Pay, UPI, USDT (TRC20), or account balance.
-6. Open <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> and wait until the allocation is active.
+1. 打开 <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">购买 → 静态</a>。
+2. 选择网络类型。
+3. 搜索或选择**国家**（有则选省/市）。地域在订单内**不可随意改**。
+4. 选时长与数量。
+5. 结账付款。
+6. 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> 等待分配变为可用。
 
-Need several cities under one order? <a href="../custom/purchase.md" target="_blank" rel="noopener noreferrer">Custom</a> assigns region **per port** after purchase.
+同一订单里要多个不同城市？用 <a href="../custom/purchase.md" target="_blank" rel="noopener noreferrer">定制</a>，付款后**按端口**分配地区。
 
-## After checkout
+## 付款之后
 
-- Enable <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a> so the line extends from account balance, or renew from My Proxies / Purchase.
-- Generate `host:port` next: <a href="authorization.md" target="_blank" rel="noopener noreferrer">Authorization</a> then <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>.
+- 可开 <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>，到期前从余额扣款续期；也可在「我的代理」或购买页手动续费。
+- 接着配置 <a href="authorization.md" target="_blank" rel="noopener noreferrer">认证</a> 并 <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a>。

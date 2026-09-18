@@ -1,20 +1,20 @@
-# Get your Scraping API Token
+# 获取 Scraping API Token
 
-The **Scraping API Token** only authorizes Web Scraping API operations. It is not the proxy extract token, Master User Token, or AI Access Token.
+**Scraping API Token** 只用于网页抓取 API，不是代理提取 Token、主用户 Token 或 AI Access Token。
 
-1. Open <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center</a>.
-2. Copy **Scraping API Token**.
-3. Store it in an environment variable. Rotate it in API Center if it may have leaked.
+1. 打开 <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center</a>。
+2. 复制 **Scraping API Token**。
+3. 放进环境变量保管。若怀疑泄露，在 API Center 轮换。
 
-| Token | Typical use |
+| Token | 典型用途 |
 | --- | --- |
-| Scraping API Token | Managed fetch, credits, and usage APIs |
-| Extract **API URL** | Proxy endpoint generator — copy from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> |
-| Master User Token | Order and balance APIs |
+| Scraping API Token | 托管抓取、积分与用量接口 |
+| 提取 **API URL** | 代理端点生成 — 从 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> 复制 |
+| 主用户 Token | 订单与余额 API |
 | AI Access Token | OpenClaw / MCP |
 
-Details and try-it requests: <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+试调与请求形态：<a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>。
 
-## Next
+## 下一步
 
-<a href="first-fetch.md" target="_blank" rel="noopener noreferrer">First fetch</a>
+<a href="first-fetch.md" target="_blank" rel="noopener noreferrer">首次抓取</a>

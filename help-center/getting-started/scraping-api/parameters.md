@@ -1,30 +1,30 @@
-# Parameters and credit costs
+# 参数与积分消耗
 
-Common query flags on the Web Scraping API fetch operation (see <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> for the live path and full list):
+网页抓取 API 抓取接口的常用查询参数（完整路径与列表以 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a> 为准）：
 
-| Parameter | Purpose |
+| 参数 | 作用 |
 | --- | --- |
-| `url` | Target page (required) |
+| `url` | 目标页（必填） |
 | `token` | Scraping API Token |
-| `render=true` | JavaScript rendering for dynamic pages |
-| `super=true` | Stronger anti-bot path |
-| `geoCode=us` | Country-level exit preference (use a real ISO code you need) |
+| `render=true` | 对动态页做 JavaScript 渲染 |
+| `super=true` | 更强反爬路径 |
+| `geoCode=us` | 出口国家偏好（填真实 ISO 代码） |
 
-Full list and plugin endpoints: <a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">API documentation</a>.
+完整列表与插件接口：<a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">API 文档</a>。
 
-## Credits charged on success only
+## 仅成功时扣积分
 
-| Request type | Credits (successful fetch) |
+| 请求类型 | 成功时积分 |
 | --- | --- |
-| Standard fetch | 1 |
+| 标准抓取 | 1 |
 | `render=true` | 5 |
 | `super=true` | 10 |
 | `super` + `render` | 25 |
 
-Response headers can include `X-JoyProxy-Fetch-Credits-Used` and remaining balance. Start with a standard fetch; add `render` or `super` only when the page needs them—this keeps cost predictable.
+响应头可含 `X-JoyProxy-Fetch-Credits-Used` 与剩余余额。建议先标准抓取，确需时再开 `render` 或 `super`，成本更可控。
 
-Some site-specific plugins may use different rates; the product page and full API docs list those.
+部分站点插件费率不同，见产品页与完整 API 文档。
 
-## Next
+## 下一步
 
-<a href="usage.md" target="_blank" rel="noopener noreferrer">Monitor usage</a>
+<a href="usage.md" target="_blank" rel="noopener noreferrer">查看用量</a>

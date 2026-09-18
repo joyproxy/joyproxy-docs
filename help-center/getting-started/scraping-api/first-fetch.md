@@ -1,13 +1,13 @@
-# First fetch
+# 首次抓取
 
-1. Copy your **Scraping API Token** — <a href="token.md" target="_blank" rel="noopener noreferrer">Get your token</a>.
-2. Open <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> → **Web Scraping API** → **Fetch URL**, or the <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center playground</a>.
-3. Set `url` to `https://example.com` and run the request.
+1. 复制 **Scraping API Token** — 见 <a href="token.md" target="_blank" rel="noopener noreferrer">获取 Token</a>。
+2. 打开 <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> → **Web Scraping API** → **Fetch URL**，或 <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center playground</a>。
+3. 将 `url` 设为 `https://example.com` 并发送请求。
 
-A successful response body is the page (or JSON, depending on flags). Failed attempts, timeouts, and hard blocks **do not spend credits**.
+成功时响应 body 为页面（或 JSON，取决于参数）。失败、超时、硬拦截**不扣积分**。
 
-Copy exported snippets from OpenAPI Center into your app. Request shape and auth: <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+可从 OpenAPI Center 导出代码片段到项目。认证与请求结构见 <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>。
 
-## Next
+## 下一步
 
-Tune `render`, `super`, and `geoCode`: <a href="parameters.md" target="_blank" rel="noopener noreferrer">Parameters and credit costs</a>.
+调整 `render`、`super`、`geoCode`：<a href="parameters.md" target="_blank" rel="noopener noreferrer">参数与积分消耗</a>。

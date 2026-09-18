@@ -1,27 +1,27 @@
-# Proxy Tester
+# 代理检测工具
 
-Windows desktop tool to check **HTTP**, **SOCKS5 TCP**, and **SOCKS5 UDP** before you ship config to production.
+Windows 桌面工具，上线前检测 **HTTP**、**SOCKS5 TCP**、**SOCKS5 UDP**。
 
-<a href="https://www.joyproxy.com/products/tester.html" target="_blank" rel="noopener noreferrer">Product page</a> · <a href="https://github.com/joyproxy/joyproxy-tester/releases/latest" target="_blank" rel="noopener noreferrer">Download</a>
+<a href="https://www.joyproxy.com/products/tester.html" target="_blank" rel="noopener noreferrer">产品页</a> · <a href="https://github.com/joyproxy/joyproxy-tester/releases/latest" target="_blank" rel="noopener noreferrer">下载</a>
 
-## What you can verify
+## 能测什么
 
-- The proxy accepts connections and returns an outbound IP
-- Country matches what you generated or purchased
-- Batch lists from Endpoints export or a text file (regex + sequential test)
+- 代理是否接通、出口 IP 是否正确
+- 国家是否与生成/购买一致
+- 从端点导出或文本文件批量测（支持正则 + 顺序执行）
 
-## Quick start
+## 快速使用
 
-1. Download the Windows build from <a href="https://github.com/joyproxy/joyproxy-tester/releases/latest" target="_blank" rel="noopener noreferrer">GitHub Releases</a>.
-2. Paste a proxy string (`host:port` or full URI with username/password).
-3. Run the test and read outbound IP / geo.
-4. For Rotating, generate a username in <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a>, then test with the Users & Whitelist password — <a href="../rotating/first-request.md" target="_blank" rel="noopener noreferrer">Rotating first request</a>.
+1. 在 <a href="https://github.com/joyproxy/joyproxy-tester/releases/latest" target="_blank" rel="noopener noreferrer">GitHub Releases</a> 下载 Windows 版。
+2. 粘贴代理串（`host:port` 或带账号密码的完整 URI）。
+3. 运行测试，查看出口 IP / 地域。
+4. 轮换线：先在 <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> 生成用户名，配 Users & Whitelist 密码 — <a href="../rotating/first-request.md" target="_blank" rel="noopener noreferrer">轮换首次请求</a>。
 
-| Line type | Paste |
+| 线路类型 | 粘贴内容 |
 | --- | --- |
-| Rotating | `gate.joyproxy.com:9001` + generated user + password |
-| Static / Custom | Host and port from the generator |
+| 轮换 | `gate.joyproxy.com:9001` + 生成用户名 + 密码 |
+| 静态 / 定制 | 生成器里的 host 与 port |
 
-Open source (MIT). Source runs on Python 3.10+.
+开源（MIT），也可用 Python 3.10+ 跑源码。
 
-After a pass, apply the same line in the <a href="browser-extension.md" target="_blank" rel="noopener noreferrer">Browser extension</a> for click-through checks.
+测通后可用 <a href="browser-extension.md" target="_blank" rel="noopener noreferrer">浏览器扩展</a> 做点选验证。

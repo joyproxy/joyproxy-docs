@@ -1,25 +1,25 @@
-# Username/password or whitelist
+# 用户名密码或白名单
 
-Set **Username/Password** on <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> before you generate endpoints. You can also add an **IP whitelist**. Each app picks the method it supports.
+在 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a> 配置 **Username/Password**（建议先生成端点前完成）。也可添加 **IP 白名单**，按工具能力二选一或组合使用。
 
-On Static, the Users & Whitelist username **is** the proxy user. Product-wide walkthrough: <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
+静态线下，Users & Whitelist 里的短用户名**就是**代理登录名。通用说明见 <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。
 
-## Username/Password (recommended)
+## Username/Password（推荐）
 
-Best for laptops, browsers, and tools that cannot pin one egress IP.
+适合笔记本、浏览器、出口 IP 不固定的工具。
 
-1. <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> → **Username/Password**.
-2. Create a User/Pass:
-   - Username: starts with a **letter**, lowercase **a–z** and **0–9** only, **max 16** characters.
-   - Password: **at least 6** characters.
-3. In the client:
+1. 打开 **Username/Password**。
+2. 新建 User/Pass：
+   - 用户名：**字母开头**，小写 **a–z** 与 **0–9**，**最多 16** 位。
+   - 密码：**至少 6** 位。
+3. 在客户端填写：
 
-| Field | Value |
+| 字段 | 取值 |
 | --- | --- |
-| Host | From Endpoints, e.g. `us-ca.edge.joyproxy.com` |
-| Port | From Endpoints, e.g. `10001` |
-| Username | The User/Pass username you created |
-| Password | The User/Pass password |
+| 主机 | 端点生成页，如 `us-ca.edge.joyproxy.com` |
+| 端口 | 如 `10001` |
+| 用户名 | 刚创建的 User/Pass 用户名 |
+| 密码 | 对应密码 |
 
 ```text
 http://USER:PASS@us-ca.edge.joyproxy.com:10001
@@ -27,18 +27,18 @@ http://USER:PASS@us-ca.edge.joyproxy.com:10001
 
 ### 407 Proxy Authentication Required
 
-Edit the password on Users & Whitelist, confirm you are not sending the website login, and retry. Do not mix a Rotating generated username with a Static `*.edge.joyproxy.com` host.
+在 Users & Whitelist 核对密码，确认没有误用网站登录密码。不要把轮换的「长生成用户名」配到静态的 `*.edge.joyproxy.com` 主机上。
 
-## IP whitelist
+## IP 白名单
 
-Best when scrapers run on a known public IPv4.
+适合出口公网 IP 固定的爬虫服务器。
 
-1. From the **same machine that will connect**, look up its **public IPv4**.
-2. **Users & Whitelist → IP Whitelist** → enter the IP and a remark → **Add IP**.
-3. In the client, use only `host:port` from Endpoints.
+1. 在**将要发起连接**的机器上查询其**公网 IPv4**。
+2. **IP Whitelist** → 填 IP 与备注 → **Add IP**。
+3. 客户端只填端点生成页的 `host:port`。
 
-Whitelist the IP that **opens** the connection, not the Exit IP on the order card. Name each entry so you can tell staging from production.
+白名单填的是**发起连接**的 IP，不是订单上的 Exit IP。备注写清环境（测试/生产），便于维护。
 
-## Next
+## 下一步
 
-<a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>
+<a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a>

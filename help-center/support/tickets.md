@@ -1,25 +1,25 @@
-# Ticket system
+# 工单系统
 
-Submit a support ticket when you need a documented thread—for billing investigations, integration debugging, or issues that outlive a chat session.
+当您需要可追溯的记录——账单调查、集成调试或超出单次聊天的问题时——请提交支持工单。
 
-## Create a ticket
+## 创建工单
 
-1. Sign in → <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">Support</a>.
-2. Open **My Tickets** (or **Submit ticket**).
-3. Enter a clear **subject** (for example “Static US line auth failure”).
-4. Choose **priority** if the form offers it.
-5. Describe steps to reproduce, expected vs actual behavior, and timestamps (UTC helps).
-6. Attach redacted screenshots or logs—remove passwords and full tokens.
-7. Submit and watch for email or in-console replies.
+1. 登录 → <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">支持</a>。
+2. 打开 **My Tickets**（或 **Submit ticket**）。
+3. 填写清晰的**主题**（例如「静态美国线路认证失败」）。
+4. 若表单提供**优先级**，请选择。
+5. 描述复现步骤、预期与实际行为，以及时间戳（UTC 更佳）。
+6. 附上已打码的截图或日志——移除密码与完整 Token。
+7. 提交并留意邮件或控制台回复。
 
-## Status and follow-up
+## 状态与跟进
 
-- Reply in the ticket thread instead of opening duplicates.
-- Reference order IDs from <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> when traffic looks wrong.
-- For urgent production outages, start <a href="live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> **and** file a ticket so engineers have context.
+- 在工单线程中回复，勿重复开单。
+- 流量异常时请引用 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> 中的订单 ID。
+- 紧急生产故障请同时发起<a href="live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a>**并**提交工单，便于工程师掌握上下文。
 
-## Billing tickets
+## 账单类工单
 
-Link to <a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">Transactions</a> entries and state whether the issue is PayPal, balance, or scraping credits.
+请链接到<a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">交易</a>记录，并说明问题属于 PayPal、余额还是抓取积分。
 
-Legal or privacy requests may reference <a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">Terms</a> and <a href="https://www.joyproxy.com/privacy.html" target="_blank" rel="noopener noreferrer">Privacy</a>.
+法律或隐私相关请求可引用<a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">服务条款</a>与<a href="https://www.joyproxy.com/privacy.html" target="_blank" rel="noopener noreferrer">隐私政策</a>。

@@ -1,59 +1,59 @@
-# Make your first request
+# 发起首次请求
 
-This page assumes you already have:
+本页假设您已具备：
 
-1. An active Rotating pack — <a href="purchase.md" target="_blank" rel="noopener noreferrer">Purchase</a>
-2. Authentication set up — <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>
-3. A generated username — <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>
+1. 生效的轮换套餐 — <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买</a>
+2. 已配置认证 — <a href="authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>
+3. 已生成用户名 — <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a>
 
-Run a test **before** you point production scrapers at the gateway. When the response is a public IP that is not your own, the proxy is working.
+在将生产爬虫指向网关前请先测试。当响应为非公网 IP 时，表示代理可用。
 
-## cURL (fastest check)
+## cURL（最快检查）
 
-This uses the **HTTP** proxy protocol to open an **HTTPS** website:
+使用 **HTTP** 代理协议打开 **HTTPS** 网站：
 
 ```bash
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
-SOCKS5:
+SOCKS5：
 
 ```bash
 curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
-A single IPv4/IPv6 in the output means the gateway authenticated you and an exit IP was assigned.
+输出为单个 IPv4/IPv6 表示网关已认证并分配出口 IP。
 
-## What to fill in other tools
+## 其他工具填写方式
 
-| Label in the tool | JoyProxy value |
+| 工具中的标签 | JoyProxy 值 |
 | --- | --- |
-| Proxy type | HTTP or SOCKS5 (both can open HTTPS websites) |
-| Server / Host | `gate.joyproxy.com` |
-| Port | `9001` |
-| Username | Full generated username |
-| Password | Users & Whitelist → Username/Password |
+| 代理类型 | HTTP 或 SOCKS5（均可打开 HTTPS 网站） |
+| 服务器 / 主机 | `gate.joyproxy.com` |
+| 端口 | `9001` |
+| 用户名 | 完整生成用户名 |
+| 密码 | Users & Whitelist → Username/Password |
 
-URI form:
+URI 形式：
 
 ```text
 http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 ```
 
-The Endpoints page can paste a ready-made snippet in cURL, Python, Node.js, PHP, or Go. That snippet already includes the username from your last generate.
+Endpoints 页可粘贴 cURL、Python、Node.js、PHP 或 Go 就绪片段，已包含上次生成的用户名。
 
-## If the request fails
+## 若请求失败
 
-Work through this list in order:
+按顺序排查：
 
-1. **407 / Proxy Authentication Required** — Password must be the Username/Password secret. Username must be the **generated** string, not your dashboard email and not the short User/Pass name. Edit the password and retry. See <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>. Full table: <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>.
-2. **Timeout** — Confirm `gate.joyproxy.com` and port `9001`. Try the HTTP proxy type first. See <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>.
-3. **Wrong country** — Generate a new username with the country selected in Endpoints. Do not edit the old username.
-4. **Order inactive** — Check remaining GB in <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> or the Usage tab.
+1. **407 / Proxy Authentication Required** — 密码须为 Username/Password 密钥。用户名须为 **生成**字符串，而非控制台邮箱或短 User/Pass 名。修改密码后重试。见 <a href="authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。完整表：<a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>。
+2. **超时** — 确认 `gate.joyproxy.com` 与端口 `9001`。先试 HTTP 代理类型。见 <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a>。
+3. **国家错误** — 在 Endpoints 选择国家后生成新用户名。勿编辑旧用户名。
+4. **订单未生效** — 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> 或用量页签查看剩余 GB。
 
-Still stuck? <a href="../../support/live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> with the **redacted** curl (never send the live password).
+仍无法解决？<a href="../../support/live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a>并提供**已打码**的 curl（切勿发送真实密码）。
 
-## Next
+## 下一步
 
-Copy a snippet for your language: <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a>. Protocol choice: <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>. For Chrome-only tests, use the <a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">Browser extension</a>.
+复制您语言的片段：<a href="code-examples.md" target="_blank" rel="noopener noreferrer">代码示例</a>。协议选择：<a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a>。仅测 Chrome 请用<a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">浏览器扩展</a>。

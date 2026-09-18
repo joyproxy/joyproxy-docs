@@ -1,20 +1,20 @@
-# Idle sign-out time
+# 空闲自动退出时间
 
-Control how long the JoyProxy console stays signed in when you step away. Shorter timeouts reduce risk on shared or public computers.
+控制离开电脑后 JoyProxy 控制台保持登录的时长。较短超时可降低共享或公共电脑上的风险。
 
-## Configure
+## 配置
 
-1. Open <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a>.
-2. Find **Idle sign-out**, **Session timeout**, or similar security setting.
-3. Choose a duration that balances convenience and safety.
-4. Save changes.
+1. 打开<a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">账户设置</a>。
+2. 找到 **Idle sign-out**、**Session timeout** 或类似安全设置。
+3. 选择兼顾便利与安全的时长。
+4. 保存更改。
 
-## Recommendations
+## 建议
 
-| Environment | Suggestion |
+| 环境 | 建议 |
 | --- | --- |
-| Personal laptop | Default or moderate timeout |
-| Office hot-desk | Short timeout + password manager |
-| Server jump box | Short timeout; use API tokens in automation instead of browser sessions |
+| 个人笔记本 | 默认或中等超时 |
+| 办公室热桌 | 短超时 + 密码管理器 |
+| 服务器跳板机 | 短超时；自动化请用 API Token 而非浏览器会话 |
 
-Idle sign-out only affects the **web console**. API tokens remain valid until you <a href="rotate-token.md" target="_blank" rel="noopener noreferrer">rotate</a> them.
+空闲退出仅影响**网页控制台**。API Token 在您<a href="rotate-token.md" target="_blank" rel="noopener noreferrer">轮换</a>之前仍然有效。

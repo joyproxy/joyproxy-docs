@@ -1,43 +1,43 @@
-# Windows 11 system proxy settings
+# Windows 11 系统代理设置
 
-Windows can send **all compatible applications** through a proxy when you enable system-wide settings. This works well with JoyProxy **Static** or **Custom** host:port lines; rotating gateways use the same fields with `gate.joyproxy.com` and port `9001`.
+启用系统级设置后，Windows 可将**所有兼容应用**的流量经代理发出。适用于 JoyProxy **静态**或**定制** host:port；轮换网关在同一字段使用 `gate.joyproxy.com` 与端口 `9001`。
 
-## Before you start
+## 开始之前
 
-1. Generate endpoints in <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a>.
-2. Decide auth:
-   - **Whitelist** — run from the IP you added in <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a>.
-   - **Username/password** — Windows will prompt or use your app’s embedded credentials.
+1. 在<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成/提取中心</a>生成端点。
+2. 决定认证方式：
+   - **白名单** — 从已加入 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> 的 IP 发起连接。
+   - **用户名/密码** — Windows 会提示或由应用内嵌凭据。
 
-> **Security**
+> **安全**
 >
-> System proxy affects every app that respects Windows proxy settings (browsers, many SDKs). Disable it when you are done, or use the <a href="../getting-started/software/browser-extension.md" target="_blank" rel="noopener noreferrer">Browser extension</a> for isolated testing.
+> 系统代理影响所有遵循 Windows 代理设置的应用（浏览器、许多 SDK）。完成后请关闭，或使用<a href="../getting-started/software/browser-extension.md" target="_blank" rel="noopener noreferrer">浏览器扩展</a>做隔离测试。
 
-## Configure proxy (Windows 11)
+## 配置代理（Windows 11）
 
-1. **Settings** → **Network & internet** → **Proxy**.
-2. Under **Manual proxy setup**, set **Use a proxy server** to **On**.
-3. **Address** = endpoint host (e.g. `us-ca.edge.joyproxy.com` or `gate.joyproxy.com`).
-4. **Port** = endpoint port (e.g. `10001` or `9001`).
-5. Save.
+1. **设置** → **网络和 Internet** → **代理**。
+2. 在 **手动设置代理** 下将 **使用代理服务器** 设为 **开**。
+3. **地址** = 端点 host（如 `us-ca.edge.joyproxy.com` 或 `gate.joyproxy.com`）。
+4. **端口** = 端点 port（如 `10001` 或 `9001`）。
+5. 保存。
 
-If Windows or an app prompts for credentials, enter your Users & Whitelist username and password (static/custom) or generated user + password (rotating).
+若 Windows 或应用提示凭据，输入 Users & Whitelist 用户名与密码（静态/定制）或生成用户 + 密码（轮换）。
 
-## Edge and Chrome on Windows
+## Windows 上的 Edge 与 Chrome
 
-Chromium browsers follow **system proxy** on Windows. After enabling proxy above, open Edge or Chrome and visit an IP-check site to confirm egress.
+Windows 上 Chromium 浏览器遵循**系统代理**。启用上述代理后打开 Edge 或 Chrome，访问 IP 检测站点确认出口。
 
-For **browser-only** routing without touching system settings, prefer the <a href="../getting-started/software/browser-extension.md" target="_blank" rel="noopener noreferrer">JoyProxy extension</a>.
+若只需**浏览器级**路由而不改系统设置，请优先使用 <a href="../getting-started/software/browser-extension.md" target="_blank" rel="noopener noreferrer">JoyProxy 扩展</a>。
 
-## Verify and troubleshoot
+## 验证与故障排查
 
-| Check | Action |
+| 检查 | 操作 |
 | --- | --- |
-| Wrong country | Regenerate username (rotating) or confirm static allocation region |
-| Auth errors | Re-enter password; confirm whitelist IP matches <a href="https://www.joyproxy.com" target="_blank" rel="noopener noreferrer">whatismyip</a> from the server |
-| Some apps ignore proxy | Use <a href="../getting-started/software/proxy-server.md" target="_blank" rel="noopener noreferrer">Proxy Server</a> local port or app-specific proxy fields |
+| 国家错误 | 重新生成用户名（轮换）或确认静态分配地域 |
+| 认证错误 | 重输密码；确认白名单 IP 与服务器上 <a href="https://www.joyproxy.com" target="_blank" rel="noopener noreferrer">whatismyip</a> 一致 |
+| 部分应用忽略代理 | 使用<a href="../getting-started/software/proxy-server.md" target="_blank" rel="noopener noreferrer">代理服务器</a>本地端口或应用专属代理字段 |
 
-## Related
+## 相关
 
-- <a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">Static proxy guide</a>
-- <a href="chrome-static-proxy.md" target="_blank" rel="noopener noreferrer">Chrome static proxy</a>
+- <a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">静态代理指南</a>
+- <a href="chrome-static-proxy.md" target="_blank" rel="noopener noreferrer">Chrome 静态代理</a>

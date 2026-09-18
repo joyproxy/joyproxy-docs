@@ -1,117 +1,117 @@
-# OpenAPI Center
+# OpenAPI 中心
 
-<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> is the **single** HTTP API reference for JoyProxy: try requests in the browser, copy snippets, and validate tokens before production. Narrative proxy guides in Getting started focus on the console; **paths, query bodies, and error codes live here**.
+<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> 是 JoyProxy 的**统一 HTTP API 文档**：在浏览器里试调接口、复制示例、上线前核对 Token。各产品「入门」章节只讲控制台操作；**路径、请求参数与错误码以本文为准**。
 
-**Base URL:** `https://api.joyproxy.com`
+**Base URL：** `https://api.joyproxy.com`
 
-## Authentication
+## 认证
 
-JoyProxy uses **three different secrets**. Mixing them produces `401` / `invalid_token`.
+JoyProxy 使用**三种不同密钥**。混用会导致 `401` / `invalid_token`。
 
-| Credential | Used for | Where to copy |
+| 凭据 | 用于 | 复制位置 |
 | --- | --- | --- |
-| Extract token (inside **API URL**, `token=` query) | Endpoint generator, whitelist, credentials, geo reference | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> — copy the **API URL** box |
-| **Master User Token** | Balance, orders, renewals, profile APIs | <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a> |
-| **Scraping API Token** | Web Scraping API fetch and credit/usage APIs | Web Scraping API → <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center</a> |
+| 提取 Token（在 **API URL** 内，`token=` 查询参数） | 端点生成、白名单、凭据、地域参考 | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> — 复制 **API URL** 框 |
+| **Master User Token** | 余额、订单、续费、资料 API | <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">账户设置</a> |
+| **Scraping API Token** | 网页抓取 API 抓取与积分/用量 API | 网页抓取 API → <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center</a> |
 
-When you are signed in, OpenAPI Center can pre-fill extract and master tokens in **Authorize**. You do **not** copy an extract token from Account settings.
+登录后 OpenAPI Center 可在 **Authorize** 中预填提取与主用户 Token。提取 Token **不要**从账户设置复制。
 
-> **Important**
+> **重要**
 >
-> Treat every token and full API URL as a secret. Rotate via <a href="../user-console/rotate-token.md" target="_blank" rel="noopener noreferrer">Rotate token</a> if one leaks.
+> 将每个 Token 与完整 API URL 视为机密。若泄露请通过<a href="../user-console/rotate-token.md" target="_blank" rel="noopener noreferrer">轮换 Token</a>轮换。
 
-## Rotating endpoints — `GET /v2/extract`
+## 轮换端点 — `GET /v2/extract`
 
-Generates `gate.joyproxy.com:9001` usernames (and wire-ready strings) from active Rotating traffic for the matching `network_type`.
+根据与 `network_type` 匹配的生效轮换流量，生成 `gate.joyproxy.com:9001` 用户名（及可直接使用的字符串）。
 
-**Easiest path:** on Endpoints, set location, session, format, and count, then copy the **API URL** (token is already in the query).
+**最简路径：** 在 Endpoints 设置地域、会话、格式与数量，然后复制 **API URL**（Token 已在查询中）。
 
 ```bash
 curl "PASTE_THE_COPIED_API_URL"
 ```
 
-Example shape (your token is already filled in when you copy):
+示例结构（复制时 Token 已填入）：
 
 ```text
 https://api.joyproxy.com/v2/extract?token=...&network_type=residential&count=5&duration=5m&format=json
 ```
 
-| Query | Meaning |
+| 查询参数 | 含义 |
 | --- | --- |
-| `token` | Included when you copy the API URL |
-| `network_type` | `residential`, `cellular` (alias `mobile`), or `business` — must match the pack you bought |
-| `count` | How many usernames to return (max **200** per call) |
-| `duration` | Sticky length, e.g. `5m` or `30m`. Omit for rotating session |
-| `protocol` | Output hint: `http`, `https`, or `socks5` |
-| `format` | `json`, `crlf`, and other values shown in OpenAPI Center |
-| `country_geoname_id`, `state_geoname_id`, `city_geoname_id` | Same targeting as the web generator — resolve IDs with **Geo Reference** operations |
+| `token` | 复制 API URL 时已包含 |
+| `network_type` | `residential`、`cellular`（别名 `mobile`）或 `business` — 须与所购套餐一致 |
+| `count` | 返回用户名数量（单次最多 **200**） |
+| `duration` | 粘性时长，如 `5m` 或 `30m`。省略则为轮换会话 |
+| `protocol` | 输出提示：`http`、`https` 或 `socks5` |
+| `format` | `json`、`crlf` 及 OpenAPI Center 中显示的其他值 |
+| `country_geoname_id`, `state_geoname_id`, `city_geoname_id` | 与网页生成器相同定向 — 用 **Geo Reference** 操作解析 ID |
 
-Pack → `network_type`:
+套餐 → `network_type`：
 
-| Pack you bought | `network_type` |
+| 所购套餐 | `network_type` |
 | --- | --- |
 | Residential | `residential` |
-| Mobile | `cellular` (alias `mobile`) |
+| Mobile | `cellular`（别名 `mobile`） |
 | Business / ISP | `business` |
 
-Paste returned usernames **verbatim** into clients. See <a href="../getting-started/rotating/generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a> for console workflow.
+将返回的用户名**原样**粘贴到客户端。控制台流程见<a href="../getting-started/rotating/generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a>。
 
-### Extract JSON `error` values
+### 提取 JSON `error` 值
 
-Failed extract calls return JSON with an `error` field (not HTTP proxy status codes):
+失败的提取调用返回带 `error` 字段的 JSON（非 HTTP 代理状态码）：
 
-| `error` | Meaning |
+| `error` | 含义 |
 | --- | --- |
-| `missing_token`, `invalid_token`, `api_token_required` | Wrong or missing extract token — use the URL from Endpoints, not Master User Token |
-| HTTP **429** | Too many extract calls; slow down |
-| `no_short_orders`, `short_traffic_exhausted` | No active Rotating pack or traffic used up |
-| `invalid_country`, `no_ip_for_geo` | Geo filter does not match current stock |
-| `Invalid protocol` | `protocol` must be `http`, `https`, or `socks5` |
+| `missing_token`, `invalid_token`, `api_token_required` | 提取 Token 错误或缺失 — 使用 Endpoints 的 URL，而非 Master User Token |
+| HTTP **429** | 提取调用过多；请降速 |
+| `no_short_orders`, `short_traffic_exhausted` | 无生效轮换套餐或流量用尽 |
+| `invalid_country`, `no_ip_for_geo` | 地域筛选与当前库存不符 |
+| `Invalid protocol` | `protocol` 须为 `http`、`https` 或 `socks5` |
 
-## Static endpoints — `GET /v2/extract-long`
+## 静态端点 — `GET /v2/extract-long`
 
-Returns dedicated `host:port` lines for Static allocations.
+返回静态分配的专用 `host:port` 行。
 
 ```text
 https://api.joyproxy.com/v2/extract-long?token=...&allocation_id=ID&format=crlf
 ```
 
-`allocation_id` / `order_id` come from My Proxies or **List Purchased Orders**. Console flow: <a href="../getting-started/static/generate-endpoints.md" target="_blank" rel="noopener noreferrer">Static → Generate endpoints</a>.
+`allocation_id` / `order_id` 来自 My Proxies 或 **List Purchased Orders**。控制台流程：<a href="../getting-started/static/generate-endpoints.md" target="_blank" rel="noopener noreferrer">静态 → 生成端点</a>。
 
-## Custom endpoints — `GET /v2/extract-custom`
+## 定制端点 — `GET /v2/extract-custom`
 
-Same pattern for Custom allocations:
+定制分配相同模式：
 
 ```text
 https://api.joyproxy.com/v2/extract-custom?token=...&allocation_id=ID&format=crlf
 ```
 
-Console flow: <a href="../getting-started/custom/authorize-and-generate.md" target="_blank" rel="noopener noreferrer">Custom → Authorize and generate</a>.
+控制台流程：<a href="../getting-started/custom/authorize-and-generate.md" target="_blank" rel="noopener noreferrer">定制 → 授权与生成</a>。
 
-## Authorization APIs (extract token)
+## 授权 API（提取 Token）
 
-| Operation | Path |
+| 操作 | 路径 |
 | --- | --- |
-| Whitelist list / add / remove | `GET /v2/whitelist/list`, `POST /v2/whitelist/add`, `POST /v2/whitelist/remove` |
-| Credentials list / add / remove | `GET /v2/credentials/list`, `POST /v2/credentials/add`, `POST /v2/credentials/remove` |
+| 白名单列表 / 添加 / 移除 | `GET /v2/whitelist/list`, `POST /v2/whitelist/add`, `POST /v2/whitelist/remove` |
+| 凭据列表 / 添加 / 移除 | `GET /v2/credentials/list`, `POST /v2/credentials/add`, `POST /v2/credentials/remove` |
 
-Rotating automation today uses **Username/Password** from Users & Whitelist; whitelist APIs apply to Static, Custom, and Datacenter lines.
+轮换自动化今日使用 Users & Whitelist 的 **Username/Password**；白名单 API 适用于静态、定制与数据中心线路。
 
-## Geo reference (extract token)
+## 地域参考（提取 Token）
 
-| Operation | Path |
+| 操作 | 路径 |
 | --- | --- |
-| List countries | `GET /v2/geo/countries` |
-| List states | `GET /v2/geo/states` |
-| List cities | `GET /v2/geo/cities` |
+| 列出国家 | `GET /v2/geo/countries` |
+| 列出州/省 | `GET /v2/geo/states` |
+| 列出城市 | `GET /v2/geo/cities` |
 
-Use these IDs in `/v2/extract` query parameters when you automate location targeting.
+自动化地域定向时，在 `/v2/extract` 查询参数中使用这些 ID。
 
-## Orders and balance (Master User Token)
+## 订单与余额（Master User Token）
 
-Send `Authorization: Bearer YOUR_MASTER_USER_TOKEN`.
+发送 `Authorization: Bearer YOUR_MASTER_USER_TOKEN`。
 
-**List active Rotating orders:**
+**列出生效轮换订单：**
 
 ```bash
 curl -X POST "https://api.joyproxy.com/v2/orders/list" \
@@ -120,46 +120,46 @@ curl -X POST "https://api.joyproxy.com/v2/orders/list" \
   -d "{\"product_type\":\"short-term\",\"network_type\":\"residential\",\"status_valid\":\"valid\",\"limit\":100}"
 ```
 
-| Body field | Example | Meaning |
+| 体字段 | 示例 | 含义 |
 | --- | --- | --- |
-| `product_type` | `short-term` | Rotating. Static: `long-term`. Custom: `custom-ip` |
-| `network_type` | `residential` | `residential`, `cellular`, or `business` |
-| `status_valid` | `valid` | Active packs. `all` includes expired |
+| `product_type` | `short-term` | 轮换。静态：`long-term`。定制：`custom-ip` |
+| `network_type` | `residential` | `residential`、`cellular` 或 `business` |
+| `status_valid` | `valid` | 生效套餐。`all` 含已过期 |
 
-Rotating rows include `traffic_gb`. Used / remaining GB also appear under **Usage** in the console. Static and Custom rows use `port_count` instead.
+轮换行含 `traffic_gb`。已用/剩余 GB 亦在控制台 **Usage** 下显示。静态与定制行使用 `port_count`。
 
-**Account balance:**
+**账户余额：**
 
 ```bash
 curl "https://api.joyproxy.com/v2/balance" \
   -H "Authorization: Bearer YOUR_MASTER_USER_TOKEN"
 ```
 
-OpenAPI Center also documents **Create Order** and **Renew Order** (`payment_method: balance` for API checkout). Console equivalents: <a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">Usage and orders</a>.
+OpenAPI Center 还文档化 **Create Order** 与 **Renew Order**（API 结账用 `payment_method: balance`）。控制台等价：<a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">用量与订单</a>。
 
-## Web Scraping API (Scraping API Token)
+## 网页抓取 API（Scraping API Token）
 
-Managed fetches — JoyProxy runs proxies, retries, and optional rendering. Credits charge **only on successful fetches**.
+托管抓取 — JoyProxy 运行代理、重试与可选渲染。积分**仅在成功抓取时**扣费。
 
-| Operation | Path (see OpenAPI Center for current method) |
+| 操作 | 路径（方法以 OpenAPI Center 当前文档为准） |
 | --- | --- |
-| Fetch URL | Documented as **Fetch URL** in OpenAPI (playground matches production) |
-| Scraping credits | `GET /v2/fetch/credits` |
-| Usage history | `GET /v2/fetch/usage` |
+| 抓取 URL | OpenAPI 中记为 **Fetch URL**（playground 与生产一致） |
+| 抓取积分 | `GET /v2/fetch/credits` |
+| 用量历史 | `GET /v2/fetch/usage` |
 
-Copy the **Scraping API Token** from API Center. Common query flags (`url`, `render`, `super`, `geoCode`, …) are listed in the <a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">in-console API documentation</a> and in <a href="../getting-started/scraping-api/parameters.md" target="_blank" rel="noopener noreferrer">Parameters and credit costs</a>.
+从 API Center 复制 **Scraping API Token**。常见查询标志（`url`、`render`、`super`、`geoCode` 等）见<a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">控制台 API 文档</a>与<a href="../getting-started/scraping-api/parameters.md" target="_blank" rel="noopener noreferrer">参数与积分成本</a>。
 
-Product overview: <a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">Web Scraping API</a>.
+产品概览：<a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">网页抓取 API</a>。
 
-## Typical workflow
+## 典型工作流
 
-1. Open <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> and pick an operation group.
-2. **Authorize** with the correct token type.
-3. Fill parameters (or paste the copied extract API URL).
-4. Execute, inspect JSON, and export a code sample.
+1. 打开 <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> 并选择操作组。
+2. 用正确 Token 类型 **Authorize**。
+3. 填写参数（或粘贴复制的提取 API URL）。
+4. 执行、检查 JSON 并导出代码示例。
 
-## When OpenAPI is not enough
+## OpenAPI 仍不够时
 
-- Proxy setup walkthroughs: <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">Getting started</a>
-- AI-driven generation: <a href="integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">Integrate proxies in AI</a>
-- Destination policy: <a href="../getting-started/rotating/restricted-targets.md" target="_blank" rel="noopener noreferrer">Restricted targets</a>
+- 代理配置 walkthrough：<a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">入门</a>
+- AI 驱动生成：<a href="integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">在 AI 中集成代理</a>
+- 目标站策略：<a href="../getting-started/rotating/restricted-targets.md" target="_blank" rel="noopener noreferrer">受限目标</a>
