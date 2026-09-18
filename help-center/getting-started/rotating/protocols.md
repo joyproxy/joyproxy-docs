@@ -47,10 +47,6 @@ curl -x "socks5h://USER:PASS@HOST:PORT" "https://api.ipify.org"
 
 If this machine is on the IP whitelist, you can omit `USER:PASS@`.
 
-## Extract API `protocol` query
-
-<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> **Rotating endpoints** accepts `protocol` = `http`, `https`, or `socks5` as an output hint. Copy the **API URL** from Endpoints when you can — it already matches the format you selected.
-
 ## Next
 
 <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>

@@ -9,16 +9,18 @@ AI assistants and IDE agents can **generate JoyProxy endpoints**, check balance,
 | Natural language in OpenClaw | <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill</a> + AI Access Token |
 | Cursor, VS Code, Claude Desktop tools | <a href="https://www.joyproxy.com/products/ai-mcp.html" target="_blank" rel="noopener noreferrer">AI MCP</a> |
 | Billing / setup questions 24/7 | <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant</a> |
-| Production HTTP calls | Generated endpoints + <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> |
+| Production HTTP calls | Generated endpoints + <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> |
 
 ## Tokens you should know
 
 | Token | Purpose |
 | --- | --- |
 | **AI Access Token** | OpenClaw Skill and AI MCP tool calls |
-| Extract **API URL** | `/v2/extract` and related endpoint APIs — copy the URL on Endpoints |
-| **Master User Token** | Order management APIs only |
-| **Scraping API Token** | `/v1/fetch` only |
+| Extract **API URL** | Endpoint generator — copy from Endpoints |
+| **Master User Token** | Order and balance APIs |
+| **Scraping API Token** | Web Scraping API |
+
+Full mapping: <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 Copy the AI Access Token from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai" target="_blank" rel="noopener noreferrer">AI endpoint generator</a>. Rotate it there if it appears in chat logs.
 

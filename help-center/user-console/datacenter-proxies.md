@@ -20,7 +20,7 @@ Rotating gateway traffic is available on Residential, Mobile, and Business / ISP
 - **Users & Whitelist** — server IP whitelist or credentials
 - **Endpoints** — generate `host:port` lists
 - **Usage** — monitor where applicable
-- **API Center** — `/v1/extract-long` and `/v1/extract-custom` helpers
+- **API Center** — copy extract **API URL** for Static / Custom lines; see <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>
 
 Walkthroughs: <a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">Static</a> · <a href="../getting-started/custom/README.md" target="_blank" rel="noopener noreferrer">Custom</a>
 

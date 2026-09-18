@@ -28,7 +28,7 @@ Generate usernames against `gate.joyproxy.com:9001`. Mobile orders appear in the
 
 ## API Center
 
-Automate extraction with your API token—see <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+Automate extraction with the Endpoints **API URL** — <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 ## On-device testing
 

@@ -17,8 +17,6 @@ curl -v -x "http://USER:PASS@HOST:PORT" "https://api.ipify.org"
 
 SOCKS5 uses reply codes, not HTTP status. Test with <a href="../software/proxy-tester.md" target="_blank" rel="noopener noreferrer">Proxy Tester</a>.
 
-Extract-API JSON errors (`missing_token`, `no_ip_for_geo`, …): <a href="../rotating/response-codes.md" target="_blank" rel="noopener noreferrer">Rotating → Response codes</a>.
-
 ## Next
 
 <a href="authorization.md" target="_blank" rel="noopener noreferrer">Authorization</a> · <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>

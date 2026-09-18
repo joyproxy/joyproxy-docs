@@ -1,14 +1,15 @@
 # Restricted targets
 
-Same routing and acceptable-use rules as Rotating. Use Custom from a network **outside mainland China**, and send traffic to destinations the catalog covers.
+Custom lines follow the same destination policy as Rotating. Use Custom from a network **outside mainland China**, and send traffic to destinations the catalog covers.
 
-- JoyProxy does not sell mainland-China proxy IPs.
-- Networks in mainland China cannot reach the proxies.
-- Proxy exits cannot reach sites in mainland China.
+## Summary
 
-Uses that are not allowed: <a href="https://www.joyproxy.com/terms.html#acceptable" target="_blank" rel="noopener noreferrer">Terms → Acceptable Use</a>.
+- **Mainland China** — no mainland-China proxy IPs; no access from mainland China; exits cannot reach mainland-China sites.
+- **Banking and financial institutions**, **government websites**, and **email / messaging** services are restricted or blocked for compliance and abuse prevention.
 
-If a site returns **403** after a successful IP check through the same `host:port`, that is usually the website. Full page: <a href="../rotating/restricted-targets.md" target="_blank" rel="noopener noreferrer">Rotating → Restricted targets</a>.
+Full categories, acceptable use, and how to request a review: <a href="../rotating/restricted-targets.md" target="_blank" rel="noopener noreferrer">Rotating → Restricted targets</a>.
+
+If a site returns **403** after a successful IP check through the same `host:port`, that is usually the website. See <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>.
 
 ## Next
 

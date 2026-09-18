@@ -6,10 +6,12 @@ JoyProxy exposes several tokens for automation. Rotating a token invalidates the
 
 | Token | Typical use | Where |
 | --- | --- | --- |
-| Extract **API URL** (`token=` inside it) | `/v2/extract`, `/v2/extract-long`, `/v2/extract-custom` | Copy the URL on <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> |
+| Extract **API URL** (`token=` inside it) | Endpoint generator, whitelist, credentials | Copy the URL on <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> |
 | **Master User Token** | Order and account management APIs | <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a> |
-| **Scraping API Token** | `/v1/fetch` only | Web Scraping API → API Center |
+| **Scraping API Token** | Web Scraping API | Web Scraping API → API Center |
 | **AI Access Token** | OpenClaw Skill / AI MCP | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai" target="_blank" rel="noopener noreferrer">AI endpoint generator</a> |
+
+Which operation uses which token: <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 ## Rotate Master User Token
 
@@ -24,9 +26,6 @@ Rotate from the <a href="https://www.joyproxy.com/admin-ip-extraction-center.htm
 
 ## After rotation
 
-Run a smoke test:
-
-- Call the new extract API URL, or use the OpenAPI playground
-- Or call `/v1/fetch` with a fresh Scraping API Token
+Run a smoke test in <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> or the Web Scraping API playground with the new token.
 
 If automation fails with `401`, search configs for the old URL or token string.

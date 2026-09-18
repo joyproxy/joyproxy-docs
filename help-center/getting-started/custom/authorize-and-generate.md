@@ -12,15 +12,7 @@ Same as Static: <a href="../static/authorization.md" target="_blank" rel="noopen
 
 Connect to this host:port, not the Exit IP on the order card.
 
-## API
-
-Copy the **API URL** from Endpoints (it already includes `token=`). You do not look up a token in Account settings.
-
-```text
-https://api.joyproxy.com/v2/extract-custom?token=...&allocation_id=ID&format=crlf
-```
-
-More parameters: <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+HTTP automation uses the **API URL** on Endpoints. See <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 ## Next
 

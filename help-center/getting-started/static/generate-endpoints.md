@@ -9,15 +9,7 @@ Each allocation has a stable **host** and **port** until the order expires.
 3. Filter by order / allocation → **Generate now**.
 4. Copy host, port, and (if you use user/pass) credentials.
 
-## API
-
-On the same Endpoints page, copy the **API URL** (it already includes `token=`). You do not look up a token in Account settings.
-
-```text
-https://api.joyproxy.com/v2/extract-long?token=...&allocation_id=ID&format=crlf
-```
-
-`allocation_id` comes from the generator selection / My Proxies. More parameters: <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+HTTP automation uses the **API URL** on the same page. Parameters and examples: <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 ## What you should copy
 

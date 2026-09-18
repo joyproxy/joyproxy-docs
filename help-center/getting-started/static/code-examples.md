@@ -82,4 +82,4 @@ const res = await fetch("https://api.ipify.org", { agent });
 console.log(await res.text());
 ```
 
-Extract via API: <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>. OpenAPI: <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+Bulk export: <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a> or <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.

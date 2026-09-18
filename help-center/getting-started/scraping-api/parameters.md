@@ -1,6 +1,6 @@
 # Parameters and credit costs
 
-Common query flags on `GET /v1/fetch`:
+Common query flags on the Web Scraping API fetch operation (see <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> for the live path and full list):
 
 | Parameter | Purpose |
 | --- | --- |

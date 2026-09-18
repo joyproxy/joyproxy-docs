@@ -2,48 +2,19 @@
 
 Send a **target URL**; JoyProxy returns HTML or JSON. You pay **credits only when a fetch succeeds**.
 
-Already have a token? Skip to [Send a test fetch](#send-a-test-fetch).
-
 Need `host:port` in your own scraper instead? <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">Rotating</a> · <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">Static</a>.
 
 ## How you connect
 
-| Piece | Value |
-| --- | --- |
-| Endpoint | `GET https://api.joyproxy.com/v1/fetch` |
-| Auth | Scraping API **token** (not the proxy password, not the website login) |
-| Geo | `geoCode` query parameter |
+Use the **Scraping API Token** from the console and the fetch operation documented in <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>. The interactive playground in <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center</a> runs the same call.
 
 ## Send a test fetch
 
-Replace `YOUR_SCRAPING_API_TOKEN`. A successful body is the page (or JSON). Failed attempts, timeouts, and hard blocks **do not spend credits**.
+1. Copy your token from <a href="token.md" target="_blank" rel="noopener noreferrer">Get your token</a>.
+2. Open <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> → **Web Scraping API** → **Fetch URL**, or use the in-console playground.
+3. Set `url` to `https://example.com` and execute.
 
-{% tabs %}
-{% tab title="cURL" %}
-```bash
-curl -G "https://api.joyproxy.com/v1/fetch" \
-  --data-urlencode "token=YOUR_SCRAPING_API_TOKEN" \
-  --data-urlencode "url=https://example.com"
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```python
-import requests
-
-r = requests.get(
-    "https://api.joyproxy.com/v1/fetch",
-    params={
-        "token": "YOUR_SCRAPING_API_TOKEN",
-        "url": "https://example.com",
-    },
-    timeout=120,
-)
-print(r.status_code)
-print(r.text[:2000])
-```
-{% endtab %}
-{% endtabs %}
+A successful body is the page (or JSON). Failed attempts, timeouts, and hard blocks **do not spend credits**.
 
 ## Set up in the dashboard
 
@@ -63,7 +34,7 @@ Copy the Scraping API token from the <a href="https://www.joyproxy.com/admin-web
 
 ### 3. Confirm a fetch
 
-Run the snippet above against `https://example.com`. Then point `url` at your real target.
+Run a test against `https://example.com` in API Center or OpenAPI Center. Then point `url` at your real target.
 
 Optional flags such as `render=true`, `super=true`, and `geoCode` are listed in <a href="parameters.md" target="_blank" rel="noopener noreferrer">Parameters and credit costs</a> and the <a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">in-console documentation</a>.
 
@@ -82,3 +53,4 @@ Optional flags such as `render=true`, `super=true`, and `geoCode` are listed in 
 | First fetch details | <a href="first-fetch.md" target="_blank" rel="noopener noreferrer">First fetch</a> |
 | Flags and credit costs | <a href="parameters.md" target="_blank" rel="noopener noreferrer">Parameters and credit costs</a> |
 | Remaining credits | <a href="usage.md" target="_blank" rel="noopener noreferrer">Monitor usage</a> |
+| HTTP reference | <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> |

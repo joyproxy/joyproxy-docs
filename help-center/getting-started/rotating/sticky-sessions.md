@@ -22,7 +22,7 @@ A **sticky session** keeps the same exit IP for a limited time so logins, carts,
 
 You can keep using the same username after sticky expires; the gateway may assign a new IP on the next window. You do not need to buy a new pack to refresh the session.
 
-To set sticky length from the extract API, pass `duration` in minutes (for example `5m`). See <a href="generate-endpoints.md#generate-from-the-api" target="_blank" rel="noopener noreferrer">Generate from the API</a> and <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+To set sticky length when you automate extraction, use the `duration` query on the Endpoints **API URL** — see <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 ## When to use sticky vs rotating session
 

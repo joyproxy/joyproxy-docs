@@ -8,7 +8,7 @@ Windows desktop tool to check **HTTP**, **SOCKS5 TCP**, and **SOCKS5 UDP** befor
 
 - The proxy accepts connections and returns an outbound IP
 - Country matches what you generated or purchased
-- Batch lists from an extract API or a text file (regex + sequential test)
+- Batch lists from Endpoints export or a text file (regex + sequential test)
 
 ## Quick start
 

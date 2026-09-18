@@ -16,7 +16,7 @@ Purchase credit packs with account balance.
 
 ## API Center
 
-- Copy **Scraping API Token** (`/v1/fetch` only)
+- Copy **Scraping API Token** (fetch and usage APIs only)
 - Run test fetches against sample URLs
 - Rotate token if leaked
 
@@ -36,7 +36,7 @@ In-console reference for parameters (`render`, `super`, `geoCode`, plugins). Als
 
 - <a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">Getting started → Web Scraping API</a>
 - <a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">Full API documentation</a>
-- <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> — Web Scraping API operations
+- <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> — Web Scraping API operations
 
 > **Tip**
 >

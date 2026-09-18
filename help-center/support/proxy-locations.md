@@ -9,7 +9,7 @@ JoyProxy offers exits in many **countries and cities** across Residential, Mobil
 | Rotating geo in username | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> country/state/city pickers |
 | Static country at purchase | <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">Purchase → Static</a> search |
 | Custom per-port geo | <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies → Custom</a> → **Assign region** |
-| Scraping fetch geo | `geoCode` parameter on `/v1/fetch` |
+| Scraping fetch geo | `geoCode` on Web Scraping API fetch — <a href="../getting-started/scraping-api/parameters.md" target="_blank" rel="noopener noreferrer">Parameters</a> |
 
 Inventory updates as JoyProxy expands partnerships—if a region is greyed out at purchase, try a neighboring country or ask <a href="live-chat.md" target="_blank" rel="noopener noreferrer">sales via chat</a> about restock timing.
 

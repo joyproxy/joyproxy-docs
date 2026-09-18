@@ -43,7 +43,7 @@ Guide: <a href="../getting-started/rotating/README.md" target="_blank" rel="noop
 
 ### API Center
 
-Shortcuts to tokenized extract APIs and examples. Full reference: <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+Shortcuts to copy the Endpoints **API URL** and open the playground. Full HTTP reference: <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 ## Quick decision
 

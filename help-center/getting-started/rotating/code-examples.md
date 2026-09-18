@@ -119,7 +119,7 @@ curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ip
 
 ## Extract usernames in bulk
 
-See <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a> for the extract **API URL**. Keep that URL private; do not hard-code it in a public repo.
+Bulk export from Endpoints or <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>. Keep API URLs private; do not hard-code them in a public repo.
 
 ## Next
 

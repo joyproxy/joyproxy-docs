@@ -74,7 +74,7 @@ See <a href="integration/integrate-proxies-in-ai.md" target="_blank" rel="noopen
 - **Getting started** — Rotating / Static / Custom / Scraping API / software; each product starts with **Quick start**, then how-to pages.
 - **Best practices** — AI, third-party tools, Windows / Chrome / mobile setup patterns.
 - **User console** — register, account settings, each product area in the dashboard.
-- **Integration** — AI and <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+- **Integration** — AI and <a href="integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 - **Service & support** — chat, tickets, locations, pricing.
 - **FAQ** — <a href="faq/README.md" target="_blank" rel="noopener noreferrer">frequently asked questions</a>.
 

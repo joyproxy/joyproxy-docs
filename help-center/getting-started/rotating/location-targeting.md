@@ -27,15 +27,7 @@ Confirm the exit with any IP-check URL you trust, or the same `api.ipify.org` ca
 
 HTTP and SOCKS5 both use this same username. You do not switch host when you switch protocol. Either protocol can open HTTPS websites.
 
-## API
-
-Pass the same targeting the UI exposes. In <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>, open `GET /v2/extract` and fill country / city fields as documented there, plus `network_type`:
-
-| Pack you bought | `network_type` |
-| --- | --- |
-| Residential | `residential` |
-| Mobile | `cellular` (alias `mobile`) |
-| Business / ISP | `business` |
+Automate the same country / state / city fields: <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> (Rotating endpoints and Geo reference).
 
 ## Practical tips
 

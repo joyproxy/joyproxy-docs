@@ -8,7 +8,7 @@ Send a **target URL**; JoyProxy returns HTML or JSON. We run proxies, retries, o
 
 | | Proxy IP | Web Scraping API |
 | --- | --- | --- |
-| You receive | `host:port` | `GET /v1/fetch` |
+| You receive | `host:port` | Fetched page body (managed HTTP API) |
 | You operate | Headers, sessions, browsers | Flags such as `render=true`, `super=true`, `geoCode` |
 | Billing | GB or per-IP period | Credits on **success** (HTTP 2xx with a usable body) |
 
@@ -23,12 +23,6 @@ Use the API when you want production page collection without maintaining a brows
 5. <a href="parameters.md" target="_blank" rel="noopener noreferrer">Parameters and credit costs</a>
 6. <a href="usage.md" target="_blank" rel="noopener noreferrer">Monitor usage</a>
 
-## Smallest working call
-
-```bash
-curl -G "https://api.joyproxy.com/v1/fetch" \
-  --data-urlencode "token=YOUR_SCRAPING_API_TOKEN" \
-  --data-urlencode "url=https://example.com"
-```
+HTTP paths, query parameters, and code samples: <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 Full parameter list: <a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">in-console documentation</a>.

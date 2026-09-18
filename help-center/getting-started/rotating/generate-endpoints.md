@@ -41,33 +41,7 @@ socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 
 The Endpoints page also shows language snippets (cURL, Python, and others) built from the same selection. Paste one into your environment to confirm the IP before you wire production.
 
-## Generate from the API
-
-On the same Endpoints page, the **API URL** box is already filled from your location, session, format, and count. Copy that URL and call it — `token=` is already in the query. The extract token is only in that URL, not in <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a>.
-
-```bash
-curl "PASTE_THE_COPIED_API_URL"
-```
-
-The copied URL looks like this (your token is already in it):
-
-```text
-https://api.joyproxy.com/v2/extract?token=...&network_type=residential&count=5&duration=5m&format=json
-```
-
-| Query | Meaning |
-| --- | --- |
-| `token` | Included when you copy the API URL |
-| `network_type` | `residential`, `cellular` (alias `mobile`), or `business` — must match the pack you bought |
-| `count` | How many usernames to return |
-| `duration` | Sticky length in minutes, for example `5m` or `30m`. Omit this for a rotating session |
-| `format` | `json`, or other formats shown in <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> |
-
-The response includes `gate.joyproxy.com`, port `9001`, and a wire-ready username. Copy them into the client unchanged.
-
-Treat the copied URL as a secret. Do not paste it into tickets or public chats.
-
-Full parameter lists and try-it playground: <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
+To generate lines with HTTP instead of only the web UI, use the **API URL** on the same page and the reference in <a href="../../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 ## Next
 
