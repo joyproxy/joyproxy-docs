@@ -25,6 +25,8 @@ curl -x http://GENERATED_USER_CITY:YOUR_PASS@gate.joyproxy.com:9001 https://api.
 
 Confirm the exit with any IP-check URL you trust, or the same `api.ipify.org` call.
 
+HTTP, HTTPS, and SOCKS5 all use this same username. You do not switch host when you switch protocol.
+
 ## API
 
 Pass the same targeting the UI exposes. In [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html), open `GET /v2/extract` and fill country / city fields as documented there, plus `network_type`:

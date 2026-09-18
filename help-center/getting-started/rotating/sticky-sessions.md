@@ -40,6 +40,8 @@ Exact parameter names are listed on the extract operation in [OpenAPI Center](ht
 | Login, then crawl while authenticated | Sticky (often 5–15 minutes) |
 | QA a single account in a browser | Sticky, or a [Static](../static/README.md) line if you need days |
 
+Residential exits are real devices. A sticky window is the **target** hold time. If the peer goes offline, generate a **new** sticky username and continue — you still have traffic; only that session ended early.
+
 > **Tip**
 >
 > Sticky is **minutes**, not weeks. For a host:port that stays yours for a plan period, buy [Static](../static/purchase.md) or [Custom](../custom/purchase.md).

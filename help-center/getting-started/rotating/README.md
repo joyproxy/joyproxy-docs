@@ -23,10 +23,10 @@ Your app  →  gate.joyproxy.com:9001  →  exit IP in the region you selected
 
 ## In this chapter
 
-Follow in order the first time. Later, jump to a heading from the sidebar.
+Follow in order the first time. Later, jump from the sidebar.
 
 1. [Choose a network and buy traffic](purchase.md)
-2. [Create a proxy password](credentials.md)
+2. [Authentication methods](authentication.md)
 3. [Generate endpoints](generate-endpoints.md)
 4. [Location targeting](location-targeting.md)
 5. [Sticky sessions](sticky-sessions.md)
@@ -40,7 +40,7 @@ Follow in order the first time. Later, jump to a heading from the sidebar.
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
-A public IP in the response means the gateway accepted the credentials. To change country, **generate a new username** in Endpoints—do not rewrite the old one by hand.
+A public IP in the response means the gateway accepted the credentials. To change country, **generate a new username** in Endpoints — do not rewrite the old one by hand.
 
 ## Networks
 
@@ -54,6 +54,6 @@ The **console steps are the same**. Only the network type at [Purchase](https://
 
 ## Related
 
-- [Quick start](../quick-start.md) — five-minute path
+- [Quick start](../quick-start.md) — gateway, sample code, dashboard walkthrough
 - [Pricing](https://www.joyproxy.com/pricing.html) · [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html)
 - Console tabs: [Residential](../../user-console/residential-proxies.md) · [Mobile](../../user-console/mobile-proxies.md) · [Business / ISP](../../user-console/business-isp-proxies.md)

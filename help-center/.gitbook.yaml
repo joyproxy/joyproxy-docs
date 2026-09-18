@@ -51,6 +51,7 @@ redirects:
   terms-privacy: support/terms.md
   tester-soft: software/tester.md
   getting-started/rotating-proxy: getting-started/rotating/README.md
+  getting-started/rotating/credentials: getting-started/rotating/authentication.md
   getting-started/static-proxy: getting-started/static/README.md
   getting-started/custom-proxy: getting-started/custom/README.md
   getting-started/web-scraping-api: getting-started/scraping-api/README.md

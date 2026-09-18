@@ -2,6 +2,8 @@
 
 Rotating always uses **one gateway**. Generation creates a **username** (and shows the password you already stored). You can generate as often as you like while the traffic pack is active.
 
+Authentication first: [Authentication methods](authentication.md).
+
 ## Connection constants
 
 | Field | Always |
@@ -14,16 +16,30 @@ Rotating always uses **one gateway**. Generation creates a **username** (and sho
 
 1. Open [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) or the **Endpoints** tab on your network console.
 2. Select **Rotating** and the order / network you paid for (Residential, Mobile, or Business).
-3. Optional: country, state/province, city — see [Location targeting](location-targeting.md).
-4. Session: **sticky** (1–30 minutes) or **rotate every request** — see [Sticky sessions](sticky-sessions.md).
-5. Set how many lines to create → **Generate**.
-6. Copy **Host**, **Port**, **Username**, and **Password**.
+3. **Location** — country, then optionally state / city. See [Location targeting](location-targeting.md).
+4. **Session** — sticky (1–30 minutes) or rotate every request. See [Sticky sessions](sticky-sessions.md).
+5. **Protocol** — HTTP, HTTPS, or SOCKS5. The gateway stays `gate.joyproxy.com:9001`; only the URI scheme in the copied example changes.
+6. Set how many lines to create → **Generate**.
+7. Copy **Host**, **Port**, **Username**, and **Password**, or the full example string.
 
-The username stays valid while you have traffic. Sticky time only controls how long each session holds an exit IP—it does not expire the username.
+The username stays valid while you have traffic. Sticky time only controls how long each session holds an exit IP — it does not expire the username.
 
 > **Important**
 >
 > Paste the username **exactly**. It encodes targeting and session. Editing it can send you to the wrong region or fail authentication.
+
+### Copy the list
+
+- Copy a single row, or copy **Host / Port / Username / Password** one field at a time for tools that use four boxes.
+- Copy the full URI when the client accepts `http://user:pass@host:port`.
+- Generate as many lines as you need for workers. Each line is another username against the same gateway.
+
+```text
+http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
+socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
+```
+
+The Endpoints page also shows language snippets (cURL, Python, and others) built from the same selection. Paste one into your environment to confirm the IP before you wire production.
 
 ## Generate from the API
 

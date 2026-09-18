@@ -4,14 +4,14 @@ Replace `GENERATED_USER` with the username from [Endpoints](https://www.joyproxy
 
 Test URL `https://api.ipify.org` only prints your exit IP. Point the same proxy at your real target when this succeeds.
 
-## cURL
-
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
+{% endtab %}
 
-## Python
-
+{% tab title="Python" %}
 ```python
 import requests
 
@@ -20,9 +20,9 @@ proxies = {"http": PROXY, "https": PROXY}
 r = requests.get("https://api.ipify.org", proxies=proxies, timeout=30)
 print(r.text)
 ```
+{% endtab %}
 
-## Node.js
-
+{% tab title="Node.js" %}
 ```javascript
 const { HttpsProxyAgent } = require("https-proxy-agent");
 
@@ -32,9 +32,21 @@ const agent = new HttpsProxyAgent(
 const res = await fetch("https://api.ipify.org", { agent });
 console.log(await res.text());
 ```
+{% endtab %}
 
-## Go
+{% tab title="PHP" %}
+```php
+<?php
+$ch = curl_init("https://api.ipify.org");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_PROXY, "gate.joyproxy.com:9001");
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, "GENERATED_USER:YOUR_PASS");
+echo curl_exec($ch);
+curl_close($ch);
+```
+{% endtab %}
 
+{% tab title="Go" %}
 ```go
 package main
 
@@ -58,9 +70,9 @@ func main() {
   println(string(b))
 }
 ```
+{% endtab %}
 
-## Java
-
+{% tab title="Java" %}
 ```java
 import java.net.*;
 import java.io.*;
@@ -81,9 +93,9 @@ public class Demo {
   }
 }
 ```
+{% endtab %}
 
-## C#
-
+{% tab title="C#" %}
 ```csharp
 using System.Net;
 using System.Net.Http;
@@ -95,6 +107,14 @@ var handler = new HttpClientHandler {
 };
 using var client = new HttpClient(handler);
 Console.WriteLine(await client.GetStringAsync("https://api.ipify.org"));
+```
+{% endtab %}
+{% endtabs %}
+
+SOCKS5 with cURL:
+
+```bash
+curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
 ## Extract usernames in bulk

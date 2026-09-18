@@ -3,8 +3,10 @@
 This page assumes you already have:
 
 1. An active Rotating pack — [Purchase](purchase.md)
-2. A password in Whitelist & Users — [Credentials](credentials.md)
+2. Authentication set up — [Authentication methods](authentication.md)
 3. A generated username — [Generate endpoints](generate-endpoints.md)
+
+Run a test **before** you point production scrapers at the gateway. When the response is a public IP that is not your own, the proxy is working.
 
 ## cURL (fastest check)
 
@@ -37,11 +39,13 @@ http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 ```
 
+The Endpoints page can paste a ready-made snippet in cURL, Python, Node.js, PHP, or Go. That snippet already includes the username from your last generate.
+
 ## If the request fails
 
 Work through this list in order:
 
-1. **401 / auth failed** — Password must be the Whitelist & Users secret. Username must be the **generated** string, not your dashboard email and not the short credential name.
+1. **407 / Proxy Authentication Required** — Password must be the Whitelist & Users secret. Username must be the **generated** string, not your dashboard email and not the short credential name. Recreate the password and retry. See [Authentication methods](authentication.md).
 2. **Timeout** — Confirm `gate.joyproxy.com` and port `9001`. Corporate firewalls sometimes allow HTTPS but block SOCKS; try HTTP first.
 3. **Wrong country** — Generate a new username with the country selected in Endpoints. Do not edit the old username.
 4. **Order inactive** — Check remaining GB in [My Proxies](https://www.joyproxy.com/admin-my-orders.html) or the Usage tab.

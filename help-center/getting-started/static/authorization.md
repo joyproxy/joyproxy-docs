@@ -2,9 +2,16 @@
 
 Set **at least one** auth method in [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) before you generate endpoints. You can keep both; each app picks what it supports.
 
-## Option A — IP whitelist (servers and VPS)
+Rotating uses a **generated username** plus this password. On Static, the short credential name **is** the proxy user. Product-wide walkthrough: [Authentication methods](../rotating/authentication.md).
 
-Best when scrapers run on a known public IPv4.
+## Choose a method
+
+| Method | Best when |
+| --- | --- |
+| **IP whitelist** | Scrapers run on a known public IPv4 (VPS, office egress) |
+| **Username / password** | Laptops, browsers, clouds with changing egress, tools that cannot pin one IP |
+
+## Option A — IP whitelist
 
 1. From the **same machine that will connect**, look up its **public IPv4** (not `192.168.x.x` / `10.x`).
 2. **Whitelist & Users → IP Whitelist** → enter the IP and a remark → **Add IP**.
@@ -18,11 +25,17 @@ curl -X POST "https://api.joyproxy.com/v1/whitelist/add?token=YOUR_API_TOKEN" \
   -d "{\"ips\":[\"203.0.113.50\"],\"remark\":\"production-crawler\"}"
 ```
 
-If the server’s public IP changes (home ISP, some clouds), update the whitelist or the connection will fail.
+### Keep the list accurate
+
+- IPv4 only (`x.x.x.x`).
+- Whitelist the IP that **opens** the connection, not the Exit IP on the order card.
+- Name each entry (`staging`, `prod-crawler-1`) so you can remove the right row later.
+- On AWS / GCP / Azure, egress IPs often change — prefer **username + password** there.
+- If you look up the address while a personal VPN is on, you will whitelist the VPN exit instead of the server.
+
+If the server’s public IP changes, update the whitelist or the connection will fail.
 
 ## Option B — Username and password
-
-Best for laptops, browsers, and tools that cannot pin one egress IP.
 
 1. **Username / Password** → create a credential (username **3+** characters, password **6+**).
 2. In the client:
@@ -39,6 +52,10 @@ Unlike Rotating, Static **does** use this short username in the proxy form. Ther
 ```text
 http://USER:PASS@us-ca.edge.joyproxy.com:10001
 ```
+
+### 407 Proxy Authentication Required
+
+Recreate the credential password, confirm you are not sending the website login, and retry. Do not mix a Rotating generated username with a Static `*.edge.joyproxy.com` host.
 
 ## Next
 

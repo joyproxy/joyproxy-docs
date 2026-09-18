@@ -1,83 +1,49 @@
 # Quick start
 
-Get from a new JoyProxy account to a **working request** in a few minutes. The same four pieces appear in every proxy product: **account → purchase → credentials → connect**.
+Connect through **one gateway**. JoyProxy routes each request through an exit IP from the pool you purchased.
 
-Already know the basics? Jump to the product you bought:
+```text
+gate.joyproxy.com:9001
+```
+
+Already have a Rotating pack and a password? Skip to [Send a test request](#send-a-test-request). Otherwise follow [Set up in the dashboard](#set-up-in-the-dashboard) first.
+
+Jump by product:
 
 - [Rotating proxy](rotating/README.md) — Residential, Mobile, Business / ISP
-- [Static proxy](static/README.md) — Residential, Business / ISP, Datacenter
+- [Static proxy](static/README.md) — dedicated `host:port`
 - [Custom proxy](custom/README.md) — per-port region and rotation
 - [Web Scraping API](scraping-api/README.md) — send a URL, get HTML/JSON
 - [Software tools](software/README.md) — browser, tester, server, Android
 
-## Choose a product
+## How endpoints work
 
-| You want | Buy this | Then read |
-| --- | --- | --- |
-| New exit IPs often, or sticky sessions for a few minutes | **Rotating** traffic (Residential / Mobile / Business) | [Rotating](rotating/README.md) |
-| The same `host:port` for days or months | **Static** line | [Static](static/README.md) |
-| Dedicated ports you can retarget by city | **Custom** ports | [Custom](custom/README.md) |
-| Page content without wiring a proxy into your scraper | **Web Scraping API** credits | [Scraping API](scraping-api/README.md) |
-| Click-to-apply in Chrome / Edge only | Free [Browser extension](software/browser-extension.md) + any line above | [Software](software/README.md) |
+An **endpoint** is the gateway into an IP pool. You do not pick a new host for each country.
 
-[Create an account](https://www.joyproxy.com/register.html) · [Pricing](https://www.joyproxy.com/pricing.html) · [Purchase](https://www.joyproxy.com/admin-purchase.html)
-
-> **Tip**
->
-> New accounts receive a **$5 sign-up credit**. Apply it on your first proxy pack or scraping credits at checkout.
-
-## Five minutes with Rotating (most common path)
-
-Rotating is the fastest way to see an exit IP change. Static and Custom use a dedicated host and port instead of the shared gateway—see those chapters after this works.
-
-### 1. Sign up and buy traffic
-
-1. [Register](https://www.joyproxy.com/register.html) and confirm email if the console asks.
-2. Open [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term).
-3. Choose **Residential** (or **Mobile** / **Business / ISP** if that is your target).
-4. Pick a traffic pack and pay with **PayPal** or **account balance**.
-5. Confirm the order in [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
-
-### 2. Create a proxy password
-
-Dashboard login and proxy login are **different**.
-
-1. Open [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html).
-2. Under **Username / Password**, create a credential (username 3+ characters, password 6+).
-3. Remember the **password**. You will pair it with a **long generated username** in the next step—not with this short name.
-
-### 3. Generate an endpoint
-
-1. Open [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Rotating**.
-2. Optionally pick country / state / city, then **sticky** (1–30 minutes) or **rotate every request**.
-3. Click **Generate** and copy all four fields.
-
-You always connect to the same gateway:
-
-| Field | Value |
+| Field | Rotating (most common) |
 | --- | --- |
 | Host | `gate.joyproxy.com` |
 | Port | `9001` |
 | Protocols | HTTP, HTTPS, SOCKS5 |
-| Username | The **full generated string** (do not edit) |
-| Password | The password from Whitelist & Users |
+| Username | The **full generated string** from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) |
+| Password | From [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) |
 
-> **Important**
->
-> Country, city, and session live **inside the generated username**. Pasting a shortened username, or typing the short credential name as the proxy user, will not target the region you selected.
+Country, city, and sticky session live **inside the generated username**. Host and port stay the same.
 
-### 4. Send a test request
+Static and Custom use a dedicated `host:port` instead of this gateway — see those chapters after Rotating works.
 
-Replace `GENERATED_USER` and `YOUR_PASS`:
+## Send a test request
 
+Replace `GENERATED_USER` and `YOUR_PASS`. If the response is a public IP that is **not** your home or office IP, the proxy is live.
+
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
+{% endtab %}
 
-A public IP printed in the terminal means the line is live. Next, point your scraper or browser at the same host, port, user, and password.
-
-Python:
-
+{% tab title="Python" %}
 ```python
 import requests
 
@@ -85,6 +51,154 @@ PROXY = "http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001"
 proxies = {"http": PROXY, "https": PROXY}
 print(requests.get("https://api.ipify.org", proxies=proxies, timeout=30).text)
 ```
+{% endtab %}
+
+{% tab title="Node.js" %}
+```javascript
+const { HttpsProxyAgent } = require("https-proxy-agent");
+
+const agent = new HttpsProxyAgent(
+  "http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001"
+);
+const res = await fetch("https://api.ipify.org", { agent });
+console.log(await res.text());
+```
+{% endtab %}
+
+{% tab title="PHP" %}
+```php
+<?php
+$ch = curl_init("https://api.ipify.org");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_PROXY, "gate.joyproxy.com:9001");
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, "GENERATED_USER:YOUR_PASS");
+echo curl_exec($ch);
+curl_close($ch);
+```
+{% endtab %}
+
+{% tab title="Go" %}
+```go
+package main
+
+import (
+  "io"
+  "log"
+  "net/http"
+  "net/url"
+)
+
+func main() {
+  proxyURL, err := url.Parse("http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001")
+  if err != nil {
+    log.Fatal(err)
+  }
+  client := &http.Client{
+    Transport: &http.Transport{Proxy: http.ProxyURL(proxyURL)},
+  }
+  resp, err := client.Get("https://api.ipify.org")
+  if err != nil {
+    log.Fatal(err)
+  }
+  defer resp.Body.Close()
+  b, _ := io.ReadAll(resp.Body)
+  log.Println(string(b))
+}
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+import java.net.*;
+import java.io.*;
+import java.util.Scanner;
+
+public class ProxyTest {
+  public static void main(String[] args) throws Exception {
+    Proxy proxy = new Proxy(Proxy.Type.HTTP,
+        new InetSocketAddress("gate.joyproxy.com", 9001));
+    Authenticator.setDefault(new Authenticator() {
+      protected PasswordAuthentication getPasswordAuthentication() {
+        return new PasswordAuthentication(
+            "GENERATED_USER", "YOUR_PASS".toCharArray());
+      }
+    });
+    URLConnection conn = new URL("https://api.ipify.org").openConnection(proxy);
+    try (Scanner scanner = new Scanner(conn.getInputStream())) {
+      System.out.println(scanner.nextLine());
+    }
+  }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+SOCKS5 with cURL:
+
+```bash
+curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
+```
+
+More languages: [Code examples](rotating/code-examples.md).
+
+## Set up in the dashboard
+
+New accounts: [Register](https://www.joyproxy.com/register.html) · [Pricing](https://www.joyproxy.com/pricing.html) · [Purchase](https://www.joyproxy.com/admin-purchase.html)
+
+> **Tip**
+>
+> New accounts receive a **$5 sign-up credit**. Apply it on your first proxy pack or scraping credits at checkout.
+
+### 1. Buy Rotating traffic
+
+1. Open [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term).
+2. Choose **Residential** (or **Mobile** / **Business / ISP** if that is your target).
+3. Pick a traffic pack and pay with **PayPal** or **account balance**.
+4. Confirm the order in [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
+
+Details: [Choose a network and buy traffic](rotating/purchase.md).
+
+### 2. Authentication
+
+Dashboard login and proxy login are **different**.
+
+1. Open [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html).
+2. Under **Username / Password**, create a credential (label 3+ characters, password 6+).
+3. Keep the **password**. You will pair it with a **long generated username** in the next step — not with this short label.
+
+Rotating uses **username + password**. Static and Custom lines can also use an **IP whitelist**. Full walkthrough: [Authentication methods](rotating/authentication.md).
+
+### 3. Proxy setup (Endpoints)
+
+In [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Rotating**:
+
+1. **Location** — country, then optionally state / city. See [Location targeting](rotating/location-targeting.md).
+2. **Session type** — rotate every request, or **sticky** (1–30 minutes) so several requests share one exit IP. See [Sticky sessions](rotating/sticky-sessions.md).
+3. **Protocol** — HTTP, HTTPS, or SOCKS5. Host and port stay `gate.joyproxy.com:9001` for all three.
+4. Set how many lines to create → **Generate**.
+
+> **Important**
+>
+> Paste the generated **username exactly**. Editing it can send you to the wrong region or fail authentication.
+
+### 4. Copy the proxy list
+
+Copy all four fields (or the full URI) from the results table:
+
+```text
+http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
+```
+
+| Copy | Leave unchanged |
+| --- | --- |
+| Host `gate.joyproxy.com` | Do not invent a country-specific host |
+| Port `9001` | Do not use a Static `*.edge.joyproxy.com` port here |
+| Full generated username | Do not type the short Whitelist label |
+| Password from Whitelist & Users | Do not use the website login password |
+
+### 5. Confirm the IP
+
+Run a snippet from [Send a test request](#send-a-test-request). When you see the **proxy exit IP**, the line is ready for scrapers, browsers, and tools.
 
 ## Connection details at a glance
 
@@ -97,15 +211,41 @@ print(requests.get("https://api.ipify.org", proxies=proxies, timeout=30).text)
 
 > **Important**
 >
-> On Static and Custom, the **Exit IP** shown in the console is the address websites see. The address **your client connects to** is the `host:port` from Endpoints. Use the generated host and port, not the exit IP, as the proxy server.
+> On Static and Custom, the **Exit IP** shown in the console is the address websites see. The address **your client connects to** is the `host:port` from Endpoints.
+
+## Integration
+
+| You want | Page |
+| --- | --- |
+| Chrome / Edge only | [Browser extension](software/browser-extension.md) |
+| Batch test HTTP / SOCKS | [Proxy Tester](software/proxy-tester.md) |
+| Local `127.0.0.1` for a CLI tool | [Proxy Server](software/proxy-server.md) |
+| Desktop scrapers and RPA | [Third-party software](../best-practices/third-party-static-proxies.md) |
+| AI agents / MCP | [Integrate proxies in AI](../integration/integrate-proxies-in-ai.md) |
+
+## Usage
+
+Open the **Usage** tab on the Residential / Mobile / Business console to watch remaining GB. Dates are in the timezone shown in the console. Buy another pack from [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term) when traffic runs low — you do not need a new username each time.
+
+## Troubleshooting
+
+| Symptom | What to check |
+| --- | --- |
+| **407** / Proxy Authentication Required | Password from Whitelist & Users. Username is the **generated** string, not your email and not the short credential label. Recreate the password if you are unsure. |
+| Timeout | Host `gate.joyproxy.com`, port `9001`. Try HTTP before SOCKS if a firewall is involved. |
+| Wrong country | Generate a **new** username with the country selected. Do not edit the old string. |
+| Order inactive / no traffic | Remaining GB in [My Proxies](https://www.joyproxy.com/admin-my-orders.html) or Usage. |
+
+Still stuck? [Live chat](../support/live-chat.md) with a **redacted** curl (never send the live password).
 
 ## What to read next
 
 | Task | Page |
 | --- | --- |
-| Country / city targeting on rotating | [Location targeting](rotating/location-targeting.md) |
+| Create or reset proxy users | [Authentication methods](rotating/authentication.md) |
+| Country / city targeting | [Location targeting](rotating/location-targeting.md) |
 | Keep the same IP for several minutes | [Sticky sessions](rotating/sticky-sessions.md) |
-| Copy-paste for Python, Java, Go, Node | [Rotating code examples](rotating/code-examples.md) |
+| Copy-paste for Python, Java, Go, Node, PHP | [Rotating code examples](rotating/code-examples.md) |
 | Dedicated line + IP whitelist | [Static authorization](static/authorization.md) |
 | Fetch a URL with credits | [First fetch](scraping-api/first-fetch.md) |
 | Dashboard walkthrough | [User console](../user-console/overview.md) |

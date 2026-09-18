@@ -32,4 +32,4 @@ You can hold more than one network on the same account. Each order appears separ
 
 ## Next
 
-Create the password your client will send to the gateway: [Create a proxy password](credentials.md).
+Set up username/password (and whitelist for dedicated lines): [Authentication methods](authentication.md).

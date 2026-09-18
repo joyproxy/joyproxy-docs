@@ -59,6 +59,7 @@ See [Integration → Integrate proxies in AI](integration/integrate-proxies-in-a
 | If you need… | Start here |
 | --- | --- |
 | Five-minute first request | [Quick start](getting-started/quick-start.md) |
+| Username/password or IP whitelist | [Authentication methods](getting-started/rotating/authentication.md) |
 | Fresh IPs or sticky sessions on the shared gateway | [Rotating proxy](getting-started/rotating/README.md) |
 | Fixed host:port for days or months | [Static proxy](getting-started/static/README.md) |
 | Per-port geo + rotation schedule | [Custom proxy](getting-started/custom/README.md) |

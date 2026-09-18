@@ -7,7 +7,7 @@
 * [Quick start](getting-started/quick-start.md)
 * [Rotating proxy](getting-started/rotating/README.md)
     * [Choose a network and buy traffic](getting-started/rotating/purchase.md)
-    * [Create a proxy password](getting-started/rotating/credentials.md)
+    * [Authentication methods](getting-started/rotating/authentication.md)
     * [Generate endpoints](getting-started/rotating/generate-endpoints.md)
     * [Location targeting](getting-started/rotating/location-targeting.md)
     * [Sticky sessions](getting-started/rotating/sticky-sessions.md)
