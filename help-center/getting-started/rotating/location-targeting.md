@@ -1,6 +1,6 @@
 # Location targeting
 
-On Rotating, geography is **not** a separate host. You select country (and optionally state and city) in [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html), then JoyProxy **writes that choice into the generated username**.
+On Rotating, geography is **not** a separate host. You select country (and optionally state and city) in <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a>, then JoyProxy **writes that choice into the generated username**.
 
 ## Set geo in the web generator
 
@@ -29,7 +29,7 @@ HTTP and SOCKS5 both use this same username. You do not switch host when you swi
 
 ## API
 
-Pass the same targeting the UI exposes. In [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html), open `GET /v2/extract` and fill country / city fields as documented there, plus `network_type`:
+Pass the same targeting the UI exposes. In <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>, open `GET /v2/extract` and fill country / city fields as documented there, plus `network_type`:
 
 | Pack you bought | `network_type` |
 | --- | --- |
@@ -40,9 +40,9 @@ Pass the same targeting the UI exposes. In [OpenAPI Center](https://www.joyproxy
 ## Practical tips
 
 - Start with **country only** if you are validating connectivity; add city when the workflow needs a local storefront.
-- Sticky sessions ([next page](sticky-sessions.md)) keep an IP **inside** that geo for the session length.
-- Static lines lock country at **purchase** instead. Custom lines assign geo **per port** in My Proxies. See [Static](../static/README.md) and [Custom](../custom/assign-region.md) if you need a dedicated host:port per region.
+- Sticky sessions (<a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">next page</a>) keep an IP **inside** that geo for the session length.
+- Static lines lock country at **purchase** instead. Custom lines assign geo **per port** in My Proxies. See <a href="../static/README.md" target="_blank" rel="noopener noreferrer">Static</a> and <a href="../custom/assign-region.md" target="_blank" rel="noopener noreferrer">Custom</a> if you need a dedicated host:port per region.
 
 ## Next
 
-[Sticky sessions](sticky-sessions.md)
+<a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">Sticky sessions</a>

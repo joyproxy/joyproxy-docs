@@ -4,7 +4,7 @@ Custom ports are **dedicated `host:port` lines** you configure after purchase: a
 
 Already have ports assigned? Skip to [Send a test request](#send-a-test-request).
 
-Locked country at checkout instead: [Static quick start](../static/quick-start.md). Shared gateway: [Rotating quick start](../rotating/quick-start.md).
+Locked country at checkout instead: <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">Static quick start</a>. Shared gateway: <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">Rotating quick start</a>.
 
 ## How you connect
 
@@ -12,7 +12,7 @@ Locked country at checkout instead: [Static quick start](../static/quick-start.m
 | --- | --- |
 | Host / port | From Endpoints after you assign region |
 | Auth | IP whitelist **and/or** the short credential username + password |
-| Geo | [Assign region](assign-region.md) per port in My Proxies |
+| Geo | <a href="assign-region.md" target="_blank" rel="noopener noreferrer">Assign region</a> per port in My Proxies |
 
 Connect to the generated host:port, not the Exit IP on the order card.
 
@@ -32,7 +32,7 @@ proxies = {"http": PROXY, "https": PROXY}
 print(requests.get("https://api.ipify.org", proxies=proxies, timeout=30).text)
 ```
 
-More languages: copy [Static code examples](../static/code-examples.md) and swap in the Custom host:port.
+More languages: copy <a href="../static/code-examples.md" target="_blank" rel="noopener noreferrer">Static code examples</a> and swap in the Custom host:port.
 
 ## Set up in the dashboard
 
@@ -42,32 +42,32 @@ More languages: copy [Static code examples](../static/code-examples.md) and swap
 
 ### 1. Buy ports
 
-1. Open [Purchase → Custom](https://www.joyproxy.com/admin-purchase.html?tab=custom-ip).
+1. Open <a href="https://www.joyproxy.com/admin-purchase.html?tab=custom-ip" target="_blank" rel="noopener noreferrer">Purchase → Custom</a>.
 2. Select **Residential**, **Business / ISP**, or **Datacenter**.
 3. Choose validity, number of ports, and pay.
-4. Find units under [My Proxies → Custom](https://www.joyproxy.com/admin-my-orders.html).
+4. Find units under <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies → Custom</a>.
 
-Details: [Buy ports](purchase.md).
+Details: <a href="purchase.md" target="_blank" rel="noopener noreferrer">Buy ports</a>.
 
 ### 2. Assign region
 
 Assign country (then state / city when offered) **before** you generate endpoints. Rotation keeps new IPs inside that geo.
 
-Details: [Assign region](assign-region.md).
+Details: <a href="assign-region.md" target="_blank" rel="noopener noreferrer">Assign region</a>.
 
 ### 3. Set rotation (optional)
 
 Leave the IP until you refresh, or set a timer so the port picks a new exit on a schedule.
 
-Details: [Set rotation](rotation.md).
+Details: <a href="rotation.md" target="_blank" rel="noopener noreferrer">Set rotation</a>.
 
 ### 4. Authorize and generate
 
-1. Create Username/Password in [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) (IP whitelist is also available for dedicated ports).
-2. [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Custom Proxies → Web generator**.
+1. Create Username/Password in <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> (IP whitelist is also available for dedicated ports).
+2. <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> → **Custom Proxies → Web generator**.
 3. Select the allocation → **Generate now** → copy host and port.
 
-Details: [Authorize and generate](authorize-and-generate.md).
+Details: <a href="authorize-and-generate.md" target="_blank" rel="noopener noreferrer">Authorize and generate</a>.
 
 ### 5. Confirm the IP
 
@@ -77,9 +77,9 @@ Run the curl above. When you see a public IP in the assigned region, the port is
 
 | Task | Page |
 | --- | --- |
-| Auto-renew | [Auto-renew](auto-renew.md) |
-| New IP | [New IP](new-ip.md) |
-| First request and code | [First request and code](first-request.md) |
-| HTTP vs SOCKS5 | [Protocols](protocols.md) |
-| 407 / 403 | [Response codes](response-codes.md) |
-| Auth methods | [Authentication methods](../rotating/authentication.md) |
+| Auto-renew | <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a> |
+| New IP | <a href="new-ip.md" target="_blank" rel="noopener noreferrer">New IP</a> |
+| First request and code | <a href="first-request.md" target="_blank" rel="noopener noreferrer">First request and code</a> |
+| HTTP vs SOCKS5 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> |
+| 407 / 403 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a> |
+| Auth methods | <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a> |

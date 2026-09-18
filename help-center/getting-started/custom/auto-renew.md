@@ -2,11 +2,11 @@
 
 Custom ports are billed **per port for a duration**. Auto-renew charges **account balance** before expiry so the same ports stay yours. You can turn this off anytime.
 
-Keep enough balance for the next period. Compare plans on [Pricing](https://www.joyproxy.com/pricing.html).
+Keep enough balance for the next period. Compare plans on <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>.
 
 ## Turn it on
 
-1. Open [My Proxies](https://www.joyproxy.com/admin-my-orders.html) → Custom.
+1. Open <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> → Custom.
 2. Open **Auto-renew** on the order.
 3. Choose a **Renewal period**.
 4. Confirm the estimated amount (catalog price × port count) and next charge date, then **Enable auto-renew**.
@@ -23,8 +23,8 @@ Paying a manual renew while auto-renew is on extends immediately; the next autom
 
 Use **Turn off auto-renew**. The order stays active until the current expiry.
 
-Same control on Static: [Static auto-renew](../static/auto-renew.md).
+Same control on Static: <a href="../static/auto-renew.md" target="_blank" rel="noopener noreferrer">Static auto-renew</a>.
 
 ## Next
 
-[Assign region](assign-region.md)
+<a href="assign-region.md" target="_blank" rel="noopener noreferrer">Assign region</a>

@@ -4,7 +4,7 @@ Each Custom port can target country only, country + province, or a specific city
 
 ## Steps
 
-1. Open [My Proxies](https://www.joyproxy.com/admin-my-orders.html) → **Custom Proxies**.
+1. Open <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> → **Custom Proxies**.
 2. Select one or more active ports (checkboxes).
 3. Click **Assign region**.
 4. Choose **Country** → optional **Region / Province** → optional **City**.
@@ -16,4 +16,4 @@ Region changes are done on this page (not via extract API). After you change geo
 
 ## Next
 
-[Set rotation](rotation.md)
+<a href="rotation.md" target="_blank" rel="noopener noreferrer">Set rotation</a>

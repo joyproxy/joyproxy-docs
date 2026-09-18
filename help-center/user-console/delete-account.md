@@ -4,19 +4,19 @@ You can request permanent closure of your JoyProxy account when you no longer ne
 
 ## Before you delete
 
-- Export records you need from [Transactions](invoices.md) and [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
-- Cancel or let active orders expire according to [Terms](https://www.joyproxy.com/terms.html).
-- Rotate and remove API tokens from CI systems ([Rotate token](rotate-token.md)).
+- Export records you need from <a href="invoices.md" target="_blank" rel="noopener noreferrer">Transactions</a> and <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>.
+- Cancel or let active orders expire according to <a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">Terms</a>.
+- Rotate and remove API tokens from CI systems (<a href="rotate-token.md" target="_blank" rel="noopener noreferrer">Rotate token</a>).
 
 ## Self-service (when available)
 
-1. Open [Account settings](https://www.joyproxy.com/admin-settings.html).
+1. Open <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a>.
 2. Find **Delete account** or **Close account**.
 3. Confirm identity and acknowledge data removal policies.
 4. Complete any balance or open-order prompts shown in the UI.
 
 ## Assisted closure
 
-If the console does not show delete options, contact [Support](https://www.joyproxy.com/admin-support.html) via [ticket](../support/tickets.md) or [live chat](../support/live-chat.md) from your registered email.
+If the console does not show delete options, contact <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">Support</a> via <a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">ticket</a> or <a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">live chat</a> from your registered email.
 
-JoyProxy processes closure under the [Privacy Policy](https://www.joyproxy.com/privacy.html). Billing disputes should be resolved before deletion when possible.
+JoyProxy processes closure under the <a href="https://www.joyproxy.com/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. Billing disputes should be resolved before deletion when possible.

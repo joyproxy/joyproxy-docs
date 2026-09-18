@@ -4,7 +4,7 @@ JoyProxy maintains an expanded FAQ on the main website with searchable categorie
 
 ## Browse the live FAQ
 
-**[joyproxy.com/faq.html](https://www.joyproxy.com/faq.html)**
+**<a href="https://www.joyproxy.com/faq.html" target="_blank" rel="noopener noreferrer">joyproxy.com/faq.html</a>**
 
 Topics typically include:
 
@@ -20,14 +20,14 @@ The FAQ updates with the product—when in doubt, prefer the live page over olde
 
 | Channel | When |
 | --- | --- |
-| [AI Assistant](https://www.joyproxy.com/products/ai-customer-service.html) | Instant answers 24/7 |
-| [Live chat](../support/live-chat.md) | Real-time agent |
-| [Ticket](../support/tickets.md) | Billing paper trail or complex bugs |
+| <a href="https://www.joyproxy.com/products/ai-customer-service.html" target="_blank" rel="noopener noreferrer">AI Assistant</a> | Instant answers 24/7 |
+| <a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> | Real-time agent |
+| <a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">Ticket</a> | Billing paper trail or complex bugs |
 
 ## Documentation paths
 
-- New to JoyProxy → [Overview](../README.md)
-- Ready to buy → [Purchase](https://www.joyproxy.com/admin-purchase.html) + [Pricing](../support/proxy-pricing.md)
-- Integrating today → [Rotating](../getting-started/rotating/README.md) or [Web Scraping API](../getting-started/scraping-api/README.md)
+- New to JoyProxy → <a href="../README.md" target="_blank" rel="noopener noreferrer">Overview</a>
+- Ready to buy → <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase</a> + <a href="../support/proxy-pricing.md" target="_blank" rel="noopener noreferrer">Pricing</a>
+- Integrating today → <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">Rotating</a> or <a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">Web Scraping API</a>
 
 A full Markdown import of FAQ entries into this repository is planned for a later release.

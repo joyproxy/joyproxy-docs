@@ -8,7 +8,7 @@ gate.joyproxy.com:9001
 
 Already have a pack and a password? Skip to [Send a test request](#send-a-test-request). Otherwise follow [Set up in the dashboard](#set-up-in-the-dashboard) first.
 
-Need a dedicated `host:port` instead? [Static](../static/quick-start.md) · [Custom](../custom/quick-start.md). Page fetches without a proxy client: [Web Scraping API](../scraping-api/quick-start.md).
+Need a dedicated `host:port` instead? <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">Static</a> · <a href="../custom/quick-start.md" target="_blank" rel="noopener noreferrer">Custom</a>. Page fetches without a proxy client: <a href="../scraping-api/quick-start.md" target="_blank" rel="noopener noreferrer">Web Scraping API</a>.
 
 ## How endpoints work
 
@@ -19,8 +19,8 @@ An **endpoint** is the gateway into an IP pool. You do not pick a new host for e
 | Host | `gate.joyproxy.com` |
 | Port | `9001` |
 | Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. |
-| Username | The **full generated string** from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) |
-| Password | From [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) → **Username/Password** |
+| Username | The **full generated string** from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> |
+| Password | From <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> → **Username/Password** |
 
 Country, city, and sticky session live **inside the generated username**. Host and port stay the same.
 
@@ -131,11 +131,11 @@ SOCKS5 with cURL:
 curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
-More languages: [Code examples](code-examples.md).
+More languages: <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a>.
 
 ## Set up in the dashboard
 
-New accounts: [Register](https://www.joyproxy.com/register.html) · [Pricing](https://www.joyproxy.com/pricing.html) · [Purchase](https://www.joyproxy.com/admin-purchase.html)
+New accounts: <a href="https://www.joyproxy.com/register.html" target="_blank" rel="noopener noreferrer">Register</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a> · <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase</a>
 
 > **Tip**
 >
@@ -143,30 +143,30 @@ New accounts: [Register](https://www.joyproxy.com/register.html) · [Pricing](ht
 
 ### 1. Buy Rotating traffic
 
-1. Open [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term).
+1. Open <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">Purchase → Rotating</a>.
 2. Choose **Residential** (or **Mobile** / **Business / ISP** if that is your target).
-3. Pick a traffic pack. Residential, Mobile, and Business / ISP each have their own price — see [Pricing](https://www.joyproxy.com/pricing.html).
+3. Pick a traffic pack. Residential, Mobile, and Business / ISP each have their own price — see <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>.
 4. Pay in checkout: card, Apple Pay, Google Pay, PayPal, WeChat Pay, UPI, USDT (TRC20), or account balance.
-5. Confirm the order in [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
+5. Confirm the order in <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>.
 
-Details: [Choose a network and buy traffic](purchase.md).
+Details: <a href="purchase.md" target="_blank" rel="noopener noreferrer">Choose a network and buy traffic</a>.
 
 ### 2. Authentication
 
 Dashboard login and proxy login are **different**.
 
-1. Open [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html).
+1. Open <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a>.
 2. Under **Username/Password**, create a User/Pass (letter first, a–z and 0–9, max 16; password 6+).
 3. Keep the **password**. You will pair it with a **long generated username** in the next step — not with this short name.
 
-Full walkthrough: [Authentication methods](authentication.md).
+Full walkthrough: <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
 
 ### 3. Proxy setup (Endpoints)
 
-In [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Rotating**:
+In <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> → **Rotating**:
 
-1. **Location** — country, then optionally state / city. See [Location targeting](location-targeting.md).
-2. **Session type** — **Sticky session** (1–30 minutes) or **Rotating session**. See [Sticky sessions](sticky-sessions.md).
+1. **Location** — country, then optionally state / city. See <a href="location-targeting.md" target="_blank" rel="noopener noreferrer">Location targeting</a>.
+2. **Session type** — **Sticky session** (1–30 minutes) or **Rotating session**. See <a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">Sticky sessions</a>.
 3. **Output format** — Endpoint:port, HTTP, or SOCKS5. Host and port stay `gate.joyproxy.com:9001`. Either protocol can open HTTPS websites.
 4. Set how many lines to create → **Generate**.
 
@@ -197,15 +197,15 @@ Run a snippet from [Send a test request](#send-a-test-request). When you see the
 
 | You want | Page |
 | --- | --- |
-| Chrome / Edge only | [Browser extension](../software/browser-extension.md) |
-| Batch test HTTP / SOCKS | [Proxy Tester](../software/proxy-tester.md) |
-| Local `127.0.0.1` for a CLI tool | [Proxy Server](../software/proxy-server.md) |
-| Desktop scrapers and RPA | [Third-party software](../../best-practices/third-party-static-proxies.md) |
-| AI agents / MCP | [Integrate proxies in AI](../../integration/integrate-proxies-in-ai.md) |
+| Chrome / Edge only | <a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">Browser extension</a> |
+| Batch test HTTP / SOCKS | <a href="../software/proxy-tester.md" target="_blank" rel="noopener noreferrer">Proxy Tester</a> |
+| Local `127.0.0.1` for a CLI tool | <a href="../software/proxy-server.md" target="_blank" rel="noopener noreferrer">Proxy Server</a> |
+| Desktop scrapers and RPA | <a href="../../best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">Third-party software</a> |
+| AI agents / MCP | <a href="../../integration/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">Integrate proxies in AI</a> |
 
 ## Usage
 
-Open the **Usage** tab on the Residential / Mobile / Business console to watch remaining GB. Buy another pack from [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term) when traffic runs low — you do not need a new username each time.
+Open the **Usage** tab on the Residential / Mobile / Business console to watch remaining GB. Buy another pack from <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">Purchase → Rotating</a> when traffic runs low — you do not need a new username each time.
 
 ## Troubleshooting
 
@@ -214,20 +214,20 @@ Open the **Usage** tab on the Residential / Mobile / Business console to watch r
 | **407** / Proxy Authentication Required | Password from Users & Whitelist → Username/Password. Username is the **generated** string, not your email and not the short User/Pass name. |
 | Timeout | Host `gate.joyproxy.com`, port `9001`. Try HTTP before SOCKS if a firewall is involved. |
 | Wrong country | Generate a **new** username with the country selected. Do not edit the old string. |
-| Order inactive / no traffic | Remaining GB in [My Proxies](https://www.joyproxy.com/admin-my-orders.html) or Usage. |
+| Order inactive / no traffic | Remaining GB in <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> or Usage. |
 
-Still stuck? [Live chat](../../support/live-chat.md) with a **redacted** curl (never send the live password).
+Still stuck? <a href="../../support/live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> with a **redacted** curl (never send the live password).
 
 ## What to read next
 
 | Task | Page |
 | --- | --- |
-| Auto-buy when GB runs low | [Auto-buy traffic](auto-buy-traffic.md) |
-| Usage tab and order APIs | [Usage and orders](usage-and-orders.md) |
-| Create or reset proxy users | [Authentication methods](authentication.md) |
-| Country / city targeting | [Location targeting](location-targeting.md) |
-| Keep the same IP for several minutes | [Sticky sessions](sticky-sessions.md) |
-| Copy-paste for more languages | [Code examples](code-examples.md) |
-| HTTP vs SOCKS5 | [Protocols](protocols.md) |
-| 407 / 403 / extract errors | [Response codes](response-codes.md) |
-| Use in Chrome, Windows, RPA | [Apps and browsers](apps-and-browsers.md) |
+| Auto-buy when GB runs low | <a href="auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">Auto-buy traffic</a> |
+| Usage tab and order APIs | <a href="usage-and-orders.md" target="_blank" rel="noopener noreferrer">Usage and orders</a> |
+| Create or reset proxy users | <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a> |
+| Country / city targeting | <a href="location-targeting.md" target="_blank" rel="noopener noreferrer">Location targeting</a> |
+| Keep the same IP for several minutes | <a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">Sticky sessions</a> |
+| Copy-paste for more languages | <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a> |
+| HTTP vs SOCKS5 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> |
+| 407 / 403 / extract errors | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a> |
+| Use in Chrome, Windows, RPA | <a href="apps-and-browsers.md" target="_blank" rel="noopener noreferrer">Apps and browsers</a> |

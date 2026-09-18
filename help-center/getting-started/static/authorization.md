@@ -1,14 +1,14 @@
 # Username/password or whitelist
 
-Set **Username/Password** on [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) before you generate endpoints. You can also add an **IP whitelist**. Each app picks the method it supports.
+Set **Username/Password** on <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> before you generate endpoints. You can also add an **IP whitelist**. Each app picks the method it supports.
 
-On Static, the Users & Whitelist username **is** the proxy user. Product-wide walkthrough: [Authentication methods](../rotating/authentication.md).
+On Static, the Users & Whitelist username **is** the proxy user. Product-wide walkthrough: <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
 
 ## Username/Password (recommended)
 
 Best for laptops, browsers, and tools that cannot pin one egress IP.
 
-1. [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) → **Username/Password**.
+1. <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> → **Username/Password**.
 2. Create a User/Pass:
    - Username: starts with a **letter**, lowercase **a–z** and **0–9** only, **max 16** characters.
    - Password: **at least 6** characters.
@@ -41,4 +41,4 @@ Whitelist the IP that **opens** the connection, not the Exit IP on the order car
 
 ## Next
 
-[Generate endpoints](generate-endpoints.md)
+<a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>

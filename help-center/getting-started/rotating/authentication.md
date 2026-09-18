@@ -1,8 +1,8 @@
 # Authentication methods
 
-Rotating uses **Username/Password**. Open [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) (same page on the Residential / Mobile / Business console).
+Rotating uses **Username/Password**. Open <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> (same page on the Residential / Mobile / Business console).
 
-Website login and proxy login are **different**. Resetting the dashboard password does **not** change the proxy password — use [Forgot password](../../user-console/forgot-password.md) only for the site.
+Website login and proxy login are **different**. Resetting the dashboard password does **not** change the proxy password — use <a href="../../user-console/forgot-password.md" target="_blank" rel="noopener noreferrer">Forgot password</a> only for the site.
 
 ## Username/Password (recommended)
 
@@ -19,7 +19,7 @@ Pick Shared when one secret is enough. Pick Per product when each network should
 
 ### Create a User/Pass
 
-1. Open [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) → **Username/Password**.
+1. Open <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> → **Username/Password**.
 2. Choose **Shared** or **Per product**.
 3. Create the credential:
    - Username: starts with a **letter**, lowercase **a–z** and **0–9** only, **max 16** characters.
@@ -35,7 +35,7 @@ The username on this page is your **User/Pass name**. The string your app sends 
 | Proxy host | `gate.joyproxy.com` |
 | Proxy port | `9001` |
 | Proxy type | HTTP or SOCKS5 (both can open HTTPS websites) |
-| Proxy username | **Generated username** from [Endpoints](generate-endpoints.md) |
+| Proxy username | **Generated username** from <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Endpoints</a> |
 | Proxy password | The password from Username/Password |
 
 ```text
@@ -60,7 +60,7 @@ Use **Edit** on the Username/Password row to set a new password, then update `YO
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
-Other hop and extract errors: [Response codes](response-codes.md).
+Other hop and extract errors: <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>.
 
 ## What you type for Static / Custom (User/Pass)
 
@@ -70,7 +70,7 @@ On dedicated lines, the **Users & Whitelist username** *is* the proxy user. Ther
 http://USER:PASS@us-ca.edge.joyproxy.com:10001
 ```
 
-Walkthrough: [Static authorization](../static/authorization.md).
+Walkthrough: <a href="../static/authorization.md" target="_blank" rel="noopener noreferrer">Static authorization</a>.
 
 ## IP whitelist
 
@@ -84,4 +84,4 @@ Whitelist the IP that **opens** the proxy connection, not the Exit IP on the ord
 
 ## Next
 
-[Generate endpoints](generate-endpoints.md) — produce the Rotating username that carries geo and session.
+<a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a> — produce the Rotating username that carries geo and session.

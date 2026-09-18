@@ -2,9 +2,9 @@
 
 This page assumes you already have:
 
-1. An active Rotating pack — [Purchase](purchase.md)
-2. Authentication set up — [Authentication methods](authentication.md)
-3. A generated username — [Generate endpoints](generate-endpoints.md)
+1. An active Rotating pack — <a href="purchase.md" target="_blank" rel="noopener noreferrer">Purchase</a>
+2. Authentication set up — <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>
+3. A generated username — <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>
 
 Run a test **before** you point production scrapers at the gateway. When the response is a public IP that is not your own, the proxy is working.
 
@@ -47,13 +47,13 @@ The Endpoints page can paste a ready-made snippet in cURL, Python, Node.js, PHP,
 
 Work through this list in order:
 
-1. **407 / Proxy Authentication Required** — Password must be the Username/Password secret. Username must be the **generated** string, not your dashboard email and not the short User/Pass name. Edit the password and retry. See [Authentication methods](authentication.md). Full table: [Response codes](response-codes.md).
-2. **Timeout** — Confirm `gate.joyproxy.com` and port `9001`. Try the HTTP proxy type first. See [Protocols](protocols.md).
+1. **407 / Proxy Authentication Required** — Password must be the Username/Password secret. Username must be the **generated** string, not your dashboard email and not the short User/Pass name. Edit the password and retry. See <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>. Full table: <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>.
+2. **Timeout** — Confirm `gate.joyproxy.com` and port `9001`. Try the HTTP proxy type first. See <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>.
 3. **Wrong country** — Generate a new username with the country selected in Endpoints. Do not edit the old username.
-4. **Order inactive** — Check remaining GB in [My Proxies](https://www.joyproxy.com/admin-my-orders.html) or the Usage tab.
+4. **Order inactive** — Check remaining GB in <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> or the Usage tab.
 
-Still stuck? [Live chat](../../support/live-chat.md) with the **redacted** curl (never send the live password).
+Still stuck? <a href="../../support/live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> with the **redacted** curl (never send the live password).
 
 ## Next
 
-Copy a snippet for your language: [Code examples](code-examples.md). Protocol choice: [Protocols](protocols.md). For Chrome-only tests, use the [Browser extension](../software/browser-extension.md).
+Copy a snippet for your language: <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a>. Protocol choice: <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>. For Chrome-only tests, use the <a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">Browser extension</a>.

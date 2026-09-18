@@ -6,9 +6,9 @@ JoyProxy publishes list pricing so you can model cost before integrating. Final 
 
 | Product | Page |
 | --- | --- |
-| All proxy networks | [Pricing](https://www.joyproxy.com/pricing.html) |
-| Business / ISP | [Pricing (business)](https://www.joyproxy.com/pricing.html?network_type=business) |
-| Web Scraping API credits | [Pricing (smart-fetch)](https://www.joyproxy.com/pricing.html?network_type=smart-fetch) |
+| All proxy networks | <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a> |
+| Business / ISP | <a href="https://www.joyproxy.com/pricing.html?network_type=business" target="_blank" rel="noopener noreferrer">Pricing (business)</a> |
+| Web Scraping API credits | <a href="https://www.joyproxy.com/pricing.html?network_type=smart-fetch" target="_blank" rel="noopener noreferrer">Pricing (smart-fetch)</a> |
 
 ## Billing models (summary)
 
@@ -29,6 +29,6 @@ Rotating traffic deducts from your package as you use it. Static and custom run 
 
 ## Buy now
 
-[Purchase proxies](https://www.joyproxy.com/admin-purchase.html) · [Buy scraping credits](https://www.joyproxy.com/admin-web-unblocker.html?view=buy)
+<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase proxies</a> · <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">Buy scraping credits</a>
 
-Enterprise volume or multi-team needs? [Live chat](live-chat.md) can route you to the right pack size.
+Enterprise volume or multi-team needs? <a href="live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> can route you to the right pack size.

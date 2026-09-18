@@ -28,4 +28,4 @@ Confirm the printed IP matches the region you purchased. If geo is wrong, check 
 
 ## Next
 
-[Code examples](code-examples.md) · [New IP](refresh-ip.md) · [Response codes](response-codes.md)
+<a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a> · <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">New IP</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>

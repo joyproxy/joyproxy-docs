@@ -10,7 +10,7 @@ Common query flags on `GET /v1/fetch`:
 | `super=true` | Stronger anti-bot path |
 | `geoCode=us` | Country-level exit preference (use a real ISO code you need) |
 
-Full list and plugin endpoints: [API documentation](https://www.joyproxy.com/admin-unblocker-documentation.html).
+Full list and plugin endpoints: <a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">API documentation</a>.
 
 ## Credits charged on success only
 
@@ -27,4 +27,4 @@ Some site-specific plugins may use different rates; the product page and full AP
 
 ## Next
 
-[Monitor usage](usage.md)
+<a href="usage.md" target="_blank" rel="noopener noreferrer">Monitor usage</a>

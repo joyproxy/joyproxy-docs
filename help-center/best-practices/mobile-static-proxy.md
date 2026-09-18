@@ -2,14 +2,14 @@
 
 Use JoyProxy **static or custom** host:port on a phone when you need real mobile UI behavior with a **stable egress** (for example, checking a mobile web checkout while keeping the same IP for the session).
 
-For carrier-class **Mobile rotating** traffic, pair [Mobile purchases](../getting-started/rotating/README.md) with the [Android client](../getting-started/software/android-client.md).
+For carrier-class **Mobile rotating** traffic, pair <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">Mobile purchases</a> with the <a href="../getting-started/software/android-client.md" target="_blank" rel="noopener noreferrer">Android client</a>.
 
 ## iOS (Wi‑Fi manual proxy)
 
-1. Generate static/custom endpoints on desktop first ([Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html)).
+1. Generate static/custom endpoints on desktop first (<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a>).
 2. On iPhone: **Settings → Wi‑Fi → (i) next to your network → Configure Proxy → Manual**.
 3. **Server** = host; **Port** = port.
-4. If the network requires authentication, enter username/password from [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html).
+4. If the network requires authentication, enter username/password from <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a>.
 
 > **Note**
 >
@@ -23,7 +23,7 @@ For carrier-class **Mobile rotating** traffic, pair [Mobile purchases](../gettin
 
 ## Android (JoyProxy client — recommended for apps)
 
-1. Install the [Proxy Android client](../getting-started/software/android-client.md).
+1. Install the <a href="../getting-started/software/android-client.md" target="_blank" rel="noopener noreferrer">Proxy Android client</a>.
 2. Enter host, port, credentials.
 3. Choose **Global**, **Whitelist**, or **Blacklist** app routing.
 
@@ -34,4 +34,4 @@ For carrier-class **Mobile rotating** traffic, pair [Mobile purchases](../gettin
 
 ## Verify
 
-Load a mobile browser and confirm country/ASN before running paid flows. If results drift, regenerate the endpoint or check order expiry in [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
+Load a mobile browser and confirm country/ASN before running paid flows. If results drift, regenerate the endpoint or check order expiry in <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>.

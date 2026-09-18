@@ -4,7 +4,7 @@ Reset your password if you cannot sign in to the JoyProxy console.
 
 ## Self-service reset
 
-1. Go to [Log in](https://www.joyproxy.com/login.html).
+1. Go to <a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">Log in</a>.
 2. Click **Forgot password** (or similar wording on the page).
 3. Enter the **email** registered to your account.
 4. Open the reset link in the email and choose a new password (minimum length shown on the form—typically 6+ characters).
@@ -17,6 +17,6 @@ Reset your password if you cannot sign in to the JoyProxy console.
 ## Still cannot access?
 
 - Confirm you are using the same email you registered with.
-- Contact [Live chat](../support/live-chat.md) or [Support tickets](../support/tickets.md) from an email domain you can prove you own.
+- Contact <a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">Live chat</a> or <a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">Support tickets</a> from an email domain you can prove you own.
 
 After reset, update saved passwords in scripts and CI secrets that used the old value.

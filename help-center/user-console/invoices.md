@@ -4,7 +4,7 @@ Track top-ups, package purchases, and consumption from the console.
 
 ## Transactions
 
-[Transactions](https://www.joyproxy.com/admin-transactions.html) lists:
+<a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">Transactions</a> lists:
 
 - PayPal or balance **recharges**
 - Proxy package **payments**
@@ -14,7 +14,7 @@ Use filters or export options when the UI provides them for accounting.
 
 ## Proxy orders
 
-[My Proxies](https://www.joyproxy.com/admin-my-orders.html) shows:
+<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> shows:
 
 - **Active** rotating traffic, static allocations, custom ports
 - **Expired** history for renewal decisions
@@ -27,7 +27,7 @@ Use filters or export options when the UI provides them for accounting.
 
 ## Buy more
 
-- [Purchase proxies](https://www.joyproxy.com/admin-purchase.html)
-- [Buy scraping credits](https://www.joyproxy.com/admin-web-unblocker.html?view=buy)
+- <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase proxies</a>
+- <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">Buy scraping credits</a>
 
-Questions on a charge? [Submit a ticket](../support/tickets.md) with transaction ID and date.
+Questions on a charge? <a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">Submit a ticket</a> with transaction ID and date.

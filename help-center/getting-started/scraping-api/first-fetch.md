@@ -29,4 +29,4 @@ A successful response body is the page (or JSON, depending on the endpoint). Fai
 
 ## Next
 
-Tune `render`, `super`, and `geoCode`: [Parameters and credit costs](parameters.md).
+Tune `render`, `super`, and `geoCode`: <a href="parameters.md" target="_blank" rel="noopener noreferrer">Parameters and credit costs</a>.

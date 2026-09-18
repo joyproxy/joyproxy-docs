@@ -9,21 +9,21 @@ On the Residential / Mobile / Business console, open the **Usage** tab (Traffic 
 It has two sub-views:
 
 - **Traffic** — used and remaining GB on active Rotating packs (**Traffic quota**), plus charts you can filter by date range
-- **Orders** — the same inventory as [My Proxies](https://www.joyproxy.com/admin-my-orders.html)
+- **Orders** — the same inventory as <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>
 
 My Proxies also shows remaining GB on each Rotating pack. Endpoints keep working while traffic remains.
 
 ## Orders (console)
 
-[My Proxies](https://www.joyproxy.com/admin-my-orders.html) lists Rotating packs for the network you have selected: status, remaining GB, and purchase time.
+<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> lists Rotating packs for the network you have selected: status, remaining GB, and purchase time.
 
-Buy another pack from [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term), or turn on [Auto-buy traffic](auto-buy-traffic.md).
+Buy another pack from <a href="https://www.joyproxy.com/admin-purchase.html?tab=short-term" target="_blank" rel="noopener noreferrer">Purchase → Rotating</a>, or turn on <a href="auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">Auto-buy traffic</a>.
 
 ## Orders and balance (API)
 
-Order and balance APIs use the **Master User Token** from [Account settings](https://www.joyproxy.com/admin-settings.html). That is not the extract API URL on Endpoints.
+Order and balance APIs use the **Master User Token** from <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">Account settings</a>. That is not the extract API URL on Endpoints.
 
-Try these operations in [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html): **List Purchased Orders** and **Get Balance**.
+Try these operations in <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>: **List Purchased Orders** and **Get Balance**.
 
 List active Rotating orders:
 
@@ -55,4 +55,4 @@ Response shape is documented on **Get Balance** and **List Purchased Orders** in
 
 ## Next
 
-[Authentication methods](authentication.md) · [Generate endpoints](generate-endpoints.md)
+<a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a> · <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>

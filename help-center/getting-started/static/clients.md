@@ -4,11 +4,11 @@ Dedicated `host:port` lines work well in OS and browser forms.
 
 ## Browser only
 
-[JoyProxy Browser Extension](../software/browser-extension.md) — paste `http://USER:PASS@HOST:PORT`, test, apply. Other apps stay direct.
+<a href="../software/browser-extension.md" target="_blank" rel="noopener noreferrer">JoyProxy Browser Extension</a> — paste `http://USER:PASS@HOST:PORT`, test, apply. Other apps stay direct.
 
 ## Chrome / Edge on Windows (system proxy)
 
-Chrome follows Windows. See [Windows 11 system proxy](../../best-practices/windows-11-system-proxy.md) and [Chrome static proxy](../../best-practices/chrome-static-proxy.md).
+Chrome follows Windows. See <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 system proxy</a> and <a href="../../best-practices/chrome-static-proxy.md" target="_blank" rel="noopener noreferrer">Chrome static proxy</a>.
 
 > **Security**
 >
@@ -16,12 +16,12 @@ Chrome follows Windows. See [Windows 11 system proxy](../../best-practices/windo
 
 ## iOS / Android Wi‑Fi
 
-[Mobile devices](../../best-practices/mobile-static-proxy.md) — manual proxy on the Wi‑Fi network, or the [Android client](../software/android-client.md) for per-app routing.
+<a href="../../best-practices/mobile-static-proxy.md" target="_blank" rel="noopener noreferrer">Mobile devices</a> — manual proxy on the Wi‑Fi network, or the <a href="../software/android-client.md" target="_blank" rel="noopener noreferrer">Android client</a> for per-app routing.
 
 ## Third-party tools
 
-Host and port from Endpoints; auth = whitelist or user/pass. Table: [Third-party software](../../best-practices/third-party-static-proxies.md).
+Host and port from Endpoints; auth = whitelist or user/pass. Table: <a href="../../best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">Third-party software</a>.
 
 ## Chapter index
 
-[Static proxy](README.md)
+<a href="README.md" target="_blank" rel="noopener noreferrer">Static proxy</a>

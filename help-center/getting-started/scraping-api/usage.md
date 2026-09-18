@@ -1,11 +1,11 @@
 # Monitor usage
 
-- [Usage tab](https://www.joyproxy.com/admin-web-unblocker.html?view=usage) — balance, concurrency, request log
+- <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=usage" target="_blank" rel="noopener noreferrer">Usage tab</a> — balance, concurrency, request log
 - Headers on each response — credits used and remaining
-- [Buy](https://www.joyproxy.com/admin-web-unblocker.html?view=buy) when the balance is low (credits do not expire)
+- <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">Buy</a> when the balance is low (credits do not expire)
 
-Console tour: [Web Scraping API (user console)](../../user-console/web-scraping-api.md).
+Console tour: <a href="../../user-console/web-scraping-api.md" target="_blank" rel="noopener noreferrer">Web Scraping API (user console)</a>.
 
 ## Chapter index
 
-[Web Scraping API](README.md)
+<a href="README.md" target="_blank" rel="noopener noreferrer">Web Scraping API</a>

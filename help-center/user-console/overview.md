@@ -2,7 +2,7 @@
 
 The **Overview** page is your home base after login. It summarizes wallet balance, active products, and shortcuts into purchase and support flows.
 
-**URL:** [admin-overview](https://www.joyproxy.com/admin-overview.html)
+**URL:** <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">admin-overview</a>
 
 ## What you typically see
 
@@ -16,10 +16,10 @@ Exact widgets evolve with product releases; use the left navigation for authorit
 
 | Goal | Go to |
 | --- | --- |
-| Buy or top up | [Purchase](https://www.joyproxy.com/admin-purchase.html) |
-| Generate proxy lines | [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) |
-| Manage credentials | [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) |
-| Review payments | [Transactions](invoices.md) |
-| Get help | [Support](https://www.joyproxy.com/admin-support.html) |
+| Buy or top up | <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase</a> |
+| Generate proxy lines | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> |
+| Manage credentials | <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> |
+| Review payments | <a href="invoices.md" target="_blank" rel="noopener noreferrer">Transactions</a> |
+| Get help | <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">Support</a> |
 
-Product-specific tabs (Residential, Mobile, etc.) are documented under [User console proxy sections](residential-proxies.md).
+Product-specific tabs (Residential, Mobile, etc.) are documented under <a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">User console proxy sections</a>.

@@ -2,11 +2,11 @@
 
 Static lines are billed **per IP for a duration**. Auto-renew charges **account balance** before expiry so the same `host:port` stays yours. You can turn this off anytime.
 
-Keep enough balance for the next period. Compare plans on [Pricing](https://www.joyproxy.com/pricing.html).
+Keep enough balance for the next period. Compare plans on <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>.
 
 ## Turn it on
 
-1. Open [My Proxies](https://www.joyproxy.com/admin-my-orders.html) → Static.
+1. Open <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> → Static.
 2. Open **Auto-renew** on the order.
 3. Choose a **Renewal period** (Daily, Weekly, Monthly, Quarterly, Half-year, Annual — as shown in the modal).
 4. Confirm the estimated amount and next charge date, then **Enable auto-renew**.
@@ -33,4 +33,4 @@ Use **Turn off auto-renew**. The order stays active until the current expiry.
 
 ## Next
 
-[Username/password or whitelist](authorization.md) · [New IP](refresh-ip.md)
+<a href="authorization.md" target="_blank" rel="noopener noreferrer">Username/password or whitelist</a> · <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">New IP</a>

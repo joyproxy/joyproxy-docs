@@ -4,16 +4,16 @@ Static gives you a **dedicated host and port** for the life of the package. Regi
 
 Already have an allocation? Skip to [Send a test request](#send-a-test-request).
 
-Need new IPs every request instead? [Rotating quick start](../rotating/quick-start.md). Per-port geo after purchase: [Custom quick start](../custom/quick-start.md).
+Need new IPs every request instead? <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">Rotating quick start</a>. Per-port geo after purchase: <a href="../custom/quick-start.md" target="_blank" rel="noopener noreferrer">Custom quick start</a>.
 
 ## How you connect
 
 | Field | Value |
 | --- | --- |
-| Host | From [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html), for example `us-ca.edge.joyproxy.com` |
+| Host | From <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a>, for example `us-ca.edge.joyproxy.com` |
 | Port | From Endpoints, for example `10001` |
-| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. See [Protocols](protocols.md). |
-| Auth | Username/Password **and/or** IP whitelist from [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) |
+| Protocols | HTTP and SOCKS5. Either protocol can open **HTTPS websites**. See <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>. |
+| Auth | Username/Password **and/or** IP whitelist from <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> |
 
 > **Important**
 >
@@ -51,11 +51,11 @@ console.log(await res.text());
 {% endtab %}
 {% endtabs %}
 
-More languages: [Code examples](code-examples.md).
+More languages: <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a>.
 
 ## Set up in the dashboard
 
-New accounts: [Register](https://www.joyproxy.com/register.html) · [Pricing](https://www.joyproxy.com/pricing.html)
+New accounts: <a href="https://www.joyproxy.com/register.html" target="_blank" rel="noopener noreferrer">Register</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>
 
 > **Tip**
 >
@@ -63,30 +63,30 @@ New accounts: [Register](https://www.joyproxy.com/register.html) · [Pricing](ht
 
 ### 1. Buy a dedicated line
 
-1. Open [Purchase → Static](https://www.joyproxy.com/admin-purchase.html?tab=long-term).
+1. Open <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">Purchase → Static</a>.
 2. Select **Residential**, **Business / ISP**, or **Datacenter**.
 3. Pick **country** (province / city when offered). This geo is **locked for the order**.
 4. Choose duration and quantity, then pay in checkout (card, Apple Pay, Google Pay, PayPal, WeChat Pay, UPI, USDT, or account balance).
-5. Wait until the allocation is active in [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
+5. Wait until the allocation is active in <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>.
 
-Details: [Buy a dedicated line](purchase.md).
+Details: <a href="purchase.md" target="_blank" rel="noopener noreferrer">Buy a dedicated line</a>.
 
 ### 2. Authentication
 
-Set **Username/Password** in [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) (recommended):
+Set **Username/Password** in <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> (recommended):
 
 - **Username/Password** — letter first, a–z and 0–9, max 16; password 6+. On Static, this username **is** the proxy user.
 - **IP whitelist** — add the public IPv4 of the machine that will connect, then use `host:port` only.
 
-Details: [Username/password or whitelist](authorization.md) · [Authentication methods](../rotating/authentication.md).
+Details: <a href="authorization.md" target="_blank" rel="noopener noreferrer">Username/password or whitelist</a> · <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
 
 ### 3. Generate endpoints
 
-1. Open [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Static Proxies → Web generator**.
+1. Open <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> → **Static Proxies → Web generator**.
 2. Select the order → **Generate now**.
 3. Copy **host** and **port** (plus user/pass if you are not using whitelist).
 
-Details: [Generate endpoints](generate-endpoints.md).
+Details: <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>.
 
 ### 4. Confirm the IP
 
@@ -105,9 +105,9 @@ Run a snippet above. The printed address should match the region you purchased.
 
 | Task | Page |
 | --- | --- |
-| Auto-renew | [Auto-renew](auto-renew.md) |
-| New IP | [New IP](refresh-ip.md) |
-| Windows, Chrome, mobile | [Clients](clients.md) |
-| HTTP vs SOCKS5 | [Protocols](protocols.md) |
-| 407 / 403 | [Response codes](response-codes.md) |
-| More code | [Code examples](code-examples.md) |
+| Auto-renew | <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a> |
+| New IP | <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">New IP</a> |
+| Windows, Chrome, mobile | <a href="clients.md" target="_blank" rel="noopener noreferrer">Clients</a> |
+| HTTP vs SOCKS5 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> |
+| 407 / 403 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a> |
+| More code | <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a> |

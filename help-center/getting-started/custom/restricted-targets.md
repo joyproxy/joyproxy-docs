@@ -6,10 +6,10 @@ Same routing and acceptable-use rules as Rotating. Use Custom from a network **o
 - Networks in mainland China cannot reach the proxies.
 - Proxy exits cannot reach sites in mainland China.
 
-Uses that are not allowed: [Terms → Acceptable Use](https://www.joyproxy.com/terms.html#acceptable).
+Uses that are not allowed: <a href="https://www.joyproxy.com/terms.html#acceptable" target="_blank" rel="noopener noreferrer">Terms → Acceptable Use</a>.
 
-If a site returns **403** after a successful IP check through the same `host:port`, that is usually the website. Full page: [Rotating → Restricted targets](../rotating/restricted-targets.md).
+If a site returns **403** after a successful IP check through the same `host:port`, that is usually the website. Full page: <a href="../rotating/restricted-targets.md" target="_blank" rel="noopener noreferrer">Rotating → Restricted targets</a>.
 
 ## Next
 
-[Protocols](protocols.md) · [Response codes](response-codes.md)
+<a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>

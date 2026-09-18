@@ -4,7 +4,7 @@ Each allocation has a stable **host** and **port** until the order expires.
 
 ## Web generator
 
-1. Open [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html).
+1. Open <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a>.
 2. Choose **Static Proxies → Web generator**.
 3. Filter by order / allocation → **Generate now**.
 4. Copy host, port, and (if you use user/pass) credentials.
@@ -17,7 +17,7 @@ On the same Endpoints page, copy the **API URL** (it already includes `token=`).
 https://api.joyproxy.com/v2/extract-long?token=...&allocation_id=ID&format=crlf
 ```
 
-`allocation_id` comes from the generator selection / My Proxies. More parameters: [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html).
+`allocation_id` comes from the generator selection / My Proxies. More parameters: <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 ## What you should copy
 
@@ -29,4 +29,4 @@ https://api.joyproxy.com/v2/extract-long?token=...&allocation_id=ID&format=crlf
 
 ## Next
 
-[First request](first-request.md)
+<a href="first-request.md" target="_blank" rel="noopener noreferrer">First request</a>

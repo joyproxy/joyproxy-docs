@@ -16,10 +16,10 @@ proxies = {"http": PROXY, "https": PROXY}
 print(requests.get("https://api.ipify.org", proxies=proxies, timeout=30).text)
 ```
 
-More languages: copy the [Static code examples](../static/code-examples.md) and swap in the Custom host:port from Endpoints.
+More languages: copy the <a href="../static/code-examples.md" target="_blank" rel="noopener noreferrer">Static code examples</a> and swap in the Custom host:port from Endpoints.
 
-OS / browser: [Static clients](../static/clients.md) — same forms, different host:port.
+OS / browser: <a href="../static/clients.md" target="_blank" rel="noopener noreferrer">Static clients</a> — same forms, different host:port.
 
 ## Chapter index
 
-[Custom proxy](README.md) · [Protocols](protocols.md) · [Response codes](response-codes.md)
+<a href="README.md" target="_blank" rel="noopener noreferrer">Custom proxy</a> · <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>

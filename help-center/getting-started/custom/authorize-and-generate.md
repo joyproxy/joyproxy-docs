@@ -2,11 +2,11 @@
 
 ## Authorization
 
-Same as Static: [Username/password or whitelist](../static/authorization.md) in [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html). Product-wide methods: [Authentication methods](../rotating/authentication.md).
+Same as Static: <a href="../static/authorization.md" target="_blank" rel="noopener noreferrer">Username/password or whitelist</a> in <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a>. Product-wide methods: <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.
 
 ## Web generator
 
-1. [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Custom Proxies → Web generator**.
+1. <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoint generator</a> → **Custom Proxies → Web generator**.
 2. Select the allocation / order → **Generate now**.
 3. Copy host and port (plus user/pass if you are not using whitelist).
 
@@ -20,8 +20,8 @@ Copy the **API URL** from Endpoints (it already includes `token=`). You do not l
 https://api.joyproxy.com/v2/extract-custom?token=...&allocation_id=ID&format=crlf
 ```
 
-More parameters: [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html).
+More parameters: <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>.
 
 ## Next
 
-[First request and code](first-request.md)
+<a href="first-request.md" target="_blank" rel="noopener noreferrer">First request and code</a>

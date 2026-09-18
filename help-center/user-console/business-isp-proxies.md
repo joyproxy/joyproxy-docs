@@ -2,25 +2,25 @@
 
 **Business / ISP** lines use enterprise ISP ASN addressing—useful for B2B portals, finance-adjacent sites, and workflows that expect ISP-class reputation.
 
-[Product page](https://www.joyproxy.com/products/proxy-business.html) · [Pricing](https://www.joyproxy.com/pricing.html?network_type=business)
+<a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">Product page</a> · <a href="https://www.joyproxy.com/pricing.html?network_type=business" target="_blank" rel="noopener noreferrer">Pricing</a>
 
 ## Modes available
 
 | Mode | Billing | Guide |
 | --- | --- | --- |
-| Rotating | Per GB | [Rotating proxy](../getting-started/rotating/README.md) |
-| Static | Per IP / period | [Static proxy](../getting-started/static/README.md) |
-| Custom | Per port / period | [Custom proxy](../getting-started/custom/README.md) |
+| Rotating | Per GB | <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">Rotating proxy</a> |
+| Static | Per IP / period | <a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">Static proxy</a> |
+| Custom | Per port / period | <a href="../getting-started/custom/README.md" target="_blank" rel="noopener noreferrer">Custom proxy</a> |
 
 ## Console tabs
 
 Same structure as Residential:
 
 - **Buy** — select **Business / ISP** network before choosing Rotating, Static, or Custom
-- **My Proxies** — allocations and custom port tools. Rotating: [Auto-buy traffic](../getting-started/rotating/auto-buy-traffic.md). Static/Custom: [Auto-renew](../getting-started/static/auto-renew.md) and [New IP](../getting-started/static/refresh-ip.md)
+- **My Proxies** — allocations and custom port tools. Rotating: <a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">Auto-buy traffic</a>. Static/Custom: <a href="../getting-started/static/auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a> and <a href="../getting-started/static/refresh-ip.md" target="_blank" rel="noopener noreferrer">New IP</a>
 - **Users & Whitelist** — credentials and IP allow list
 - **Endpoints** — gateway or dedicated hosts
-- **Usage** — [Traffic and orders](../getting-started/rotating/usage-and-orders.md)
+- **Usage** — <a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">Traffic and orders</a>
 - **API Center** — extract and management APIs
 
 Only the **network type** changes at purchase; flows match Residential documentation.

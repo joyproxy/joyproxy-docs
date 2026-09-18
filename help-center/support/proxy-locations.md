@@ -6,12 +6,12 @@ JoyProxy offers exits in many **countries and cities** across Residential, Mobil
 
 | Step | Location |
 | --- | --- |
-| Rotating geo in username | [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) country/state/city pickers |
-| Static country at purchase | [Purchase → Static](https://www.joyproxy.com/admin-purchase.html?tab=long-term) search |
-| Custom per-port geo | [My Proxies → Custom](https://www.joyproxy.com/admin-my-orders.html) → **Assign region** |
+| Rotating geo in username | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> country/state/city pickers |
+| Static country at purchase | <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">Purchase → Static</a> search |
+| Custom per-port geo | <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies → Custom</a> → **Assign region** |
 | Scraping fetch geo | `geoCode` parameter on `/v1/fetch` |
 
-Inventory updates as JoyProxy expands partnerships—if a region is greyed out at purchase, try a neighboring country or ask [sales via chat](live-chat.md) about restock timing.
+Inventory updates as JoyProxy expands partnerships—if a region is greyed out at purchase, try a neighboring country or ask <a href="live-chat.md" target="_blank" rel="noopener noreferrer">sales via chat</a> about restock timing.
 
 ## Choosing a region
 
@@ -22,8 +22,8 @@ Inventory updates as JoyProxy expands partnerships—if a region is greyed out a
 
 ## Web Scraping API
 
-Use `geoCode` on fetch requests when you need a specific exit country without managing proxy strings. See [Web Scraping API guide](../getting-started/scraping-api/README.md).
+Use `geoCode` on fetch requests when you need a specific exit country without managing proxy strings. See <a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">Web Scraping API guide</a>.
 
 ## Compliance reminder
 
-Use JoyProxy only for lawful purposes described in the [Terms](https://www.joyproxy.com/terms.html). You are responsible for how you apply geo targeting in your applications.
+Use JoyProxy only for lawful purposes described in the <a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">Terms</a>. You are responsible for how you apply geo targeting in your applications.

@@ -2,11 +2,11 @@
 
 When remaining GB on a Rotating **network line** (Residential, Mobile, or Business / ISP) reaches the trigger you set, JoyProxy buys the pack you chose and charges **account balance**. You can turn this off anytime.
 
-Keep enough balance for the next pack. Compare pack prices on [Pricing](https://www.joyproxy.com/pricing.html).
+Keep enough balance for the next pack. Compare pack prices on <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>.
 
 ## Turn it on
 
-1. Open [My Proxies](https://www.joyproxy.com/admin-my-orders.html) on the matching network (Residential / Mobile / Business).
+1. Open <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> on the matching network (Residential / Mobile / Business).
 2. Open **Auto-buy traffic**.
 3. Choose **Pack to buy each time**.
 4. Set **Buy when remaining is at or below** (GB).
@@ -32,4 +32,4 @@ Use **Turn off auto purchase**. Remaining traffic is unchanged.
 
 ## Next
 
-Watch remaining GB on [Usage and orders](usage-and-orders.md), or continue setup: [Authentication methods](authentication.md).
+Watch remaining GB on <a href="usage-and-orders.md" target="_blank" rel="noopener noreferrer">Usage and orders</a>, or continue setup: <a href="authentication.md" target="_blank" rel="noopener noreferrer">Authentication methods</a>.

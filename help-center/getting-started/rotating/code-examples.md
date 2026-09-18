@@ -1,6 +1,6 @@
 # Code examples (Rotating)
 
-Replace `GENERATED_USER` with the username from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) and `YOUR_PASS` with the [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) Username/Password. Host and port stay `gate.joyproxy.com:9001`.
+Replace `GENERATED_USER` with the username from <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> and `YOUR_PASS` with the <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> Username/Password. Host and port stay `gate.joyproxy.com:9001`.
 
 Test URL `https://api.ipify.org` only prints your exit IP. Point the same proxy at your real target when this succeeds.
 
@@ -119,8 +119,8 @@ curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ip
 
 ## Extract usernames in bulk
 
-See [Generate endpoints](generate-endpoints.md) for the extract **API URL**. Keep that URL private; do not hard-code it in a public repo.
+See <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a> for the extract **API URL**. Keep that URL private; do not hard-code it in a public repo.
 
 ## Next
 
-[Use in apps and browsers](apps-and-browsers.md) · [Protocols](protocols.md) · [Response codes](response-codes.md)
+<a href="apps-and-browsers.md" target="_blank" rel="noopener noreferrer">Use in apps and browsers</a> · <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>

@@ -19,18 +19,18 @@ Available on **Residential**, **Business / ISP**, and **Datacenter**.
 
 ## In this chapter
 
-1. [Quick start](quick-start.md)
-2. [Buy a dedicated line](purchase.md)
-3. [Auto-renew](auto-renew.md)
-4. [Username/password or whitelist](authorization.md)
-5. [Generate endpoints](generate-endpoints.md)
-6. [Make your first request](first-request.md)
-7. [Code examples](code-examples.md)
-8. [New IP](refresh-ip.md)
-9. [Windows, Chrome, and mobile](clients.md)
-10. [Protocols](protocols.md)
-11. [Restricted targets](restricted-targets.md)
-12. [Response codes](response-codes.md)
+1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">Quick start</a>
+2. <a href="purchase.md" target="_blank" rel="noopener noreferrer">Buy a dedicated line</a>
+3. <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a>
+4. <a href="authorization.md" target="_blank" rel="noopener noreferrer">Username/password or whitelist</a>
+5. <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">Generate endpoints</a>
+6. <a href="first-request.md" target="_blank" rel="noopener noreferrer">Make your first request</a>
+7. <a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a>
+8. <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">New IP</a>
+9. <a href="clients.md" target="_blank" rel="noopener noreferrer">Windows, Chrome, and mobile</a>
+10. <a href="protocols.md" target="_blank" rel="noopener noreferrer">Protocols</a>
+11. <a href="restricted-targets.md" target="_blank" rel="noopener noreferrer">Restricted targets</a>
+12. <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>
 
 ## First request shape
 
@@ -42,4 +42,4 @@ If the line is IP-whitelisted from this machine, many clients can omit `USER:PAS
 
 ## Product pages
 
-[Residential](https://www.joyproxy.com/products/proxy-residential.html) · [Business / ISP](https://www.joyproxy.com/products/proxy-business.html) · [Datacenter](https://www.joyproxy.com/products/proxy-datacenter.html) · [Pricing](https://www.joyproxy.com/pricing.html)
+<a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">Residential</a> · <a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">Business / ISP</a> · <a href="https://www.joyproxy.com/products/proxy-datacenter.html" target="_blank" rel="noopener noreferrer">Datacenter</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">Pricing</a>

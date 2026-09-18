@@ -2,9 +2,9 @@
 
 Pick the **proxy protocol** in your client. The gateway stays `gate.joyproxy.com:9001`. Static and Custom use the dedicated `host:port` from Endpoints — same two protocols.
 
-In [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Output format**, the live buttons are **Endpoint:port**, **HTTP**, and **SOCKS5**. Either protocol can open **HTTPS websites**.
+In <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> → **Output format**, the live buttons are **Endpoint:port**, **HTTP**, and **SOCKS5**. Either protocol can open **HTTPS websites**.
 
-Replace `GENERATED_USER` / `YOUR_PASS` with the generated username and the [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) Username/Password.
+Replace `GENERATED_USER` / `YOUR_PASS` with the generated username and the <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users &amp; Whitelist</a> Username/Password.
 
 ## HTTP
 
@@ -22,9 +22,9 @@ curl -x "socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001" "https://api
 
 The `h` in `socks5h://` means the **hostname is resolved on the proxy**, not on your machine.
 
-Use SOCKS5 when a tool asks for it, or when you need UDP. [Proxy Tester](../software/proxy-tester.md) can check **SOCKS5 TCP** and **SOCKS5 UDP** on the same host:port.
+Use SOCKS5 when a tool asks for it, or when you need UDP. <a href="../software/proxy-tester.md" target="_blank" rel="noopener noreferrer">Proxy Tester</a> can check **SOCKS5 TCP** and **SOCKS5 UDP** on the same host:port.
 
-Sticky sessions still use the session you picked in Endpoints. You do not switch host when you switch protocol. See [Sticky sessions](sticky-sessions.md).
+Sticky sessions still use the session you picked in Endpoints. You do not switch host when you switch protocol. See <a href="sticky-sessions.md" target="_blank" rel="noopener noreferrer">Sticky sessions</a>.
 
 ## HTTPS websites
 
@@ -49,8 +49,8 @@ If this machine is on the IP whitelist, you can omit `USER:PASS@`.
 
 ## Extract API `protocol` query
 
-[OpenAPI Center](https://www.joyproxy.com/admin-openapi.html) **Rotating endpoints** accepts `protocol` = `http`, `https`, or `socks5` as an output hint. Copy the **API URL** from Endpoints when you can — it already matches the format you selected.
+<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> **Rotating endpoints** accepts `protocol` = `http`, `https`, or `socks5` as an output hint. Copy the **API URL** from Endpoints when you can — it already matches the format you selected.
 
 ## Next
 
-[Code examples](code-examples.md) · [Response codes](response-codes.md)
+<a href="code-examples.md" target="_blank" rel="noopener noreferrer">Code examples</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">Response codes</a>
