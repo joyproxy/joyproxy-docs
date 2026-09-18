@@ -1,9 +1,5 @@
-# Live Chat with Support
+# Live chat
 
-Chat with our team in real time.
+Use **Live chat** in the bottom-right corner of the website or console when you need real-time help.
 
-- Open [Support](https://www.joyproxy.com/admin-support.html)
-- Switch to **Live Chat** tab
-- Describe your issue and wait for an agent
-
-You can also use [AI Assistant](https://www.joyproxy.com/products/ai-customer-service.html) for instant answers 24/7.
+_Content in progress. Screenshots and step-by-step console flows will be added in upcoming revisions._

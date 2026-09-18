@@ -1,15 +1,65 @@
-# JoyProxy Help Center
+# JoyProxy Documentation
 
-Guides for purchasing, authorizing, generating endpoints, and using JoyProxy proxy products, Web Scraping API, AI tools, and software.
+Welcome to JoyProxy — a platform for **proxy IP networks**, a **managed Web Scraping API**, **AI integrations**, and **client software** that helps you route traffic through the right exit for each job.
 
-Migrated from [joyproxy.com/help.html](https://www.joyproxy.com/help.html). Sidebar order matches the live Help Center.
+This documentation is written in English first. Use the sidebar to move from product overviews to console walkthroughs, integrations, and support.
 
-## Browse
+## What we offer
 
-* [1. Getting Started](getting-started/intro.md) — account, login, password
-* [2. Proxy IP Guides](proxy/overview.md) — Residential, Mobile, Business / ISP, Datacenter, Scraping API
-* [3. AI Guides](ai/overview.md) — OpenClaw Skill, MCP, Assistant
-* [4. Software Guides](software/overview.md) — Proxy Server, Android client, Tester, Extension
-* [5. Service & Support](support/billing.md) — billing, tickets, live chat, legal
+### Proxy IP networks
 
-Full FAQ remains on the main site: [joyproxy.com/faq.html](https://www.joyproxy.com/faq.html).
+Route your applications, browsers, or scripts through JoyProxy exit nodes. Choose a **network family** and a **product mode** that matches session length and targeting needs.
+
+| Network | Best for | Product page |
+| --- | --- | --- |
+| **Residential** | Consumer ISP IPs; sites that block datacenter ranges | [Residential proxies](https://www.joyproxy.com/products/proxy-residential.html) |
+| **Mobile** | Carrier (4G/5G) exits; mobile-specific targets | [Mobile proxies](https://www.joyproxy.com/products/proxy-mobile.html) |
+| **Business / ISP** | Stable ISP-branded addresses; business-facing sites | [Business / ISP proxies](https://www.joyproxy.com/products/proxy-business.html) |
+| **Datacenter** | High throughput and predictable performance | [Datacenter proxies](https://www.joyproxy.com/products/proxy-datacenter.html) |
+
+**Modes (proxy IP)**
+
+- **Rotating** — New IP per request or sticky sessions; buy traffic, generate a username, connect to the gateway.
+- **Static** — Fixed host:port for the life of the package; ideal for allow-listed servers or long-lived sessions.
+- **Custom** — You choose region and rotation interval, then generate endpoints like static lines.
+
+[Compare pricing](https://www.joyproxy.com/pricing.html) · [Purchase in console](https://www.joyproxy.com/admin-purchase.html)
+
+### Web Scraping API
+
+Send a URL and receive HTML or JSON. JoyProxy handles proxies, retries, rendering, and many anti-bot challenges on our side.
+
+- [Web Scraping API product](https://www.joyproxy.com/products/web-unblocker.html)
+- [Console](https://www.joyproxy.com/admin-web-unblocker.html)
+
+### Software & tools
+
+| Tool | Purpose | Link |
+| --- | --- | --- |
+| **Browser Extension** | Apply a proxy to Chromium browsers only | [Product](https://www.joyproxy.com/products/browser-extension.html) · [Chrome Web Store](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng) |
+| **Proxy Tester** | Test connectivity and exit IP | [Software hub](https://www.joyproxy.com/products/software.html) |
+| **Proxy Server** | Run a local forward proxy on desktop | [Software hub](https://www.joyproxy.com/products/software.html) |
+| **Proxy Client (Android)** | Mobile app for proxy on device | [Software hub](https://www.joyproxy.com/products/software.html) |
+
+### AI
+
+Connect JoyProxy to agents and assistants via skills, MCP, and in-product AI features.
+
+- See [Integration → Integrate proxies in AI](integration/integrate-proxies-in-ai.md)
+
+## How this documentation is organized
+
+1. **Overview** — This page: products, links, and map of the docs.
+2. **[Getting started](getting-started/README.md)** — End-to-end guides per product line (rotating, static, custom, API, clients).
+3. **[Best practices](best-practices/README.md)** — Recipes for AI, third-party tools, OS and browser proxy setup.
+4. **[User console](user-console/README.md)** — Register, account settings, and each proxy product area in the dashboard.
+5. **[Integration](integration/README.md)** — AI and OpenAPI.
+6. **[Service & support](support/README.md)** — Chat, tickets, locations, pricing.
+7. **[FAQ](faq/README.md)** — Frequently asked questions.
+
+## Quick links
+
+- [Create an account](https://www.joyproxy.com/register.html) · [Log in](https://www.joyproxy.com/login.html)
+- [Dashboard overview](https://www.joyproxy.com/admin-overview.html)
+- [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html)
+- Live FAQ on the main site: [joyproxy.com/faq.html](https://www.joyproxy.com/faq.html)
