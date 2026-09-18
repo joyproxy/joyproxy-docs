@@ -49,13 +49,15 @@ Connect JoyProxy to agents and assistants via skills, MCP, and in-product AI fea
 
 ## How this documentation is organized
 
-1. **Overview** — This page: products, links, and map of the docs.
-2. **[Getting started](getting-started/README.md)** — End-to-end guides per product line (rotating, static, custom, API, clients).
-3. **[Best practices](best-practices/README.md)** — Recipes for AI, third-party tools, OS and browser proxy setup.
-4. **[User console](user-console/README.md)** — Register, account settings, and each proxy product area in the dashboard.
-5. **[Integration](integration/README.md)** — AI and OpenAPI.
-6. **[Service & support](support/README.md)** — Chat, tickets, locations, pricing.
-7. **[FAQ](faq/README.md)** — Frequently asked questions.
+Use the sidebar (or the list below). Section names are not numbered in the navigation.
+
+- **Overview** — This page: products, links, and map of the docs.
+- **Getting started** — [Rotating](getting-started/rotating-proxy.md), [Static](getting-started/static-proxy.md), [Custom](getting-started/custom-proxy.md), [Web Scraping API](getting-started/web-scraping-api.md), and client apps.
+- **Best practices** — [AI](best-practices/integrate-proxies-in-ai.md), third-party tools, Windows / Chrome / mobile proxy setup.
+- **User console** — [Register](user-console/register.md), account settings, and each proxy product in the dashboard.
+- **Integration** — [AI](integration/integrate-proxies-in-ai.md) and [OpenAPI Center](integration/openapi-center.md).
+- **Service & support** — [Chat](support/live-chat.md), [tickets](support/tickets.md), [locations](support/proxy-locations.md), [pricing](support/proxy-pricing.md).
+- **FAQ** — [Frequently asked questions](faq/README.md).
 
 ## Quick links
 
