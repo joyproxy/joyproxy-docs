@@ -12,17 +12,17 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 
 | 网络类型                                                              | 代理产品              | 适合做什么                               |
 | ----------------------------------------------------------------- | ----------------- | ----------------------------------- |
-| [住宅](https://www.joyproxy.com/products/proxy-residential.html)    | 动态 · 静态独享 · 自定义独享 | 家庭宽带出口，地区可选范围大，防多账号关联               |
-| [移动](https://www.joyproxy.com/products/proxy-mobile.html)         | 动态                | 4G/5G 运营商出口，移动端 App 测试、广告合规校验       |
-| [商业 / ISP](https://www.joyproxy.com/products/proxy-business.html) | 动态 · 静态独享 · 自定义独享 | 具备 ISP 资质的纯净线路、偏向于 B2B 门户访问、对接供应商系统 |
-| [数据中心](https://www.joyproxy.com/products/proxy-datacenter.html)   | 静态独享 · 自定义独享      | 高并发、极速响应、性价比之选                      |
+| [住宅](https://www.joyproxy.com/products/proxy-residential.html)    | 动态 · 静态独享 · 自定义独享 | 社媒账号多身份管理、电商数据采集与竞品分析、跨区域内容解锁与SEO监测、演唱会/限量商品抢购               |
+| [移动](https://www.joyproxy.com/products/proxy-mobile.html)         | 动态                | 移动端 App 自动化与测试、移动广告合规与反欺诈校验、极高风控场景重试       |
+| [商业 / ISP](https://www.joyproxy.com/products/proxy-business.html) | 动态 · 静态独享 · 自定义独享 | B2B 门户与企业系统对接、高价值长效账号运营、大文件传输与持续数据同步 |
+| [数据中心](https://www.joyproxy.com/products/proxy-datacenter.html)   | 静态独享 · 自定义独享      | 大规模无风控数据抓取、搜索引擎与公开信息批量监测、性能/压力测试                      |
 
 四种网络类型的区别：
 
-* **住宅**：家庭宽带 IP。
-* **移动**：4G/5G 运营商 IP。
-* **商业 / ISP**：写字楼、商业 IP。
-* **数据中心**：数据中心 IP。
+* **住宅**：源自真实的家庭宽带网络（如 Comcast、AT&T 等），IP 地址由真实 ISP 分配给终端用户。具有极高隐蔽性与高信任度，目标服务器会将其识别为普通真实访客，极难被封禁或触发验证码（CAPTCHA）。
+* **移动**：通过移动运营商（如 Verizon、Vodafone 等） 4G/5G 网络蜂窝基站分配 IP。具有天然免封禁属性，由于移动网络采用 CGNAT（ Carrier-Grade NAT）技术，成千上万的真实手机共用同一个蜂窝 IP。目标网站绝不敢轻易封禁移动 IP，否则会误伤大量正常手机用户。
+* **商业 / ISP**：部署在写字楼、机房但直接向实体运营商申请了商业宽带/ISP 资质接入 IP。兼具机房的高速稳定与住宅 IP 的高信任度，既不像普通机房 IP 那样容易被 ASN 识别拦截，又具备高带宽、低延迟、长久静态固定的特点。
+* **数据中心**：由 AWS、谷歌云等企业级机房数据中心直接提供。极高并发、超低延迟，拥有最高的传输吞吐量和性价比，但由于 IP 段公开发布在机房 ASN 列表中，隐蔽性较低。
 
 三种代理产品的区别：
 
