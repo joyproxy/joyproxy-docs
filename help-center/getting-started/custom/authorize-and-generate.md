@@ -14,11 +14,13 @@ Connect to this host:port, not the Exit IP on the order card.
 
 ## API
 
-```http
-GET https://api.joyproxy.com/v1/extract-custom?token=YOUR_API_TOKEN&allocation_id=ID&format=crlf
+Copy the **API URL** from Endpoints (it already includes `token=`). You do not look up a token in Account settings.
+
+```text
+https://api.joyproxy.com/v2/extract-custom?token=...&allocation_id=ID&format=crlf
 ```
 
-[OpenAPI Center](https://www.joyproxy.com/admin-openapi.html) may also list `/v2/extract-custom`. Use the operation your playground documents.
+More parameters: [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html).
 
 ## Next
 

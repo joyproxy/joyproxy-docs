@@ -16,11 +16,11 @@ AI assistants and IDE agents can **generate JoyProxy endpoints**, check balance,
 | Token | Purpose |
 | --- | --- |
 | **AI Access Token** | OpenClaw Skill and AI MCP tool calls |
-| **API token** | `/v2/extract`, whitelist APIs, endpoint automation |
+| Extract **API URL** | `/v2/extract` and related endpoint APIs — copy the URL on Endpoints |
 | **Master User Token** | Order management APIs only |
 | **Scraping API Token** | `/v1/fetch` only |
 
-Copy the AI Access Token from [AI endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai). Rotate tokens in [Account settings](https://www.joyproxy.com/admin-settings.html) if they appear in chat logs.
+Copy the AI Access Token from [AI endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai). Rotate it there if it appears in chat logs.
 
 > **Important**
 >

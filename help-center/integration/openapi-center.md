@@ -14,12 +14,15 @@
 ## Before you start
 
 1. Sign in to the console.
-2. Copy the correct token from [Account settings](https://www.joyproxy.com/admin-settings.html) or Web Scraping API → API Center.
-3. Paste it into the OpenAPI **Authorize** dialog for the operation you are testing.
+2. For extract APIs, copy the **API URL** from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) — `token=` is already in the URL.
+3. For order APIs, use the **Master User Token** from [Account settings](https://www.joyproxy.com/admin-settings.html).
+4. For `/v1/fetch`, copy the **Scraping API Token** from Web Scraping API → API Center.
+
+When you are signed in, OpenAPI Center can fill extract and master tokens for the **Authorize** dialog. You do not copy an extract token from Account settings.
 
 > **Important**
 >
-> Use **API token** for extraction and whitelist. Use **Master User Token** only for order APIs. Use **Scraping API Token** only under Web Scraping API operations.
+> Extract and whitelist calls use the token inside the Endpoints **API URL**. Order APIs use **Master User Token**. Web Scraping API uses **Scraping API Token**.
 
 ## Typical workflow
 

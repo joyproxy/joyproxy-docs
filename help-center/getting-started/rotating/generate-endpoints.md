@@ -43,35 +43,33 @@ The Endpoints page also shows language snippets (cURL, Python, and others) built
 
 ## Generate from the API
 
-Copy the **API token** from [Account settings](https://www.joyproxy.com/admin-settings.html). Pass it as `Authorization: Bearer` or as `token=` on the query string.
+On the same Endpoints page, the **API URL** box is already filled from your location, session, format, and count. Copy that URL and call it — `token=` is already in the query. You do not look up a token in Account settings.
 
-That token is for extract APIs. It is **not** the proxy password and **not** the [AI Access Token](../../integration/integrate-proxies-in-ai.md).
-
-```http
-GET https://api.joyproxy.com/v2/extract?network_type=residential&count=5&duration=5m&format=json
-Authorization: Bearer YOUR_API_TOKEN
-```
-
-Equivalent:
+[Account settings](https://www.joyproxy.com/admin-settings.html) holds the **Master User Token** for order APIs.
 
 ```bash
-curl "https://api.joyproxy.com/v2/extract?token=YOUR_API_TOKEN&network_type=residential&count=5&duration=5m&format=json"
+curl "PASTE_THE_COPIED_API_URL"
+```
+
+The copied URL looks like this (your token is already in it):
+
+```text
+https://api.joyproxy.com/v2/extract?token=...&network_type=residential&count=5&duration=5m&format=json
 ```
 
 | Query | Meaning |
 | --- | --- |
+| `token` | Included when you copy the API URL |
 | `network_type` | `residential`, `cellular` (alias `mobile`), or `business` — must match the pack you bought |
 | `count` | How many usernames to return |
 | `duration` | Sticky length in minutes, for example `5m` or `30m`. Omit this for a rotating session |
 | `format` | `json`, or other formats shown in [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html) |
 
-The JSON includes `gate.joyproxy.com`, port `9001`, and a wire-ready username. Copy them into the client unchanged.
+The response includes `gate.joyproxy.com`, port `9001`, and a wire-ready username. Copy them into the client unchanged.
 
-> **Security**
->
-> URLs that contain `token=` are secrets. Do not paste them into tickets or public chats. Rotate the API token in Account settings if a link leaks.
+Treat the copied URL as a secret. Do not paste it into tickets or public chats.
 
-Full parameter lists, try-it playground, and language snippets: [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html).
+Full parameter lists and try-it playground: [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html).
 
 ## Next
 

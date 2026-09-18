@@ -11,13 +11,13 @@ Each allocation has a stable **host** and **port** until the order expires.
 
 ## API
 
-Use the **API token** from [Account settings](https://www.joyproxy.com/admin-settings.html). `allocation_id` comes from My Proxies / OpenAPI.
+On the same Endpoints page, copy the **API URL** (it already includes `token=`). You do not look up a token in Account settings.
 
-```http
-GET https://api.joyproxy.com/v1/extract-long?token=YOUR_API_TOKEN&allocation_id=ID&format=crlf
+```text
+https://api.joyproxy.com/v2/extract-long?token=...&allocation_id=ID&format=crlf
 ```
 
-Newer clients may also see `/v2/extract-long` in [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html)—use the path the playground shows for your account.
+`allocation_id` comes from the generator selection / My Proxies. More parameters: [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html).
 
 ## What you should copy
 

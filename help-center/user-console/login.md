@@ -19,7 +19,7 @@ Access the JoyProxy dashboard to buy products, generate endpoints, and manage bi
 | Task | Link |
 | --- | --- |
 | Review balance and credits | [Overview](overview.md) |
-| Copy API token for automation | [Account settings](https://www.joyproxy.com/admin-settings.html) |
+| Copy extract API URL for automation | [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) |
 | Buy first proxy or scraping pack | [Purchase](https://www.joyproxy.com/admin-purchase.html) |
 
 New user? Start at [Register](register.md).

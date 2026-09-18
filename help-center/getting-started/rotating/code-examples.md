@@ -119,7 +119,7 @@ curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ip
 
 ## Extract usernames in bulk
 
-See [Generate endpoints](generate-endpoints.md) for `GET /v2/extract`. Keep the API token in an environment variable; do not hard-code it next to these snippets in a public repo.
+See [Generate endpoints](generate-endpoints.md) for the extract **API URL**. Keep that URL private; do not hard-code it in a public repo.
 
 ## Next
 

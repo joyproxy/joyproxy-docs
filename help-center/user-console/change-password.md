@@ -13,6 +13,6 @@ Update your JoyProxy login password from the account area.
 ## After saving
 
 - Sign in again on other browsers or devices.
-- Update automation that mistakenly stored your login password (prefer **API tokens** for scripts—see [Rotate token](rotate-token.md)).
+- Update automation that mistakenly stored your login password (prefer the Endpoints **API URL** for extract scripts—see [Rotate token](rotate-token.md)).
 
 Forgot the current password? Use [Forgot password](forgot-password.md) instead of this form.

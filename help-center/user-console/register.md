@@ -15,7 +15,7 @@ Create a JoyProxy account to purchase proxy traffic, scraping credits, and softw
 | Next step | Why |
 | --- | --- |
 | [Purchase](https://www.joyproxy.com/admin-purchase.html) | Buy Residential, Mobile, Business, Datacenter, or scraping credits |
-| [Account settings](https://www.joyproxy.com/admin-settings.html) | Copy API tokens, set language, security options |
+| [Account settings](https://www.joyproxy.com/admin-settings.html) | Master User Token, language, security options |
 | [Pricing](https://www.joyproxy.com/pricing.html) | Compare packs before checkout |
 
 > **Tip**

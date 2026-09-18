@@ -11,7 +11,7 @@ Use each token where the docs say:
 | Token | Where |
 | --- | --- |
 | Scraping API Token | `/v1/fetch` only |
-| API token | `/v2/extract`, whitelist, etc. |
+| Extract API URL | `/v2/extract` and related — copy from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) |
 | Master User Token | Order APIs |
 | AI Access Token | OpenClaw / MCP |
 

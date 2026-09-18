@@ -59,7 +59,7 @@ Details: [Buy credits](buy-credits.md).
 
 ### 2. Get your token
 
-Copy the Scraping API token from the product console or [Account settings](https://www.joyproxy.com/admin-settings.html) as shown on [Get your token](token.md). Keep it out of public repos and tickets.
+Copy the Scraping API token from the [Web Scraping API console](https://www.joyproxy.com/admin-web-unblocker.html) as shown on [Get your token](token.md). Keep it out of public repos and tickets.
 
 ### 3. Confirm a fetch
 
