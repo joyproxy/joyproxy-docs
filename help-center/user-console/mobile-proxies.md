@@ -16,7 +16,7 @@ Monitor remaining GB and validity—renew before production campaigns stall.
 
 ## Users & Whitelist
 
-Create username/password for the rotating gateway—the same rules as Residential rotating ([Rotating proxy guide](../getting-started/rotating-proxy.md)).
+Create username/password for the rotating gateway—the same rules as Residential rotating ([Rotating proxy guide](../getting-started/rotating/README.md)).
 
 ## Endpoints
 
@@ -32,4 +32,4 @@ Automate extraction with your API token—see [OpenAPI Center](https://www.joypr
 
 ## On-device testing
 
-Pair cloud mobile lines with the [Android client](../getting-started/proxy-android-client.md) or Wi‑Fi proxy guides in [Best practices](../best-practices/mobile-static-proxy.md) when you use static-style endpoints elsewhere.
+Pair cloud mobile lines with the [Android client](../getting-started/software/android-client.md) or Wi‑Fi proxy guides in [Best practices](../best-practices/mobile-static-proxy.md) when you use static-style endpoints elsewhere.

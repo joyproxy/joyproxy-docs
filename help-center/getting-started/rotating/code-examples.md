@@ -1,0 +1,106 @@
+# Code examples (Rotating)
+
+Replace `GENERATED_USER` with the username from [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) and `YOUR_PASS` with the [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) password. Host and port stay `gate.joyproxy.com:9001`.
+
+Test URL `https://api.ipify.org` only prints your exit IP. Point the same proxy at your real target when this succeeds.
+
+## cURL
+
+```bash
+curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
+```
+
+## Python
+
+```python
+import requests
+
+PROXY = "http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001"
+proxies = {"http": PROXY, "https": PROXY}
+r = requests.get("https://api.ipify.org", proxies=proxies, timeout=30)
+print(r.text)
+```
+
+## Node.js
+
+```javascript
+const { HttpsProxyAgent } = require("https-proxy-agent");
+
+const agent = new HttpsProxyAgent(
+  "http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001"
+);
+const res = await fetch("https://api.ipify.org", { agent });
+console.log(await res.text());
+```
+
+## Go
+
+```go
+package main
+
+import (
+  "io"
+  "net/http"
+  "net/url"
+)
+
+func main() {
+  proxyURL, _ := url.Parse("http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001")
+  client := &http.Client{
+    Transport: &http.Transport{Proxy: http.ProxyURL(proxyURL)},
+  }
+  resp, err := client.Get("https://api.ipify.org")
+  if err != nil {
+    panic(err)
+  }
+  defer resp.Body.Close()
+  b, _ := io.ReadAll(resp.Body)
+  println(string(b))
+}
+```
+
+## Java
+
+```java
+import java.net.*;
+import java.io.*;
+
+public class Demo {
+  public static void main(String[] args) throws Exception {
+    Proxy proxy = new Proxy(Proxy.Type.HTTP,
+        new InetSocketAddress("gate.joyproxy.com", 9001));
+    Authenticator.setDefault(new Authenticator() {
+      protected PasswordAuthentication getPasswordAuthentication() {
+        return new PasswordAuthentication("GENERATED_USER", "YOUR_PASS".toCharArray());
+      }
+    });
+    URLConnection conn = new URL("https://api.ipify.org").openConnection(proxy);
+    try (InputStream in = conn.getInputStream()) {
+      System.out.println(new String(in.readAllBytes()));
+    }
+  }
+}
+```
+
+## C#
+
+```csharp
+using System.Net;
+using System.Net.Http;
+
+var handler = new HttpClientHandler {
+  Proxy = new WebProxy("http://gate.joyproxy.com:9001") {
+    Credentials = new NetworkCredential("GENERATED_USER", "YOUR_PASS")
+  }
+};
+using var client = new HttpClient(handler);
+Console.WriteLine(await client.GetStringAsync("https://api.ipify.org"));
+```
+
+## Extract usernames in bulk
+
+See [Generate endpoints](generate-endpoints.md) for `GET /v2/extract`. Keep the API token in an environment variable; do not hard-code it next to these snippets in a public repo.
+
+## Next
+
+[Use in apps and browsers](apps-and-browsers.md)

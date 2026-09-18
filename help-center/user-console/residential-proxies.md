@@ -16,7 +16,7 @@ Purchase new traffic or lines.
 
 ### My Proxies
 
-View active and expired orders, remaining traffic, validity dates, and custom port assignments ([assign region](../getting-started/custom-proxy.md#2-assign-region), [rotation](../getting-started/custom-proxy.md#3-set-rotation-interval)).
+View active and expired orders, remaining traffic, validity dates, and custom port assignments ([assign region](../getting-started/custom/assign-region.md), [rotation](../getting-started/custom/rotation.md)).
 
 ### Users & Whitelist
 
@@ -31,7 +31,7 @@ Web generator and quick copy for:
 - Rotating → `gate.joyproxy.com:9001`
 - Static / Custom → dedicated `host:port`
 
-Guide: [Rotating](../getting-started/rotating-proxy.md) · [Static](../getting-started/static-proxy.md) · [Custom](../getting-started/custom-proxy.md)
+Guide: [Rotating](../getting-started/rotating/README.md) · [Static](../getting-started/static/README.md) · [Custom](../getting-started/custom/README.md)
 
 ### Usage
 

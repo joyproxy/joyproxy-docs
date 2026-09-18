@@ -17,4 +17,4 @@ JoyProxy may require email verification before you can purchase or access certai
 
 ## After activation
 
-Proceed to [Purchase](https://www.joyproxy.com/admin-purchase.html) or read [Getting started guides](../getting-started/rotating-proxy.md).
+Proceed to [Purchase](https://www.joyproxy.com/admin-purchase.html) or read [Getting started guides](../getting-started/rotating/README.md).

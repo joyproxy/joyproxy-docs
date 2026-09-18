@@ -58,11 +58,12 @@ See [Integration → Integrate proxies in AI](integration/integrate-proxies-in-a
 
 | If you need… | Start here |
 | --- | --- |
-| Fresh IPs every request or sticky sessions on a shared gateway | [Rotating proxy guide](getting-started/rotating-proxy.md) |
-| Fixed host:port for days or months | [Static proxy guide](getting-started/static-proxy.md) |
-| Per-port geo + rotation schedule | [Custom proxy guide](getting-started/custom-proxy.md) |
-| URL in, page out without running browsers yourself | [Web Scraping API guide](getting-started/web-scraping-api.md) |
-| Quick test in Chrome / Edge only | [Browser extension](getting-started/browser-extension.md) |
+| Five-minute first request | [Quick start](getting-started/quick-start.md) |
+| Fresh IPs or sticky sessions on the shared gateway | [Rotating proxy](getting-started/rotating/README.md) |
+| Fixed host:port for days or months | [Static proxy](getting-started/static/README.md) |
+| Per-port geo + rotation schedule | [Custom proxy](getting-started/custom/README.md) |
+| URL in, page out without running browsers yourself | [Web Scraping API](getting-started/scraping-api/README.md) |
+| Quick test in Chrome / Edge only | [Browser extension](getting-started/software/browser-extension.md) |
 
 > **Tip**
 >
@@ -70,7 +71,7 @@ See [Integration → Integrate proxies in AI](integration/integrate-proxies-in-a
 
 ## Documentation map
 
-- **Getting started** — product walkthroughs (purchase → authorize → endpoints → connect).
+- **Getting started** — [Quick start](getting-started/quick-start.md), then Rotating / Static / Custom / Scraping API / software (nested how-to pages).
 - **Best practices** — AI, third-party tools, Windows / Chrome / mobile setup patterns.
 - **User console** — register, account settings, each product area in the dashboard.
 - **Integration** — AI and [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html).

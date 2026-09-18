@@ -22,10 +22,10 @@ Rotating gateway traffic is available on Residential, Mobile, and Business / ISP
 - **Usage** — monitor where applicable
 - **API Center** — `/v1/extract-long` and `/v1/extract-custom` helpers
 
-Walkthroughs: [Static](../getting-started/static-proxy.md) · [Custom](../getting-started/custom-proxy.md)
+Walkthroughs: [Static](../getting-started/static/README.md) · [Custom](../getting-started/custom/README.md)
 
 ## Planning tips
 
 - Match region at purchase for static lines—changes may require new orders.
 - Whitelist cloud runner IPs to skip embedding passwords in config files.
-- Pair with [Web Scraping API](../getting-started/web-scraping-api.md) when targets need rendering more than raw speed.
+- Pair with [Web Scraping API](../getting-started/scraping-api/README.md) when targets need rendering more than raw speed.

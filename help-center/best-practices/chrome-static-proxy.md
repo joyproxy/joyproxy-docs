@@ -6,7 +6,7 @@ For **dedicated static or custom** lines, you can route Chrome on Windows throug
 
 Best for day-to-day QA on static lines:
 
-1. Install the [Browser extension](../getting-started/browser-extension.md).
+1. Install the [Browser extension](../getting-started/software/browser-extension.md).
 2. Paste `http://USER:PASS@HOST:PORT` from [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html).
 3. Test exit IP → **Apply**.
 
@@ -35,4 +35,4 @@ Edge on Windows uses the same system proxy path. You can also install the JoyPro
 
 ## Rotating in Chrome
 
-Rotating uses `gate.joyproxy.com:9001` with a **generated username**—the extension or system proxy both work; see [Rotating proxy](../getting-started/rotating-proxy.md).
+Rotating uses `gate.joyproxy.com:9001` with a **generated username**—the extension or system proxy both work; see [Rotating proxy](../getting-started/rotating/README.md).

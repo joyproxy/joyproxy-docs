@@ -40,7 +40,7 @@ http://USER:PASS@us-ca.edge.joyproxy.com:10001
 
 ## Scenario: multilogin browser with static residential
 
-1. Buy [Static residential](../getting-started/static-proxy.md) in the target country.
+1. Buy [Static residential](../getting-started/static/README.md) in the target country.
 2. Whitelist your runner’s public IP **or** create credentials.
 3. Generate one endpoint per profile in the tool’s required format.
 4. Assign each profile a **unique** port if the software maps 1:1 identity to line.
@@ -57,5 +57,5 @@ Some tools pull `host:port` lists from a URL. Point them at JoyProxy extract API
 
 ## When pages still block you
 
-- Try [Web Scraping API](../getting-started/web-scraping-api.md) for fetch-only workloads.
+- Try [Web Scraping API](../getting-started/scraping-api/README.md) for fetch-only workloads.
 - Open a [support ticket](../support/tickets.md) with target domain and request pattern (never share end-user passwords).

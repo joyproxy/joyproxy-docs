@@ -28,6 +28,6 @@ The FAQ updates with the product—when in doubt, prefer the live page over olde
 
 - New to JoyProxy → [Overview](../README.md)
 - Ready to buy → [Purchase](https://www.joyproxy.com/admin-purchase.html) + [Pricing](../support/proxy-pricing.md)
-- Integrating today → [Rotating](../getting-started/rotating-proxy.md) or [Web Scraping API](../getting-started/web-scraping-api.md)
+- Integrating today → [Rotating](../getting-started/rotating/README.md) or [Web Scraping API](../getting-started/scraping-api/README.md)
 
 A full Markdown import of FAQ entries into this repository is planned for a later release.

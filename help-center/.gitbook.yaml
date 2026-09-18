@@ -50,6 +50,14 @@ redirects:
   submit-ticket: support/ticket.md
   terms-privacy: support/terms.md
   tester-soft: software/tester.md
+  getting-started/rotating-proxy: getting-started/rotating/README.md
+  getting-started/static-proxy: getting-started/static/README.md
+  getting-started/custom-proxy: getting-started/custom/README.md
+  getting-started/web-scraping-api: getting-started/scraping-api/README.md
+  getting-started/browser-extension: getting-started/software/browser-extension.md
+  getting-started/proxy-tester: getting-started/software/proxy-tester.md
+  getting-started/proxy-server: getting-started/software/proxy-server.md
+  getting-started/proxy-android-client: getting-started/software/android-client.md
   2.-getting-started/browser-extension: getting-started/browser-extension.md
   2.-getting-started/custom-proxy: getting-started/custom-proxy.md
   2.-getting-started/proxy-android-client: getting-started/proxy-android-client.md

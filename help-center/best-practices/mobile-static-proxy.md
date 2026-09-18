@@ -2,7 +2,7 @@
 
 Use JoyProxy **static or custom** host:port on a phone when you need real mobile UI behavior with a **stable egress** (for example, checking a mobile web checkout while keeping the same IP for the session).
 
-For carrier-class **Mobile rotating** traffic, pair [Mobile purchases](../getting-started/rotating-proxy.md) with the [Android client](../getting-started/proxy-android-client.md).
+For carrier-class **Mobile rotating** traffic, pair [Mobile purchases](../getting-started/rotating/README.md) with the [Android client](../getting-started/software/android-client.md).
 
 ## iOS (Wi‑Fi manual proxy)
 
@@ -23,7 +23,7 @@ For carrier-class **Mobile rotating** traffic, pair [Mobile purchases](../gettin
 
 ## Android (JoyProxy client — recommended for apps)
 
-1. Install the [Proxy Android client](../getting-started/proxy-android-client.md).
+1. Install the [Proxy Android client](../getting-started/software/android-client.md).
 2. Enter host, port, credentials.
 3. Choose **Global**, **Whitelist**, or **Blacklist** app routing.
 

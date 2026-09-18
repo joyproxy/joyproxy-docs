@@ -30,8 +30,8 @@
 
 ## When OpenAPI is not enough
 
-- Narrative guides: [Getting started](../getting-started/rotating-proxy.md) series
-- Managed fetches: [Web Scraping API](../getting-started/web-scraping-api.md)
+- Narrative guides: [Getting started](../getting-started/rotating/README.md) series
+- Managed fetches: [Web Scraping API](../getting-started/scraping-api/README.md)
 - AI-driven generation: [Integrate proxies in AI](integrate-proxies-in-ai.md)
 
 Keep tokens out of screenshots and support tickets—rotate via [Rotate token](../user-console/rotate-token.md) if exposed.

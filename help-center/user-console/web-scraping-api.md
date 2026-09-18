@@ -34,7 +34,7 @@ Purchase credit packs with account balance.
 
 In-console reference for parameters (`render`, `super`, `geoCode`, plugins). Also see:
 
-- [Getting started → Web Scraping API](../getting-started/web-scraping-api.md)
+- [Getting started → Web Scraping API](../getting-started/scraping-api/README.md)
 - [Full API documentation](https://www.joyproxy.com/admin-unblocker-documentation.html)
 - [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html) — Web Scraping API operations
 

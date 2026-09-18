@@ -8,9 +8,9 @@
 
 | Mode | Billing | Guide |
 | --- | --- | --- |
-| Rotating | Per GB | [Rotating proxy](../getting-started/rotating-proxy.md) |
-| Static | Per IP / period | [Static proxy](../getting-started/static-proxy.md) |
-| Custom | Per port / period | [Custom proxy](../getting-started/custom-proxy.md) |
+| Rotating | Per GB | [Rotating proxy](../getting-started/rotating/README.md) |
+| Static | Per IP / period | [Static proxy](../getting-started/static/README.md) |
+| Custom | Per port / period | [Custom proxy](../getting-started/custom/README.md) |
 
 ## Console tabs
 

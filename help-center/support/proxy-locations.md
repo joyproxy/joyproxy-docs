@@ -22,7 +22,7 @@ Inventory updates as JoyProxy expands partnerships—if a region is greyed out a
 
 ## Web Scraping API
 
-Use `geoCode` on fetch requests when you need a specific exit country without managing proxy strings. See [Web Scraping API guide](../getting-started/web-scraping-api.md).
+Use `geoCode` on fetch requests when you need a specific exit country without managing proxy strings. See [Web Scraping API guide](../getting-started/scraping-api/README.md).
 
 ## Compliance reminder
 
