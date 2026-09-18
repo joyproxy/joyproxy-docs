@@ -54,7 +54,7 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 
 直接在 Cursor / VS Code / OpenClaw 中通过自然语言使用代理 IP 。
 
-[在 AI 里集成代理服务](ji-cheng/integrate-proxies-in-ai.md)。
+[在 AI 里集成代理服务](ji-cheng/integrate-proxies-in-ai.md)
 
 ## 快速接入指南
 
