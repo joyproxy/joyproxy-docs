@@ -1,10 +1,18 @@
 # Change password
 
-Update your login password under **My Account**.
+Update your JoyProxy login password from the account area.
 
-1. Open [Account settings](https://www.joyproxy.com/admin-settings.html).
-2. Find **Change password** (or Security).
-3. Enter your current password and the new password twice.
-4. Save and sign in again on other devices if needed.
+## Steps
 
-_Content in progress. Screenshots and step-by-step console flows will be added in upcoming revisions._
+1. Sign in and open [Account settings](https://www.joyproxy.com/admin-settings.html).
+2. Locate **Change password** (under security or profile).
+3. Enter your **current password**.
+4. Enter a **new password** (6+ characters) and confirm it.
+5. Click **Save changes**.
+
+## After saving
+
+- Sign in again on other browsers or devices.
+- Update automation that mistakenly stored your login password (prefer **API tokens** for scripts—see [Rotate token](rotate-token.md)).
+
+Forgot the current password? Use [Forgot password](forgot-password.md) instead of this form.

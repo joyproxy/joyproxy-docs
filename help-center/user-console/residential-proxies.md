@@ -1,16 +1,50 @@
 # Residential proxies (console)
 
-Open this product from the left navigation after login.
+The **Residential** section covers home ISP-style exits with **Rotating**, **Static**, and **Custom** modes.
 
-## Tabs
+Open it from the left menu after login. Product context: [Residential proxies](https://www.joyproxy.com/products/proxy-residential.html).
 
-| Tab | Purpose |
+## Tabs and what they do
+
+### Buy
+
+Purchase new traffic or lines.
+
+- **Rotating** — traffic packages; checkout at [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term) with network **Residential**
+- **Static** — country-locked lines; [Purchase → Static](https://www.joyproxy.com/admin-purchase.html?tab=long-term)
+- **Custom** — per-port plans; [Purchase → Custom](https://www.joyproxy.com/admin-purchase.html?tab=custom-ip)
+
+### My Proxies
+
+View active and expired orders, remaining traffic, validity dates, and custom port assignments ([assign region](../getting-started/custom-proxy.md#2-assign-region), [rotation](../getting-started/custom-proxy.md#3-set-rotation-interval)).
+
+### Users & Whitelist
+
+Create **username/password** pairs and **IP whitelist** entries used across modes. Rotating lines use password + generated username; static/custom can use whitelist from server IPs.
+
+[Whitelist & Users](https://www.joyproxy.com/admin-authorization.html)
+
+### Endpoints
+
+Web generator and quick copy for:
+
+- Rotating → `gate.joyproxy.com:9001`
+- Static / Custom → dedicated `host:port`
+
+Guide: [Rotating](../getting-started/rotating-proxy.md) · [Static](../getting-started/static-proxy.md) · [Custom](../getting-started/custom-proxy.md)
+
+### Usage
+
+Charts and logs for traffic consumption on rotating packages—useful before renewals.
+
+### API Center
+
+Shortcuts to tokenized extract APIs and examples. Full reference: [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html).
+
+## Quick decision
+
+| Need | Mode |
 | --- | --- |
-| **Buy** | Purchase new packages or traffic |
-| **My Proxies** | Active and historical orders |
-| **Users & Whitelist** | Sub-users, passwords, IP allow list |
-| **Endpoints** | Generate and copy connection strings |
-| **Usage** | Traffic or usage statistics |
-| **API Center** | API tokens, examples, and tools for this product |
-
-_Content in progress. Screenshots and step-by-step console flows will be added in upcoming revisions._
+| Many IPs, shared gateway | Rotating |
+| Fixed identity weeks+ | Static |
+| Per-port geo + timer | Custom |

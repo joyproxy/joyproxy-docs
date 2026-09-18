@@ -1,16 +1,34 @@
 # Business / ISP proxies (console)
 
-Open this product from the left navigation after login.
+**Business / ISP** lines use enterprise ISP ASN addressing—useful for B2B portals, finance-adjacent sites, and workflows that expect ISP-class reputation.
 
-## Tabs
+[Product page](https://www.joyproxy.com/products/proxy-business.html) · [Pricing](https://www.joyproxy.com/pricing.html?network_type=business)
 
-| Tab | Purpose |
-| --- | --- |
-| **Buy** | Purchase new packages or traffic |
-| **My Proxies** | Active and historical orders |
-| **Users & Whitelist** | Sub-users, passwords, IP allow list |
-| **Endpoints** | Generate and copy connection strings |
-| **Usage** | Traffic or usage statistics |
-| **API Center** | API tokens, examples, and tools for this product |
+## Modes available
 
-_Content in progress. Screenshots and step-by-step console flows will be added in upcoming revisions._
+| Mode | Billing | Guide |
+| --- | --- | --- |
+| Rotating | Per GB | [Rotating proxy](../getting-started/rotating-proxy.md) |
+| Static | Per IP / period | [Static proxy](../getting-started/static-proxy.md) |
+| Custom | Per port / period | [Custom proxy](../getting-started/custom-proxy.md) |
+
+## Console tabs
+
+Same structure as Residential:
+
+- **Buy** — select **Business / ISP** network before choosing Rotating, Static, or Custom
+- **My Proxies** — allocations and custom port tools
+- **Users & Whitelist** — credentials and IP allow list
+- **Endpoints** — gateway or dedicated hosts
+- **Usage** — traffic analytics for rotating SKUs
+- **API Center** — extract and management APIs
+
+Only the **network type** changes at purchase; flows match Residential documentation.
+
+## When to pick Business over Residential
+
+- Targets that score ASN/reputation differently for ISP ranges
+- Vendor dashboards that expect business ISP categories
+- Campaigns already validated on ISP-class exits
+
+Compare packs on the pricing page before committing to annual static lines.

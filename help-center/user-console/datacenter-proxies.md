@@ -1,16 +1,31 @@
 # Datacenter proxies (console)
 
-Open this product from the left navigation after login.
+**Datacenter** proxies prioritize **throughput and cost efficiency** with hosting ASN exits. JoyProxy offers **Static** and **Custom** modes for datacenter networks.
 
-## Tabs
+[Product page](https://www.joyproxy.com/products/proxy-datacenter.html)
 
-| Tab | Purpose |
+## Modes
+
+| Mode | Best for |
 | --- | --- |
-| **Buy** | Purchase new packages or traffic |
-| **My Proxies** | Active and historical orders |
-| **Users & Whitelist** | Sub-users, passwords, IP allow list |
-| **Endpoints** | Generate and copy connection strings |
-| **Usage** | Traffic or usage statistics |
-| **API Center** | API tokens, examples, and tools for this product |
+| Static | Long-lived high-volume crawlers with fixed IPs |
+| Custom | Multiple regions or rotation timers per port |
 
-_Content in progress. Screenshots and step-by-step console flows will be added in upcoming revisions._
+Rotating gateway traffic is available on Residential, Mobile, and Business / ISP—use those networks when you need the shared `gate.joyproxy.com` workflow.
+
+## Console tabs
+
+- **Buy** — choose **Datacenter**, then Static or Custom
+- **My Proxies** — active allocations
+- **Users & Whitelist** — server IP whitelist or credentials
+- **Endpoints** — generate `host:port` lists
+- **Usage** — monitor where applicable
+- **API Center** — `/v1/extract-long` and `/v1/extract-custom` helpers
+
+Walkthroughs: [Static](../getting-started/static-proxy.md) · [Custom](../getting-started/custom-proxy.md)
+
+## Planning tips
+
+- Match region at purchase for static lines—changes may require new orders.
+- Whitelist cloud runner IPs to skip embedding passwords in config files.
+- Pair with [Web Scraping API](../getting-started/web-scraping-api.md) when targets need rendering more than raw speed.

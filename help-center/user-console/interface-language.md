@@ -1,9 +1,22 @@
 # Interface language
 
-Switch the dashboard UI language under **My Account**.
+Switch the JoyProxy **dashboard UI** to your preferred locale. Marketing pages and this documentation may still display in English until localized copies are published.
+
+## Change language
 
 1. Open [Account settings](https://www.joyproxy.com/admin-settings.html).
-2. Select **Language** / **Interface language**.
-3. Choose your locale and save. The console reloads in the selected language.
+2. Find **Language** or **Interface language**.
+3. Select a locale (for example English, 中文, 日本語, depending on availability in the dropdown).
+4. Save—the console reloads in the chosen language.
 
-Documentation language is independent and is English in this repository for now.
+## What changes
+
+- Menus, buttons, and system messages in the admin console
+- Email templates may follow your account locale where configured
+
+## What does not change
+
+- Generated proxy usernames and API payloads (always use values exactly as returned)
+- This GitBook / docs repository (English v1)
+
+Need help in another language? [Live chat](../support/live-chat.md) supports multiple languages when agents are available.
