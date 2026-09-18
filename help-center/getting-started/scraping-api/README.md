@@ -16,11 +16,12 @@ Use the API when you want production page collection without maintaining a brows
 
 ## In this chapter
 
-1. [Buy credits](buy-credits.md)
-2. [Get your token](token.md)
-3. [First fetch](first-fetch.md)
-4. [Parameters and credit costs](parameters.md)
-5. [Monitor usage](usage.md)
+1. [Quick start](quick-start.md)
+2. [Buy credits](buy-credits.md)
+3. [Get your token](token.md)
+4. [First fetch](first-fetch.md)
+5. [Parameters and credit costs](parameters.md)
+6. [Monitor usage](usage.md)
 
 ## Smallest working call
 

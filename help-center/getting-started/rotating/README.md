@@ -25,14 +25,15 @@ Your app  →  gate.joyproxy.com:9001  →  exit IP in the region you selected
 
 Follow in order the first time. Later, jump from the sidebar.
 
-1. [Choose a network and buy traffic](purchase.md)
-2. [Authentication methods](authentication.md)
-3. [Generate endpoints](generate-endpoints.md)
-4. [Location targeting](location-targeting.md)
-5. [Sticky sessions](sticky-sessions.md)
-6. [Make your first request](first-request.md)
-7. [Code examples](code-examples.md)
-8. [Use in apps and browsers](apps-and-browsers.md)
+1. [Quick start](quick-start.md)
+2. [Choose a network and buy traffic](purchase.md)
+3. [Authentication methods](authentication.md)
+4. [Generate endpoints](generate-endpoints.md)
+5. [Location targeting](location-targeting.md)
+6. [Sticky sessions](sticky-sessions.md)
+7. [Make your first request](first-request.md)
+8. [Code examples](code-examples.md)
+9. [Use in apps and browsers](apps-and-browsers.md)
 
 ## First request (after you have user + password)
 
@@ -54,6 +55,6 @@ The **console steps are the same**. Only the network type at [Purchase](https://
 
 ## Related
 
-- [Quick start](../quick-start.md) — gateway, sample code, dashboard walkthrough
+- [Quick start](quick-start.md) — gateway, sample code, dashboard walkthrough
 - [Pricing](https://www.joyproxy.com/pricing.html) · [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html)
 - Console tabs: [Residential](../../user-console/residential-proxies.md) · [Mobile](../../user-console/mobile-proxies.md) · [Business / ISP](../../user-console/business-isp-proxies.md)

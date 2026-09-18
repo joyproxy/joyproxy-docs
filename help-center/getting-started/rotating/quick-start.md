@@ -1,26 +1,20 @@
 # Quick start
 
-Connect through **one gateway**. JoyProxy routes each request through an exit IP from the pool you purchased.
+Connect through **one gateway**. JoyProxy routes each Rotating request through an exit IP from the pool you purchased (Residential, Mobile, or Business / ISP).
 
 ```text
 gate.joyproxy.com:9001
 ```
 
-Already have a Rotating pack and a password? Skip to [Send a test request](#send-a-test-request). Otherwise follow [Set up in the dashboard](#set-up-in-the-dashboard) first.
+Already have a pack and a password? Skip to [Send a test request](#send-a-test-request). Otherwise follow [Set up in the dashboard](#set-up-in-the-dashboard) first.
 
-Jump by product:
-
-- [Rotating proxy](rotating/README.md) — Residential, Mobile, Business / ISP
-- [Static proxy](static/README.md) — dedicated `host:port`
-- [Custom proxy](custom/README.md) — per-port region and rotation
-- [Web Scraping API](scraping-api/README.md) — send a URL, get HTML/JSON
-- [Software tools](software/README.md) — browser, tester, server, Android
+Need a dedicated `host:port` instead? [Static](../static/quick-start.md) · [Custom](../custom/quick-start.md). Page fetches without a proxy client: [Web Scraping API](../scraping-api/quick-start.md).
 
 ## How endpoints work
 
 An **endpoint** is the gateway into an IP pool. You do not pick a new host for each country.
 
-| Field | Rotating (most common) |
+| Field | Value |
 | --- | --- |
 | Host | `gate.joyproxy.com` |
 | Port | `9001` |
@@ -29,8 +23,6 @@ An **endpoint** is the gateway into an IP pool. You do not pick a new host for e
 | Password | From [Whitelist & Users](https://www.joyproxy.com/admin-authorization.html) |
 
 Country, city, and sticky session live **inside the generated username**. Host and port stay the same.
-
-Static and Custom use a dedicated `host:port` instead of this gateway — see those chapters after Rotating works.
 
 ## Send a test request
 
@@ -139,7 +131,7 @@ SOCKS5 with cURL:
 curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 
-More languages: [Code examples](rotating/code-examples.md).
+More languages: [Code examples](code-examples.md).
 
 ## Set up in the dashboard
 
@@ -156,7 +148,7 @@ New accounts: [Register](https://www.joyproxy.com/register.html) · [Pricing](ht
 3. Pick a traffic pack and pay with **PayPal** or **account balance**.
 4. Confirm the order in [My Proxies](https://www.joyproxy.com/admin-my-orders.html).
 
-Details: [Choose a network and buy traffic](rotating/purchase.md).
+Details: [Choose a network and buy traffic](purchase.md).
 
 ### 2. Authentication
 
@@ -166,14 +158,14 @@ Dashboard login and proxy login are **different**.
 2. Under **Username / Password**, create a credential (label 3+ characters, password 6+).
 3. Keep the **password**. You will pair it with a **long generated username** in the next step — not with this short label.
 
-Rotating uses **username + password**. Static and Custom lines can also use an **IP whitelist**. Full walkthrough: [Authentication methods](rotating/authentication.md).
+Full walkthrough: [Authentication methods](authentication.md).
 
 ### 3. Proxy setup (Endpoints)
 
 In [Endpoint generator](https://www.joyproxy.com/admin-ip-extraction-center.html) → **Rotating**:
 
-1. **Location** — country, then optionally state / city. See [Location targeting](rotating/location-targeting.md).
-2. **Session type** — rotate every request, or **sticky** (1–30 minutes) so several requests share one exit IP. See [Sticky sessions](rotating/sticky-sessions.md).
+1. **Location** — country, then optionally state / city. See [Location targeting](location-targeting.md).
+2. **Session type** — rotate every request, or **sticky** (1–30 minutes). See [Sticky sessions](sticky-sessions.md).
 3. **Protocol** — HTTP, HTTPS, or SOCKS5. Host and port stay `gate.joyproxy.com:9001` for all three.
 4. Set how many lines to create → **Generate**.
 
@@ -200,52 +192,37 @@ http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 
 Run a snippet from [Send a test request](#send-a-test-request). When you see the **proxy exit IP**, the line is ready for scrapers, browsers, and tools.
 
-## Connection details at a glance
-
-| Product | How you connect | Where geo lives |
-| --- | --- | --- |
-| Rotating | `gate.joyproxy.com:9001` + generated user + password | Inside the generated username |
-| Static | Dedicated `host:port` from Endpoints | Locked at purchase |
-| Custom | Dedicated `host:port` per port | [Assign region](custom/assign-region.md) in My Proxies |
-| Web Scraping API | `GET https://api.joyproxy.com/v1/fetch` | `geoCode` query parameter |
-
-> **Important**
->
-> On Static and Custom, the **Exit IP** shown in the console is the address websites see. The address **your client connects to** is the `host:port` from Endpoints.
-
 ## Integration
 
 | You want | Page |
 | --- | --- |
-| Chrome / Edge only | [Browser extension](software/browser-extension.md) |
-| Batch test HTTP / SOCKS | [Proxy Tester](software/proxy-tester.md) |
-| Local `127.0.0.1` for a CLI tool | [Proxy Server](software/proxy-server.md) |
-| Desktop scrapers and RPA | [Third-party software](../best-practices/third-party-static-proxies.md) |
-| AI agents / MCP | [Integrate proxies in AI](../integration/integrate-proxies-in-ai.md) |
+| Chrome / Edge only | [Browser extension](../software/browser-extension.md) |
+| Batch test HTTP / SOCKS | [Proxy Tester](../software/proxy-tester.md) |
+| Local `127.0.0.1` for a CLI tool | [Proxy Server](../software/proxy-server.md) |
+| Desktop scrapers and RPA | [Third-party software](../../best-practices/third-party-static-proxies.md) |
+| AI agents / MCP | [Integrate proxies in AI](../../integration/integrate-proxies-in-ai.md) |
 
 ## Usage
 
-Open the **Usage** tab on the Residential / Mobile / Business console to watch remaining GB. Dates are in the timezone shown in the console. Buy another pack from [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term) when traffic runs low — you do not need a new username each time.
+Open the **Usage** tab on the Residential / Mobile / Business console to watch remaining GB. Buy another pack from [Purchase → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term) when traffic runs low — you do not need a new username each time.
 
 ## Troubleshooting
 
 | Symptom | What to check |
 | --- | --- |
-| **407** / Proxy Authentication Required | Password from Whitelist & Users. Username is the **generated** string, not your email and not the short credential label. Recreate the password if you are unsure. |
+| **407** / Proxy Authentication Required | Password from Whitelist & Users. Username is the **generated** string, not your email and not the short credential label. |
 | Timeout | Host `gate.joyproxy.com`, port `9001`. Try HTTP before SOCKS if a firewall is involved. |
 | Wrong country | Generate a **new** username with the country selected. Do not edit the old string. |
 | Order inactive / no traffic | Remaining GB in [My Proxies](https://www.joyproxy.com/admin-my-orders.html) or Usage. |
 
-Still stuck? [Live chat](../support/live-chat.md) with a **redacted** curl (never send the live password).
+Still stuck? [Live chat](../../support/live-chat.md) with a **redacted** curl (never send the live password).
 
 ## What to read next
 
 | Task | Page |
 | --- | --- |
-| Create or reset proxy users | [Authentication methods](rotating/authentication.md) |
-| Country / city targeting | [Location targeting](rotating/location-targeting.md) |
-| Keep the same IP for several minutes | [Sticky sessions](rotating/sticky-sessions.md) |
-| Copy-paste for Python, Java, Go, Node, PHP | [Rotating code examples](rotating/code-examples.md) |
-| Dedicated line + IP whitelist | [Static authorization](static/authorization.md) |
-| Fetch a URL with credits | [First fetch](scraping-api/first-fetch.md) |
-| Dashboard walkthrough | [User console](../user-console/overview.md) |
+| Create or reset proxy users | [Authentication methods](authentication.md) |
+| Country / city targeting | [Location targeting](location-targeting.md) |
+| Keep the same IP for several minutes | [Sticky sessions](sticky-sessions.md) |
+| Copy-paste for more languages | [Code examples](code-examples.md) |
+| Use in Chrome, Windows, RPA | [Apps and browsers](apps-and-browsers.md) |

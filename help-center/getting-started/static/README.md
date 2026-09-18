@@ -19,13 +19,14 @@ Available on **Residential**, **Business / ISP**, and **Datacenter**.
 
 ## In this chapter
 
-1. [Buy a dedicated line](purchase.md)
-2. [Whitelist or username/password](authorization.md)
-3. [Generate endpoints](generate-endpoints.md)
-4. [Make your first request](first-request.md)
-5. [Code examples](code-examples.md)
-6. [Refresh the exit IP](refresh-ip.md)
-7. [Windows, Chrome, and mobile](clients.md)
+1. [Quick start](quick-start.md)
+2. [Buy a dedicated line](purchase.md)
+3. [Whitelist or username/password](authorization.md)
+4. [Generate endpoints](generate-endpoints.md)
+5. [Make your first request](first-request.md)
+6. [Code examples](code-examples.md)
+7. [Refresh the exit IP](refresh-ip.md)
+8. [Windows, Chrome, and mobile](clients.md)
 
 ## First request shape
 

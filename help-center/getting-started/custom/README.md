@@ -12,11 +12,12 @@ Available on **Residential**, **Business / ISP**, and **Datacenter**.
 
 ## In this chapter
 
-1. [Buy ports](purchase.md)
-2. [Assign region](assign-region.md)
-3. [Set rotation](rotation.md)
-4. [Authorize and generate](authorize-and-generate.md)
-5. [First request and code](first-request.md)
+1. [Quick start](quick-start.md)
+2. [Buy ports](purchase.md)
+3. [Assign region](assign-region.md)
+4. [Set rotation](rotation.md)
+5. [Authorize and generate](authorize-and-generate.md)
+6. [First request and code](first-request.md)
 
 ## Order of operations
 
