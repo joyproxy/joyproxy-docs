@@ -20,7 +20,7 @@
 * **Users & Whitelist** — 服务器 IP 白名单或凭据
 * **Endpoints** — 生成 `host:port` 列表
 * **用量** — 在适用处监控
-* **API Center** — 为静态/定制线路复制提取 **API URL**；见 [OpenAPI Center](../ji-cheng/openapi-center.md)
+* **API Center** — 为静态/定制线路复制提取 **API URL**；见 [OpenAPI Center](../zui-jia-shi-jian/openapi-center.md)
 
 操作指南：[静态](../ru-men/static/) · [定制](../ru-men/custom/)
 

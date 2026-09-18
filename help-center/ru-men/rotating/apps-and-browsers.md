@@ -33,7 +33,7 @@ socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 
 ## AI Agent
 
-从 [OpenClaw Skill](https://www.joyproxy.com/products/openclaw-skill.html) 或 [AI MCP](https://www.joyproxy.com/products/ai-mcp.html) 生成用户名，再用相同 user/password 连接。AI Access Token **不能**替代网关密码。详情：[在 AI 中集成代理](../../ji-cheng/integrate-proxies-in-ai.md)。
+从 [OpenClaw Skill](https://www.joyproxy.com/products/openclaw-skill.html) 或 [AI MCP](https://www.joyproxy.com/products/ai-mcp.html) 生成用户名，再用相同 user/password 连接。AI Access Token **不能**替代网关密码。详情：[在 AI 中集成代理](../../zui-jia-shi-jian/integrate-proxies-in-ai.md)。
 
 ## 本地转发代理
 

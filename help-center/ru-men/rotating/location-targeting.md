@@ -27,7 +27,7 @@ curl -x http://GENERATED_USER_CITY:YOUR_PASS@gate.joyproxy.com:9001 https://api.
 
 HTTP 与 SOCKS5 使用相同用户名。切换协议时无需换主机。任一协议均可打开 HTTPS 网站。
 
-自动化相同国家/州/城市字段：[OpenAPI Center](../../ji-cheng/openapi-center.md)（轮换端点与 Geo reference）。
+自动化相同国家/州/城市字段：[OpenAPI Center](../../zui-jia-shi-jian/openapi-center.md)（轮换端点与 Geo reference）。
 
 ## 实用建议
 

@@ -89,8 +89,8 @@ redirects:
   4.-user-console/residential-proxies: user-console/residential-proxies.md
   4.-user-console/rotate-token: user-console/rotate-token.md
   4.-user-console/web-scraping-api: user-console/web-scraping-api.md
-  5.-integration/integrate-proxies-in-ai: integration/integrate-proxies-in-ai.md
-  5.-integration/openapi-center: integration/openapi-center.md
+  5.-integration/integrate-proxies-in-ai: zui-jia-shi-jian/integrate-proxies-in-ai.md
+  5.-integration/openapi-center: zui-jia-shi-jian/openapi-center.md
   6.-service-and-support/live-chat: support/live-chat.md
   6.-service-and-support/proxy-locations: support/proxy-locations.md
   6.-service-and-support/proxy-pricing: support/proxy-pricing.md

@@ -52,4 +52,4 @@ AI 助手与 IDE Agent 可以**生成 JoyProxy 端点**、查询余额并起草�
 - 演示优先使用短期测试凭据。
 - CI 与笔记本使用不同 API Token。
 
-更多细节：<a href="../integration/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">集成 → 在 AI 中集成代理</a> · <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>。
+更多细节：<a href="../integration/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">最佳实践 → 在 AI 中集成代理</a> · <a href="../integration/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI Center</a>。

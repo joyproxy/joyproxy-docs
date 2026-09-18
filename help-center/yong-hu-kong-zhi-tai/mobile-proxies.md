@@ -28,7 +28,7 @@
 
 ## API Center
 
-用 Endpoints **API URL** 自动化提取 — [OpenAPI Center](../ji-cheng/openapi-center.md)。
+用 Endpoints **API URL** 自动化提取 — [OpenAPI Center](../zui-jia-shi-jian/openapi-center.md)。
 
 ## 设备端测试
 

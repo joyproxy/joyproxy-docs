@@ -201,7 +201,7 @@ http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 | 批量测 HTTP / SOCKS    | [代理检测工具](../software/proxy-tester.md)                         |
 | 本机 `127.0.0.1` 给命令行 | [代理服务器](../software/proxy-server.md)                          |
 | 桌面爬虫、RPA            | [第三方软件](../../zui-jia-shi-jian/third-party-static-proxies.md) |
-| AI Agent / MCP      | [在 AI 中集成代理](../../ji-cheng/integrate-proxies-in-ai.md)       |
+| AI Agent / MCP      | [在 AI 中集成代理](../../zui-jia-shi-jian/integrate-proxies-in-ai.md)       |
 
 ## 查看剩余流量
 

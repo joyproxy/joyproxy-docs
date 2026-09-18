@@ -1,6 +1,6 @@
 # 参数与积分消耗
 
-网页抓取 API 抓取接口的常用查询参数（完整路径与列表以 [OpenAPI 中心](../../ji-cheng/openapi-center.md) 为准）：
+网页抓取 API 抓取接口的常用查询参数（完整路径与列表以 [OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md) 为准）：
 
 | 参数            | 作用                  |
 | ------------- | ------------------- |

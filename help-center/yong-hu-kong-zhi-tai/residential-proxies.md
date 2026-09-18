@@ -43,7 +43,7 @@
 
 ### API Center
 
-快捷复制 Endpoints **API URL** 并打开 playground。完整 HTTP 参考：[OpenAPI Center](../ji-cheng/openapi-center.md)。
+快捷复制 Endpoints **API URL** 并打开 playground。完整 HTTP 参考：[OpenAPI Center](../zui-jia-shi-jian/openapi-center.md)。
 
 ## 快速决策
 

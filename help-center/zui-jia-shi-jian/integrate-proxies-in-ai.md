@@ -9,7 +9,7 @@ AI 助手与 IDE Agent 可以**生成 JoyProxy 端点**、查询余额并起草�
 | OpenClaw 自然语言                    | [OpenClaw Skill](https://www.joyproxy.com/products/openclaw-skill.html) + AI Access Token |
 | Cursor、VS Code、Claude Desktop 工具 | [AI MCP](https://www.joyproxy.com/products/ai-mcp.html)                                   |
 | 24/7 账单/配置问题                     | [AI Assistant](https://www.joyproxy.com/products/ai-customer-service.html)                |
-| 生产 HTTP 调用                       | 生成的端点 + [OpenAPI Center](../ji-cheng/openapi-center.md)                                   |
+| 生产 HTTP 调用                       | 生成的端点 + [OpenAPI Center](../zui-jia-shi-jian/openapi-center.md)                                   |
 
 ## 应了解的 Token
 
@@ -20,7 +20,7 @@ AI 助手与 IDE Agent 可以**生成 JoyProxy 端点**、查询余额并起草�
 | **Master User Token**  | 订单与余额 API                    |
 | **Scraping API Token** | 网页抓取 API                     |
 
-完整映射：[OpenAPI Center](../ji-cheng/openapi-center.md)。
+完整映射：[OpenAPI Center](../zui-jia-shi-jian/openapi-center.md)。
 
 在 [AI 端点生成器](https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai) 复制 AI Access Token。若出现在聊天记录中请在该处轮换。
 
@@ -52,4 +52,4 @@ AI 助手与 IDE Agent 可以**生成 JoyProxy 端点**、查询余额并起草�
 * 演示优先使用短期测试凭据。
 * CI 与笔记本使用不同 API Token。
 
-更多细节：[集成 → 在 AI 中集成代理](../ji-cheng/integrate-proxies-in-ai.md) · [OpenAPI Center](../ji-cheng/openapi-center.md)。
+更多细节：[最佳实践 → 在 AI 中集成代理](../zui-jia-shi-jian/integrate-proxies-in-ai.md) · [OpenAPI Center](../zui-jia-shi-jian/openapi-center.md)。

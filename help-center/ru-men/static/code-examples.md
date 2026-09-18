@@ -82,4 +82,4 @@ const res = await fetch("https://api.ipify.org", { agent });
 console.log(await res.text());
 ```
 
-批量导出：[生成端点](generate-endpoints.md) 或 [OpenAPI 中心](../../ji-cheng/openapi-center.md)。
+批量导出：[生成端点](generate-endpoints.md) 或 [OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md)。

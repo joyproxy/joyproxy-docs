@@ -6,7 +6,7 @@
 
 成功时响应 body 为页面（或 JSON，取决于参数）。失败、超时、硬拦截**不扣积分**。
 
-可从 OpenAPI Center 导出代码片段到项目。认证与请求结构见 [OpenAPI 中心](../../ji-cheng/openapi-center.md)。
+可从 OpenAPI Center 导出代码片段到项目。认证与请求结构见 [OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md)。
 
 ## 下一步
 

@@ -28,6 +28,6 @@ FAQ 随产品更新——若有疑问，请以在线页面为准，而非旧截�
 
 - JoyProxy 新手 → <a href="../README.md" target="_blank" rel="noopener noreferrer">概览</a>
 - 准备购买 → <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买</a> + <a href="../support/proxy-pricing.md" target="_blank" rel="noopener noreferrer">定价</a>
-- 今日就要集成 → <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">轮换</a> 或 <a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">网页抓取 API</a>
+- 今日就要最佳实践 → <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">轮换</a> 或 <a href="../getting-started/scraping-api/README.md" target="_blank" rel="noopener noreferrer">网页抓取 API</a>
 
 将 FAQ 条目完整导入本仓库的 Markdown 计划在后续版本进行。

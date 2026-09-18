@@ -19,7 +19,7 @@ My Proxies 亦显示各轮换套餐剩余 GB。有流量时 Endpoints 持续可�
 
 从 [购买 → 轮换](https://www.joyproxy.com/admin-purchase.html?tab=short-term) 再买一包，或开启 [自动购买流量](auto-buy-traffic.md)。
 
-自动化余额与订单列表：[OpenAPI Center](../../ji-cheng/openapi-center.md)。
+自动化余额与订单列表：[OpenAPI Center](../../zui-jia-shi-jian/openapi-center.md)。
 
 ## 下一步
 

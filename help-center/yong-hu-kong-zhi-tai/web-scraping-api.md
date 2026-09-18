@@ -36,7 +36,7 @@
 
 * [入门 → 网页抓取 API](../ru-men/scraping-api/)
 * [完整 API 文档](https://www.joyproxy.com/admin-unblocker-documentation.html)
-* [OpenAPI Center](../ji-cheng/openapi-center.md) — 网页抓取 API 操作
+* [OpenAPI Center](../zui-jia-shi-jian/openapi-center.md) — 网页抓取 API 操作
 
 > **提示**
 >

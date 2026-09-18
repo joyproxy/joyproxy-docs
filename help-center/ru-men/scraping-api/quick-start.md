@@ -6,7 +6,7 @@
 
 ## 如何调用
 
-在控制台复制 **Scraping API Token**，按 [OpenAPI 中心](../../ji-cheng/openapi-center.md) 的抓取接口说明发请求。[API Center](https://www.joyproxy.com/admin-web-unblocker.html?view=playground) playground 与生产一致。
+在控制台复制 **Scraping API Token**，按 [OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md) 的抓取接口说明发请求。[API Center](https://www.joyproxy.com/admin-web-unblocker.html?view=playground) playground 与生产一致。
 
 ## 试一次抓取
 
@@ -53,4 +53,4 @@
 | 抓取细节    | [首次抓取](first-fetch.md)                         |
 | 参数与积分   | [参数与积分消耗](parameters.md)                       |
 | 剩余积分    | [查看用量](usage.md)                               |
-| HTTP 参考 | [OpenAPI 中心](../../ji-cheng/openapi-center.md) |
+| HTTP 参考 | [OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md) |

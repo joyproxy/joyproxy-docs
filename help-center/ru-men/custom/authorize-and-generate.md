@@ -12,7 +12,7 @@
 
 连接 host:port，不要连 Exit IP。
 
-HTTP 自动化用端点页的 **API URL**，见 [OpenAPI 中心](../../ji-cheng/openapi-center.md)。
+HTTP 自动化用端点页的 **API URL**，见 [OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md)。
 
 ## 下一步
 

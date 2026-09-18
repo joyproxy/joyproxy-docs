@@ -22,7 +22,7 @@
 
 粘性过期后仍可使用同一用户名；下一窗口网关可能分配新 IP。刷新会话无需新购套餐。
 
-自动化提取时设置粘性长度请用 Endpoints **API URL** 的 `duration` 查询参数 — 见 [OpenAPI Center](../../ji-cheng/openapi-center.md)。
+自动化提取时设置粘性长度请用 Endpoints **API URL** 的 `duration` 查询参数 — 见 [OpenAPI Center](../../zui-jia-shi-jian/openapi-center.md)。
 
 ## 何时用粘性 vs 轮换会话
 

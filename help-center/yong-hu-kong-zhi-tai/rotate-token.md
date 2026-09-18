@@ -11,7 +11,7 @@ JoyProxy 提供多种 Token 用于自动化。轮换会使旧值失效——在�
 | **Scraping API Token**      | 网页抓取 API                | 网页抓取 API → API Center                                                          |
 | **AI Access Token**         | OpenClaw Skill / AI MCP | [AI 端点生成器](https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai)  |
 
-各操作使用哪种 Token：[OpenAPI Center](../ji-cheng/openapi-center.md)。
+各操作使用哪种 Token：[OpenAPI Center](../zui-jia-shi-jian/openapi-center.md)。
 
 ## 轮换 Master User Token
 

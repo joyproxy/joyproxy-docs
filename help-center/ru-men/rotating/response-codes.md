@@ -2,7 +2,7 @@
 
 经代理的状态可能来自 **JoyProxy**（跳）或**网站**。修改产品与目标前先修复凭据与 host:port。
 
-以下说明与在线 [FAQ](https://www.joyproxy.com/faq.html)（Whitelist & Users 与 API · Troubleshooting）一致。HTTP 提取错误见 [OpenAPI Center](../../ji-cheng/openapi-center.md)。
+以下说明与在线 [FAQ](https://www.joyproxy.com/faq.html)（Whitelist & Users 与 API · Troubleshooting）一致。HTTP 提取错误见 [OpenAPI Center](../../zui-jia-shi-jian/openapi-center.md)。
 
 ## 读取跳（cURL verbose）
 

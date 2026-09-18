@@ -13,7 +13,7 @@
 | 主用户 Token          | 订单与余额 API                                                                      |
 | AI Access Token    | OpenClaw / MCP                                                                 |
 
-试调与请求形态：[OpenAPI 中心](../../ji-cheng/openapi-center.md)。
+试调与请求形态：[OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md)。
 
 ## 下一步
 

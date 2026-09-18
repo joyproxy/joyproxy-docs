@@ -61,6 +61,7 @@
 ## 最佳实践
 
 * [在 AI 中集成代理](zui-jia-shi-jian/integrate-proxies-in-ai.md)
+* [OpenAPI 中心](zui-jia-shi-jian/openapi-center.md)
 * [第三方软件配合静态代理](zui-jia-shi-jian/third-party-static-proxies.md)
 * [Windows 11 系统代理](zui-jia-shi-jian/windows-11-system-proxy.md)
 * [Chrome 静态代理](zui-jia-shi-jian/chrome-static-proxy.md)
@@ -85,17 +86,10 @@
 * [数据中心代理](yong-hu-kong-zhi-tai/datacenter-proxies.md)
 * [网页抓取 API（控制台）](yong-hu-kong-zhi-tai/web-scraping-api.md)
 
-## 集成
-
-* [在 AI 中集成代理](ji-cheng/integrate-proxies-in-ai.md)
-* [OpenAPI 中心](ji-cheng/openapi-center.md)
-
 ## 服务与支持
 
 * [在线客服](fu-wu-yu-zhi-chi/live-chat.md)
 * [工单系统](fu-wu-yu-zhi-chi/tickets.md)
-* [代理地区](fu-wu-yu-zhi-chi/proxy-locations.md)
-* [代理定价](fu-wu-yu-zhi-chi/proxy-pricing.md)
 
 ## 常见问题
 

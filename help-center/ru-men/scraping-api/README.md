@@ -23,6 +23,6 @@
 5. [参数与积分消耗](parameters.md)
 6. [查看用量](usage.md)
 
-HTTP 路径、查询参数与代码示例：[OpenAPI 中心](../../ji-cheng/openapi-center.md)。
+HTTP 路径、查询参数与代码示例：[OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md)。
 
 完整参数表：[控制台 API 文档](https://www.joyproxy.com/admin-unblocker-documentation.html)。

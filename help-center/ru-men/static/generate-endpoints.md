@@ -9,7 +9,7 @@
 3. 按订单/分配筛选 → **Generate now**。
 4. 复制 host、port（用账号密码时一并复制）。
 
-要用 HTTP 批量拉列表，复制同页的 **API URL**，参数与示例见 [OpenAPI 中心](../../ji-cheng/openapi-center.md)。
+要用 HTTP 批量拉列表，复制同页的 **API URL**，参数与示例见 [OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md)。
 
 ## 该复制什么
 

@@ -119,7 +119,7 @@ curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ip
 
 ## 批量提取用户名
 
-从 Endpoints 或 [OpenAPI Center](../../ji-cheng/openapi-center.md) 批量导出。API URL 请保密；勿写入公开仓库。
+从 Endpoints 或 [OpenAPI Center](../../zui-jia-shi-jian/openapi-center.md) 批量导出。API URL 请保密；勿写入公开仓库。
 
 ## 下一步
 

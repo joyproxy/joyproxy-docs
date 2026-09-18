@@ -63,5 +63,5 @@ curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify
 * [快速开始](quick-start.md) — 网关、示例代码、控制台 walkthrough
 * [自动购买流量](auto-buy-traffic.md) · [用量与订单](usage-and-orders.md)
 * [协议](protocols.md) · [受限目标](restricted-targets.md) · [响应码](response-codes.md)
-* [定价](https://www.joyproxy.com/pricing.html) · [OpenAPI Center](../../ji-cheng/openapi-center.md)
+* [定价](https://www.joyproxy.com/pricing.html) · [OpenAPI Center](../../zui-jia-shi-jian/openapi-center.md)
 * 控制台页签：[住宅](../../yong-hu-kong-zhi-tai/residential-proxies.md) · [移动](../../yong-hu-kong-zhi-tai/mobile-proxies.md) · [商业 / ISP](../../yong-hu-kong-zhi-tai/business-isp-proxies.md)

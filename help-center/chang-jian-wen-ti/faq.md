@@ -28,6 +28,6 @@ FAQ 随产品更新——若有疑问，请以在线页面为准，而非旧截�
 
 * JoyProxy 新手 → [概览](../)
 * 准备购买 → [购买](https://www.joyproxy.com/admin-purchase.html) + [定价](../fu-wu-yu-zhi-chi/proxy-pricing.md)
-* 今日就要集成 → [轮换](../ru-men/rotating/) 或 [网页抓取 API](../ru-men/scraping-api/)
+* 今日就要最佳实践 → [轮换](../ru-men/rotating/) 或 [网页抓取 API](../ru-men/scraping-api/)
 
 将 FAQ 条目完整导入本仓库的 Markdown 计划在后续版本进行。

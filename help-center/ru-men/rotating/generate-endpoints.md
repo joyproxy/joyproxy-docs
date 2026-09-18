@@ -41,7 +41,7 @@ socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 
 Endpoints 页亦显示基于相同选择的语言片段（cURL、Python 等）。上线前粘贴一条到环境确认 IP。
 
-若用 HTTP 而非仅网页 UI 生成行，请使用同页的 **API URL** 与 [OpenAPI Center](../../ji-cheng/openapi-center.md) 参考。
+若用 HTTP 而非仅网页 UI 生成行，请使用同页的 **API URL** 与 [OpenAPI Center](../../zui-jia-shi-jian/openapi-center.md) 参考。
 
 ## 下一步
 
