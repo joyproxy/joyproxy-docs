@@ -1,20 +1,20 @@
-# 响应码与常见报错
+# 响应码与常见报错（Response Codes）
 
 在连接动态代理网关 `gate.joyproxy.com:9001` 时，如果遇到异常状态码，可按以下指南快速定位并解决：
 
 ---
 
-## 1. 407 Proxy Authentication Required（代理认证失败）
+## 1. 407 代理认证失败（Proxy Authentication Required）
 
 - **原因**：网关无法校验你的代理凭据。
 - **快速排查**：
-  1. **密码检查**：确认填入的是在 **[用户与白名单](authentication.md)** 中设置的代理密码，而不是 JoyProxy 官网的登录密码。
-  2. **用户名检查**：确认代理用户名字段填入的是在 **[提取](extract-ip.md)** 页面生成的**完整长字符串**（如 `user-zone-res-region-us-...`），请勿手动截断或拼错字符。
+  1. **密码检查**：确认填入的是在 **[用户与白名单（Users & Whitelist）](authentication.md)** 中设置的代理密码，而不是 JoyProxy 官网的登录密码。
+  2. **用户名检查**：确认代理用户名字段填入的是在 **[提取（Endpoint Generator）](extract-ip.md)** 页面生成的**完整长字符串**（如 `user-zone-res-region-us-...`），请勿手动截断或拼错字符。
   3. **白名单模式**：如果使用 IP 白名单认证，请确认客户端服务器的公网 IP 已正确填入白名单列表。
 
 ---
 
-## 2. 403 Forbidden（目标拒绝访问）
+## 2. 403 目标拒绝访问（Forbidden）
 
 - **原因**：请求已被目标网站的防爬机制（如 Cloudflare WAF）拦截，或目标网站属于受限屏蔽范围。
 - **快速排查**：
@@ -34,7 +34,7 @@
 
 ---
 
-## 4. 429 Too Many Requests（请求过多）
+## 4. 429 请求过多（Too Many Requests）
 
 - **原因**：短时间内并发连接数或请求频次超出了当前限制。
 - **排查建议**：适当调大请求重试间隔或降低多线程并发数。
