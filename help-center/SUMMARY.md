@@ -6,6 +6,7 @@
 
 * [动态代理](ru-men/rotating/README.md)
   * [快速开始](ru-men/rotating/quick-start.md)
+  * [网络类型](ru-men/rotating/network-types.md)
   * [购买流量](ru-men/rotating/purchase.md)
   * [查看已购流量](ru-men/rotating/view-traffic.md)
   * [自动购买流量](ru-men/rotating/auto-buy-traffic.md)
