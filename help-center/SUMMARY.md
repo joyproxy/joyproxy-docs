@@ -69,23 +69,23 @@
     * <a href="user-console/email-activation.md" target="_blank" rel="noopener noreferrer">邮箱激活</a>
     * <a href="user-console/login.md" target="_blank" rel="noopener noreferrer">登录</a>
     * <a href="user-console/forgot-password.md" target="_blank" rel="noopener noreferrer">找回密码</a>
-* <a href="user-console/overview.md" target="_blank" rel="noopener noreferrer">控制台总览</a>
+* <a href="user-console/overview.md" target="_blank" rel="noopener noreferrer">总览</a>
 * <a href="user-console/residential-proxies.md" target="_blank" rel="noopener noreferrer">代理控制台</a>
-    * <a href="user-console/residential-proxies.md" target="_blank" rel="noopener noreferrer">住宅代理控制台</a>
-    * <a href="user-console/mobile-proxies.md" target="_blank" rel="noopener noreferrer">移动代理控制台</a>
-    * <a href="user-console/business-isp-proxies.md" target="_blank" rel="noopener noreferrer">商业 / ISP 控制台</a>
-    * <a href="user-console/datacenter-proxies.md" target="_blank" rel="noopener noreferrer">数据中心控制台</a>
-    * <a href="user-console/web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取控制台</a>
-* <a href="user-console/my-account.md" target="_blank" rel="noopener noreferrer">我的账户</a>
-    * <a href="user-console/my-account.md" target="_blank" rel="noopener noreferrer">我的账户总览</a>
+    * <a href="user-console/residential-proxies.md" target="_blank" rel="noopener noreferrer">住宅代理</a>
+    * <a href="user-console/mobile-proxies.md" target="_blank" rel="noopener noreferrer">移动代理</a>
+    * <a href="user-console/business-isp-proxies.md" target="_blank" rel="noopener noreferrer">商业 / ISP </a>
+    * <a href="user-console/datacenter-proxies.md" target="_blank" rel="noopener noreferrer">数据中心</a>
+    * <a href="user-console/web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取 API </a>
+* <a href="user-console/interface-language.md" target="_blank" rel="noopener noreferrer">我的账户</a>
     * <a href="user-console/interface-language.md" target="_blank" rel="noopener noreferrer">界面语言</a>
     * <a href="user-console/change-password.md" target="_blank" rel="noopener noreferrer">修改密码</a>
     * <a href="user-console/idle-sign-out.md" target="_blank" rel="noopener noreferrer">无操作退出时间</a>
-    * <a href="user-console/rotate-token.md" target="_blank" rel="noopener noreferrer">主用户与自动化 Token</a>
+    * <a href="user-console/rotate-token.md" target="_blank" rel="noopener noreferrer">主用户 Token</a>
     * <a href="user-console/invoices.md" target="_blank" rel="noopener noreferrer">账单与交易记录</a>
     * <a href="user-console/delete-account.md" target="_blank" rel="noopener noreferrer">注销账户</a>
-* <a href="user-console/tickets.md" target="_blank" rel="noopener noreferrer">工单系统</a>
-* <a href="user-console/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a>
+* <a href="user-console/tickets.md" target="_blank" rel="noopener noreferrer">帮助中心</a>
+   * <a href="user-console/tickets.md" target="_blank" rel="noopener noreferrer">工单系统</a>
+   * <a href="user-console/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a>
 
 ## 最佳实践
 
