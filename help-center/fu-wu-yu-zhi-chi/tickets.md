@@ -1,47 +1,30 @@
 # 工单系统
 
-当遇到需要追溯操作记录的复杂技术排查、账单差异核对，或需要跨部门协助的个性化业务诉求时，推荐在控制台中提交支持工单。
+需要可追溯记录时（账单、复杂故障、长期跟进），在控制台提交工单。
 
-**页面路径：** 控制台左侧菜单 **帮助中心** → **提交工单**（或直接访问 <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">admin-support.html</a>）
-
----
-
-## 创建新工单
-
-进入 **我的工单** 标签页，点击右上角 **「+ 新建工单」** 按钮弹出提单窗口：
-
-1. **主题（Subject）：** 简明扼要概括问题，例如「静态住宅代理 192.x.x.x 目标连接超时」或「USDT 充值到账差异核对」。
-2. **优先级（Priority）：** 根据实际业务影响度选择：
-   - **低（Low）：** 一般性咨询、功能建议或非阻断性小问题；
-   - **中（Medium）：** 影响部分测试或非核心业务受阻；
-   - **高（High）：** 生产环境业务完全阻断，急需排查。
-3. **问题描述（Issue Description）：**
-   - 详细写出复现步骤、预期行为与实际报错。
-   - 附带相关时间戳（标明时区如 UTC 或 UTC+8）。
-   - 若涉及代理连接问题，请写明测试的目标网站、客户端类型以及是否通过白名单或账号密码认证。
-4. **附件上传（可选）：**
-   - 支持上传报错截图或请求响应日志。
-   - 允许的文件类型：图片格式（PNG / JPG，上限 5MB）及常用文档（`txt`、`doc`、`docx`、`xls`、`xlsx`、`csv`）。
-   - **安全提示：** 上传前请对密码、完整 主用户 Token 或敏感业务数据进行打码脱敏。
-5. 点击 **「提交工单」**，系统将生成唯一的工单流水号（如 `#1042`）。
+**帮助中心** → **提交工单** · <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">打开页面</a>
 
 ---
 
-## 跟踪与工单回复
+## 新建工单
 
-在 **我的支持工单** 列表中，可随时查看历史记录：
+在 **我的工单** 中点 **+ 新建工单**：
 
-- **列表信息：** 显示工单号、主题、优先级、处理状态、回复数及最后更新时间。
-- **查看与跟进：** 点击操作列中的 **「查看」**，可打开工单时间线。
-- **追加回复：** 在详情页底部的 **「您的回复」** 框中输入最新进展并点击 **「提交回复」**。若排查中获取了新日志，支持点击 **「新增图片」** 或文档附件补充说明。请尽量在原工单内持续沟通，避免就同一问题重复开单。
+1. **主题**：简要说明问题，如「静态线路连接超时」「USDT 充值未到账」。
+2. **优先级**：**低** / **中** / **高**（按业务影响选择）。
+3. **问题描述**：复现步骤、预期与实际结果、时间（建议注明时区）；代理问题请写目标网站与认证方式。
+4. **附件**（可选）：截图或日志；图片 PNG/JPG（≤5MB）或 txt、doc、xls 等文档。勿上传密码或完整 Token。
+5. 点 **提交工单**，获得工单号（如 #1042）。
 
 ---
 
-## 常见工单类型与提单建议
+## 跟进
 
-| 问题类型 | 建议提供的信息 | 关联链接 |
-| :--- | :--- | :--- |
-| **代理连通性异常** | 订单 ID、测试目标 URL、客户端错误代码、脱敏的测试命令行（如 curl 日志） | <a href="../yong-hu-kong-zhi-tai/residential-proxies.md" target="_blank" rel="noopener noreferrer">代理控制台</a> |
-| **充值与账单差异** | 充值订单号、支付方式（USDT TxID / PayPal 交易号）、扣费时间 | <a href="../yong-hu-kong-zhi-tai/invoices.md" target="_blank" rel="noopener noreferrer">账单与交易记录</a> |
-| **API 抓取失败** | 请求的 Target URL、抓取配置参数、返回的 HTTP 状态码与抓取响应头 | <a href="../yong-hu-kong-zhi-tai/web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取控制台</a> |
-| **企业资质与开票** | 企业全称、税号、发票抬头、接收发票的电子邮箱 | <a href="live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a> |
+在 **我的支持工单** 列表点 **查看**，在 **您的回复** 中追加说明，尽量在同一工单内沟通。
+
+| 问题 | 建议附上 | 参考 |
+| --- | --- | --- |
+| 代理连不通 | 订单号、目标 URL、错误信息 | <a href="../yong-hu-kong-zhi-tai/residential-proxies.md" target="_blank" rel="noopener noreferrer">住宅代理控制台</a> |
+| 账单疑问 | 订单号、支付方式、时间 | <a href="../yong-hu-kong-zhi-tai/invoices.md" target="_blank" rel="noopener noreferrer">账单与交易记录</a> |
+| 抓取失败 | 目标 URL、状态码 | <a href="../yong-hu-kong-zhi-tai/web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取控制台</a> |
+| 开票 | 企业抬头、税号、邮箱 | <a href="live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> |

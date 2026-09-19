@@ -1,46 +1,33 @@
 # 注册
 
-创建 JoyProxy 账户后即可登录控制台，购买代理流量、网页抓取 Credits，或使用开源客户端。
+创建 JoyProxy 账户后即可购买代理、网页抓取积分，或使用开源客户端。
 
-<a href="https://www.joyproxy.com/register.html" target="_blank" rel="noopener noreferrer">创建账号</a>
+<a href="https://www.joyproxy.com/register.html" target="_blank" rel="noopener noreferrer">前往注册</a>
 
----
-
-## 页面上你会看到
-
-- 标题 **创建账号**，副标题 **立即开始免费试用**
-- 横幅 **🎁 新用户注册即送 $5 余额 · 无需信用卡**
-- 底部 **已有账号？** 可跳转 **登录**
+页面上有 **🎁 新用户注册即送 $5 余额 · 无需信用卡** 提示。
 
 ---
 
-## 注册方式
+## 用 Google / GitHub 注册
 
-### OAuth（推荐）
+在 **或** 分隔线上方点 **使用 Google 继续** 或 **使用 GitHub 继续**，按提示完成授权即可。
 
-在 **或** 分隔线上方任选：
+---
 
-- **使用 Google 继续**
-- **使用 GitHub 继续**
-
-授权成功后若尚未绑定邮箱密码，按页面提示完成关联即可登录。
-
-### 电子邮件 + 密码
+## 用邮箱注册
 
 1. 在 **或使用电子邮件注册** 区域填写 **电子邮件**。
-2. **密码** 占位符：**建立密码（至少 8 位）**（校验失败：**密码至少需要 8 个字符**）。
-3. 若页面要求 **请完成安全验证**（Turnstile），先完成人机验证。
+2. 设置 **密码**（至少 8 位）。
+3. 若出现 **请完成安全验证**，先完成人机验证。
 4. 点击 **创建账号**。
-
-常见错误：**请输入有效的邮箱地址**、**请填写邮箱和密码**、**暂时无法创建账号，请稍后再试。**
 
 ---
 
 ## 注册之后
 
-1. 若需邮箱验证，按 <a href="email-activation.md" target="_blank" rel="noopener noreferrer">邮箱激活</a> 完成激活。
-2. <a href="login.md" target="_blank" rel="noopener noreferrer">登录</a> 进入 <a href="overview.md" target="_blank" rel="noopener noreferrer">控制台总览</a>。
-3. 侧栏 **代理** → 选择网络 → **购买** 选购套餐。
-4. 在 **我的账户** → **安全与 API** 查看 **主用户 Token**（仅账户与订单 API，不能提取 IP）。
+1. 需要验证邮箱时，见 <a href="email-activation.md" target="_blank" rel="noopener noreferrer">邮箱激活</a>。
+2. <a href="login.md" target="_blank" rel="noopener noreferrer">登录</a> 后打开 <a href="overview.md" target="_blank" rel="noopener noreferrer">控制台总览</a>。
+3. 在 **代理** 菜单选网络 → **购买** 套餐。
+4. **主用户 Token** 在 **我的账户** → **安全与 API**（仅用于账户与下单 API，不能用来提取 IP）。
 
-定价：<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价页</a>。
+<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价页</a>

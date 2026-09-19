@@ -1,14 +1,14 @@
 # 帮助中心控制台
 
-侧栏 **帮助中心**统一入口：<a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">admin-support.html</a>
+侧栏 **帮助中心** → <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">打开帮助中心</a>
 
 ---
 
-## 子菜单
+## 两项服务
 
-| 侧栏文案 | 说明 | 文档 |
+| 菜单 | 适合场景 | 说明 |
 | --- | --- | --- |
-| **提交工单** | 可追溯的工单线程，适合账单、复杂故障 | <a href="tickets.md" target="_blank" rel="noopener noreferrer">工单系统</a> |
-| **实时聊天** | 浏览器内即时对话；全站右下角气泡亦可唤起 | <a href="live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> |
+| **提交工单** | 账单核对、复杂故障、需留痕 | <a href="tickets.md" target="_blank" rel="noopener noreferrer">工单系统</a> |
+| **实时聊天** | 紧急问题、选购咨询 | <a href="live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> |
 
-控制台代理页眉的 **帮助中心** 外链会跳到本站文档，与上述入口互补。
+控制台右下角气泡也可打开聊天。代理控制台页眉的 **帮助中心** 会链接到本站文档。
