@@ -1,301 +1,135 @@
-# JoyProxy 浏览器扩展（Browser Extension）
+# JoyProxy 浏览器扩展
 
-**JoyProxy 浏览器扩展**是面向 Chromium 内核（Chrome、Edge、Brave、Opera、Vivaldi 等，**Chrome 114+**）的 Manifest V3 **代理工作台**。可粘贴自有代理、配置供应商 **提取 API**，或在本浏览器已登录 [joyproxy.com](https://www.joyproxy.com) 后使用已购 **动态 / 静态 / 自定义** 线路。
+**JoyProxy 浏览器扩展**是一款面向 Chromium 内核浏览器的代理管理工作台，适用于 Google Chrome、Microsoft Edge、Brave、Opera 及 Vivaldi 等现代浏览器（要求 Chrome 内核版本 114 及以上）。
 
-扩展只通过 `chrome.proxy` 路由**当前浏览器**流量，**不会**修改 Windows / macOS **系统代理**（系统级联动请用 [代理检测工具（Proxy Tester）](proxy-tester.md)）。
+扩展基于 Manifest V3 标准开发，所有的代理规则都只作用于**当前浏览器实例**，不会改动 Windows 或 macOS 的系统全局网络。无论是临时的单节点验证、第三方提取 API 的轮换调度，还是直接载入在 JoyProxy 购买的云端线路，都可以在扩展内一站式完成。
 
-[Chrome 网上应用店（Chrome Web Store）](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng) · [产品页](https://www.joyproxy.com/products/browser-extension.html) · [GitHub](https://github.com/joyproxy/joyproxy-extension) · [隐私政策（Privacy Policy）](https://www.joyproxy.com/privacy-extension.html)
+相关地址：  
+[Chrome 网上应用店](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng) · [产品页面](https://www.joyproxy.com/products/browser-extension.html) · [GitHub 仓库](https://github.com/joyproxy/joyproxy-extension) · [隐私政策](https://www.joyproxy.com/privacy-extension.html)
 
 ---
 
 ## 安装方式
 
-### 方式 A：Chrome 网上应用店（推荐）
+### 方式一：通过 Chrome 网上应用店安装（推荐）
 
-1. 打开 [Chrome 网上应用店](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng)，点击 **添加到 Chrome（Add to Chrome）**。
-2. 在工具栏 **固定（Pin）** JoyProxy 图标。
+1. 访问 [Chrome 网上应用店](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng)。
+2. 点击 **添加到 Chrome（Add to Chrome）** 完成安装。
+3. 安装完成后，在浏览器右上角的拼图图标中将 JoyProxy **固定（Pin）** 到工具栏，方便日常快速切换。
 
-### 方式 B：开发者模式加载 ZIP（无法访问商店时）
+*注：Microsoft Edge 用户同样可以直接打开上述 Chrome 商店链接安装该扩展。*
 
-1. 下载 [joyproxy-extension-unpacked.zip](https://github.com/joyproxy/joyproxy-extension/releases/latest/download/joyproxy-extension-unpacked.zip) 并解压。
-2. 打开 `chrome://extensions`，开启 **开发者模式（Developer mode）**。
-3. 点击 **加载已解压的扩展程序（Load unpacked）**，选择包含 `manifest.json` 的文件夹。
-4. 更新版本后在扩展卡片点击 **重新加载（Reload）**。
+### 方式二：离线加载 ZIP 包（开发者模式）
 
-也可克隆仓库后加载根目录：`git clone https://github.com/joyproxy/joyproxy-extension.git`，`git pull` 后同样 **重新加载**。
+在无法直接连接 Chrome 应用店的环境下，可手动加载离线版本：
 
----
-
-## 界面入口（与开源实现一致）
-
-| 入口 | 用途 |
-| --- | --- |
-| **工具栏图标** | 打开 **弹窗（Popup）**：看直连/已连接状态、粘贴代理、**测试（Test）** / **设为代理（Set as proxy）** / **恢复直连（Restore direct）**；登录后可快速选 JoyProxy 线路。图标灰 = 直连，亮 = 已连接（可显示国码等角标）。 |
-| **打开工作台（Open workbench）** | **侧栏（Side Panel）** 或独立窗口（可在 **系统（System）** 里选 **右侧侧栏（Side panel）** / **工具栏小窗口（Popup）**）。 |
-| **选项页（Options）** | 在 `chrome://extensions` 中点 JoyProxy 的 **详细信息 → 扩展程序选项**。日常测通不必打开；用于 **Bypass 域名**、检测通道、WebRTC、一键清除扩展代理。 |
-| **右键菜单** | 网页上 **用当前代理测试此站**（未登录也可用）。 |
-
-设计原则：**弹窗三秒能连**；档案、批量 API、日志、指纹与代理范围在 **工作台** 完成。
+1. 前往 GitHub Releases 下载最新的 [joyproxy-extension-unpacked.zip](https://github.com/joyproxy/joyproxy-extension/releases/latest/download/joyproxy-extension-unpacked.zip) 并解压到本地文件夹。
+2. 在浏览器地址栏输入 `chrome://extensions` 打开扩展管理页，开启右上角的 **开发者模式（Developer mode）**。
+3. 点击左上角的 **加载已解压的扩展程序（Load unpacked）**，选中包含 `manifest.json` 的解压目录。
+4. 后续更新版本时，只需覆盖本地文件，并在扩展页面点击该卡片上的 **重新加载（Reload）** 图标即可。
 
 ---
 
-## 三种使用入口
+## 界面与主要入口
 
-| 模式 | 是否需要 JoyProxy 账号 | 说明 |
-| --- | --- | --- |
-| **代理地址（Own proxy）** | 否 | 支持 `host:port`、`user:pass@host:port`、`http://` / `socks5://`；可 **保存（Save）**、**导入（Import）** 多组档案。 |
-| **API（Extract API）** | 否 | 填写提取 URL、可选 **正则（Regex）**、可选账密；**仅测试（Test only）** 或 **测通后设为代理（Apply after successful test）**；可 **定时更换浏览器代理**（间隔秒数、次数上限）。 |
-| **JoyProxy** | 使用已购线路时需登录 | 读取本浏览器在官网的会话；**动态**（网络/国家/州/城市、粘性/轮换、粘性时长）与 **静态**（静态与自定义端口合为一类）分栏操作。 |
+扩展根据日常操作频率设计了两种主要的交互视图：
 
-使用自有代理或第三方 API **不消耗** JoyProxy 流量；仅经 JoyProxy 云端出口时才计费。扩展内 **不** 提供购买套餐、工单、OpenAPI / MCP、网页采集等控制台能力。
-
----
-
-## 推荐操作流程（先测后连）
-
-**测试失败不会改动当前浏览器代理。**
-
-### 自有代理
-
-1. 在弹窗或工作台 **代理地址** 粘贴线路，例如：
-   ```text
-   http://user123:pass123@us-ca.edge.joyproxy.com:10001
-   ```
-   动态示例（用户名来自 [提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)，密码来自 [用户与白名单（Users & Whitelist）](https://www.joyproxy.com/admin-authorization.html)）：
-   ```text
-   http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
-   ```
-2. 点击 **测试（Test）**，查看出口 IP、国家/地区与延迟。
-3. 点击 **设为代理（Set as proxy）**；顶栏 **恢复直连（Restore direct）** 清除扩展代理。
-
-### 提取 API
-
-1. 工作台 → **API**。
-2. 填写 API 地址；高级选项里可填 **名称**、**正则**（默认可识别 `host:port`）、代理 **用户名 / 密码**。
-3. 选择 **仅测试** 或 **测通后设为代理**，可选 **定时更换浏览器代理** 与间隔/次数，点击 **开始测试（Start test）**。
-4. 结果表可逐条 **设为代理**；停止定时任务会恢复直连或接管前的设置。
-
-### JoyProxy 已购线路
-
-1. 在 [joyproxy.com](https://www.joyproxy.com) 用邮箱 / Google / GitHub **登录（Sign in）**（扩展内 **登录** 会打开官网登录页）。
-2. 工作台 → **JoyProxy**；已登录则自动加载产品。
-3. 选动态或静态参数 → **仅测试** 或 **测通后设为代理**（同样支持定时更换）→ **开始测试**。
-4. **管理（Manage）** 打开 [控制台概览（Overview）](https://www.joyproxy.com/admin-overview.html)；**退出（Sign out）** 仅退出扩展侧会话，不会退出官网账号。
+- **工具栏弹窗（Popup）**：点击工具栏的 JoyProxy 图标即可弹出。用于最核心的高频操作，例如查看当前连接状态、快速粘贴代理节点、发起连通性测试、一键连接或恢复直连。如果已登录 JoyProxy 账号，还可以在这里快速选择已购线路。图标呈亮色并带有国家代码标识时表示代理已生效，灰色则代表当前处于直连状态。
+- **工作台侧栏（Side Panel）**：点击弹窗底部的 **打开工作台（Open workbench）**，浏览器右侧会展开完整的管理面板。这里支持多代理档案保存、批量导入、第三方 API 轮换调度、详细运行日志，以及完整的代理分流与指纹伪装设置。
+- **网页右键菜单**：在任意网页上点击右键，均可通过 **用当前代理测试此站（Test this site with the current proxy）** 快速验证当前代理能否正常访问目标站点。
+- **扩展选项页（Options）**：在浏览器扩展详情中点击选项即可打开独立页面，主要用于批量维护绕过代理的域名列表（Bypass）、切换公共 IP 探测接口或恢复接管前的代理配置。
 
 ---
 
-## 工作台结构
+## 三种线路接入方式
 
-### 上部：线路来源
+扩展对各类代理来源提供平等的支持，不强制绑定账号：
 
-- **代理地址**：地址/端口、账密、测试、设为代理、保存与批量导入（每行一条 `host:port` 或完整 URI）。
-- **API**：与桌面 [Proxy Tester](proxy-tester.md) 类似的提取 + 逐条测试逻辑，并可直接写入浏览器代理。
-- **JoyProxy**：账户栏（管理 / 刷新 / 退出）、动态地理与会话、静态线路下拉。
-
-### 下部：运行状态 / 高级 / 系统
-
-- **运行状态（Run log）**：测试、连接、右键测站等流水写入此处，可 **清空（Clear）**。
-- **高级（Advanced）**：指纹、代理范围、站点清理——见下文 **[高级设置详解](#高级设置详解)**。
-- **系统（System）**：扩展界面语言/主题/打开方式、测通用的 **IP+Geo 通道**——见 **[系统与选项页](#系统与选项页)**。
-
-弹窗里 **高级选项（Advanced options）** 折叠区仅含代理 **用户名 / 密码**；完整指纹与代理范围请在工作台 **高级** 中配置。
+1. **自备代理（Own proxy）**  
+   支持粘贴 `host:port`、`user:pass@host:port` 或标准的 `http://` 与 `socks5://` 链接。可在本地保存多组档案并支持文本批量导入，**无需登录 JoyProxy 账号**，也不会产生任何云端计费。
+2. **提取 API（Extract API）**  
+   支持填入第三方服务商提供的代理提取链接，并可指定正则表达式与预设账密。扩展支持单次测通后自动设为代理，也支持按照预定时间间隔自动轮询更换新 IP。
+3. **JoyProxy 已购线路**  
+   若当前浏览器已经在 [joyproxy.com](https://www.joyproxy.com) 登录过控制台，工作台会自动识别用户凭据并加载名下的动态住宅流量包、静态独享或自定义端口线路。在扩展中按需选择国家、城市与会话类型即可，无需繁琐地手动复制长链接。
 
 ---
 
-## 高级设置详解
+## 基本操作流程
 
-打开 **工作台（Workbench）** → 下部页签 **高级（Advanced）**。下列能力用于降低指纹不一致、控制哪些请求走代理，以及在换线时清理站点数据。**扩展不做网页采集工作台**，也不替代官网的 OpenAPI / MCP 入口。
+日常使用时，建议遵循**先测试连通性，再应用到浏览器**的原则。如果节点不可用，测试失败不会破坏当前浏览器原有的网络连接。
 
-### 何时生效、如何保存
+### 连接自备代理
 
-| 行为 | 说明 |
-| --- | --- |
-| **设为代理（Set as proxy）** | 应用当前代理，并套用你在 **高级** 里选的指纹/请求头相关项（通过请求头规则 + 页面注入实现）。 |
-| **每次设为代理时随机（Randomize on apply）** | 该项右侧勾选后，**每次成功设为代理** 时从对应预设列表里随机一项（跳过「浏览器默认」与「自定义」）。Canvas 噪声、去除 Referer、发送 DNT、限制 WebRTC 在勾选随机时约为 **50% 开 / 50% 关**。 |
-| **代理范围** | 修改后 **自动保存** 到本机扩展存储。 |
-| **断开 / 恢复直连** | 清除扩展写入的 `chrome.proxy`；若扩展曾备份系统代理设置，恢复直连会回到接管前状态（选项页可 **清除扩展代理并恢复接管前设置**）。 |
+1. 打开弹窗或工作台的 **代理地址（Proxy Address）** 标签页。
+2. 在地址栏中粘贴代理节点（如 `http://user:pass@us-ca.edge.joyproxy.com:10001`）。
+3. 点击 **测试（Test）**，等待系统返回出口公网 IP、地理位置与网络延迟。
+4. 确认信息无误后，点击 **设为代理（Set as proxy）** 立即接管浏览器流量。
+5. 需要停止使用时，点击顶部的 **恢复直连（Restore direct）** 即可一键恢复。
 
-测通（**测试（Test）**）只验证连通性与出口 IP，**不会**因为测试失败而改动当前代理。
+### 配置提取 API 自动轮询
 
-### 常用（Common）
+1. 打开工作台切换到 **API** 标签页。
+2. 填入服务商的提取 URL。如果有特殊格式要求，可在高级选项中填入提取正则表达式或统一的代理账号密码。
+3. 运行模式可选择 **仅测试（Test only）**（仅拉取并输出连通率统计）或 **测通后设为代理（Apply after successful test）**（首个可用节点自动生效）。
+4. 如果需要定时刷新，勾选 **定时更换浏览器代理** 并设定轮换间隔（秒）和总次数，点击 **开始测试（Start test）** 即可进入后台轮换模式。
 
-#### User-Agent（User-Agent）
+### 调用 JoyProxy 账号中的云端线路
 
-网页与部分风控读到的浏览器标识。预设（与实现一致）：
-
-| 预设 | 说明 |
-| --- | --- |
-| 浏览器默认 | 不改动 UA |
-| Chrome · Windows / Chrome · macOS | 桌面 Chrome |
-| Edge · Windows | Edge |
-| Firefox · Windows | Firefox 风格 UA |
-| Safari · macOS / Safari · iPhone | Safari 桌面 / 移动 |
-| Chrome · Android | 移动 Chrome |
-| **自定义（Custom）** | 在 **自定义 User-Agent** 中填写完整 UA 字符串，**覆盖**上方预设 |
-
-可勾选 **每次设为代理时随机**，在除「浏览器默认」「自定义」外的预设中随机。UA 与真实系统差太多时，少数站点可能加强风控——建议与所选代理地区、语言、时区搭配使用。
-
-#### 限制 WebRTC（Restrict WebRTC）
-
-通过 Chrome `webRTCIPHandlingPolicy` 设为 `disable_non_proxied_udp`，**降低** WebRTC 泄漏真实 IP 的概率，**不能**保证所有通道都被挡住。可能影响依赖 WebRTC 的会议/通话类网站。
-
-- 工作台 **高级** 中可固定开启，并支持「每次设为代理时随机」。
-- **选项页** 另有 **连接成功后限制 WebRTC**（默认关），与全局连接卫生相关。
-
-#### 清理浏览数据（需先切到目标标签页）
-
-| 按钮 | 作用 |
-| --- | --- |
-| **清理当前站点 Cookie（Clean site cookies）** | 仅当前站 Cookie |
-| **清理当前站点数据（Clean site data）** | 当前站 Cookie、本地存储与该站缓存 |
-| **清理全部 Cookie（Clean all cookies）** | 全浏览器 Cookie（所有登录态会掉） |
-| **清理缓存（Clear cache）** | 浏览器缓存，**不删** Cookie |
+1. 确保在当前浏览器已登录官网控制台，随后打开工作台的 **JoyProxy** 标签页。
+2. 系统会自动列出当前可用的产品。选择 **动态** 或 **静态** 模式：
+   - 动态线路：可按需选择目标国家、省州、城市，并指定粘性会话时长或按次轮换。
+   - 静态线路：直接在下拉列表中挑选分配好的固定 IP 节点。
+3. 点击 **测试（Test）** 验证后，点击 **设为代理（Set as proxy）** 即可生效。
 
 ---
 
-### 代理范围（Proxy scope）
+## 高级设置与环境隔离
 
-决定 **哪些 URL 走当前浏览器代理**。两种模式：
+在工作台下方的 **高级（Advanced）** 面板中，提供了丰富的网络分流与浏览器指纹保护选项，帮助减少多账号操作中的环境关联风险。
 
-| 模式 | 英文 UI | 行为 |
-| --- | --- | --- |
-| **全部走代理** | All via proxy | 除 **不走代理** 名单外，所有请求经代理 |
-| **仅名单走代理** | Allowlist only | 只有 **走代理** 名单中的域名 / IP / URL 走代理，其余 **直连** |
+所有配置在点击 **设为代理** 时随同网络规则一起生效。
 
-**名单格式**（一行一条）：域名、`*.example.com` 通配、IP、或完整网址。
+### 1. 代理分流范围（Proxy scope）
 
-**默认不走代理（Bypass）** 已预填，避免 JoyProxy 控制台自身走代理形成环路：
+你可以精准控制哪些请求必须走代理、哪些保持直连：
 
-- `localhost`、`127.0.0.1`、`<local>`
-- `*.joyproxy.com`、`www.joyproxy.com`、`api.joyproxy.com`
+- **全部走代理（All via proxy）**：默认模式。除指定的直连名单外，所有网页和请求全部经由代理发出。
+- **仅名单走代理（Allowlist only）**：只有白名单中列出的域名、IP 或 URL 前缀走代理，其余流量全部直连。
 
-可在 **走代理** / **不走代理** 文本框中增删。**选项页（Options）** 的 **Bypass 域名** 与上述绕过逻辑同一套数据，适合在独立标签页批量编辑。
+在 **不走代理（Bypass）** 规则中，扩展默认预置了 `localhost`、`127.0.0.1` 以及 `*.joyproxy.com`，确保即便代理节点异常，也不会阻断访问官网控制台与本地服务。名单支持通配符（如 `*.example.com`），每行一条。
 
----
+### 2. 常用防护与环境伪装
 
-### 更多选项（More options）
+- **User-Agent 替换**：内置了主流桌面端（Windows / macOS 下的 Chrome、Edge、Firefox、Safari）与移动端（Android、iPhone）的常见 UA。支持勾选 **每次设为代理时随机**，在每次应用新代理时自动换用不同的客户端标识，也可以完全自定义填写。
+- **限制 WebRTC 泄露**：启用后会将浏览器的 WebRTC IP 策略设为 `disable_non_proxied_udp`，有效防止由于 STUN 请求绕过代理而泄露本机的真实局域网或公网 IP。
+- **快捷清理浏览痕迹**：在切换不同地区的代理前，可以在面板中一键 **清理当前站点 Cookie**、**清理当前站点全部数据**（包括 LocalStorage 与缓存），或直接 **清理全部 Cookie** 与 **清理浏览器缓存**，避免跨会话残留识别标记。
 
-用于让 **页面 JavaScript 读到的环境**（语言、时区、屏幕、硬件、WebGL、字体、Canvas 等）更接近目标画像。建议 **时区 / 语言与出口 IP 地区一致**，减少「IP 在美国、时区在上海」类不一致。
+### 3. 指纹与底层环境选项
 
-每项均可单独勾选 **每次设为代理时随机**（从该下拉预设中随机，规则见上表）。
+为了满足更高要求的反指纹识别需求，扩展支持在页面载入时动态模拟底层运行环境。每一项均可固定设置，也可勾选 **每次设为代理时随机**：
 
-| 设置 | 英文 UI | 作用摘要 | 可选预设示例 |
-| --- | --- | --- | --- |
-| **语言** | Language | 影响 `navigator.language` 与请求 **Accept-Language** | 浏览器默认；中文（简体/繁体）；English (US/UK)；日本語；한국어；Deutsch；Français；Español |
-| **时区** | Timezone | 影响页面读到的时区 | 浏览器默认；UTC；美国东/西/中部；伦敦；柏林；上海；东京；新加坡；香港 |
-| **屏幕分辨率** | Screen resolution | `screen` 宽高指纹 | 浏览器默认；1920×1080；1366×768；1440×900；2560×1440；390×844（手机） |
-| **设备像素比** | Device pixel ratio | `window.devicePixelRatio` | 浏览器默认；1×、1.25×、1.5×、2× |
-| **CPU 核心数** | CPU cores | `navigator.hardwareConcurrency` | 浏览器默认；4 / 8 / 12 / 16 核 |
-| **设备内存** | Device memory | `navigator.deviceMemory`（GB） | 浏览器默认；4 / 8 / 16 GB |
-| **触控点数** | Touch points | `navigator.maxTouchPoints` | 浏览器默认；无触控；1 点；5 点 |
-| **WebGL 显卡** | WebGL GPU | 伪装 WebGL vendor/renderer（**不能**改真实显卡驱动） | 浏览器默认；NVIDIA；Intel；AMD；Apple |
-| **字体列表** | Font list | 伪装可探测字体集合 | 浏览器默认；Windows 常见字体；macOS 常见字体 |
-| **Canvas 轻微噪声** | Canvas noise | 给 Canvas 读数加少量噪声，减轻固定指纹；极少数画布校验可能受影响 | 开/关，可随机 |
-| **去除 Referer** | Strip Referer | 去掉跳转来源头；部分登录或防盗链站可能异常 | 开/关，可随机 |
-| **发送 Do Not Track** | Send DNT | 请求带 `DNT: 1`；站点可忽略 | 开/关，可随机 |
-
-实现上：UA / Referer / DNT / Accept-Language 等走 **declarativeNetRequest** 改请求头；时区、屏幕、硬件、WebGL、字体、Canvas 等通过 **内容脚本注入** 覆盖页面可见环境。未配置项保持浏览器真实值。
+- **界面语言与时区**：支持伪装 `navigator.language`、请求头 `Accept-Language` 以及 JavaScript 本地时间环境，建议与代理出口国家保持一致，避免出现“IP 在欧美但本地时间为东八区”的异常情况。
+- **屏幕与设备硬件**：可伪装 `screen` 分辨率（如 1080P、2K、移动端屏幕）、设备像素比（DPR）、CPU 核心数（`hardwareConcurrency`）以及设备内存大小（`deviceMemory`）。
+- **图形与字体探测**：支持伪装 WebGL 显卡渲染器信息（NVIDIA、Intel、AMD、Apple 等主流芯片），并模拟 Windows 或 macOS 的标准系统字体列表。
+- **Canvas 读数轻微加噪**：对 HTML5 Canvas 画布读数注入轻微随机噪点，打破固定的绘图指纹哈希。
+- **隐私请求头控制**：支持自动剔除跳转来源（去除 Referer）或向目标站点发送 `DNT: 1`（Do Not Track）标识。
 
 ---
 
-### 提取 API / JoyProxy 页内高级（与「高级」页签不同）
+## 本地转发服务（Local Relay）说明
 
-在 **API** 或 **JoyProxy** 来源下，**高级选项** 折叠区提供：
+在 Chromium 架构下，浏览器内核对代理认证存在部分限制：例如对带有用户名密码的 SOCKS5 代理无法原生注入认证头。
 
-| 项 | 说明 |
-| --- | --- |
-| **名称（Name）** | 保存多条提取 API 时的显示名，默认可用主机名 |
-| **正则（Regex）** | 从 API 返回文本中提取 `host:port`；**可空**，内置默认识别规则 |
-| **用户名 / 密码** | 提取出的线路若需统一账密，在此填写 |
+为了确保带有复杂账号密码的代理能够稳定使用，扩展内部集成了基于本地回环端口的转发机制（默认监听 `127.0.0.1:17890`）：
 
-**模式**：
-
-- **仅测试（Test only）**：拉取并逐条测通，**不改**浏览器代理；成功行可手动 **设为代理**。
-- **测通后设为代理（Apply after successful test）**：第一条成功者 **自动设为代理**，其余成功行仍可手动切换；失败 **不改**当前代理。
-
-**定时更换浏览器代理（Timed rotation）**：
-
-- 开启后填写 **间隔（秒，可空）**（空则不等）、**次数（可空，最大 200）**（空则直到手动 **停止**）。
-- 适用于 API 轮询与 JoyProxy 动态/静态提取循环换线。
-
-JoyProxy **动态** 还可选：网络、国家、省/州、城市、**粘性 / 轮换** 会话、**粘性时长**。**静态** 含自定义端口线路，插件内 **不** 做端口轮换，以网站端配置为准。
+- 如果使用的是离线解压版扩展，首次在 Windows 下使用带账密的 HTTP 代理时，如果页面提示 **本地转发未启动**，只需前往扩展解压目录中的 `scripts` 文件夹，双击运行 **`install-relay.cmd`** 注册一次本机消息通信接口，之后在浏览器中重新加载扩展即可。
+- 如果目标是**带账号密码的 SOCKS5 代理**，受限于 Chrome 官方机制，建议优先使用对应的 HTTP 协议端口，或在服务商后台将本机当前出口 IP 加入 IP 白名单免密访问。
 
 ---
 
-### 右键：用当前代理测试此站
+## 权限与隐私保护
 
-在任意网页右键 **用当前代理测试此站（Test this site with the current proxy）**（无需登录）。对 **当前标签页 URL** 发起经代理的请求，结果写入 **运行状态**；若尚未 **设为代理**，会提示需先连接。适合验证「这条线能不能打开这个站」，而不是只 ping 出口 IP。
+JoyProxy 严格遵守最小权限原则，扩展内保存的代理配置、账号 Token 及自定义参数全部存放在本机的 `chrome.storage.local` 中，不会上传至第三方服务器。
 
----
-
-## 系统与选项页
-
-### 工作台 → 系统（System）
-
-| 设置 | 选项 |
-| --- | --- |
-| **界面语言（UI language）** | 跟随浏览器 / English / 简体中文 / 繁體中文 |
-| **外观（Theme）** | 跟随浏览器 / 浅色 / 深色 |
-| **打开方式（Open with）** | **右侧侧栏（Side panel）**（Chrome 贴在窗口右侧；不支持侧栏的浏览器会改用独立窗口）/ **工具栏小窗口（Toolbar popup）** |
-| **Target / IP+Geo Channel** | `ipinfo.io`、`ipwhois.app`、`ip-api.com`、`api.myip.com` 或 **自定义 URL（原文，不解析 JSON）** — 用于 **测试**、状态栏真实 IP、出口展示；**不走 JoyProxy 计费流量** |
-
-### 扩展选项页（`chrome://extensions` → JoyProxy → 扩展程序选项）
-
-| 区块 | 说明 |
-| --- | --- |
-| **Bypass 域名** | 与 **代理范围** 绕过名单相同，一行一条 |
-| **IP + Geo 检测通道** | 与工作台 **系统** 中检测通道一致 |
-| **连接卫生** | **连接成功后限制 WebRTC**；SOCKS5 账密限制说明文案 |
-| **清除扩展代理并恢复接管前设置** | 紧急恢复浏览器代理到扩展接管之前 |
-
-页脚说明：日常 **测通、连接请用工具栏弹窗**，选项页很少需要打开。
-
----
-
-## HTTP 账密与本地转发（Local relay）
-
-带 **用户名 / 密码** 的 **HTTP** 代理在连接前会经本机 **本地转发**（默认 `127.0.0.1:17890`，由 `native\joyproxy-relay` 自动拉起，无需安装 Python）。若提示 **本地转发未启动**：
-
-1. 在扩展目录双击运行 **`scripts\install-relay.cmd`** 注册 Native Messaging 主机（开发者加载解压版时尤其需要）。
-2. 在 `chrome://extensions` **重新加载** JoyProxy 后再 **测试**。
-
-若扩展 ID 与注册不一致，需先移除扩展再重新 **加载已解压的扩展程序**。
-
----
-
-## 限制与说明
-
-| 项目 | 说明 |
-| --- | --- |
-| 浏览器支持 | 仅 **Chromium**，**不支持 Firefox**。 |
-| SOCKS5 账密 | Chrome **无法** 为 SOCKS5 完整携带用户名密码；请改用 **HTTP**，或对端 **IP 白名单**。连接前会给出非阻断说明，不会静默失败。 |
-| 系统代理 | 只改本浏览器；改 Windows 系统代理请用 [Proxy Tester](proxy-tester.md)。 |
-| 隐私 | 登录信息与代理账密仅存本机；测通时访问所选 IP 查询接口；登录仅访问 `www.joyproxy.com` / `api.joyproxy.com`。详见 [扩展隐私政策](https://www.joyproxy.com/privacy-extension.html)。 |
-
-### 权限摘要
-
-| 权限 | 用途 |
-| --- | --- |
-| `proxy` | 设置或恢复浏览器代理 |
-| `storage` | 本地保存代理与设置 |
-| `sidePanel` | 工作台侧栏 |
-| `contextMenus` | 右键测试当前站 |
-| `webRequest` / `webRequestAuthProvider` | HTTP 代理账密 |
-| `tabs` / `scripting` | 登录页与官网会话 |
-| `privacy` | 可选限制 WebRTC |
-| `webNavigation` / `declarativeNetRequest` | 请求头与 UA |
-| `browsingData` | 清理 Cookie / 缓存 |
-| `<all_urls>` | 浏览走代理及隐私相关能力 |
-
----
-
-## 与 Proxy Tester 的分工
-
-| | **浏览器扩展** | **代理检测工具** |
-| --- | --- | --- |
-| 平台 | Chromium | Windows 桌面（亦支持源码 / Android 等构建） |
-| 代理作用范围 | 仅当前浏览器 | 可选 **同步 Windows 系统浏览器代理** |
-| 批量提取 API | 工作台 API + 定时轮换 | **批量测试（Batch Test）**、Live Log、循环间隔 |
-| UDP | 浏览器侧不主打 UDP 验证 | **SOCKS5 / UDP** + DNS 探测 |
-
-许可：**MIT**（© JoyProxy）。实现细节以 [GitHub README](https://github.com/joyproxy/joyproxy-extension) 为准。
+- **核心权限用途**：`proxy`（配置浏览器代理网络）、`sidePanel`（承载工作台界面）、`declarativeNetRequest` 与 `privacy`（用于安全的请求头修改与 WebRTC 防护）、`browsingData`（执行站点 Cookie 与缓存清理）。
+- **外部网络请求**：除了主动调用的 JoyProxy 官方 API，扩展仅在发起连通性测试时向公共 IP 库接口（如 `ipinfo.io` 等）发送单次轻量探测，测试过程不产生多余的用户行为收集。

@@ -1,122 +1,127 @@
 # 代理检测工具（Proxy Tester）
 
-**JoyProxy 代理检测工具**（JoyProxy Tester）是轻量级桌面 **代理连通性与批量验证** 工具。支持 **HTTP / HTTPS（HTTP / TCP）**、**SOCKS5 TCP**、**SOCKS5 UDP**，内置多通道出口 IP 与地理解析，可配置供应商 **提取 API** 做**严格顺序**批量测试，并在 Windows 上可选 **同步系统浏览器代理**。
+**JoyProxy 代理检测工具**（JoyProxy Tester）是一款轻量级的 Windows 桌面代理连通性测试与批量验证软件。它原生支持 **HTTP / HTTPS**、**SOCKS5 TCP** 以及 **SOCKS5 UDP** 协议，支持多通道出口 IP 与地理位置解析，并能对接各类代理供应商的提取 API 进行严格的顺序批量测速与 Windows 系统代理联动。
 
-[产品页](https://www.joyproxy.com/products/tester.html) · [GitHub Releases](https://github.com/joyproxy/joyproxy-tester/releases) · [源码](https://github.com/joyproxy/joyproxy-tester)
+软件完全开源且免安装，单个独立 EXE 即可直接运行。
+
+相关地址：  
+[产品页面](https://www.joyproxy.com/products/tester.html) · [GitHub Releases 下载](https://github.com/joyproxy/joyproxy-tester/releases) · [源码仓库](https://github.com/joyproxy/joyproxy-tester)
 
 ---
 
-## 下载与运行
+## 下载与启动
 
-### Windows 预编译版（推荐）
+### 使用预编译的免安装版（推荐）
 
-1. 打开 [Release v2.6.3](https://github.com/joyproxy/joyproxy-tester/releases/tag/v2.6.3) 或 [最新 Releases](https://github.com/joyproxy/joyproxy-tester/releases/latest)。
-2. 下载 **`JoyProxy-Tester-2.6.3.exe`**（单文件绿色版，无需单独安装运行库）。
-3. 双击运行；页脚显示引擎 **Ready** 即可使用。
+1. 前往 GitHub Releases 获取最新发布的版本（例如 [Release v2.6.3](https://github.com/joyproxy/joyproxy-tester/releases/tag/v2.6.3)）。
+2. 下载单文件可执行程序 **`JoyProxy-Tester-2.6.3.exe`**。
+3. 双击直接启动运行。程序无需安装任何系统运行库，底栏显示 **Ready** 状态即可开始测试。
 
-产品页标注的版本以 [tester 产品页](https://www.joyproxy.com/products/tester.html) 与 Releases 为准（源码中版本号见仓库 `version.py`）。
+*注：在某些 Windows 安全策略下，首次运行可能会弹出提示，选择“仍要运行”即可。*
 
-### 从源码运行（Python 3.10+）
+### 从源码运行或自行打包（Python 3.10+）
+
+如果你希望在本地调试或二次开发，可以使用 Python 源码运行：
 
 ```bash
 git clone https://github.com/joyproxy/joyproxy-tester.git
 cd joyproxy-tester
+
+# 创建并激活虚拟环境
 python -m venv .venv
 .\.venv\Scripts\activate
+
+# 安装依赖并启动
 pip install -r requirements.txt
 python app.py
 ```
 
-本地打包：`python build_pc.py` → `dist/JoyProxy-Tester-2.6.3.exe`。
+若需在本地重新构建单文件 EXE，直接执行打包脚本：
 
-### 配置存储位置
+```bash
+python build_pc.py
+```
 
-设置与提取 API 列表保存在应用数据目录下的 **`joyproxy_tester.json`**（Windows 一般为 `%APPDATA%\Xiequ\joyproxy_tester.json`）。界面 **设置（Settings）** 中点击 **保存参数（Save Parameters）** 写入该文件。
-
----
-
-## 界面导航（与 `web/index.html` 一致）
-
-左侧三个页签：
-
-| 页签 | 英文 UI | 作用 |
-| --- | --- | --- |
-| **单条测试** | Single Test | 单节点连通性、延迟、出口 IP |
-| **批量测试** | Batch Test | 提取 API + 顺序批量 + Live Log |
-| **设置** | Settings | 提取 API 管理、超时、地理通道、UDP DNS |
-
-顶栏品牌区可打开 [joyproxy.com](https://www.joyproxy.com)。单条与批量页顶部均显示 **当前公网 IP（Current Public IP）**；若曾勾选同步系统代理，会出现 **清除浏览器代理设置（Clear Browser Proxy Settings）**。
+编译生成的可执行文件将位于 `dist/JoyProxy-Tester-2.6.3.exe`。
 
 ---
 
-## 单条测试（Single Test）
+## 配置文件存放位置
 
-1. 协议分段：**HTTP / TCP**、**SOCKS5 / TCP**、**SOCKS5 / UDP**。
-2. **代理地址（Proxy Address）** 支持智能粘贴：`host:port`、`user:pass@host:port`、`http://` / `socks5://`（域名与端口可自动拆分）。
-3. 可选 **用户名 / 密码（Username / Password）**。
-4. 可选勾选 **测试期间同步浏览器代理（Sync browser proxy during testing）** — 写入 **Windows 系统浏览器代理**，测试结束或手动清除时可恢复（与扩展「只改 Chromium」不同）。
-5. 点击 **开始测试（Start Testing）**。
-
-结果卡片展示：
-
-- **响应时间（Response Time）**、**HTTP 状态（HTTP Status）**（视协议与目标通道而定）。
-- 若设置中开启 **显示响应内容（Show response content）**，会展示探测接口返回正文（自定义 URL 时为原始文本）。
+程序启动后会自动在当前系统的数据目录下读取或创建配置文件 **`joyproxy_tester.json`**（在 Windows 上的默认路径为 `%APPDATA%\Xiequ\joyproxy_tester.json`）。你在界面中保存的供应商提取 API 列表、测试超时时间以及地理探测通道等参数，均保存在该文件中，迁移时只需复制该文件即可。
 
 ---
 
-## 批量测试（Batch Test）
+## 界面布局与核心功能
 
-1. 在 **设置** 中先 **添加（Add）** 至少一条 **提取 API**（名称、API URL、可选该 API 返回代理的账密）。
-2. 批量页选择 **Extract API**、**提取数量（Extract Count）**、**测试间隔（Test Interval）**（数值 + 秒/分/时/天；用于循环提取时的等待，带 **下次切换倒计时（Next Switch Countdown）**）。
-3. 同样可选 **测试期间同步浏览器代理**。
-4. **开始批量测试（Start Batch Test）** — 后台 **严格顺序** 拉取并测试，非并发风暴；可用 **停止（Stop）** 中断。
-5. **手动单条测试（Manual Single Test）** — 按当前 API 再提取一条并测通/切换，适合抽检。
+软件界面简洁，左侧导航包含三个主要工作区：
 
-统计区：**进度（Progress）**、**成功率（Success Rate）**、**平均响应（Average Response）**、**成功数（Success Count）**。**Live Log** 表格列：`#`、**IP : Port**、**Status**、**Response**、**Notes**；可 **清空（Clear）**。
+- **单条测试（Single Test）**：快速测试单个节点的连通性、出口 IP 与响应延迟。
+- **批量测试（Batch Test）**：接入提取 API，按设定规则批量拉取代理并进行自动化队列测通。
+- **设置（Settings）**：集中管理所有的 API 提取接口、默认超时与底层探测参数。
 
-从 API 文本解析 `host:port` 时，默认使用配置中的 **`extract_regex`**（内置规则识别 IP/域名与端口）。若 API 一次返回多行，**每次运行只取第一条**；添加 API 前请确认已在供应商侧 **IP 白名单** 或已配置账密（界面提示与 README 一致）。
+页面顶部始终显示本机的 **当前公网 IP**，方便与测试出的代理出口 IP 对比确认。
 
 ---
 
-## 设置（Settings）
+## 单条测试
 
-### 管理提取 API（Manage Extract APIs）
+用于验证手头现有的代理节点是否健康，操作非常直观：
 
-- 字段：**提供商（Provider）**、**API** URL、可选 **Username / Password**（作为该批代理的统一账密）。
-- 列表中可删除已保存项；保存后写入 `joyproxy_tester.json`。
-
-### 高级参数（Advanced Parameters）
-
-| 项 | 说明 |
-| --- | --- |
-| **默认超时（Default timeout）** | 秒，默认 10 |
-| **目标 / IP+Geo 通道（Target / IP+Geo Channel）** | `ipinfo.io`、`ipwhois.app`、`ip-api.com`、`api.myip.com`，或 **自定义 URL（Custom URL）**（原始内容，不解析 JSON） |
-| **显示响应内容** | 是否在结果中展示探测正文 |
-| **UDP 测试 DNS 服务器（UDP Test DNS Server）** | 端口 53，默认 `8.8.8.8` |
-
-**SOCKS5 / UDP** 模式下，通过标准 **UDP ASSOCIATE** 经代理向该 DNS 发送 UDP 查询（查询域名取自所选地理通道），以验证 **UDP 转发** 是否可用。
+1. **协议选择**：在顶部切换 **HTTP / TCP**、**SOCKS5 / TCP** 或 **SOCKS5 / UDP**。
+2. **输入地址**：支持智能剪贴板识别。你可以直接粘贴常见的各种格式：
+   - 纯地址端口：`1.2.3.4:8080` 或 `myproxy.com:1080`
+   - 带账密格式：`user:pass@1.2.3.4:8080`
+   - 完整 URL 协议串：`socks5://user:pass@1.2.3.4:1080`
+   输入框会自动拆分主机名、端口与可选的账密。
+3. **系统代理联动（可选）**：勾选 **测试期间同步浏览器代理** 后，程序在开始测试时会将该节点临时写入 Windows 系统的 Internet 代理配置，方便你直接在原生 Edge 或 Chrome 浏览器中访问网页排查。测试完毕或需要还原时，点击顶部的 **清除浏览器代理设置** 即可一键恢复直连。
+4. **发起测试**：点击 **开始测试（Start Testing）**，右侧结果卡片会立即展示该节点的 HTTP 状态码、RTT 响应耗时，以及对应的真实出口公网 IP 和归属国家。
 
 ---
 
-## 测试 JoyProxy 线路
+## 批量测试与 API 动态提取
 
-| 线路类型 | 在检测工具中填写的内容 |
-| --- | --- |
-| **动态代理（Rotating）** | `http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001` — 用户名来自 [提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)，密码来自 [用户与白名单（Users & Whitelist）](https://www.joyproxy.com/admin-authorization.html) |
-| **静态 / 自定义独享** | `http://USER:PASS@HOST:PORT` — 从 [我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html) 或提取页复制 |
+当需要评估一批代理的可用率，或者需要让机器周期性更换可用出口时，可以使用批量测试功能：
 
-测通后可在 [浏览器扩展](browser-extension.md) 中做浏览器内验证，或通过 [代理服务器网关](proxy-server.md) 在本机起 HTTP/SOCKS 入口。
+1. **选择提取接口**：在下拉框中选择在“设置”中预存的供应商提取 API。
+2. **设置执行规则**：
+   - **提取数量**：设置单次任务需要获取并测试的代理总条数。
+   - **测试间隔**：设置每轮测试之间的等待周期（支持秒、分、小时或天），并可配合界面上的倒计时进度条实现自动化长周期监测。
+3. **严格顺序测试**：点击 **开始批量测试（Start Batch Test）** 后，后台会采用严格的**单队列顺序请求**机制，逐个拉取并测试节点。这种机制能有效避免多线程并发请求瞬间击穿低并发限制的提取接口，测试过程平稳可控。
+4. **实时日志与统计**：
+   - 顶部统计面板实时汇总当前的执行进度、成功率百分比、平均响应时间与成功总数。
+   - 下方的 **Live Log** 表格实时追加每一个节点的 IP、端口、测试结果与延时数据。点击 **清空（Clear）** 可随时重置日志视图。
+5. **手动单次轮换**：如果只想立刻更换一个节点进行抽检，可以点击 **手动单条测试（Manual Single Test）**，程序会即刻从选中的 API 提取一个新 IP 并执行测速。
 
 ---
 
-## 与浏览器扩展的对照
+## SOCKS5 UDP 穿透验证原理
 
-| 能力 | **Proxy Tester** | **浏览器扩展** |
-| --- | --- | --- |
-| 单条测通 | ✅ 全协议含 UDP | ✅ HTTP / SOCKS5（UDP 非重点） |
-| 提取 API 批量 | ✅ Live Log + 循环间隔 | ✅ 工作台 API + 定时换代理 |
-| 应用代理 | Windows **系统代理**（可选） | **仅 Chromium** |
-| 指纹 / 代理范围 | ❌ | ✅ 工作台 **高级** |
-| JoyProxy 已购线路 | 需自行粘贴 URI | ✅ 登录后选动态/静态 |
+很多常规测试工具仅能测试 TCP 握手，无法准确得知 SOCKS5 节点的 UDP 转发功能是否真正畅通。
 
-许可：**MIT**（© JoyProxy）。协议与字段以 [GitHub README](https://github.com/joyproxy/joyproxy-tester) 与仓库 UI 为准。
+JoyProxy Tester 实现了真正的 **SOCKS5 UDP ASSOCIATE** 握手与转发验证流程：
+1. 客户端首先通过 TCP 与代理服务器建立控制通道，协商启用 UDP ASSOCIATE 模式。
+2. 随后通过代理服务器分配的中继端口，向目标 DNS 服务器（默认 `8.8.8.8:53`）发送一个标准的 DNS 查询报文。
+3. 如果能够通过代理中继成功收到目标 DNS 返回的响应包，则标记为测试通过，并在日志中输出实际的 UDP 往返延时。
+
+这对于需要使用 DNS 远端解析、音视频流媒体或游戏加速等依赖 UDP 协议的场景，提供了确切的连通性参考。
+
+---
+
+## 设置项与底层参数调优
+
+在 **设置（Settings）** 页面中，你可以根据业务需要对以下参数进行调整：
+
+- **提取 API 管理**：添加不同供应商的提取 URL。如果该服务商提取出的 IP 列表需要统一搭配账号密码使用，可以在表单中预填账密。*注：在添加 API 前，请确保已在供应商控制台将本机公网 IP 添加到白名单中。*
+- **默认超时时间**：单次探测的最大等待秒数（默认为 10 秒）。
+- **IP 与地理位置解析通道**：内置了包括 `ipinfo.io`、`ipwhois.app`、`ip-api.com` 与 `api.myip.com` 在内的多个成熟公开接口，测试程序会自动解析其返回的 JSON 数据；如果你有自己搭建的测试后端，也可选用 **自定义 URL** 模式，程序将直接展示服务器返回的原始内容。
+- **UDP 测试 DNS 服务器**：指定验证 UDP 转发能力时查询的公网 DNS 地址，默认为 `8.8.8.8`。
+
+---
+
+## 与浏览器扩展的定位区别
+
+很多用户经常询问桌面测试工具与浏览器扩展该如何取舍：
+
+- **JoyProxy 浏览器扩展** 专注于**日常工作与浏览**：它仅在当前浏览器生效，提供方便的侧栏切换、丰富的 UA/时区/硬件指纹伪装，适合多账号防关联、跨境电商店铺管理以及页面调试。
+- **JoyProxy 桌面检测工具** 专注于**网络质量诊断与自动化批量筛选**：它具备更严谨的协议支持（含 UDP 报文检测）、单文件免安装、可直接同步到 Windows 全局代理，并能无并发压力地处理提取 API 的批量测活。
