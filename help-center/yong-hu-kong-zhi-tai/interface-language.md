@@ -7,12 +7,12 @@
 ## 更改步骤
 
 1. 打开 <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">我的账户</a>。
-2. **资料** Tab → **语言** 卡片。
+2. **资料** 页签 → **语言** 区域。
 3. 说明：**选择管理后台界面语言。**
 4. 在下拉框选择语言（如 English、简体中文、繁體中文 等，以列表为准）。
 5. 选择后立即生效，侧栏与 Toast 随语言刷新。
 
-侧栏底部的 **语言** 入口（`sidebar.language`）与此处设置同一套逻辑。
+侧栏底部的 **语言** 入口与此处设置同一套逻辑。
 
 ---
 

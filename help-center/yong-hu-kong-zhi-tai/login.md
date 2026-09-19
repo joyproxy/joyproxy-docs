@@ -8,7 +8,7 @@
 
 ## 邮箱与密码
 
-| 元素 | 文案（`auth.login`） |
+| 元素 | 文案 |
 | --- | --- |
 | 标题 | **登录** |
 | 副标题 | **欢迎回到 JoyProxy** |
@@ -42,4 +42,4 @@
 
 - **我的账户** → **安全与 API** 设置 <a href="idle-sign-out.md" target="_blank" rel="noopener noreferrer">无操作退出时间</a>。
 - 勿在工单或聊天中发送各类 <a href="rotate-token.md" target="_blank" rel="noopener noreferrer">Token</a>。
-- 共用设备用完后点击侧栏 **退出登录**（`sidebar.logout`）。
+- 共用设备用完后点击侧栏 **退出登录**。

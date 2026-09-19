@@ -8,7 +8,7 @@
 
 1. 注册或登录时若提示账户未激活，查收注册邮箱（含垃圾邮件文件夹）。
 2. 点击邮件中的激活链接，浏览器会打开 <a href="https://www.joyproxy.com/activate.html" target="_blank" rel="noopener noreferrer">activate.html</a>。
-3. 页面标题流程文案（`flow`）：
+3. 页面标题流程文案：
    - 处理中：**正在激活账户…**
    - 成功：**账户已激活！** → **登录**
    - 失败：**激活失败** — **激活链接无效或已过期。**

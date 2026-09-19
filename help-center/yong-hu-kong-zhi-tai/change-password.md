@@ -1,6 +1,6 @@
 # 修改密码
 
-在 **我的账户** → **资料** Tab 更新登录密码。
+在 **我的账户** → **资料** 中更新登录密码。
 
 <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">我的账户</a>
 
@@ -8,7 +8,7 @@
 
 ## 步骤
 
-1. 侧栏 **我的账户** → 选择 **资料** Tab（`settingsPage.tabProfile`）。
+1. 侧栏 **我的账户** → 打开 **资料** 页签。
 2. 在 **修改密码** 卡片填写：
    - **目前密码**
    - **新密码**

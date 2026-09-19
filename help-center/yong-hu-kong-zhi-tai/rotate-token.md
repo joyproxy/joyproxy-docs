@@ -1,6 +1,6 @@
 # 主用户与自动化 Token
 
-JoyProxy 有多种 Token，**不可混用**。网页抓取控制台内另有 **JoyProxy Token 类型说明**（`unblocker.tokenGuideTitle`）。
+JoyProxy 有多种 Token，**不可混用**。网页抓取控制台内另有 **JoyProxy Token 类型说明**。
 
 ---
 
@@ -13,9 +13,9 @@ JoyProxy 有多种 Token，**不可混用**。网页抓取控制台内另有 **J
 | **AI Token** | AI 辅助提取代理 | 提取相关 AI 面板 |
 | **Scraping API Token** | 仅 `/v1/fetch` 等网页抓取 API | **网页抓取** → **API 中心** |
 
-主用户说明（`settingsPage.masterTokenNote`）：**用于账户管理与购买（OpenAPI 下单、余额等）。不能提取代理 IP、不能使用 AI、不能调用 网页抓取 API。**
+主用户说明：**用于账户管理与购买（OpenAPI 下单、余额等）。不能提取代理 IP、不能使用 AI、不能调用 网页抓取 API。**
 
-Scraping 说明（`pgTokenDesc`）：**仅用于公网 API，不能提取代理、不能使用 AI、不能管理账户。**
+Scraping 说明：**仅用于公网 API，不能提取代理、不能使用 AI、不能管理账户。**
 
 HTTP 细节：<a href="../zui-jia-shi-jian/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>
 
@@ -37,11 +37,11 @@ HTTP 细节：<a href="../zui-jia-shi-jian/openapi-center.md" target="_blank" re
 
 ## 轮换 Scraping API Token
 
-1. <a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取控制台</a> → **API 中心**（`?view=playground`）。
+1. <a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取控制台</a> → **API 中心** 页签。
 2. **Scraping API Token** → **轮换**。
 3. 确认：**确定轮换 Scraping API Token？旧 Token 将立即失效。**
 
-未购买 Credits 时占位：**请先购买 Credits**（`pgTokenNoProduct`）。
+未购买 Credits 时占位：**请先购买 Credits**。
 
 ---
 

@@ -6,10 +6,10 @@
 
 ## 设置位置
 
-1. <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">我的账户</a> → **安全与 API** Tab（`settingsPage.tabSecurity`）。
+1. <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">我的账户</a> → **安全与 API** 页签。
 2. **无操作退出时间** 卡片。
 3. 说明：**超过该时长没有任何操作（浏览页面、调用后台接口等）将自动退出登录；有活动时会续期。**
-4. 下拉选项（`settingsPage.sessionTtl*`）：
+4. 下拉选项：
 
 | 选项 |
 | --- |
