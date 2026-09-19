@@ -90,41 +90,41 @@
 ## 最佳实践
 
 * <a href="best-practices/browser/chrome-edge.md" target="_blank" rel="noopener noreferrer">电脑与常用浏览器</a>
-    * <a href="best-practices/browser/chrome-edge.md" target="_blank" rel="noopener noreferrer">电脑用 Chrome / Edge 怎么挂代理上网</a>
-    * <a href="best-practices/browser/firefox.md" target="_blank" rel="noopener noreferrer">Firefox 火狐浏览器怎么单独设置代理</a>
-    * <a href="best-practices/browser/windows.md" target="_blank" rel="noopener noreferrer">Windows 电脑怎么设置全局代理网络</a>
-    * <a href="best-practices/browser/mac.md" target="_blank" rel="noopener noreferrer">Mac 苹果电脑怎么在系统里设置代理</a>
-    * <a href="best-practices/browser/extension.md" target="_blank" rel="noopener noreferrer">用官方浏览器插件一键开关和切换线路</a>
-    * <a href="best-practices/browser/verify-proxy.md" target="_blank" rel="noopener noreferrer">怎么检查代理到底有没有生效、出口 IP 是哪里</a>
+    * <a href="best-practices/browser/chrome-edge.md" target="_blank" rel="noopener noreferrer">Chrome 与 Edge 浏览器配置代理指南</a>
+    * <a href="best-practices/browser/firefox.md" target="_blank" rel="noopener noreferrer">Firefox 火狐浏览器代理配置指南</a>
+    * <a href="best-practices/browser/windows.md" target="_blank" rel="noopener noreferrer">Windows 操作系统代理配置指南</a>
+    * <a href="best-practices/browser/mac.md" target="_blank" rel="noopener noreferrer">Mac 操作系统代理配置指南</a>
+    * <a href="best-practices/browser/extension.md" target="_blank" rel="noopener noreferrer">使用官方浏览器扩展管理与切换代理</a>
+    * <a href="best-practices/browser/verify-proxy.md" target="_blank" rel="noopener noreferrer">代理连通性与出口 IP 验证指南</a>
 * <a href="best-practices/mobile/android-app.md" target="_blank" rel="noopener noreferrer">手机与模拟器</a>
-    * <a href="best-practices/mobile/android-app.md" target="_blank" rel="noopener noreferrer">安卓手机怎么用官方 App 让指定软件走代理</a>
-    * <a href="best-practices/mobile/android-wifi.md" target="_blank" rel="noopener noreferrer">安卓手机连 Wi-Fi 怎么手动填代理</a>
-    * <a href="best-practices/mobile/ios.md" target="_blank" rel="noopener noreferrer">苹果手机与 iPad 怎么设置代理 IP</a>
-    * <a href="best-practices/mobile/emulator.md" target="_blank" rel="noopener noreferrer">电脑上的安卓模拟器怎么连代理</a>
-    * <a href="best-practices/mobile/social-and-ads.md" target="_blank" rel="noopener noreferrer">做海外社媒或广告投放时怎么选和用 IP</a>
+    * <a href="best-practices/mobile/android-app.md" target="_blank" rel="noopener noreferrer">Android 客户端配置与应用分流指南</a>
+    * <a href="best-practices/mobile/android-wifi.md" target="_blank" rel="noopener noreferrer">Android 无线网络代理配置教程</a>
+    * <a href="best-practices/mobile/ios.md" target="_blank" rel="noopener noreferrer">iOS 与 iPadOS 设备代理配置教程</a>
+    * <a href="best-practices/mobile/emulator.md" target="_blank" rel="noopener noreferrer">Android 模拟器代理与环境配置指南</a>
+    * <a href="best-practices/mobile/social-and-ads.md" target="_blank" rel="noopener noreferrer">社交网络与广告矩阵代理选择指南</a>
 * <a href="best-practices/fingerprint/why-static.md" target="_blank" rel="noopener noreferrer">防关联与指纹浏览器</a>
-    * <a href="best-practices/fingerprint/why-static.md" target="_blank" rel="noopener noreferrer">做多账号或跨境店铺为什么必须一人一静态 IP</a>
-    * <a href="best-practices/fingerprint/adspower.md" target="_blank" rel="noopener noreferrer">AdsPower 指纹浏览器手把手配代理教程</a>
-    * <a href="best-practices/fingerprint/hubstudio.md" target="_blank" rel="noopener noreferrer">Hubstudio 指纹浏览器手把手配代理教程</a>
-    * <a href="best-practices/fingerprint/bitbrowser.md" target="_blank" rel="noopener noreferrer">比特浏览器手把手配代理教程</a>
-    * <a href="best-practices/fingerprint/other-antidetect.md" target="_blank" rel="noopener noreferrer">Multilogin 等海外指纹浏览器怎么填代理</a>
-    * <a href="best-practices/fingerprint/after-new-ip.md" target="_blank" rel="noopener noreferrer">更换出口 IP 后怎么安全更新浏览器环境</a>
+    * <a href="best-practices/fingerprint/why-static.md" target="_blank" rel="noopener noreferrer">多账号防关联与静态独享代理使用原理</a>
+    * <a href="best-practices/fingerprint/adspower.md" target="_blank" rel="noopener noreferrer">AdsPower 指纹浏览器代理配置指南</a>
+    * <a href="best-practices/fingerprint/hubstudio.md" target="_blank" rel="noopener noreferrer">Hubstudio 指纹浏览器代理配置指南</a>
+    * <a href="best-practices/fingerprint/bitbrowser.md" target="_blank" rel="noopener noreferrer">比特浏览器代理配置与批量导入指南</a>
+    * <a href="best-practices/fingerprint/other-antidetect.md" target="_blank" rel="noopener noreferrer">Multilogin 及主流指纹浏览器代理配置指南</a>
+    * <a href="best-practices/fingerprint/after-new-ip.md" target="_blank" rel="noopener noreferrer">更换出口 IP 后浏览器环境更新指南</a>
 * <a href="best-practices/developer/buy-and-renew.md" target="_blank" rel="noopener noreferrer">代码开发与接口集成</a>
-    * <a href="best-practices/developer/buy-and-renew.md" target="_blank" rel="noopener noreferrer">怎么用接口查余额、自动买代理和续费订单</a>
-    * <a href="best-practices/developer/sync-whitelist.md" target="_blank" rel="noopener noreferrer">多台服务器部署时怎么用接口自动加白名单</a>
-    * <a href="best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">怎么写程序批量提取代理并维护本地可用池</a>
-    * <a href="best-practices/developer/fetch-pages.md" target="_blank" rel="noopener noreferrer">遇到反爬和动态网页怎么用抓取接口直接拿内容</a>
-    * <a href="best-practices/developer/python.md" target="_blank" rel="noopener noreferrer">Python 发请求怎么挂代理与遇到报错自动重试</a>
-    * <a href="best-practices/developer/scrapy.md" target="_blank" rel="noopener noreferrer">Scrapy 爬虫项目里怎么实现每次请求自动换 IP</a>
-    * <a href="best-practices/developer/playwright.md" target="_blank" rel="noopener noreferrer">Playwright / Puppeteer 自动化测试怎么挂代理</a>
-    * <a href="best-practices/developer/ai.md" target="_blank" rel="noopener noreferrer">怎么在 Cursor 或 AI 助手里直接调用代理能力</a>
+    * <a href="best-practices/developer/buy-and-renew.md" target="_blank" rel="noopener noreferrer">通过 API 查询余额、创建订单与自动续费</a>
+    * <a href="best-practices/developer/sync-whitelist.md" target="_blank" rel="noopener noreferrer">服务器部署时通过 API 自动上报 IP 白名单</a>
+    * <a href="best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">代理 IP 程序化提取与本地代理池构建</a>
+    * <a href="best-practices/developer/fetch-pages.md" target="_blank" rel="noopener noreferrer">使用网页抓取 API 处理动态渲染与反爬保护</a>
+    * <a href="best-practices/developer/python.md" target="_blank" rel="noopener noreferrer">Python 代理网络集成与失败自动重试机制</a>
+    * <a href="best-practices/developer/scrapy.md" target="_blank" rel="noopener noreferrer">Scrapy 爬虫框架自动轮换 IP 中间件开发</a>
+    * <a href="best-practices/developer/playwright.md" target="_blank" rel="noopener noreferrer">Playwright 与 Puppeteer 自动化代理集成</a>
+    * <a href="best-practices/developer/ai.md" target="_blank" rel="noopener noreferrer">在 Cursor 及 AI 智能体中集成 JoyProxy 接口</a>
 
 ## 常见问题
 
 * <a href="faq/products.md" target="_blank" rel="noopener noreferrer">产品与网络选型</a>
 * <a href="faq/proxies.md" target="_blank" rel="noopener noreferrer">代理提取与使用</a>
-* <a href="faq/scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取 API 常见问题</a>
-* <a href="faq/software.md" target="_blank" rel="noopener noreferrer">客户端与开源工具</a>
 * <a href="faq/security.md" target="_blank" rel="noopener noreferrer">认证授权与账户安全</a>
+* <a href="faq/scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取 API 使用</a>
+* <a href="faq/software.md" target="_blank" rel="noopener noreferrer">客户端与开源工具</a>
 * <a href="faq/billing.md" target="_blank" rel="noopener noreferrer">购买、计费与财务账单</a>
 * <a href="faq/troubleshooting.md" target="_blank" rel="noopener noreferrer">常见报错与连接排查</a>
