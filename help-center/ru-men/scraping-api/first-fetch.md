@@ -36,7 +36,6 @@ curl -X GET "https://api.joyproxy.com/v1/fetch?token=YOUR_SCRAPING_TOKEN&url=htt
 {% tab title="Python (Requests)" %}
 ```python
 import requests
-import urllib.parse
 
 token = "YOUR_SCRAPING_TOKEN"
 target_url = "https://example.com"

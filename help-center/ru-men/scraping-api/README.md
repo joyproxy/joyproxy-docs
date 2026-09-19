@@ -21,7 +21,7 @@
 
 1. **仅成功才扣积分（0 扣款保证）**：请求只有返回 HTTP Status 2xx 且 Body 包含有效内容时才扣除积分。若目标站点报错、超时或拦截，本次请求不扣除任何积分。
 2. **托管 JS 渲染与高级反爬绕过**：只需在请求参数中传入 `render=true` 即可启用云端 Headless 浏览器渲染；传入 `super=true` 可绕过 Cloudflare 等顶级 WAF 验证。
-3. **结构化数据插件（Plugins）**：提供 Amazon、Google Search、YouTube、Google Maps 等平台专属插件，直接返回格式化的 JSON 数据。
+3. **结构化数据插件（Plugins）**：提供 Amazon、Google Search、Google Maps、YouTube 等平台专属插件，直接返回格式化的 JSON 数据。
 4. **支持同步与异步队列（Async API）**：支持毫秒级同步请求，也支持百万级大批量抓取任务的异步队列提交与轮询。
 
 ---
@@ -31,12 +31,12 @@
 建议按顺序阅读以下指南：
 
 1. [快速开始](quick-start.md) — 4 步极简接入指南与 API Token 说明
-2. [购买积分包与并发限制](buy-credits.md) — 积分购买规则与并发线程（Concurrency）提升
+2. [购买积分包与并发限制](buy-credits.md) — 积分购买规则与并发限制（Concurrency Rules）
 3. [在控制台 API 中心测试抓取](first-fetch.md) — 控制台 Playground 可视化调试与代码生成
 4. [抓取参数与积分消耗标准](parameters.md) — 详解 render/super/geoCode 参数与 1/5/10/25 积分扣费
 5. [结构化数据插件 API](plugins.md) — 电商与搜索引擎专用 JSON 插件接口
 6. [异步队列任务 API](async-api.md) — 大批量/耗时长任务的 Async API 提交与轮询
 7. [查看用量与抓取日志](usage.md) — 控制台用量看板与实时请求日志（Request Logs）
-8. [响应码与常见报错](response-codes.md) — 401/402/429/502 常见报错排查
-9. [受限目标与合规说明](restricted-targets.md) — 合规要求与禁止抓取范围
+8. [响应码与常见报错](response-codes.md) — 401/402/429/502 常见报错排查与 0 扣费验证
+9. [受限目标与合规说明](restricted-targets.md) — 高风险禁止抓取目标合规规约
 10. [查询支付记录与下载凭证](payments-and-invoices.md) — 交易明细与 PDF 收据下载

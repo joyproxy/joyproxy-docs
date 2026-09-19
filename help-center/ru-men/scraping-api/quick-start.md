@@ -12,7 +12,8 @@
 1. 登录 [JoyProxy 控制台](https://www.joyproxy.com/admin-overview.html)，进入左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)** 页面。
 2. 选择 **网页抓取 API（Web Scraping API）** 标签页。
 3. 选择预设积分套餐包（如 **$5 / 50K 积分**）或输入自定义积分数量（最少 10K 积分起）。
-4. 选择支付方式（账户余额、信用卡、PayPal、微信支付、USDT 等）完成支付。购买后积分即时到账，**永久有效不过期**。
+4. 选择支付渠道：支持 **账户余额（Balance）**、**信用卡 / 借记卡（Credit Card）**、**PayPal**、**Apple Pay**、**Google Pay**、**微信支付（WeChat Pay）**、**USDT（TRC20）** 及 **UPI（印度支付）**。
+5. 完成支付后积分即时到账，**永久有效不过期**。
 
 ---
 
@@ -21,8 +22,8 @@
 购买积分后，系统会自动为你的账户生成专属的 **Scraping API Token**：
 
 1. 进入左侧菜单 **[网页抓取 API（Web Scraping API）](https://www.joyproxy.com/admin-web-unblocker.html)** 控制台页面。
-2. 切换到 **API 中心（API Center）** 标签页（或右上角 **API 文档 Documentation**）。
-3. 在 **API Token** 框中点击 **复制（Copy）** 按钮，复制你的凭据。
+2. 切换到 **API 中心（API Center）** 标签页（或点击右上角 **API 文档 Documentation**）。
+3. 在 **API Token** 文本框中点击 **复制（Copy）** 按钮，复制你的凭据。
 
 > **安全提示与 Token 轮换（Rotate Token）**  
 > - **专码专用**：Scraping API Token 专门用于网页抓取 API，不能用于提取代理 IP 或主用户 OpenAPI 下单。  

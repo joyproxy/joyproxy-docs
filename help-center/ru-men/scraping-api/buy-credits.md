@@ -11,7 +11,7 @@
 3. 选购套餐：
    - **预设积分套餐包（Preset Packs）**：如 $5 / $20 / $50 / $100 等多种积分包。
    - **自定义积分包（Custom Credits）**：可按需输入任意积分数量（最少 10,000 积分起）。
-4. 结算支付：支持 **账户余额（Balance）**、**信用卡/借记卡（Credit Card）**、**PayPal**、**Apple Pay / Google Pay**、**微信支付（WeChat Pay）** 以及 **USDT（TRC20）**。
+4. 结算支付：支持 **账户余额（Balance）**、**信用卡 / 借记卡（Credit Card）**、**PayPal**、**Apple Pay**、**Google Pay**、**微信支付（WeChat Pay）**、**USDT（TRC20）** 以及 **UPI（印度支付）**。
 5. 结账优惠：新账户充值结算时若有 **$5 注册赠金（Bonus Credit）**，可用于抵扣订单。
 6. **积分有效期**：购买的所有 Credits 积分**永久有效，绝不过期**。
 
@@ -19,7 +19,7 @@
 
 ## 并发限制与规则（Concurrency Rules）
 
-并发控制同一时间可运行的请求数；Credits 计费规则请见「Credit balance → 说明」。
+并发控制同一时间可运行的请求数；Credits 计费规则请见控制台「Credit balance → 说明」。
 
 1. **当前 / 上限的定义**：
    在控制台中看到的「当前 / 上限」（如 `5 / 20`）表示此刻正在进行中的请求数与允许的并发槽位。
