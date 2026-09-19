@@ -1,25 +1,40 @@
 # 登录
 
-登录 JoyProxy 控制台以购买产品、生成端点并管理账单。
+登录后进入 JoyProxy 管理后台（控制台），默认跳转到 [概览（Overview）](overview.md)。
 
-## 登录步骤
+[登录](https://www.joyproxy.com/login.html)
 
-1. 访问<a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">登录</a>。
-2. 输入**邮箱**与**密码**。
-3. 成功后将跳转到<a href="overview.md" target="_blank" rel="noopener noreferrer">概览</a>控制台。
+---
 
-## 会话与安全
+## 邮箱与密码登录
 
-- 在共享设备上请定期使用<a href="change-password.md" target="_blank" rel="noopener noreferrer">修改密码</a>。
-- 在办公室 PC 上可配置<a href="idle-sign-out.md" target="_blank" rel="noopener noreferrer">空闲自动退出</a>以缩短超时时间。
-- 将 <a href="rotate-token.md" target="_blank" rel="noopener noreferrer">API Token</a> 存放在密钥管理器中——不要放在聊天或工单里。
+页面标题 **登录**（`login.title`），副标题 **欢迎回到 JoyProxy**（`login.subtitle`）。
 
-## 首次登录检查清单
+1. 填写 **邮箱**、**密码**。
+2. 点击 **登录**（`login.submit`）；处理中显示 **登录中…**。
+3. 忘记密码？点击 **忘记密码？**（`login.forgot`）→ [找回密码](forgot-password.md)。
 
-| 任务 | 链接 |
-| --- | --- |
-| 查看余额与积分 | <a href="overview.md" target="_blank" rel="noopener noreferrer">概览</a> |
-| 复制提取 API URL 用于自动化 | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">Endpoints</a> |
-| 购买首个代理或抓取套餐 | <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买</a> |
+---
 
-新用户？请从<a href="register.md" target="_blank" rel="noopener noreferrer">注册</a>开始。
+## 使用 Google / GitHub 登录
+
+在 **或**（`login.or`）分隔线下方：
+
+- **使用 Google 继续**（`login.google`）
+- **使用 GitHub 继续**（`login.github`）
+
+授权完成后同样进入控制台 **概览**。
+
+---
+
+## 账户尚未激活
+
+若提示 **账户尚未激活。请查收邮件并点击激活链接。**（`login.notActivated`），可点击 **重发激活邮件**（`login.resendActivation`）。详见 [邮箱激活](email-activation.md)。
+
+---
+
+## 登录后安全习惯
+
+- 在 **我的账户** → **资料** 配置 [无操作退出时间](idle-sign-out.md)。
+- 勿在工单或聊天中发送 [Token](rotate-token.md)；使用密钥管理工具保存。
+- 共享电脑用完后点击侧栏 **退出登录**（`sidebar.logout`）。

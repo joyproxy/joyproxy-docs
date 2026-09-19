@@ -1,20 +1,24 @@
-# 空闲自动退出时间
+# 无操作退出时间
 
-控制离开电脑后 JoyProxy 控制台保持登录的时长。较短超时可降低共享或公共电脑上的风险。
+控制台可配置一段时间无操作后自动 **退出登录**，降低共享电脑或长时间挂页的风险。
 
-## 配置
+---
 
-1. 打开<a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">账户设置</a>。
-2. 找到 **Idle sign-out**、**Session timeout** 或类似安全设置。
-3. 选择兼顾便利与安全的时长。
-4. 保存更改。
+## 设置位置
 
-## 建议
+1. [我的账户](https://www.joyproxy.com/admin-settings.html) → **资料** Tab。
+2. 找到 **无操作退出时间**（`settingsPage.sessionTtlTitle`）。
+3. 阅读说明：**超过该时长没有任何操作（浏览页面、调用后台接口等）将自动退出登录；有活动时会续期。**
+4. 在下拉框选择时长，例如：
+   - **1 小时** / **3 小时** / **6 小时** / **12 小时**
+   - **24 小时（默认）**
+   - **1 天** / **3 天** / **5 天** / **7 天**
+5. 保存后提示 **已保存，会话已更新。**（`settingsPage.sessionTtlSaved`）
 
-| 环境 | 建议 |
-| --- | --- |
-| 个人笔记本 | 默认或中等超时 |
-| 办公室热桌 | 短超时 + 密码管理器 |
-| 服务器跳板机 | 短超时；自动化请用 API Token 而非浏览器会话 |
+---
 
-空闲退出仅影响**网页控制台**。API Token 在您<a href="rotate-token.md" target="_blank" rel="noopener noreferrer">轮换</a>之前仍然有效。
+## 说明
+
+- 「无操作」指未浏览控制台页面、未触发已登录的后台请求等；有活动会重置计时。
+- 自动退出后需重新 **登录**（含 Google / GitHub 方式）。
+- 与 [修改密码](change-password.md) 独立；高敏感环境建议同时缩短本项时长。

@@ -1,25 +1,31 @@
 # 注册
 
-创建 JoyProxy 账户，在同一控制台购买代理流量、抓取积分与软件集成。
+在官网创建 JoyProxy 账户后，即可登录控制台购买代理流量、网页抓取 Credits 或使用开源客户端。
 
-## 步骤
+[创建账号](https://www.joyproxy.com/register.html)
 
-1. 打开<a href="https://www.joyproxy.com/register.html" target="_blank" rel="noopener noreferrer">注册</a>。
-2. 填写邮箱、密码及所需资料字段。
-3. 提交表单。
-4. 若提示，请在首次购买前完成<a href="email-activation.md" target="_blank" rel="noopener noreferrer">邮箱激活</a>。
-5. <a href="login.md" target="_blank" rel="noopener noreferrer">登录</a>并进入<a href="overview.md" target="_blank" rel="noopener noreferrer">控制台概览</a>。
+---
 
-## 注册之后
+## 页面文案与步骤
 
-| 下一步 | 原因 |
-| --- | --- |
-| <a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买</a> | 购买住宅、移动、商业、数据中心或抓取积分 |
-| <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">账户设置</a> | 主用户 Token、语言、安全选项 |
-| <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a> | 结账前对比套餐 |
+注册页标题为 **创建账号**（`register.title`），副标题 **立即开始免费试用**（`register.subtitle`）。
 
-> **提示**
->
-> 新账户可获得 **$5 注册赠金**用于首个符合条件的订单——在控制台结账时若提供选项请应用。
+1. 可选：点击 **使用 Google 继续**（`login.google`）或 **使用 GitHub 继续**（`login.github`）— 与登录页 OAuth 文案一致。
+2. 或使用 **电子邮件** 注册：填写 **电子邮件**、**密码**（占位符：**建立密码（至少 8 位）**）。
+3. 完成安全验证（若页面要求 **请完成安全验证**）。
+4. 点击 **创建账号**（`register.submit`）；提交中显示 **创建中…**。
+5. 若需邮箱验证，按 [邮箱激活](email-activation.md) 完成后再 [登录](login.md)。
 
-已有账户？请使用<a href="login.md" target="_blank" rel="noopener noreferrer">登录</a>。邮箱有问题？参见<a href="email-activation.md" target="_blank" rel="noopener noreferrer">邮箱激活</a>或<a href="forgot-password.md" target="_blank" rel="noopener noreferrer">忘记密码</a>。
+页内横幅：**🎁 新用户注册即送 $5 余额 · 无需信用卡**（`register.signupBonusBanner`）。
+
+已有账号？点击 **登录**（`register.loginLink`）。
+
+---
+
+## 注册后建议路径
+
+1. [登录](login.md) → [概览（Overview）](overview.md) 查看 **账户余额**。
+2. 在侧栏 **代理** 下进入目标网络（如 **住宅代理**），打开 **购买** 页签选购套餐。
+3. 在 **我的账户** → **资料** 查看 **主用户 Token**（仅用于账户与订单 API，不可用于提取 IP）。
+
+定价对比：[定价页](https://www.joyproxy.com/pricing.html)。

@@ -73,22 +73,38 @@
 
 ## 用户控制台
 
+* [控制台导读](yong-hu-kong-zhi-tai/README.md)
+
+### 账户与登录
+
 * [注册](yong-hu-kong-zhi-tai/register.md)
 * [邮箱激活](yong-hu-kong-zhi-tai/email-activation.md)
-* [忘记密码](yong-hu-kong-zhi-tai/forgot-password.md)
 * [登录](yong-hu-kong-zhi-tai/login.md)
-* [控制台概览](yong-hu-kong-zhi-tai/overview.md)
-* [修改密码](yong-hu-kong-zhi-tai/change-password.md)
+* [找回密码](yong-hu-kong-zhi-tai/forgot-password.md)
+
+### 控制台总览
+
+* [概览（Overview）](yong-hu-kong-zhi-tai/overview.md)
+
+### 代理网络控制台
+
+* [住宅代理控制台](yong-hu-kong-zhi-tai/residential-proxies.md)
+* [移动代理控制台](yong-hu-kong-zhi-tai/mobile-proxies.md)
+* [商业 / ISP 控制台](yong-hu-kong-zhi-tai/business-isp-proxies.md)
+* [数据中心控制台](yong-hu-kong-zhi-tai/datacenter-proxies.md)
+* [网页抓取控制台](yong-hu-kong-zhi-tai/web-scraping-api.md)
+
+### 我的账户（My Account）
+
+* [我的账户总览](yong-hu-kong-zhi-tai/my-account.md)
 * [界面语言](yong-hu-kong-zhi-tai/interface-language.md)
-* [空闲退出登录](yong-hu-kong-zhi-tai/idle-sign-out.md)
-* [轮换 Token](yong-hu-kong-zhi-tai/rotate-token.md)
+* [修改密码](yong-hu-kong-zhi-tai/change-password.md)
+* [无操作退出时间](yong-hu-kong-zhi-tai/idle-sign-out.md)
+* [主用户与自动化 Token](yong-hu-kong-zhi-tai/rotate-token.md)
+* [账单与交易记录](yong-hu-kong-zhi-tai/invoices.md)
 * [注销账户](yong-hu-kong-zhi-tai/delete-account.md)
-* [发票](yong-hu-kong-zhi-tai/invoices.md)
-* [住宅代理](yong-hu-kong-zhi-tai/residential-proxies.md)
-* [移动代理](yong-hu-kong-zhi-tai/mobile-proxies.md)
-* [商业 / ISP 代理](yong-hu-kong-zhi-tai/business-isp-proxies.md)
-* [数据中心代理](yong-hu-kong-zhi-tai/datacenter-proxies.md)
-* [网页抓取 API（控制台）](yong-hu-kong-zhi-tai/web-scraping-api.md)
+
+## 服务与支持
 
 ## 服务与支持
 

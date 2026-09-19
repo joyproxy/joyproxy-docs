@@ -1,31 +1,49 @@
-# 轮换 Token
+# 主用户与自动化 Token
 
-JoyProxy 提供多种 Token 用于自动化。轮换会使旧值失效——在生产环境轮换前请先更新脚本。
+JoyProxy 有多种 Token，**不可混用**。界面说明见网页抓取控制台内 **JoyProxy Token 类型说明**（`unblocker.tokenGuideTitle`）及各产品复制面板。
 
-## Token 类型
+---
 
-| Token                       | 典型用途                    | 位置                                                                             |
-| --------------------------- | ----------------------- | ------------------------------------------------------------------------------ |
-| 提取 **API URL**（内含 `token=`） | 端点生成、白名单、凭据             | 在 [Endpoints](https://www.joyproxy.com/admin-ip-extraction-center.html) 复制 URL |
-| **Master User Token**       | 订单与账户管理 API             | [账户设置](https://www.joyproxy.com/admin-settings.html)                           |
-| **Scraping API Token**      | 网页抓取 API                | 网页抓取 API → API Center                                                          |
-| **AI Access Token**         | OpenClaw Skill / AI MCP | [AI 端点生成器](https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai)  |
+## Token 对照表
 
-各操作使用哪种 Token：[OpenAPI Center](../zui-jia-shi-jian/openapi-center.md)。
+| 名称 | 现网标题 | 用途 | 在哪里复制 / 轮换 |
+| --- | --- | --- | --- |
+| 主用户 Token | **主用户 Token** | 账户管理、购买、订单 OpenAPI；**不能**提取 IP、AI、网页抓取 | **我的账户** → **资料** |
+| API Token | **API Token** | 代理 IP 提取（如 `/v2/extract`）；URL 中 `token=` | **提取** 页复制的 **API URL** |
+| AI Token | **AI Token** | AI 辅助提取代理 | 提取相关 AI 面板 |
+| Scraping API Token | **Scraping API Token** | 仅 `/v1/fetch` 等网页抓取 API | **网页抓取** → **API 中心** |
 
-## 轮换 Master User Token
+主用户 Token 脚注（`settingsPage.masterTokenNote`）：**用于账户管理与购买（OpenAPI 下单、余额等）。不能提取代理 IP、不能使用 AI、不能调用网页抓取 API。**
 
-1. 打开[账户设置](https://www.joyproxy.com/admin-settings.html)。
-2. 找到 **Master User Token**。
-3. 点击 **Rotate** 并立即复制新值。
-4. 更新 CI、`.env` 与 [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html) 中保存的授权。
+Scraping 说明（`tokenUnblockerDesc`）：**仅用于网页抓取 API（/v1/fetch），购买 Credits 后在 API 中心显示。**
+
+完整 HTTP 说明：[OpenAPI 中心](../best-practices/openapi-center.md)
+
+---
+
+## 轮换主用户 Token
+
+1. **我的账户** → **资料** → **主用户 Token**。
+2. 点击 **轮换**（`settingsPage.rotate`）。
+3. 确认：**确定立即轮换主用户 Token？现有 Token 将失效，使用它的脚本需更新后才能继续。**
+4. 复制新 Token（**复制** / **显示 Token**）。
+
+---
 
 ## 轮换提取 API Token
 
-在[端点生成/提取中心](https://www.joyproxy.com/admin-ip-extraction-center.html)轮换。轮换后请复制新的 **API URL**——旧提取 URL 将失效。
+在对应网络控制台 **提取** 页重新生成或轮换；**旧 API URL 立即失效**，请整体替换脚本中的 URL。
 
-## 轮换之后
+---
 
-在 [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html) 或网页抓取 API playground 用新 Token 做冒烟测试。
+## 轮换 Scraping API Token
 
-若自动化返回 `401`，请在配置中搜索旧的 URL 或 Token 字符串。
+1. [网页抓取控制台](https://www.joyproxy.com/admin-web-unblocker.html?view=playground) → **API 中心**。
+2. 在 **Scraping API Token** 区域点击 **轮换**（`pgTokenRotate`）。
+3. 确认：**确定轮换 Scraping API Token？旧 Token 将立即失效。**
+
+---
+
+## 轮换后检查
+
+在 [OpenAPI 中心](https://www.joyproxy.com/admin-openapi.html) 或抓取 **API 中心** 试一次请求。若返回 `401`，搜索配置中是否仍残留旧 Token 或旧 API URL。

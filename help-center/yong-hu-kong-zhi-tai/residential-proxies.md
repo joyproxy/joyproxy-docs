@@ -1,54 +1,78 @@
-# 住宅代理
+# 住宅代理控制台
 
-**住宅**分区涵盖家庭 ISP 风格出口，支持**轮换**、**静态**与**定制**模式。
+**住宅代理**（`sidebar.proxyResidential`）覆盖家庭宽带风格出口。控制台支持三种产品形态（购买页与提取页切换）：
 
-登录后从左侧菜单进入。产品背景：[住宅代理](https://www.joyproxy.com/products/proxy-residential.html)。
+[进入控制台](https://www.joyproxy.com/admin-proxy-residential.html) · [产品介绍](https://www.joyproxy.com/products/proxy-residential.html)
 
-## 页签与作用
+控制台页顶标题为 **代理控制台**；左侧主导航在 **代理** 分组下进入本网络。各页签名称与副标题与现网 `zh-CN` 界面一致。
 
-### 购买
+---
 
-购买新流量或线路。
+## 页签说明
 
-* **轮换** — 流量套餐；在[购买 → 轮换](https://www.joyproxy.com/admin-purchase.html?tab=short-term)结账，网络选 **Residential**
-* **静态** — 锁定国家线路；[购买 → 静态](https://www.joyproxy.com/admin-purchase.html?tab=long-term)
-* **定制** — 按端口套餐；[购买 → 定制](https://www.joyproxy.com/admin-purchase.html?tab=custom-ip)
+### 购买（Buy）
 
-### My Proxies
+副标题：**套餐与支付**。
 
-查看生效与过期订单、剩余流量、有效期及定制端口分配（[分配地域](../ru-men/custom/assign-region.md)、[轮换](../ru-men/custom/rotation-and-refresh.md)）。
+在 **购买** 页签选择模式（`proxyConsole`）：
 
-* 轮换 — [自动购买流量](../ru-men/rotating/auto-buy-traffic.md)
-* 静态 — [自动续费](../ru-men/static/auto-renew.md)与[新 IP](../ru-men/static/refresh-ip.md)
-* 定制 — [自动续费](../ru-men/custom/auto-renew.md)与[新 IP](../ru-men/custom/rotation-and-refresh.md)
+| 模式 | 文案 |
+| --- | --- |
+| 动态 | **动态**（`modeRotating`） |
+| 静态独享 | **静态独享**（`modeStatic`） |
+| 自定义独享 | **自定义独享**（`modeCustom`） |
 
-### Users & Whitelist
+- 动态：预付流量 GB，网关 `gate.joyproxy.com:9001` — [动态代理](../getting-started/rotating/README.md)
+- 静态独享：固定国家线路 — [静态独享代理](../getting-started/static/README.md)
+- 自定义独享：按端口与地域 — [自定义独享代理](../getting-started/custom/README.md)
 
-在本页签创建**用户名/密码**。静态与定制也可使用 **IP 白名单**条目。
+操作步骤与支付渠道见「产品与服务」对应章节，不在本篇重复教程。
 
-[Users & Whitelist](https://www.joyproxy.com/admin-authorization.html)
+### 已购
 
-### Endpoints
+副标题：**在途与库存**。
 
-网页生成器与快捷复制：
+查看当前生效订单、分配状态、剩余流量或独享端口有效期。可在此进入续费、自动续费或更换出口 IP 等操作（以页面按钮为准）。
 
-* 轮换 → `gate.joyproxy.com:9001`
-* 静态 / 定制 → 专用 `host:port`
+- 动态：[自动购买流量](../getting-started/rotating/auto-buy-traffic.md)、[查看已购流量](../getting-started/rotating/view-traffic.md)
+- 静态：[自动续费](../getting-started/static/auto-renew.md)、[更换出口 IP](../getting-started/static/refresh-ip.md)
+- 自定义：[自动续费](../getting-started/custom/auto-renew.md)、[定时轮换与更换 IP](../getting-started/custom/rotation-and-refresh.md)
 
-指南：[轮换](../ru-men/rotating/) · [静态](../ru-men/static/) · [定制](../ru-men/custom/)
+### 账密与白名单（Users & Whitelist）
 
-### 用量
+副标题：**用户名密码与白名单**。
 
-所选网络的**流量**与**订单**。轮换配额（已用 / 剩余 GB）与订单列表：[用量与订单](../ru-men/rotating/view-traffic.md)。
+- 创建代理连接用的 **用户名 / 密码**（动态线路提取前须先完成此步；界面提示：**提取 IP 前须先创建代理账密**）。
+- 静态 / 自定义独享可配置 **IP 白名单**，从已加白 IP 连接时可免账密（以产品规则为准）。
 
-### API Center
+详见：[设置代理账密与白名单](../getting-started/rotating/authentication.md)（动态）· [静态](../getting-started/static/authentication.md) · [自定义独享](../getting-started/custom/authentication.md)
 
-快捷复制 Endpoints **API URL** 并打开 playground。完整 HTTP 参考：[OpenAPI Center](../zui-jia-shi-jian/openapi-center.md)。
+### 提取（Endpoints）
 
-## 快速决策
+副标题：**提取代理地址**。
 
-| 需求          | 模式 |
-| ----------- | -- |
-| 大量 IP、共享网关  | 轮换 |
-| 固定身份数周以上    | 静态 |
-| 按端口地域 + 计时器 | 定制 |
+使用网页生成器选择 **动态**、**静态独享** 或 **自定义独享**（视本网络支持的模式而定），生成 `host:port`、完整用户名与可复制 **API URL**。
+
+详见：[提取代理 IP](../getting-started/rotating/extract-ip.md) 及各网络产品文档中的「提取」章节。
+
+### 用量（Usage）
+
+副标题：**流量与订单**。
+
+查看本网络下的流量消耗、订单列表与剩余额度。动态产品展示预付流量包的已用 / 剩余 GB；独享产品展示端口与到期状态。
+
+详见：[查看已购流量](../getting-started/rotating/view-traffic.md) · [查看已购线路](../getting-started/static/view-lines.md) · [查看与管理端口](../getting-started/custom/view-ports.md)
+
+### API 中心（API Center）
+
+副标题：**OpenAPI 与在线调试**。
+
+在新窗口打开 [OpenAPI 中心](https://www.joyproxy.com/admin-openapi.html)，调试提取、订单等 HTTP 接口。提取类接口使用 **Endpoints** 页复制的 **API URL** 中的 Token，勿与 **主用户 Token** 混用。
+
+详见：[OpenAPI 中心](../best-practices/openapi-center.md)
+
+---
+
+## 侧栏快捷购买
+
+在 **代理** 子菜单中，各网络名称右侧有 **购买** 图标按钮（`sidebar.proxyQuickBuy`），等同于进入本控制台并打开 **购买** 页签（URL 参数 `?view=buy`）。
