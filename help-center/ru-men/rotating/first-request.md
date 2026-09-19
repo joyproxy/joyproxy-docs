@@ -1,59 +1,77 @@
-# 首次请求
+# 发起代理请求
 
-本页假设您已具备：
+拿到生成链接后，你可以使用各种编程语言或客户端连接动态代理网关。
 
-1. 生效的轮换套餐 — [购买](purchase.md)
-2. 已配置认证 — [认证方式](authentication.md)
-3. 已生成用户名 — [生成端点](generate-endpoints.md)
+网关固定地址：`gate.joyproxy.com:9001`
 
-在将生产爬虫指向网关前请先测试。当响应为非公网 IP 时，表示代理可用。
+---
 
-## cURL（最快检查）
+## 代码示例
 
-使用 **HTTP** 代理协议打开 **HTTPS** 网站：
+请将 `GENERATED_USER` 替换为提取到的完整长用户名，`YOUR_PASS` 替换为代理密码：
 
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
+{% endtab %}
 
-SOCKS5：
+{% tab title="Python" %}
+```python
+import requests
 
-```bash
-curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
+proxy = "http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001"
+res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
+print("出口 IP:", res.text)
 ```
+{% endtab %}
 
-输出为单个 IPv4/IPv6 表示网关已认证并分配出口 IP。
+{% tab title="Node.js" %}
+```javascript
+const { HttpsProxyAgent } = require("https-proxy-agent");
 
-## 其他工具填写方式
-
-| 工具中的标签   | JoyProxy 值                            |
-| -------- | ------------------------------------- |
-| 代理类型     | HTTP 或 SOCKS5（均可打开 HTTPS 网站）          |
-| 服务器 / 主机 | `gate.joyproxy.com`                   |
-| 端口       | `9001`                                |
-| 用户名      | 完整生成用户名                               |
-| 密码       | Users & Whitelist → Username/Password |
-
-URI 形式：
-
+const agent = new HttpsProxyAgent("http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001");
+const res = await fetch("https://api.ipify.org", { agent });
+console.log("出口 IP:", await res.text());
 ```
-http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
-socks5://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
+{% endtab %}
+
+{% tab title="Go" %}
+```go
+package main
+
+import (
+  "io"
+  "log"
+  "net/http"
+  "net/url"
+)
+
+func main() {
+  proxyURL, _ := url.Parse("http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001")
+  client := &http.Client{
+    Transport: &http.Transport{Proxy: http.ProxyURL(proxyURL)},
+  }
+  resp, err := client.Get("https://api.ipify.org")
+  if err != nil {
+    log.Fatal(err)
+  }
+  defer resp.Body.Close()
+  b, _ := io.ReadAll(resp.Body)
+  log.Println("出口 IP:", string(b))
+}
 ```
+{% endtab %}
+{% endtabs %}
 
-Endpoints 页可粘贴 cURL、Python、Node.js、PHP 或 Go 就绪片段，已包含上次生成的用户名。
+---
 
-## 若请求失败
+## 常用软件与客户端配置
 
-按顺序排查：
+如需在浏览器、测试工具或桌面程序中使用动态代理：
 
-1. **407 / Proxy Authentication Required** — 密码须为 Username/Password 密钥。用户名须为 **生成**字符串，而非控制台邮箱或短 User/Pass 名。修改密码后重试。见 [认证方式](authentication.md)。完整表：[响应码](response-codes.md)。
-2. **超时** — 确认 `gate.joyproxy.com` 与端口 `9001`。先试 HTTP 代理类型。见 [协议](protocols.md)。
-3. **国家错误** — 在 Endpoints 选择国家后生成新用户名。勿编辑旧用户名。
-4. **订单未生效** — 在 [My Proxies](https://www.joyproxy.com/admin-my-orders.html) 或用量页签查看剩余 GB。
-
-仍无法解决？[在线客服](../../fu-wu-yu-zhi-chi/live-chat.md)并提供**已打码**的 curl（切勿发送真实密码）。
-
-## 下一步
-
-复制您语言的片段：[代码示例](code-examples.md)。协议选择：[协议](protocols.md)。仅测 Chrome 请用[浏览器扩展](../software/browser-extension.md)。
+- **Chrome / Edge 浏览器**：配合 [JoyProxy 浏览器扩展](../../getting-started/software/browser-extension.md)。
+- **快捷测试连通性**：使用 [代理检测工具](../../getting-started/software/proxy-tester.md)。
+- **本地网关转发**：使用 [代理服务器](../../getting-started/software/proxy-server.md)。
+- **指纹浏览器与第三方软件**：参见 [第三方软件配合代理](../../best-practices/third-party-static-proxies.md)。

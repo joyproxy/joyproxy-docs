@@ -1,35 +1,18 @@
 # 自动购买流量
 
-当轮换**网络线路**（住宅、移动或商业 / ISP）剩余 GB 达到您设置的触发值时，JoyProxy 会购买所选套餐并从**账户余额**扣款。可随时关闭。
+当动态代理的剩余流量（GB）达到你设定的阈值时，JoyProxy 会从你的**账户余额**中自动扣款并购买预设的流量包，防止程序因流量耗尽而中断。
 
-请保持足够余额以支付下一包。在 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a> 对比套餐价格。
+## 开启方法
 
-## 开启
+1. 打开 **[我的代理](https://www.joyproxy.com/admin-my-orders.html)**。
+2. 找到动态代理区域，打开 **自动购买流量（Auto-buy traffic）** 开关。
+3. 在弹窗中设置：
+   - **每次自动购买的流量包**：选择所需的 GB 套餐。
+   - **触发阈值**：当剩余流量低于或等于该值（GB）时自动触发购买。
+4. 确认扣款预估并保存开启。
 
-1. 在对应网络（住宅 / 移动 / 商业）打开 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>。
-2. 打开 **Auto-buy traffic**。
-3. 选择 **Pack to buy each time**。
-4. 设置 **Buy when remaining is at or below**（GB）。
-5. 确认预估金额，然后 **Turn on auto purchase**。
+## 注意事项
 
-若剩余已低于或等于触发值，弹窗提供 **Enable and buy now** — 将立即扣费并增加该套餐 GB。
-
-## 弹窗字段
-
-| 字段 | 含义 |
-| --- | --- |
-| Pack to buy each time | 该网络的目录套餐 |
-| Buy when remaining is at or below | **本线路**剩余 GB 触发购买 |
-| Current remaining | 当前线路剩余 GB |
-| Current balance | 用于扣款的账户余额 |
-| Per-day count | 弹窗显示本线路每日自动购买次数上限 |
-
-每条网络线路有独立自动购买规则。住宅、移动与商业 / ISP 分别设置。
-
-## 关闭
-
-使用 **Turn off auto purchase**。剩余流量不变。
-
-## 下一步
-
-在 <a href="usage-and-orders.md" target="_blank" rel="noopener noreferrer">用量与订单</a> 关注剩余 GB，或继续配置：<a href="authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。
+- 确保账户余额充足以完成自动扣款。
+- 每类网络（住宅 / 移动 / 商业）需分别配置各自的自动购买规则。
+- 随时可以关闭自动购买开关，关闭后已有剩余流量不受影响。

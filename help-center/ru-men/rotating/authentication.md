@@ -1,87 +1,27 @@
-# 认证方式
+# 设置代理账密与白名单
 
-轮换使用 **Username/Password**。打开 [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html)（住宅 / 移动 / 商业控制台同一页面）。
+在连接动态代理网关之前，你需要先在控制台中设置代理认证方式。
 
-网站登录与代理登录**不同**。重置控制台密码**不会**改变代理密码 — [忘记密码](../../yong-hu-kong-zhi-tai/forgot-password.md) 仅用于网站。
+*注意：代理连接密码与 JoyProxy 官网登录密码是独立的，重置官网登录密码不会修改代理连接密码。*
 
-## Username/Password（推荐）
+## 方式一：设置代理账号密码（推荐）
 
-这是轮换客户端使用的方式。请先在 **Username/Password** 页签创建。
+1. 进入 **[用户与白名单](https://www.joyproxy.com/admin-authorization.html)** 页面。
+2. 切换到 **Username/Password** 页签。
+3. 选择模式：
+   - **Shared**：全产品共用同一组代理账密。
+   - **Per product**：不同网络类型使用各自独立的账密。
+4. 新建凭据：
+   - **代理用户名**：字母开头，仅含小写字母与数字（a–z, 0–9），最长 16 位。
+   - **代理密码**：至少 6 位。
+5. 点击保存，并妥善保管设置的**代理密码**。
 
-### 凭据模式
+> **重要**：此处设置的短用户名仅用于标识凭据，实际连接动态代理时需填入[提取页面](extract-ip.md)生成的**完整长用户名**。
 
-| Users & Whitelist 上的模式 | 效果                                                          |
-| ---------------------- | ----------------------------------------------------------- |
-| **Shared**             | 账户下所有产品共用一个 User/Pass                                       |
-| **Per product**        | 每个网络类型（Residential、Mobile、Business、Datacenter）各一个 User/Pass |
+## 方式二：设置 IP 白名单
 
-一个密钥足够时选 Shared。各网络需独立密钥时选 Per product。
+如果你的客户端服务器拥有固定公网 IPv4 地址，可通过白名单实现免密连接：
 
-### 创建 User/Pass
-
-1. 打开 [Users & Whitelist](https://www.joyproxy.com/admin-authorization.html) → **Username/Password**。
-2. 选择 **Shared** 或 **Per product**。
-3. 创建凭据：
-   * 用户名：以**字母**开头，仅小写 **a–z** 与 **0–9**，**最多 16** 字符。
-   * 密码：**至少 6** 字符。
-4. 保存。将**密码**复制到密码管理器或 `.env`。
-
-此页用户名是 **User/Pass 名称**。应用发往轮换网关的字符串是 Endpoints 的**长生成用户名**。
-
-### 客户端填写（轮换）
-
-| 客户端字段 | 值                                             |
-| ----- | --------------------------------------------- |
-| 代理主机  | `gate.joyproxy.com`                           |
-| 代理端口  | `9001`                                        |
-| 代理类型  | HTTP 或 SOCKS5（均可打开 HTTPS 网站）                  |
-| 代理用户名 | [Endpoints](generate-endpoints.md) 的**生成用户名** |
-| 代理密码  | Username/Password 的密码                         |
-
-```
-http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
-```
-
-> **重要**
->
-> 勿将短 Users & Whitelist 名称填入轮换用户名字段。请粘贴 Endpoints 生成的字符串。
-
-### 修改密码
-
-在 Username/Password 行使用 **Edit** 设置新密码，然后更新所有客户端中的 `YOUR_PASS`。生成的轮换用户名可保持不变。
-
-### 407 Proxy Authentication Required
-
-1. 密码为 **Username/Password** 密钥 — 非网站登录密码。
-2. 用户名为 Endpoints 的**完整生成字符串**。
-3. 不确定时请编辑密码后重试：
-
-```bash
-curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
-```
-
-其他跳与提取错误：[响应码](response-codes.md)。
-
-## 静态 / 定制填写（User/Pass）
-
-专用线路中 **Users & Whitelist 用户名**即为代理用户。无第二段网关生成用户。
-
-```
-http://USER:PASS@us-ca.edge.joyproxy.com:10001
-```
-
-walkthrough：[静态授权](../static/authorization.md)。
-
-## IP 白名单
-
-当客户端有稳定公网 IPv4 时，在同一 Users & Whitelist 页面的 **IP Whitelist** 页签用于静态与定制 `host:port`。
-
-1. 查询该机器的**公网 IPv4**。
-2. **Users & Whitelist → IP Whitelist** → 输入地址与备注 → **Add IP**。
-3. 在客户端使用 Endpoints 的 `host:port`。
-
-白名单的是**发起**代理连接的 IP，而非订单卡上的出口 IP。为每条记录命名以便区分预发与生产。
-
-## 下一步
-
-[生成端点](generate-endpoints.md) — 生成携带地域与会话的轮换用户名。
+1. 获取你服务器的公网 IPv4 地址。
+2. 进入 **[用户与白名单](https://www.joyproxy.com/admin-authorization.html)** → **IP Whitelist** 页签。
+3. 输入 IP 地址与备注，点击 **Add IP** 保存。
