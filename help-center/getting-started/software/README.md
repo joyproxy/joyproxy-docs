@@ -4,8 +4,6 @@ JoyProxy 提供的**免费客户端**，架在云端线路（或你自己的代�
 
 <a href="https://www.joyproxy.com/products/software.html" target="_blank" rel="noopener noreferrer">软件中心</a>
 
-从这里开始：<a href="quick-start.md" target="_blank" rel="noopener noreferrer">快速开始</a>。
-
 | 工具 | 适用场景 | 文档 |
 | --- | --- | --- |
 | **浏览器扩展** | 只给当前 Chromium 浏览器走代理 | <a href="browser-extension.md" target="_blank" rel="noopener noreferrer">指南</a> |

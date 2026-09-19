@@ -57,7 +57,6 @@
   * [受限目标与合规说明](ru-men/scraping-api/restricted-targets.md)
   * [查询支付记录与下载凭证](ru-men/scraping-api/payments-and-invoices.md)
 * [软件工具](ru-men/software/README.md)
-  * [快速开始](ru-men/software/quick-start.md)
   * [浏览器扩展](ru-men/software/browser-extension.md)
   * [代理检测工具](ru-men/software/proxy-tester.md)
   * [代理服务器](ru-men/software/proxy-server.md)

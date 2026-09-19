@@ -19,10 +19,9 @@
 
 ## 本章内容导览
 
-建议按顺序阅读以下指南：
+按你的使用场景选择对应工具文档即可：
 
-1. [快速开始](quick-start.md) — 4 步极简选型与配置接入流程
-2. [JoyProxy 浏览器扩展](browser-extension.md) — Chrome / Edge 扩展安装、登录同步与高级分流配置
-3. [代理检测工具](proxy-tester.md) — Windows 桌面批量检测工具使用教程与参数说明
-4. [代理服务器网关](proxy-server.md) — 开源代理网关本地部署、命令行桥接与团队中转架构
-5. [Android 代理客户端](android-client.md) — 安卓免 Root 客户端安装与按 App 分流代理指南
+1. [JoyProxy 浏览器扩展](browser-extension.md) — Chrome / Edge 扩展安装、登录同步与高级分流配置
+2. [代理检测工具](proxy-tester.md) — Windows 桌面批量检测工具使用教程与参数说明
+3. [代理服务器网关](proxy-server.md) — 开源代理网关本地部署、命令行桥接与团队中转架构
+4. [Android 代理客户端](android-client.md) — 安卓免 Root 客户端安装与按 App 分流代理指南
