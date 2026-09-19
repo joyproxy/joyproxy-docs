@@ -77,6 +77,6 @@ Scraping API Token 是专用于调用抓取接口的独立凭证，与你控制�
 ### 网页抓取 API 控制台包含哪些功能？
 网页抓取 API 控制台（admin-web-unblocker.html）主要由四大工作模块构成：
 1. **购买（Buy）**：订购 8 档 Credits 积分包或自定义积分充值；
-2. **API 中心（API Center）**：提供在线在线测试工作台、Token 查看与轮换、多语言代码请求示例；
+2. **API 中心（API Center）**：提供在线测试工作台、Token 查看与轮换、多语言代码请求示例；
 3. **用量明细（Usage）**：监控实时积分消耗量、成功率报表与请求日志；
 4. **接口文档（Documentation）**：查阅最新参数规范与错误代码。

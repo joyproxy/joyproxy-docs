@@ -16,7 +16,7 @@ JoyProxy 的 AI 接口运行在只读与受限管理层，不涉及余额消费�
 | **代理认证账密 / IP 白名单** | 实际建立代理连接（向 `gate.joyproxy.com` 发起网络请求）时使用的凭据。 | 控制台 **[用户与白名单（Authorization）](https://www.joyproxy.com/admin-authorization.html)** |
 
 > **关键提醒**：  
-> AI Access Token **不能**直接作为代理连接密码。当 AI 为你生成 `gate.joyproxy.com:9001` 等端点后，客户端（如 cURL、Python、浏览器）连接网关时仍需使用你在「用户与白名单」设置的代理密码或完成出口 IP 加白。
+> AI Access Token **不能**直接作为代理连接密码。当 AI 为你生成 `gate.joyproxy.com:9001` 等端点后，客户端（如 cURL、Python、浏览器）连接网关时仍需使用你在「账密与白名单」设置的代理账密（动态代理网关目前仅支持账密授权）。
 
 ---
 

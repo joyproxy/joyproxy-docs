@@ -87,7 +87,7 @@ JoyProxy 提取中心提供三种提取渠道：
 
 ### 代理 API 提取接口支持一次提取多少条？调用频率有什么限制？
 通过 API 提取代理 IP 时，`count` 参数的有效取值范围为 **1 到 200**（单次最多返回 200 条代理）。
-由于动态代理的网关地址与凭据长期有效（只要账户内仍有流量额度即可持续使用），你不需要高频死循环轮询提取接口。如果调用过于频繁触发了速率保护，接口将返回 `429 Too Many Requests`，适当调大调用间隔即可恢复。详细参数请参阅 <a href="../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a> 中的 `GET /v2/extract` 文档。
+由于动态代理的网关地址与凭据长期有效（只要账户内仍有流量额度即可持续使用），你不需要高频死循环轮询提取接口。如果调用过于频繁触发了速率保护，接口将返回 `429 Too Many Requests`，适当调大调用间隔即可恢复。详细参数请参阅控制台 <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a> 或 <a href="../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">程序化提取指南</a>。
 
 ### 静态或自定义更换 IP 能否通过 API 自动化执行？
 目前不可以。静态更换出口 IP、自定义更换地区以及手动换 IP，均需要在控制台「我的代理」页面人工点击确认完成。API 提取接口仅负责读取当前已经配置就绪的接入域名与端口，不会自动触发底层换 IP 流程。
@@ -97,7 +97,7 @@ JoyProxy 提取中心提供三种提取渠道：
 1. 打开指纹浏览器，新建或编辑浏览器环境；
 2. 代理类型选择 `HTTP` 或 `SOCKS5`；
 3. 将 JoyProxy 控制台「我的代理」中显示的 **Entry Point** 拆分填入：域名填在代理主机栏，冒号后的数字填在端口栏；
-4. 填写该网络下「用户与白名单」中设置的代理账号与密码（若已绑定本机公网 IP 到白名单，可免密留空）；
+4. 填写该网络下「账密与白名单」中设置的代理账号与密码（若使用的是静态独享线路且已绑定本机公网 IP 到白名单，账密可免密留空；动态代理网关必须填写账密）；
 5. 点击「测试连接」，检测通过且出口 IP 符合预期后即可保存启动。
 
 ### 可以把 JoyProxy 代理添加到 Clash、v2rayN 或 Shadowrocket 客户端吗？

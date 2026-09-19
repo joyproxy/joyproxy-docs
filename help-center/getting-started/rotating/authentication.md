@@ -7,15 +7,15 @@
 
 ---
 
-## 方式一：设置代理 Username/Password（推荐）
+## 方式一：设置代理 Username/Password（必选）
 
-这是绝大多数程序与客户端连接动态代理时使用的方式。
+这是连接动态代理网关唯一支持的鉴权方式。
 
-1. 打开控制台 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 页面。
+1. 打开控制台 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** 页面。
 2. 切换到 **用户名 / 密码（Username/Password）** 页签。
 3. 选择凭据模式：
-   - **共享模式（Shared）**：账户下所有代理网络共用同一组代理账密（推荐初次使用选择）。
-   - **按产品模式（Per Product）**：住宅、移动、商业与数据中心各自设置独立的代理账密。
+   - **共用模式（Shared）**：账户下所有代理网络共用同一组代理账密（推荐初次使用选择）。
+   - **分类模式（Per Product）**：住宅、移动、商业与数据中心各自设置独立的代理账密。
 4. 在 **创建 Username/Password（Create Username/Password）** 下填写凭据信息：
    - **产品（Product）**：选择对应的代理网络（如 Residential）。
    - **代理用户名（Username）**：以小写字母开头，仅包含小写字母与数字 (`a–z`, `0–9`)，最长 16 位。
@@ -24,7 +24,7 @@
 5. 点击 **创建 User/Pass（Create User/Pass）** 保存，并妥善记录你设置的**代理密码**。
 
 > **重要注意**  
-> 在此处创建的短用户名（如 `user123`）用于管理凭据。实际连接动态代理网关 `gate.joyproxy.com:9001` 时，代理用户名字段必须填入在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面生成的**完整长用户名**。
+> 在此处创建的短用户名（如 `user123`）用于管理凭据。实际连接动态代理网关 `gate.joyproxy.com:9001` 时，代理用户名字段必须填入在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成的**完整长用户名**。
 
 ### 管理与修改密码
 
@@ -33,11 +33,15 @@
 
 ---
 
-## 方式二：设置 IP 白名单（IP Whitelist）
+## 关于 IP 白名单（IP Whitelist）说明
 
-如果你的客户端或爬虫服务器拥有固定的公网 IPv4 地址，可以配置 IP 白名单进行免密连接：
+> **重要提示**  
+> 动态代理网关（`gate.joyproxy.com:9001`）**目前仅支持账密授权（Username/Password）**，不支持通过 IP 白名单免密访问。  
+> 控制台中的 **IP 白名单** 功能主要用于静态独享代理免密连接，以及在固定公网服务器上免 Token 调用 API 提取代理接口。
 
-1. 获取你客户端服务器的**固定公网 IPv4 地址**。
-2. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** → **IP 白名单（IP Whitelist）** 页签。
+如果你需要配置白名单用于静态代理或 API 提取：
+
+1. 获取你客户端或爬虫服务器的**固定公网 IPv4 地址**。
+2. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** → **IP 白名单（IP Whitelist）** 页签。
 3. 在 **IP 地址（IP Address）** 输入框中填写 IP，在 **备注（Description）** 中填写备注。
 4. 点击 **添加 IP（Add IP）** 按钮保存。

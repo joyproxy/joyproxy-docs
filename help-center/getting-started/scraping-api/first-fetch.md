@@ -10,11 +10,10 @@ JoyProxy 控制台提供了可视化的 **<a href="https://www.joyproxy.com/admi
 2. 切换到 **API 中心（API Center）** 页签（ Playground 视图）。
 3. 界面参数配置区：
    - **目标 URL（Target URL）**：填入你需要抓取的网页地址（如 `https://example.com`）。
-   - **HTTP 请求方法（Method）**：选择 `GET` 或 `POST`。
    - **JS 渲染开关（JavaScript Rendering）**：勾选是否开启 Headless 动态渲染（开启后相当于 `render=true`）。
-   - **高级反爬绕过（Super Unblocker）**：勾选是否开启强力 WAF 绕过（开启后相当于 `super=true`）。
-   - **出口国家（Geo Location）**：选择指定的代理出口国家（如 `United States 美国`）。
-4. 点击 **发送请求（Send Request / Run）** 按钮。
+   - **Super（住宅/移动）**：勾选是否路由至高信任度真实家庭/移动出口（开启后相当于 `super=true`）。
+   - **出口国家（Geo Location）**：填入指定的代理出口国家代码（如 `us` 美国、`jp` 日本）。
+4. 点击 **发送请求** 按钮。
 5. 查看返回结果：
    - **响应预览（Response Body）**：可视化预览渲染后的网页 HTML 或 JSON。
    - **HTTP 状态码（Status Code）**：显示目标页面的响应码（如 `200 OK`）。
@@ -26,14 +25,12 @@ JoyProxy 控制台提供了可视化的 **<a href="https://www.joyproxy.com/admi
 
 在控制台 Playground 页面下方，系统根据你在界面上勾选的参数，自动生成了对应调用的多语言代码。你可以直接点击 **复制代码（Copy Code）** 粘贴到你的项目中：
 
-{% tabs %}
-{% tab title="cURL" %}
+### cURL
 ```bash
 curl -X GET "https://api.joyproxy.com/v1/fetch?token=YOUR_SCRAPING_TOKEN&url=https%3A%2F%2Fexample.com&render=true"
 ```
-{% endtab %}
 
-{% tab title="Python (Requests)" %}
+### Python (Requests)
 ```python
 import requests
 
@@ -51,9 +48,8 @@ response = requests.get(api_url, params=params, timeout=30)
 print("HTTP Status:", response.status_code)
 print("Response HTML:", response.text[:500])
 ```
-{% endtab %}
 
-{% tab title="Node.js (Fetch)" %}
+### Node.js (Fetch)
 ```javascript
 const token = 'YOUR_SCRAPING_TOKEN';
 const targetUrl = encodeURIComponent('https://example.com');
@@ -68,14 +64,12 @@ async function fetchPage() {
 
 fetchPage();
 ```
-{% endtab %}
-{% endtabs %}
 
 ---
 
-## 💡 RESTful API 文档与 OpenApi 中心引流
+## 💡 RESTful API 文档与在线参数规范
 
 若你需要了解底层的 REST HTTP 路径、POST JSON 结构、请求头传递等原始接口说明：
 
-> 💡 **OpenAPI 中心引流**  
-> 请参阅 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的网页抓取 API（Web Scraping API）章节，或点击控制台右上角的 **API 文档（Documentation）** 参阅原始 REST 端点规范。
+> 💡 **在线 API 文档**  
+> 请参阅控制台顶部的 **<a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">网页抓取 API 文档（API Documentation）</a>**，查阅完整的参数字典与响应规范。

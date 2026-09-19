@@ -30,4 +30,4 @@
 ---
 
 > 💡 **通过 API 动态传参**  
-> 如果需要在自动化代码中通过 HTTP URL 参数控制以上定向指标（如 `country=us&state=california&city=los_angeles&duration=10`），请直接参考 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>**。
+> 如果需要在自动化代码中通过 HTTP URL 参数控制以上定向指标（如 `country=us&state=california&city=los_angeles&duration=10`），请直接参考控制台 **<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 或 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">程序化提取指南</a>**。

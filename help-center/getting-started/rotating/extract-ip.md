@@ -37,8 +37,8 @@
 2. 可选择 API 返回格式：**换行文本（Line Breaks CRLF）** 或 **JSON**。
 3. 直接复制页面生成的 **API 地址（API URL）**。
 
-> 💡 **OpenAPI 中心引流**  
-> 详细的 API 请求路径、Query 参数（如 `token`, `country`, `duration` 等）以及完整代码调用示例，请直接查阅 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的 `GET /v2/extract` 接口文档。
+> 💡 **OpenAPI 规范与代码集成**  
+> 详细的 API 请求路径、Query 参数（如 `token`, `country`, `duration` 等）请直接查阅控制台 **<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>**，或参考 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">程序化提取与代理池构建指南</a>**。
 
 ---
 

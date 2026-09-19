@@ -19,4 +19,4 @@
 ## API 程序化提取
 
 > 💡 **OpenAPI 中心引流**  
-> 如果需要在自动化代码中程序化拉取静态代理列表及对应 IP 绑定状态，请参阅 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的静态代理提取接口。
+> 如果需要在自动化代码中程序化拉取静态代理列表及对应 IP 绑定状态，请参阅控制台 **<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 或 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">程序化提取指南</a>**。

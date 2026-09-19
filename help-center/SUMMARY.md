@@ -73,9 +73,9 @@
 * <a href="user-console/residential-proxies.md" target="_blank" rel="noopener noreferrer">代理控制台</a>
     * <a href="user-console/residential-proxies.md" target="_blank" rel="noopener noreferrer">住宅代理</a>
     * <a href="user-console/mobile-proxies.md" target="_blank" rel="noopener noreferrer">移动代理</a>
-    * <a href="user-console/business-isp-proxies.md" target="_blank" rel="noopener noreferrer">商业 / ISP </a>
+    * <a href="user-console/business-isp-proxies.md" target="_blank" rel="noopener noreferrer">商业 / ISP</a>
     * <a href="user-console/datacenter-proxies.md" target="_blank" rel="noopener noreferrer">数据中心</a>
-    * <a href="user-console/web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取 API </a>
+    * <a href="user-console/web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取 API</a>
 * <a href="user-console/interface-language.md" target="_blank" rel="noopener noreferrer">我的账户</a>
     * <a href="user-console/interface-language.md" target="_blank" rel="noopener noreferrer">界面语言</a>
     * <a href="user-console/change-password.md" target="_blank" rel="noopener noreferrer">修改密码</a>
@@ -84,8 +84,8 @@
     * <a href="user-console/invoices.md" target="_blank" rel="noopener noreferrer">账单与交易记录</a>
     * <a href="user-console/delete-account.md" target="_blank" rel="noopener noreferrer">注销账户</a>
 * <a href="user-console/tickets.md" target="_blank" rel="noopener noreferrer">帮助中心</a>
-   * <a href="user-console/tickets.md" target="_blank" rel="noopener noreferrer">工单系统</a>
-   * <a href="user-console/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a>
+    * <a href="user-console/tickets.md" target="_blank" rel="noopener noreferrer">工单系统</a>
+    * <a href="user-console/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a>
 
 ## 最佳实践
 

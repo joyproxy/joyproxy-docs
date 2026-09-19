@@ -42,7 +42,7 @@
 
 ## 第四步：在代码中发起抓取
 
-拿着你的 Scraping API Token，即可在代码中直接发起抓取。具体可视化参数配置与代码生成请参阅 **<a href="first-fetch.md" target="_blank" rel="noopener noreferrer">在控制台 API 中心测试抓取</a>**；若需查阅原始 REST API HTTP 端点说明，请参阅 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>**。
+拿着你的 Scraping API Token，即可在代码中直接发起抓取。具体可视化参数配置与代码生成请参阅 **<a href="first-fetch.md" target="_blank" rel="noopener noreferrer">在控制台 API 中心测试抓取</a>**；若需查阅完整的接口字典与参数规范，请参阅 **<a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">网页抓取 API 文档</a>**。
 
 ```bash
 # 简单的 cURL GET 请求测试

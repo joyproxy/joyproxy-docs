@@ -8,9 +8,9 @@
 
 - **原因**：网关无法校验你的代理凭据。
 - **快速排查**：
-  1. **密码检查**：确认填入的是在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 中设置的代理密码，而不是 JoyProxy 官网的登录密码。
-  2. **用户名检查**：确认代理用户名字段填入的是在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面生成的**完整长字符串**（如 `user-zone-res-region-us-...`），请勿手动截断或拼错字符。
-  3. **白名单模式**：如果使用 IP 白名单认证，请确认客户端服务器的公网 IP 已正确填入白名单列表。
+  1. **密码检查**：确认填入的是在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** 中设置的代理密码，而不是 JoyProxy 官网的登录密码。
+  2. **用户名检查**：确认代理用户名字段填入的是在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成的**完整长字符串**（如 `user-zone-res-region-us-...`），请勿手动截断或拼错字符。
+  3. **确认鉴权方式**：动态代理网关（`gate.joyproxy.com:9001`）目前仅支持账密认证，不支持 IP 白名单免密连接，请务必在客户端配置正确的长用户名与代理密码。
 
 ---
 
