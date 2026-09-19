@@ -52,4 +52,4 @@
 
 完成任一 Token 轮换后，建议在终端中发起一次简单的请求验证：
 - 若接口返回 `401 Unauthorized` 或认证失败提示，说明生产环境某个配置项依然在引用旧的 Token，全局排查项目环境变量并重启服务即可。
-- 更多 OpenAPI 请求细节可查阅 <a href="../zui-jia-shi-jian/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心集成文档</a>。
+- 更多 OpenAPI 请求细节可查阅 <a href="../best-practices/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心集成文档</a>。

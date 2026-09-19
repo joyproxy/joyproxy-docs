@@ -21,4 +21,4 @@
 1. **检查垃圾邮件箱**：部分企业邮箱或严格的邮件服务商（如 Outlook、QQ 邮箱）可能会将系统通知误判归类到「垃圾邮件」、「订阅邮件」或「广告邮件」分类中。
 2. **重新发送激活链接**：打开 <a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">登录页面</a>，直接输入你的邮箱和密码点击登录，界面会弹出未激活提示，点击提示旁的 **重发激活邮件** 即可生成新的链接。
 3. **检查邮箱拼写**：确认注册时输入的邮箱地址没有拼写错误（如常见的 `.con` 误写为 `.com`）。若确实填错，直接使用正确邮箱重新注册即可。
-4. **联系人工协助**：若依然无法收到邮件，你可以通过页面右下角的气泡发起 <a href="../fu-wu-yu-zhi-chi/live-chat.md" target="_blank" rel="noopener noreferrer">在线客服聊天</a>，值班技术支持会在核实后协助你完成账号激活。
+4. **联系人工协助**：若依然无法收到邮件，你可以通过页面右下角的气泡发起 <a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">在线客服聊天</a>，值班技术支持会在核实后协助你完成账号激活。

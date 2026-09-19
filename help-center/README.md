@@ -54,7 +54,7 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 
 直接在 Cursor / VS Code / OpenClaw 中通过自然语言使用代理 IP 。
 
-[在 AI 里集成代理服务](zui-jia-shi-jian/integrate-proxies-in-ai.md)
+[在 AI 里集成代理服务](best-practices/integrate-proxies-in-ai.md)
 
 ## 快速接入指南
 
@@ -62,10 +62,10 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 
 | 您要做的事 | 从这里开始 |
 | ---------- | ---------- |
-| 需要每次请求更换 IP | [动态代理 · 快速开始](ru-men/rotating/quick-start.md) |
-| 需要每隔 1 - 30 分钟更换一次 IP | [动态代理 · 快速开始](ru-men/rotating/quick-start.md) |
-| 需要同时发起 200 次请求，并使用不同的 IP | [动态代理 · 快速开始](ru-men/rotating/quick-start.md) |
-| 需要长期固定某个地区的代理 IP | [静态独享 · 快速开始](ru-men/static/quick-start.md) |
-| 需要长期固定某个地区的代理 IP + 自定义频率轮换 | [自定义独享 · 快速开始](ru-men/custom/quick-start.md) |
-| 需要长期固定某个地区的代理 IP + 随时切换地区  | [自定义独享 · 快速开始](ru-men/custom/quick-start.md) |
-| 需要直接传入 URL 返回数据 | [网页抓取 API · 快速开始](ru-men/scraping-api/quick-start.md) |
+| 需要每次请求更换 IP | [动态代理 · 快速开始](getting-started/rotating/quick-start.md) |
+| 需要每隔 1 - 30 分钟更换一次 IP | [动态代理 · 快速开始](getting-started/rotating/quick-start.md) |
+| 需要同时发起 200 次请求，并使用不同的 IP | [动态代理 · 快速开始](getting-started/rotating/quick-start.md) |
+| 需要长期固定某个地区的代理 IP | [静态独享 · 快速开始](getting-started/static/quick-start.md) |
+| 需要长期固定某个地区的代理 IP + 自定义频率轮换 | [自定义独享 · 快速开始](getting-started/custom/quick-start.md) |
+| 需要长期固定某个地区的代理 IP + 随时切换地区  | [自定义独享 · 快速开始](getting-started/custom/quick-start.md) |
+| 需要直接传入 URL 返回数据 | [网页抓取 API · 快速开始](getting-started/scraping-api/quick-start.md) |

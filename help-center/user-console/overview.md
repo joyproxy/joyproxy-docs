@@ -53,4 +53,4 @@
 - **代理检测工具（Proxy Tester）**：桌面端跨协议批量检测 IP 连通性、出口属地与延迟；
 - **自建代理服务端 / Android 客户端**：适合团队自建集群或移动设备环境部署。
 
-如果在日常使用中遇到疑难问题，可通过左侧菜单底部的 **帮助中心** 随时发起 <a href="../fu-wu-yu-zhi-chi/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> 或提交技术 <a href="../fu-wu-yu-zhi-chi/tickets.md" target="_blank" rel="noopener noreferrer">支持工单</a>。
+如果在日常使用中遇到疑难问题，可通过左侧菜单底部的 **帮助中心** 随时发起 <a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> 或提交技术 <a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">支持工单</a>。
