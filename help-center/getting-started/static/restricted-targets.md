@@ -14,4 +14,4 @@
 - **政府与公共机构**：政务门户系统、公共部门统一认证系统。
 - **邮件与通讯系统**：网页邮箱批量登录或 SPAM 发包。
 
-详细规则请参阅 **[服务条款](https://www.joyproxy.com/terms.html)**。
+详细规则请参阅 **<a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">服务条款</a>**。

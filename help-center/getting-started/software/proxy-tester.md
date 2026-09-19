@@ -5,7 +5,7 @@
 软件完全开源且免安装，单个独立 EXE 即可直接运行。
 
 相关地址：  
-[产品页面](https://www.joyproxy.com/products/tester.html) · [GitHub Releases 下载](https://github.com/joyproxy/joyproxy-tester/releases) · [源码仓库](https://github.com/joyproxy/joyproxy-tester)
+<a href="https://www.joyproxy.com/products/tester.html" target="_blank" rel="noopener noreferrer">产品页面</a> · <a href="https://github.com/joyproxy/joyproxy-tester/releases" target="_blank" rel="noopener noreferrer">GitHub Releases 下载</a> · <a href="https://github.com/joyproxy/joyproxy-tester" target="_blank" rel="noopener noreferrer">源码仓库</a>
 
 ---
 
@@ -13,7 +13,7 @@
 
 ### 使用预编译的免安装版（推荐）
 
-1. 前往 GitHub Releases 获取最新发布的版本（例如 [Release v2.6.3](https://github.com/joyproxy/joyproxy-tester/releases/tag/v2.6.3)）。
+1. 前往 GitHub Releases 获取最新发布的版本（例如 <a href="https://github.com/joyproxy/joyproxy-tester/releases/tag/v2.6.3" target="_blank" rel="noopener noreferrer">Release v2.6.3</a>）。
 2. 下载单文件可执行程序 **`JoyProxy-Tester-2.6.3.exe`**。
 3. 双击直接启动运行。程序无需安装任何系统运行库，底栏显示 **Ready** 状态即可开始测试。
 

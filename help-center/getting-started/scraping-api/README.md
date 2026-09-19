@@ -2,7 +2,7 @@
 
 网页抓取 API（Web Scraping API / Web Unblocker）是 JoyProxy 提供的托管式数据采集服务。你只需要提交**目标 URL**，系统会在云端自动为你完成真实浏览器伪装、150+ 国家代理 IP 轮换、JavaScript 脚本渲染以及复杂的反爬虫/验证码绕过，并直接返回干净的 HTML 网页源码或结构化 JSON 数据。
 
-与传统的 [动态代理](../rotating/README.md) 或 [静态独享代理](../static/README.md) 不同，网页抓取 API **无需你自己维护代理 IP 池、请求头（User-Agent）及无头浏览器（Headless Browser）集群**，且采用**仅成功才扣积分（0 扣费保障）**的计费模式。
+与传统的 <a href="../rotating/README.md" target="_blank" rel="noopener noreferrer">动态代理</a> 或 <a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态独享代理</a> 不同，网页抓取 API **无需你自己维护代理 IP 池、请求头（User-Agent）及无头浏览器（Headless Browser）集群**，且采用**仅成功才扣积分（0 扣费保障）**的计费模式。
 
 ---
 
@@ -30,13 +30,13 @@
 
 建议按顺序阅读以下指南：
 
-1. [快速开始](quick-start.md) — 4 步极简接入指南与 API Token 说明
-2. [购买积分包与并发限制](buy-credits.md) — 积分购买规则与并发限制（Concurrency Rules）
-3. [在控制台 API 中心测试抓取](first-fetch.md) — 控制台 Playground 可视化调试与代码生成
-4. [抓取参数与积分消耗标准](parameters.md) — 详解 render/super/geoCode 参数与 1/5/10/25 积分扣费
-5. [结构化数据插件 API](plugins.md) — 电商与搜索引擎专用 JSON 插件接口
-6. [异步队列任务 API](async-api.md) — 大批量/耗时长任务的 Async API 提交与轮询
-7. [查看用量与抓取日志](usage.md) — 控制台用量看板与实时请求日志（Request Logs）
-8. [响应码与常见报错](response-codes.md) — 401/402/429/502 常见报错排查与 0 扣费验证
-9. [受限目标与合规说明](restricted-targets.md) — 高风险禁止抓取目标合规规约
-10. [查询支付记录与下载凭证](payments-and-invoices.md) — 交易明细与 PDF 收据下载
+1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">快速开始</a> — 4 步极简接入指南与 API Token 说明
+2. <a href="buy-credits.md" target="_blank" rel="noopener noreferrer">购买积分包与并发限制</a> — 积分购买规则与并发限制（Concurrency Rules）
+3. <a href="first-fetch.md" target="_blank" rel="noopener noreferrer">在控制台 API 中心测试抓取</a> — 控制台 Playground 可视化调试与代码生成
+4. <a href="parameters.md" target="_blank" rel="noopener noreferrer">抓取参数与积分消耗标准</a> — 详解 render/super/geoCode 参数与 1/5/10/25 积分扣费
+5. <a href="plugins.md" target="_blank" rel="noopener noreferrer">结构化数据插件 API</a> — 电商与搜索引擎专用 JSON 插件接口
+6. <a href="async-api.md" target="_blank" rel="noopener noreferrer">异步队列任务 API</a> — 大批量/耗时长任务的 Async API 提交与轮询
+7. <a href="usage.md" target="_blank" rel="noopener noreferrer">查看用量与抓取日志</a> — 控制台用量看板与实时请求日志（Request Logs）
+8. <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码与常见报错</a> — 401/402/429/502 常见报错排查与 0 扣费验证
+9. <a href="restricted-targets.md" target="_blank" rel="noopener noreferrer">受限目标与合规说明</a> — 高风险禁止抓取目标合规规约
+10. <a href="payments-and-invoices.md" target="_blank" rel="noopener noreferrer">查询支付记录与下载凭证</a> — 交易明细与 PDF 收据下载

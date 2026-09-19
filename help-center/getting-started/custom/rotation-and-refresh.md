@@ -8,7 +8,7 @@
 
 如果你的业务需要代理端口在运行过程中定期更换出口 IP（防止单一出口 IP 频繁请求触发风控），可以开启定时自动轮换：
 
-1. 进入 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面。
 2. 找到对应端口，点击右侧的 **设置轮换（Set Rotation）** 按钮。
 3. 在轮换设置弹窗中：
    - 勾选 **开启自动轮换（Enable Auto Rotation）**。
@@ -23,7 +23,7 @@
 
 如果你在调试程序或突发发现某个出口 IP 被目标网站拦截，无需等待定时器，可以手动立即刷新 IP：
 
-1. 进入 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面。
 2. 点击端口右侧的 **更换 IP（Refresh IP）** 按钮。
 3. 在确认提示框中点击确认。
 4. 系统将在 1-2 分钟内为该端口重新拉取分配一个全新的出口 IP。

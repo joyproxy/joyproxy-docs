@@ -5,7 +5,7 @@
 扩展基于 Manifest V3 标准开发，所有的代理规则都只作用于**当前浏览器实例**，不会改动 Windows 或 macOS 的系统全局网络。无论是临时的单节点验证、第三方提取 API 的轮换调度，还是直接载入在 JoyProxy 购买的云端线路，都可以在扩展内一站式完成。
 
 相关地址：  
-[Chrome 网上应用店](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng) · [产品页面](https://www.joyproxy.com/products/browser-extension.html) · [GitHub 仓库](https://github.com/joyproxy/joyproxy-extension) · [隐私政策](https://www.joyproxy.com/privacy-extension.html)
+<a href="https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng" target="_blank" rel="noopener noreferrer">Chrome 网上应用店</a> · <a href="https://www.joyproxy.com/products/browser-extension.html" target="_blank" rel="noopener noreferrer">产品页面</a> · <a href="https://github.com/joyproxy/joyproxy-extension" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> · <a href="https://www.joyproxy.com/privacy-extension.html" target="_blank" rel="noopener noreferrer">隐私政策</a>
 
 ---
 
@@ -13,7 +13,7 @@
 
 ### 方式一：通过 Chrome 网上应用店安装（推荐）
 
-1. 访问 [Chrome 网上应用店](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng)。
+1. 访问 <a href="https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng" target="_blank" rel="noopener noreferrer">Chrome 网上应用店</a>。
 2. 点击 **添加到 Chrome（Add to Chrome）** 完成安装。
 3. 安装完成后，在浏览器右上角的拼图图标中将 JoyProxy **固定（Pin）** 到工具栏，方便日常快速切换。
 
@@ -23,7 +23,7 @@
 
 在无法直接连接 Chrome 应用店的环境下，可手动加载离线版本：
 
-1. 前往 GitHub Releases 下载最新的 [joyproxy-extension-unpacked.zip](https://github.com/joyproxy/joyproxy-extension/releases/latest/download/joyproxy-extension-unpacked.zip) 并解压到本地文件夹。
+1. 前往 GitHub Releases 下载最新的 <a href="https://github.com/joyproxy/joyproxy-extension/releases/latest/download/joyproxy-extension-unpacked.zip" target="_blank" rel="noopener noreferrer">joyproxy-extension-unpacked.zip</a> 并解压到本地文件夹。
 2. 在浏览器地址栏输入 `chrome://extensions` 打开扩展管理页，开启右上角的 **开发者模式（Developer mode）**。
 3. 点击左上角的 **加载已解压的扩展程序（Load unpacked）**，选中包含 `manifest.json` 的解压目录。
 4. 后续更新版本时，只需覆盖本地文件，并在扩展页面点击该卡片上的 **重新加载（Reload）** 图标即可。
@@ -50,7 +50,7 @@
 2. **提取 API（Extract API）**  
    支持填入第三方服务商提供的代理提取链接，并可指定正则表达式与预设账密。扩展支持单次测通后自动设为代理，也支持按照预定时间间隔自动轮询更换新 IP。
 3. **JoyProxy 已购线路**  
-   若当前浏览器已经在 [joyproxy.com](https://www.joyproxy.com) 登录过控制台，工作台会自动识别用户凭据并加载名下的动态住宅流量包、静态独享或自定义端口线路。在扩展中按需选择国家、城市与会话类型即可，无需繁琐地手动复制长链接。
+   若当前浏览器已经在 <a href="https://www.joyproxy.com" target="_blank" rel="noopener noreferrer">joyproxy.com</a> 登录过控制台，工作台会自动识别用户凭据并加载名下的动态住宅流量包、静态独享或自定义端口线路。在扩展中按需选择国家、城市与会话类型即可，无需繁琐地手动复制长链接。
 
 ---
 
@@ -91,12 +91,12 @@
 
 ### 1. 代理分流范围（Proxy scope）
 
-你可以精准控制哪些请求必须走代理、哪些保持直连：
+你可以精准控制哪些请求必须通过代理转发、哪些保持本地直连：
 
-- **全部走代理（All via proxy）**：默认模式。除指定的直连名单外，所有网页和请求全部经由代理发出。
-- **仅名单走代理（Allowlist only）**：只有白名单中列出的域名、IP 或 URL 前缀走代理，其余流量全部直连。
+- **全部代理（All via proxy）**：默认模式。除指定的直连名单外，所有网页和请求全部经由代理转发发出。
+- **仅名单代理（Allowlist only）**：只有白名单中列出的域名、IP 或 URL 前缀通过代理转发，其余流量全部本地直连。
 
-在 **不走代理（Bypass）** 规则中，扩展默认预置了 `localhost`、`127.0.0.1` 以及 `*.joyproxy.com`，确保即便代理节点异常，也不会阻断访问官网控制台与本地服务。名单支持通配符（如 `*.example.com`），每行一条。
+在 **直连绕过（Bypass）** 规则中，扩展默认预置了 `localhost`、`127.0.0.1` 以及 `*.joyproxy.com`，确保即便代理节点异常，也不会阻断访问官网控制台与本地服务。名单支持通配符（如 `*.example.com`），每行一条。
 
 ### 2. 常用防护与环境伪装
 

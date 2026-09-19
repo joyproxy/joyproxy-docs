@@ -20,4 +20,4 @@ JoyProxy 出口网关会自动拦截对以下高风险领域的访问请求：
 - **政府与公共机构**：各国政府政务门户系统、公共部门统一认证服务。
 - **邮件与通讯系统**：网页邮箱批量登录、群发 SPAM 垃圾邮件。
 
-详细的合规行为准则与责任条款，请参阅 **[JoyProxy 服务条款](https://www.joyproxy.com/terms.html)**。
+详细的合规行为准则与责任条款，请参阅 **<a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">JoyProxy 服务条款</a>**。

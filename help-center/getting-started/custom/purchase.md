@@ -6,7 +6,7 @@
 
 ## 详细购买流程
 
-1. 登录 JoyProxy 控制台，点击左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)**。
+1. 登录 JoyProxy 控制台，点击左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>**。
 2. 选择需要的网络类型选项卡：
    - **住宅代理（Residential Proxies）**
    - **商业 / ISP 代理（Business / ISP Proxies）**
@@ -40,4 +40,4 @@
 
 当单笔订购的端口数量达到 `50+` 或 `100+` 时，系统会自动应用阶梯折扣优惠。价格明细会在结账预览界面中即时计算展示。
 
-下一步：进入 **[查看与管理端口](view-ports.md)** 或 **[分配地区](assign-region.md)** 配置端口。
+下一步：进入 **<a href="view-ports.md" target="_blank" rel="noopener noreferrer">查看与管理端口</a>** 或 **<a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a>** 配置端口。

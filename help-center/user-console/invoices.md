@@ -43,6 +43,6 @@
 - **USDT 充值未实时入账？**  
   若通过区块链转账后关闭了窗口，请进入 **我的账户** → **资料**，使用 **认领 USDT** 功能自动扫描链上记录即可即刻补齐入账。
 - **单笔消费金额有疑问？**  
-  请记录下具体的订单号与发生时间，通过左侧菜单进入 **帮助中心** 提交技术 <a href="../support/tickets.md" target="_blank" rel="noopener noreferrer">支持工单</a>，财务与技术团队会为你调取底层日志协助核对。
+  请记录下具体的订单号与发生时间，通过左侧菜单进入 **帮助中心** 提交技术 <a href="tickets.md" target="_blank" rel="noopener noreferrer">支持工单</a>，财务与技术团队会为你调取底层日志协助核对。
 - **需要企业抬头专用发票？**  
-  如需开具开票抬头包含特定企业名称与税号的商业发票，可通过右下角 <a href="../support/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> 联系在线财务客服，提供抬头税号与接收邮箱即可安排开具。
+  如需开具开票抬头包含特定企业名称与税号的商业发票，可通过右下角 <a href="live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> 联系在线财务客服，提供抬头税号与接收邮箱即可安排开具。

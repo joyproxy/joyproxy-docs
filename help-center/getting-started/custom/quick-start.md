@@ -9,7 +9,7 @@
 
 ## 第一步：购买自定义端口
 
-1. 登录 [JoyProxy 控制台](https://www.joyproxy.com/admin-overview.html)，点击左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)**。
+1. 登录 <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy 控制台</a>，点击左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>**。
 2. 选择需要的 IP 来源网络：
    - **住宅代理（Residential Proxies）**：真实家庭宽带 IP，信任度极高。
    - **商业 / ISP 代理（Business / ISP Proxies）**：运营商商业专线，兼具高速率与高信任度。
@@ -23,7 +23,7 @@
 
 ## 第二步：为端口分配地区
 
-1. 进入 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面。
 2. 在列表找到刚才购买的自定义代理端口。
 3. 点击端口右侧的 **分配地区（Assign Region）** 按钮。
 4. 在弹出的地区选择器中，选择目标国家/地区（例如 `United States 美国`），点击保存。
@@ -33,8 +33,8 @@
 
 ## 第三步：设置代理账密并提取端点
 
-1. 进入 **[用户与白名单（Users & Whitelist）](https://www.joyproxy.com/admin-authorization.html)** 页面，在 **用户名 / 密码（Username/Password）** 下新建代理账密（如 Username: `user123`，Password: `pass123`）。
-2. 进入 **[提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面，切换到 **自定义代理（Custom Proxies）** 标签。
+1. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 页面，在 **用户名 / 密码（Username/Password）** 下新建代理账密（如 Username: `user123`，Password: `pass123`）。
+2. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面，切换到 **自定义代理（Custom Proxies）** 标签。
 3. 选择协议（`HTTP` 或 `SOCKS5`），点击 **复制地址列表（Copy Host List）**，获取端口专属端点：
    ```text
    http://user123:pass123@us-ca.edge.joyproxy.com:20001
@@ -93,5 +93,5 @@ testProxy();
 ## 3 秒排查常见报错
 
 - **407 代理认证失败（Proxy Authentication Required）**：检查用户名和密码是否填错（必须填在「用户与白名单」里设定的 Username/Password）；若采用白名单模式，检查本机公网 IPv4 是否已添加。
-- **403 目标拒绝访问（Forbidden）**：目标网站防护封禁了当前出口 IP。可在控制台中点击 **[更换 IP（Refresh IP）](rotation-and-refresh.md)** 刷新出口。
-- **502 / 504 连接超时（Gateway Timeout）**：检查端口是否已在 **[我的代理](view-ports.md)** 中完成 [分配地区]。未分配地区的端口无法建立连接。
+- **403 目标拒绝访问（Forbidden）**：目标网站防护封禁了当前出口 IP。可在控制台中点击 **<a href="rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">更换 IP（Refresh IP）</a>** 刷新出口。
+- **502 / 504 连接超时（Gateway Timeout）**：检查端口是否已在 **<a href="view-ports.md" target="_blank" rel="noopener noreferrer">我的代理</a>** 中完成 [分配地区]。未分配地区的端口无法建立连接。

@@ -40,6 +40,6 @@ console.log("静态出口 IP:", await res.text());
 
 ## 客户端与第三方软件集成
 
-- **Chrome / Edge 浏览器**：参阅 **[Chrome 静态代理](../../best-practices/chrome-static-proxy.md)** 或使用 **[浏览器扩展](../../getting-started/software/browser-extension.md)**。
-- **Windows 系统代理**：参阅 **[Windows 11 系统代理](../../best-practices/windows-11-system-proxy.md)**。
-- **指纹浏览器与第三方软件**：参阅 **[第三方软件配合代理](../../best-practices/third-party-static-proxies.md)**。
+- **Chrome / Edge 浏览器**：参阅 **<a href="../../best-practices/chrome-static-proxy.md" target="_blank" rel="noopener noreferrer">Chrome 静态代理</a>** 或使用 **<a href="../../getting-started/software/browser-extension.md" target="_blank" rel="noopener noreferrer">浏览器扩展</a>**。
+- **Windows 系统代理**：参阅 **<a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 系统代理</a>**。
+- **指纹浏览器与第三方软件**：参阅 **<a href="../../best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">第三方软件配合代理</a>**。

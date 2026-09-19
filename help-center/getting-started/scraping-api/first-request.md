@@ -1,12 +1,12 @@
 # 在控制台 API 中心测试抓取（API Center）
 
-JoyProxy 控制台提供了可视化的 **[API 中心（API Center）](https://www.joyproxy.com/admin-web-unblocker.html?view=playground)** Playground 界面。你无需编写代码即可在浏览器中试跑抓取、调试各种高级参数，并一键生成直接可用的多语言代码。
+JoyProxy 控制台提供了可视化的 **<a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API 中心（API Center）</a>** Playground 界面。你无需编写代码即可在浏览器中试跑抓取、调试各种高级参数，并一键生成直接可用的多语言代码。
 
 ---
 
 ## 在控制台 Playground 中发起测试
 
-1. 登录控制台，进入 **[网页抓取 API（Web Scraping API）](https://www.joyproxy.com/admin-web-unblocker.html)** 页面。
+1. 登录控制台，进入 **<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取 API（Web Scraping API）</a>** 页面。
 2. 切换到 **API 中心（API Center）** 页签（ Playground 视图）。
 3. 界面参数配置区：
    - **目标 URL（Target URL）**：填入你需要抓取的网页地址（如 `https://example.com`）。
@@ -78,4 +78,4 @@ fetchPage();
 若你需要了解底层的 REST HTTP 路径、POST JSON 结构、请求头传递等原始接口说明：
 
 > 💡 **OpenAPI 中心引流**  
-> 请参阅 **[OpenAPI 中心](../../best-practices/openapi-center.md)** 中的网页抓取 API（Web Scraping API）章节，或点击控制台右上角的 **API 文档（Documentation）** 参阅原始 REST 端点规范。
+> 请参阅 **<a href="../../best-practices/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的网页抓取 API（Web Scraping API）章节，或点击控制台右上角的 **API 文档（Documentation）** 参阅原始 REST 端点规范。

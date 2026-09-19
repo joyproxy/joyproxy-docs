@@ -9,7 +9,7 @@
 
 ## 第一步：购买动态代理流量
 
-1. 登录 [JoyProxy 控制台](https://www.joyproxy.com/admin-overview.html)，进入左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)**。
+1. 登录 <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy 控制台</a>，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>**。
 2. 根据业务选择网络类型：
    - **动态住宅代理（Rotating Residential Proxies）**：适合数据采集、社媒运营、电商比价（高隐蔽、性价比高）。
    - **动态移动代理（Rotating Mobile Proxies）**：适合 App 测试、移动广告校验（真机 4G/5G IP，免封率极高）。
@@ -22,7 +22,7 @@
 
 *注意：代理连接密码与网站登录密码是分开的。*
 
-1. 进入 **[用户与白名单（Users & Whitelist）](https://www.joyproxy.com/admin-authorization.html)** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 页面。
 2. 在 **用户名 / 密码（Username/Password）** 下新建一组代理账号（如 `user123` / `pass123`）。
 3. 记下设置的**代理密码**。
 
@@ -30,7 +30,7 @@
 
 ## 第三步：生成连接端点
 
-1. 进入 **[提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面，切到 **动态代理（Rotating Proxies）** 页签。
+1. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面，切到 **动态代理（Rotating Proxies）** 页签。
 2. 选择提取参数：
    - **国家/地区（Country）**：选择需要的出口 IP 目标国家（如美国 US）。
    - **会话类型（Session Type）**：
@@ -87,4 +87,4 @@ console.log("代理出口 IP:", await res.text());
 
 - **407 代理认证失败（Proxy Authentication Required）**：检查密码是否填错（必须填「用户与白名单」里设的密码，而非官网登录密码），用户名必须是生成的完整长字符串。
 - **连接超时**：确认网关主机（Host）为 `gate.joyproxy.com`，端口（Port）为 `9001`。
-- **更换国家**：去 **[提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面重新选择国家并生成新用户名即可。
+- **更换国家**：去 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面重新选择国家并生成新用户名即可。

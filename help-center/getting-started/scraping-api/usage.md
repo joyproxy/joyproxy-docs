@@ -6,7 +6,7 @@
 
 ## 用量看板管理
 
-1. 登录 JoyProxy 控制台，点击左侧菜单 **[网页抓取 API（Web Scraping API）](https://www.joyproxy.com/admin-web-unblocker.html)**。
+1. 登录 JoyProxy 控制台，点击左侧菜单 **<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取 API（Web Scraping API）</a>**。
 2. 切换到 **用量与日志（Usage & Logs）** 页签（或查看概览顶栏）。
 3. 界面展示关键指标：
    - **可用积分（Available Credits）**：当前账户中可用的总积分数。

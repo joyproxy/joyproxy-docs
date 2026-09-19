@@ -4,7 +4,7 @@
 
 ## 选择网络类型
 
-JoyProxy 提供三种动态代理网络，登录控制台后可在 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)** 页面进行对比与选购（[查看最新定价](https://www.joyproxy.com/pricing.html)）：
+JoyProxy 提供三种动态代理网络，登录控制台后可在 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>** 页面进行对比与选购（<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">查看最新定价</a>）：
 
 | 网络类型 | 选型建议 | 典型适用场景 |
 | --- | --- | --- |
@@ -16,7 +16,7 @@ JoyProxy 提供三种动态代理网络，登录控制台后可在 **[购买代�
 
 ## 控制台购买步骤
 
-1. 登录控制台，打开左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)** 页面。
+1. 登录控制台，打开左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>** 页面。
 2. 选择要购买的网络类型（**住宅代理（Residential Proxies）** / **移动代理（Mobile Proxies）** / **商业 / ISP 代理（Business / ISP Proxies）**）。
 3. 选择 **动态代理（Rotating Proxies）** 标签页。
 4. 挑选符合业务规模的流量包（如 5 GB、10 GB、50 GB、100 GB 等）。
@@ -35,6 +35,6 @@ JoyProxy 提供三种动态代理网络，登录控制台后可在 **[购买代�
 
 ## 购买完成后
 
-- 流量成功开通后，前往 **[查看已购流量](view-traffic.md)** 确认订单状态与剩余 GB。
-- 进入 **[设置代理账密与白名单](authentication.md)** 创建代理连接密码。
-- 完成上述配置后，即可去 **[提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面生成端点。
+- 流量成功开通后，前往 **<a href="view-traffic.md" target="_blank" rel="noopener noreferrer">查看已购流量</a>** 确认订单状态与剩余 GB。
+- 进入 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">设置代理账密与白名单</a>** 创建代理连接密码。
+- 完成上述配置后，即可去 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成端点。

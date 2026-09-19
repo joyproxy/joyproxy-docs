@@ -1,6 +1,6 @@
 # 高级提取参数（Extraction Parameters）
 
-在 **[提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面中，你可以根据业务需求自由组合以下高级提取参数。这些参数会自动编码写入生成的长用户名中。
+在 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面中，你可以根据业务需求自由组合以下高级提取参数。这些参数会自动编码写入生成的长用户名中。
 
 ---
 
@@ -30,4 +30,4 @@
 ---
 
 > 💡 **通过 API 动态传参**  
-> 如果需要在自动化代码中通过 HTTP URL 参数控制以上定向指标（如 `country=us&state=california&city=los_angeles&duration=10`），请直接参考 **[OpenAPI 中心](../../best-practices/openapi-center.md)**。
+> 如果需要在自动化代码中通过 HTTP URL 参数控制以上定向指标（如 `country=us&state=california&city=los_angeles&duration=10`），请直接参考 **<a href="../../best-practices/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>**。

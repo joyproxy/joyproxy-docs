@@ -6,8 +6,8 @@
 
 ## 购买抓取积分包
 
-1. 登录 JoyProxy 控制台，进入左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)** 页面。
-2. 切换到 **网页抓取 API（Web Scraping API）** 标签页（或在控制台中打开 [套餐与支付 Buy Credits](https://www.joyproxy.com/admin-web-unblocker.html?view=buy)）。
+1. 登录 JoyProxy 控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>** 页面。
+2. 切换到 **网页抓取 API（Web Scraping API）** 标签页（或在控制台中打开 <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">套餐与支付 Buy Credits</a>）。
 3. 选购套餐：
    - **预设积分套餐包（Preset Packs）**：如 $5 / $20 / $50 / $100 等多种积分包。
    - **自定义积分包（Custom Credits）**：可按需输入任意积分数量（最少 10,000 积分起）。

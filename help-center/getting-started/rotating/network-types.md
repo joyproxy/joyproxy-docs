@@ -31,7 +31,7 @@ JoyProxy 提供多种不同网络类型的代理 IP。由于各类网络的 IP �
    - **特点**：运营商商业 ISP 线路，兼具机房级传输速率与住宅级 IP 信任度。
    - **适用**：企业级系统对接、B2B 数据采集与要求兼顾速度与隐蔽性的场景。
 
-> **注**：数据中心代理目前主要提供 [静态独享代理](../static/README.md) 与 [自定义独享代理](../custom/README.md) 形态。
+> **注**：数据中心代理目前主要提供 <a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态独享代理</a> 与 <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">自定义独享代理</a> 形态。
 
 ---
 
@@ -41,4 +41,4 @@ JoyProxy 提供多种不同网络类型的代理 IP。由于各类网络的 IP �
 2. **通用爬虫 / 电商比价 / 海量并发** ➔ 优先选择 **动态住宅代理（Rotating Residential Proxies）**（性价比最高）。
 3. **企业对接 / 需要兼顾高速度与高信任** ➔ 优先选择 **动态商业 / ISP 代理（Rotating Business / ISP Proxies）**。
 
-下一步：前往 **[购买流量（Purchase Proxies）](purchase.md)** 挑选对应的流量套餐。
+下一步：前往 **<a href="purchase.md" target="_blank" rel="noopener noreferrer">购买流量（Purchase Proxies）</a>** 挑选对应的流量套餐。

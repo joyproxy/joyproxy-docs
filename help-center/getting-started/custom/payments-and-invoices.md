@@ -6,7 +6,7 @@
 
 ## 操作指南
 
-1. 登录 JoyProxy 控制台，点击左侧菜单 **[交易与订单（Transactions）](https://www.joyproxy.com/admin-transactions.html)** 页面。
+1. 登录 JoyProxy 控制台，点击左侧菜单 **<a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">交易与订单（Transactions）</a>** 页面。
 2. 在交易明细列表中，你可以按日期、类型（如 `Purchase` 购买、`Renew` 续费、`Recharge` 充值）筛选记录。
 3. 点击任意订单记录右侧的 **下载收据（Download Receipt）** 按钮。
 4. 系统将即时生成 PDF 格式的官方付款凭证供你保存打印。
@@ -16,4 +16,4 @@
 ## 公司抬头发票说明
 
 如需开具包含公司名称、税号与详细地址信息的正式公司发票：
-- 请点击控制台右下角的 **[在线客服（Live Chat）](../../support/live-chat.md)** 提交你的订单号与开票抬头信息，财务客服将为你处理开具。
+- 请点击控制台右下角的 **<a href="../../user-console/live-chat.md" target="_blank" rel="noopener noreferrer">在线客服（Live Chat）</a>** 提交你的订单号与开票抬头信息，财务客服将为你处理开具。

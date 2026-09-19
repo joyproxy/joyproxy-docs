@@ -4,7 +4,7 @@
 
 ## 操作步骤
 
-1. 登录 JoyProxy 控制台，进入左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)** 页面。
+1. 登录 JoyProxy 控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>** 页面。
 2. 选择所需的网络类型：
    - **住宅代理（Residential Proxies）**
    - **商业 / ISP 代理（Business / ISP Proxies）**
@@ -29,4 +29,4 @@
    - **USDT（TRC20）**
 7. 支付成功后，线路将即时分配开通。
 
-下一步：进入 **[查看已购线路](view-lines.md)** 确认已分配的端点。
+下一步：进入 **<a href="view-lines.md" target="_blank" rel="noopener noreferrer">查看已购线路</a>** 确认已分配的端点。

@@ -1,12 +1,12 @@
 # 查看与管理端口（View Ports）
 
-购买成功后，你可以在控制台的 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面中统一查看与管理所有自定义独享端口。
+购买成功后，你可以在控制台的 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面中统一查看与管理所有自定义独享端口。
 
 ---
 
 ## 页面展示与字段说明
 
-进入 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面并切到 **自定义独享代理（Custom Dedicated Proxies）** 区域，列表包含以下信息：
+进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面并切到 **自定义独享代理（Custom Dedicated Proxies）** 区域，列表包含以下信息：
 
 | 字段名称 | 说明 |
 | --- | --- |
@@ -24,8 +24,8 @@
 
 在列表每行的操作栏中，你可以执行以下管理动作：
 
-1. **[分配地区（Assign Region）](assign-region.md)**：点击更改或首次为该端口绑定目标国家与城市。
-2. **[设置轮换（Set Rotation）](rotation-and-refresh.md)**：设置该端口自动定时更换出口 IP 的频率（如 5分钟/10分钟/1小时）。
-3. **[更换 IP（Refresh IP）](rotation-and-refresh.md)**：立即手动刷新该端口的出口 IP（同国家同网络下重配全新 IP）。
-4. **[自动续费开关（Auto-Renew Switch）](auto-renew.md)**：开启或关闭该端口订单的到期自动扣费续订。
+1. **<a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区（Assign Region）</a>**：点击更改或首次为该端口绑定目标国家与城市。
+2. **<a href="rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">设置轮换（Set Rotation）</a>**：设置该端口自动定时更换出口 IP 的频率（如 5分钟/10分钟/1小时）。
+3. **<a href="rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">更换 IP（Refresh IP）</a>**：立即手动刷新该端口的出口 IP（同国家同网络下重配全新 IP）。
+4. **<a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费开关（Auto-Renew Switch）</a>**：开启或关闭该端口订单的到期自动扣费续订。
 5. **[复制端点（Copy Endpoint）]**：快速复制 `host:port` 格式代理地址。

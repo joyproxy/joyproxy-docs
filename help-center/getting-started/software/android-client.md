@@ -5,13 +5,13 @@
 无论是在真实手机上进行海外社媒运营、跨境业务调试，还是在电脑模拟器（如雷电、MuMu、夜神等）中开展批量自动化测试，都可以借助该客户端实现稳定的代理接入。
 
 相关地址：  
-[官方产品页面](https://www.joyproxy.com/products/android-client.html) · [GitHub Releases 下载（APK）](https://github.com/joyproxy/joyproxy-client-android/releases) · [源码仓库](https://github.com/joyproxy/joyproxy-client-android)
+<a href="https://www.joyproxy.com/products/android-client.html" target="_blank" rel="noopener noreferrer">官方产品页面</a> · <a href="https://github.com/joyproxy/joyproxy-client-android/releases" target="_blank" rel="noopener noreferrer">GitHub Releases 下载（APK）</a> · <a href="https://github.com/joyproxy/joyproxy-client-android" target="_blank" rel="noopener noreferrer">源码仓库</a>
 
 ---
 
 ## 下载与安装
 
-1. 打开 [GitHub Releases](https://github.com/joyproxy/joyproxy-client-android/releases) 页面，下载最新版本的签名安装包 **`app-release.apk`**。
+1. 打开 <a href="https://github.com/joyproxy/joyproxy-client-android/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> 页面，下载最新版本的签名安装包 **`app-release.apk`**。
 2. 将安装包传输至 Android 手机或模拟器中进行安装。首次安装时，系统可能会提示“允许安装来自未知来源的应用”，点击允许并继续安装。
 3. 安装完成后打开 **JoyProxy**，即可进入主配置界面。
 
@@ -37,9 +37,9 @@
 
 为了避免移动设备上的所有流量被无差别代理，客户端提供了三种实用的分流策略：
 
-- **全局模式（Global）**：设备上所有支持 VPN 流量接管的应用程序都会经过代理访问网络。
-- **应用白名单模式（Whitelist，推荐）**：**仅被勾选的应用**走代理，其余应用保持直连。例如在做海外业务时，你可以仅勾选目标浏览器或跨境业务 App，而让微信、企业微信或本地银行应用保持直连，避免日常通讯中断或触发国内安全风控。
-- **应用黑名单模式（Blacklist）**：选中的应用保持直连，其余所有未勾选的程序均走代理。
+- **全局模式（Global）**：设备上所有应用程序的流量均通过代理转发访问网络。
+- **应用白名单模式（Whitelist，推荐）**：**仅被勾选的应用**通过代理转发，其余应用保持本地直连。你可以仅勾选目标浏览器或特定的业务 App，而让其他通信或本地银行应用保持直连，避免日常通讯中断或触发安全风控。
+- **应用黑名单模式（Blacklist）**：选中的应用保持本地直连，其余所有未勾选的程序均通过代理转发。
 
 *提示：如果在连接状态下修改了分流名单或模式，需要先点击 **断开** 再 **重新连接**，新的分流策略才会生效。*
 
@@ -56,7 +56,7 @@
 
 在跨境营销、多账号防封与移动端数据验证等场景中，移动设备的设备指纹必须与网络环境匹配。
 
-建议将本客户端与 JoyProxy 的 [动态移动代理（Mobile Proxy）](../rotating/network-types.md) 配合使用：
+建议将本客户端与 JoyProxy 的 <a href="../rotating/network-types.md" target="_blank" rel="noopener noreferrer">动态移动代理（Mobile Proxy）</a> 配合使用：
 - 真实 Android 手机安装客户端，配置分配到的移动网络基站 IP（4G / 5G 蜂窝网络出口）。
 - 结合白名单分流，目标 App 即可获得与海外当地真实移动网络完全一致的 ASN、IP 与环境特征，大幅降低风控拦截率。
 

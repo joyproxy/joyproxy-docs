@@ -12,4 +12,4 @@
 - **政府与公共机构**：政府政务大厅、公共安全与身份认证网关。
 - **私人隐私与通讯系统**：个人网页邮箱、社交平台私信接口、SPAM 批量发帖。
 
-详细的合规行为准则与责任条款，请参阅 **[JoyProxy 服务条款](https://www.joyproxy.com/terms.html)**。
+详细的合规行为准则与责任条款，请参阅 **<a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">JoyProxy 服务条款</a>**。

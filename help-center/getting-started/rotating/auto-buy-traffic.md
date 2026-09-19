@@ -4,7 +4,7 @@
 
 ## 开启步骤
 
-1. 进入 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面。
 2. 找到需要开启自动购买的动态代理网络区域（住宅 / 移动 / 商业）。
 3. 打开 **自动购买流量（Auto-Buy Traffic）** 开关。
 4. 在弹出的配置窗口中完成设置：

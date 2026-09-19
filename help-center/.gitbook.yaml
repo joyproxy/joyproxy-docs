@@ -9,7 +9,7 @@ redirects:
   ai-mcp: ai/mcp.md
   ai-overview: ai/overview.md
   android-client-soft: software/android-client.md
-  billing-records: support/billing.md
+  billing-records: faq/billing.md
   business-guide: proxy/business/overview.md
   change-password: getting-started/change-password.md
   custom-assign: proxy/residential/custom/assign-region.md
@@ -68,11 +68,11 @@ redirects:
   2.-getting-started/rotating-proxy: getting-started/rotating-proxy.md
   2.-getting-started/static-proxy: getting-started/static-proxy.md
   2.-getting-started/web-scraping-api: getting-started/web-scraping-api.md
-  3.-best-practices/chrome-static-proxy: best-practices/chrome-static-proxy.md
-  3.-best-practices/integrate-proxies-in-ai: best-practices/integrate-proxies-in-ai.md
-  3.-best-practices/mobile-static-proxy: best-practices/mobile-static-proxy.md
-  3.-best-practices/third-party-static-proxies: best-practices/third-party-static-proxies.md
-  3.-best-practices/windows-11-system-proxy: best-practices/windows-11-system-proxy.md
+  3.-best-practices/chrome-static-proxy: best-practices/browser/chrome-edge.md
+  3.-best-practices/integrate-proxies-in-ai: best-practices/developer/ai.md
+  3.-best-practices/mobile-static-proxy: best-practices/mobile/android-app.md
+  3.-best-practices/third-party-static-proxies: best-practices/fingerprint/why-static.md
+  3.-best-practices/windows-11-system-proxy: best-practices/browser/windows.md
   4.-user-console/business-isp-proxies: user-console/business-isp-proxies.md
   4.-user-console/change-password: user-console/change-password.md
   4.-user-console/datacenter-proxies: user-console/datacenter-proxies.md

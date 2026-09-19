@@ -8,8 +8,8 @@
 
 - **原因**：网关无法校验你的代理凭据。
 - **快速排查**：
-  1. **密码检查**：确认填入的是在 **[用户与白名单（Users & Whitelist）](authentication.md)** 中设置的代理密码，而不是 JoyProxy 官网的登录密码。
-  2. **用户名检查**：确认代理用户名字段填入的是在 **[提取（Endpoint Generator）](extract-ip.md)** 页面生成的**完整长字符串**（如 `user-zone-res-region-us-...`），请勿手动截断或拼错字符。
+  1. **密码检查**：确认填入的是在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 中设置的代理密码，而不是 JoyProxy 官网的登录密码。
+  2. **用户名检查**：确认代理用户名字段填入的是在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成的**完整长字符串**（如 `user-zone-res-region-us-...`），请勿手动截断或拼错字符。
   3. **白名单模式**：如果使用 IP 白名单认证，请确认客户端服务器的公网 IP 已正确填入白名单列表。
 
 ---
@@ -20,7 +20,7 @@
 - **快速排查**：
   1. 先运行测试命令 `curl -x http://...@gate.joyproxy.com:9001 https://api.ipify.org`。如果能正常返回代理出口 IP，说明 JoyProxy 代理网关本身完全正常通畅。
   2. 如果仅针对特定业务目标网站返回 403，说明拦截发生在目标网站服务端（目标针对该 IP 段或 Header 实行了风控）。
-  3. 检查目标网站是否属于 **[受限目标](restricted-targets.md)**（如金融银行、政务系统或中国大陆境内网站）。
+  3. 检查目标网站是否属于 **<a href="restricted-targets.md" target="_blank" rel="noopener noreferrer">受限目标</a>**（如金融银行、政务系统或中国大陆境内网站）。
 
 ---
 

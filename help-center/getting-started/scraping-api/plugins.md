@@ -49,4 +49,4 @@ curl "https://api.joyproxy.com/v1/fetch/plugin/amazon/product?token=YOUR_SCRAPIN
 
 ## 插件 API 计费说明
 
-结构化数据插件在平台底层自动整合了专有代理与页面解析器。具体的积分扣除标准会在 **[控制台 API 文档（Documentation）](https://www.joyproxy.com/admin-unblocker-documentation.html#plugins)** 中按插件类型实时更新显示。同样遵循**仅成功返回结构化 JSON 时才扣积分**的规则。
+结构化数据插件在平台底层自动整合了专有代理与页面解析器。具体的积分扣除标准会在 **<a href="https://www.joyproxy.com/admin-unblocker-documentation.html#plugins" target="_blank" rel="noopener noreferrer">控制台 API 文档（Documentation）</a>** 中按插件类型实时更新显示。同样遵循**仅成功返回结构化 JSON 时才扣积分**的规则。

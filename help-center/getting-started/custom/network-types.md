@@ -1,6 +1,6 @@
 # 网络类型与选型指南（Network Types）
 
-自定义独享代理按端口包时计费，系统提供三类不同的底层网络资源供你选择（[查看最新定价](https://www.joyproxy.com/pricing.html)）。在下单购买前，了解三者的区别有助于你做出最适合业务场景的决策。
+自定义独享代理按端口包时计费，系统提供三类不同的底层网络资源供你选择（<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">查看最新定价</a>）。在下单购买前，了解三者的区别有助于你做出最适合业务场景的决策。
 
 ---
 
@@ -39,4 +39,4 @@
  └── 大规模高并发数据抓取 / 预算敏感型 ──► 选择【自定义独享数据中心代理】
 ```
 
-下一步：前往 **[购买端口（Purchase Proxies）](purchase.md)** 进行选购。
+下一步：前往 **<a href="purchase.md" target="_blank" rel="noopener noreferrer">购买端口（Purchase Proxies）</a>** 进行选购。

@@ -1,6 +1,6 @@
 # 网络类型与选型指南（Network Types）
 
-静态独享代理按线路包时计费，系统提供三类不同的网络供你选型（[查看最新定价](https://www.joyproxy.com/pricing.html)）：
+静态独享代理按线路包时计费，系统提供三类不同的网络供你选型（<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">查看最新定价</a>）：
 
 ---
 
@@ -20,4 +20,4 @@
 2. **企业级专线与 B2B 数据交互** ➔ 选择 **静态商业 / ISP 代理**（兼顾速度与信任度）。
 3. **高并发、大吞吐、预算敏感型** ➔ 选择 **静态数据中心代理**。
 
-下一步：前往 **[购买独享线路（Purchase Proxies）](purchase.md)** 进行选购。
+下一步：前往 **<a href="purchase.md" target="_blank" rel="noopener noreferrer">购买独享线路（Purchase Proxies）</a>** 进行选购。

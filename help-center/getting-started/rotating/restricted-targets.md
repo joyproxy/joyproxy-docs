@@ -23,4 +23,4 @@
 | **政府与公共机构** | 政务门户系统、公共部门统一认证、税局系统 | 防范对公共基础设施的恶意扫描与攻击 |
 | **邮件与通讯系统** | 网页邮箱批量登录、邮件服务商 SMTP/IMAP 接口 | 严禁用于垃圾邮件（SPAM）或批量撞库 |
 
-详细可接受使用政策请参阅 **[服务条款](https://www.joyproxy.com/terms.html)**。
+详细可接受使用政策请参阅 **<a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">服务条款</a>**。

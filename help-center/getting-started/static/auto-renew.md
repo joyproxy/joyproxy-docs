@@ -4,7 +4,7 @@
 
 ## 开启与管理步骤
 
-1. 进入 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面。
 2. 找到对应静态独享线路订单卡片。
 3. 找到 **自动续费（Auto-Renew）** 开关并点击开启。
 4. 开启后，系统会在订单到期前自动从你的 **账户余额（Balance）** 中扣费并延长对应套餐时长。

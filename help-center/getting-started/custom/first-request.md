@@ -106,6 +106,6 @@ curl_close($ch);
 
 ## 第三方软件与指纹浏览器集成
 
-- **Chrome / Edge 浏览器代理**：参阅 **[Chrome 静态代理](../../best-practices/chrome-static-proxy.md)**。
-- **Windows 系统全局代理**：参阅 **[Windows 11 系统代理](../../best-practices/windows-11-system-proxy.md)**。
-- **指纹浏览器与多账号工具**：参阅 **[第三方软件配合代理](../../best-practices/third-party-static-proxies.md)**（只需在代理主机与端口栏填入自定义端口地址即可）。
+- **Chrome / Edge 浏览器代理**：参阅 **<a href="../../best-practices/chrome-static-proxy.md" target="_blank" rel="noopener noreferrer">Chrome 静态代理</a>**。
+- **Windows 系统全局代理**：参阅 **<a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 系统代理</a>**。
+- **指纹浏览器与多账号工具**：参阅 **<a href="../../best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">第三方软件配合代理</a>**（只需在代理主机与端口栏填入自定义端口地址即可）。
