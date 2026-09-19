@@ -62,15 +62,6 @@
     * <a href="getting-started/software/proxy-server.md" target="_blank" rel="noopener noreferrer">代理服务器</a>
     * <a href="getting-started/software/android-client.md" target="_blank" rel="noopener noreferrer">Android 客户端</a>
 
-## 最佳实践
-
-* <a href="best-practices/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>
-* <a href="best-practices/integrate-proxies-in-ai.md" target="_blank" rel="noopener noreferrer">在 AI 中集成代理</a>
-* <a href="best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">第三方软件配合静态代理</a>
-* <a href="best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 系统代理</a>
-* <a href="best-practices/chrome-static-proxy.md" target="_blank" rel="noopener noreferrer">Chrome 静态代理</a>
-* <a href="best-practices/mobile-static-proxy.md" target="_blank" rel="noopener noreferrer">手机静态代理</a>
-
 ## 用户控制台
 
 * <a href="yong-hu-kong-zhi-tai/register.md" target="_blank" rel="noopener noreferrer">账户与登录</a>
@@ -96,6 +87,38 @@
 * <a href="fu-wu-yu-zhi-chi/README.md" target="_blank" rel="noopener noreferrer">帮助中心控制台</a>
     * <a href="fu-wu-yu-zhi-chi/tickets.md" target="_blank" rel="noopener noreferrer">工单系统</a>
     * <a href="fu-wu-yu-zhi-chi/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a>
+
+## 最佳实践
+
+* <a href="zui-jia-shi-jian/browser/chrome-edge.md" target="_blank" rel="noopener noreferrer">电脑与常用浏览器</a>
+    * <a href="zui-jia-shi-jian/browser/chrome-edge.md" target="_blank" rel="noopener noreferrer">电脑用 Chrome / Edge 怎么挂代理上网</a>
+    * <a href="zui-jia-shi-jian/browser/firefox.md" target="_blank" rel="noopener noreferrer">Firefox 火狐浏览器怎么单独设置代理</a>
+    * <a href="zui-jia-shi-jian/browser/windows.md" target="_blank" rel="noopener noreferrer">Windows 电脑怎么设置全局代理网络</a>
+    * <a href="zui-jia-shi-jian/browser/mac.md" target="_blank" rel="noopener noreferrer">Mac 苹果电脑怎么在系统里设置代理</a>
+    * <a href="zui-jia-shi-jian/browser/extension.md" target="_blank" rel="noopener noreferrer">用官方浏览器插件一键开关和切换线路</a>
+    * <a href="zui-jia-shi-jian/browser/verify-proxy.md" target="_blank" rel="noopener noreferrer">怎么检查代理到底有没有生效、出口 IP 是哪里</a>
+* <a href="zui-jia-shi-jian/mobile/android-app.md" target="_blank" rel="noopener noreferrer">手机与模拟器</a>
+    * <a href="zui-jia-shi-jian/mobile/android-app.md" target="_blank" rel="noopener noreferrer">安卓手机怎么用官方 App 让指定软件走代理</a>
+    * <a href="zui-jia-shi-jian/mobile/android-wifi.md" target="_blank" rel="noopener noreferrer">安卓手机连 Wi-Fi 怎么手动填代理</a>
+    * <a href="zui-jia-shi-jian/mobile/ios.md" target="_blank" rel="noopener noreferrer">苹果手机与 iPad 怎么设置代理 IP</a>
+    * <a href="zui-jia-shi-jian/mobile/emulator.md" target="_blank" rel="noopener noreferrer">电脑上的安卓模拟器怎么连代理</a>
+    * <a href="zui-jia-shi-jian/mobile/social-and-ads.md" target="_blank" rel="noopener noreferrer">做海外社媒或广告投放时怎么选和用 IP</a>
+* <a href="zui-jia-shi-jian/fingerprint/why-static.md" target="_blank" rel="noopener noreferrer">防关联与指纹浏览器</a>
+    * <a href="zui-jia-shi-jian/fingerprint/why-static.md" target="_blank" rel="noopener noreferrer">做多账号或跨境店铺为什么必须一人一静态 IP</a>
+    * <a href="zui-jia-shi-jian/fingerprint/adspower.md" target="_blank" rel="noopener noreferrer">AdsPower 指纹浏览器手把手配代理教程</a>
+    * <a href="zui-jia-shi-jian/fingerprint/hubstudio.md" target="_blank" rel="noopener noreferrer">Hubstudio 指纹浏览器手把手配代理教程</a>
+    * <a href="zui-jia-shi-jian/fingerprint/bitbrowser.md" target="_blank" rel="noopener noreferrer">比特浏览器手把手配代理教程</a>
+    * <a href="zui-jia-shi-jian/fingerprint/other-antidetect.md" target="_blank" rel="noopener noreferrer">Multilogin 等海外指纹浏览器怎么填代理</a>
+    * <a href="zui-jia-shi-jian/fingerprint/after-new-ip.md" target="_blank" rel="noopener noreferrer">更换出口 IP 后怎么安全更新浏览器环境</a>
+* <a href="zui-jia-shi-jian/developer/buy-and-renew.md" target="_blank" rel="noopener noreferrer">代码开发与接口集成</a>
+    * <a href="zui-jia-shi-jian/developer/buy-and-renew.md" target="_blank" rel="noopener noreferrer">怎么用接口查余额、自动买代理和续费订单</a>
+    * <a href="zui-jia-shi-jian/developer/sync-whitelist.md" target="_blank" rel="noopener noreferrer">多台服务器部署时怎么用接口自动加白名单</a>
+    * <a href="zui-jia-shi-jian/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">怎么写程序批量提取代理并维护本地可用池</a>
+    * <a href="zui-jia-shi-jian/developer/fetch-pages.md" target="_blank" rel="noopener noreferrer">遇到反爬和动态网页怎么用抓取接口直接拿内容</a>
+    * <a href="zui-jia-shi-jian/developer/python.md" target="_blank" rel="noopener noreferrer">Python 发请求怎么挂代理与遇到报错自动重试</a>
+    * <a href="zui-jia-shi-jian/developer/scrapy.md" target="_blank" rel="noopener noreferrer">Scrapy 爬虫项目里怎么实现每次请求自动换 IP</a>
+    * <a href="zui-jia-shi-jian/developer/playwright.md" target="_blank" rel="noopener noreferrer">Playwright / Puppeteer 自动化测试怎么挂代理</a>
+    * <a href="zui-jia-shi-jian/developer/ai.md" target="_blank" rel="noopener noreferrer">怎么在 Cursor 或 AI 助手里直接调用代理能力</a>
 
 ## 常见问题
 
