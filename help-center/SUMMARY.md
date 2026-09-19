@@ -73,17 +73,19 @@
 
 ## 用户控制台
 
-* [控制台导读](yong-hu-kong-zhi-tai/README.md)
+* [账户与登录](yong-hu-kong-zhi-tai/register.md)
     * [注册](yong-hu-kong-zhi-tai/register.md)
     * [邮箱激活](yong-hu-kong-zhi-tai/email-activation.md)
     * [登录](yong-hu-kong-zhi-tai/login.md)
     * [找回密码](yong-hu-kong-zhi-tai/forgot-password.md)
-    * [概览（Overview）](yong-hu-kong-zhi-tai/overview.md)
+* [控制台总览](yong-hu-kong-zhi-tai/overview.md)
+* [代理控制台](yong-hu-kong-zhi-tai/residential-proxies.md)
     * [住宅代理控制台](yong-hu-kong-zhi-tai/residential-proxies.md)
     * [移动代理控制台](yong-hu-kong-zhi-tai/mobile-proxies.md)
     * [商业 / ISP 控制台](yong-hu-kong-zhi-tai/business-isp-proxies.md)
     * [数据中心控制台](yong-hu-kong-zhi-tai/datacenter-proxies.md)
     * [网页抓取控制台](yong-hu-kong-zhi-tai/web-scraping-api.md)
+* [我的账户](yong-hu-kong-zhi-tai/my-account.md)
     * [我的账户总览](yong-hu-kong-zhi-tai/my-account.md)
     * [界面语言](yong-hu-kong-zhi-tai/interface-language.md)
     * [修改密码](yong-hu-kong-zhi-tai/change-password.md)
@@ -91,11 +93,9 @@
     * [主用户与自动化 Token](yong-hu-kong-zhi-tai/rotate-token.md)
     * [账单与交易记录](yong-hu-kong-zhi-tai/invoices.md)
     * [注销账户](yong-hu-kong-zhi-tai/delete-account.md)
-
-## 服务与支持
-
-* [在线客服](fu-wu-yu-zhi-chi/live-chat.md)
-* [工单系统](fu-wu-yu-zhi-chi/tickets.md)
+* [帮助中心控制台](fu-wu-yu-zhi-chi/README.md)
+    * [工单系统](fu-wu-yu-zhi-chi/tickets.md)
+    * [实时聊天](fu-wu-yu-zhi-chi/live-chat.md)
 
 ## 常见问题
 

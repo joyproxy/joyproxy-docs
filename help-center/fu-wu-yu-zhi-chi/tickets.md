@@ -1,25 +1,47 @@
 # 工单系统
 
-当您需要可追溯的记录——账单调查、集成调试或超出单次聊天的问题时——请提交支持工单。
+当遇到需要追溯操作记录的复杂技术排查、账单差异核对，或需要跨部门协助的个性化业务诉求时，推荐在控制台中提交支持工单。
 
-## 创建工单
+**页面路径：** 控制台左侧菜单 **帮助中心** → **提交工单**（或直接访问 <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">admin-support.html</a>）
 
-1. 登录 → <a href="https://www.joyproxy.com/admin-support.html" target="_blank" rel="noopener noreferrer">支持</a>。
-2. 打开 **My Tickets**（或 **Submit ticket**）。
-3. 填写清晰的**主题**（例如「静态美国线路认证失败」）。
-4. 若表单提供**优先级**，请选择。
-5. 描述复现步骤、预期与实际行为，以及时间戳（UTC 更佳）。
-6. 附上已打码的截图或日志——移除密码与完整 Token。
-7. 提交并留意邮件或控制台回复。
+---
 
-## 状态与跟进
+## 创建新工单
 
-- 在工单线程中回复，勿重复开单。
-- 流量异常时请引用 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a> 中的订单 ID。
-- 紧急生产故障请同时发起<a href="live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a>**并**提交工单，便于工程师掌握上下文。
+进入 **我的工单** 标签页，点击右上角 **「+ 新建工单」** 按钮弹出提单窗口：
 
-## 账单类工单
+1. **主题（Subject）：** 简明扼要概括问题，例如「静态住宅代理 192.x.x.x 目标连接超时」或「USDT 充值到账差异核对」。
+2. **优先级（Priority）：** 根据实际业务影响度选择：
+   - **低（Low）：** 一般性咨询、功能建议或非阻断性小问题；
+   - **中（Medium）：** 影响部分测试或非核心业务受阻；
+   - **高（High）：** 生产环境业务完全阻断，急需排查。
+3. **问题描述（Issue Description）：**
+   - 详细写出复现步骤、预期行为与实际报错。
+   - 附带相关时间戳（标明时区如 UTC 或 UTC+8）。
+   - 若涉及代理连接问题，请写明测试的目标网站、客户端类型以及是否通过白名单或账号密码认证。
+4. **附件上传（可选）：**
+   - 支持上传报错截图或请求响应日志。
+   - 允许的文件类型：图片格式（PNG / JPG，上限 5MB）及常用文档（`txt`、`doc`、`docx`、`xls`、`xlsx`、`csv`）。
+   - **安全提示：** 上传前请对密码、完整 Master Token 或敏感业务数据进行打码脱敏。
+5. 点击 **「提交工单」**，系统将生成唯一的工单流水号（如 `#1042`）。
 
-请链接到<a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">交易</a>记录，并说明问题属于 PayPal、余额还是抓取积分。
+---
 
-法律或隐私相关请求可引用<a href="https://www.joyproxy.com/terms.html" target="_blank" rel="noopener noreferrer">服务条款</a>与<a href="https://www.joyproxy.com/privacy.html" target="_blank" rel="noopener noreferrer">隐私政策</a>。
+## 跟踪与工单回复
+
+在 **我的支持工单** 列表中，可随时查看历史记录：
+
+- **列表信息：** 显示工单号、主题、优先级、处理状态、回复数及最后更新时间。
+- **查看与跟进：** 点击操作列中的 **「查看」**，可打开工单时间线。
+- **追加回复：** 在详情页底部的 **「您的回复」** 框中输入最新进展并点击 **「提交回复」**。若排查中获取了新日志，支持点击 **「新增图片」** 或文档附件补充说明。请尽量在原工单内持续沟通，避免就同一问题重复开单。
+
+---
+
+## 常见工单类型与提单建议
+
+| 问题类型 | 建议提供的信息 | 关联链接 |
+| :--- | :--- | :--- |
+| **代理连通性异常** | 订单 ID、测试目标 URL、客户端错误代码、脱敏的测试命令行（如 curl 日志） | <a href="../yong-hu-kong-zhi-tai/residential-proxies.md" target="_blank" rel="noopener noreferrer">代理控制台</a> |
+| **充值与账单差异** | 充值订单号、支付方式（USDT TxID / PayPal 交易号）、扣费时间 | <a href="../yong-hu-kong-zhi-tai/invoices.md" target="_blank" rel="noopener noreferrer">账单与交易记录</a> |
+| **API 抓取失败** | 请求的 Target URL、抓取配置参数、返回的 HTTP 状态码与抓取响应头 | <a href="../yong-hu-kong-zhi-tai/web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取控制台</a> |
+| **企业资质与开票** | 企业全称、税号、发票抬头、接收发票的电子邮箱 | <a href="live-chat.md" target="_blank" rel="noopener noreferrer">在线客服</a> |
