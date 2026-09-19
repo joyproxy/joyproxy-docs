@@ -2,6 +2,8 @@
 
 JoyProxy 秉承开放原则，为开发者提供了涵盖浏览器、桌面端、移动端及服务端的全套开源免费工具。本章介绍各工具的定位与使用注意事项。
 
+---
+
 ## 工具矩阵概览
 
 ### JoyProxy 提供了哪些开源软件？是否收费？
@@ -44,6 +46,9 @@ Proxy Tester 是一款免安装或轻量级安装的 Windows 实用工具，主�
 - **协议握手测速**：精准测量 HTTP、HTTPS 及 SOCKS5（含 TCP 与 UDP）的建连延迟与响应时间；
 - **便捷测试**：同样支持测试任意第三方商家的代理节点，是爬虫运维与跨境电商环境排查的高效助手。
 
+### 可以用 Tester 检测其他服务商的代理吗？
+可以。Proxy Tester 支持粘贴任意标准 HTTP 或 SOCKS5 代理端点，检测连通性、延迟、出口公网 IP 与地域属地，并不局限于 JoyProxy 线路。
+
 ---
 
 ## Android 客户端与 Proxy Server
@@ -53,4 +58,14 @@ Proxy Tester 是一款免安装或轻量级安装的 Windows 实用工具，主�
 - **精准按应用分流（Per-App Routing）**：你可以单独指定某些特定海外应用（如 TikTok、Twitter、海外银行 App）走代理流量，而让常用应用保持直连，避免产生多余的代理流量消耗。
 
 ### 代理服务器（Proxy Server）网关适合什么场景？
-如果你在内网拥有多台没有公网访问权限的内网爬虫服务器，或者希望将多路代理出口整合成一个统一内网 IP 对内提供服务，你可以在一台 Linux/Windows 跳板机上部署开源 Proxy Server，作为企业内网专用的代理中继桥梁。
+如果你在内网拥有多台没有公网访问权限的内网爬虫服务器，或者希望将多路代理出口整合成一个统一内网 IP 对内提供服务，你可以在一台 Linux/Windows 跳板机上部署开源 Proxy Server，作为企业内网专用的代理中继桥梁。自建网关不包含云端代理流量，你可以挂接自有线路或 JoyProxy 云端 IP。
+
+---
+
+## AI 模块生态
+
+### OpenClaw Skill、AI MCP 与 AI Assistant 分别是什么？
+JoyProxy 为开发者提供了完善的 AI 生态扩展：
+1. **OpenClaw Skill**：在自动化 Agent 与工作流中，用自然语言调取代理提取接口、查询流量余额与账户状态；
+2. **AI MCP（Model Context Protocol）**：支持一键接入 Cursor、VS Code、Claude Desktop 等现代 AI 编程助手，在代码编写过程中直接调用代理网络；
+3. **AI Assistant**：位于官网右下角的 7×24 小时智能客服助手，随时回答产品与配置疑问。
