@@ -30,7 +30,7 @@
 
 ## 第三步：生成连接端点
 
-1. 进入 **[端点生成中心](https://www.joyproxy.com/admin-ip-extraction-center.html)**，切到 **动态代理（Rotating）** 页签。
+1. 进入 **[提取](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面，切到 **动态代理（Rotating）** 页签。
 2. 选择提取参数：
    - **国家/地区**：选择需要的出口 IP 目标国家（如美国 US）。
    - **会话类型**：
@@ -87,4 +87,4 @@ console.log("代理出口 IP:", await res.text());
 
 - **407 Proxy Authentication Required**：检查密码是否填错（必须填「用户与白名单」里设的密码，而非官网登录密码），用户名必须是生成的完整长字符串。
 - **连接超时**：确认网关主机为 `gate.joyproxy.com`，端口为 `9001`。
-- **更换国家**：去[端点生成中心](https://www.joyproxy.com/admin-ip-extraction-center.html)重新选择国家并生成新用户名即可。
+- **更换国家**：去 [提取](https://www.joyproxy.com/admin-ip-extraction-center.html) 页面重新选择国家并生成新用户名即可。
