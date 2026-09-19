@@ -9,10 +9,10 @@
 1. 打开控制台 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面。
 2. 选择对应的代理网络，并切到 **静态代理（Static Proxies）** 标签。
 3. 在筛选区域：
-   - 可按国家/地区（Location）或搜索框筛选订单。
-   - 选择 **协议（Protocol）**：`HTTP / HTTPS / SOCKS5`。
-   - 选择 **输出格式（Output Format）**：展示为 `host:port` 或标准 URI。
-4. 点击 **复制地址列表（Copy Host List）** 复制生成的端口列表，或点击 **导出（Export）** 导出为 CSV/JSON/TXT。
+   - 可按国家/地区或搜索框筛选订单。
+   - 选择 **协议**：`HTTP / HTTPS / SOCKS5`。
+   - 选择 **输出格式**：展示为 `host:port` 或标准 URI。
+4. 点击 **复制地址列表** 复制生成的端口列表，或点击 **导出** 导出为 CSV/JSON/TXT。
 
 ---
 

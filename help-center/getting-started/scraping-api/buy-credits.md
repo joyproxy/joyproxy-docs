@@ -1,4 +1,4 @@
-# 购买积分包与并发限制（Buy Credits & Concurrency）
+# 购买积分包与并发限制
 
 网页抓取 API 采用预付费积分包（Credits Pack）计费，积分用于支付抓取请求中的云端算力、代理 IP 与无头浏览器渲染消耗。
 
@@ -6,17 +6,17 @@
 
 ## 购买抓取积分包
 
-1. 登录 JoyProxy 控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>** 页面。
-2. 切换到 **网页抓取 API（Web Scraping API）** 标签页（或在控制台中打开 <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">套餐与支付 Buy Credits</a>）。
+1. 登录 JoyProxy 控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>** 页面。
+2. 切换到 **网页抓取 API** 标签页（或在控制台中打开 <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=buy" target="_blank" rel="noopener noreferrer">网页抓取购买页</a>）。
 3. 选购套餐：
-   - **预设积分套餐包（Preset Packs）**：如 $5 / $20 / $50 / $100 等多种积分包。
-   - **自定义积分包（Custom Credits）**：可按需输入任意积分数量（最少 10,000 积分起）。
-4. 结算支付：支持 **账户余额（Balance）**、**信用卡 / 借记卡（Credit Card）**、**PayPal**、**Apple Pay**、**Google Pay**、**微信支付（WeChat Pay）**、**USDT（TRC20）** 以及 **UPI（印度支付）**。
+   - **预设积分套餐包**：如 $5 / $20 / $50 / $100 等多种积分包。
+   - **自定义积分包**：可按需输入任意积分数量（最少 10,000 积分起）。
+4. 结算支付：支持 **账户余额**、**信用卡 / 借记卡**、**PayPal**、**Apple Pay**、**Google Pay**、**微信支付**、**USDT（TRC20）** 以及 **UPI**。
 5. **积分有效期**：购买的所有 Credits 积分**永久有效，绝不过期**。
 
 ---
 
-## 并发限制与规则（Concurrency Rules）
+## 并发限制与规则
 
 并发控制同一时间可运行的请求数；Credits 计费规则请见控制台「Credit balance → 说明」。
 

@@ -1,4 +1,4 @@
-# 发起代理请求（First Request）
+# 发起代理请求
 
 拿到提取到的自定义端口端点（如 `us-ca.edge.joyproxy.com:20001`）和代理账密后，可以在各种主流编程语言或第三方软件中发起 HTTP / SOCKS5 请求。
 

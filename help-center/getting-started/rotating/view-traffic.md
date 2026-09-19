@@ -1,14 +1,14 @@
-# 查看已购流量（View Traffic）
+# 查看已购流量
 
 在控制台中，你可以随时查看已购动态代理套餐的生效状态、已用量及剩余 GB 流量。
 
 ## 操作步骤
 
 1. 登录 JoyProxy 控制台。
-2. 打开左侧菜单 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理（My Proxies）</a>** 页面。
-3. 切换到 **动态代理（Rotating Proxies）** 区域，你将看到所有生效中的动态代理订单卡片：
-   - **套餐名称与网络类型**：如 动态住宅代理（Rotating Residential Proxies）。
-   - **流量额度（Traffic Quota）**：清晰显示已用流量与当前剩余 GB 流量。
+2. 打开左侧菜单 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理</a>** 页面。
+3. 切换到 **动态代理** 区域，你将看到所有生效中的动态代理订单卡片：
+   - **套餐名称与网络类型**：如动态住宅代理。
+   - **流量额度**：清晰显示已用流量与当前剩余 GB 流量。
    - **流量进度条**：直观展示已消耗比例。
    - **生效时间与有效期**。
 

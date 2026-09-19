@@ -21,22 +21,22 @@
 
 购买积分后，系统会自动为你的账户生成专属的 **Scraping API Token**：
 
-1. 进入左侧菜单 **<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取 API（Web Scraping API）</a>** 控制台页面。
-2. 切换到 **API 中心（API Center）** 标签页（或查看 **文档** 页签）。
-3. 在 **API Token** 文本框中点击 **复制（Copy）** 按钮，复制你的凭据。
+1. 进入左侧菜单 **<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取 API</a>** 控制台。
+2. 切换到 **API 中心** 页签（或查看 **文档** 页签）。
+3. 在 **Scraping API Token** 文本框中点击 **复制** 按钮，复制你的凭据。
 
-> **安全提示与 Token 轮换（Rotate Token）**  
+> **安全提示与 Token 轮换**  
 > - **专码专用**：Scraping API Token 专门用于网页抓取 API，不能用于提取代理 IP 或主用户 OpenAPI 下单。  
-> - **安全轮换**：若怀疑 Token 泄漏，可随时在 API Center 页面点击 **轮换 API Token（Rotate Token）**，旧 Token 将立即失效。
+> - **安全轮换**：若怀疑 Token 泄漏，可随时在 API 中心点击 **轮换** 按钮，旧 Token 将立即失效。
 
 ---
 
 ## 第三步：在控制台 API 中心在线试跑
 
-1. 在 **<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取 API</a>** 页面切到 **API 中心（API Center）** 页签。
-2. 在 **目标 URL（Target URL）** 输入框中输入需要抓取的网址（例如 `https://example.com`）。
+1. 在 **<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取 API</a>** 页面切到 **API 中心** 页签。
+2. 在 **目标 URL** 输入框中输入需要抓取的网址（例如 `https://example.com`）。
 3. 点击 **发送请求** 按钮。
-4. 页面下方会即时展示抓取结果 HTML 源码、响应 HTTP 状态码以及本次消耗的积分数。
+4. 页面下方会即时展示响应数据、HTTP 状态码以及本次消耗的 Credits。
 
 ---
 

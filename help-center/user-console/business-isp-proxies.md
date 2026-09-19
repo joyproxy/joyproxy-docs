@@ -20,7 +20,7 @@
 
 ## 支持的三种产品模式
 
-商业 / ISP 控制台同样具备完整的六大页签结构（购买、已购、账密与白名单、提取、用量、API 中心），并支持在顶部灵活切换业务形态：
+商业 / ISP 控制台同样具备完整的六大页签结构（购买、已购、账密与白名单、提取、用量、API 中心【OpenAPI】），并支持在顶部灵活切换业务形态：
 
 - **动态专线流量包**：通过统一接入网关调度全网商业专线 IP，适合需要高信誉出口但目标数量庞大的轮换式抓取。操作流程同 <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">动态代理指南</a>。
 - **静态独享专线（推荐）**：独家租用一条固定的商业专线出口，IP 长期绑定，适合海外公司企业级系统对接、跨境商铺长期养号。开通与管理见 <a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">静态独享专线指南</a>。

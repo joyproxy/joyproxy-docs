@@ -20,7 +20,7 @@
 ## 核心优势
 
 1. **仅成功才扣积分（0 扣款保证）**：请求只有返回 HTTP Status 2xx 且 Body 包含有效内容时才扣除积分。若目标站点报错、超时或拦截，本次请求不扣除任何积分。
-2. **托管 JS 渲染与高级反爬绕过**：只需在请求参数中传入 `render=true` 即可启用云端 Headless 浏览器渲染；传入 `super=true` 可绕过 Cloudflare 等顶级 WAF 验证。
+2. **托管 JS 渲染与高级反爬绕过**：只需在请求参数中传入 `render=true` 即可启用云端 Headless 浏览器渲染；传入 `super=true` 可路由至真实住宅/移动出口应对高风控目标站点。
 3. **结构化数据插件（Plugins）**：提供 Amazon、Google Search、Google Maps、YouTube 等平台专属插件，直接返回格式化的 JSON 数据。
 4. **支持同步与异步队列（Async API）**：支持毫秒级同步请求，也支持百万级大批量抓取任务的异步队列提交与轮询。
 

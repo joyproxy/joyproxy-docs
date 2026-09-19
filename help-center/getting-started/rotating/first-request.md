@@ -1,15 +1,15 @@
-# 发起代理请求（First Request）
+# 发起代理请求
 
 拿到提取的代理连接后，你可以使用各种编程语言或客户端连接 JoyProxy 动态代理网关。
 
-- **代理主机（Host）**：`gate.joyproxy.com`
-- **代理端口（Port）**：`9001`
+- **代理主机**：`gate.joyproxy.com`
+- **代理端口**：`9001`
 
 ---
 
 ## 代码示例
 
-请将代码中的 `GENERATED_USER` 替换为从 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成的完整长用户名，`YOUR_PASS` 替换为在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** 中设置的代理密码。
+请将代码中的 `GENERATED_USER` 替换为从 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取</a>** 页面生成的完整长用户名，`YOUR_PASS` 替换为在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">账密与白名单</a>** 中设置的代理密码。
 
 ### cURL
 ```bash

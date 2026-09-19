@@ -14,8 +14,8 @@
 ### 方式一：通过 Chrome 网上应用店安装（推荐）
 
 1. 访问 <a href="https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng" target="_blank" rel="noopener noreferrer">Chrome 网上应用店</a>。
-2. 点击 **添加到 Chrome（Add to Chrome）** 完成安装。
-3. 安装完成后，在浏览器右上角的拼图图标中将 JoyProxy **固定（Pin）** 到工具栏，方便日常快速切换。
+2. 点击 **添加到 Chrome** 完成安装。
+3. 安装完成后，在浏览器右上角的拼图图标中将 JoyProxy **固定** 到工具栏，方便日常快速切换。
 
 *注：Microsoft Edge 用户同样可以直接打开上述 Chrome 商店链接安装该扩展。*
 
@@ -24,9 +24,9 @@
 在无法直接连接 Chrome 应用店的环境下，可手动加载离线版本：
 
 1. 前往 GitHub Releases 下载最新的 <a href="https://github.com/joyproxy/joyproxy-extension/releases/latest/download/joyproxy-extension-unpacked.zip" target="_blank" rel="noopener noreferrer">joyproxy-extension-unpacked.zip</a> 并解压到本地文件夹。
-2. 在浏览器地址栏输入 `chrome://extensions` 打开扩展管理页，开启右上角的 **开发者模式（Developer mode）**。
-3. 点击左上角的 **加载已解压的扩展程序（Load unpacked）**，选中包含 `manifest.json` 的解压目录。
-4. 后续更新版本时，只需覆盖本地文件，并在扩展页面点击该卡片上的 **重新加载（Reload）** 图标即可。
+2. 在浏览器地址栏输入 `chrome://extensions` 打开扩展管理页，开启右上角的 **开发者模式**。
+3. 点击左上角的 **加载已解压的扩展程序**，选中包含 `manifest.json` 的解压目录。
+4. 后续更新版本时，只需覆盖本地文件，并在扩展页面点击该卡片上的 **重新加载** 图标即可。
 
 ---
 

@@ -9,16 +9,16 @@
 1. 登录控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面。
 2. 切换到 **自定义代理（Custom Proxies）** 标签页。
 3. 配置提取筛选条件：
-   - **选择订单（Select Orders）**：勾选指定的自定义端口订单或选择全部。
-   - **代理协议（Protocol）**：选择 `HTTP`、`HTTPS` 或 `SOCKS5`。
+   - **选择订单**：勾选指定的自定义端口订单或选择全部。
+   - **代理协议**：选择 `HTTP`、`HTTPS` 或 `SOCKS5`。
    - **代理鉴权凭证**：选择你在「账密与白名单」中创建的代理 Username / Password。
-   - **输出格式（Output Format）**：
+   - **输出格式**：
      - `Host:Port`（如 `us-ca.edge.joyproxy.com:20001`）
      - `Host:Port:User:Pass`
      - `http://User:Pass@Host:Port`
 4. 提取与导出：
-   - 点击 **复制地址列表（Copy Host List）**，将生成的端口文本复制到剪贴板。
-   - 或点击 **导出文件（Export）** 导出为 `.txt` 或 `.csv` 文件。
+   - 点击 **复制地址列表**，将生成的端口文本复制到剪贴板。
+   - 或点击 **导出文件** 导出为 `.txt` 或 `.csv` 文件。
 
 ---
 

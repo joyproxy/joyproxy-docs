@@ -1,4 +1,4 @@
-# Android 代理客户端（Android Client）
+# Android 代理客户端
 
 **JoyProxy Android 客户端**是一款面向移动端设备的轻量级代理工具，基于成熟的 sing-box `libbox` 底层核心开发。它支持在无需 Root 权限的前提下，将手机或安卓模拟器的网络流量通过 HTTP 或 SOCKS5 代理转发，并提供了灵活的应用级分流规则。
 

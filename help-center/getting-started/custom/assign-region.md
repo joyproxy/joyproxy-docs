@@ -1,4 +1,4 @@
-# 分配地区（Assign Region）
+# 分配地区
 
 自定义独享代理的一大核心优势在于：**端口购买后，你可以随时在控制台中为每个端口分配或切换目标国家与城市。**
 
@@ -6,14 +6,14 @@
 
 ## 操作步骤
 
-1. 登录 JoyProxy 控制台，进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理（My Proxies）</a>** 页面。
+1. 登录 JoyProxy 控制台，进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理</a>** 页面。
 2. 找到需要配置地区的自定义代理端口。
-3. 点击端口右侧的 **分配地区（Assign Region）** 按钮。
+3. 点击端口右侧的 **分配地区** 按钮。
 4. 在弹出的地区选择弹窗中：
-   - **选择国家（Country）**：从下拉列表中选择目标国家（如 `United States 美国`、`Japan 日本`、`Germany 德国` 等）。
-   - **选择省/州（State / Region）**（可选）：精准筛选特定省份或州。
-   - **选择城市（City）**（可选）：精准筛选特定城市。
-5. 点击 **确定保存（Confirm）** 按钮。
+   - **选择国家**：从下拉列表中选择目标国家（如美国、日本、德国等）。
+   - **选择省/州**（可选）：精准筛选特定省份或州。
+   - **选择城市**（可选）：精准筛选特定城市。
+5. 点击 **确定保存** 按钮。
 6. 系统将在数秒内将该端口的出口 IP 重新分配至所选地区。
 
 ---

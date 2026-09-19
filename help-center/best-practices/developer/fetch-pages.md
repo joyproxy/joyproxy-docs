@@ -1,6 +1,6 @@
 # 使用网页抓取 API 处理动态渲染与反爬保护
 
-针对具备复杂反爬保护（如 Cloudflare、Akamai）或前端动态渲染（React/Vue SPA）的目标网页，可使用托管式的 **网页抓取 API（Web Scraping API）**。
+针对具备反爬保护或前端动态渲染（React/Vue SPA）的目标网页，可使用托管式的 **网页抓取 API（Web Scraping API）**。
 
 服务自动处理代理调度与无头浏览器渲染，仅针对 HTTP 2xx 成功响应扣除 Credits 积分。
 

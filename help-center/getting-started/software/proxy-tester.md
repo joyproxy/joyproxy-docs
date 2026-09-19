@@ -1,4 +1,4 @@
-# 代理检测工具（Proxy Tester）
+# 代理检测工具
 
 **JoyProxy 代理检测工具**（JoyProxy Tester）是一款轻量级的 Windows 桌面代理连通性测试与批量验证软件。它原生支持 **HTTP / HTTPS**、**SOCKS5 TCP** 以及 **SOCKS5 UDP** 协议，支持多通道出口 IP 与地理位置解析，并能对接各类代理供应商的提取 API 进行严格的顺序批量测速与 Windows 系统代理联动。
 

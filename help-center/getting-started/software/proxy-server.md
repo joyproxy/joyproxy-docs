@@ -1,4 +1,4 @@
-# 代理服务器网关（Proxy Server）
+# 代理服务器网关
 
 **joyproxy-server**（命令行程序名通常为 `joyproxy`）是一款高性能、轻量级的 HTTP / SOCKS5 代理网关服务，适用于 Linux 服务器与 Windows 环境。
 

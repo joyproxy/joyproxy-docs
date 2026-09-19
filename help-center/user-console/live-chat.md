@@ -1,4 +1,4 @@
-# 实时聊天（Live Chat）
+# 实时聊天
 
 实时聊天是 JoyProxy 为用户提供的即时在线客服通道。当你在选购套餐、首次配置代理遇到阻碍或需要快速确认服务状态时，可以通过实时聊天获得在线技术人员的快速响应。
 
@@ -9,9 +9,9 @@
 你可以通过以下两种方式随时发起即时对话：
 
 1. **控制台独立聊天页**  
-   在控制台左侧导航栏点击 **支持（Support）**，或在浏览器中直接打开 <a href="https://www.joyproxy.com/admin-support.html?tab=chat" target="_blank" rel="noopener noreferrer">实时聊天页面</a>。
+   在控制台左侧导航栏点击 **支持**，或在浏览器中直接打开 <a href="https://www.joyproxy.com/admin-support.html?tab=chat" target="_blank" rel="noopener noreferrer">实时聊天页面</a>。
 2. **右下角悬浮客服气泡**  
-   无论是在 JoyProxy 官网首页还是控制台任意功能页面，点击右下角的 **蓝色客服气泡（Live Chat）**，即可展开即时对话小窗。
+   无论是在 JoyProxy 官网首页还是控制台任意功能页面，点击右下角的 **客服气泡**，即可展开即时对话小窗。
 
 ---
 

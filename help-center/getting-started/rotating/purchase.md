@@ -16,9 +16,9 @@ JoyProxy 提供三种动态代理网络，登录控制台后可在 **<a href="ht
 
 ## 控制台购买步骤
 
-1. 登录控制台，打开左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>** 页面。
-2. 选择要购买的网络类型（**住宅代理（Residential Proxies）** / **移动代理（Mobile Proxies）** / **商业 / ISP 代理（Business / ISP Proxies）**）。
-3. 选择 **动态代理（Rotating Proxies）** 标签页。
+1. 登录控制台，打开左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>** 页面。
+2. 选择要购买的网络类型（**住宅代理** / **移动代理** / **商业 / ISP 代理**）。
+3. 选择 **动态代理** 标签页。
 4. 挑选符合业务规模的流量包（如 5 GB、10 GB、50 GB、100 GB 等）。
 5. 选择支付渠道并完成付款：
    - **账户余额（Balance）**（无手续费）

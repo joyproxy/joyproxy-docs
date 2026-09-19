@@ -13,7 +13,7 @@ JoyProxy 的 AI 接口运行在只读与受限管理层，不涉及余额消费�
 | 凭据类型 | 主要用途 | 获取位置 |
 | --- | --- | --- |
 | **AI Access Token** | 仅用于 **MCP 服务器** 与 **OpenClaw Skill** 的身份验证，驱动 AI 工具调用（查询库存、生成提取端点）。 | 控制台 **[提取](https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai)** → **AI generator** |
-| **代理认证账密 / IP 白名单** | 实际建立代理连接（向 `gate.joyproxy.com` 发起网络请求）时使用的凭据。 | 控制台 **[账密与白名单（Authorization）](https://www.joyproxy.com/admin-authorization.html)** |
+| **代理认证账密 / IP 白名单** | 实际建立代理连接（向 `gate.joyproxy.com` 发起网络请求）时使用的凭据。 | 控制台 **[账密与白名单](https://www.joyproxy.com/admin-authorization.html)** |
 
 > **关键提醒**：  
 > AI Access Token **不能**直接作为代理连接密码。当 AI 为你生成 `gate.joyproxy.com:9001` 等端点后，客户端（如 cURL、Python、浏览器）连接网关时仍需使用你在「账密与白名单」设置的代理账密（动态代理网关目前仅支持账密授权）。
@@ -23,11 +23,11 @@ JoyProxy 的 AI 接口运行在只读与受限管理层，不涉及余额消费�
 ## 步骤一：获取 AI Access Token
 
 1. 登录 JoyProxy 控制台；
-2. 打开 **[提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai)**，切换到顶部的 **AI generator** 标签页；
+2. 打开 **[提取](https://www.joyproxy.com/admin-ip-extraction-center.html?panel=ai)**，切换到顶部的 **AI generator** 标签页；
 3. 在页面中的 **AI Access Token** 卡片内：
-   - 若首次使用，点击 **获取 Token（Get token）** 生成密钥；
-   - 点击 **复制 Token（Copy token）** 保存备用；
-   - 如发生泄露，可随时点击 **轮换（Rotate）** 立即作废旧密钥并生成新 Token。
+   - 若首次使用，点击 **获取 Token** 生成密钥；
+   - 点击 **复制 Token** 保存备用；
+   - 如发生泄露，可随时点击 **轮换** 立即作废旧密钥并生成新 Token。
 
 ---
 

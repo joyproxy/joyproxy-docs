@@ -4,28 +4,28 @@
 
 ## 操作步骤
 
-1. 登录 JoyProxy 控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>** 页面。
+1. 登录 JoyProxy 控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>** 页面。
 2. 选择所需的网络类型：
-   - **住宅代理（Residential Proxies）**
-   - **商业 / ISP 代理（Business / ISP Proxies）**
-   - **数据中心代理（Datacenter Proxies）**
-3. 切换到 **静态独享代理（Static Dedicated Proxies）** 标签页。
+   - **住宅代理**
+   - **商业 / ISP 代理**
+   - **数据中心代理**
+3. 切换到 **静态独享代理** 标签页。
 4. 选择时长套餐：
-   - **日套餐（Daily Plan）**
-   - **周套餐（Weekly Plan）**
-   - **月套餐（Monthly Plan）**
-   - **季套餐（Quarterly Plan）**
-   - **年套餐（Annual Plan）**（包年享最高折扣）
-5. 在 **选择 IP 地区（Choose IP Locations）** 区域：
-   - 选择目标国家/地区（如美国 US、日本 JP 等）。
+   - **日套餐**
+   - **周套餐**
+   - **月套餐**
+   - **季套餐**
+   - **年套餐**（包年享最高折扣）
+5. 在 **选择 IP 地区** 区域：
+   - 选择目标国家/地区（如美国、日本等）。
    - 设置该地区需要的 IP 数量。
 6. 选择支付渠道完成付款：
-   - **账户余额（Balance）**
+   - **账户余额**
    - **PayPal**
-   - **信用卡 / 借记卡（Credit Card）**
+   - **信用卡 / 借记卡**
    - **Apple Pay** / **Google Pay**
-   - **微信支付（WeChat Pay）**
-   - **UPI（印度本地支付）**
+   - **微信支付**
+   - **UPI**
    - **USDT（TRC20）**
 7. 支付成功后，线路将即时分配开通。
 

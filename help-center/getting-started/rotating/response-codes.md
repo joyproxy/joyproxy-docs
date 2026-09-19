@@ -1,22 +1,22 @@
-# 响应码与常见报错（Response Codes）
+# 响应码与常见报错
 
 在连接动态代理网关 `gate.joyproxy.com:9001` 时，如果遇到异常状态码，可按以下指南快速定位并解决：
 
 ---
 
-## 1. 407 代理认证失败（Proxy Authentication Required）
+## 1. 407 代理认证失败
 
 - **原因**：网关无法校验你的代理凭据。
 - **快速排查**：
-  1. **密码检查**：确认填入的是在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** 中设置的代理密码，而不是 JoyProxy 官网的登录密码。
-  2. **用户名检查**：确认代理用户名字段填入的是在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成的**完整长字符串**（如 `user-zone-res-region-us-...`），请勿手动截断或拼错字符。
+  1. **密码检查**：确认填入的是在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">账密与白名单</a>** 中设置的代理密码，而不是 JoyProxy 官网的登录密码。
+  2. **用户名检查**：确认代理用户名字段填入的是在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取</a>** 页面生成的**完整长字符串**（如 `user-zone-res-region-us-...`），请勿手动截断或拼错字符。
   3. **确认鉴权方式**：动态代理网关（`gate.joyproxy.com:9001`）目前仅支持账密认证，不支持 IP 白名单免密连接，请务必在客户端配置正确的长用户名与代理密码。
 
 ---
 
-## 2. 403 目标拒绝访问（Forbidden）
+## 2. 403 目标拒绝访问
 
-- **原因**：请求已被目标网站的防爬机制（如 Cloudflare WAF）拦截，或目标网站属于受限屏蔽范围。
+- **原因**：请求已被目标网站的防爬风控机制拦截，或目标网站属于受限屏蔽范围。
 - **快速排查**：
   1. 先运行测试命令 `curl -x http://...@gate.joyproxy.com:9001 https://api.ipify.org`。如果能正常返回代理出口 IP，说明 JoyProxy 代理网关本身完全正常通畅。
   2. 如果仅针对特定业务目标网站返回 403，说明拦截发生在目标网站服务端（目标针对该 IP 段或 Header 实行了风控）。
