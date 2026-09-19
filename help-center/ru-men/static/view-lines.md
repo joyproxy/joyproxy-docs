@@ -1,0 +1,16 @@
+# 查看已购线路（View Lines）
+
+购买成功后，你可以在控制台中随时查看所有生效中的静态独享线路。
+
+## 操作步骤
+
+1. 登录 JoyProxy 控制台。
+2. 打开左侧菜单 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面。
+3. 切换到 **静态独享代理（Static Dedicated Proxies）** 区域，查看线路列表：
+   - **订单 ID（Order ID）**
+   - **网络类型**：如 静态住宅代理。
+   - **目标国家/地区**。
+   - **专属连接地址（Host:Port）** 与当前绑定的出口 IP。
+   - **到期时间** 与 自动续费开关。
+
+在该页面中，你可以管理单条线路的续费或点击 **[更换 IP](refresh-ip.md)** 进行出口 IP 刷新。

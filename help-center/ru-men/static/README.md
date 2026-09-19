@@ -1,45 +1,35 @@
-# 静态代理
+# 静态独享代理（Static Dedicated Proxies）
 
-静态代理在套餐有效期内给你**固定的 host 与端口**。客户端始终连这个 `host:port`，直到订单到期。出口 IP 变了可以在「我的代理」里用 **New IP** 更换；**购买时选的国家/地区不变**。
+静态独享代理按固定线路（IP）与购买时长（日/月/年套餐）计费。在套餐有效期内，系统会为你分配专属固定的代理主机与端口（如 `us-ca.edge.joyproxy.com:10001`），且该 IP 100% 专属于你使用，绝不与他人共享。
 
-适用于 **住宅**、**商业 / ISP**、**数据中心**。
+静态独享代理覆盖三类网络：**静态住宅代理（Static Residential Proxies）**、**静态商业 / ISP 代理（Static Business / ISP Proxies）** 以及 **静态数据中心代理（Static Datacenter Proxies）**。如果你的业务需要频繁轮换 IP 或按 GB 计费，请参考 [动态代理](../rotating/README.md)；如果需要随时切换端口国家或设置定时轮换，请参考 [自定义独享代理](../custom/README.md)。
 
-## 和轮换的区别
+## 工作原理
 
-| | 轮换 | 静态 |
-| --- | --- | --- |
-| 连接地址 | `gate.joyproxy.com:9001` | 每条线路独立的 `host:port`（如 `us-ca.edge.joyproxy.com:10001`） |
-| 地域 | 写在生成用户名里 | 下单时选定 |
-| 认证 | 生成用户名 + Username/Password | 短用户名/密码，或 IP 白名单 |
-| 计费 | 按 GB 流量 | 按 IP × 时长 |
-
-> **重要**
->
-> 请连接**端点生成页给出的 host 与 port**，不要拿订单卡片上的 **Exit IP** 当代理地址。Exit IP 是网站看到的出口；host:port 才是 JoyProxy 入口。
-
-## 本章目录
-
-1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">快速开始</a>
-2. <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买独享线路</a>
-3. <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>
-4. <a href="authorization.md" target="_blank" rel="noopener noreferrer">用户名密码或白名单</a>
-5. <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a>
-6. <a href="first-request.md" target="_blank" rel="noopener noreferrer">首次请求</a>
-7. <a href="code-examples.md" target="_blank" rel="noopener noreferrer">代码示例</a>
-8. <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">更换 IP</a>
-9. <a href="clients.md" target="_blank" rel="noopener noreferrer">Windows、Chrome 与手机</a>
-10. <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a>
-11. <a href="restricted-targets.md" target="_blank" rel="noopener noreferrer">受限目标</a>
-12. <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>
-
-## 请求长什么样
-
-```bash
-curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
+```text
+你的程序 / 客户端  →  us-ca.edge.joyproxy.com:10001  →  目标网站
+                      ▲
+                      ├── 代理用户名：在“用户与白名单”中设置的代理 Username
+                      └── 代理密码：在“用户与白名单”中设置的代理 Password（或开启 IP 白名单免密）
 ```
 
-若本机 IP 已在白名单，多数客户端可省略 `USER:PASS`。
+- **专属固定 host:port**：下单购买时指定目标国家/地区，开通后即获得专属连接地址。
+- **直连认证**：直接填入在 [用户与白名单] 中设置的短 Username 与 Password，无需拼接长用户名。
+- **支持更换出口 IP**：套餐有效期内如果 IP 遭到封禁或需要刷新，支持在控制台手动点击 [更换 IP]。
 
-## 产品页
+## 本章内容
 
-<a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">住宅</a> · <a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">商业 / ISP</a> · <a href="https://www.joyproxy.com/products/proxy-datacenter.html" target="_blank" rel="noopener noreferrer">数据中心</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>
+建议按顺序阅读：
+
+1. [快速开始](quick-start.md) — 4 步极简接入指南
+2. [网络类型](network-types.md) — 住宅、商业/ISP、数据中心独享线路选型对比
+3. [购买独享线路](purchase.md) — 按国家/地区与数量下单购买
+4. [查看已购线路](view-lines.md) — 查看生效线路、端口与到期时间
+5. [自动续费](auto-renew.md) — 到期前从账户余额自动扣费续订
+6. [设置代理账密与白名单](authentication.md) — 配置代理用户名密码与 IP 白名单
+7. [提取代理 IP](extract-ip.md) — 提取专属固定 host:port 列表
+8. [更换出口 IP](refresh-ip.md) — 在控制台手动刷新替换出口 IP
+9. [发起代理请求](first-request.md) — 代码示例与客户端/指纹浏览器配置
+10. [响应码](response-codes.md) — 407、403、502 等常见报错快速排查
+11. [受限目标](restricted-targets.md) — 合规拦截与禁止访问范围说明
+12. [查询支付记录与下载凭证](payments-and-invoices.md) — 交易明细与 PDF 收据下载

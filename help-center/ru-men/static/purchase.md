@@ -1,21 +1,31 @@
-# 购买静态线路
+# 购买独享线路（Purchase Proxies）
 
-静态按 **IP × 时长** 计费（日/周/月等以结账页为准）。线路本身没有 GB 上限，你为分配的有效期付费。
+静态独享代理按 IP 线路数量和套餐时长计费。购买成功后，每条线路在有效期内 100% 由你独享。
 
-**住宅、商业 / ISP、数据中心** 的静态价各不相同，见 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>。
+## 操作步骤
 
-## 步骤
+1. 登录 JoyProxy 控制台，进入左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)** 页面。
+2. 选择所需的网络类型：
+   - **住宅代理（Residential Proxies）**
+   - **商业 / ISP 代理（Business / ISP Proxies）**
+   - **数据中心代理（Datacenter Proxies）**
+3. 切换到 **静态独享代理（Static Dedicated Proxies）** 标签页。
+4. 选择时长套餐：
+   - **日套餐（Daily Plan）**
+   - **周套餐（Weekly Plan）**
+   - **月套餐（Monthly Plan）**
+   - **季套餐（Quarterly Plan）**
+   - **年套餐（Annual Plan）**（包年享最高折扣）
+5. 在 **选择 IP 地区（Choose IP Locations）** 区域：
+   - 选择目标国家/地区（如美国 US、日本 JP 等）。
+   - 设置该地区需要的 IP 数量。
+6. 选择支付渠道完成付款：
+   - **账户余额（Balance）**
+   - **PayPal**
+   - **信用卡 / 借记卡（Credit Card）**
+   - **Apple Pay** / **Google Pay**
+   - **微信支付（WeChat Pay）**
+   - **USDT（TRC20）**
+7. 支付成功后，线路将即时分配开通。
 
-1. 打开 <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">购买 → 静态</a>。
-2. 选择网络类型。
-3. 搜索或选择**国家**（有则选省/市）。地域在订单内**不可随意改**。
-4. 选时长与数量。
-5. 结账付款。
-6. 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> 等待分配变为可用。
-
-同一订单里要多个不同城市？用 <a href="../custom/purchase.md" target="_blank" rel="noopener noreferrer">定制</a>，付款后**按端口**分配地区。
-
-## 付款之后
-
-- 可开 <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>，到期前从余额扣款续期；也可在「我的代理」或购买页手动续费。
-- 接着配置 <a href="authorization.md" target="_blank" rel="noopener noreferrer">认证</a> 并 <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a>。
+下一步：进入 **[查看已购线路](view-lines.md)** 确认已分配的端点。

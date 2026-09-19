@@ -1,25 +1,12 @@
-# 首次请求与代码（定制）
+# 发起代理请求（First Request）
 
-用法与静态一致：专用 host、port，白名单或 `USER:PASS`。
+代码示例（将端口替换为你实际分配的端口）：
 
 ```bash
-curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
+curl -x http://USER:PASS@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
 ```
 
-Python（替换占位符）：
-
-```python
-import requests
-
-PROXY = "http://user:pass@HOST:PORT"
-proxies = {"http": PROXY, "https": PROXY}
-print(requests.get("https://api.ipify.org", proxies=proxies, timeout=30).text)
-```
-
-更多语言：复制 <a href="../static/code-examples.md" target="_blank" rel="noopener noreferrer">静态代码示例</a>，换成定制端点生成页的 host:port。
-
-系统/浏览器配置：<a href="../static/clients.md" target="_blank" rel="noopener noreferrer">静态客户端</a> — 表单相同，host:port 不同。
-
-## 本章索引
-
-<a href="README.md" target="_blank" rel="noopener noreferrer">定制代理</a> · <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>
+客户端与软件集成请参阅：
+- **[Chrome 静态代理](../../best-practices/chrome-static-proxy.md)**
+- **[Windows 11 系统代理](../../best-practices/windows-11-system-proxy.md)**
+- **[第三方软件配合代理](../../best-practices/third-party-static-proxies.md)**

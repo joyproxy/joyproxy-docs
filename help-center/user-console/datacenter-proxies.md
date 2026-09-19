@@ -16,7 +16,7 @@
 ## 控制台页签
 
 - **购买** — 选 **Datacenter**，再选静态或定制
-- **My Proxies** — 生效分配。<a href="../getting-started/static/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>与<a href="../getting-started/static/refresh-ip.md" target="_blank" rel="noopener noreferrer">新 IP</a>（定制：<a href="../getting-started/custom/new-ip.md" target="_blank" rel="noopener noreferrer">新 IP</a>）
+- **My Proxies** — 生效分配。<a href="../getting-started/static/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>与<a href="../getting-started/static/refresh-ip.md" target="_blank" rel="noopener noreferrer">新 IP</a>（定制：<a href="../getting-started/custom/rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">新 IP</a>）
 - **Users & Whitelist** — 服务器 IP 白名单或凭据
 - **Endpoints** — 生成 `host:port` 列表
 - **用量** — 在适用处监控

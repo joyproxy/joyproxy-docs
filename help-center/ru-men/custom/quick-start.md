@@ -1,85 +1,59 @@
-# 快速开始
+# 自定义独享代理 · 快速开始（Quick Start）
 
-定制端口是付款后配置的**独享 `host:port`**：先分配地区，可选定时轮换，再像静态一样生成端点。
+本指南带你快速完成自定义独享代理的端口购买、地区分配、账密配置与连接测试。
 
-端口已分配好？跳到 [发测试请求](#发测试请求)。
+> **什么是自定义独享代理？**  
+> 自定义独享代理按端口数量计费，每个端口支持随时切换国家地区，并支持设置定时自动更换出口 IP。
 
-下单即锁定国家？见 <a href="../static/quick-start.md" target="_blank" rel="noopener noreferrer">静态快速开始</a>。共享网关见 <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">轮换快速开始</a>。
+---
 
-## 连接参数
+## 第一步：购买自定义端口
 
-| 字段 | 取值 |
-| --- | --- |
-| Host / port | 分配地区后在端点生成页获取 |
-| 认证 | IP 白名单 **和/或** 短用户名 + 密码 |
-| 地域 | 在「我的代理」<a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a> |
+1. 登录 [JoyProxy 控制台](https://www.joyproxy.com/admin-overview.html)，进入 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)**。
+2. 选择网络类型：**住宅代理（Residential）** / **商业 / ISP 代理（Business / ISP）** / **数据中心代理（Datacenter）**。
+3. 切换到 **自定义独享代理（Custom Dedicated Proxies）** 标签页。
+4. 选择端口数量（如 5 个端口）与套餐时长（如月套餐），完成支付。
 
-连生成的 host:port，不要连订单上的 Exit IP。
+---
 
-## 发测试请求
+## 第二步：为端口分配地区
 
-替换 `USER`、`PASS`、`HOST`、`PORT`。白名单机器可省略 `USER:PASS@`。
+1. 进入 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面，选择自定义代理区域。
+2. 点击 **分配地区（Assign Region）** 按钮。
+3. 为对应端口选择目标国家/地区（如美国 US），保存生效。
 
+---
+
+## 第三步：设置代理账密并提取端点
+
+1. 在 **[用户与白名单（Users & Whitelist）](https://www.joyproxy.com/admin-authorization.html)** 中设置代理 Username 与 Password（如 `user123` / `pass123`）。
+2. 在 **[提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)** 切换到 **自定义代理（Custom Proxies）** 页签，复制专属端口端点：
+   ```text
+   http://user123:pass123@us-ca.edge.joyproxy.com:20001
+   ```
+
+---
+
+## 第四步：测试代理连接
+
+运行测试命令：
+
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
-curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
+curl -x http://user123:pass123@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
 ```
+{% endtab %}
 
+{% tab title="Python" %}
 ```python
 import requests
 
-PROXY = "http://USER:PASS@HOST:PORT"
-proxies = {"http": PROXY, "https": PROXY}
-print(requests.get("https://api.ipify.org", proxies=proxies, timeout=30).text)
+proxy = "http://user123:pass123@us-ca.edge.joyproxy.com:20001"
+res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
+print("自定义端口出口 IP:", res.text)
 ```
+{% endtab %}
+{% endtabs %}
 
-更多语言：复制 <a href="../static/code-examples.md" target="_blank" rel="noopener noreferrer">静态代码示例</a>，换成定制的 host:port。
-
-## 控制台配置
-
-> **提示**
->
-> 新账户可领 **$5 注册赠金**，首单可用。
-
-### 1. 购买端口
-
-1. <a href="https://www.joyproxy.com/admin-purchase.html?tab=custom-ip" target="_blank" rel="noopener noreferrer">购买 → 定制</a>。
-2. 选网络类型。
-3. 选有效期、端口数量并付款。
-4. 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理 → Custom</a> 查看。
-
-详见 <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买端口</a>。
-
-### 2. 分配地区
-
-生成端点**之前**先选国家（有则选省/市）。轮换出的 IP 不会跑出你分配的地域。
-
-详见 <a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a>。
-
-### 3. 设置轮换（可选）
-
-可长期固定出口，也可设定时器按间隔换 IP。
-
-详见 <a href="rotation.md" target="_blank" rel="noopener noreferrer">设置轮换</a>。
-
-### 4. 授权并生成
-
-1. 在 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a> 建 Username/Password（也可用 IP 白名单）。
-2. <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> → **Custom Proxies → Web generator**。
-3. 选分配 → **Generate now** → 复制 host、port。
-
-详见 <a href="authorize-and-generate.md" target="_blank" rel="noopener noreferrer">授权与生成</a>。
-
-### 5. 确认出口
-
-跑上面的 curl，看到公网 IP 落在分配地区即可使用。
-
-## 接下来
-
-| 任务 | 页面 |
-| --- | --- |
-| 自动续费 | <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a> |
-| 更换 IP | <a href="new-ip.md" target="_blank" rel="noopener noreferrer">更换 IP</a> |
-| 首次请求 | <a href="first-request.md" target="_blank" rel="noopener noreferrer">首次请求与代码</a> |
-| 协议 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> |
-| 407 / 403 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a> |
-| 认证说明 | <a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a> |
+连通后，你随时可以回到控制台为该端口切换其他国家或设置定时换 IP！

@@ -1,31 +1,45 @@
-# 静态线路首次请求
+# 发起代理请求（First Request）
 
-将 `HOST`、`PORT`、`USER`、`PASS` 换成端点生成页的值（白名单机器可省略账号密码）。
+拿到静态独享代理的连接地址与账密后，可以在各种编程语言或客户端中建立连接。
 
+---
+
+## 代码示例
+
+请将 `USER`、`PASS` 和 `us-ca.edge.joyproxy.com:10001` 替换为你提取到的真实端点：
+
+{% tabs %}
+{% tab title="cURL" %}
 ```bash
-curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
+curl -x http://USER:PASS@us-ca.edge.joyproxy.com:10001 https://api.ipify.org
 ```
+{% endtab %}
 
-Python：
-
+{% tab title="Python" %}
 ```python
 import requests
 
-PROXY = "http://USER:PASS@HOST:PORT"
-proxies = {"http": PROXY, "https": PROXY}
-print(requests.get("https://api.ipify.org", proxies=proxies, timeout=30).text)
+proxy = "http://USER:PASS@us-ca.edge.joyproxy.com:10001"
+res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
+print("静态出口 IP:", res.text)
 ```
+{% endtab %}
 
-确认打印的 IP 与购买地域一致。若不对，先看**订单国家**，不要从主机名字符串猜地区。
+{% tab title="Node.js" %}
+```javascript
+const { HttpsProxyAgent } = require("https-proxy-agent");
 
-## 常见情况
+const agent = new HttpsProxyAgent("http://USER:PASS@us-ca.edge.joyproxy.com:10001");
+const res = await fetch("https://api.ipify.org", { agent });
+console.log("静态出口 IP:", await res.text());
+```
+{% endtab %}
+{% endtabs %}
 
-| 现象 | 先查 |
-| --- | --- |
-| 认证错误 | 用户名密码；或白名单是否包含本机公网 IP |
-| 连接被拒 / 超时 | 是否用了**最新一次**生成的 host:port；订单是否过期 |
-| VPS 行、家里不行 | 家里 IP 未入白名单 — 加 IP 或改用账号密码 |
+---
 
-## 下一步
+## 客户端与第三方软件集成
 
-<a href="code-examples.md" target="_blank" rel="noopener noreferrer">代码示例</a> · <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">更换 IP</a> · <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>
+- **Chrome / Edge 浏览器**：参阅 **[Chrome 静态代理](../../best-practices/chrome-static-proxy.md)** 或使用 **[浏览器扩展](../../getting-started/software/browser-extension.md)**。
+- **Windows 系统代理**：参阅 **[Windows 11 系统代理](../../best-practices/windows-11-system-proxy.md)**。
+- **指纹浏览器与第三方软件**：参阅 **[第三方软件配合代理](../../best-practices/third-party-static-proxies.md)**。

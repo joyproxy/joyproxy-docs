@@ -1,19 +1,14 @@
-# 分配地区
+# 分配地区（Assign Region）
 
-每个定制端口可设：仅国家、国家+省，或精确到城市。**同一订单**里不同端口可以指向**不同**地区。
+自定义独享代理的最大优势在于：端口购买后，你可以随时为其指定或更改目标国家与城市。
 
 ## 操作步骤
 
-1. <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> → **Custom Proxies**。
-2. 勾选要配置的生效端口。
-3. 点 **Assign region**。
-4. 选 **Country** → 可选 **Region / Province** → 可选 **City**。
-5. 确认。各端口保留各自配置。
+1. 进入 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 页面。
+2. 找到自定义代理区域，选择需要配置的端口。
+3. 点击 **分配地区（Assign Region）** 按钮。
+4. 在弹出的地区选择器中，选择目标 Country（国家）及可选的城市。
+5. 点击保存，系统会在数秒内将该端口的出口 IP 切换到新选择的地区。
 
-适合多市场联调：例如 A 端口跑美区、B 端口跑英区，同一账户管理。
-
-改地区只在本页完成（不走提取 API）。改完后仍用该端口在端点生成页的 **host:port**。
-
-## 下一步
-
-<a href="rotation.md" target="_blank" rel="noopener noreferrer">设置轮换</a>
+> **提示**  
+> 更改地区后，代理连接地址（Host:Port）保持不变，无需修改程序代码。

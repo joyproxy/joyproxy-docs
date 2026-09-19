@@ -16,7 +16,7 @@
 ## 控制台页签
 
 * **购买** — 选 **Datacenter**，再选静态或定制
-* **My Proxies** — 生效分配。[自动续费](../ru-men/static/auto-renew.md)与[新 IP](../ru-men/static/refresh-ip.md)（定制：[新 IP](../ru-men/custom/new-ip.md)）
+* **My Proxies** — 生效分配。[自动续费](../ru-men/static/auto-renew.md)与[新 IP](../ru-men/static/refresh-ip.md)（定制：[新 IP](../ru-men/custom/rotation-and-refresh.md)）
 * **Users & Whitelist** — 服务器 IP 白名单或凭据
 * **Endpoints** — 生成 `host:port` 列表
 * **用量** — 在适用处监控

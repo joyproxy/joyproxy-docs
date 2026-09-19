@@ -16,11 +16,11 @@
 
 ### My Proxies
 
-查看生效与过期订单、剩余流量、有效期及定制端口分配（<a href="../getting-started/custom/assign-region.md" target="_blank" rel="noopener noreferrer">分配地域</a>、<a href="../getting-started/custom/rotation.md" target="_blank" rel="noopener noreferrer">轮换</a>）。
+查看生效与过期订单、剩余流量、有效期及定制端口分配（<a href="../getting-started/custom/assign-region.md" target="_blank" rel="noopener noreferrer">分配地域</a>、<a href="../getting-started/custom/rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">轮换</a>）。
 
 - 轮换 — <a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a>
 - 静态 — <a href="../getting-started/static/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>与<a href="../getting-started/static/refresh-ip.md" target="_blank" rel="noopener noreferrer">新 IP</a>
-- 定制 — <a href="../getting-started/custom/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>与<a href="../getting-started/custom/new-ip.md" target="_blank" rel="noopener noreferrer">新 IP</a>
+- 定制 — <a href="../getting-started/custom/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>与<a href="../getting-started/custom/rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">新 IP</a>
 
 ### Users & Whitelist
 

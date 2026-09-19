@@ -76,7 +76,7 @@ https://api.joyproxy.com/v2/extract?token=...&network_type=residential&count=5&d
 https://api.joyproxy.com/v2/extract-long?token=...&allocation_id=ID&format=crlf
 ```
 
-`allocation_id` / `order_id` 来自 My Proxies 或 **List Purchased Orders**。控制台流程：[静态 → 生成端点](../ru-men/static/generate-endpoints.md)。
+`allocation_id` / `order_id` 来自 My Proxies 或 **List Purchased Orders**。控制台流程：[静态 → 生成端点](../ru-men/static/extract-ip.md)。
 
 ## 定制端点 — `GET /v2/extract-custom`
 
@@ -86,7 +86,7 @@ https://api.joyproxy.com/v2/extract-long?token=...&allocation_id=ID&format=crlf
 https://api.joyproxy.com/v2/extract-custom?token=...&allocation_id=ID&format=crlf
 ```
 
-控制台流程：[定制 → 授权与生成](../ru-men/custom/authorize-and-generate.md)。
+控制台流程：[定制 → 授权与生成](../ru-men/custom/extract-ip.md)。
 
 ## 授权 API（提取 Token）
 

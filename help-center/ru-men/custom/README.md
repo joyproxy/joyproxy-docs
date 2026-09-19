@@ -1,33 +1,36 @@
-# 定制代理
+# 自定义独享代理（Custom Dedicated Proxies）
 
-定制代理是付款后按**端口**配置的独享线路：为每个端口**分配地区**（国家/省/市），可选**定时轮换出口 IP**，再像静态一样生成稳定的 `host:port`。
+自定义独享代理按**专属端口数量（Port Count）**与购买时长（日/月/年套餐）计费。每个购买的端口在有效期内 100% 由你独享，且支持**随时自由分配/切换目标国家城市**以及**设置定时自动轮换 IP**。
 
-适用于 **住宅**、**商业 / ISP**、**数据中心**。
+适用于需要多个独享端口，且希望按端口灵活指定不同国家地区或定时自动更换 IP 的场景。若需要固定国家不换 IP 的线路，请参考 [静态独享代理](../static/README.md)；若需要按 GB 流量无限轮换，请参考 [动态代理](../rotating/README.md)。
 
-## 适合什么场景
+## 工作原理
 
-- 同一订单里美国站走 A 端口、英国站走 B 端口
-- 要固定入口，又希望按时间表换出口 IP
-- 静态单国套餐不够用，但工具仍只认 `host:port`
+```text
+你的程序 / 客户端  →  us-ca.edge.joyproxy.com:20001  →  目标网站（按端口分配的国家出口）
+                      ▲
+                      ├── 端口在控制台中绑定国家/地区（可随时在控制台切换）
+                      └── 可在控制台中开启定时自动换 IP（如每 10 分钟换一次）
+```
 
-## 本章目录
+- **按端口灵活配置**：每一个端口可独立设置所在的国家/省市。
+- **定时与手动换 IP**：支持设置定时轮换（如 5分钟/10分钟/1小时自动换 IP），也支持手动点击更换 IP。
+- **直连认证**：直接填入在 [用户与白名单] 中设置的短 Username 与 Password（或绑定 IP 白名单）。
 
-1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">快速开始</a>
-2. <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买端口</a>
-3. <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>
-4. <a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a>
-5. <a href="rotation.md" target="_blank" rel="noopener noreferrer">设置轮换</a>
-6. <a href="new-ip.md" target="_blank" rel="noopener noreferrer">更换 IP</a>
-7. <a href="authorize-and-generate.md" target="_blank" rel="noopener noreferrer">授权与生成</a>
-8. <a href="first-request.md" target="_blank" rel="noopener noreferrer">首次请求与代码</a>
-9. <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a>
-10. <a href="restricted-targets.md" target="_blank" rel="noopener noreferrer">受限目标</a>
-11. <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a>
+## 本章内容
 
-## 推荐顺序
+建议按顺序阅读：
 
-先 **分配地区**，再设轮换，最后生成端点。轮换换出的 IP 仍受已分配地域约束。
-
-认证与静态相同：<a href="../static/authorization.md" target="_blank" rel="noopener noreferrer">用户名密码或白名单</a>。
-
-<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a> · <a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">住宅</a> · <a href="https://www.joyproxy.com/products/proxy-business.html" target="_blank" rel="noopener noreferrer">商业</a> · <a href="https://www.joyproxy.com/products/proxy-datacenter.html" target="_blank" rel="noopener noreferrer">数据中心</a>
+1. [快速开始](quick-start.md) — 4 步极简接入指南
+2. [网络类型](network-types.md) — 住宅、商业/ISP、数据中心自定义端口包对比
+3. [购买端口](purchase.md) — 选择网络类型与端口数量下单
+4. [查看与管理端口](view-ports.md) — 查看已购端口列表与到期时间
+5. [分配地区](assign-region.md) — 为端口分配或随时切换目标国家/省市
+6. [设置定时轮换与手动更换 IP](rotation-and-refresh.md) — 配置自动轮换频率与手动换 IP
+7. [自动续费](auto-renew.md) — 端口套餐自动扣费续订
+8. [设置代理账密与白名单](authentication.md) — 配置代理用户名密码与 IP 白名单
+9. [提取代理 IP](extract-ip.md) — 提取自定义端口端点列表
+10. [发起代理请求](first-request.md) — 代码示例与客户端配置
+11. [响应码](response-codes.md) — 407、403、502 等常见报错快速排查
+12. [受限目标](restricted-targets.md) — 合规拦截与禁止访问范围说明
+13. [查询支付记录与下载凭证](payments-and-invoices.md) — 交易明细与 PDF 收据下载

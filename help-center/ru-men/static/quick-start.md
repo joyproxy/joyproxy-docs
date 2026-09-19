@@ -1,32 +1,49 @@
-# 快速开始
+# 静态独享代理 · 快速开始（Quick Start）
 
-静态线在套餐期内使用**固定的 host 与 port**；国家/地区在下单时选定。请连接端点生成出来的 `host:port`，**不要**用订单上的 Exit IP。
+本指南带你快速完成静态独享代理的购买、认证、提取与连接测试。
 
-已有分配？直接看 [发测试请求](#发测试请求)。
+> **什么是静态独享代理？**  
+> 静态独享代理按线路数量与时间（天/月/年）计费，在有效期内提供专属固定的主机与端口（如 `us-ca.edge.joyproxy.com:10001`），100% 专享独用。
 
-每次请求都要换 IP？见 <a href="../rotating/quick-start.md" target="_blank" rel="noopener noreferrer">轮换快速开始</a>。要按端口分别定地区： <a href="../custom/quick-start.md" target="_blank" rel="noopener noreferrer">定制快速开始</a>。
+---
 
-## 连接参数
+## 第一步：购买静态独享线路
 
-| 字段 | 取值 |
-| --- | --- |
-| 主机 | <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> 显示，如 `us-ca.edge.joyproxy.com` |
-| 端口 | 同上，如 `10001` |
-| 协议 | HTTP、SOCKS5，均可访问 **HTTPS 网站**。见 <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> |
-| 认证 | <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a> 的 Username/Password **和/或** IP 白名单 |
+1. 登录 [JoyProxy 控制台](https://www.joyproxy.com/admin-overview.html)，进入左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)**。
+2. 选择需要的网络类型：**住宅代理（Residential）** / **商业 / ISP 代理（Business / ISP）** / **数据中心代理（Datacenter）**。
+3. 切换到 **静态独享代理（Static Dedicated Proxies）** 标签页。
+4. 选择套餐时长（如月套餐 Monthly Plan），在 **选择 IP 地区（Choose IP Locations）** 下选择目标国家/地区并设定购买 IP 数量。
+5. 完成支付。
 
-> **重要**
->
-> Exit IP 是目标站看到的地址；客户端必须填**生成出来的 host 与 port**。
+---
 
-## 发测试请求
+## 第二步：设置代理账号密码
 
-替换 `USER`、`PASS`、`HOST`、`PORT`。本机在白名单时可去掉 `USER:PASS@`。
+1. 进入 **[用户与白名单（Users & Whitelist）](https://www.joyproxy.com/admin-authorization.html)** 页面。
+2. 在 **用户名 / 密码（Username/Password）** 下新建一组代理账号（如 `user123` / `pass123`）。
+3. 记下设置的代理用户名与代理密码。
+
+---
+
+## 第三步：提取固定端点
+
+1. 进入 **[提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面，切到 **静态代理（Static Proxies）** 页签。
+2. 筛选你购买的订单线路，在 **输出格式（Output Format）** 选择展示样式。
+3. 点击 **复制地址列表（Copy Host List）**，获取专属端点：
+   ```text
+   http://user123:pass123@us-ca.edge.joyproxy.com:10001
+   ```
+
+---
+
+## 第四步：测试代理连接
+
+将连接地址替换为你提取到的真实 host:port 和代理账密，运行测试：
 
 {% tabs %}
 {% tab title="cURL" %}
 ```bash
-curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
+curl -x http://user123:pass123@us-ca.edge.joyproxy.com:10001 https://api.ipify.org
 ```
 {% endtab %}
 
@@ -34,80 +51,19 @@ curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
 ```python
 import requests
 
-PROXY = "http://USER:PASS@HOST:PORT"
-proxies = {"http": PROXY, "https": PROXY}
-print(requests.get("https://api.ipify.org", proxies=proxies, timeout=30).text)
-```
-{% endtab %}
-
-{% tab title="Node.js" %}
-```javascript
-const { HttpsProxyAgent } = require("https-proxy-agent");
-
-const agent = new HttpsProxyAgent("http://USER:PASS@HOST:PORT");
-const res = await fetch("https://api.ipify.org", { agent });
-console.log(await res.text());
+proxy = "http://user123:pass123@us-ca.edge.joyproxy.com:10001"
+res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
+print("静态独享 IP:", res.text)
 ```
 {% endtab %}
 {% endtabs %}
 
-更多语言：<a href="code-examples.md" target="_blank" rel="noopener noreferrer">代码示例</a>。
+返回的公网 IP 保持固定，即代表静态独享代理连接成功！
 
-## 在控制台配置
+---
 
-新用户：<a href="https://www.joyproxy.com/register.html" target="_blank" rel="noopener noreferrer">注册</a> · <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>
+## 3 秒排查常见报错
 
-> **提示**
->
-> 新账户可领 **$5 注册赠金**，首单符合条件时可在结账使用。
-
-### 1. 购买静态线路
-
-1. <a href="https://www.joyproxy.com/admin-purchase.html?tab=long-term" target="_blank" rel="noopener noreferrer">购买 → 静态</a>。
-2. 选 **住宅**、**商业 / ISP** 或 **数据中心**。
-3. 选**国家**（有则选省/市）。该地域在订单周期内**锁定**。
-4. 选时长与数量，结账（卡、Apple Pay、Google Pay、PayPal、微信、UPI、USDT 或余额）。
-5. 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理</a> 等到分配生效。
-
-详见 <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买独享线路</a>。
-
-### 2. 认证
-
-在 <a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单</a> 配置 **Username/Password**（推荐）：
-
-- **Username/Password** — 字母开头，a–z 与 0–9，最长 16；密码至少 6 位。静态线下，这个用户名**就是**代理用户名。
-- **IP 白名单** — 填入会发起连接的机器的公网 IPv4，客户端只填 `host:port`。
-
-详见 <a href="authorization.md" target="_blank" rel="noopener noreferrer">用户名密码或白名单</a>、<a href="../rotating/authentication.md" target="_blank" rel="noopener noreferrer">认证方式</a>。
-
-### 3. 生成端点
-
-1. <a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">端点生成</a> → **Static Proxies → Web generator**。
-2. 选订单 → **Generate now**。
-3. 复制 **host**、**port**（未用白名单时连同账号密码）。
-
-详见 <a href="generate-endpoints.md" target="_blank" rel="noopener noreferrer">生成端点</a>。
-
-### 4. 确认出口
-
-跑上面的示例，返回 IP 应接近你购买的地域。
-
-## 常见问题
-
-| 现象 | 先查 |
-| --- | --- |
-| **407** / 认证失败 | 短用户名密码，或把本机**公网 IPv4** 加入白名单 |
-| 超时 / 连接被拒 | 端点生成页最新 host:port；订单是否仍有效 |
-| VPS 能用、家里不行 | 家里 IP 未加白名单 — 加 IP 或改用账号密码 |
-| 连到了 Exit IP | 应使用生成的 host:port，不是订单卡片上的 Exit IP |
-
-## 接下来
-
-| 任务 | 页面 |
-| --- | --- |
-| 自动续费 | <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a> |
-| 更换出口 IP | <a href="refresh-ip.md" target="_blank" rel="noopener noreferrer">更换 IP</a> |
-| Windows / Chrome / 手机 | <a href="clients.md" target="_blank" rel="noopener noreferrer">客户端配置</a> |
-| HTTP / SOCKS5 | <a href="protocols.md" target="_blank" rel="noopener noreferrer">协议</a> |
-| 407 / 403 | <a href="response-codes.md" target="_blank" rel="noopener noreferrer">响应码</a> |
-| 更多代码 | <a href="code-examples.md" target="_blank" rel="noopener noreferrer">代码示例</a> |
+- **407 代理认证失败（Proxy Authentication Required）**：检查密码与用户名是否填错（填写在「用户与白名单」里设定的 Username/Password）。
+- **连接超时**：确认 Host 和 Port 是否完全匹配提取页面给出的专有端口。
+- **IP 遭到目标封禁**：在 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 中使用 **更换 IP（Refresh IP）** 刷新替换。

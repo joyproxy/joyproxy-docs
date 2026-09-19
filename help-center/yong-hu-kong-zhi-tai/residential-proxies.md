@@ -16,11 +16,11 @@
 
 ### My Proxies
 
-查看生效与过期订单、剩余流量、有效期及定制端口分配（[分配地域](../ru-men/custom/assign-region.md)、[轮换](../ru-men/custom/rotation.md)）。
+查看生效与过期订单、剩余流量、有效期及定制端口分配（[分配地域](../ru-men/custom/assign-region.md)、[轮换](../ru-men/custom/rotation-and-refresh.md)）。
 
 * 轮换 — [自动购买流量](../ru-men/rotating/auto-buy-traffic.md)
 * 静态 — [自动续费](../ru-men/static/auto-renew.md)与[新 IP](../ru-men/static/refresh-ip.md)
-* 定制 — [自动续费](../ru-men/custom/auto-renew.md)与[新 IP](../ru-men/custom/new-ip.md)
+* 定制 — [自动续费](../ru-men/custom/auto-renew.md)与[新 IP](../ru-men/custom/rotation-and-refresh.md)
 
 ### Users & Whitelist
 

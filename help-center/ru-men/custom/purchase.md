@@ -1,17 +1,14 @@
-# 购买定制端口
+# 购买端口（Purchase Proxies）
 
-定制按 **端口 × 有效期** 计费（与静态类似，多了按端口配地区的能力）。三类网络**各自定价**，见 <a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">定价</a>。
+自定义独享代理按专属端口数量下单。
 
-1. <a href="https://www.joyproxy.com/admin-purchase.html?tab=custom-ip" target="_blank" rel="noopener noreferrer">购买 → 定制</a>。
-2. 选择 **住宅**、**商业 / ISP** 或 **数据中心**。
-3. 选有效期（单价按端口计）。
-4. 填**端口数量**并结账。
-5. 在 <a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理 → Custom</a> 查看。
+## 操作步骤
 
-城市在**付款后**再分配，不必像静态那样下单就锁死一个国家。
+1. 登录控制台，进入 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)** 页面。
+2. 选择所需网络类型（住宅 / 商业 / 数据中心）。
+3. 切换到 **自定义独享代理（Custom Dedicated Proxies）** 标签页。
+4. 选择端口数量（Ports count）与套餐时长（日/周/月/季/年套餐）。
+5. 选择支付渠道完成付款（账户余额、PayPal、信用卡、微信支付、USDT 等）。
+6. 付款成功后，端口将分配并显示在控制台中。
 
-建议开启 <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>，到期前从余额续期。
-
-## 下一步
-
-<a href="auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a> · <a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a>
+下一步：进入 **[分配地区](assign-region.md)** 为端口配置具体国家。
