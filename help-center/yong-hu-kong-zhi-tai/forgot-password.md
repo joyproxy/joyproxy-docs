@@ -1,26 +1,26 @@
-# 找回密码
+# 找回与重置密码
 
-忘记密码时，用注册邮箱收取重置链接。
+如果你遗忘了登录密码，无需联系客服人工审核，只要通过注册邮箱即可在数分钟内自助完成密码重置。
 
-<a href="https://www.joyproxy.com/forgot-password.html" target="_blank" rel="noopener noreferrer">忘记密码页</a> · 也可从 <a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">登录页</a> 点击 **忘记密码？**
+<a href="https://www.joyproxy.com/forgot-password.html" target="_blank" rel="noopener noreferrer">打开重置密码页面</a>
 
-页面标题为 **重置密码**，说明为 **输入邮箱，我们将发送重置链接。**
-
----
-
-## 步骤
-
-1. 输入注册邮箱。
-2. 点击 **发送重置链接**。
-3. 在邮件（含垃圾邮件）中打开链接并设置新密码。
-4. 用新密码 <a href="login.md" target="_blank" rel="noopener noreferrer">登录</a>。
-
-若该邮箱已注册，系统会发送链接；客服不会在聊天中索要密码。
-
-注册时密码至少 8 位；在控制台 **我的账户** 里修改密码时至少 6 位。
+你也可以在常规 <a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">登录页面</a> 中点击密码输入框下方的 **忘记密码？** 直达该功能。
 
 ---
 
-## 仍无法登录
+## 自助找回步骤
 
-确认邮箱正确、链接未过期。需要人工协助时，从侧栏 **帮助中心** 使用 <a href="../fu-wu-yu-zhi-chi/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> 或 <a href="../fu-wu-yu-zhi-chi/tickets.md" target="_blank" rel="noopener noreferrer">提交工单</a>。
+1. 在重置页面输入你注册 JoyProxy 时所绑定的完整电子邮箱地址。
+2. 点击 **发送重置链接** 按钮。
+3. 打开收件箱查收标题包含密码重置的邮件（若 2 分钟内未收到，请检查垃圾邮件文件夹）。
+4. 点击邮件中的专属重置链接，进入新密码设置页面。
+5. 输入符合安全规范的新密码（建议至少 8 位以上，包含字母与数字），确认提交。
+6. 重置成功后，直接返回登录页使用新密码登录即可。
+
+---
+
+## 安全注意事项
+
+- **链接有效期限制**：密码重置链接具有严格的时效性（通常为 30 分钟），且仅限使用一次。如果链接失效，请重新在页面提交一次申请。
+- **非密码修改入口**：若你当前已经处于登录状态且记得原密码，只是单纯想更新密码，请直接在控制台内操作（路径：**我的账户** → **资料** → **修改密码**），无需走邮箱找回流程。
+- **官方防诈提示**：JoyProxy 官方工程师与在线客服人员**绝不会**以任何理由向你索要登录密码。若在聊天或社交渠道有人以调试为由要求提供密码，请提高警惕并予以拒绝。

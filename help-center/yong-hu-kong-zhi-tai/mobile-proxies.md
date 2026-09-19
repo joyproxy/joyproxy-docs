@@ -1,73 +1,32 @@
 # 移动代理控制台
 
-4G / 5G 蜂窝出口，仅 **动态** 预付流量（无静态或自定义模式）。
+移动代理（Mobile Proxies）底层依托遍布全球的真实 4G / 5G 移动蜂窝网络基站出口构建。移动运营商 IP 具备极高的反爬豁免权重，天然不易触发人机验证码，特别适合 Instagram、TikTok 等移动端社交平台运营、移动端应用广告反作弊以及本地化移动搜索采集。
 
-<a href="https://www.joyproxy.com/admin-proxy-mobile.html" target="_blank" rel="noopener noreferrer">打开控制台</a> · <a href="https://www.joyproxy.com/products/proxy-mobile.html" target="_blank" rel="noopener noreferrer">产品介绍</a>
+在左侧导航的 **代理** 分组中点击 **移动代理** 即可打开本控制台：
 
-在左侧 **代理** 菜单进入本网络；名称右侧的 **购买** 图标会直接打开 **购买** 页签。
-
----
-
-## 页签说明
-
-| 页签 | 说明 |
-| --- | --- |
-| **购买** | 选套餐并完成支付 |
-| **已购** | 查看在途订单与库存 |
-| **账密与白名单** | 配置用户名密码或 IP 白名单 |
-| **提取** | 生成代理地址与提取链接 |
-| **用量** | 查看流量消耗与订单 |
-| **API 中心** | 在新窗口打开 OpenAPI 调试页 |
-
-仅 **动态** 一种形态：
-
-| 动态 | <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">动态代理</a>（<a href="../getting-started/rotating/network-types.md" target="_blank" rel="noopener noreferrer">移动网络说明</a>） |
+<a href="https://www.joyproxy.com/admin-proxy-mobile.html" target="_blank" rel="noopener noreferrer">直接打开移动代理控制台</a> · <a href="https://www.joyproxy.com/products/proxy-mobile.html" target="_blank" rel="noopener noreferrer">查看移动代理产品详情</a>
 
 ---
 
-## 购买
+## 纯动态轮换形态说明
 
-在 **购买** 页选择产品形态后，按页面指引选国家、套餐并付款。详细步骤见 **产品与服务**：
+与住宅网络不同，移动蜂窝网络的底层技术特性决定了其出口 IP 随移动基站随时动态变化。因此，**移动代理控制台全系采用纯动态按流量计费（GB）模式**，不提供长效固定端口独享选项：
 
-<a href="../getting-started/rotating/purchase.md" target="_blank" rel="noopener noreferrer">购买流量</a>
-
----
-
-## 已购
-
-查看当前生效的订单、剩余流量或独享端口有效期，并可进行续费、自动续费等操作（以页面上显示的按钮为准）。
-
-- <a href="../getting-started/rotating/view-traffic.md" target="_blank" rel="noopener noreferrer">已购流量</a>
-- <a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a>
+- 计费方式：购买预付流量包，按实际发起的代理网络流量精准扣除 GB 额度，用完为止；
+- 接入架构：通过全球高可用移动网关统一调度，支持指定国家与城市，支持按请求自动轮换或黏性保持出口。
 
 ---
 
-## 账密与白名单
+## 常用操作指引
 
-使用前须先完成授权。页头会提示：**提取代理前请先完成授权**。你可以 **将当前 IP 加入白名单**，或 **自动生成账密**，两种方式任选其一；也可手动 **创建账密**、管理 **已加入白名单的 IP**。
+### 1. 购买移动流量包
+在控制台顶部选择 **购买** 页签，根据业务吞吐量挑选所需的移动数据流量套餐。移动网络的详细参数说明可参考 <a href="../getting-started/rotating/network-types.md" target="_blank" rel="noopener noreferrer">移动网络类型与计费</a>。
 
-动态代理认证详见 <a href="../getting-started/rotating/authentication.md" target="_blank" rel="noopener noreferrer">设置代理账密与白名单</a>。
+### 2. 配置认证方式
+进入 **账密与白名单** 页签完成前置授权。支持添加常用的公网 IP 白名单实现免密直连，也支持创建带密码的账密组。详细配置规则见 <a href="../getting-started/rotating/authentication.md" target="_blank" rel="noopener noreferrer">设置代理账密与白名单</a>。
 
----
+### 3. 生成与提取连接地址
+在 **提取** 页签中挑选你所需要的目标运营商属地，系统会自动为你拼接好包含国家指令的网关连接地址与对应的自动化提取链接（API URL），详见 <a href="../getting-started/rotating/extract-ip.md" target="_blank" rel="noopener noreferrer">提取代理 IP 教程</a>。
 
-## 提取
-
-在 **提取** 页选择对应产品形态，用生成器得到连接地址，或复制 **API URL** 供程序调用。提取链接里的是 **API Token**，不是 **我的账户** 里的 **主用户 Token**。详见 <a href="rotate-token.md" target="_blank" rel="noopener noreferrer">主用户与自动化 Token</a>。
-
-<a href="../getting-started/rotating/extract-ip.md" target="_blank" rel="noopener noreferrer">提取 IP</a>
-
----
-
-## 用量
-
-<a href="../getting-started/rotating/view-traffic.md" target="_blank" rel="noopener noreferrer">已购流量</a>、<a href="../getting-started/rotating/usage.md" target="_blank" rel="noopener noreferrer">查询用量</a>
-
-如需按小时查看动态流量汇总，可到 <a href="invoices.md" target="_blank" rel="noopener noreferrer">账单与交易记录</a> 的 **流量使用** 页签。
-
----
-
-## API 中心
-
-点击 **API 中心** 在新标签页打开 <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>，可调试订单、余额等接口。提取代理 IP 请使用本控制台 **提取** 页的链接。更多说明见 <a href="../zui-jia-shi-jian/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>。
-
-页眉 **帮助中心** 链接可跳转到本站产品文档。
+### 4. 实时监控流量余量
+在 **用量** 页签可随时查询移动流量包的已消耗额度与剩余额度。如果你的业务属于长期持续性采集，推荐在 **已购** 页签开启 <a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a> 功能，当剩余流量低于设定安全值时系统会自动使用账户余额续费补足，防止业务因断流受阻。

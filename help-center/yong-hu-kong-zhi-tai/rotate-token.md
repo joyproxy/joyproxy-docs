@@ -1,44 +1,55 @@
-# 主用户与自动化 Token
+# 主用户与自动化 Token 管理
 
-JoyProxy 有多种 Token，用途不同，**不要混用**。网页抓取控制台内有 **JoyProxy Token 类型说明** 可查阅。
+在 JoyProxy 生态中，为了确保权限最小化原则并防范资产泄露风险，针对不同业务场景设计了相互隔离的 Token 体系。
 
----
-
-## 分别用在哪
-
-| Token | 用途 | 在哪里 |
-| --- | --- | --- |
-| **主用户 Token** | 账户管理、购买、订单 API；不能提取 IP、不能用 AI、不能调网页抓取 | **我的账户** → **安全与 API** |
-| **API Token** | 代理 IP 提取（在 **提取** 页复制的 API URL 里） | 各代理控制台 **提取** |
-| **AI Token** | AI 辅助提取 | 提取相关 AI 功能 |
-| **Scraping API Token** | 仅网页抓取公网 API | **网页抓取** → **API 中心** |
-
-主用户 Token 说明：**用于账户管理与购买。不能提取代理 IP、不能使用 AI、不能调用网页抓取 API。**
-
-抓取 Token 说明：**仅用于公网抓取 API，不能提取代理、不能管理账户。**
-
-技术细节：<a href="../zui-jia-shi-jian/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>
+**核心原则：各类 Token 各司其职，绝对不能交叉混用。**
 
 ---
 
-## 轮换主用户 Token
+## 四类核心 Token 对照表
 
-**我的账户** → **安全与 API** → **主用户 Token** → **轮换**，确认后复制新 Token。旧 Token 立即失效。
-
----
-
-## 轮换提取 Token
-
-在对应网络 **提取** 页重新生成链接，并整体替换程序里的旧 API URL。
-
----
-
-## 轮换 Scraping API Token
-
-<a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取控制台</a> → **API 中心** → **Scraping API Token** → **轮换**。未购买积分时会提示 **请先购买 Credits**。
+| Token 名称 | 适用场景与权限范围 | 绝不能用于 | 获取与轮换入口 |
+| :--- | :--- | :--- | :--- |
+| **主用户 Token<br>(Master Token)** | 整个账户的最高权限 API 凭据。用于通过 OpenAPI 自动为账户下单购买套餐、查询账户实时可用余额、调整白名单等。 | **绝不能**用于提取代理 IP，**不能**用于调用抓取 API，**不能**放在前端页面暴露。 | **我的账户** → **安全与 API** 卡片 |
+| **代理提取 API Token** | 仅用于批量获取代理 IP 列表。用于自动化脚本定期请求 `/v2/extract` 端点拉取节点 host:port。 | 不能用于账户下单、不能用于查询余额。 | 各代理控制台的 **提取** 页签（复制出来的 API URL 参数中） |
+| **网页抓取 Scraping Token** | 专用于调用网页抓取服务（`/v1/fetch`）以及各语言 SDK 集成。 | 不能用于提取底层代理，不能用于管理账户。 | <a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取控制台</a> → **API 中心** 页签 |
+| **AI 辅助 Token** | 供自动化测试脚本或内部 AI 客户端辅助调度提取代理。 | 仅限特定 AI 扩展工具内部流通。 | 对应 AI 提取工具设置面板 |
 
 ---
 
-## 轮换后
+## 1. 轮换主用户 Token
 
-在 OpenAPI 或抓取 **API 中心** 试一次；若返回未授权，检查配置里是否仍使用旧 Token。
+主用户 Token 是你在服务器端调用开放接口管理资金和订单的关键。若发生开发人员交接、服务器配置意外公开或疑似泄露，必须第一时间进行轮换：
+
+1. 进入 **我的账户** → **安全与 API** 页签。
+2. 找到 **主用户 Token** 区域，默认处于脱敏隐藏状态，点击眼睛图标可显示完整密钥，点击 **复制** 可复制到剪贴板。
+3. 点击红色的 **轮换** 按钮。
+4. 系统会弹出二次确认窗口，明确提示「现有 Token 将立即失效」。点击确认后，系统会在后台即时生成一个全新的安全密钥。
+5. 复制新密钥，并同步更新你部署在生产环境服务上的所有调用配置。
+
+---
+
+## 2. 轮换代理提取链接（API Token）
+
+当你编写的爬虫或外部软件使用固定 URL 提取 IP 时，若该 URL 泄露给非授权人员，可能会造成提取配额被消耗：
+
+1. 打开对应的网络控制台（如 **住宅代理** 或 **商业 / ISP 代理**）。
+2. 切换至 **提取** 页签。
+3. 调整提取选项或直接重新生成提取链接，系统会为你生成包含新 Token 的 **API URL**。
+4. 用新生成的链接覆盖你脚本中旧的提取请求地址，旧的提取请求将即刻被网关阻断。
+
+---
+
+## 3. 轮换网页抓取 Token（Scraping Token）
+
+1. 进入 <a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">网页抓取控制台</a>，切换到 **API 中心** 页签。
+2. 在右上角或试玩区域找到 **Scraping API Token** 模块。
+3. 点击 **轮换** 并在弹窗中确认。新密钥生成后，所有使用旧 Token 请求 `/v1/fetch` 的自动化任务均需同步更新。
+
+---
+
+## 轮换后的排错检查
+
+完成任一 Token 轮换后，建议在终端中发起一次简单的请求验证：
+- 若接口返回 `401 Unauthorized` 或认证失败提示，说明生产环境某个配置项依然在引用旧的 Token，全局排查项目环境变量并重启服务即可。
+- 更多 OpenAPI 请求细节可查阅 <a href="../zui-jia-shi-jian/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心集成文档</a>。

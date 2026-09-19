@@ -1,36 +1,33 @@
-# 登录
+# 账号登录
 
-登录后进入 JoyProxy 控制台，默认打开 <a href="overview.md" target="_blank" rel="noopener noreferrer">控制台总览</a>。
+通过 JoyProxy 控制台可以统一管理所有的代理资源、API 密钥与账单。
 
-<a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">前往登录</a>
-
----
-
-## 邮箱登录
-
-1. 输入 **邮箱** 与 **密码**。
-2. 点击 **登录**（提交过程中按钮会显示 **登录中…**）。
-3. 若忘记密码，点 **忘记密码？** → <a href="forgot-password.md" target="_blank" rel="noopener noreferrer">找回密码</a>。
-4. 没有账号时，点 **还没有账号？** → **注册**。
-
-页面标题为 **登录**，副标题为 **欢迎回到 JoyProxy**。
+<a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">前往控制台登录页面</a>
 
 ---
 
-## Google / GitHub
+## 常用登录方式
 
-在 **或** 分隔线下方可选择 **使用 Google 继续** 或 **使用 GitHub 继续**，完成后同样进入 **概览**。
+### 1. 邮箱与密码登录
+输入注册时使用的电子邮箱和对应密码，点击 **登录** 即可。如果忘记了登录密码，可直接点击输入框下方的 **忘记密码？** 进入邮箱重置流程，详见 <a href="forgot-password.md" target="_blank" rel="noopener noreferrer">找回密码</a>。
 
----
-
-## 账户尚未激活
-
-若提示 **账户尚未激活。请查收邮件并点击激活链接。**，可点 **重发激活邮件**。详见 <a href="email-activation.md" target="_blank" rel="noopener noreferrer">邮箱激活</a>。
+### 2. Google / GitHub 快捷登录
+如果你此前是通过第三方账号创建的账号，或者希望省去输入密码的步骤，点击分隔线下方的 **使用 Google 继续** 或 **使用 GitHub 继续**，完成浏览器授权后即可秒级进入控制台。
 
 ---
 
-## 登录后建议
+## 登录常见问题处理
 
-- 在 **我的账户** → **安全与 API** 设置 <a href="idle-sign-out.md" target="_blank" rel="noopener noreferrer">无操作退出时间</a>。
-- 勿在工单或聊天中发送 <a href="rotate-token.md" target="_blank" rel="noopener noreferrer">Token</a>。
-- 共用电脑用完后点击侧栏 **退出登录**。
+### 提示「账户尚未激活」
+如果使用邮箱登录时系统提示账号未激活，说明你在注册后尚未点击邮箱中的确认链接。此时只需在登录界面点击 **重发激活邮件**，然后前往收件箱（若未收到请同步检查垃圾邮件夹）点击验证链接完成激活。具体操作可查阅 <a href="email-activation.md" target="_blank" rel="noopener noreferrer">邮箱激活指引</a>。
+
+### 忘记当前登录密码
+点击登录表单下方的 **忘记密码？**，输入你的注册邮箱即可接收官方发送的重置邮件，按照邮件中的临时安全链接重设密码后即可重新登录。
+
+---
+
+## 日常使用安全建议
+
+- **设置会话超时时间**：如果你经常在共享网络、合租办公区或公共设备上使用控制台，建议进入 **我的账户** → **安全与 API**，将 <a href="idle-sign-out.md" target="_blank" rel="noopener noreferrer">无操作退出时间</a> 调短（例如设置为 1~3 小时），保障账户财产安全。
+- **妥善保管密钥**：各类自动化 Token 具有调用代理或下单扣费权限，切勿将其截屏发送在公开群聊、支持工单或未加密代码库中。
+- **公共设备及时登出**：在他人电脑或临时设备操作完毕后，请点击左侧菜单底部的 **退出登录** 彻底清除当前浏览器的会话缓存。
