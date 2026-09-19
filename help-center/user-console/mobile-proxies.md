@@ -24,7 +24,7 @@
 
 ## 用量
 
-移动轮换的**流量**配额与**订单**。详情：<a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">用量与订单</a>。
+移动轮换的**流量**配额与**订单**。详情：<a href="../getting-started/rotating/view-traffic.md" target="_blank" rel="noopener noreferrer">用量与订单</a>。
 
 ## API Center
 

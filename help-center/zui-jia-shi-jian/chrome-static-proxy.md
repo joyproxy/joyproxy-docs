@@ -35,4 +35,4 @@ Windows 上 Edge 与系统代理路径相同。也可从 Chrome 网上应用店�
 
 ## Chrome 中使用轮换
 
-轮换使用 `gate.joyproxy.com:9001` 与**生成的用户名**——扩展或系统代理均可；见[轮换代理](../ru-men/rotating/)。
+轮换使用 `gate.joyproxy.com:9001` 与**生成的用户名**——扩展或系统代理均可；见[动态代理](../ru-men/rotating/)。

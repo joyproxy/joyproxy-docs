@@ -8,7 +8,7 @@
 
 | 模式 | 计费        | 指南                          |
 | -- | --------- | --------------------------- |
-| 轮换 | 按 GB      | [轮换代理](../ru-men/rotating/) |
+| 轮换 | 按 GB      | [动态代理](../ru-men/rotating/) |
 | 静态 | 按 IP / 周期 | [静态代理](../ru-men/static/)   |
 | 定制 | 按端口 / 周期  | [定制代理](../ru-men/custom/)   |
 
@@ -20,7 +20,7 @@
 * **My Proxies** — 分配与定制端口工具。轮换：[自动购买流量](../ru-men/rotating/auto-buy-traffic.md)。静态/定制：[自动续费](../ru-men/static/auto-renew.md)与[新 IP](../ru-men/static/refresh-ip.md)
 * **Users & Whitelist** — 凭据与 IP 允许列表
 * **Endpoints** — 网关或专用主机
-* **用量** — [流量与订单](../ru-men/rotating/usage-and-orders.md)
+* **用量** — [流量与订单](../ru-men/rotating/view-traffic.md)
 * **API Center** — 提取与管理 API
 
 购买时仅**网络类型**不同；流程与住宅文档一致。

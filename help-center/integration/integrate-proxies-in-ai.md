@@ -16,7 +16,7 @@ JoyProxy 提供一等方 AI 入口，无需编写样板 API 代码即可生成�
 
 1. 阅读 <a href="https://www.joyproxy.com/products/openclaw-skill.html" target="_blank" rel="noopener noreferrer">OpenClaw Skill 产品页</a> 上的提示与示例。
 2. 在 OpenClaw 中配置 Skill 端点 `https://api.joyproxy.com/Skill` 并填入 AI Access Token。
-3. 使用产品页示例语句请求生成轮换端点或查询余额。
+3. 使用产品页示例语句请求生成动态代理端点或查询余额。
 
 ## AI MCP 配置
 

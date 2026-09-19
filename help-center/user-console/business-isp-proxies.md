@@ -20,7 +20,7 @@
 - **My Proxies** — 分配与定制端口工具。轮换：<a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a>。静态/定制：<a href="../getting-started/static/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>与<a href="../getting-started/static/refresh-ip.md" target="_blank" rel="noopener noreferrer">新 IP</a>
 - **Users & Whitelist** — 凭据与 IP 允许列表
 - **Endpoints** — 网关或专用主机
-- **用量** — <a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">流量与订单</a>
+- **用量** — <a href="../getting-started/rotating/view-traffic.md" target="_blank" rel="noopener noreferrer">流量与订单</a>
 - **API Center** — 提取与管理 API
 
 购买时仅**网络类型**不同；流程与住宅文档一致。

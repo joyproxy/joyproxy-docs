@@ -39,7 +39,7 @@
 
 ### 用量
 
-所选网络的**流量**与**订单**。轮换配额（已用 / 剩余 GB）与订单列表：[用量与订单](../ru-men/rotating/usage-and-orders.md)。
+所选网络的**流量**与**订单**。轮换配额（已用 / 剩余 GB）与订单列表：[用量与订单](../ru-men/rotating/view-traffic.md)。
 
 ### API Center
 

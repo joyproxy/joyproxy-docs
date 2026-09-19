@@ -26,7 +26,7 @@ AI 助手与 IDE Agent 可以**生成 JoyProxy 端点**、查询余额并起草�
 
 > **重要**
 >
-> AI Access Token 驱动**管理工具**，而非轮换网关套接字本身。轮换流量请用**生成的用户名**与 **Users & Whitelist 密码**连接——与[轮换代理](../ru-men/rotating/)相同。
+> AI Access Token 驱动**管理工具**，而非轮换网关套接字本身。轮换流量请用**生成的用户名**与 **Users & Whitelist 密码**连接——与[动态代理](../ru-men/rotating/)相同。
 
 ## 场景：在 IDE 中启动住宅轮换
 

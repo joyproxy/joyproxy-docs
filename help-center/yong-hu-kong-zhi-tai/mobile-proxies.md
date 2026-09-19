@@ -16,7 +16,7 @@
 
 ## Users & Whitelist
 
-为轮换网关创建用户名/密码——规则与住宅轮换相同（[轮换代理指南](../ru-men/rotating/)）。
+为轮换网关创建用户名/密码——规则与住宅轮换相同（[动态代理指南](../ru-men/rotating/)）。
 
 ## Endpoints
 
@@ -24,7 +24,7 @@
 
 ## 用量
 
-移动轮换的**流量**配额与**订单**。详情：[用量与订单](../ru-men/rotating/usage-and-orders.md)。
+移动轮换的**流量**配额与**订单**。详情：[用量与订单](../ru-men/rotating/view-traffic.md)。
 
 ## API Center
 

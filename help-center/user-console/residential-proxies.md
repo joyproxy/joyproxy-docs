@@ -39,7 +39,7 @@
 
 ### 用量
 
-所选网络的**流量**与**订单**。轮换配额（已用 / 剩余 GB）与订单列表：<a href="../getting-started/rotating/usage-and-orders.md" target="_blank" rel="noopener noreferrer">用量与订单</a>。
+所选网络的**流量**与**订单**。轮换配额（已用 / 剩余 GB）与订单列表：<a href="../getting-started/rotating/view-traffic.md" target="_blank" rel="noopener noreferrer">用量与订单</a>。
 
 ### API Center
 

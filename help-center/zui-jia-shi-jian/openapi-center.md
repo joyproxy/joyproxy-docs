@@ -54,7 +54,7 @@ https://api.joyproxy.com/v2/extract?token=...&network_type=residential&count=5&d
 | Mobile         | `cellular`（别名 `mobile`） |
 | Business / ISP | `business`              |
 
-将返回的用户名**原样**粘贴到客户端。控制台流程见[生成端点](../ru-men/rotating/generate-endpoints.md)。
+将返回的用户名**原样**粘贴到客户端。控制台流程见[生成端点](../ru-men/rotating/extract-ip.md)。
 
 ### 提取 JSON `error` 值
 
@@ -135,7 +135,7 @@ curl "https://api.joyproxy.com/v2/balance" \
   -H "Authorization: Bearer YOUR_MASTER_USER_TOKEN"
 ```
 
-OpenAPI Center 还文档化 **Create Order** 与 **Renew Order**（API 结账用 `payment_method: balance`）。控制台等价：[用量与订单](../ru-men/rotating/usage-and-orders.md)。
+OpenAPI Center 还文档化 **Create Order** 与 **Renew Order**（API 结账用 `payment_method: balance`）。控制台等价：[用量与订单](../ru-men/rotating/view-traffic.md)。
 
 ## 网页抓取 API（Scraping API Token）
 
