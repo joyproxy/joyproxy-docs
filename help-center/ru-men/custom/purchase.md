@@ -30,6 +30,7 @@
    - **信用卡 / 借记卡（Credit Card）**
    - **Apple Pay** / **Google Pay**
    - **微信支付（WeChat Pay）**
+   - **UPI（印度本地支付）**
    - **USDT（TRC20）**
 8. 付款成功后，系统会自动创建端口资源并显示在你的控制台中。
 

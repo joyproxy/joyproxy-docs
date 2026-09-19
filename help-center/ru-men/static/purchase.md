@@ -25,6 +25,7 @@
    - **信用卡 / 借记卡（Credit Card）**
    - **Apple Pay** / **Google Pay**
    - **微信支付（WeChat Pay）**
+   - **UPI（印度本地支付）**
    - **USDT（TRC20）**
 7. 支付成功后，线路将即时分配开通。
 
