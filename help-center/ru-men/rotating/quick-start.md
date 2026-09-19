@@ -9,12 +9,12 @@
 
 ## 第一步：购买动态代理流量
 
-1. 登录 [JoyProxy 控制台](https://www.joyproxy.com/admin-overview.html)，进入 **[购买 → 动态代理](https://www.joyproxy.com/admin-purchase.html?tab=short-term)**。
+1. 登录 [JoyProxy 控制台](https://www.joyproxy.com/admin-overview.html)，进入 **[购买代理](https://www.joyproxy.com/admin-purchase.html)**。
 2. 根据业务选择网络类型：
    - **动态住宅**：适合数据采集、社媒运营、电商比价（高隐蔽、性价比高）。
    - **动态移动**：适合 App 测试、移动广告校验（真机 4G/5G IP，免封率极高）。
    - **动态商业 / ISP**：适合 B2B 门户与长效连接。
-3. 选择需要的流量包，完成支付。
+3. 选择需要的流量包（如 5 GB、10 GB 等），完成支付。
 
 ---
 
@@ -30,13 +30,13 @@
 
 ## 第三步：生成连接端点
 
-1. 进入 **[提取](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面，切到 **动态代理（Rotating）** 页签。
+1. 进入 **[提取](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面，切到 **动态代理（Rotating Proxies）** 页签。
 2. 选择提取参数：
-   - **国家/地区**：选择需要的出口 IP 目标国家（如美国 US）。
-   - **会话类型**：
-     - **随机轮换**：每次请求使用全新 IP。
-     - **粘性会话**：固定使用同一个 IP 1–30 分钟。
-3. 点击 **生成（Generate）**，复制生成的连接地址。
+   - **Country（国家/地区）**：选择需要的出口 IP 目标国家（如美国 US）。
+   - **Session type（会话类型）**：
+     - **Rotating session（每次换 IP）**：每次请求使用全新 IP。
+     - **Sticky session（粘性会话）**：固定使用同一个 IP 1–30 分钟。
+3. 点击 **Generate now（立即生成）**，复制生成的连接地址。
 
 标准连接格式：
 ```text

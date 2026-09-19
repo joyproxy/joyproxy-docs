@@ -1,29 +1,40 @@
 # 购买流量
 
-动态代理按 **GB** 流量计费。流量在有效期内全量可用，包越大单价越低。
+动态代理按 **GB** 流量计费。流量在有效期内全量可用，套餐规格越大单价越优惠。
 
 ## 选择网络类型
 
-根据你的业务场景选择对应的网络类型（[在定价页查看单价](https://www.joyproxy.com/pricing.html)）：
+JoyProxy 提供三种动态代理网络，登录控制台后可在 **[购买代理](https://www.joyproxy.com/admin-purchase.html)** 页面进行对比与选购（[查看最新定价](https://www.joyproxy.com/pricing.html)）：
 
-| 网络类型 | 适用场景 | 产品页面 |
+| 网络类型 | 选型建议 | 典型适用场景 |
 | --- | --- | --- |
-| **动态住宅** | 普通数据抓取、电商比价、账号运营 | [动态住宅](https://www.joyproxy.com/products/proxy-residential.html) |
-| **动态移动** | 移动 App 自动化、广告验证、高风控场景重试 | [动态移动](https://www.joyproxy.com/products/proxy-mobile.html) |
-| **动态商业 / ISP** | B2B 门户对接、长效稳定连接 | [动态商业 / ISP](https://www.joyproxy.com/products/proxy-business.html) |
+| **动态住宅代理** (Residential) | 真实家庭宽带 IP，覆盖 200+ 国家 | 数据采集、网页爬虫、电商比价、账号运营 |
+| **动态移动代理** (Mobile) | 真实 4G / 5G 运营商 IP，免封率极高 | 移动 App 测试、移动广告验证、高风控重试 |
+| **动态商业 / ISP 代理** (Business / ISP) | 企业专线 ISP 出口，兼具高速与高信任度 | B2B 门户对接、长效 API 调用、商务平台交互 |
 
-## 购买步骤
+同一账户可同时持有多种不同网络的流量包，各订单独立计量。
 
-1. 打开 **[购买 → 动态代理](https://www.joyproxy.com/admin-purchase.html?tab=short-term)**。
-2. 切换网络类型（住宅 / 移动 / 商业）。
-3. 选定需要的流量包。
-4. 选择支付方式：支持银行卡、Apple Pay、Google Pay、PayPal、微信支付、UPI、USDT（TRC20）或账户余额。
-5. 完成支付后，套餐会立即在控制台生效。
+## 控制台购买步骤
 
-> **提示**  
-> 新注册用户可在首个符合条件的套餐上使用 **$5 注册赠金**。
+1. 登录控制台，打开左侧导航栏 **[购买代理](https://www.joyproxy.com/admin-purchase.html)** 页面。
+2. 选择要购买的网络类型（**住宅代理** / **移动代理** / **商业 / ISP 代理**）。
+3. 选择 **[动态代理]**（Rotating Proxies）标签页。
+4. 挑选符合业务规模的流量包（如 5 GB、10 GB、50 GB、100 GB 等）。
+5. 选择支付渠道并完成付款：
+   - **账户余额**（无手续费）
+   - **PayPal**
+   - **信用卡 / 借记卡**（Visa、Mastercard、AMEX、JCB）
+   - **Apple Pay** / **Google Pay**
+   - **微信支付**
+   - **UPI**（印度本地支付）
+   - **USDT（TRC20）**（波场链数字货币，1 USDT = $1）
+6. 支付成功后，流量包将立即开通并在控制台中生效。
+
+> **注册赠金提示**  
+> 新注册用户验证后可获得 **$5 注册赠金**，在首个符合条件的套餐结账时可直接抵扣。
 
 ## 购买完成后
 
-- 前往 **[查看已购流量](view-traffic.md)** 查看生效订单与剩余 GB。
-- 在 **[设置代理账密与白名单](authentication.md)** 中配置代理密码，即可开始[提取代理 IP](extract-ip.md)。
+- 流量成功开通后，前往 **[查看已购流量](view-traffic.md)** 确认订单状态与剩余 GB。
+- 进入 **[设置代理账密与白名单](authentication.md)** 创建代理连接密码。
+- 完成上述配置后，即可去 **[提取](https://www.joyproxy.com/admin-ip-extraction-center.html)** 页面生成端点。

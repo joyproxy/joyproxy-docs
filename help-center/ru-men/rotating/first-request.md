@@ -1,39 +1,55 @@
 # 发起代理请求
 
-拿到生成链接后，你可以使用各种编程语言或客户端连接动态代理网关。
+拿到提取的代理连接后，你可以使用各种编程语言或客户端连接 JoyProxy 动态代理网关。
 
-网关固定地址：`gate.joyproxy.com:9001`
+- **网关主机（Host）**：`gate.joyproxy.com`
+- **网关端口（Port）**：`9001`
 
 ---
 
 ## 代码示例
 
-请将 `GENERATED_USER` 替换为提取到的完整长用户名，`YOUR_PASS` 替换为代理密码：
+请将代码中的 `GENERATED_USER` 替换为从 [提取](extract-ip.md) 页面生成的完整长用户名，`YOUR_PASS` 替换为在 [用户与白名单](authentication.md) 中设置的代理密码。
 
 {% tabs %}
 {% tab title="cURL" %}
 ```bash
+# HTTP 代理测试
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
+
+# SOCKS5 代理测试
+curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
 {% endtab %}
 
-{% tab title="Python" %}
+{% tab title="Python (requests)" %}
 ```python
 import requests
 
-proxy = "http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001"
-res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
-print("出口 IP:", res.text)
+proxy_url = "http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001"
+proxies = {
+    "http": proxy_url,
+    "https": proxy_url,
+}
+
+response = requests.get("https://api.ipify.org", proxies=proxies, timeout=15)
+print("代理出口 IP:", response.text)
 ```
 {% endtab %}
 
-{% tab title="Node.js" %}
+{% tab title="Node.js (fetch)" %}
 ```javascript
 const { HttpsProxyAgent } = require("https-proxy-agent");
 
-const agent = new HttpsProxyAgent("http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001");
-const res = await fetch("https://api.ipify.org", { agent });
-console.log("出口 IP:", await res.text());
+const proxyUrl = "http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001";
+const agent = new HttpsProxyAgent(proxyUrl);
+
+async function checkIp() {
+  const res = await fetch("https://api.ipify.org", { agent });
+  console.log("代理出口 IP:", await res.text());
+}
+
+checkIp();
 ```
 {% endtab %}
 
@@ -49,29 +65,49 @@ import (
 )
 
 func main() {
-  proxyURL, _ := url.Parse("http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001")
+  proxyURL, err := url.Parse("http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001")
+  if err != nil {
+    log.Fatal(err)
+  }
+
   client := &http.Client{
     Transport: &http.Transport{Proxy: http.ProxyURL(proxyURL)},
   }
+
   resp, err := client.Get("https://api.ipify.org")
   if err != nil {
     log.Fatal(err)
   }
   defer resp.Body.Close()
-  b, _ := io.ReadAll(resp.Body)
-  log.Println("出口 IP:", string(b))
+
+  body, _ := io.ReadAll(resp.Body)
+  log.Println("代理出口 IP:", string(body))
 }
+```
+{% endtab %}
+
+{% tab title="PHP" %}
+```php
+<?php
+$ch = curl_init("https://api.ipify.org");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_PROXY, "gate.joyproxy.com:9001");
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, "GENERATED_USER:YOUR_PASS");
+$ip = curl_exec($ch);
+curl_close($ch);
+
+echo "代理出口 IP: " . $ip;
 ```
 {% endtab %}
 {% endtabs %}
 
 ---
 
-## 常用软件与客户端配置
+## 常用客户端与第三方软件集成
 
-如需在浏览器、测试工具或桌面程序中使用动态代理：
+如需在浏览器或第三方桌面软件中使用动态代理：
 
-- **Chrome / Edge 浏览器**：配合 [JoyProxy 浏览器扩展](../../getting-started/software/browser-extension.md)。
-- **快捷测试连通性**：使用 [代理检测工具](../../getting-started/software/proxy-tester.md)。
-- **本地网关转发**：使用 [代理服务器](../../getting-started/software/proxy-server.md)。
-- **指纹浏览器与第三方软件**：参见 [第三方软件配合代理](../../best-practices/third-party-static-proxies.md)。
+- **Chrome / Edge 浏览器**：使用官方开箱即用的 **[浏览器扩展](../../getting-started/software/browser-extension.md)**。
+- **桌面测试与批量检测**：使用官方免费 **[代理检测工具](../../getting-started/software/proxy-tester.md)**。
+- **本地网关中转转发**：使用 **[代理服务器](../../getting-started/software/proxy-server.md)**。
+- **指纹浏览器（AdsPower、Hubstudio、Undetectable 等）**：参阅 **[第三方软件配合代理](../../best-practices/third-party-static-proxies.md)** 指南。
