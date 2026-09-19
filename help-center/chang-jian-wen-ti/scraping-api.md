@@ -1,26 +1,26 @@
 # 网页抓取 API 常见问题
 
-本章汇总了关于 JoyProxy Web Scraping API 的工作机制、计费扣点逻辑、核心参数用法及开发者常见疑问。
+本章汇总了关于 JoyProxy 网页抓取 API（Web Scraping API）的工作机制、计费扣点逻辑、核心参数用法及开发者常见疑问。
 
 ## 机制与产品定位
 
-### 什么是 Web Scraping API？它与传统代理有什么不同？
-Web Scraping API 是 JoyProxy 专为数据采集开发者打造的**全托管网页抓取接口**，采用 RESTful API 设计。
-- **传统代理**：您拿到的是代理通道，必须自己搭建无头浏览器集群（如 Puppeteer/Selenium）、自行破解目标站点的 JavaScript 混淆与 WAF 防护、处理请求头伪装并承受代理节点超时掉线的重试成本。
-- **Web Scraping API**：您只需向接口发送一条包含目标网址（URL）的 HTTP 请求，服务端的自动化中台会自动调度最优出口、模拟真实硬件指纹、智能绕过 Cloudflare/Akamai/Datadome 等反爬盾、执行客户端 JS 渲染，并直接向您返回最终解析好的 HTML 内容或 JSON 数据。
+### 什么是网页抓取 API？它与传统代理有什么不同？
+Web Scraping API 是专为数据采集开发者打造的**全托管网页抓取接口**，采用 RESTful API 设计。
+- **传统代理**：你拿到的是代理通道，必须自己搭建无头浏览器集群（如 Puppeteer/Playwright/Selenium）、自行破解目标站点的 JavaScript 混淆与 WAF 防护、处理请求头伪装并承受代理节点超时掉线的重试成本。
+- **网页抓取 API**：你只需向接口发送一条包含目标网址（URL）的 HTTP 请求，服务端的自动化中台会自动调度最优出口、模拟真实硬件指纹、智能绕过 Cloudflare/Akamai/Datadome 等反爬盾、执行客户端 JS 渲染，并直接向你返回最终解析好的 HTML 内容或 JSON 数据。
 
 ### 为什么说这是「零风险抓取」？它的扣费机制是怎样的？
 JoyProxy 坚持**仅对成功请求扣费（Only pay for successful requests）**原则：
 - 只要目标页面成功返回了有效内容（HTTP 状态码为 2xx），系统才会扣除对应的服务积分（Credits）。
 - 若因目标站点阻断、接口超时、反爬挑战未通过或网络闪断导致抓取失败，**系统承诺绝对不扣除任何积分**。
-- 您购买的所有 Credits 积分**永久有效、无到期时间限制**，用完为止。
+- 你购买的所有 Credits 积分**永久有效、无到期时间限制**，用完为止。
 
 ---
 
 ## 计费规则与 Credits 消耗标准
 
 ### 每次抓取请求消耗多少 Credits？
-扣费额度取决于您在请求中启用的高级特性：
+扣费额度取决于你在请求中启用的高级特性：
 
 | 请求类型 | 启用参数 | 单次扣除 Credits | 说明 |
 | :--- | :--- | :--- | :--- |
@@ -46,8 +46,8 @@ JoyProxy 坚持**仅对成功请求扣费（Only pay for successful requests）*
 > 注：早期版本 `/v1/fetch` 在底层已被映射到同等高可用能力，仍保持完全向后兼容，但新项目请务必接入 `/v2/fetch`。
 
 ### 什么是 Scraping API Token？在哪里获取？
-Scraping API Token 是专用于调用抓取接口的独立凭证，与您控制台的主用户密码、代理提取 API Token 以及 AI Token 完全隔离。
-您在购买 Credits 套餐后，登录控制台进入「网页抓取 API」页面，在「API 中心（API Center）」即可直接复制该 Token，也可以在凭证泄露时点击一键轮换。
+Scraping API Token 是专用于调用抓取接口的独立凭证，与你控制台的主用户密码、代理提取 API Token 以及 AI Token 完全隔离。
+你在购买 Credits 套餐后，登录控制台进入「网页抓取 API」页面，在「API 中心」即可直接复制该 Token，也可以在凭证泄露时点击一键轮换。
 
 ### 常用参数有哪些？如何保持黏性会话？
 在向 `/v2/fetch` 发送请求时，常用参数如下：
@@ -58,10 +58,10 @@ Scraping API Token 是专用于调用抓取接口的独立凭证，与您控制�
 - `sessionId`（可选）：用于多步骤操作的黏性会话。传入相同的字符串（例如 `sessionId="cart_step_1"`），服务端将在数分钟内优先复用同一会话上下文与出口，便于处理登录后多页跳转或连续加购。
 
 ### 抓取 API 的并发请求限制是多少？
-并发限制取决于您购买的 Credits 套餐规格：
+并发限制取决于你购买的 Credits 套餐规格：
 - Micro 套餐（$5.00 / 10,000 Credits）：最大并发 5
 - Starter 套餐（$12.00 / 28,000 Credits）：最大并发 10
 - Hobby 套餐（$39.00 / 100,000 Credits）：最大并发 20
 - Pro 套餐（$249.00 / 1,000,000 Credits）：最大并发 75
 - Scale 套餐（$1,500.00 / 15,000,000 Credits）：最大并发 200
-如果您在瞬时发起的请求数超过了当前套餐的并发阈值，超出部分会收到 `429 Too Many Requests`，请在客户端实施平滑限流或升级更高档位套餐。
+如果你在瞬时发起的请求数超过了当前套餐的并发阈值，超出部分会收到 `429 Too Many Requests`，请在客户端实施平滑限流或升级更高档位套餐。
