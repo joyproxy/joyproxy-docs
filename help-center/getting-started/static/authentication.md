@@ -6,7 +6,7 @@
 
 ## 方式一：用户名 / 密码认证（Username/Password）
 
-1. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** 页面。
 2. 切换到 **用户名 / 密码（Username/Password）** 页签。
 3. 新建或选择现有的代理凭据：
    - **代理用户名（Username）**：如 `user123`。
@@ -19,6 +19,6 @@
 
 如果你的程序运行在固定公网 IPv4 地址的服务器上：
 
-1. 打开 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** → **IP 白名单（IP Whitelist）** 页签。
+1. 打开 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** → **IP 白名单（IP Whitelist）** 页签。
 2. 输入服务器的公网 IPv4 地址并保存。
 3. 添加成功后，该服务器发起连接时无需填写代理用户名与密码，直接访问专属 `host:port` 即可通过认证。

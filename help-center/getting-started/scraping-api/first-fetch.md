@@ -7,7 +7,7 @@ JoyProxy 控制台提供了可视化的 **<a href="https://www.joyproxy.com/admi
 ## 在控制台 Playground 中发起测试
 
 1. 登录控制台，进入 **<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取 API（Web Scraping API）</a>** 页面。
-2. 切换到 **API 中心（API Center）** 页签（ Playground 视图）。
+2. 切换到 **API 中心（API Center）** 页签（在线试玩 · 测试与集成）。
 3. 界面参数配置区：
    - **目标 URL（Target URL）**：填入你需要抓取的网页地址（如 `https://example.com`）。
    - **JS 渲染开关（JavaScript Rendering）**：勾选是否开启 Headless 动态渲染（开启后相当于 `render=true`）。

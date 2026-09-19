@@ -23,7 +23,7 @@
 在控制台顶部选择 **购买** 页签，根据业务吞吐量挑选所需的移动数据流量套餐。移动网络的详细参数说明可参考 <a href="../getting-started/rotating/network-types.md" target="_blank" rel="noopener noreferrer">移动网络类型与计费</a>。
 
 ### 2. 配置认证方式
-进入 **账密与白名单** 页签完成前置授权。支持添加常用的公网 IP 白名单实现免密直连，也支持创建带密码的账密组。详细配置规则见 <a href="../getting-started/rotating/authentication.md" target="_blank" rel="noopener noreferrer">设置代理账密与白名单</a>。
+进入 **账密与白名单** 页签完成前置授权。动态移动代理网关要求使用账密进行连接验证，可在此创建并管理账密组；若需在固定服务器上免 Token 批量提取节点，也可将服务器 IP 加入白名单。详细配置规则见 <a href="../getting-started/rotating/authentication.md" target="_blank" rel="noopener noreferrer">设置代理账密与白名单</a>。
 
 ### 3. 生成与提取连接地址
 在 **提取** 页签中挑选你所需要的目标运营商属地，系统会自动为你拼接好包含国家指令的网关连接地址与对应的自动化提取链接（API URL），详见 <a href="../getting-started/rotating/extract-ip.md" target="_blank" rel="noopener noreferrer">提取代理 IP 教程</a>。

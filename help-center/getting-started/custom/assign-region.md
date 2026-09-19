@@ -6,7 +6,7 @@
 
 ## 操作步骤
 
-1. 登录 JoyProxy 控制台，进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面。
+1. 登录 JoyProxy 控制台，进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理（My Proxies）</a>** 页面。
 2. 找到需要配置地区的自定义代理端口。
 3. 点击端口右侧的 **分配地区（Assign Region）** 按钮。
 4. 在弹出的地区选择弹窗中：

@@ -13,9 +13,9 @@
 
 ### 使用预编译的免安装版（推荐）
 
-1. 前往 GitHub Releases 获取最新发布的版本（例如 <a href="https://github.com/joyproxy/joyproxy-tester/releases/tag/v2.6.3" target="_blank" rel="noopener noreferrer">Release v2.6.3</a>）。
-2. 下载单文件可执行程序 **`JoyProxy-Tester-2.6.3.exe`**。
-3. 双击直接启动运行。程序无需安装任何系统运行库，底栏显示 **Ready** 状态即可开始测试。
+1. 前往 GitHub Releases 获取最新发布的安装包或免安装程序（访问 <a href="https://github.com/joyproxy/joyproxy-tester/releases/latest" target="_blank" rel="noopener noreferrer">最新 Release</a>）。
+2. 下载单文件可执行程序 **`JoyProxy-Tester.exe`**。
+3. 双击直接启动运行。程序无需安装任何额外系统运行库，底栏显示 **Ready** 状态即可开始测试。
 
 *注：在某些 Windows 安全策略下，首次运行可能会弹出提示，选择“仍要运行”即可。*
 
@@ -42,7 +42,7 @@ python app.py
 python build_pc.py
 ```
 
-编译生成的可执行文件将位于 `dist/JoyProxy-Tester-2.6.3.exe`。
+编译生成的可执行文件将位于 `dist/JoyProxy-Tester.exe`。
 
 ---
 

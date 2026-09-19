@@ -8,11 +8,14 @@
 
 - **请求地址**：`https://api.joyproxy.com/v2/extract`
 - **鉴权**：查询参数 `?token=API_Token` 或请求头 `Authorization: Bearer <API_Token>`
-- **参数**：
-  - `network_type`：`residential`（住宅）、`cellular`（移动）、`business`（商业）；
-  - `country_iso`：国家 ISO 代码（如 `US`）；
-  - `count`：提取数量（1~200）；
-  - `format`：`json` 或 `crlf`。
+- **核心参数（简要说明）**：
+  - `network_type`：代理网络类型，如 `residential`（住宅）、`cellular`（移动）、`business`（商业）；
+  - `country_iso`：目标出口国家 ISO 代码（如 `US`、`JP`、`DE`）；
+  - `count`：单次拉取数量；
+  - `format`：返回格式，如 `json` 或 `crlf`。
+
+> 💡 **完整 API 参数字典与在线调试**  
+> 提取接口的完整请求参数（包括省州、城市、会话时长控制等高级字段）、限制规则及即时调试，请直接访问控制台 **<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>**。
 
 ---
 

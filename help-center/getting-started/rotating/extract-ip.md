@@ -8,7 +8,7 @@
 
 这是最直观、最常用的提取方式：
 
-1. 登录控制台，进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面。
+1. 登录控制台，进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面。
 2. 在顶部选择对应的代理网络（如 **住宅代理（Residential Proxies）**），并确认切换到 **动态代理（Rotating Proxies）** 标签。
 3. 确认提取模式页签为 **Web 提取（Web Generator）**。
 4. 配置参数：
@@ -33,7 +33,7 @@
 
 如果你的程序需要在代码中动态拉取代理列表或自动化生成端点：
 
-1. 在 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面点击 **API generator** 页签。
+1. 在 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面点击 **API generator** 页签。
 2. 可选择 API 返回格式：**换行文本（Line Breaks CRLF）** 或 **JSON**。
 3. 直接复制页面生成的 **API 地址（API URL）**。
 
@@ -46,5 +46,5 @@
 
 在 Cursor、VS Code、Claude Desktop 或 OpenClaw 中，可通过 JoyProxy 官方 AI 工具用自然语言直接生成代理端点：
 
-- 在 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面点击 **AI generator** 了解详情。
+- 在 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面点击 **AI generator** 了解详情。
 - 详细指南请查阅 **<a href="../../best-practices/developer/ai.md" target="_blank" rel="noopener noreferrer">在 AI 中集成代理</a>**。

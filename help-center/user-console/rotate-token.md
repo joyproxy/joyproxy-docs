@@ -11,9 +11,9 @@
 | Token 名称 | 适用场景与权限范围 | 绝不能用于 | 获取与轮换入口 |
 | :--- | :--- | :--- | :--- |
 | **主用户 Token<br>(Master User Token)** | 整个账户的最高权限 API 凭据。用于通过 OpenAPI 自动为账户下单购买套餐、查询账户实时可用余额、调整白名单等。 | **绝不能**用于提取代理 IP，**不能**用于调用抓取 API，**不能**放在前端页面暴露。 | **我的账户（My Account）** → **安全与 API（Security & API）** |
-| **代理提取 API Token<br>(API Token)** | 仅用于批量获取代理 IP 列表。用于自动化脚本定期请求 `/v2/extract`、`/v2/extract-long` 或 `/v2/extract-custom` 端点拉取节点 host:port。 | 不能用于账户下单、不能用于查询余额。 | 控制台 **提取中心（Endpoint Generator）** 页面（复制出来的 API URL 中 `token=...` 参数） |
+| **代理提取 API Token<br>(API Token)** | 仅用于批量获取代理 IP 列表。用于自动化脚本定期请求 `/v2/extract`、`/v2/extract-long` 或 `/v2/extract-custom` 端点拉取节点 host:port。 | 不能用于账户下单、不能用于查询余额。 | 控制台 **提取（Endpoint Generator）** 页面（复制出来的 API URL 中 `token=...` 参数） |
 | **网页抓取 Token<br>(Web Unblocker Token)** | 专用于公网调用网页抓取服务（`/v1/fetch`）以及各语言 SDK 集成。 | 不能用于提取底层代理，不能用于管理账户。 | 控制台 **网页抓取 API（Web Scraping API）** → **API 中心（API Center）** 页签 |
-| **AI Access Token** | 仅用于 **MCP 服务器**（`https://api.joyproxy.com/Mcp`）与 **OpenClaw Skill**（`https://api.joyproxy.com/Skill`），驱动 Cursor、VS Code、Claude 等 AI 工具调用。 | 不是代理认证账密，不能向 `gate.joyproxy.com` 发起网络连接。 | 控制台 **提取中心（Endpoint Generator）** → **AI generator** 标签页 |
+| **AI Access Token** | 仅用于 **MCP 服务器**（`https://api.joyproxy.com/Mcp`）与 **OpenClaw Skill**（`https://api.joyproxy.com/Skill`），驱动 Cursor、VS Code、Claude 等 AI 工具调用。 | 不是代理认证账密，不能向 `gate.joyproxy.com` 发起网络连接。 | 控制台 **提取（Endpoint Generator）** → **AI generator** 标签页 |
 
 ---
 
@@ -33,7 +33,7 @@
 
 当你编写的爬虫或外部软件使用固定 URL 提取 IP 时，若该 URL 泄露给非授权人员，可能会造成提取配额被消耗：
 
-1. 打开控制台 **提取中心（Endpoint Generator）** 页面。
+1. 打开控制台 **提取（Endpoint Generator）** 页面。
 2. 切换至对应的网络类型与产品模式。
 3. 调整提取选项或直接重新生成提取链接，系统会为你生成包含新 Token 的 **API URL**。
 4. 用新生成的链接覆盖你脚本中旧的提取请求地址，旧的提取请求将即刻被网关阻断。

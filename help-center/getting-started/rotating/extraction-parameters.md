@@ -1,6 +1,6 @@
 # 高级提取参数（Extraction Parameters）
 
-在 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面中，你可以根据业务需求自由组合以下高级提取参数。这些参数会自动编码写入生成的长用户名中。
+在 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面中，你可以根据业务需求自由组合以下高级提取参数。这些参数会自动编码写入生成的长用户名中。
 
 ---
 
@@ -30,4 +30,4 @@
 ---
 
 > 💡 **通过 API 动态传参**  
-> 如果需要在自动化代码中通过 HTTP URL 参数控制以上定向指标（如 `country=us&state=california&city=los_angeles&duration=10`），请直接参考控制台 **<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 或 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">程序化提取指南</a>**。
+> 如果需要在自动化代码中通过 HTTP API 批量提取并控制定向指标，接口支持 `country_iso`、`format` 等核心参数。完整参数字典、限制规范与在线测试，请直接参考控制台 **<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 或 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">程序化提取指南</a>**。

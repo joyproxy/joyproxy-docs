@@ -6,7 +6,7 @@
 
 ## 开启与管理步骤
 
-1. 登录 JoyProxy 控制台，进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面。
+1. 登录 JoyProxy 控制台，进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理（My Proxies）</a>** 页面。
 2. 找到对应的自定义代理端口订单卡片或列表行。
 3. 找到 **自动续费（Auto-Renew）** 开关并点击切换为开启状态（绿色）。
 4. 开启后，系统会在订单到期前 24 小时，自动从你的 **账户余额（Balance）** 中扣除下一个周期对应的套餐费用，并自动顺延端口有效期。

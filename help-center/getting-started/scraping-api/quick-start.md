@@ -35,7 +35,7 @@
 
 1. 在 **<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取 API</a>** 页面切到 **API 中心（API Center）** 页签。
 2. 在 **目标 URL（Target URL）** 输入框中输入需要抓取的网址（例如 `https://example.com`）。
-3. 点击 **发送请求（Send Request）** 按钮。
+3. 点击 **发送请求** 按钮。
 4. 页面下方会即时展示抓取结果 HTML 源码、响应 HTTP 状态码以及本次消耗的积分数。
 
 ---

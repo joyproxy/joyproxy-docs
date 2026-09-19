@@ -5,7 +5,7 @@
 在实际业务中，许多爬虫脚本、自动化工具或第三方商业软件只支持连接本地无密码的 `127.0.0.1:端口`，或者团队希望在局域网内搭建一台统一的跳板服务器，避免把核心代理账号密码散落到多台机器上。`joyproxy-server` 就是为了解决这些中继与权限管控需求而设计的。
 
 相关地址：  
-<a href="https://www.joyproxy.com/products/proxy-server.html" target="_blank" rel="noopener noreferrer">产品页面与完整参数文档</a> · <a href="https://github.com/joyproxy/joyproxy-server" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> · <a href="https://github.com/joyproxy/joyproxy-server/releases/tag/v2.3" target="_blank" rel="noopener noreferrer">Releases 下载</a>
+<a href="https://www.joyproxy.com/products/proxy-server.html" target="_blank" rel="noopener noreferrer">产品页面与完整参数文档</a> · <a href="https://github.com/joyproxy/joyproxy-server" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> · <a href="https://github.com/joyproxy/joyproxy-server/releases/latest" target="_blank" rel="noopener noreferrer">最新 Releases 下载</a>
 
 > **计费说明**  
 > 网关程序本身开源免费，不限制部署实例数。当网关的上游配置为 JoyProxy 的动态住宅或静态云端节点时，实际消耗的网络流量仍由 JoyProxy 控制台订单统一扣除。
@@ -27,7 +27,7 @@
 
 ### 1. Linux 环境（主流发行版与老旧系统）
 
-- **标准 64 位系统**：下载 <a href="https://github.com/joyproxy/joyproxy-server/releases/tag/v2.3" target="_blank" rel="noopener noreferrer">joyproxy-linux-amd64</a>
+- **标准 64 位系统**：前往 GitHub Releases 下载最新的 `joyproxy-linux-amd64`。
   ```bash
   chmod +x joyproxy-linux-amd64
   mv joyproxy-linux-amd64 /usr/local/bin/joyproxy

@@ -19,7 +19,7 @@
 
 ## 第二步：设置代理账号密码
 
-1. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** 页面。
 2. 在 **用户名 / 密码（Username/Password）** 下新建一组代理账号（如 `user123` / `pass123`）。
 3. 记下设置的代理用户名与代理密码。
 
@@ -27,7 +27,7 @@
 
 ## 第三步：提取固定端点
 
-1. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面，切到 **静态代理（Static Proxies）** 页签。
+1. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面，切到 **静态代理（Static Proxies）** 页签。
 2. 筛选你购买的订单线路，在 **输出格式（Output Format）** 选择展示样式。
 3. 点击 **复制地址列表（Copy Host List）**，获取专属端点：
    ```text

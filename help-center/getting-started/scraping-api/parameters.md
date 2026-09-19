@@ -17,7 +17,9 @@
 | `geoCode` | String | 随机 | 指定出口代理 IP 国家代码（ISO 2 字母代码，如 `us` 美国、`jp` 日本、`de` 德国）。 |
 | `customHeaders`| Object/JSON | 无 | 自定义透传到目标网站的 HTTP 请求头（如 Cookie、User-Agent 等，JSON 格式）。 |
 | `sessionId` | String | 无 | 黏性会话 ID。相同 sessionId 将在约 10 分钟窗口期内复用同一出口 IP。 |
+| `regionalGeoCode` | String | 无 | 区域定向代码，支持 `eu`（欧洲）、`na`（北美）、`as`（亚洲）、`sa`（南美）、`af`（非洲）、`oc`（大洋洲）。 |
 | `waitUntil` | String | 无 | 渲染等待条件，支持 `load`、`domcontentloaded`、`networkidle0`、`networkidle2`。 |
+| `waitSelector` | String | 无 | 等待页面中指定 CSS 选择器元素出现后再返回 HTML。 |
 | `customWait` | Integer | 无 | 页面加载完成后的额外等待时间（毫秒），如 `2000`。 |
 
 ---

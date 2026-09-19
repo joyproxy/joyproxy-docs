@@ -1,12 +1,12 @@
 # 查看与管理端口（View Ports）
 
-购买成功后，你可以在控制台的 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面中统一查看与管理所有自定义独享端口。
+购买成功后，你可以在控制台的 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理（My Proxies）</a>** 页面中统一查看与管理所有自定义独享端口。
 
 ---
 
 ## 页面展示与字段说明
 
-进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面并切到 **自定义独享代理（Custom Dedicated Proxies）** 区域，列表包含以下信息：
+进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理（My Proxies）</a>** 页面并切到 **自定义独享代理（Custom Dedicated Proxies）** 区域，列表包含以下信息：
 
 | 字段名称 | 说明 |
 | --- | --- |

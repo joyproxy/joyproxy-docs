@@ -34,4 +34,4 @@ JoyProxy 提供三种动态代理网络，登录控制台后可在 **<a href="ht
 
 - 流量成功开通后，前往 **<a href="view-traffic.md" target="_blank" rel="noopener noreferrer">查看已购流量</a>** 确认订单状态与剩余 GB。
 - 进入 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">设置代理账密与白名单</a>** 创建代理连接密码。
-- 完成上述配置后，即可去 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面生成端点。
+- 完成上述配置后，即可去 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成端点。

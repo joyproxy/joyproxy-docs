@@ -9,10 +9,9 @@
 
 ## 代码示例
 
-请将代码中的 `GENERATED_USER` 替换为从 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面生成的完整长用户名，`YOUR_PASS` 替换为在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 中设置的代理密码。
+请将代码中的 `GENERATED_USER` 替换为从 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成的完整长用户名，`YOUR_PASS` 替换为在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** 中设置的代理密码。
 
-{% tabs %}
-{% tab title="cURL" %}
+### cURL
 ```bash
 # HTTP 代理测试
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
@@ -20,9 +19,8 @@ curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify
 # SOCKS5 代理测试
 curl -x socks5h://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
-{% endtab %}
 
-{% tab title="Python (requests)" %}
+### Python (requests)
 ```python
 import requests
 
@@ -35,9 +33,8 @@ proxies = {
 response = requests.get("https://api.ipify.org", proxies=proxies, timeout=15)
 print("代理出口 IP:", response.text)
 ```
-{% endtab %}
 
-{% tab title="Node.js (fetch)" %}
+### Node.js (fetch)
 ```javascript
 const { HttpsProxyAgent } = require("https-proxy-agent");
 
@@ -51,9 +48,8 @@ async function checkIp() {
 
 checkIp();
 ```
-{% endtab %}
 
-{% tab title="Go" %}
+### Go
 ```go
 package main
 
@@ -84,9 +80,8 @@ func main() {
   log.Println("代理出口 IP:", string(body))
 }
 ```
-{% endtab %}
 
-{% tab title="PHP" %}
+### PHP
 ```php
 <?php
 $ch = curl_init("https://api.ipify.org");
@@ -98,8 +93,6 @@ curl_close($ch);
 
 echo "代理出口 IP: " . $ip;
 ```
-{% endtab %}
-{% endtabs %}
 
 ---
 
