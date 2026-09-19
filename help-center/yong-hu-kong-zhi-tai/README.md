@@ -18,14 +18,47 @@
 
 ---
 
+## 本章目录（左侧导航均在本章下）
+
+### 账户与登录
+
+- [注册](register.md)
+- [邮箱激活](email-activation.md)
+- [登录](login.md)
+- [找回密码](forgot-password.md)
+
+### 控制台总览
+
+- [概览（Overview）](overview.md)
+
+### 代理网络控制台
+
+- [住宅代理控制台](residential-proxies.md)
+- [移动代理控制台](mobile-proxies.md)
+- [商业 / ISP 控制台](business-isp-proxies.md)
+- [数据中心控制台](datacenter-proxies.md)
+- [网页抓取控制台](web-scraping-api.md)
+
+### 我的账户（My Account）
+
+- [我的账户总览](my-account.md)
+- [界面语言](interface-language.md)
+- [修改密码](change-password.md)
+- [无操作退出时间](idle-sign-out.md)
+- [主用户与自动化 Token](rotate-token.md)
+- [账单与交易记录](invoices.md)
+- [注销账户](delete-account.md)
+
+---
+
 ## 本章文档怎么读
 
 | 你想做的事 | 先看 | 操作细节去哪 |
 | --- | --- | --- |
-| 注册、登录、找回密码 | [账户与登录](register.md) | — |
+| 注册、登录、找回密码 | 上表 **账户与登录** | — |
 | 看余额与进各产品线 | [概览（Overview）](overview.md) | — |
-| 买套餐、提取 IP、看订单 | 对应 [代理网络控制台](residential-proxies.md) | [产品与服务](../getting-started/rotating/README.md) 等 |
-| 改密码、语言、Token、账单 | [我的账户](my-account.md) | 本章「我的账户」分组 |
+| 买套餐、提取 IP、看订单 | **代理网络控制台** 对应一篇 | [产品与服务](../getting-started/rotating/README.md) 等 |
+| 改密码、语言、Token、账单 | [我的账户总览](my-account.md) | 上表 **我的账户** |
 | 调 HTTP API | [OpenAPI 中心](../best-practices/openapi-center.md) | 控制台 **API 中心** 外链 |
 
 ---
