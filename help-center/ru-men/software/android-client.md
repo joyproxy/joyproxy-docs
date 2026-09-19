@@ -1,35 +1,69 @@
 # Android 代理客户端（Android Client）
 
-**JoyProxy Android 客户端** 是专为 Android 智能手机、平板电脑以及安卓模拟器（如雷电模拟器、夜神模拟器等）开发的代理管理应用。
+**JoyProxy Android 客户端**是基于 **sing-box `libbox`** 的 HTTP / SOCKS5 代理应用。支持 **全局（Global）**、**白名单（Whitelist）**、**黑名单（Blacklist）** 三种路由范围，**无需 Root**。
 
-基于成熟的 V2Ray / sing-box 内核打造，**无需手机 Root 权限**，即可实现在移动端建立安全高效的代理连接。
+[产品页](https://www.joyproxy.com/products/android-client.html) · [GitHub Releases（APK）](https://github.com/joyproxy/joyproxy-client-android/releases) · [源码](https://github.com/joyproxy/joyproxy-client-android)
 
-[GitHub Releases APK 下载](https://github.com/joyproxy/joyproxy-client-android/releases/latest)
-
----
-
-## 核心功能与特性
-
-1. **无需 Root 权限**：通过 Android 系统标准的 VpnService API 建立本地虚拟网络，全机安全兼容。
-2. **精细化 App 分流（Application Bypass）**：
-   - **全局模式（Global Mode）**：手机上所有 App 的网络流量均通过代理出海。
-   - **白名单分流（Include Apps）**：仅允许选中的 App（如 Chrome 浏览器、海外社交软件）走代理，其他国内 App 直连。
-   - **黑名单排除（Exclude Apps）**：指定的 App 直连，其他应用走代理。
-3. **多代理协议支持**：完美支持 HTTP、HTTPS 以及 SOCKS5 代理协议。
-4. **配合移动/住宅代理**：特别适合配合 JoyProxy **[移动代理 / 住宅代理](../rotating/network-types.md)** 使用，真实模拟海外真实手机移动终端的网络环境。
+> 完整图文说明以 [官方产品页](https://www.joyproxy.com/products/android-client.html) 为准；下文为与 App 一致的操作步骤摘要。
 
 ---
 
-## 安装与配置步骤
+## 下载与安装
 
-1. 在 Android 手机上打开浏览器，前往 GitHub Releases 下载最新的 `joyproxy-client-android.apk` 安装包。
-2. 安装并打开 **JoyProxy** 应用。
-3. 点击 **新增配置（Add Profile）**：
-   - **配置名称**：如 `美国移动代理`。
-   - **协议类型（Protocol）**：选择 `HTTP` 或 `SOCKS5`。
-   - **代理主机（Host）**：填入 JoyProxy 网关或专属主机地址（如 `us-ca.edge.joyproxy.com` 或 `gate.joyproxy.com`）。
-   - **代理端口（Port）**：填入对应端口（如 `10001` 或 `9001`）。
-   - **认证账密**：填入在 [用户与白名单] 中设置的 Username 和 Password。
-4. 在 **应用分流（App Routing）** 选项中勾选需要走代理的目标 App。
-5. 点击页面中央的 **连接（Connect）** 按钮，并在系统弹窗中允许创建 VPN 连接。
-6. 连接成功后，打开目标 App 即可体验高速海外代理！
+1. 打开 [GitHub Releases](https://github.com/joyproxy/joyproxy-client-android/releases) 最新版本。
+2. 下载签名包 **`app-release.apk`**。
+3. 在 Android 设备上允许 **安装未知来源应用**（若系统提示）。
+4. 安装并打开 **JoyProxy**。
+
+---
+
+## 配置 JoyProxy 线路
+
+在 App 中填写与 [提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html) 一致的连接信息：
+
+| 字段 | 动态代理示例 | 静态 / 自定义独享示例 |
+| --- | --- | --- |
+| **协议（Protocol）** | HTTP 或 SOCKS5 | HTTP 或 SOCKS5 |
+| **地址（Host）** | `gate.joyproxy.com` | `us-ca.edge.joyproxy.com` |
+| **端口（Port）** | `9001` | 如 `10001` / `20001` |
+| **用户名 / 密码（可选）** | `GENERATED_USER` / [用户与白名单](https://www.joyproxy.com/admin-authorization.html) 中的密码 | 控制台代理 Username / Password |
+
+也可填写任意第三方代理服务器，不经过 JoyProxy 计费。
+
+---
+
+## 使用步骤（与现网 App 文案一致）
+
+1. 打开 JoyProxy，输入代理 **服务器地址** 与 **端口**（**HTTP** 或 **SOCKS5**）。
+2. 可选：输入 **用户名** 与 **密码**。
+3. 在**未连接**状态下，点击 **测试（Test）** 验证代理是否可达。
+4. 选择 **代理范围（Proxy scope）**：
+   - **全局（Global）** — 所有受支持应用的流量走代理；
+   - **白名单（Whitelist）** — **仅选中应用**走代理；
+   - **黑名单（Blacklist）** — **选中应用不走代理**，其余走代理。
+5. 点击 **连接代理（Connect）**，在系统弹窗中授予 **VPN / 网络连接** 权限。
+6. 连接成功后，状态栏显示 **钥匙图标**；在 App 内点击 **断开（Disconnect）** 结束。
+
+> **重要**  
+> 修改代理范围或应用列表后，需先 **断开** 再 **重新连接** 方可生效。
+
+---
+
+## 功能摘要
+
+- **HTTP / SOCKS5**，主机可为 IP 或域名。
+- **连接测试**仅断开时可用（与产品页一致）。
+- App **设置**中可切换界面语言（**English** / **中文**）。
+- 开源 **GPLv3**；核心为 sing-box libbox。
+
+---
+
+## 与其它方式对比
+
+| 需求 | 方案 |
+| --- | --- |
+| 仅浏览器走代理 | [浏览器扩展](browser-extension.md) |
+| Wi‑Fi 手动填代理、不装 App | [手机静态代理](../../best-practices/mobile-static-proxy.md) |
+| 配合 [移动代理](../rotating/network-types.md) 做真机环境 | 本 Android 客户端 + 动态移动线路 |
+
+从源码构建需自行编译 `libbox.aar`，见 [GitHub README](https://github.com/joyproxy/joyproxy-client-android)。

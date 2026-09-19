@@ -1,27 +1,40 @@
 # 软件工具（Software Tools）
 
-为了让用户更便捷地在各种设备、浏览器及开发环境中使用代理，JoyProxy 官方团队开发并维护了一系列**免费开源/免费工具软件**。
+JoyProxy 提供一组**免费开源客户端**（网关、浏览器插件、桌面检测工具、Android 应用），用于在本地或浏览器中更方便地使用代理。软件本身不收费；若上游指向 JoyProxy 云端线路，**代理流量与网页抓取积分**仍按 [控制台](https://www.joyproxy.com/admin-overview.html) 订单计费。
 
-这些客户端软件本身 **100% 免费** 使用，你可以使用它们来连接 JoyProxy 的 [动态代理](../rotating/README.md)、[静态独享代理](../static/README.md)、[自定义独享代理](../custom/README.md)，甚至使用它们来测试或转发你自建的第三方代理服务器。代理流量与抓取积分在 JoyProxy 控制台统一结算。
-
----
-
-## 官方软件工具概览
-
-| 工具名称 | 适用平台 | 核心功能与特色 | 典型适用场景 | 指南文档 |
-| --- | --- | --- | --- | --- |
-| **JoyProxy 浏览器扩展<br>（Browser Extension）** | Chrome / Edge / Brave 等 Chromium 浏览器 | 免改系统代理、按域名分流、一键从 JoyProxy 控制台同步已购线路、WebRTC 防泄漏 | 手工测试、海外网页浏览、多账号环境检查 | [查看指南](browser-extension.md) |
-| **代理检测工具<br>（Proxy Tester）** | Windows 桌面版 | 批量检测 HTTP / SOCKS5 代理连通性、出口 IP、响应延迟与地理位置 | 上线前批量校验代理列表、排除故障节点 | [查看指南](proxy-tester.md) |
-| **代理服务器网关<br>（Proxy Server）** | Linux CLI / Windows CLI 或 GUI | HTTP/SOCKS5 网关（`joyproxy sps`）、五种鉴权模式、可选外部鉴权/流量 API | 命令行桥接、团队内网网关、对接 JoyProxy 上级代理 | [查看指南](proxy-server.md) |
-| **Android 客户端<br>（Android Client）** | Android 手机 / 模拟器 | 免 Root 运行、基于 V2Ray/sing-box 内核、支持按应用（App）精确分流 | 移动端网页测试、手机应用分流代理、配合移动代理使用 | [查看指南](android-client.md) |
+[软件中心（Software Hub）](https://www.joyproxy.com/products/software.html)
 
 ---
 
-## 本章内容导览
+## 与云端代理产品的关系
 
-按你的使用场景选择对应工具文档即可：
+| 场景 | 推荐工具 | JoyProxy 凭据来源 |
+| --- | --- | --- |
+| 只在 Chrome / Edge 里走代理 | [浏览器扩展（Browser Extension）](browser-extension.md) | [提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html) 或扩展内登录加载已购线路 |
+| 上线前批量测 HTTP/SOCKS/UDP | [代理检测工具（Proxy Tester）](proxy-tester.md) | 从提取页复制 URI，或配置供应商 **提取 API** |
+| 命令行只认 `127.0.0.1`、或团队内网网关 | [代理服务器网关（Proxy Server）](proxy-server.md) | `-parent` 指向 JoyProxy 上级，或鉴权 API 返回 `upstream` |
+| 手机 / 模拟器按 App 分流 | [Android 客户端（Android Client）](android-client.md) | 提取页获取 host、port、账密 |
 
-1. [JoyProxy 浏览器扩展](browser-extension.md) — Chrome / Edge 扩展安装、登录同步与高级分流配置
-2. [代理检测工具](proxy-tester.md) — Windows 桌面批量检测工具使用教程与参数说明
-3. [代理服务器网关](proxy-server.md) — 开源代理网关本地部署、命令行桥接与团队中转架构
-4. [Android 代理客户端](android-client.md) — 安卓免 Root 客户端安装与按 App 分流代理指南
+自有第三方代理也可用于上述工具，**不消耗** JoyProxy 流量。
+
+---
+
+## 开源产品一览
+
+| 产品 | 平台 | 协议 | 开源仓库 |
+| --- | --- | --- | --- |
+| **浏览器扩展** | Chromium（Chrome 114+） | HTTP / SOCKS5 | [joyproxy-extension](https://github.com/joyproxy/joyproxy-extension) |
+| **代理检测工具** | Windows 桌面（EXE） | HTTP / HTTPS / SOCKS5 TCP·UDP | [joyproxy-tester](https://github.com/joyproxy/joyproxy-tester) |
+| **代理服务器网关** | Linux & Windows（CLI / GUI） | HTTP / SOCKS5 网关（`joyproxy sps`） | [joyproxy-server](https://github.com/joyproxy/joyproxy-server) |
+| **Android 客户端** | Android（APK） | HTTP / SOCKS5 | [joyproxy-client-android](https://github.com/joyproxy/joyproxy-client-android) |
+
+---
+
+## 本章导读
+
+1. [JoyProxy 浏览器扩展](browser-extension.md) — 三种入口（自有代理 / 提取 API / JoyProxy 线路）、工作台与高级设置
+2. [代理检测工具](proxy-tester.md) — 单条与批量测试、提取 API、Windows 系统代理联动
+3. [代理服务器网关](proxy-server.md) — `joyproxy sps` 五种启动模式与对接 JoyProxy
+4. [Android 代理客户端](android-client.md) — 全局 / 白名单 / 黑名单路由与连接流程
+
+系统级代理（不改浏览器扩展时）可参考 [Windows 11 系统代理](../../best-practices/windows-11-system-proxy.md)、[手机静态代理](../../best-practices/mobile-static-proxy.md)。

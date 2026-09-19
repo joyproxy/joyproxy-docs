@@ -1,36 +1,74 @@
 # 代理检测工具（Proxy Tester）
 
-**JoyProxy Proxy Tester** 是一款专为 Windows 平台打造的桌面级代理批量检测软件。
+**JoyProxy 代理检测工具**（JoyProxy Tester）是 Windows 桌面上的代理连通性与**批量验证**工具。支持 **HTTP / HTTPS**、**SOCKS5 TCP**、**SOCKS5 UDP**，内置多通道出口 IP 与地理解析，并可对接供应商 **提取 API** 做顺序批量测试。
 
-在自动化脚本上线或进行大规模数据抓取前，使用检测工具对代理池进行预检，可以快速剔除失效节点、测量平均响应延迟并验证出口地理位置。
-
-[GitHub Releases 最新版本下载](https://github.com/joyproxy/joyproxy-tester/releases/latest)
+[产品页](https://www.joyproxy.com/products/tester.html) · [GitHub Releases](https://github.com/joyproxy/joyproxy-tester/releases) · [源码](https://github.com/joyproxy/joyproxy-tester)
 
 ---
 
-## 核心功能与特性
+## 下载与运行
 
-1. **多协议全覆盖**：支持检测 **HTTP**、**HTTPS**、**SOCKS5 (TCP)** 以及 **SOCKS5 (UDP)** 代理协议。
-2. **批量导入导出**：
-   - 支持从 `.txt` / `.csv` 文件直接导入数万条代理列表。
-   - 支持直接粘贴多行 `Host:Port:User:Pass` 或 URI 格式文本。
-   - 检测完成后可一键将“正常可用节点”批量导出为多种标准格式。
-3. **多维度指标检测**：
-   - **连通性状态（Status）**：实时标记 `Success 成功` 或 `Failed 失败`。
-   - **出口公网 IP（Exit IP）**：检测代理实际吐出的公网 IPv4 / IPv6 地址。
-   - **国家与地理定位（Country & Geo）**：展示代理出口 IP 所在的国家、省份与城市。
-   - **响应延迟（Latency/Ping）**：精准测算从本地发起到代理节点返回的毫秒级延迟（ms）。
-   - **SOCKS5 UDP 支持检测**：专门针对需要 UDP 转发的场景检测代理节点 UDP 通道是否畅通。
-4. **多线程并发检测**：支持自由调节并发检测线程数（1 至 100 线程），数秒内即可完成千条节点的检测。
+### Windows 预编译版（推荐）
+
+1. 打开 [Release v2.6.3](https://github.com/joyproxy/joyproxy-tester/releases/tag/v2.6.3)（或 [最新 Releases](https://github.com/joyproxy/joyproxy-tester/releases/latest)）。
+2. 下载 **`JoyProxy-Tester-2.6.3.exe`**（单文件绿色版，无需安装运行库）。
+3. 双击运行。
+
+产品页当前标注的构建版本以 [tester 产品页](https://www.joyproxy.com/products/tester.html) 与 Releases 为准。
+
+### 从源码运行（Python 3.10+）
+
+```bash
+git clone https://github.com/joyproxy/joyproxy-tester.git
+cd joyproxy-tester
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+```
+
+本地打包 EXE：`python build_pc.py` → 输出 `dist/JoyProxy-Tester-2.6.3.exe`。
 
 ---
 
-## 使用步骤
+## 核心功能
 
-1. 前往 GitHub 下载并解压 `joyproxy-tester.exe` 绿色免安装版。
-2. 双击打开软件界面。
-3. 在 **输入区域（Input Proxies）** 中粘贴你的代理列表（支持 `host:port` 或 `http://user:pass@host:port` 格式）。
-4. 在 **测试设置（Test Settings）** 中选择测试目标节点（默认检测 `https://api.ipify.org`，也可填入你自定义的目标网址）。
-5. 设置并发线程数（例如 `20` 线程）。
-6. 点击 **开始检测（Start Test）** 按钮。
-7. 检测完成后，软件表格中会清晰展示各节点的测试结果。点击 **导出有效节点（Export Working）** 即可保存结果。
+### 1. 单条连通性测试
+
+- 协议：**HTTP / HTTPS**、**SOCKS5 TCP**、**SOCKS5 UDP**。
+- **智能粘贴**：识别 `host:port`、`user:pass@host:port`、`http://` / `socks5://`。
+- 支持代理 **用户名 / 密码（Username & Password）**。
+- 展示延迟、状态、出口 **公网 IP** 与国家/地区（多通道：`ipinfo.io`、`ipwhois.app`、`ip-api.com`、`api.myip.com` 等，可在设置中切换）。
+- 可填写**自定义探测 URL**（返回原始文本，用于专用检测接口）。
+- 可选：**一键同步 Windows 系统浏览器代理**，并支持恢复。
+
+### 2. 批量提取与顺序测试
+
+- 配置 **提取 API URL** 与**正则提取规则**，拉取代理列表后**严格顺序**逐条测试（非并发风暴）。
+- **Live Log** 表格实时显示每条结果；统计**成功率**、**平均延迟**。
+- 支持按间隔（秒/分/时/天）**循环提取+测试**，带倒计时；也支持手动单次提取切换。
+
+### 3. SOCKS5 UDP 验证
+
+通过标准 **UDP ASSOCIATE**，向目标 DNS（如 `8.8.8.8:53`）发送 UDP 查询，验证代理是否支持 UDP 转发（设置页可配置 UDP DNS 目标）。
+
+---
+
+## 测试 JoyProxy 线路
+
+| 线路类型 | 在检测工具中粘贴的内容 |
+| --- | --- |
+| **动态代理（Rotating）** | `http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001` — 用户名来自 [提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)，密码来自 [用户与白名单（Users & Whitelist）](https://www.joyproxy.com/admin-authorization.html) |
+| **静态 / 自定义独享** | `http://USER:PASS@HOST:PORT` — 从 [我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html) 或提取页复制 |
+
+测通后可在 [浏览器扩展](browser-extension.md) 中做浏览器内验证，或将系统代理指向本机 [joyproxy 网关](proxy-server.md)。
+
+---
+
+## 界面说明（与产品页截图一致）
+
+- **单条测试**：选协议 → 粘贴节点 → 查看延迟与地理信息。
+- **批量测试**：配置提取 API → 查看成功率与 Live Log。
+- **设置（Settings）**：提取 API、超时、地理通道、UDP DNS 目标等。
+
+许可：**MIT**（© JoyProxy）。
