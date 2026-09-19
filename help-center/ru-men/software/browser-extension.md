@@ -1,41 +1,37 @@
-# 浏览器扩展
+# JoyProxy 浏览器扩展（Browser Extension）
 
-JoyProxy **浏览器扩展**只给**一个 Chromium 内核浏览器**（Chrome、Edge、Brave 等）设代理，不改系统设置 — 适合手工 QA、账号检查、看地域效果。
+**JoyProxy 浏览器扩展** 是专为 Chromium 内核浏览器（Google Chrome、Microsoft Edge、Brave、Opera 等）打造的轻量级代理管理插件。
 
-[Chrome 网上应用店](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng) · [产品页](https://www.joyproxy.com/products/browser-extension.html)
+它的最大优势在于：**仅作用于当前浏览器，绝不会修改操作系统的全局代理设置**。你可以一边在浏览器中使用海外代理测试页面，一边在电脑上正常微信办公。
 
-## 安装
+[Chrome 网上应用店安装](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng) · [GitHub 开源仓库](https://github.com/joyproxy/joyproxy-extension)
 
-1. 从应用店安装。
-2. 在工具栏固定 **JoyProxy**。
+---
 
-## 三种用法
+## 主要功能与模式说明
 
-| 模式              | 是否登录 JoyProxy     | 做什么                        |
-| --------------- | ----------------- | -------------------------- |
-| **自有代理**        | 可选                | 粘贴 `host:port` 或 URI，测试后应用 |
-| **提取 API**      | 可选                | 填提供商 URL，扩展拉列表并测试          |
-| **JoyProxy 线路** | 在 joyproxy.com 登录 | 从订单加载轮换或静态线                |
+### 1. 三种线路加载方式
+- **JoyProxy 账号同步（Account Sync）**：在扩展中登录你的 JoyProxy 控制台账号，扩展将自动拉取你在 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 下的所有生效动态流量包、静态线路和自定义端口，一键点选切换。
+- **快捷 URI 粘贴（Paste URI）**：支持一键粘贴任何标准代理 URI（如 `http://user:pass@host:port` 或 `socks5://user:pass@host:port`）。
+- **自有/第三方代理（Custom Proxy）**：可手动填写任意第三方代理服务器的 Host、Port、Username 和 Password。
 
-不登录也能测自己的代理；要从 [我的代理](https://www.joyproxy.com/admin-my-orders.html) 拉云端线路时再登录。
+### 2. 精细化域名分流规则（Bypass Rules）
+- **全站代理（All Websites）**：所有浏览器网页请求均走所选代理。
+- **白名单模式（Whitelist Only）**：仅列表内的指定域名（如 `*.google.com`、`*.amazon.com`）走代理，其他网站直连。
+- **黑名单模式（Direct Bypass）**：指定域名直连，其他网站走代理。
 
-## 推荐流程
+### 3. 高级安全与隐私保护设置（Advanced Settings）
+- **WebRTC 防泄漏（WebRTC Leak Protection）**：勾选后可完全禁止浏览器通过 WebRTC 协议泄露你真实的局域网和公网真实 IP 地址。
+- **一键清理 Cookie / 缓存**：切换代理线路时，可勾选自动清除当前域名的 Cookie 和 Cache，防止目标网站通过 Cookie 关联识别历史身份。
+- **User-Agent 伪装修改**：支持自定义或随机切换浏览器的 User-Agent 字符串。
 
-1. 打开弹窗或侧栏。
-2. 粘贴一行 **或** 登录加载购买记录。
-   * 轮换：`http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001` — [轮换首次请求](../rotating/first-request.md)
-   * 静态/定制：`http://USER:PASS@HOST:PORT`，来自 [端点生成](https://www.joyproxy.com/admin-ip-extraction-center.html)
-3. **连通性测试**，确认出口 IP / 国家。
-4. **Apply** — 仅本浏览器走代理。
+---
 
-## 进阶
+## 详细使用步骤
 
-* 全站或仅白名单站点
-* User-Agent、WebRTC 限制、清 Cookie、指纹相关选项
-* 保存配置、导入列表
-
-> **提示**
->
-> 大量线路用 [代理检测工具](proxy-tester.md)。整机代理见 [Windows 11 系统代理](../../zui-jia-shi-jian/windows-11-system-proxy.md)。
-
-源码：[GitHub — joyproxy-extension](https://github.com/joyproxy/joyproxy-extension) · 隐私：[privacy-extension](https://www.joyproxy.com/privacy-extension.html)
+1. 在 Chrome 网上应用店中搜索 `JoyProxy` 并点击安装。
+2. 在浏览器右上角扩展栏中固定 JoyProxy 图标。
+3. 点击图标打开插件面板，选择 **[登录控制台账号]** 或点击 **[新增代理 Profile]**。
+4. 填入代理地址或选择已同步的线路卡片。
+5. 点击 **测试连通性（Test Connection）** 按钮：扩展将向 IP 检测节点发包，实时展示出口 IP 地址、国家旗帜与响应延时（ms）。
+6. 点击 **应用代理（Apply Proxy）** 按钮即可开启代理。扩展图标变为绿色激活状态。

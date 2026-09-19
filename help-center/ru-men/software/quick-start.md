@@ -1,43 +1,42 @@
-# 快速开始
+# 软件工具 · 快速开始（Quick Start）
 
-JoyProxy 软件放在云端线路（或自建代理）**前面**。应用本身免费；**流量与抓取积分**在控制台结算。
+本指南帮助你根据业务场景快速选择合适的 JoyProxy 官方软件工具，并完成极简配置。
 
-最快路径：装**浏览器扩展**，粘贴一行、测试、应用 — 只影响当前 Chromium 浏览器。
+---
 
-## 选哪个工具
+## 4 步极简接入流程
 
-| 需求                  | 工具          | 接着看                              |
-| ------------------- | ----------- | -------------------------------- |
-| 只代理本机 Chrome / Edge | 浏览器扩展       | 下文五步                             |
-| 批量测很多 HTTP/SOCKS 线  | 代理检测工具      | [代理检测工具](proxy-tester.md)        |
-| 命令行只认 localhost     | 代理服务器       | [代理服务器](proxy-server.md)         |
-| 手机按应用走代理            | Android 客户端 | [Android 客户端](android-client.md) |
+### 第一步：按需选择合适工具
 
-仍需一条可用线路：[轮换](../rotating/quick-start.md)、[静态](../static/quick-start.md) 或 [定制](../custom/quick-start.md)。
+- **仅需在 Chrome / Edge 浏览器中使用代理** ➔ 选择 **[JoyProxy 浏览器扩展](browser-extension.md)**（推荐，最简单便捷）。
+- **需要批量检测成百上千条代理 IP 的连通性与延迟** ➔ 选择 **[代理检测工具](proxy-tester.md)**。
+- **本地命令行/程序只支持 `127.0.0.1` 代理，或需要在服务器搭建中转网关** ➔ 选择 **[代理服务器网关](proxy-server.md)**。
+- **需要在 Android 手机或模拟器中按 App 分流走代理** ➔ 选择 **[Android 客户端](android-client.md)**。
 
-## 五分钟：浏览器扩展
+---
 
-1. 从 [Chrome 网上应用店](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng) 安装并固定 **JoyProxy**。
-2. 粘贴 URI，或登录后从 [我的代理](https://www.joyproxy.com/admin-my-orders.html) 加载：
+### 第二步：获取 JoyProxy 代理连接凭据
 
-```
-http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
-http://USER:PASS@HOST:PORT
-```
+在使用任何工具前，请先在 JoyProxy 控制台中获取代理连接凭据：
+1. **动态代理**：前往 **[用户与白名单（Users & Whitelist）](https://www.joyproxy.com/admin-authorization.html)** 设置 Username/Password，在 **[提取（Endpoint Generator）](https://www.joyproxy.com/admin-ip-extraction-center.html)** 生成带有国家/session 拼接参数的连接 URI。
+2. **静态独享 / 自定义独享代理**：在 **[我的代理（My Proxies）](https://www.joyproxy.com/admin-my-orders.html)** 中获取专属的 `Host:Port` 地址及代理 Username/Password。
 
-3. 点 **Test**，确认出口 IP 不是家里宽带 IP。
-4. 点 **Apply**。系统代理不会被改掉。
+---
 
-详见 [浏览器扩展](browser-extension.md)。
+### 第三步：快速配置与测试
 
-## 工具只接受 localhost
+以 **JoyProxy 浏览器扩展** 为例：
+1. 从 [Chrome 网上应用店](https://chromewebstore.google.com/detail/joyproxy/ogilogpkhgojddkmkogloikpfkkldjng) 安装扩展并固定在工具栏。
+2. 点击扩展图标打开弹窗，可以通过 **登录 JoyProxy 账号** 一键同步你的已购订单，也可手动粘贴代理 URI：
+   ```text
+   http://user123:pass123@us-ca.edge.joyproxy.com:10001
+   ```
+3. 点击 **测试（Test）** 按钮，确认显示的出口 IP 和国家是否符合预期。
+4. 点击 **开启/应用（Apply）**，此时仅当前浏览器会通过代理上网，不会影响系统其他软件。
 
-运行 [代理服务器](proxy-server.md)，上游指向 JoyProxy，应用里填 `127.0.0.1` 与本地端口。
+---
 
-## 接下来
+## 常见排错与相关链接
 
-| 任务                    | 页面                                                        |
-| --------------------- | --------------------------------------------------------- |
-| 轮换网关字段                | [轮换快速开始](../rotating/quick-start.md)                      |
-| 独享 host:port          | [静态快速开始](../static/quick-start.md)                        |
-| Windows / Chrome 系统代理 | [最佳实践](../../zui-jia-shi-jian/windows-11-system-proxy.md) |
+- **代理连通性测试失败**：检查代理 Username 和 Password 是否填错，或者本机公网 IPv4 是否已加入 IP 白名单。
+- **系统全局代理配置**：如果不想安装扩展而想直接修改操作系统代理设置，请参阅 **[Windows 11 系统代理](../../best-practices/windows-11-system-proxy.md)**。
