@@ -9,7 +9,7 @@
 
 ## 代码示例
 
-请将代码中的 `GENERATED_USER` 替换为从 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成的完整长用户名，`YOUR_PASS` 替换为在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 中设置的代理密码。
+请将代码中的 `GENERATED_USER` 替换为从 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面生成的完整长用户名，`YOUR_PASS` 替换为在 **<a href="authentication.md" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 中设置的代理密码。
 
 {% tabs %}
 {% tab title="cURL" %}
@@ -110,4 +110,4 @@ echo "代理出口 IP: " . $ip;
 - **Chrome / Edge 浏览器**：使用官方开箱即用的 **<a href="../../getting-started/software/browser-extension.md" target="_blank" rel="noopener noreferrer">浏览器扩展</a>**。
 - **桌面测试与批量检测**：使用官方免费 **<a href="../../getting-started/software/proxy-tester.md" target="_blank" rel="noopener noreferrer">代理检测工具</a>**。
 - **本地网关中转转发**：使用 **<a href="../../getting-started/software/proxy-server.md" target="_blank" rel="noopener noreferrer">代理服务器</a>**。
-- **指纹浏览器（AdsPower、Hubstudio、Undetectable 等）**：参阅 **<a href="../../best-practices/third-party-static-proxies.md" target="_blank" rel="noopener noreferrer">第三方软件配合代理</a>** 指南。
+- **指纹浏览器（AdsPower、Hubstudio、Undetectable 等）**：参阅 **<a href="../../best-practices/browser/extension.md" target="_blank" rel="noopener noreferrer">第三方软件配合代理</a>** 指南。

@@ -42,7 +42,7 @@
 | **移动代理** | 纯净 4G/5G 移动蜂窝基站出口，移动端高信任权重，适合 TikTok、Instagram 等移动业务 | <a href="mobile-proxies.md" target="_blank" rel="noopener noreferrer">进入移动控制台</a> |
 | **商业 / ISP 代理** | 写字楼及企业专线真实 ISP，兼备住宅信用与专线级低延迟稳定带宽 | <a href="business-isp-proxies.md" target="_blank" rel="noopener noreferrer">进入商业控制台</a> |
 | **数据中心代理** | 托管机房 ASN 出口，千兆超大吞吐带宽与极低成本，适合无严格反爬的高速批量爬取 | <a href="datacenter-proxies.md" target="_blank" rel="noopener noreferrer">进入数据中心控制台</a> |
-| **网页抓取 API** | 开箱即用的智能抓取接口，内置全自动 JavaScript 动态渲染、验证码绕过与代理调度 | <a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">进入网页抓取控制台</a> |
+| **网页抓取 API** | 开箱即用的智能抓取接口，内置全自动 JavaScript 动态渲染、验证码绕过与代理调度 | <a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">进入网页抓取 API 控制台</a> |
 
 ---
 

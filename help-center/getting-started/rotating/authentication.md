@@ -24,7 +24,7 @@
 5. 点击 **创建 User/Pass（Create User/Pass）** 保存，并妥善记录你设置的**代理密码**。
 
 > **重要注意**  
-> 在此处创建的短用户名（如 `user123`）用于管理凭据。实际连接动态代理网关 `gate.joyproxy.com:9001` 时，代理用户名字段必须填入在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成的**完整长用户名**。
+> 在此处创建的短用户名（如 `user123`）用于管理凭据。实际连接动态代理网关 `gate.joyproxy.com:9001` 时，代理用户名字段必须填入在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面生成的**完整长用户名**。
 
 ### 管理与修改密码
 

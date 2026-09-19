@@ -6,7 +6,7 @@
 
 ## Web 提取（控制台操作）
 
-1. 打开控制台 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面。
+1. 打开控制台 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面。
 2. 选择对应的代理网络，并切到 **静态代理（Static Proxies）** 标签。
 3. 在筛选区域：
    - 可按国家/地区（Location）或搜索框筛选订单。
@@ -19,4 +19,4 @@
 ## API 程序化提取
 
 > 💡 **OpenAPI 中心引流**  
-> 如果需要在自动化代码中程序化拉取静态代理列表及对应 IP 绑定状态，请参阅 **<a href="../../best-practices/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的静态代理提取接口。
+> 如果需要在自动化代码中程序化拉取静态代理列表及对应 IP 绑定状态，请参阅 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的静态代理提取接口。

@@ -34,7 +34,7 @@
 ## 第三步：设置代理账密并提取端点
 
 1. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 页面，在 **用户名 / 密码（Username/Password）** 下新建代理账密（如 Username: `user123`，Password: `pass123`）。
-2. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面，切换到 **自定义代理（Custom Proxies）** 标签。
+2. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面，切换到 **自定义代理（Custom Proxies）** 标签。
 3. 选择协议（`HTTP` 或 `SOCKS5`），点击 **复制地址列表（Copy Host List）**，获取端口专属端点：
    ```text
    http://user123:pass123@us-ca.edge.joyproxy.com:20001

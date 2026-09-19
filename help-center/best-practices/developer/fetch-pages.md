@@ -6,9 +6,9 @@
 
 ---
 
-## 接口调用规范（POST /v2/fetch）
+## 接口调用规范（POST /v1/fetch）
 
-- **地址**：`https://api.joyproxy.com/v2/fetch`
+- **地址**：`https://api.joyproxy.com/v1/fetch`
 - **鉴权**：请求头 `Authorization: Bearer <Scraping_API_Token>`
 
 ### 代码示例（Python）：
@@ -31,7 +31,7 @@ payload = {
     "output": "raw"
 }
 
-response = requests.post("https://api.joyproxy.com/v2/fetch", headers=headers, json=payload, timeout=60)
+response = requests.post("https://api.joyproxy.com/v1/fetch", headers=headers, json=payload, timeout=60)
 
 if response.status_code == 200:
     print("抓取成功，返回 HTML 长度:", len(response.text))

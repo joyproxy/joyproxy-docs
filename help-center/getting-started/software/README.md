@@ -37,4 +37,4 @@
 - <a href="proxy-server.md" target="_blank" rel="noopener noreferrer">代理服务器网关</a>：命令行与 GUI 的运行方式、五种授权与转发模式，以及对接 JoyProxy 云端代理的具体命令。
 - <a href="android-client.md" target="_blank" rel="noopener noreferrer">Android 客户端</a>：应用分流规则配置、线路测试与 VPN 隧道连接流程。
 
-如需在操作系统层面直接配置网络代理，也可参阅最佳实践中的 <a href="../../best-practices/windows-11-system-proxy.md" target="_blank" rel="noopener noreferrer">Windows 11 系统代理设置</a> 与 <a href="../../best-practices/mobile-static-proxy.md" target="_blank" rel="noopener noreferrer">手机移动网络代理设置</a>。
+如需在操作系统层面直接配置网络代理，也可参阅最佳实践中的 <a href="../../best-practices/browser/windows.md" target="_blank" rel="noopener noreferrer">Windows 11 系统代理设置</a> 与 <a href="../../best-practices/mobile/android-wifi.md" target="_blank" rel="noopener noreferrer">手机移动网络代理设置</a>。

@@ -27,7 +27,7 @@
 
 ## 第三步：提取固定端点
 
-1. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面，切到 **静态代理（Static Proxies）** 页签。
+1. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面，切到 **静态代理（Static Proxies）** 页签。
 2. 筛选你购买的订单线路，在 **输出格式（Output Format）** 选择展示样式。
 3. 点击 **复制地址列表（Copy Host List）**，获取专属端点：
    ```text

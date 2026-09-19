@@ -14,8 +14,8 @@
 4. **账户额度检查**：检查你的动态流量包是否已耗尽，或者静态/自定义线路是否已经过期未续费。
 
 ### 401 未经授权（Unauthorized / Invalid token）
-通常出现在调用 RESTful API（如 `/v2/extract` 或 `/v2/fetch`）时：
-1. **Token 混淆**：确认请求头中携带的 Token 类型是否正确。提取代理 IP 需要使用「代理提取 API Token」，抓取接口需要使用「Scraping API Token」，不能使用「主用户 Token（Master Token）」调用公网采集。
+通常出现在调用 RESTful API（如 `/v2/extract` 或 `/v1/fetch`）时：
+1. **Token 混淆**：确认请求头中携带的 Token 类型是否正确。提取代理 IP 需要使用「代理提取 API Token」，抓取接口需要使用「Scraping API Token」，不能使用「主用户 Token（Master User Token）」调用公网采集。
 2. **请求头格式规范**：标准的 HTTP 头必须形如 `Authorization: Bearer <Your_Token>`（注意 Bearer 与 Token 之间有一个半角空格）。
 3. **Token 是否已被轮换**：如果你此前在后台点击过 Rotate Token，旧 Token 会瞬间作废，请更新为最新的凭证。
 

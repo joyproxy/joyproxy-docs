@@ -6,7 +6,7 @@
 
 ## 控制台 Web 提取流程
 
-1. 登录控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面。
+1. 登录控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面。
 2. 切换到 **自定义代理（Custom Proxies）** 标签页。
 3. 配置提取筛选条件：
    - **选择订单（Select Orders）**：勾选指定的自定义端口订单或选择全部。
@@ -27,4 +27,4 @@
 如果你需要在自动化脚本中通过 API 动态获取端口列表、查询端口当前的分配状态或自动修改地区：
 
 > 💡 **OpenAPI 中心引流**  
-> JoyProxy 提供了完善的 RESTful API 支持。请参阅 **<a href="../../best-practices/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的自定义代理提取与控制接口文档。
+> JoyProxy 提供了完善的 RESTful API 支持。请参阅 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的自定义代理提取与控制接口文档。

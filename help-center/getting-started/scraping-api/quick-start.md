@@ -42,7 +42,7 @@
 
 ## 第四步：在代码中发起抓取
 
-拿着你的 Scraping API Token，即可在代码中直接发起抓取。具体可视化参数配置与代码生成请参阅 **<a href="first-fetch.md" target="_blank" rel="noopener noreferrer">在控制台 API 中心测试抓取</a>**；若需查阅原始 REST API HTTP 端点说明，请参阅 **<a href="../../best-practices/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>**。
+拿着你的 Scraping API Token，即可在代码中直接发起抓取。具体可视化参数配置与代码生成请参阅 **<a href="first-fetch.md" target="_blank" rel="noopener noreferrer">在控制台 API 中心测试抓取</a>**；若需查阅原始 REST API HTTP 端点说明，请参阅 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>**。
 
 ```bash
 # 简单的 cURL GET 请求测试
@@ -53,6 +53,6 @@ curl "https://api.joyproxy.com/v1/fetch?token=YOUR_SCRAPING_TOKEN&url=https%3A%2
 
 ## 3 秒排查常见报错
 
-- **401 Invalid Token**：检查复制的是否为 **Scraping API Token**（不要混淆为代理 Username/Password 或 Master Token）。
+- **401 Invalid Token**：检查复制的是否为 **Scraping API Token**（不要混淆为代理 Username/Password 或 Master User Token）。
 - **402 Insufficient Credits**：积分已耗尽，请进入 <a href="buy-credits.md" target="_blank" rel="noopener noreferrer">购买积分包</a> 补充积分。
 - **429 Too Many Requests**：发起的并发请求数超过了当前账户额度限制，详情参阅 <a href="buy-credits.md" target="_blank" rel="noopener noreferrer">并发限制规则</a>。

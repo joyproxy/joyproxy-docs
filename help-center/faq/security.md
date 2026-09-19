@@ -11,12 +11,12 @@ JoyProxy 遵循最小权限安全设计原则，将平台凭证严格划分为**
 
 | Token 名称 | 适用范围 | 权限与职责 | 轮换与获取位置 |
 | :--- | :--- | :--- | :--- |
-| **主用户 Token（Master Token）** | 控制台与账户级自动化接口 | 查询账户余额、下发购买订单、批量续费、查询全局流水。**绝不能**用于提取代理或调用抓取。 | 控制台「我的账户」页面查看与轮换 |
+| **主用户 Token（Master User Token）** | 控制台与账户级自动化接口 | 查询账户余额、下发购买订单、批量续费、查询全局流水。**绝不能**用于提取代理或调用抓取。 | 控制台「我的账户」页面查看与轮换 |
 | **代理提取 API Token** | 代理节点提取与配置接口 | 专用于公网调用 `/v2/extract`、批量提取代理 IP、查询实时地区列表与维护白名单。 | 代理网络控制台的「提取」页面 |
-| **网页抓取 Token（Scraping Token）** | Web Scraping API | 专用于公网调用托管抓取接口 `/v2/fetch`。 | 「网页抓取 API」控制台的「API 中心」 |
+| **网页抓取 Token（Scraping Token）** | Web Scraping API | 专用于公网调用托管抓取接口 `/v1/fetch`。 | 「网页抓取 API」控制台的「API 中心」 |
 | **AI 访问 Token（AI Token）** | OpenClaw 与 AI MCP 扩展 | 供 Cursor、VS Code、Claude Desktop 或 AI 助手集成使用。 | 提取页面的「AI 提取」面板 |
 
-> **安全警示**：切勿将权限最高的主用户 Token（Master Token）直接硬编码写进普通的爬虫代码、前端项目或公开的 GitHub 仓库中！
+> **安全警示**：切勿将权限最高的主用户 Token（Master User Token）直接硬编码写进普通的爬虫代码、前端项目或公开的 GitHub 仓库中！
 
 ### 如果怀疑 Token 泄露了该怎么办？
 一旦发现 Token 泄露或被未经授权的应用调用，请立即采取应急措施：

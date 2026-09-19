@@ -50,19 +50,18 @@ JoyProxy 坚持**仅对成功请求扣费（Only pay for successful requests）*
 
 ## 接口调用与参数说明
 
-### 推荐使用哪个版本的 API 接口？
-我们强烈推荐使用最新规范的 **v2 接口**：
-- 请求地址：`https://api.joyproxy.com/v2/fetch`
-- 支持动词：`GET` 与 `POST`（POST 建议请求体使用 JSON 格式）
-- 鉴权方式：请求头携带 `Authorization: Bearer <Scraping_API_Token>`
-> 注：早期版本 `/v1/fetch` 在底层已被映射到同等高可用能力，仍保持完全向后兼容，但新项目请务必接入 `/v2/fetch`。
+### 抓取 API 的标准请求地址与鉴权方式是什么？
+JoyProxy 网页抓取 API 提供统一的托管抓取端点：
+- 请求地址：`https://api.joyproxy.com/v1/fetch`
+- 支持请求方法：`GET` 与 `POST`（POST 请求建议设置 `Content-Type: application/json`）
+- 鉴权方式：支持 URL Query 参数携带 `?token=YOUR_TOKEN`，或在请求头中携带 `Authorization: Bearer <YOUR_TOKEN>` 或 `X-Token: <YOUR_TOKEN>`。
 
 ### 什么是 Scraping API Token？在哪里获取？
 Scraping API Token 是专用于调用抓取接口的独立凭证，与你控制台的主用户密码、代理提取 API Token 以及 AI Token 完全隔离。
 你在购买 Credits 套餐后，登录控制台进入「网页抓取 API」页面，在「API 中心」即可直接复制该 Token，也可以在凭证泄露时点击一键轮换。
 
 ### 常用参数有哪些？如何保持黏性会话？
-在向 `/v2/fetch` 发送请求时，常用参数如下：
+在向 `/v1/fetch` 发送请求时，常用参数如下：
 - `url`（必填）：需要抓取的目标页面完整地址。
 - `geoCode`（可选）：指定出境的国家二字代码（如 `us`、`gb`、`jp`），覆盖全球 200+ 国家。
 - `render`（可选）：设为 `true` 开启浏览器内核渲染，等待页面 AJAX 与异步元素渲染完成。
@@ -71,11 +70,12 @@ Scraping API Token 是专用于调用抓取接口的独立凭证，与你控制�
 
 ### 网页抓取支持异步队列抓取任务吗？
 支持。对于大规模采集或渲染耗时较长的重型网页，抓取服务提供了异步队列接口：
-- `POST /v2/async/tasks`：提交抓取任务，即时返回 `taskId`；
-- `GET /v2/async/tasks/{taskId}`：轮询任务执行状态并拉取解析结果。
+- `POST /v1/fetch/async/jobs`：提交批量抓取任务包，即时返回 `job_id` 与 `task_id` 列表；
+- `GET /v1/fetch/async/jobs/{job_id}`：轮询任务进度；
+- `GET /v1/fetch/async/jobs/{job_id}/{task_id}`：获取单个任务的抓取结果。
 
-### 网页抓取控制台包含哪些功能？
-网页抓取控制台（admin-web-unblocker.html）主要由四大工作模块构成：
+### 网页抓取 API 控制台包含哪些功能？
+网页抓取 API 控制台（admin-web-unblocker.html）主要由四大工作模块构成：
 1. **购买（Buy）**：订购 8 档 Credits 积分包或自定义积分充值；
 2. **API 中心（API Center）**：提供在线在线测试工作台、Token 查看与轮换、多语言代码请求示例；
 3. **用量明细（Usage）**：监控实时积分消耗量、成功率报表与请求日志；

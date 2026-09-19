@@ -1,10 +1,10 @@
-# 网页抓取控制台（Web Scraping API）
+# 网页抓取 API 控制台（Web Scraping API）
 
-网页抓取控制台是面向企业开发者打造的现代化开箱即用型抓取管理平台。它彻底将底层的代理轮换管理、无头浏览器动态 JavaScript 渲染、Cloudflare 等验证码自动破解以及防指纹探测逻辑封装为一行标准 REST API，极大降低了复杂网站数据提取的工程门槛。
+网页抓取 API 控制台是面向企业开发者打造的现代化开箱即用型抓取管理平台。它彻底将底层的代理轮换管理、无头浏览器动态 JavaScript 渲染、Cloudflare 等验证码自动破解以及防指纹探测逻辑封装为一行标准 REST API，极大降低了复杂网站数据提取的工程门槛。
 
 在左侧主导航点击 **网页抓取** 即可打开专属控制台：
 
-<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">直接打开网页抓取控制台</a> · <a href="https://www.joyproxy.com/products/web-unblocker.html" target="_blank" rel="noopener noreferrer">查看抓取产品特性</a>
+<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">直接打开网页抓取 API 控制台</a> · <a href="https://www.joyproxy.com/products/web-unblocker.html" target="_blank" rel="noopener noreferrer">查看抓取产品特性</a>
 
 ---
 

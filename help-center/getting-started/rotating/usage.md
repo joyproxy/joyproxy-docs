@@ -11,4 +11,4 @@
 3. 如果你在 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 中持有多笔动态代理订单，页面将汇总展示当前生效套餐的总剩余流量。
 
 > 💡 **通过 API 查询余额与用量**  
-> 如果需要在内部自动化运维看板中通过程序查询账户剩余流量，请参考 **<a href="../../best-practices/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的用量查询接口。
+> 如果需要在内部自动化运维看板中通过程序查询账户剩余流量，请参考 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的用量查询接口。

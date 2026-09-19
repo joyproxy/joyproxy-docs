@@ -78,4 +78,4 @@ fetchPage();
 若你需要了解底层的 REST HTTP 路径、POST JSON 结构、请求头传递等原始接口说明：
 
 > 💡 **OpenAPI 中心引流**  
-> 请参阅 **<a href="../../best-practices/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的网页抓取 API（Web Scraping API）章节，或点击控制台右上角的 **API 文档（Documentation）** 参阅原始 REST 端点规范。
+> 请参阅 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>** 中的网页抓取 API（Web Scraping API）章节，或点击控制台右上角的 **API 文档（Documentation）** 参阅原始 REST 端点规范。
