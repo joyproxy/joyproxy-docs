@@ -1,56 +1,57 @@
-# 快速开始
+# 网页抓取 API · 快速开始（Quick Start）
 
-提交**目标 URL**，拿到 HTML 或 JSON。**仅成功抓取才扣积分**。
+本指南带你快速完成网页抓取 API 的积分包购买、API Token 获取、控制台在线测试与代码集成。
 
-要自己管 `host:port`？[轮换](../rotating/quick-start.md) · [静态](../static/quick-start.md)。
+> **什么是网页抓取 API？**  
+> 你只需向 JoyProxy 发送包含目标 URL 的请求，系统将在云端自动完成代理轮换、浏览器渲染与反爬绕过，并直接返回页面 HTML。**只有抓取成功才扣积分！**
 
-## 如何调用
+---
 
-在控制台复制 **Scraping API Token**，按 [OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md) 的抓取接口说明发请求。[API Center](https://www.joyproxy.com/admin-web-unblocker.html?view=playground) playground 与生产一致。
+## 第一步：购买抓取积分包
 
-## 试一次抓取
+1. 登录 [JoyProxy 控制台](https://www.joyproxy.com/admin-overview.html)，进入左侧菜单 **[购买代理（Purchase Proxies）](https://www.joyproxy.com/admin-purchase.html)** 页面。
+2. 选择 **网页抓取 API（Web Scraping API）** 标签页。
+3. 选择预设积分套餐包（如 **$5 / 50K 积分**）或输入自定义积分数量（最少 10K 积分起）。
+4. 选择支付方式（账户余额、信用卡、PayPal、微信支付、USDT 等）完成支付。购买后积分即时到账，**永久有效不过期**。
 
-1. 按 [获取 Token](token.md) 复制 Token。
-2. 打开 [OpenAPI Center](https://www.joyproxy.com/admin-openapi.html) → **Web Scraping API** → **Fetch URL**，或用控制台 playground。
-3. 将 `url` 设为 `https://example.com` 并执行。
+---
 
-成功时 body 为页面（或 JSON）。失败、超时、硬拦截**不扣积分**。
+## 第二步：获取 Scraping API Token
 
-## 控制台配置
+购买积分后，系统会自动为你的账户生成专属的 **Scraping API Token**：
 
-> **提示**
->
-> 新账户可领 **$5 注册赠金**，结账时可用于抓取积分。
+1. 进入左侧菜单 **[网页抓取 API（Web Scraping API）](https://www.joyproxy.com/admin-web-unblocker.html)** 控制台页面。
+2. 切换到 **API 中心（API Center）** 标签页（或右上角 **API 文档 Documentation**）。
+3. 在 **API Token** 框中点击 **复制（Copy）** 按钮，复制你的凭据。
 
-### 1. 购买积分
+> **安全提示与 Token 轮换（Rotate Token）**  
+> - **专码专用**：Scraping API Token 专门用于网页抓取 API，不能用于提取代理 IP 或主用户 OpenAPI 下单。  
+> - **安全轮换**：若怀疑 Token 泄漏，可随时在 API Center 页面点击 **轮换 API Token（Rotate Token）**，旧 Token 将立即失效。
 
-在 [购买](https://www.joyproxy.com/admin-purchase.html)（网页抓取 API / 积分）或 [网页抓取控制台](https://www.joyproxy.com/admin-web-unblocker.html) 购买积分包。
+---
 
-详见 [购买积分](buy-credits.md)。
+## 第三步：在控制台 API 中心在线试跑
 
-### 2. 获取 Token
+1. 在 **[网页抓取 API](https://www.joyproxy.com/admin-web-unblocker.html)** 页面切到 **API 中心（API Center）** 页签。
+2. 在 **目标 URL（Target URL）** 输入框中输入需要抓取的网址（例如 `https://example.com`）。
+3. 点击 **发送请求（Send Request）** 按钮。
+4. 页面下方会即时展示抓取结果 HTML 源码、响应 HTTP 状态码以及本次消耗的积分数。
 
-在 [网页抓取控制台](https://www.joyproxy.com/admin-web-unblocker.html) 复制 Token，勿提交到公开仓库或工单。步骤见 [获取 Token](token.md)。
+---
 
-### 3. 验证抓取
+## 第四步：在代码中发起抓取
 
-在 API Center 或 OpenAPI Center 对 `https://example.com` 试跑，再换成真实目标 URL。
+拿着你的 Scraping API Token，即可在代码中直接发起抓取。具体可视化参数配置与代码生成请参阅 **[在控制台 API 中心测试抓取](first-fetch.md)**；若需查阅原始 REST API HTTP 端点说明，请参阅 **[OpenAPI 中心](../../best-practices/openapi-center.md)**。
 
-`render=true`、`super=true`、`geoCode` 等见 [参数与积分消耗](parameters.md) 与 [控制台文档](https://www.joyproxy.com/admin-unblocker-documentation.html)。
+```bash
+# 简单的 cURL GET 请求测试
+curl "https://api.joyproxy.com/v1/fetch?token=YOUR_SCRAPING_TOKEN&url=https%3A%2F%2Fexample.com"
+```
 
-## 排错
+---
 
-| 现象                  | 先查                                             |
-| ------------------- | ---------------------------------------------- |
-| 401 / invalid token | 用的是 Scraping API Token，不是代理密码或 AI Access Token |
-| 空 body / 报错         | 积分是否充足；先不加 `render` 试                          |
-| 国家不对                | 按参数文档传 `geoCode`                               |
+## 3 秒排查常见报错
 
-## 接下来
-
-| 任务      | 页面                                             |
-| ------- | ---------------------------------------------- |
-| 抓取细节    | [首次抓取](first-fetch.md)                         |
-| 参数与积分   | [参数与积分消耗](parameters.md)                       |
-| 剩余积分    | [查看用量](usage.md)                               |
-| HTTP 参考 | [OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md) |
+- **401 Invalid Token**：检查复制的是否为 **Scraping API Token**（不要混淆为代理 Username/Password 或 Master Token）。
+- **402 Insufficient Credits**：积分已耗尽，请进入 [购买积分包](buy-credits.md) 补充积分。
+- **429 Too Many Requests**：发起的并发请求数超过了当前账户额度限制，详情参阅 [并发限制规则](buy-credits.md)。

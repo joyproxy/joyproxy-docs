@@ -1,28 +1,42 @@
-# 网页抓取 API
+# 网页抓取 API（Web Scraping API）
 
-提交**目标 URL**，JoyProxy 返回 HTML 或 JSON。代理、重试、可选 JS 渲染与反爬由平台侧处理。按**积分**计费，且**只有抓取成功才扣积分**——不按代理 GB 流量计费。
+网页抓取 API（Web Scraping API / Web Unblocker）是 JoyProxy 提供的托管式数据采集服务。你只需要提交**目标 URL**，系统会在云端自动为你完成真实浏览器伪装、150+ 国家代理 IP 轮换、JavaScript 脚本渲染以及复杂的反爬虫/验证码绕过，并直接返回干净的 HTML 网页源码或结构化 JSON 数据。
 
-[产品页](https://www.joyproxy.com/products/web-unblocker.html) · [定价](https://www.joyproxy.com/pricing.html?network_type=smart-fetch) · [控制台](https://www.joyproxy.com/admin-web-unblocker.html)
+与传统的 [动态代理](../rotating/README.md) 或 [静态独享代理](../static/README.md) 不同，网页抓取 API **无需你自己维护代理 IP 池、请求头（User-Agent）及无头浏览器（Headless Browser）集群**，且采用**仅成功才扣积分（0 扣费保障）**的计费模式。
 
-## 和代理 IP 的对比
+---
 
-|        | 代理 IP       | 网页抓取 API                       |
-| ------ | ----------- | ------------------------------ |
-| 你拿到什么  | `host:port` | 托管 HTTP 接口返回的页面内容              |
-| 你要维护什么 | 请求头、会话、浏览器  | `render`、`super`、`geoCode` 等参数 |
-| 计费     | GB 或按 IP 周期 | **成功**时扣积分（HTTP 2xx 且 body 可用） |
+## 代理 IP vs 网页抓取 API 对比
 
-已有爬虫框架、只差出口时继续用代理线；想少维护浏览器集群、直接要页面内容时用本 API。
+| 对比维度 | 代理 IP（动态 / 静态 / 自定义） | 网页抓取 API（Web Scraping API） |
+| --- | --- | --- |
+| **交付产物** | 代理连接地址 `Host:Port` | 托管 HTTP 接口返回的目标页面 HTML / JSON |
+| **运维成本** | 需自行维护 Cookie、User-Agent、Playwright/Puppeteer 浏览器集群 | **零运维**，JoyProxy 平台自动处理渲染、重试与反爬 |
+| **计费方式** | 按 GB 流量或 IP 端口包时计费 | **按成功积分计费**，抓取失败/超时/硬拦截 **0 扣费** |
+| **适用场景** | 已有成熟爬虫框架、只需网络出口 | 想免去浏览器集群运维、快速获取网页内容或结构化数据 |
 
-## 本章目录
+---
 
-1. [快速开始](quick-start.md)
-2. [购买积分](buy-credits.md)
-3. [获取 Token](token.md)
-4. [首次抓取](first-fetch.md)
-5. [参数与积分消耗](parameters.md)
-6. [查看用量](usage.md)
+## 核心优势
 
-HTTP 路径、查询参数与代码示例：[OpenAPI 中心](../../zui-jia-shi-jian/openapi-center.md)。
+1. **仅成功才扣积分（0 扣款保证）**：请求只有返回 HTTP Status 2xx 且 Body 包含有效内容时才扣除积分。若目标站点报错、超时或拦截，本次请求不扣除任何积分。
+2. **托管 JS 渲染与高级反爬绕过**：只需在请求参数中传入 `render=true` 即可启用云端 Headless 浏览器渲染；传入 `super=true` 可绕过 Cloudflare 等顶级 WAF 验证。
+3. **结构化数据插件（Plugins）**：提供 Amazon、Google Search、YouTube、Google Maps 等平台专属插件，直接返回格式化的 JSON 数据。
+4. **支持同步与异步队列（Async API）**：支持毫秒级同步请求，也支持百万级大批量抓取任务的异步队列提交与轮询。
 
-完整参数表：[控制台 API 文档](https://www.joyproxy.com/admin-unblocker-documentation.html)。
+---
+
+## 本章内容导览
+
+建议按顺序阅读以下指南：
+
+1. [快速开始](quick-start.md) — 4 步极简接入指南与 API Token 说明
+2. [购买积分包与并发限制](buy-credits.md) — 积分购买规则与并发线程（Concurrency）提升
+3. [在控制台 API 中心测试抓取](first-fetch.md) — 控制台 Playground 可视化调试与代码生成
+4. [抓取参数与积分消耗标准](parameters.md) — 详解 render/super/geoCode 参数与 1/5/10/25 积分扣费
+5. [结构化数据插件 API](plugins.md) — 电商与搜索引擎专用 JSON 插件接口
+6. [异步队列任务 API](async-api.md) — 大批量/耗时长任务的 Async API 提交与轮询
+7. [查看用量与抓取日志](usage.md) — 控制台用量看板与实时请求日志（Request Logs）
+8. [响应码与常见报错](response-codes.md) — 401/402/429/502 常见报错排查
+9. [受限目标与合规说明](restricted-targets.md) — 合规要求与禁止抓取范围
+10. [查询支付记录与下载凭证](payments-and-invoices.md) — 交易明细与 PDF 收据下载

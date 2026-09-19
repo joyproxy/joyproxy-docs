@@ -1,11 +1,32 @@
-# 查看用量
+# 查看用量与抓取日志（View Usage & Logs）
 
-* [Usage 标签](https://www.joyproxy.com/admin-web-unblocker.html?view=usage) — 余额、并发、请求日志
-* 每次响应头 — 本次消耗积分与剩余
-* 余额偏低时在 [购买](https://www.joyproxy.com/admin-web-unblocker.html?view=buy) 补积分（积分不过期）
+在控制台中，你可以实时监控网页抓取 API 的剩余积分、当前并发使用率以及详细的抓取历史请求日志。
 
-控制台导览：[网页抓取 API（用户控制台）](../../yong-hu-kong-zhi-tai/web-scraping-api.md)。
+---
 
-## 本章索引
+## 用量看板管理
 
-[网页抓取 API](./)
+1. 登录 JoyProxy 控制台，点击左侧菜单 **[网页抓取 API（Web Scraping API）](https://www.joyproxy.com/admin-web-unblocker.html)**。
+2. 切换到 **用量与日志（Usage & Logs）** 页签（或查看概览顶栏）。
+3. 界面展示关键指标：
+   - **可用积分（Available Credits）**：当前账户中可用的总积分数。
+   - **已用积分（Used Credits）**：累计已消耗的抓取积分。
+   - **当前并发（Active Concurrency）**：当前正处于处理中的并发线程数与允许的上限。
+   - **成功率统计（Success Rate）**：近 24 小时抓取请求的成功率饼图。
+
+---
+
+## 实时抓取日志（Request Logs）查询
+
+在页面下方的 **抓取日志（Request Logs）** 表格中，记录了近期的每一笔抓取请求明细：
+
+| 字段名称 | 说明 |
+| --- | --- |
+| **请求时间（Time）** | 发起抓取的时间戳。 |
+| **目标 URL（Target URL）** | 被抓取的网页完整地址。 |
+| **请求参数（Parameters）** | 是否开启了 `render`、`super` 或指定了 `geoCode`。 |
+| **HTTP 状态码（Status Code）** | 目标响应状态码（如 `200`、`404` 等）。 |
+| **扣除积分（Credits Cost）** | 本次请求实际扣除的积分（若失败显示 `0`）。 |
+| **耗时（Duration）** | 从发起请求到返回结果的总耗时（毫秒）。 |
+
+可通过筛选框按时间范围、状态码或关键词快速定位排查问题请求。

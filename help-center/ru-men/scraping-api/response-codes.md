@@ -1,0 +1,23 @@
+# 响应码与常见报错（Response Codes & Troubleshooting）
+
+在使用网页抓取 API 时，常见报错状态码及其排查解决办法如下：
+
+---
+
+## 常见报错速查表
+
+| HTTP 状态码 | 错误信息 / 现象 | 主要原因 | 积分扣除 | 排查与解决方案 |
+| --- | --- | --- | --- | --- |
+| **401** | `Invalid Token` | Scraping API Token 错误或未传 | **0 扣费** | 确认使用的是 [API Center](quick-start.md) 中复制的 **Scraping API Token**，非代理账密。 |
+| **402** | `Insufficient Credits` | 账户可用积分不足 | **0 扣费** | 前往 [购买积分包](buy-credits.md) 补充积分。积分不过期。 |
+| **429** | `Concurrency Limit Reached` | 并发请求数超过账户上限 | **0 扣费** | 降低代码并发线程，或改用 [异步 API](async-api.md)，或联系客服提升并发。 |
+| **400** | `Missing URL Parameter` | 未传入必填的 `url` 参数 | **0 扣费** | 检查请求参数，确保 `url` 存在且已进行正确的 URL-Encode 编码。 |
+| **502** | `Target Fetch Failed` | 目标网站无法连接/硬拦截 | **0 扣费** | 建议尝试在参数中开启 `super=true` 高级反爬模式或更换 `geoCode` 国家出口。 |
+
+---
+
+## 如何验证“0 扣款”保障？
+
+当你收到 `401`、`402`、`429` 或 `502` 报错响应时：
+1. 检查 HTTP 响应头中的 `X-JoyProxy-Fetch-Credits-Used`，其值为 `0`。
+2. 打开控制台 **[抓取日志](usage.md)** 页面，确认该笔失败记录的积分扣除显示为 `0`。
