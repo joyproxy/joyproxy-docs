@@ -22,7 +22,7 @@
 
 *注意：代理连接密码与网站登录密码是分开的。*
 
-1. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">用户与白名单（Users &amp; Whitelist）</a>** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">账密与白名单（Users &amp; Whitelist）</a>** 页面。
 2. 在 **用户名 / 密码（Username/Password）** 下新建一组代理账号（如 `user123` / `pass123`）。
 3. 记下设置的**代理密码**。
 
@@ -30,7 +30,7 @@
 
 ## 第三步：生成连接端点
 
-1. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面，切到 **动态代理（Rotating Proxies）** 页签。
+1. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面，切到 **动态代理（Rotating Proxies）** 页签。
 2. 选择提取参数：
    - **国家/地区（Country）**：选择需要的出口 IP 目标国家（如美国 US）。
    - **会话类型（Session Type）**：
@@ -51,14 +51,12 @@ http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001
 
 把 `GENERATED_USER` 替换为生成的长用户名，`YOUR_PASS` 替换为第二步设置的代理密码，运行测试命令：
 
-{% tabs %}
-{% tab title="cURL" %}
+### cURL
 ```bash
 curl -x http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001 https://api.ipify.org
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+### Python
 ```python
 import requests
 
@@ -66,9 +64,8 @@ proxy = "http://GENERATED_USER:YOUR_PASS@gate.joyproxy.com:9001"
 res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
 print("代理出口 IP:", res.text)
 ```
-{% endtab %}
 
-{% tab title="Node.js" %}
+### Node.js
 ```javascript
 const { HttpsProxyAgent } = require("https-proxy-agent");
 
@@ -76,8 +73,6 @@ const agent = new HttpsProxyAgent("http://GENERATED_USER:YOUR_PASS@gate.joyproxy
 const res = await fetch("https://api.ipify.org", { agent });
 console.log("代理出口 IP:", await res.text());
 ```
-{% endtab %}
-{% endtabs %}
 
 如果返回的公网 IP 与你本地网络不同，说明动态代理已成功通畅！
 
@@ -85,6 +80,6 @@ console.log("代理出口 IP:", await res.text());
 
 ## 3 秒排查常见问题
 
-- **407 代理认证失败（Proxy Authentication Required）**：检查密码是否填错（必须填「用户与白名单」里设的密码，而非官网登录密码），用户名必须是生成的完整长字符串。
+- **407 代理认证失败（Proxy Authentication Required）**：检查密码是否填错（必须填「账密与白名单」里设的密码，而非官网登录密码），用户名必须是生成的完整长字符串。
 - **连接超时**：确认网关主机（Host）为 `gate.joyproxy.com`，端口（Port）为 `9001`。
-- **更换国家**：去 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取中心（Endpoint Generator）</a>** 页面重新选择国家并生成新用户名即可。
+- **更换国家**：去 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面重新选择国家并生成新用户名即可。

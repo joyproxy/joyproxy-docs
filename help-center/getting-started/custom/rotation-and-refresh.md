@@ -1,6 +1,6 @@
 # 设置定时轮换与手动更换 IP（Rotation & Refresh）
 
-自定义独享代理为你提供了极其灵活的 IP 变更策略。你可以根据业务防封需求，选择 **定时自动轮换（Scheduled Auto-Rotation）** 或 **手动即时更换 IP（Manual Refresh）**。
+自定义独享代理支持灵活的 IP 变更策略。你可以根据业务防封需求，选择 **定时自动轮换（Scheduled Auto-Rotation）** 或 **手动即时更换 IP（Manual Refresh）**。
 
 ---
 
@@ -23,7 +23,7 @@
 
 如果你在调试程序或突发发现某个出口 IP 被目标网站拦截，无需等待定时器，可以手动立即刷新 IP：
 
-1. 进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面。
+1. 进入 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理（My Proxies）</a>** 页面。
 2. 点击端口右侧的 **更换 IP（Refresh IP）** 按钮。
 3. 在确认提示框中点击确认。
 4. 系统将在 1-2 分钟内为该端口重新拉取分配一个全新的出口 IP。

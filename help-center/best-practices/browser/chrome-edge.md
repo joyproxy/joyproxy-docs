@@ -12,7 +12,7 @@ Google Chrome 与 Microsoft Edge 均基于 Chromium 内核构建。默认情况�
 
 1. **安装扩展**：在 Chrome 网上应用店（Chrome Web Store）或 Edge 扩展商店中搜索并安装 **JoyProxy** 扩展；
 2. **获取代理连接凭证**：
-   - **静态独享线路**：登录 JoyProxy 控制台，在「我的代理」列表中复制目标的 **Entry Point 接入域名**（例如 `us-ca.edge.joyproxy.com:10001`）与代理账密；
+   - **静态独享线路**：登录 JoyProxy 控制台，在「已购」列表中复制目标的 **Entry Point 接入域名**（例如 `us-ca.edge.joyproxy.com:10001`）与代理账密；
    - **动态代理**：在控制台「提取」页面生成代理地址，复制系统生成的长用户名与密码；
 3. **配置并启用**：
    - 点击浏览器工具栏的 JoyProxy 扩展图标；

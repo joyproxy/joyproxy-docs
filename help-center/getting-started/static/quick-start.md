@@ -40,14 +40,12 @@
 
 将连接地址替换为你提取到的真实 host:port 和代理账密，运行测试：
 
-{% tabs %}
-{% tab title="cURL" %}
+### cURL
 ```bash
 curl -x http://user123:pass123@us-ca.edge.joyproxy.com:10001 https://api.ipify.org
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+### Python
 ```python
 import requests
 
@@ -55,8 +53,6 @@ proxy = "http://user123:pass123@us-ca.edge.joyproxy.com:10001"
 res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
 print("静态独享 IP:", res.text)
 ```
-{% endtab %}
-{% endtabs %}
 
 返回的公网 IP 保持固定，即代表静态独享代理连接成功！
 
@@ -64,6 +60,6 @@ print("静态独享 IP:", res.text)
 
 ## 3 秒排查常见报错
 
-- **407 代理认证失败（Proxy Authentication Required）**：检查密码与用户名是否填错（填写在「用户与白名单」里设定的 Username/Password）。
+- **407 代理认证失败（Proxy Authentication Required）**：检查密码与用户名是否填错（填写在「账密与白名单」里设定的 Username/Password）。
 - **连接超时**：确认 Host 和 Port 是否完全匹配提取页面给出的专有端口。
-- **IP 遭到目标封禁**：在 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 中使用 **更换 IP（Refresh IP）** 刷新替换。
+- **IP 遭到目标封禁**：在 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理（My Proxies）</a>** 中使用 **更换 IP（Refresh IP）** 刷新替换。

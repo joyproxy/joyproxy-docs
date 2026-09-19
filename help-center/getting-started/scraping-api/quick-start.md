@@ -22,7 +22,7 @@
 购买积分后，系统会自动为你的账户生成专属的 **Scraping API Token**：
 
 1. 进入左侧菜单 **<a href="https://www.joyproxy.com/admin-web-unblocker.html" target="_blank" rel="noopener noreferrer">网页抓取 API（Web Scraping API）</a>** 控制台页面。
-2. 切换到 **API 中心（API Center）** 标签页（或点击右上角 **API 文档 Documentation**）。
+2. 切换到 **API 中心（API Center）** 标签页（或查看 **文档** 页签）。
 3. 在 **API Token** 文本框中点击 **复制（Copy）** 按钮，复制你的凭据。
 
 > **安全提示与 Token 轮换（Rotate Token）**  

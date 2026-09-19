@@ -50,7 +50,7 @@
 
 ## 4. 轮换 AI Access Token
 
-1. 进入控制台 **提取中心（Endpoint Generator）** 页面。
+1. 进入控制台 **提取（Endpoint Generator）** 页面。
 2. 切换到顶部的 **AI generator** 标签页。
 3. 在 AI Access Token 区域点击 **轮换（Rotate）** 按钮并在弹窗中确认。
 4. 轮换后，旧 Token 立即失效，请同步更新本地 Cursor 或 Claude 的 MCP 配置文件（`headers.x-ai-access-token`）。

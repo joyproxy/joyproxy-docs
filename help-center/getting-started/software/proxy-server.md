@@ -32,7 +32,7 @@
   chmod +x joyproxy-linux-amd64
   mv joyproxy-linux-amd64 /usr/local/bin/joyproxy
   ```
-- **老旧系统（如 CentOS 7.x）**：由于 glibc 版本较低，建议下载 <a href="https://github.com/joyproxy/joyproxy-server/releases/tag/v2.2" target="_blank" rel="noopener noreferrer">Release v2.2</a> 中的兼容包 `joyproxy-centos7-linux-amd64.tar.gz` 解压使用。
+- **老旧系统（如 CentOS 7.x）**：由于 glibc 版本较低，建议前往 GitHub Releases 页面下载对应的 CentOS 7 兼容包 `joyproxy-centos7-linux-amd64.tar.gz` 解压使用。
 
 ### 2. Windows 环境
 

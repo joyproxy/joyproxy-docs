@@ -8,8 +8,7 @@
 
 ## 编程语言代码示例
 
-{% tabs %}
-{% tab title="cURL" %}
+### cURL
 ```bash
 # HTTP 代理测试
 curl -x http://USER:PASS@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
@@ -17,9 +16,7 @@ curl -x http://USER:PASS@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
 # SOCKS5 代理测试
 curl --socks5 http://USER:PASS@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
 ```
-{% endtab %}
-
-{% tab title="Python (Requests)" %}
+### Python (Requests)
 ```python
 import requests
 
@@ -35,9 +32,7 @@ try:
 except requests.exceptions.RequestException as e:
     print("代理连接失败:", e)
 ```
-{% endtab %}
-
-{% tab title="Node.js (Axios)" %}
+### Node.js (Axios)
 ```javascript
 const axios = require('axios');
 const { HttpsProxyAgent } = require('https-proxy-agent');
@@ -49,9 +44,7 @@ axios.get('https://api.ipify.org', { httpAgent: agent, httpsAgent: agent })
   .then(res => console.log('当前端口出口 IP:', res.data))
   .catch(err => console.error('代理连接报错:', err.message));
 ```
-{% endtab %}
-
-{% tab title="Go" %}
+### Go
 ```go
 package main
 
@@ -80,9 +73,7 @@ func main() {
 	fmt.Println("当前端口出口 IP:", string(body))
 }
 ```
-{% endtab %}
-
-{% tab title="PHP" %}
+### PHP
 ```php
 <?php
 $ch = curl_init('https://api.ipify.org');
@@ -99,9 +90,6 @@ if (curl_errno($ch)) {
 }
 curl_close($ch);
 ```
-{% endtab %}
-{% endtabs %}
-
 ---
 
 ## 第三方软件与指纹浏览器集成

@@ -8,8 +8,8 @@
 
 | HTTP 状态码 | 报错含义 | 主要原因 | 排查解决步骤 |
 | --- | --- | --- | --- |
-| **407 Proxy Authentication Required** | 代理认证失败 | Username/Password 错误或白名单 IP 未添加 | 检查 <a href="authentication.md" target="_blank" rel="noopener noreferrer">用户与白名单</a> 设置与代码账密拼写。 |
-| **403 Forbidden** | 目标拒绝访问 / IP 被封禁 | 目标网站风控屏蔽了该出口 IP | 在 [我的代理] 页面点击 **<a href="rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">更换 IP</a>** 手动刷新端口出口 IP。 |
+| **407 Proxy Authentication Required** | 代理认证失败 | Username/Password 错误或白名单 IP 未添加 | 检查 <a href="authentication.md" target="_blank" rel="noopener noreferrer">账密与白名单</a> 设置与代码账密拼写。 |
+| **403 Forbidden** | 目标拒绝访问 / IP 被封禁 | 目标网站风控屏蔽了该出口 IP | 在 [已购] 页面点击 **<a href="rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">更换 IP</a>** 手动刷新端口出口 IP。 |
 | **502 Bad Gateway** | 网关无响应 / 地区未分配 | 端口尚未分配目标国家，或线路正在重连 | 确认该端口已在 <a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a> 中完成国家分配。 |
 | **504 Gateway Timeout** | 代理网关超时 | 代理节点网络波动或目标网站无响应 | 重新发起请求，若持续超时可执行手动换 IP 操作。 |
 

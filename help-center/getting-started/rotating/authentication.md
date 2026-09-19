@@ -16,19 +16,19 @@
 3. 选择凭据模式：
    - **共用模式（Shared）**：账户下所有代理网络共用同一组代理账密（推荐初次使用选择）。
    - **分类模式（Per Product）**：住宅、移动、商业与数据中心各自设置独立的代理账密。
-4. 在 **创建 Username/Password（Create Username/Password）** 下填写凭据信息：
+4. 在 **创建账密** 区域填写凭据信息：
    - **产品（Product）**：选择对应的代理网络（如 Residential）。
    - **代理用户名（Username）**：以小写字母开头，仅包含小写字母与数字 (`a–z`, `0–9`)，最长 16 位。
    - **代理密码（Password）**：至少 6 位。
    - **备注（Description）**：方便标识用途（可选）。
-5. 点击 **创建 User/Pass（Create User/Pass）** 保存，并妥善记录你设置的**代理密码**。
+5. 点击 **创建账密** 保存，并妥善记录你设置的**代理密码**。
 
 > **重要注意**  
 > 在此处创建的短用户名（如 `user123`）用于管理凭据。实际连接动态代理网关 `gate.joyproxy.com:9001` 时，代理用户名字段必须填入在 **<a href="extract-ip.md" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面生成的**完整长用户名**。
 
 ### 管理与修改密码
 
-- 在 **我的 Username/Password（My Username/Password）** 列表中点击 **修改（Edit）** 按钮，可随时修改代理密码。
+- 在账密列表中点击 **修改（Edit）** 按钮，可随时修改代理密码。
 - 修改代理密码后，只需更新客户端中的密码字段，在 [提取] 页面生成的长用户名无需重新生成。
 
 ---

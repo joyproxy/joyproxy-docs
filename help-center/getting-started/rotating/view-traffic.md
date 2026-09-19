@@ -5,7 +5,7 @@
 ## 操作步骤
 
 1. 登录 JoyProxy 控制台。
-2. 打开左侧菜单 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">我的代理（My Proxies）</a>** 页面。
+2. 打开左侧菜单 **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">已购代理（My Proxies）</a>** 页面。
 3. 切换到 **动态代理（Rotating Proxies）** 区域，你将看到所有生效中的动态代理订单卡片：
    - **套餐名称与网络类型**：如 动态住宅代理（Rotating Residential Proxies）。
    - **流量额度（Traffic Quota）**：清晰显示已用流量与当前剩余 GB 流量。

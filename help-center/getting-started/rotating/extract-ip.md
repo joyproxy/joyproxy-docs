@@ -38,7 +38,7 @@
 3. 直接复制页面生成的 **API 地址（API URL）**。
 
 > 💡 **OpenAPI 规范与代码集成**  
-> 详细的 API 请求路径、Query 参数（如 `token`, `country`, `duration` 等）请直接查阅控制台 **<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>**，或参考 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">程序化提取与代理池构建指南</a>**。
+> 详细的 API 请求路径与参数规范，请直接查阅控制台 **<a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>**，或参考 **<a href="../../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">程序化提取与代理池构建指南</a>**。
 
 ---
 

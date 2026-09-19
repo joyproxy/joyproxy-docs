@@ -87,6 +87,6 @@ testProxy();
 
 ## 3 秒排查常见报错
 
-- **407 代理认证失败（Proxy Authentication Required）**：检查用户名和密码是否填错（必须填在「用户与白名单」里设定的 Username/Password）；若采用白名单模式，检查本机公网 IPv4 是否已添加。
+- **407 代理认证失败（Proxy Authentication Required）**：检查用户名和密码是否填错（必须填在「账密与白名单」里设定的 Username/Password）；若采用白名单模式，检查本机公网 IPv4 是否已添加。
 - **403 目标拒绝访问（Forbidden）**：目标网站防护封禁了当前出口 IP。可在控制台中点击 **<a href="rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">更换 IP（Refresh IP）</a>** 刷新出口。
-- **502 / 504 连接超时（Gateway Timeout）**：检查端口是否已在 **<a href="view-ports.md" target="_blank" rel="noopener noreferrer">我的代理</a>** 中完成 [分配地区]。未分配地区的端口无法建立连接。
+- **502 / 504 连接超时（Gateway Timeout）**：检查端口是否已在 **<a href="view-ports.md" target="_blank" rel="noopener noreferrer">已购代理</a>** 中完成 [分配地区]。未分配地区的端口无法建立连接。
