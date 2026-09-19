@@ -1,78 +1,124 @@
 # 住宅代理控制台
 
-**住宅代理**（`sidebar.proxyResidential`）覆盖家庭宽带风格出口。控制台支持三种产品形态（购买页与提取页切换）：
+家庭宽带风格出口，支持 **动态** 预付流量、**静态独享** 与 **自定义独享** 三种形态（与页内模式切换一致）。
 
-[进入控制台](https://www.joyproxy.com/admin-proxy-residential.html) · [产品介绍](https://www.joyproxy.com/products/proxy-residential.html)
+| 项目 | 说明 |
+| --- | --- |
+| 侧栏入口 | **住宅代理控制台**（`sidebar.proxyResidential`） |
+| 控制台页顶 | **住宅代理** — 真实家庭宽带 IP — 含动态、静态与自定义端口。 |
+| 页眉 kicker | **代理控制台**（`proxyConsole.kicker`） |
+| 地址 | <a href="https://www.joyproxy.com/admin-proxy-residential.html" target="_blank" rel="noopener noreferrer">https://www.joyproxy.com/admin-proxy-residential.html</a> |
+| 产品页 | <a href="https://www.joyproxy.com/products/proxy-residential.html" target="_blank" rel="noopener noreferrer">https://www.joyproxy.com/products/proxy-residential.html</a> |
 
-控制台页顶标题为 **代理控制台**；左侧主导航在 **代理** 分组下进入本网络。各页签名称与副标题与现网 `zh-CN` 界面一致。
+左侧 **代理** 分组下进入本网络；子项右侧 **购买** 图标（`sidebar.proxyQuickBuy`）等价于打开本页 **购买** 页签（`?view=buy`）。
 
 ---
 
-## 页签说明
+## 页签一览
 
-### 购买（Buy）
+各页签主标题与副标题与现网 `proxyConsole.*` 一致：
+
+| 页签 | 主标题 | 副标题 | URL 参数 `view=` |
+| --- | --- | --- | --- |
+| 购买 | **购买** | 套餐与支付 | `buy` |
+| 已购 | **已购** | 在途与库存 | `orders` |
+| 账密与白名单 | **账密与白名单** | 用户名密码与白名单 | `auth` |
+| 提取 | **提取** | 提取代理地址 | `extract` |
+| 用量 | **用量** | 流量与订单 | `usage` |
+| API 中心 | **API 中心** | OpenAPI 与在线调试 | 新窗口打开 OpenAPI 中心 |
+
+购买 / 已购 / 提取等页内还可通过 **动态**、**静态独享**、**自定义独享**（`proxyConsole.modeRotating` / `modeStatic` / `modeCustom`）切换产品形态；本网络支持的模式如下：
+
+| 模式 | 文案 | 产品文档 |
+| --- | --- | --- |
+| 动态 | **动态** | <a href="../getting-started/rotating/README.md" target="_blank" rel="noopener noreferrer">动态代理</a> |
+| 静态独享 | **静态独享** | <a href="../getting-started/static/README.md" target="_blank" rel="noopener noreferrer">静态独享代理</a> |
+| 自定义独享 | **自定义独享** | <a href="../getting-started/custom/README.md" target="_blank" rel="noopener noreferrer">自定义独享代理</a> |
+
+---
+
+## 购买
 
 副标题：**套餐与支付**。
 
-在 **购买** 页签选择模式（`proxyConsole`）：
+在 **购买** 页切换 **动态** / **静态独享** / **自定义独享** 后进入嵌入购买流程（国家、套餐、支付）。
 
-| 模式 | 文案 |
+| 模式 | 产品与服务 |
 | --- | --- |
-| 动态 | **动态**（`modeRotating`） |
-| 静态独享 | **静态独享**（`modeStatic`） |
-| 自定义独享 | **自定义独享**（`modeCustom`） |
+| 动态 | <a href="../getting-started/rotating/purchase.md" target="_blank" rel="noopener noreferrer">购买流量</a> |
+| 静态独享 | <a href="../getting-started/static/purchase.md" target="_blank" rel="noopener noreferrer">购买独享线路</a> |
+| 自定义独享 | <a href="../getting-started/custom/purchase.md" target="_blank" rel="noopener noreferrer">购买端口</a> |
 
-- 动态：预付流量 GB，网关 `gate.joyproxy.com:9001` — [动态代理](../getting-started/rotating/README.md)
-- 静态独享：固定国家线路 — [静态独享代理](../getting-started/static/README.md)
-- 自定义独享：按端口与地域 — [自定义独享代理](../getting-started/custom/README.md)
-
-操作步骤与支付渠道见「产品与服务」对应章节，不在本篇重复教程。
-
-### 已购
-
-副标题：**在途与库存**。
-
-查看当前生效订单、分配状态、剩余流量或独享端口有效期。可在此进入续费、自动续费或更换出口 IP 等操作（以页面按钮为准）。
-
-- 动态：[自动购买流量](../getting-started/rotating/auto-buy-traffic.md)、[查看已购流量](../getting-started/rotating/view-traffic.md)
-- 静态：[自动续费](../getting-started/static/auto-renew.md)、[更换出口 IP](../getting-started/static/refresh-ip.md)
-- 自定义：[自动续费](../getting-started/custom/auto-renew.md)、[定时轮换与更换 IP](../getting-started/custom/rotation-and-refresh.md)
-
-### 账密与白名单（Users & Whitelist）
-
-副标题：**用户名密码与白名单**。
-
-- 创建代理连接用的 **用户名 / 密码**（动态线路提取前须先完成此步；界面提示：**提取 IP 前须先创建代理账密**）。
-- 静态 / 自定义独享可配置 **IP 白名单**，从已加白 IP 连接时可免账密（以产品规则为准）。
-
-详见：[设置代理账密与白名单](../getting-started/rotating/authentication.md)（动态）· [静态](../getting-started/static/authentication.md) · [自定义独享](../getting-started/custom/authentication.md)
-
-### 提取（Endpoints）
-
-副标题：**提取代理地址**。
-
-使用网页生成器选择 **动态**、**静态独享** 或 **自定义独享**（视本网络支持的模式而定），生成 `host:port`、完整用户名与可复制 **API URL**。
-
-详见：[提取代理 IP](../getting-started/rotating/extract-ip.md) 及各网络产品文档中的「提取」章节。
-
-### 用量（Usage）
-
-副标题：**流量与订单**。
-
-查看本网络下的流量消耗、订单列表与剩余额度。动态产品展示预付流量包的已用 / 剩余 GB；独享产品展示端口与到期状态。
-
-详见：[查看已购流量](../getting-started/rotating/view-traffic.md) · [查看已购线路](../getting-started/static/view-lines.md) · [查看与管理端口](../getting-started/custom/view-ports.md)
-
-### API 中心（API Center）
-
-副标题：**OpenAPI 与在线调试**。
-
-在新窗口打开 [OpenAPI 中心](https://www.joyproxy.com/admin-openapi.html)，调试提取、订单等 HTTP 接口。提取类接口使用 **Endpoints** 页复制的 **API URL** 中的 Token，勿与 **主用户 Token** 混用。
-
-详见：[OpenAPI 中心](../best-practices/openapi-center.md)
+支付渠道、下单步骤与发票说明见 **产品与服务** 对应章节，本篇只说明控制台入口与页签分工。
 
 ---
 
-## 侧栏快捷购买
+## 已购
 
-在 **代理** 子菜单中，各网络名称右侧有 **购买** 图标按钮（`sidebar.proxyQuickBuy`），等同于进入本控制台并打开 **购买** 页签（URL 参数 `?view=buy`）。
+副标题：**在途与库存**。
+
+查看本网络下各模式的生效订单、剩余流量或独享端口有效期。常见操作（以页面按钮为准）：
+
+- 动态：<a href="../getting-started/rotating/auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a>
+- 静态：<a href="../getting-started/static/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>、<a href="../getting-started/static/refresh-ip.md" target="_blank" rel="noopener noreferrer">更换出口 IP</a>
+- 自定义：<a href="../getting-started/custom/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>、<a href="../getting-started/custom/rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">定时轮换与更换 IP</a>
+
+---
+
+## 账密与白名单
+
+副标题：**用户名密码与白名单**。
+
+页头说明（`authPageV2.heroTitle` / `heroDesc`）：**提取代理前请先完成授权** — 动态、静态和自定义代理使用前需先完成授权。创建账密或添加 IP 白名单，任选其一即可开始。
+
+- **快速设置**：**将当前 IP 加入白名单** 或 **自动生成账密**（`authPageV2`）。
+- **账密或白名单 — 任选一种方式**；动态线路须在 **提取** 前完成至少一种授权。
+- 手动 **创建账密**、**已加入白名单的 IP** 列表管理。
+
+详见 <a href="../getting-started/rotating/authentication.md" target="_blank" rel="noopener noreferrer">设置代理账密与白名单</a>。
+
+- 独享线路支持 **账密** 与 **IP 白名单**（从已加白 IP 连接时可免账密，以产品规则为准）。
+
+详见 <a href="../getting-started/static/authentication.md" target="_blank" rel="noopener noreferrer">静态独享 — 认证</a> · <a href="../getting-started/custom/authentication.md" target="_blank" rel="noopener noreferrer">自定义独享 — 认证</a>。
+
+---
+
+## 提取
+
+副标题：**提取代理地址**。
+
+- 选择 **动态** 后使用网页生成器或 **API URL** 获取 `host:port` 与用户名。
+- <a href="../getting-started/rotating/extract-ip.md" target="_blank" rel="noopener noreferrer">提取代理 IP</a> · <a href="../getting-started/rotating/extraction-parameters.md" target="_blank" rel="noopener noreferrer">高级提取参数</a>
+
+- 选择 **静态独享** 或 **自定义独享**（视本网络支持的模式），生成连接地址与 **API URL**。
+- <a href="../getting-started/static/extract-ip.md" target="_blank" rel="noopener noreferrer">静态提取</a> · <a href="../getting-started/custom/extract-ip.md" target="_blank" rel="noopener noreferrer">自定义提取</a>
+
+提取 URL 中的 Token 为 **API Token**（代理提取用），不是 **主用户 Token**。类型说明见 <a href="rotate-token.md" target="_blank" rel="noopener noreferrer">主用户与自动化 Token</a>。
+
+---
+
+## 用量
+
+副标题：**流量与订单**。
+
+- 动态：**总量 / 已用 / 剩余 GB**，订单列表。
+- <a href="../getting-started/rotating/view-traffic.md" target="_blank" rel="noopener noreferrer">查看已购流量</a> · <a href="../getting-started/rotating/usage.md" target="_blank" rel="noopener noreferrer">查询用量</a>
+
+- 独享：端口、到期、续费状态。
+- <a href="../getting-started/static/view-lines.md" target="_blank" rel="noopener noreferrer">查看已购线路</a> · <a href="../getting-started/custom/view-ports.md" target="_blank" rel="noopener noreferrer">查看与管理端口</a> · <a href="../getting-started/static/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>
+
+账单页的 **流量使用** Tab 提供按小时汇总；与本页 **用量** 互补，见 <a href="invoices.md" target="_blank" rel="noopener noreferrer">账单与交易记录</a>。
+
+---
+
+## API 中心
+
+点击 **API 中心** 会在新标签页打开 <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>，可在线调试订单、余额等接口。代理 IP 提取请使用 **提取** 页复制的 **API URL**。
+
+详见 <a href="../zui-jia-shi-jian/openapi-center.md" target="_blank" rel="noopener noreferrer">OpenAPI 中心</a>。
+
+---
+
+## 控制台内文档链接
+
+代理控制台页眉区域提供 **帮助中心** 外链（`pages.helpCenter`），可跳转到本站文档对应产品章节。

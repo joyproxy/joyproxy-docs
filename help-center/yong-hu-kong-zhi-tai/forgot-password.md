@@ -1,21 +1,27 @@
 # 找回密码
 
-无法使用当前密码登录时，通过邮箱重置。
+无法使用当前密码登录时，通过注册邮箱收取重置链接。
+
+<a href="https://www.joyproxy.com/forgot-password.html" target="_blank" rel="noopener noreferrer">忘记密码页</a>（页眉文案 `flow.resetPasswordHeading`：**重置密码** — **输入邮箱，我们将发送重置链接。**）
+
+也可从 <a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">登录</a> 点击 **忘记密码？**（`login.forgot`）进入。
 
 ---
 
-## 操作步骤
+## 步骤
 
-1. 打开 [登录](https://www.joyproxy.com/login.html)。
-2. 点击 **忘记密码？**（`login.forgot`）。
-3. 输入注册时使用的 **邮箱**，按邮件指引设置新密码（注册密码至少 **8 位**；修改密码表单为至少 **6 个字符**，以页面校验为准）。
-4. 使用新密码重新 **登录**。
+1. 输入注册时使用的 **邮箱**。
+2. 点击 **发送重置链接**（`flow.sendResetLink`）。
+3. 查收邮件（含垃圾邮件），按链接设置新密码。
+4. 使用新密码 **登录**。
 
-重置链接过期后需重新申请。JoyProxy 客服不会在聊天中索要密码。
+说明：若邮箱存在于系统中，会发送重置链接；JoyProxy 不会在聊天中索要密码。
+
+密码长度：注册至少 **8 位**；在控制台 **我的账户** 内修改密码时表单校验为至少 **6 个字符**（`settingsPage.passwordMinLength`）。
 
 ---
 
 ## 仍无法登录
 
-- 确认邮箱与注册时一致。
-- 通过 [实时聊天](../support/live-chat.md) 或 [提交工单](../support/tickets.md)（控制台 **帮助中心**）联系支持，使用注册邮箱证明归属。
+- 确认邮箱与注册一致，链接未过期（过期请重新申请）。
+- <a href="../fu-wu-yu-zhi-chi/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> 或 <a href="../fu-wu-yu-zhi-chi/tickets.md" target="_blank" rel="noopener noreferrer">提交工单</a>（侧栏 **帮助中心**），用注册邮箱证明归属。

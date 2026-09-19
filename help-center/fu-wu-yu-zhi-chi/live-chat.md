@@ -37,4 +37,4 @@
 
 - **突发情况、紧急联调、选型咨询：** 优先使用 <a href="live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> 获取即时反馈。
 - **复杂缺陷排查、跨部门业务审批、长期跟进事项：** 建议转至 <a href="tickets.md" target="_blank" rel="noopener noreferrer">工单系统</a> 提交工单，以便工程师团队持续跟踪与归档。
-- **常见配置与常见疑问：** 可参考 <a href="../chang-jian-wen-ti/faq.md" target="_blank" rel="noopener noreferrer">FAQ 常见问题</a> 自助排查。
+- **常见配置与常见疑问：** 可参考 <a href="../chang-jian-wen-ti/README.md" target="_blank" rel="noopener noreferrer">FAQ 常见问题</a> 自助排查。

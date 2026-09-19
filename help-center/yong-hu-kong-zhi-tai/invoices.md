@@ -1,47 +1,56 @@
 # 账单与交易记录
 
-查看充值、消费、订单与可下载的 PDF 账单。入口：
-
-- 侧栏 **我的账户** → **账单** Tab（`settingsPage.tabTransactions`）
-- 或 **概览** 点击 **账户余额** 进入账本
-
-独立账单页：[admin-transactions.html](https://www.joyproxy.com/admin-transactions.html)（标题 **账单**，`transactions.title`）
+查看充值、消费、订单与 PDF 账单。
 
 ---
 
-## 账单页 Tab
+## 入口
 
-| Tab | 文案 | 说明 |
+| 入口 | 说明 |
+| --- | --- |
+| **我的账户** → **账单** Tab | 内嵌账单（`settingsPage.tabTransactions`） |
+| **概览** → 点击 **账户余额** | 跳转账本 |
+| 独立页 | <a href="https://www.joyproxy.com/admin-transactions.html" target="_blank" rel="noopener noreferrer">admin-transactions.html</a>（标题 **账单**） |
+
+---
+
+## 三个子 Tab
+
+| Tab | 文案 | 副标题 |
 | --- | --- | --- |
-| **余额变动** | `transactions.tabBalance` — **充值与账本流水** | **充值**（PayPal 等）、余额消费、续费、调整；**下载账单 PDF**（`downloadSheet`） |
-| **订单** | `transactions.tabOrders` — **全部产品购买记录** | 代理套餐、Credits 等购买与续费 |
-| **流量使用** | `transactions.tabTraffic` — **动态代理按小时用量** | 按动态产品筛选用量（与控制台 **用量** 互补） |
+| **余额变动** | `transactions.tabBalance` | **充值与账本流水** |
+| **订单** | `transactions.tabOrders` | **全部产品购买记录** |
+| **流量使用** | `transactions.tabTraffic` | **动态代理按小时用量** |
 
-筛选：**时间范围**、**应用筛选** / **清除**；批量 **批量下载账单 (ZIP)**（`batchSheetsBtn`）。
+**余额变动** 提示：**充值及其他账本记录 — 可下载 PDF 账单用于 PayPal / 存档**（`balanceLedgerHint`）。
 
-余额区域提示：**充值及其他账本记录 — 可下载 PDF 账单用于 PayPal / 存档**（`balanceLedgerHint`）。
-
----
-
-## 类别与类型（常见）
-
-- **充值**（`catRecharge` / `typeRecharge`）
-- **购买**、**续费**（`typePurchase` / `typeRenew`）
-- **退款**（`typeRefund`）
-
-动态代理流量从预付 GB 扣减；独享按订单有效期；网页抓取按成功请求扣 **Credits**。
+筛选：**时间范围**、**应用筛选** / **清除**；单条 **PDF** 下载；**批量下载账单 (ZIP)**。
 
 ---
 
-## 已购库存不在本页
+## 常见类别
 
-查看生效中的代理订单、端口与剩余流量，请进入各网络控制台的 **已购** 与 **用量** 页签，而非仅在账单页查询。
+账本 **类别** / 订单 **类型** 示例：
+
+- **充值**（PayPal、银行卡 Evonet、微信支付、账户余额等 — `methodPaypal` / `methodEvonet` / `methodWechat` / `methodBalance`）
+- **购买**、**续费**
+- **退款**
+- **管理员赠送** / **管理员扣款**
+
+动态代理从预付 GB 扣减；独享按订单周期；网页抓取按成功请求扣 **Credits**（失败不扣费）。
 
 ---
 
-## 继续购买
+## 与控制台的分工
 
-- 代理：侧栏 **代理** → 选择网络 → **购买** 或控制台内 **购买** 页签。
-- 网页抓取： [网页抓取控制台](web-scraping-api.md) → **购买**。
+| 需求 | 去哪里 |
+| --- | --- |
+| 生效中订单、剩余流量、端口到期 | 各网络 **已购** / **用量** |
+| 充值流水、PDF、全产品订单列表 | 本页 |
+| USDT 链上未到账 | **资料** Tab → **USDT 认领** |
 
-对单笔扣费有疑问：[提交工单](../support/tickets.md)，附上订单号与日期。
+---
+
+## 争议与开票
+
+单笔扣费疑问：<a href="../fu-wu-yu-zhi-chi/tickets.md" target="_blank" rel="noopener noreferrer">提交工单</a>，附订单号与日期。公司抬头发票见各产品 **查询支付记录** 章节或联系 **实时聊天**。

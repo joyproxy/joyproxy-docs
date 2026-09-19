@@ -1,21 +1,30 @@
 # 邮箱激活
 
-部分账户在首次购买或敏感操作前需完成邮箱验证。
+部分账户在首次登录或敏感操作前需验证注册邮箱。
 
 ---
 
-## 如何激活
+## 邮件激活
 
-1. 注册或登录时若提示 **账户尚未激活。请查收邮件并点击激活链接。**
-2. 打开邮件中的激活链接（请检查垃圾邮件文件夹）。
-3. 激活成功后返回 [登录](login.md) 页 **登录**。
+1. 注册或登录时若提示账户未激活，查收注册邮箱（含垃圾邮件文件夹）。
+2. 点击邮件中的激活链接，浏览器会打开 <a href="https://www.joyproxy.com/activate.html" target="_blank" rel="noopener noreferrer">activate.html</a>。
+3. 页面标题流程文案（`flow`）：
+   - 处理中：**正在激活账户…**
+   - 成功：**账户已激活！** → **登录**
+   - 失败：**激活失败** — **激活链接无效或已过期。**
 
-登录页可 **重发激活邮件**（`login.resendActivation`）；成功提示：**新的激活链接已发送，请查收邮箱（含垃圾邮件文件夹）。**
+4. 返回 <a href="login.md" target="_blank" rel="noopener noreferrer">登录</a> 使用原账号密码或 OAuth 登录。
 
 ---
 
-## 仍未收到邮件
+## 重发激活邮件
 
-- 确认邮箱拼写正确。
+在 <a href="https://www.joyproxy.com/login.html" target="_blank" rel="noopener noreferrer">登录</a> 页使用 **重发激活邮件**。请勿重复注册多个账号。
+
+---
+
+## 仍未收到
+
+- 确认邮箱拼写与注册时一致。
 - 等待数分钟后重发。
-- 通过 [实时聊天](../support/live-chat.md) 或 [提交工单](../support/tickets.md) 联系支持，提供注册邮箱（勿提供密码）。
+- <a href="../fu-wu-yu-zhi-chi/live-chat.md" target="_blank" rel="noopener noreferrer">实时聊天</a> 或 <a href="../fu-wu-yu-zhi-chi/tickets.md" target="_blank" rel="noopener noreferrer">提交工单</a>，提供注册邮箱（勿提供密码）。
