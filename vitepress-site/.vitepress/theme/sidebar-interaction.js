@@ -8,6 +8,17 @@ function firstChildLink(section) {
   return section.querySelector(":scope > .items .VPSidebarItem.is-link a.link");
 }
 
+/** VP may show children for the active route while the group still has .collapsed. */
+function isSectionExpanded(section) {
+  if (!section.classList.contains("collapsed")) return true;
+  if (section.querySelector(":scope > .items a.link.is-active")) return true;
+  const items = section.querySelector(":scope > .items");
+  if (!items) return false;
+  const { display, visibility, height } = window.getComputedStyle(items);
+  if (display === "none" || visibility === "hidden") return false;
+  return items.getBoundingClientRect().height > 0 || parseFloat(height) > 0;
+}
+
 function bindCollapsibleLink(section, router) {
   const link = section.querySelector(":scope > .item > a.link");
   if (!link || link.hasAttribute(BOUND)) return;
@@ -16,18 +27,18 @@ function bindCollapsibleLink(section, router) {
   link.setAttribute(BOUND, "1");
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    const collapsed = section.classList.contains("collapsed");
+    const expanded = isSectionExpanded(section);
     const caret = section.querySelector(":scope > .item .caret");
-    if (collapsed) {
+    if (expanded) {
       caret?.click();
-      const href = child.getAttribute("href");
-      if (href && typeof router?.go === "function") {
-        router.go(href);
-      } else if (href) {
-        window.location.assign(href);
-      }
-    } else {
-      caret?.click();
+      return;
+    }
+    caret?.click();
+    const href = child.getAttribute("href");
+    if (href && typeof router?.go === "function") {
+      router.go(href);
+    } else if (href) {
+      window.location.assign(href);
     }
   });
 }

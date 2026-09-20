@@ -29,7 +29,6 @@ export default defineConfig({
           { text: "Console", link: "https://www.joyproxy.com/admin-overview.html" },
         ],
         sidebar: sidebarEn,
-        socialLinks: [{ icon: "github", link: "https://github.com/joyproxy/joyproxy-docs" }],
       },
     },
     zh: {
@@ -44,11 +43,13 @@ export default defineConfig({
           { text: "控制台", link: "https://www.joyproxy.com/admin-overview.html" },
         ],
         sidebar: sidebarZh,
-        socialLinks: [{ icon: "github", link: "https://github.com/joyproxy/joyproxy-docs" }],
       },
     },
   },
   themeConfig: {
     logo: "https://www.joyproxy.com/favicon.svg",
+    aside: false,
+    outline: false,
+    socialLinks: [],
   },
 });
