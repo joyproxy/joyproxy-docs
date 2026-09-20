@@ -27,8 +27,11 @@ function bindCollapsibleLink(section, router) {
     if (collapsed) {
       caret?.click();
       const target = toRoutePath(child.getAttribute("href"));
-      if (router.currentRoute.value.path !== target) {
-        router.push(target);
+      const href = child.getAttribute("href");
+      if (router?.push) {
+        if (router.currentRoute.value.path !== target) router.push(target);
+      } else if (href) {
+        window.location.assign(href);
       }
     } else {
       caret?.click();

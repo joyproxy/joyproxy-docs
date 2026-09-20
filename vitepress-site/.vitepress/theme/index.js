@@ -1,14 +1,13 @@
+import { h } from "vue";
 import DefaultTheme from "vitepress/theme";
-import { setupSidebarInteraction } from "./sidebar-interaction.js";
+import SidebarRouteBinder from "./SidebarRouteBinder.vue";
 import "./custom.css";
 
 export default {
   extends: DefaultTheme,
-  enhanceApp({ router }) {
-    if (typeof window === "undefined") return;
-    router.afterEach(() => {
-      requestAnimationFrame(() => setupSidebarInteraction(router));
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      "layout-top": () => h(SidebarRouteBinder),
     });
-    requestAnimationFrame(() => setupSidebarInteraction(router));
   },
 };
