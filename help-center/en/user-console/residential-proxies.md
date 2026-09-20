@@ -53,4 +53,4 @@ If this is your first Residential order, use this order:
 3. **Generate endpoints**  
    Open **Endpoint generator**, pick the exit country (for example United States or Japan), then **Generate now**. Copy the connection string into your tool. For crawlers, copy the **API URL**.
 4. **Send traffic and watch Usage**  
-   Put the endpoint into your code or Browser Extension. Watch remaining traffic on **Usage**. For hourly curves, use <a href="invoices.md" target="_blank" rel="noopener noreferrer">Invoices</a> → **Rotating Traffic Usage**.
+   Put the endpoint into your code or Browser Extension. On **Usage**, watch remaining traffic and daily charts, and drill down to hourly consumption in the chart (Invoices no longer has a separate **Traffic usage** tab).

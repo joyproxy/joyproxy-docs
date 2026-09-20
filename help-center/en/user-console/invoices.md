@@ -10,34 +10,33 @@ Open Invoices from any of these:
 
 ---
 
-## Three views
+## Two tabs
 
-Invoices has three tabs:
+The Invoices page has **Balance** and **Orders** only. An older **Traffic usage (hourly rotating)** tab is **no longer shown** on this page (locale strings may still exist in the product, but the tab was removed from the UI). For hourly or daily rotating traffic curves, use **Usage** in the relevant proxy console (for example **Residential**), not Invoices.
 
 ### 1. Balance (ledger)
+
 Every wallet movement — the view finance uses for audit:
 
-- **Types**: PayPal / Credit Card / WeChat Pay and other recharges, balance spend on proxy plans, Auto-renew charges, Refunds, and staff gift or deduction rows.
-- **PDF invoice**: Each recharge row has a **PDF** action. It builds a commercial invoice with order id, gateway reference, amounts, and JoyProxy letterhead.
-- **Batch download**: Set **Time range**, click **Apply filter**, then **Batch download invoices (ZIP)** to pack every PDF in that window.
+- **Category** (matches the console): **Recharge**; **Balance Consumption** and **Balance Renew** when you pay from wallet; **Admin Gift** / **Admin Deduction**; **Refund**; **Welcome credit** / **Welcome credit reclaimed**; other **Credit** / **Debit** rows.
+- **Recharge channels** include PayPal, card (Evonet), WeChat Pay, UPI (India), USDT on-chain top-ups, and similar — they appear as **Recharge**.
+- **PDF invoice**: The **Invoice** column shows **PDF** only on **Recharge** rows (order id, gateway reference, amounts, JoyProxy letterhead). **Balance Consumption**, **Balance Renew**, refunds, admin adjustments, and welcome-credit rows **do not** offer PDF download.
+- **Batch download**: After **Time range** → **Apply filter**, **Batch download invoices (ZIP)** packs only rows that have a PDF action (on Balance, mainly recharges in the filtered window).
 
 ### 2. Orders (purchase history)
-Every JoyProxy product order:
 
-- Rotating Residential and Mobile packs, Static Dedicated lines, Custom Dedicated ports, and Web Scraping API Credit packs;
-- Order time, plan duration, amount paid, and current status.
+Product orders with **Network** and **Type** filters (Rotating, Static, Custom, Web Scraping API):
 
-### 3. Traffic usage (hourly rotating usage)
-Hourly consumption for prepaid rotating traffic:
+- Rotating packs, static lines, custom ports, Web Scraping API credits across Residential, Mobile, Business, Datacenter, and so on;
+- Date, product, type, amount, and description.
 
-- Filter by rotating product (for example **Residential rotating**, **Mobile rotating**);
-- Raw vs billed traffic over time, to spot crawl spikes or anomalies.
+**PDF invoice**: **PDF** appears only when the order was paid through an **external gateway** (PayPal, Evonet card, WeChat Pay, UPI, etc.) for a **direct purchase or renewal**. Orders paid with **Account balance** **do not** show PDF (the matching **Balance Consumption** / **Balance Renew** row on **Balance** also has no PDF).
 
 ---
 
 ## Invoices vs proxy consoles
 
-- **Live resources**: Port status, exit IP changes, Auto-renew, or remaining GB belong in the network console (**Residential**, **Business / ISP**, and so on) on **My Proxies** and **Usage**.
+- **Live resources**: Port status, exit IP changes, Auto-renew, remaining GB, and traffic charts belong in the network console (**Residential**, **Business / ISP**, and so on) on **My Proxies** and **Usage**.
 - **Money**: Export reimbursement PDFs, confirm a recharge, or review monthly spend here on **Invoices**.
 
 ---
