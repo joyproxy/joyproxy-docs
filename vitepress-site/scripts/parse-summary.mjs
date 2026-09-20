@@ -81,7 +81,8 @@ function normalizeSidebarItem(item) {
     return item;
   }
 
-  item.collapsed = true;
+  // SSR + client must match; collapse inactive branches after hydration (sidebar-interaction.js).
+  item.collapsed = false;
   const firstLeaf = item.items.find((c) => c.link && !c.items?.length);
   if (firstLeaf?.link) item.link = firstLeaf.link;
   item.items = item.items.map(normalizeSidebarItem);

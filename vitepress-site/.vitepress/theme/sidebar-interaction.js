@@ -39,6 +39,25 @@ function bindCollapsibleLink(section, router) {
   });
 }
 
+function sectionHasActiveDescendant(section) {
+  return (
+    section.classList.contains("has-active") ||
+    section.querySelector(".is-active") !== null
+  );
+}
+
+/** After hydration: fold branches that do not contain the current page. */
+export function collapseInactiveSidebarSections() {
+  if (typeof document === "undefined") return;
+  document
+    .querySelectorAll(".VPSidebar .VPSidebarItem.collapsible.is-link")
+    .forEach((section) => {
+      if (sectionHasActiveDescendant(section)) return;
+      if (section.classList.contains("collapsed")) return;
+      section.querySelector(":scope > .item .caret")?.click();
+    });
+}
+
 export function setupSidebarInteraction(router) {
   if (typeof document === "undefined") return;
   document
