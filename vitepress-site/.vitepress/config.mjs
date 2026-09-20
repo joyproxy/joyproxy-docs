@@ -11,6 +11,7 @@ export default defineConfig({
   description: "JoyProxy product documentation — proxy IP, Web Scraping API, and console guides.",
   cleanUrls: true,
   lastUpdated: false,
+  appearance: false,
   markdown: {
     html: true,
     linkify: true,
