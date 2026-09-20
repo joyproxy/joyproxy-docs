@@ -64,13 +64,41 @@ function insertIntoGroup(group, node, localePrefix) {
     return;
   }
   if (!parent.items) parent.items = [];
-  if (parent.link) {
-    const { text, link: plink } = parent;
-    delete parent.link;
-    parent.text = text;
-    parent.items.push({ text, link: plink });
-  }
   parent.items.push(link);
+}
+
+/** VitePress: collapsed false = expanded but togglable; true = collapsed by default. */
+function normalizeSidebarItem(item) {
+  if (!item.items?.length) return item;
+
+  const first = item.items[0];
+  if (
+    first &&
+    !first.items?.length &&
+    (first.link === item.link || first.text === item.text)
+  ) {
+    item.items.shift();
+  }
+
+  if (!item.items.length) {
+    delete item.items;
+    return item;
+  }
+
+  item.collapsed = true;
+  item.items = item.items.map(normalizeSidebarItem);
+  return item;
+}
+
+function normalizeSidebarGroups(sidebar) {
+  return sidebar.map((group) => {
+    if (!group.items?.length) return group;
+    if (group.text) {
+      group.collapsed = false;
+    }
+    group.items = group.items.map(normalizeSidebarItem);
+    return group;
+  });
 }
 
 export function parseSummaryFile(summaryPath, localePrefix = "") {
@@ -92,7 +120,7 @@ export function parseSummaryFile(summaryPath, localePrefix = "") {
     insertIntoGroup(group, node, localePrefix);
   }
   if (group.items.length) sidebar.push(group);
-  return sidebar;
+  return normalizeSidebarGroups(sidebar);
 }
 
 export function buildSidebars() {

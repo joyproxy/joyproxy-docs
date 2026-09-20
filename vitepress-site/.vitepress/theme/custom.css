@@ -4,3 +4,35 @@
   --vp-c-brand-3: #0050b3;
   --vp-c-brand-soft: rgba(24, 144, 255, 0.14);
 }
+
+/* Sidebar hierarchy: section (h2) → category (h3/link) → articles */
+.VPSidebar .VPSidebarItem.level-0 > .items > .VPSidebarItem > .item {
+  padding-inline-start: 12px;
+}
+
+.VPSidebar .VPSidebarItem.level-1 > .items > .VPSidebarItem > .item {
+  padding-inline-start: 20px;
+}
+
+.VPSidebar .VPSidebarItem.level-2 > .items > .VPSidebarItem > .item {
+  padding-inline-start: 28px;
+}
+
+.VPSidebar .VPSidebarItem.level-0 > .item h2.text {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.VPSidebar .VPSidebarItem.level-1 > .item h3.text,
+.VPSidebar .VPSidebarItem.level-1 > .item > a .text {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.VPSidebar .VPSidebarItem.level-2 > .item > a .text,
+.VPSidebar .VPSidebarItem.level-3 > .item > a .text {
+  font-size: 13px;
+  font-weight: 400;
+}
