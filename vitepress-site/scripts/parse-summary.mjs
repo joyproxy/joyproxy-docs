@@ -67,23 +67,12 @@ function insertIntoGroup(group, node, localePrefix) {
   parent.items.push(link);
 }
 
-/** VitePress: collapsed false = expanded but togglable; true = collapsed by default. */
+/** Groups with children are expand/collapse only — never bind a page URL. */
 function normalizeSidebarItem(item) {
   if (!item.items?.length) return item;
 
-  const first = item.items[0];
-  if (first && !first.items?.length && first.text === item.text) {
-    item.items.shift();
-  }
-
-  if (!item.items.length) {
-    delete item.items;
-    return item;
-  }
-
   item.collapsed = true;
-  const firstLeaf = item.items.find((c) => c.link && !c.items?.length);
-  if (firstLeaf?.link) item.link = firstLeaf.link;
+  delete item.link;
   item.items = item.items.map(normalizeSidebarItem);
   return item;
 }
