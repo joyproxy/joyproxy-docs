@@ -72,11 +72,7 @@ function normalizeSidebarItem(item) {
   if (!item.items?.length) return item;
 
   const first = item.items[0];
-  if (
-    first &&
-    !first.items?.length &&
-    (first.link === item.link || first.text === item.text)
-  ) {
+  if (first && !first.items?.length && first.text === item.text) {
     item.items.shift();
   }
 
