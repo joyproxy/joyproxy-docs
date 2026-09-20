@@ -8,12 +8,6 @@ function firstChildLink(section) {
   return section.querySelector(":scope > .items .VPSidebarItem.is-link a.link");
 }
 
-function toRoutePath(href) {
-  const pathname = new URL(href, window.location.origin).pathname;
-  const stripped = pathname.replace(/^\/help(\/|$)/, "/");
-  return stripped === "" ? "/" : stripped;
-}
-
 function bindCollapsibleLink(section, router) {
   const link = section.querySelector(":scope > .item > a.link");
   if (!link || link.hasAttribute(BOUND)) return;
@@ -26,10 +20,9 @@ function bindCollapsibleLink(section, router) {
     const caret = section.querySelector(":scope > .item .caret");
     if (collapsed) {
       caret?.click();
-      const target = toRoutePath(child.getAttribute("href"));
       const href = child.getAttribute("href");
-      if (router?.push) {
-        if (router.currentRoute.value.path !== target) router.push(target);
+      if (href && typeof router?.go === "function") {
+        router.go(href);
       } else if (href) {
         window.location.assign(href);
       }
@@ -37,25 +30,6 @@ function bindCollapsibleLink(section, router) {
       caret?.click();
     }
   });
-}
-
-function sectionHasActiveDescendant(section) {
-  return (
-    section.classList.contains("has-active") ||
-    section.querySelector(".is-active") !== null
-  );
-}
-
-/** After hydration: fold branches that do not contain the current page. */
-export function collapseInactiveSidebarSections() {
-  if (typeof document === "undefined") return;
-  document
-    .querySelectorAll(".VPSidebar .VPSidebarItem.collapsible.is-link")
-    .forEach((section) => {
-      if (sectionHasActiveDescendant(section)) return;
-      if (section.classList.contains("collapsed")) return;
-      section.querySelector(":scope > .item .caret")?.click();
-    });
 }
 
 export function setupSidebarInteraction(router) {

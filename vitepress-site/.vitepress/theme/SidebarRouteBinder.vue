@@ -1,28 +1,18 @@
 <script setup>
-import { onBeforeUnmount, onMounted, nextTick } from "vue";
-import { useRouter } from "vitepress";
-import {
-  collapseInactiveSidebarSections,
-  setupSidebarInteraction,
-} from "./sidebar-interaction.js";
+import { onMounted, watch } from "vue";
+import { useRoute, useRouter } from "vitepress";
+import { setupSidebarInteraction } from "./sidebar-interaction.js";
 
+const route = useRoute();
 const router = useRouter();
-let removeAfterEach;
 
-onMounted(async () => {
-  await nextTick();
-  const run = () => {
-    requestAnimationFrame(() => {
-      collapseInactiveSidebarSections();
-      setupSidebarInteraction(router);
-    });
-  };
+function run() {
+  requestAnimationFrame(() => setupSidebarInteraction(router));
+}
+
+onMounted(() => {
   run();
-  removeAfterEach = router.afterEach(() => run());
-});
-
-onBeforeUnmount(() => {
-  if (typeof removeAfterEach === "function") removeAfterEach();
+  watch(() => route.path, run);
 });
 </script>
 

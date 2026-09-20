@@ -10,7 +10,7 @@ export default defineConfig({
   title: "JoyProxy Help Center",
   description: "JoyProxy product documentation — proxy IP, Web Scraping API, and console guides.",
   cleanUrls: true,
-  lastUpdated: true,
+  lastUpdated: false,
   markdown: {
     html: true,
     linkify: true,
@@ -22,7 +22,7 @@ export default defineConfig({
       lang: "en",
       themeConfig: {
         siteTitle: "JoyProxy Help",
-        logoLink: "/",
+        logoLink: "/help/",
         nav: [
           { text: "JoyProxy", link: "https://www.joyproxy.com/" },
           { text: "Console", link: "https://www.joyproxy.com/admin-overview.html" },
@@ -37,7 +37,7 @@ export default defineConfig({
       link: "/zh/",
       themeConfig: {
         siteTitle: "JoyProxy 帮助中心",
-        logoLink: "/zh/",
+        logoLink: "/help/zh/",
         nav: [
           { text: "JoyProxy", link: "https://www.joyproxy.com/" },
           { text: "控制台", link: "https://www.joyproxy.com/admin-overview.html" },
