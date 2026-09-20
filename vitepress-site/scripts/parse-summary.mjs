@@ -82,6 +82,8 @@ function normalizeSidebarItem(item) {
   }
 
   item.collapsed = true;
+  const firstLeaf = item.items.find((c) => c.link && !c.items?.length);
+  if (firstLeaf?.link) item.link = firstLeaf.link;
   item.items = item.items.map(normalizeSidebarItem);
   return item;
 }
@@ -113,6 +115,7 @@ export function parseSummaryFile(summaryPath, localePrefix = "") {
     }
     const node = parseLine(line);
     if (!node) continue;
+    if (node.level === 0 && node.href === "README.md") continue;
     insertIntoGroup(group, node, localePrefix);
   }
   if (group.items.length) sidebar.push(group);

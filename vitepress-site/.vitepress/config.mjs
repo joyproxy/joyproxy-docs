@@ -22,6 +22,7 @@ export default defineConfig({
       lang: "en",
       themeConfig: {
         siteTitle: "JoyProxy Help",
+        logoLink: "/",
         nav: [
           { text: "JoyProxy", link: "https://www.joyproxy.com/" },
           { text: "Console", link: "https://www.joyproxy.com/admin-overview.html" },
@@ -36,6 +37,7 @@ export default defineConfig({
       link: "/zh/",
       themeConfig: {
         siteTitle: "JoyProxy 帮助中心",
+        logoLink: "/zh/",
         nav: [
           { text: "JoyProxy", link: "https://www.joyproxy.com/" },
           { text: "控制台", link: "https://www.joyproxy.com/admin-overview.html" },
