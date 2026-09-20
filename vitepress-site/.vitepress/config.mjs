@@ -55,5 +55,58 @@ export default defineConfig({
     aside: false,
     outline: false,
     socialLinks: [],
+    search: {
+      provider: "local",
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: "Search",
+                buttonAriaLabel: "Search",
+              },
+              modal: {
+                displayDetails: "Display detailed list",
+                resetButtonTitle: "Reset search",
+                backButtonTitle: "Close search",
+                noResultsText: "No results for",
+                footer: {
+                  selectText: "to select",
+                  selectKeyAriaLabel: "Enter",
+                  navigateText: "to navigate",
+                  navigateUpKeyAriaLabel: "Up arrow",
+                  navigateDownKeyAriaLabel: "Down arrow",
+                  closeText: "to close",
+                  closeKeyAriaLabel: "Escape",
+                },
+              },
+            },
+          },
+          zh: {
+            translations: {
+              button: {
+                buttonText: "搜索",
+                buttonAriaLabel: "搜索",
+              },
+              modal: {
+                displayDetails: "显示详细列表",
+                resetButtonTitle: "重置搜索",
+                backButtonTitle: "关闭搜索",
+                noResultsText: "未找到与以下关键词相关的结果",
+                footer: {
+                  selectText: "选择",
+                  selectKeyAriaLabel: "Enter 键",
+                  navigateText: "切换",
+                  navigateUpKeyAriaLabel: "上方向键",
+                  navigateDownKeyAriaLabel: "下方向键",
+                  closeText: "关闭",
+                  closeKeyAriaLabel: "Esc 键",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
   },
 });
