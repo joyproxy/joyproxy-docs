@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { buildSidebars } from "../scripts/parse-summary.mjs";
+import { faqAccordionPlugin } from "../scripts/faq-accordion.mjs";
 
 const { en: sidebarEn, zh: sidebarZh } = buildSidebars();
 
@@ -15,6 +16,9 @@ export default defineConfig({
   markdown: {
     html: true,
     linkify: true,
+    config(md) {
+      faqAccordionPlugin(md);
+    },
   },
   head: [["link", { rel: "icon", href: "https://www.joyproxy.com/favicon.svg" }]],
   locales: {

@@ -121,6 +121,7 @@
 
 ## FAQ
 
+* [FAQ overview](faq/README.md)
 * [Products and network choice](faq/products.md)
 * [Extracting and using proxies](faq/proxies.md)
 * [Authorization and account security](faq/security.md)
