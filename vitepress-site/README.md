@@ -20,4 +20,4 @@ Sidebars are generated from `help-center/en/SUMMARY.md` and `help-center/zh/SUMM
 
 ## Deploy
 
-Copy `.vitepress/dist` to the server path behind nginx `location /help/`.
+Copy the contents of `.vitepress/dist` to `{frontend}/help/` on the server (nginx `location /help/`).
