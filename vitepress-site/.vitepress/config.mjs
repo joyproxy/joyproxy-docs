@@ -11,6 +11,7 @@ function canonicalForPage(relativePath) {
   if (isZh) rel = rel.replace(/^zh\/?/, "");
   rel = rel.replace(/(^|\/)index\.md$/, "$1");
   rel = rel.replace(/\.md$/, "");
+  rel = rel.replace(/\/+$/, "");
   const suffix = rel ? `${rel}/` : "";
   return `https://www.joyproxy.com/help/${isZh ? "zh/" : ""}${suffix}`;
 }
