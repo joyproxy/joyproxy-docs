@@ -9,10 +9,11 @@ function canonicalForPage(relativePath) {
   rel = rel.replace(/^\.content\//, "").replace(/^\/+/, "");
   const isZh = rel === "zh" || rel.startsWith("zh/");
   if (isZh) rel = rel.replace(/^zh\/?/, "");
+  const isIndex = /(^|\/)index\.md$/.test(rel);
   rel = rel.replace(/(^|\/)index\.md$/, "$1");
   rel = rel.replace(/\.md$/, "");
   rel = rel.replace(/\/+$/, "");
-  const suffix = rel ? `${rel}/` : "";
+  const suffix = rel ? `${rel}${isIndex ? "/" : ""}` : "";
   return `https://www.joyproxy.com/help/${isZh ? "zh/" : ""}${suffix}`;
 }
 
