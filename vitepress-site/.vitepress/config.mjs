@@ -4,6 +4,17 @@ import { faqAccordionPlugin } from "../scripts/faq-accordion.mjs";
 
 const { en: sidebarEn, zh: sidebarZh } = buildSidebars();
 
+function canonicalForPage(relativePath) {
+  let rel = String(relativePath || "").replaceAll("\\", "/");
+  rel = rel.replace(/^\.content\//, "").replace(/^\/+/, "");
+  const isZh = rel === "zh" || rel.startsWith("zh/");
+  if (isZh) rel = rel.replace(/^zh\/?/, "");
+  rel = rel.replace(/(^|\/)index\.md$/, "$1");
+  rel = rel.replace(/\.md$/, "");
+  const suffix = rel ? `${rel}/` : "";
+  return `https://www.joyproxy.com/help/${isZh ? "zh/" : ""}${suffix}`;
+}
+
 export default defineConfig({
   srcDir: ".content",
   outDir: ".vitepress/dist",
@@ -13,6 +24,11 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: false,
   appearance: false,
+  transformHead({ pageData }) {
+    return [
+      ["link", { rel: "canonical", href: canonicalForPage(pageData.relativePath) }],
+    ];
+  },
   markdown: {
     html: true,
     linkify: true,
