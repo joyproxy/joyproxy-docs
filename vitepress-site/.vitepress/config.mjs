@@ -1,20 +1,48 @@
 import { defineConfig } from "vitepress";
+import { existsSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { buildSidebars } from "../scripts/parse-summary.mjs";
 import { faqAccordionPlugin } from "../scripts/faq-accordion.mjs";
 
 const { en: sidebarEn, zh: sidebarZh } = buildSidebars();
+const CONTENT_ROOT = fileURLToPath(new URL("../.content", import.meta.url));
 
-function canonicalForPage(relativePath) {
+function pageInfo(relativePath) {
   let rel = String(relativePath || "").replaceAll("\\", "/");
   rel = rel.replace(/^\.content\//, "").replace(/^\/+/, "");
   const isZh = rel === "zh" || rel.startsWith("zh/");
   if (isZh) rel = rel.replace(/^zh\/?/, "");
   const isIndex = /(^|\/)index\.md$/.test(rel);
-  rel = rel.replace(/(^|\/)index\.md$/, "$1");
-  rel = rel.replace(/\.md$/, "");
-  rel = rel.replace(/\/+$/, "");
-  const suffix = rel ? `${rel}${isIndex ? "/" : ""}` : "";
-  return `https://www.joyproxy.com/help/${isZh ? "zh/" : ""}${suffix}`;
+  const suffix = rel
+    .replace(/(^|\/)index\.md$/, "$1")
+    .replace(/\.md$/, "")
+    .replace(/\/+$/, "");
+  return { rel, isZh, isIndex, suffix };
+}
+
+function helpUrl(suffix, isZh, isIndex) {
+  const pathSuffix = suffix ? `${suffix}${isIndex ? "/" : ""}` : "";
+  return `https://www.joyproxy.com/help/${isZh ? "zh/" : ""}${pathSuffix}`;
+}
+
+function canonicalForPage(relativePath) {
+  const { isZh, isIndex, suffix } = pageInfo(relativePath);
+  return helpUrl(suffix, isZh, isIndex);
+}
+
+function hreflangForPage(relativePath) {
+  const { rel, isZh, isIndex, suffix } = pageInfo(relativePath);
+  const sourceRel = isZh ? rel : `zh/${rel}`;
+  if (!existsSync(path.join(CONTENT_ROOT, sourceRel))) return [];
+
+  const en = helpUrl(suffix, false, isIndex);
+  const zh = helpUrl(suffix, true, isIndex);
+  return [
+    ["link", { rel: "alternate", hreflang: "en", href: en }],
+    ["link", { rel: "alternate", hreflang: "zh-Hans", href: zh }],
+    ["link", { rel: "alternate", hreflang: "x-default", href: en }],
+  ];
 }
 
 export default defineConfig({
@@ -29,6 +57,7 @@ export default defineConfig({
   transformHead({ pageData }) {
     return [
       ["link", { rel: "canonical", href: canonicalForPage(pageData.relativePath) }],
+      ...hreflangForPage(pageData.relativePath),
     ];
   },
   markdown: {
