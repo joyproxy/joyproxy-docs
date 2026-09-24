@@ -1,11 +1,55 @@
 ---
 title: "用 USDT（TRC20）為 JoyProxy 餘額儲值：分步指南"
+description: "用 TRON USDT 付款，1 USDT = 1 美元，儲值免手續費。取得專屬位址、從 TronLink 轉帳，數分鐘內入帳認領。"
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/usdt-trc20-recharge-guide_tw.html
 ---
 
-用 TRON USDT 付款，1 USDT = 1 美元，儲值免手續費。取得專屬位址、從 TronLink 轉帳，數分鐘內入帳認領。
+# 用 USDT（TRC20）為 JoyProxy 餘額儲值：分步指南
 
-> **Note:** Full article body is still on the legacy HTML site. This Markdown entry is the catalog stub for the new `/blog/` channel.
->
-> [Read on joyproxy.com (legacy HTML)](https://www.joyproxy.com/blog/usdt-trc20-recharge-guide_tw.html)
+為了滿足全球開發者與出海運營團隊靈活便捷的支付需求，JoyProxy 現已支援 **TRON 波場官方 USDT（TRC20）** 作為帳戶餘額的儲值方式。鏈上結算極速確認，支援全球各類波場錢包與交易所直接轉帳，且 JoyProxy **免收任何儲值手續費** 。本文將為您梳理從產生專屬位址到鏈上自動入帳的完整操作流程。
+
+## 核心規則速覽
+
+**1 USDT = 1 美元。** 最低儲值金額為 **1 USDT** ，在收銀台（Payment Hub）選擇整數儲值級距即可。若轉帳時包含小數位，系統同樣會依 1:1 比例精確入帳；加密貨幣儲值享有與其他法幣管道**完全相同的儲值贈送福利** 。請務必注意：平台僅接收波場官方 TRC20 網絡的 USDT。
+
+## 儲值前準備事項
+
+  * 一個存有 TRC20 格式 USDT 的加密錢包（推薦使用 **TronLink** 錢包，或從支援 TRON 提領的主流交易所轉出）；
+  * 錢包內備有少量原生 **TRX** 作為鏈上轉帳燃料費（此為波場網絡收取的礦工費，並非 JoyProxy 收取）；
+  * 保持已登入您的 JoyProxy 帳戶。
+
+
+
+## 分步儲值流程
+
+  1. **打開儲值中心（Payment Hub）：** 支付方式選擇 **USDT (TRC20)** 。首次選擇時，系統會為您即時衍生一個**屬於您個人的長期專屬收款位址** ；
+  2. **複製位址或掃碼轉帳：** 打開 TronLink 或交易所提幣頁面，網絡務必選擇 **TRON (TRC20)** ，向該專屬位址轉入官方 USDT；
+  3. **保持收銀台開啟：** 完成轉帳約 8 秒後，收銀台上的「我已支付」按鈕將變為可用狀態，點擊後系統將在約 **5 分鐘** 內持續輪詢鏈上確認，並在區塊確認後自動完成餘額入帳；
+  4. **不慎關閉了視窗？** 無需擔心，鏈上資產不會遺失。直接進入主控台的**「My Account（我的帳戶）」** 頁面，在 USDT 認領卡片中點擊認領即可同步入帳。
+
+
+
+## 安全警示：切勿走錯網絡
+
+您的專屬收款位址**僅支援 TRON (TRC20) 官方 USDT** 。在交易所提領或錢包轉帳時，請務必確認網絡標籤顯示為 **TRON / TRC20** 。
+
+**嚴禁** 透過以太坊（ERC20）、幣安智慧鏈（BEP20）等其他公鏈向該位址轉帳，亦請勿轉入任何未經認證的仿冒代幣。轉錯網絡或代幣將導致鏈上資產無法被系統識別入帳，且通常在鏈上無法追回。
+
+## 費用與到帳時效
+
+  * **平台手續費：** JoyProxy 完全免費，無任何附加儲值手續費；
+  * **到帳時效：** 波場網絡通常在 1~2 分鐘內完成區塊確認，收銀台自動監測視窗約為 5 分鐘；
+  * **儲值範圍：** 最低 1 USDT 起儲，餘額長期有效。
+
+
+
+## 常見問題排查
+
+  * **轉帳成功但未顯示餘額？** 請先在波場區塊鏈瀏覽器（Tronscan）確認該筆交易是否已經確認成功；確認無誤後，前往主控台「My Account」頁面點擊手動認領；
+  * **選錯了公鏈轉出？** 受限於跨鏈機制，轉至非 TRON 鏈的代幣無法被系統自動識別，提領前請務必仔細檢查提領網絡；
+  * **儲值完成後如何開通代理？** 餘額入帳後，您可直接在主控台購買任何方案，無論是按量計費的動態住宅，或是獨享靜態住宅與自訂 IP。
+
+
+
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)

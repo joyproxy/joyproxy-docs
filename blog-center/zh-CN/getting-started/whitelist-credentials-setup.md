@@ -1,11 +1,54 @@
 ---
 title: "JoyProxy 白名单、认证账密与首个代理端点提取"
+description: "在流量正常转发前，需要先明确哪些机器允许调用接口，以及客户端如何安全认证。本文为你梳理完整上手流程。"
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/whitelist-credentials-setup_cn.html
 ---
 
-在流量正常转发前，需要先明确哪些机器允许调用接口，以及客户端如何安全认证。本文为你梳理完整上手流程。
+# JoyProxy 白名单、认证账密与首个代理端点提取
 
-> **Note:** Full article body is still on the legacy HTML site. This Markdown entry is the catalog stub for the new `/blog/` channel.
->
-> [Read on joyproxy.com (legacy HTML)](https://www.joyproxy.com/blog/whitelist-credentials-setup_cn.html)
+很多刚接入 JoyProxy 的开发者在第一次提取代理时，常会遇到连接超时或认证失败的问题。这通常是因为混淆了两个维度的权限控制：**谁有权限发起代理提取请求** （IP 白名单与账户安全），以及**业务客户端如何向代理节点鉴权** （代理用户名密码或提取 Token）。只要理顺这两者的配合关系，几分钟即可顺利调通网络。
+
+## 第一步：注册账户并完成邮箱验证
+
+在 [register.html](https://www.joyproxy.com/register.html) 创建账户并完成邮箱激活。所有新完成验证的用户，控制台均会自动发放 **$5 美元新手体验赠金** （无需绑定信用卡）。这笔赠金足够你开通小额流量包或测试静态 IP，验证与自己业务栈的兼容性。
+
+## 第二步：在控制台添加客户端公网 IP 白名单
+
+登录控制台后，进入**「白名单与用户」** 模块。在这里需要添加的是**发起 API 请求或生成代理端点机器的公网出口 IP** ，而不是局域网内网地址（如 192.168.x.x）：
+
+  * 如果你的爬虫或自动化脚本部署在云服务器（AWS、阿里云、腾讯云等），请添加该云主机的公网 EIP；
+  * 如果是在本地开发机或指纹浏览器上调试，可以通过 `curl ifconfig.me` 查询当前的本地宽带公网 IP 并添加；
+  * 每个账户最多支持配置 10 条白名单记录，满足多开发节点或多云集群协同需求。
+
+
+
+## 第三步：选择适合业务的客户端认证模式
+
+JoyProxy 支持两种主流认证路径：
+
+  * **代理账密认证（Username + Password）：** 在控制台生成专用的代理子账户与密码。客户端（Python、Node.js、指纹浏览器等）直接在请求中携带账密进行身份校验，无需依赖调用端 IP 变动。
+  * **API 提取模式（API Token）：** 适用于按需自动化提取动态 IP 列表的脚本。通过携带个人 API Token 访问 `/extract` 接口，实时获取符合国家、城市、协议要求的最新代理节点。
+
+
+
+请注意妥善保管您的 Token 与账密信息，建议注入系统环境变量中，切勿将明文提交至 GitHub 等公共代码仓库。
+
+## 第四步：提取代理端点
+
+打开控制台的**「端点生成器」** ，依次选择所需的产品类型（动态住宅、静态独享或自定义 IP）、协议（HTTP / HTTPS / SOCKS5）以及目标地理位置（国家、省份、城市）。点击生成后，即可获得可直接复制的端点字符串。若需要程序化对接，也可以通过 OpenAPI 中心提供的接口标准进行批量提取。
+
+## 第五步：单行命令快速验证
+
+在终端中执行以下测试命令，检验代理出口是否符合预期：
+    
+    
+    curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
+
+如果返回的 IP 与您指定的国家或地区一致，即表示接入成功！若提示 407 错误，请优先排查账密是否正确以及白名单是否已生效。
+
+**安全维护建议**
+
+白名单与凭据生效迅速。当团队人员变动或测试服务器销毁后，建议及时在控制台移除无用 IP；若 CI/CD 日志不慎泄露了 Token，请第一时间在后台重新生成。
+
+**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)

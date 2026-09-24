@@ -1,11 +1,54 @@
 ---
 title: "JoyProxy 白名單、認證帳密與首個代理端點擷取"
+description: "在流量正常轉發前，需要先明確哪些機器允許呼叫介面，以及客戶端如何安全認證。本文為您梳理完整上手流程。"
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/whitelist-credentials-setup_tw.html
 ---
 
-在流量正常轉發前，需要先明確哪些機器允許呼叫介面，以及客戶端如何安全認證。本文為您梳理完整上手流程。
+# JoyProxy 白名單、認證帳密與首個代理端點擷取
 
-> **Note:** Full article body is still on the legacy HTML site. This Markdown entry is the catalog stub for the new `/blog/` channel.
->
-> [Read on joyproxy.com (legacy HTML)](https://www.joyproxy.com/blog/whitelist-credentials-setup_tw.html)
+許多剛接入 JoyProxy 的開發者在第一次擷取代理時，常會遇到連線逾時或認證失敗的問題。這通常是因為混淆了兩個層面的權限控制：**誰有權限發起代理擷取請求** （IP 白名單與帳戶安全），以及**業務客戶端如何向代理節點鑑權** （代理使用者名稱密碼或擷取 Token）。只要理順這兩者的配合關係，數分鐘即可順利打通網絡。
+
+## 第一步：註冊帳戶並完成電子郵件驗證
+
+在 [register.html](https://www.joyproxy.com/register.html) 建立帳戶並完成信箱啟用。所有新完成驗證的用戶，主控台均會自動發放 **$5 美元新手體驗金** （無需綁定信用卡）。這筆額度足夠您開通小額流量包或測試靜態 IP，驗證與自身業務環境的相容性。
+
+## 第二步：在主控台加入客戶端公網 IP 白名單
+
+登入主控台後，進入**「白名單與用戶」** 模組。在這裡需要加入的是**發起 API 請求或產生代理端點機器的公網出口 IP** ，而非區域網絡內網位址（如 192.168.x.x）：
+
+  * 若您的爬蟲或自動化腳本部署在雲端伺服器（AWS、GCP 等），請加入該主機的公網 EIP；
+  * 若是在本機開發環境或防關聯瀏覽器上除錯，可透過 `curl ifconfig.me` 查詢當前寬頻公網 IP 並填入；
+  * 每個帳戶最多支援配置 10 條白名單紀錄，滿足多節點或跨雲叢集協同需求。
+
+
+
+## 第三步：選擇適合業務的客戶端認證模式
+
+JoyProxy 支援兩種主流認證路徑：
+
+  * **代理帳密認證（Username + Password）：** 在主控台產生專屬的代理子帳號與密碼。客戶端（Python、Node.js、指紋瀏覽器等）直接在連線中攜帶帳密進行驗證，無需依賴呼叫端 IP 變動。
+  * **API 擷取模式（API Token）：** 適用於按需自動化擷取動態 IP 清單的腳本。透過攜帶個人 API Token 造訪 `/extract` 介面，即時取得符合國家、城市、協定要求的最新節點。
+
+
+
+請妥善保管您的 Token 與帳密資訊，建議注入系統環境變數中，切勿將明文提交至 GitHub 等公共程式碼庫。
+
+## 第四步：擷取代理端點
+
+打開主控台的**「端點產生器」** ，依序選擇所需的產品類型（動態住宅、靜態獨享或自訂 IP）、通訊協定（HTTP / HTTPS / SOCKS5）以及目標地理位置（國家、省份、城市）。點擊產生後，即可複製可直接使用的端點字串。若需程式化對接，亦可參閱 OpenAPI 中心提供的介面標準進行批次提取。
+
+## 第五步：單行指令快速驗證
+
+在終端機中執行以下測試指令，檢驗代理出口是否符合預期：
+    
+    
+    curl -x http://USER:PASS@HOST:PORT https://api.ipify.org
+
+若回傳的 IP 與您指定的國家或地區相符，即代表串接成功！若出現 407 錯誤，請優先檢查帳密是否正確以及白名單是否已生效。
+
+**安全維護建議**
+
+白名單與憑證生效迅速。當團隊人員異動或測試伺服器銷毀後，建議即時在主控台移除無用 IP；若 CI/CD 紀錄不慎洩漏了 Token，請第一時間在後台重新產生。
+
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)

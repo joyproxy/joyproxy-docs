@@ -1,11 +1,55 @@
 ---
 title: "用 USDT（TRC20）为 JoyProxy 余额充值：分步指南"
+description: "用 TRON USDT 支付，1 USDT = 1 美元，充值免手续费。获取专属地址、从 TronLink 转账，几分钟内到账认领。"
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/usdt-trc20-recharge-guide_cn.html
 ---
 
-用 TRON USDT 支付，1 USDT = 1 美元，充值免手续费。获取专属地址、从 TronLink 转账，几分钟内到账认领。
+# 用 USDT（TRC20）为 JoyProxy 余额充值：分步指南
 
-> **Note:** Full article body is still on the legacy HTML site. This Markdown entry is the catalog stub for the new `/blog/` channel.
->
-> [Read on joyproxy.com (legacy HTML)](https://www.joyproxy.com/blog/usdt-trc20-recharge-guide_cn.html)
+为了满足全球开发者和出海运营团队灵活便捷的支付需求，JoyProxy 现已支持 **TRON 波场官方 USDT（TRC20）** 作为账户余额的充值方式。链上结算极速确认，支持全球各类波场钱包与交易所直接转账，且 JoyProxy **免收任何充值通道手续费** 。本文将为你梳理从生成专属地址到链上自动入账的完整操作指引。
+
+## 核心规则速览
+
+**1 USDT = 1 美元。** 最低充值金额为 **1 USDT** ，在收银台（Payment Hub）选择整数充值档位即可。如果您转账时包含小数位，系统同样会按 1:1 比例精确入账；数字货币充值享受与其他法币渠道**完全相同的充值赠送福利** 。请务必注意：平台仅接收波场官方 TRC20 网络的 USDT。
+
+## 充值前准备事项
+
+  * 一个存有 TRC20 格式 USDT 的加密钱包（推荐使用 **TronLink** 波宝钱包，或从支持 TRON 提现的主流交易所转出）；
+  * 钱包内备有少许原生 **TRX** 作为链上转账燃气费（这是波场网络收取的矿工费，并非 JoyProxy 收取）；
+  * 保持已登录你的 JoyProxy 账户。
+
+
+
+## 分步充值流程
+
+  1. **打开充值中心（Payment Hub）：** 支付方式选择 **USDT (TRC20)** 。首次选择时，系统会为您即时派生一个**属于您个人的长期专属收款地址** ；
+  2. **复制地址或扫码转账：** 打开 TronLink 或交易所提币页面，网络务必选择 **TRON (TRC20)** ，向该专属地址转入官方 USDT；
+  3. **保持收银台开启：** 完成转账约 8 秒后，收银台上的「我已支付」按钮将变为可用状态，点击后系统将在约 **5 分钟** 内持续轮询链上确认，并在区块确认后自动完成余额入账；
+  4. **不慎关闭了窗口？** 无需担心，链上资产不会丢失。直接进入控制台的**「My Account（我的账户）」** 页面，在 USDT 认领卡片中点击认领即可同步入账。
+
+
+
+## 安全警告：切勿走错网络
+
+您的专属充值地址**仅支持 TRON (TRC20) 官方 USDT** 。在交易所提现或钱包转账时，请务必确认网络标签显示为 **TRON / TRC20** 。
+
+**严禁** 通过以太坊（ERC20）、币安智能链（BEP20）等其他公链向该地址转账，也请勿转入任何未经验证的山寨虚假代币。转错网络或代币将导致链上资产无法被系统识别入账，且通常在链上是无法找回的。
+
+## 费用与到账时效
+
+  * **平台手续费：** JoyProxy 完全免费，无任何附加充值扣点；
+  * **到账时效：** 波场网络通常在 1~2 分钟内完成区块确认，收银台自动监测窗口约为 5 分钟；
+  * **充值范围：** 最低 1 USDT 起充，余额长期有效。
+
+
+
+## 常见疑问排查
+
+  * **转账成功但未显示余额？** 请先在波场区块链浏览器（Tronscan）确认该笔交易是否已经成功确认；确认成功后，前往控制台「My Account」页面点击手动认领；
+  * **选错了公链转出？** 由于跨链机制限制，转到非 TRON 链的代币无法自动识别，提现前请务必仔细复核提币网络；
+  * **充值完成后如何开通代理？** 余额到账后，你可以直接在控制台购买任何套餐，无论是按量计费的动态住宅，还是独享静态住宅与自定义 IP。
+
+
+
+**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)

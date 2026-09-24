@@ -1,11 +1,29 @@
 ---
 title: "407 與 403：代理網絡實際會回傳的 HTTP 狀態碼"
+description: "分清 407 代理鑑權失敗與 403 目標站風控攔截，以及 401、429、502、504 的真實發信方。請勿在密碼錯誤時盲目加購流量。"
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/proxy-http-status-codes_tw.html
 ---
 
-分清 407 代理鑑權失敗與 403 目標站風控攔截，以及 401、429、502、504 的真實發信方。請勿在密碼錯誤時盲目加購流量。
+# 407 與 403：代理網絡實際會回傳的 HTTP 狀態碼
 
-> **Note:** Full article body is still on the legacy HTML site. This Markdown entry is the catalog stub for the new `/blog/` channel.
->
-> [Read on joyproxy.com (legacy HTML)](https://www.joyproxy.com/blog/proxy-http-status-codes_tw.html)
+**實戰排障指南：** 這是 JoyProxy 技術支援團隊根據每日客服工單高頻問題整理的排障手冊。在改動業務程式碼或加購方案前，請先搞清這個最關鍵的問題：**這個狀態碼究竟是由 JoyProxy 代理節點回傳的，還是目標網站伺服器回傳的？**
+
+透過代理發起的 HTTP 請求是一個兩段式的過程：您的客戶端首先與**代理中繼節點（Proxy Hop）** 建立握手，只有當握手鑑權通過後，代理才會代表您向**目標網站伺服器** 轉發資料。這兩端都可能向您拋出 4xx 或 5xx 狀態碼。若混為一談，就會發生「明明是密碼輸入錯誤，卻以為是流量耗盡盲目續費」或「明明是目標站 WAF 攔截，卻拼命聯絡代理商查線路」的誤判。
+
+## 高頻狀態碼速查與第一排查路徑
+
+HTTP 狀態碼| 真正發信方| 底層真實含義| 第一排查動作  
+---|---|---|---  
+**407** | 代理中繼節點 | **Proxy Authentication Required（代理認證失敗）：** 帳密缺失、輸入錯誤或 CONNECT 通道未附帶 `Proxy-Authorization` 標頭。 | 檢查主控台帳密或更新出口白名單。**絕對無需加購流量包！**  
+**401** | 目標網站 | 目標站點自身要求登入驗證（如 Basic Auth 或未攜帶有效的業務 Token）。 | 檢查爬蟲的 Cookie、業務 API Key 或登入態。**代理鏈路已經完全通暢。**  
+**403** | 目標站 / WAF | **Forbidden（拒絕存取）：** 目標站風控識別到機房網段、請求頻率過高或請求標頭缺失。代理轉發已成功，是目標站拒收。 | 先核實當前出口 IP 是否為純淨住宅 ASN，調低並發或補充真實瀏覽器請求標頭。  
+**429** | 雙方皆有可能 | **Too Many Requests（速率超限）：** 代理帳戶 QPS 達到上限，或是目標站觸發了防刷限流。 | 調低擷取並發。若切換任意 IP 均立刻出現 429，說明是代理帳戶限制；若僅某些 URL 出現 429，是目標站限流。  
+**502** | 代理 / 鏈路 | **Bad Gateway：** 代理中繼節點在嘗試與目標站建立連線時遭遇失敗或目標站無有效回應。 | 發起自動重試；確認當前擷取的端點是否存活；用輕量頁面測試該鏈路。  
+**504** | 代理中繼節點 | **Gateway Timeout：** 向目標站發起 TCP 握手或等待首包逾時（通常由於目標站擁擠或跨國延遲過高）。 | 放寬客戶端逾時閾值（如從 5s 調整至 15s），或擷取新的住宅端點避開慢節點。  
+  
+## 隱蔽的「假性 200 OK」陷阱
+
+在反爬攻防中，最致命的失敗往往不是報錯，而是 HTTP 200：目標站點回傳了 200 狀態碼，但頁面內文其實是一張 **Cloudflare Turnstile 驗證盾、驗證碼滑塊，或者一個位元組大小為空的假樣板** 。爬蟲程式碼若不檢查頁面真實 DOM 元素或 JSON 結構，就會誤以為擷取成功，將無效資料注入下游資料庫。在編寫解析器時，務必對關鍵欄位進行有效性斷言。
+
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)

@@ -1,11 +1,45 @@
 ---
 title: "动态 vs 静态代理：技术负责人的架构决策指南"
+description: "代理选型的本质是网络身份的生命周期管理。平台看重身份稳定性，爬虫追求 IP 多样性，本文为你提供清晰决策矩阵。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/rotating-vs-dedicated-proxy-guide_cn.html
 ---
 
-代理选型的本质是网络身份的生命周期管理。平台看重身份稳定性，爬虫追求 IP 多样性，本文为你提供清晰决策矩阵。
+# 动态 vs 静态代理：技术负责人的架构决策指南
 
-> **Note:** Full article body is still on the legacy HTML site. This Markdown entry is the catalog stub for the new `/blog/` channel.
->
-> [Read on joyproxy.com (legacy HTML)](https://www.joyproxy.com/blog/rotating-vs-dedicated-proxy-guide_cn.html)
+在讨论代理网络选型时，工程师经常在「动态轮换（Rotating）」与「独享固定（Dedicated/Static）」之间犹豫不决。从网络协议与业务风控的角度看，这本质上是一个关于**「身份生命周期（Identity Lifetime）」** 的命题：轮换代理频繁重置出口身份，独享代理长期凝固出口身份。目标平台对稳定产生信任，而数据爬虫则依赖多样性规避反爬。
+
+## 什么时候必须使用动态轮换？
+
+凡是**业务行为不应具备持续身份特征** 的场景，均属于动态轮换的天然领域：
+
+  * **高并发公开网页抓取：** 每个请求相互独立，将负载分散在海量住宅节点上，可以更好地瓦解单 IP 频次限制（Rate Limiting）；
+  * **跨品类与价格监控：** 面向成千上万个商品详情页，不需要保留客户端 Cookie，追求单次抓取的成功率与低成本；
+  * **全链路压力测试：** 模拟成千上万个真实的全球独立访客，避免被 CDN 防护规则误判为单一来源的 DDoS 攻击。
+
+
+
+## 什么时候必须保持静态固定？
+
+凡是**目标平台具备记忆机制、要求会话高度一致** 的场景，动态轮换都是致命的：
+
+  * **电商卖家后台运营：** 亚马逊、eBay、Shopee 会对每个商户建立长期的网络环境画像，IP 或地理位置的突变会直接触发安全审核；
+  * **广告投放与管理后台：** Meta Ads、Google Ads 管理中心对突发的国家或 ASN 变更极为敏感；
+  * **企业合作伙伴 API：** 多数 B2B 服务平台要求开发者提交出口 IP 静态白名单以进行安全收口。
+
+
+
+## 架构决策对照矩阵
+
+业务负载类型| 推荐方案| 选型理由  
+---|---|---  
+大规模公开网页抓取| 动态住宅代理| 分散单点风险，绕过反爬限频  
+跨境电商多店铺运营| 每个店铺固定独立静态 IP| 构建稳固的商业信任与环境一致性  
+带登录态的应用区域回归 QA| 自定义 IP（锁定指定区域）| 可控的地理归属，必要时按分钟受控轮换  
+全球广告素材展示核验| 动态住宅（带精准城市定位）| 覆盖数百个细分地区，无账号状态负担  
+  
+## 混合架构才是企业常态
+
+在成熟的数字化出海或大数据企业中，单一模式很少见。常见的架构实践是在一个 JoyProxy 账户下双轨并行：**使用动态流量池作为外部数据采集引擎，使用专属静态端口为内部运营人员提供洁净的海外环境。**
+
+**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)

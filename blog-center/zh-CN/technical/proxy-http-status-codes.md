@@ -1,11 +1,29 @@
 ---
 title: "407 与 403：代理网络实际会返回的 HTTP 状态码"
+description: "分清 407 代理鉴权失败与 403 目标站风控拦截，以及 401、429、502、504 的真实发信方。不要在密码错误时盲目加购流量。"
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/proxy-http-status-codes_cn.html
 ---
 
-分清 407 代理鉴权失败与 403 目标站风控拦截，以及 401、429、502、504 的真实发信方。不要在密码错误时盲目加购流量。
+# 407 与 403：代理网络实际会返回的 HTTP 状态码
 
-> **Note:** Full article body is still on the legacy HTML site. This Markdown entry is the catalog stub for the new `/blog/` channel.
->
-> [Read on joyproxy.com (legacy HTML)](https://www.joyproxy.com/blog/proxy-http-status-codes_cn.html)
+**实战排障手记：** 这是 JoyProxy 技术支持团队根据每天客服工单高频问题整理的排障手册。在改动业务代码或加购套餐前，请先搞清这个最关键的问题：**这个状态码到底是由 JoyProxy 代理节点返回的，还是目标网站服务器返回的？**
+
+通过代理发起的 HTTP 请求是一个两段式的过程：你的客户端首先与**代理跳板机（Proxy Hop）** 建立握手，只有当握手鉴权通过后，代理才会代表你向**目标网站服务器** 转发数据。这两端都可能向你抛出 4xx 或 5xx 状态码。如果混为一谈，就会发生「明明是密码输错了，却以为是流量用完盲目续费」或者「明明是目标站 WAF 拦截，却拼命找代理商查线路」的错误。
+
+## 高频状态码速查与第一排查路径
+
+HTTP 状态码| 真正发信方| 底层真实含义| 第一排查动作  
+---|---|---|---  
+**407** | 代理跳板机 | **Proxy Authentication Required（代理认证失败）：** 账密缺失、输错密码或 CONNECT 隧道未附带 `Proxy-Authorization` 标头。 | 检查控制台账密或刷新出口白名单。**绝对不要加购流量包！**  
+**401** | 目标网站 | 目标站点自身要求登录认证（如 Basic Auth 或未携带有效的业务 Token）。 | 检查爬虫的 Cookie、业务 API Key 或登录态。**代理链路已经完全通畅。**  
+**403** | 目标站 / WAF | **Forbidden（拒绝访问）：** 目标站风控识别到机房网段、请求频率过高或请求头缺失。代理转发已成功，是目标站拒收。 | 先核实当前出口 IP 是否为纯净住宅 ASN，调整并发或补充真实浏览器请求标头。  
+**429** | 双方皆有可能 | **Too Many Requests（速率超限）：** 代理账户 QPS 达到上限，或是目标站触发了防刷限流。 | 降低爬取并发。如果切换任意 IP 均立刻报 429，说明是代理账户限制；若仅某些 URL 报 429，是目标站限流。  
+**502** | 代理 / 链路 | **Bad Gateway：** 代理跳板节点在尝试与目标站建立连接时遭遇失败或目标站无有效响应。 | 发起自动重试；确认当前提取的端点是否存活；用小页面测试该链路。  
+**504** | 代理跳板机 | **Gateway Timeout：** 向目标站发起 TCP 握手或等待首包超时（通常由于目标站拥堵或代理网络跨国延迟）。 | 放宽客户端超时阈值（如从 5s 提至 15s），或提取新的住宅端点避开慢节点。  
+  
+## 致命的「假性 200 OK」陷阱
+
+在反爬攻防中，最隐蔽的失败往往不是报错，而是 HTTP 200：目标站点返回了 200 状态码，但页面正文其实是一张 **Cloudflare Turnstile 质询盾、验证码滑块，或者一个字节大小为空的假模板** 。爬虫代码如果不检测页面真实 DOM 元素或 JSON 结构，就会误以为抓取成功，将脏数据注入下游数据库。在编写解析器时，务必对关键数据字段进行非空断言。
+
+**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)

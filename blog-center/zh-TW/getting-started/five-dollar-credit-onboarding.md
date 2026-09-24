@@ -1,11 +1,46 @@
 ---
 title: "善用 JoyProxy 的 $5 新用戶體驗金，避免盲目消耗"
+description: "五美元測試額度足夠驗證網絡線路與介面品質，但不適合盲目跑生產爬蟲。這裡為您提供一份清晰的第一週試用規劃。"
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/five-dollar-credit-onboarding_tw.html
 ---
 
-五美元測試額度足夠驗證網絡線路與介面品質，但不適合盲目跑生產爬蟲。這裡為您提供一份清晰的第一週試用規劃。
+# 善用 JoyProxy 的 $5 新用戶體驗金，避免盲目消耗
 
-> **Note:** Full article body is still on the legacy HTML site. This Markdown entry is the catalog stub for the new `/blog/` channel.
->
-> [Read on joyproxy.com (legacy HTML)](https://www.joyproxy.com/blog/five-dollar-credit-onboarding_tw.html)
+為了讓每位新開發者在正式採購大額流量或訂閱長期獨享 IP 前，能夠零門檻驗證網絡品質與技術相容性，JoyProxy 為所有完成信箱驗證的新用戶提供 **$5 美元免費體驗金** 。無需綁定信用卡，註冊即可入帳。
+
+## 體驗金取得三步驟
+
+  1. 造訪 [註冊頁面](https://www.joyproxy.com/register.html)，透過電子郵件或 Google/GitHub 快捷建立帳戶；
+  2. 查收啟用信件並點擊驗證連結——體驗金將在信箱驗證完成後自動存入；
+  3. 登入主控台，頂部資產概覽即可看到 $5 美元推廣體驗金餘額。
+
+
+
+## $5 美元能用來做什麼？
+
+在基礎的 **動態住宅代理 1 GB 入門方案** （官方基礎級距），5 美元足夠全額兌換 **1 GB 真實的家庭住宅動態流量** （折抵後剩餘約 $1.50 可續用）。
+
+1 GB 流量看似不大，但若用在核心驗證上，足以支撐非常充分的測試工作：
+
+  * 若是輕量級 HTML 網頁擷取，1 GB 足夠發起 **數千次甚至上萬次** 真實請求；
+  * 若是包含圖片與複雜 JS 的電商商品頁，也能完整解析 **數百個關鍵頁面** ；
+  * 可用於在各類防關聯瀏覽器（AdsPower、Multilogin 等）中測試時區與 WebRTC 的匹配表現。
+
+
+
+## 新手第一週測試路線推薦
+
+  * **第一天（打通線路）：** 配置白名單並產生代理帳密，在終端機用單條 `curl` 驗證連線品質與地理歸屬；
+  * **第二天（整合框架）：** 將代理串接至您的 Scrapy、Puppeteer 或自動化腳本，小批次抓取 50~100 個典型範本頁，計算單個頁面的真實流量耗損；
+  * **第三天（評估方案）：** 結合實測的平均頁面體積與每日預期擷取量，在 [定價中心](https://www.joyproxy.com/pricing.html) 選擇最匹配的方案級距，避免前期過度採購。
+
+
+
+## 什麼時候不要用體驗金做動態測試？
+
+若您的首要任務是**跨境電商店鋪登入或社群帳號營運** ，那麼動態輪換 IP 從架構上就不適用。此類場景需要長期的 IP 身份一致性，應直接在主控台選購 [獨享靜態住宅 IP](https://www.joyproxy.com/products/proxy-long-term.html)。$5 美元體驗金同樣可折抵靜態 IP 的部分費用，協助您以極低成本完成首個店鋪的環境部署。
+
+新用戶完成信箱驗證即可獲贈 $5 體驗額度，無需預綁信用卡。
+
+[立即註冊領取](https://www.joyproxy.com/register.html)

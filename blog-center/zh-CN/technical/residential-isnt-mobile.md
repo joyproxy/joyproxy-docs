@@ -1,11 +1,40 @@
 ---
 title: "住宅不是移动：目标系统要的是电信运营商 ASN"
+description: "家庭宽带和 4G/5G 处于完全不同的 ASN 体系。深入探讨何时必须使用移动动态代理，以及简单修改手机 UA 为何骗不过现代风控。"
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/residential-isnt-mobile_cn.html
 ---
 
-家庭宽带和 4G/5G 处于完全不同的 ASN 体系。深入探讨何时必须使用移动动态代理，以及简单修改手机 UA 为何骗不过现代风控。
+# 住宅不是移动：目标系统要的是电信运营商 ASN
 
-> **Note:** Full article body is still on the legacy HTML site. This Markdown entry is the catalog stub for the new `/blog/` channel.
->
-> [Read on joyproxy.com (legacy HTML)](https://www.joyproxy.com/blog/residential-isnt-mobile_cn.html)
+**技术团队备忘：** JoyProxy 同时提供住宅代理与移动代理两条成熟产品线。本文旨在帮助那些因为在 PC 端抓取误买了高价移动流量、或在做 App 广告核查时错用了住宅宽带导致结果失真的用户理顺技术差异。
+
+许多用户的采购思维往往是单一维度的：以为「移动代理就是更高级、更不容易被封的住宅代理」，只要多付每 GB 的差价，目标网站就一定会一路绿灯。**这种认知是完全错误的。**
+
+哪怕两个 IP 都位于洛杉矶，**住宅代理呈现给世界的是家庭光纤宽带（Comcast、AT &T; Broadband、Spectrum 等 ISP ASN）；而移动代理呈现的则是蜂窝无线运营商网络（Verizon Wireless、T-Mobile、Vodafone 等移动 ASN）。**在爬虫代码里把 User-Agent 字符串改写成 `iPhone / Android`，根本瞒不过对方风控——服务器只要通过 BGP 与 IP 数据库查询底层 ASN，就能一眼看穿你是一台插着家用宽带网线的 PC。
+
+## 三大网络类型属性矩阵对比
+
+对比维度| 住宅代理（Residential）| 移动代理（Mobile 4G/5G）  
+---|---|---  
+网络出口类型| 家庭有线光纤/宽带 ISP| 真实基站 4G/5G 移动蜂窝网络  
+产品形态| 动态轮换、独享静态、自定义端口| **仅限动态轮换流量包**  
+计费梯队| 约 $1.80 ~ $3.50 / GB（阶梯递减）| 约 $2.00 ~ $4.00 / GB（独立阶梯）  
+登录态支持| 支持独享静态绑定长期会话| 不适合长期登录（节点必须周期性换基站）  
+  
+## 什么时候必须使用移动代理？
+
+  * **App 端内原生广告核验：** 移动广告平台（如 AdMob、Unity Ads、TikTok Ads）对流量环境审核极其严格。如果广告主要求验证投放给北美移动端用户的开屏广告，用家用宽带去请求会直接导致归因被拒；
+  * **移动端专属业务与运营商计费验证：** 某些海外应用或流媒体平台包含短信计费网关（Direct Carrier Billing）或移动端专属优惠，严格限制非蜂窝网络参与；
+  * **App 注册与移动端风控绕过：** 针对强制检测 SIM 卡通信信号与基站归属的高严苛移动 App。
+
+
+
+## 什么时候住宅代理才是更具性价比的正确答案？
+
+  * **公开 Web 爬虫与电商数据挖掘：** 抓取亚马逊、Google 搜索结果、旅游平台机票价格时，全球 95% 以上的真实自然访客本就是通过电脑有线或 Wi-Fi 访问，住宅代理是最自然且成本更低的标准解法；
+  * **电商卖家后台与社媒主账号运营：** 移动代理天生处于动态轮换中，无法长期固定单 IP；而账号资产运营需要的是**长期固定的静态独享住宅 IP** 。
+
+
+
+**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)
