@@ -10,8 +10,8 @@ This guide walks you through purchasing Static Proxies, setting authentication, 
 ## Step 1: Purchase a static dedicated line
 
 1. Log in to the <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy console</a> and open **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase Proxies</a>** in the left menu.
-2. Choose a network: **Residential** / **ISP Proxies** / **Datacenter**.
-3. Switch to the **Static Dedicated Residential Proxies** tab (or **Static Dedicated Business Proxies** / **Static Dedicated Datacenter Proxies** if you selected those networks).
+2. Choose a network: **ISP Proxies** / **Datacenter Proxies**.
+3. Switch to the **Static Proxies** tab.
 4. Choose a validity plan (for example Monthly Plan). Under **Choose IP locations**, pick the country/region and set how many IPs to buy.
 5. Complete payment.
 

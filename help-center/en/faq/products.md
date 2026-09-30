@@ -22,7 +22,7 @@ Different jobs need different IP attributes:
 - **Residential**: home-broadband exits. High reputation; target sites treat them as ordinary visitors. Good for large e-commerce collection, multi-account social isolation, SERP, and locale checks.
 - **Mobile**: real 4G/5G carrier exits. Many handsets already share a public IP on a cell, so platforms are more tolerant. Good for mobile-app collection, mobile ads verification, and short-video automation.
 - **Business Proxies**: office and commercial broadband, billed by GB with rotation. Good when you need a commercial ASN and frequent IP changes.
-- **ISP Proxies**: dedicated carrier ISP lines (Static Dedicated and Custom). Good for long-lived B2B portals, supplier systems, and overseas finance/tax APIs.
+- **ISP Proxies**: dedicated carrier ISP lines (Static and Custom). Good for long-lived B2B portals, supplier systems, and overseas finance/tax APIs.
 - **Datacenter**: cloud-facility exits. High bandwidth, low latency, low unit cost, high concurrency. Good when the target is lenient: bulk requests, index monitoring, high-throughput sync.
 
 ### How do Rotating Proxies, Static Proxies, and Custom Proxies differ?
@@ -34,11 +34,11 @@ Different jobs need different IP attributes:
 | **Custom Proxies** | Per port × plan period; no traffic/concurrency cap | Delivered as ports (assign a region after purchase) | Change country/city in the same network; timed or manual IP rotation | Automation that needs a stable port but flexible geo |
 
 > **What each network sells**:
-> - Residential: Rotating, Static, and Custom;
+> - Residential Proxies: Rotating only;
 > - Business Proxies: Rotating only;
-> - Mobile: Rotating only (traffic). No Static or Custom;
-> - ISP Proxies: Static Dedicated and Custom. No Rotating traffic packs;
-> - Datacenter: Static and Custom. No traffic-billed Rotating.
+> - Mobile Proxies: Rotating only;
+> - ISP Proxies: Static and Custom. No Rotating traffic packs;
+> - Datacenter Proxies: Static and Custom. No Rotating traffic packs.
 
 ---
 
@@ -66,11 +66,11 @@ In **Endpoint generator** (Rotating) or on **Purchase Proxies** (Static / Custom
 
 Cloud nodes support **HTTP**, **HTTPS**, and **SOCKS5** (TCP/UDP). Browsers and most crawlers use HTTP/HTTPS. Use SOCKS5 when you need socket-level forwarding.
 
-### Static Residential vs Custom Residential? What is ISP Proxies · Static Dedicated for?
+### Static vs Custom? What is ISP Proxies for?
 
-- **Static Residential Proxies**: the country and city stay fixed (for example a Los Angeles store). Cheaper when geo never moves.
-- **Custom Residential Proxies**: you keep the same port but move it between countries or cities, or rotate the exit IP on a timer. About **$1 extra per port per month** vs matching Static.
-- **ISP Proxies · Static Dedicated**: when the target requires a commercial ASN (supplier systems that reject residential broadband). Prefer ISP Proxies · Static Dedicated.
+- **Static**: the country and city stay fixed (for example a long-lived enterprise login in one metro). Cheaper when geo never moves.
+- **Custom**: you keep the same port but move it between countries or cities, or rotate the exit IP on a timer.
+- **ISP Proxies**: when the target requires a commercial ASN (supplier systems that reject residential broadband). Prefer ISP Proxies. For higher throughput at lower cost, use Datacenter Proxies.
 
 ### Can you guarantee the target will never block us?
 

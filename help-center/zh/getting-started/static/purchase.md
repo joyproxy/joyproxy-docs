@@ -1,4 +1,4 @@
-# 购买独享线路（Purchase Proxies）
+# 购买独享线路
 
 静态独享代理按 IP 线路数量和套餐时长计费。购买成功后，每条线路在有效期内 100% 由你独享。
 
@@ -6,7 +6,6 @@
 
 1. 登录 JoyProxy 控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>** 页面。
 2. 选择所需的网络类型：
-   - **住宅代理**
    - **ISP 代理**
    - **数据中心代理**
 3. 切换到 **静态独享代理** 标签页。

@@ -1,10 +1,10 @@
 # Scrapy 爬虫框架自动轮换 IP 中间件开发
 
-在 Scrapy 项目中，可通过编写自定义下载器中间件（Downloader Middleware），为每个出站请求自动挂载 JoyProxy 代理。
+在 Scrapy 项目中，可通过编写自定义下载器中间件，为每个出站请求自动挂载 JoyProxy 代理。
 
 ---
 
-## 一、编写中间件（middlewares.py）
+## 一、编写中间件
 
 ```python
 import base64
@@ -31,7 +31,7 @@ class JoyProxyMiddleware:
 
 ---
 
-## 二、注册中间件（settings.py）
+## 二、注册中间件
 
 ```python
 DOWNLOADER_MIDDLEWARES = {

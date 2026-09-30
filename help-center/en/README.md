@@ -12,10 +12,10 @@ Each line is delivered as a standard hostname (Host), port (Port), and credentia
 
 | Network type | Proxy products | Best for |
 | --- | --- | --- |
-| [Residential](https://www.joyproxy.com/products/proxy-residential.html) | Rotating · Static Proxies · Custom Proxies | Home-broadband exits, wide geo coverage, multi-account isolation |
+| [Residential](https://www.joyproxy.com/products/proxy-residential.html) | Rotating | Home-broadband exits, wide geo coverage, multi-account isolation |
 | [Mobile](https://www.joyproxy.com/products/proxy-mobile.html) | Rotating | 4G/5G carrier exits, mobile-app testing, ads compliance checks |
 | [Business](https://www.joyproxy.com/products/proxy-business.html) | Rotating | Office and commercial broadband for B2B and business accounts |
-| [ISP](https://www.joyproxy.com/products/proxy-isp.html) | Static Dedicated · Custom | Dedicated ISP lines for long-lived sessions |
+| [ISP](https://www.joyproxy.com/products/proxy-isp.html) | Static · Custom | Dedicated ISP lines for long-lived sessions |
 | [Datacenter](https://www.joyproxy.com/products/proxy-datacenter.html) | Static Proxies · Custom Proxies | High concurrency, low latency, cost-efficient throughput |
 
 How the five networks differ:
@@ -23,7 +23,7 @@ How the five networks differ:
 * **Residential**: home broadband IPs.
 * **Mobile**: 4G/5G carrier IPs.
 * **Business**: office and commercial broadband IPs (Rotating Proxies).
-* **ISP**: carrier ISP dedicated lines (Static Dedicated / Custom).
+* **ISP**: carrier ISP dedicated lines.
 * **Datacenter**: datacenter IPs.
 
 How the three proxy products differ:

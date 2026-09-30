@@ -2,7 +2,7 @@
 
 在自动化运维或业务系统中，可通过 RESTful API 直接完成账户余额查询、自动下单购买代理以及静态线路自动续费等操作。
 
-调用此类账户管理接口需要使用 **主用户 Token（Master User Token）**。
+调用此类账户管理接口需要使用 **主用户 Token**。
 
 ---
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 一、查询账户余额（GET /v2/balance）
+## 一、查询账户余额
 
 ```python
 import requests
@@ -35,7 +35,7 @@ if data.get("code") == 200:
 
 ---
 
-## 二、使用余额创建订单（POST /v2/orders/create）
+## 二、使用余额创建订单
 
 ```python
 import requests
@@ -59,7 +59,7 @@ print(response.json())
 
 ---
 
-## 三、静态订单续费（POST /v2/orders/renew）
+## 三、静态订单续费
 
 ```python
 import requests

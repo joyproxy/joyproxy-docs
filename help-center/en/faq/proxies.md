@@ -68,7 +68,7 @@ Easy to mix up:
 - **Change exit IP**: yes. On **My Proxies**, open the line and click **Change IP** (or **New IP**). You get a new dedicated exit in the same region. Hostname and port stay the same.
 - **Change region**: no. Country and city are locked at purchase. If you need to move geo, buy **Custom Proxies**.
 
-### My Static Dedicated Exit IP changed. Did you swap it without asking?
+### My Static Proxies exit IP changed. Did you swap it without asking?
 
 We do not change a dedicated exit without cause. Rare cases:
 

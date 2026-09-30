@@ -4,7 +4,7 @@
 
 ---
 
-## 提取接口参数说明（GET /v2/extract）
+## 提取接口参数说明
 
 - **请求地址**：`https://api.joyproxy.com/v2/extract`
 - **鉴权**：查询参数 `?token=API_Token` 或请求头 `Authorization: Bearer <API_Token>`
@@ -19,7 +19,7 @@
 
 ---
 
-## 本地代理池示例代码（Python）
+## 本地代理池示例代码
 
 ```python
 import queue

@@ -1,4 +1,4 @@
-# 网页抓取 API · 快速开始（Quick Start）
+# 网页抓取 API · 快速开始
 
 本指南带你快速完成网页抓取 API 的积分包购买、API Token 获取、控制台在线测试与代码集成。
 
@@ -9,10 +9,10 @@
 
 ## 第一步：购买抓取积分包
 
-1. 登录 <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy 控制台</a>，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理（Purchase Proxies）</a>** 页面。
-2. 选择 **网页抓取 API（Web Scraping API）** 标签页。
+1. 登录 <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy 控制台</a>，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>** 页面。
+2. 选择 **网页抓取 API** 标签页。
 3. 选择预设积分套餐包（如 **$5 / 50K 积分**）或输入自定义积分数量（最少 10K 积分起）。
-4. 选择支付渠道：支持 **账户余额（Balance）**、**信用卡 / 借记卡（Credit Card）**、**PayPal**、**Apple Pay**、**Google Pay**、**微信支付（WeChat Pay）**、**USDT（TRC20）** 及 **UPI（印度支付）**。
+4. 选择支付渠道：支持 **账户余额**、**信用卡 / 借记卡**、**PayPal**、**Apple Pay**、**Google Pay**、**微信支付**、**USDT（TRC20）** 及 **UPI（印度支付）**。
 5. 完成支付后积分即时到账，**永久有效不过期**。
 
 ---

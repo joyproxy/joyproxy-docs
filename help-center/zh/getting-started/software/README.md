@@ -25,7 +25,7 @@
 | --- | --- | --- | --- |
 | **浏览器扩展** | Chrome / Edge 等 Chromium 浏览器（内核 114+） | HTTP / SOCKS5 | <a href="https://github.com/joyproxy/joyproxy-extension" target="_blank" rel="noopener noreferrer">joyproxy-extension</a> |
 | **代理检测工具** | Windows 桌面（免安装单文件 EXE） | HTTP / HTTPS / SOCKS5 TCP & UDP | <a href="https://github.com/joyproxy/joyproxy-tester" target="_blank" rel="noopener noreferrer">joyproxy-tester</a> |
-| **代理服务器网关** | Linux & Windows（CLI / GUI） | HTTP / SOCKS5 网关转发（`joyproxy sps`） | <a href="https://github.com/joyproxy/joyproxy-server" target="_blank" rel="noopener noreferrer">joyproxy-server</a> |
+| **代理服务器网关** | Linux & Windows | HTTP / SOCKS5 网关转发（`joyproxy sps`） | <a href="https://github.com/joyproxy/joyproxy-server" target="_blank" rel="noopener noreferrer">joyproxy-server</a> |
 | **Android 客户端** | Android 7.0+（APK） | HTTP / SOCKS5 | <a href="https://github.com/joyproxy/joyproxy-client-android" target="_blank" rel="noopener noreferrer">joyproxy-client-android</a> |
 
 ---

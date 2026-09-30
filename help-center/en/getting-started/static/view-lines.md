@@ -8,7 +8,7 @@ After checkout, you can review every active static dedicated line in the console
 2. Open **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>** in the left menu.
 3. Switch to the **Static Proxies** area and review the line list:
    - **Order ID**
-   - **Network**: for example Static Residential Proxies.
+   - **Network**: for example ISP Proxies or Datacenter Proxies.
    - **Target country/region**.
    - **Dedicated connection address (Host:Port)** and the current exit IP.
    - **Expiry** and the **Auto-renew** switch.

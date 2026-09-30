@@ -12,7 +12,7 @@ For a fixed `host:port` ISP line, use the <a href="isp-proxies.md" target="_blan
 
 ## Rotating-only product
 
-The **Business Proxies** console sells Rotating Proxies only (GB packs). There is no Static Dedicated or Custom Dedicated SKU here:
+The **Business Proxies** console sells Rotating Proxies only (GB packs). There is no Static or Custom SKU here:
 
 - Billing: buy a prepaid traffic pack; GB is deducted from actual proxy traffic until the pack is empty;
 - Access: one gateway over the business broadband pool. Target country and city. Rotate per request or keep a sticky session.

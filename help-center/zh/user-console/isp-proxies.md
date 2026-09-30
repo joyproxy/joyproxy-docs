@@ -1,6 +1,6 @@
 # ISP 代理控制台
 
-ISP 代理（ISP Proxies）提供运营商 ISP 专线固定出口，形态为 **ISP 代理 · 静态独享** 与 **ISP 代理 · 自定义独享**。适合需要长期同一 `host:port` 的 B2B 门户、企业系统对接与稳定会话。
+ISP 代理提供运营商 ISP 专线固定出口，形态为 **静态独享** 与 **自定义独享**。适合需要长期同一 `host:port` 的 B2B 门户、企业系统对接与稳定会话。
 
 在左侧导航的 **代理** 分组中点击 **ISP 代理** 即可打开本控制台：
 
@@ -14,12 +14,12 @@ ISP 代理（ISP Proxies）提供运营商 ISP 专线固定出口，形态为 **
 
 ISP 代理不提供动态流量包，控制台包含两种独享形态：
 
-1. **ISP 代理 · 静态独享**：  
+1. **静态独享**：  
    独占一条固定 ISP 出口，有效期内接入地址不变，可在控制台申请更换出口 IP。  
    - 购买：<a href="../getting-started/static/purchase.md" target="_blank" rel="noopener noreferrer">购买静态独享线路</a>
    - 查看：<a href="../getting-started/static/view-lines.md" target="_blank" rel="noopener noreferrer">查看已购线路</a>
    - 更换出口：<a href="../getting-started/static/refresh-ip.md" target="_blank" rel="noopener noreferrer">更换出口 IP</a>
-2. **ISP 代理 · 自定义独享**：  
+2. **自定义独享**：  
    按端口交付，可按端口分配国家/城市，并支持定时或手动更换出口 IP。  
    - 端口管理：<a href="../getting-started/custom/view-ports.md" target="_blank" rel="noopener noreferrer">查看与管理端口</a>
    - 自动续费：<a href="../getting-started/custom/auto-renew.md" target="_blank" rel="noopener noreferrer">自动续费</a>

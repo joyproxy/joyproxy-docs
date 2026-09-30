@@ -1,17 +1,17 @@
 # 使用网页抓取 API 处理动态渲染与反爬保护
 
-针对具备反爬保护或前端动态渲染（React/Vue SPA）的目标网页，可使用托管式的 **网页抓取 API（Web Scraping API）**。
+针对具备反爬保护或前端动态渲染（React/Vue SPA）的目标网页，可使用托管式的 **网页抓取 API**。
 
 服务自动处理代理调度与无头浏览器渲染，仅针对 HTTP 2xx 成功响应扣除 Credits 积分。
 
 ---
 
-## 接口调用规范（POST /v1/fetch）
+## 接口调用规范
 
 - **地址**：`https://api.joyproxy.com/v1/fetch`
 - **鉴权**：请求头 `Authorization: Bearer <Scraping_API_Token>`
 
-### 代码示例（Python）：
+### 代码示例：
 
 ```python
 import requests

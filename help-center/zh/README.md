@@ -8,11 +8,11 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 
 ### 代理 IP
 
-系统将为您分配标准的域名形式主机地址（Host）、端口（Port）与鉴权凭证，您可以无缝集成至现有工具或开发环境中。
+系统将为您分配标准的域名形式主机地址、端口与鉴权凭证，您可以无缝集成至现有工具或开发环境中。
 
 | 网络类型 | 代理产品 | 适合做什么 |
 | --- | --- | --- |
-| [住宅](https://www.joyproxy.com/products/proxy-residential.html) | 动态 · 静态独享 · 自定义独享 | 家庭宽带出口，地区可选范围大，防多账号关联 |
+| [住宅](https://www.joyproxy.com/products/proxy-residential.html) | 动态 | 家庭宽带出口，地区可选范围大，防多账号关联 |
 | [移动](https://www.joyproxy.com/products/proxy-mobile.html) | 动态 | 4G/5G 运营商出口，移动端 App 测试、广告合规校验 |
 | [商业](https://www.joyproxy.com/products/proxy-business.html) | 动态 | 写字楼与商业宽带出口，B2B 与商务账号 |
 | [ISP](https://www.joyproxy.com/products/proxy-isp.html) | 静态独享 · 自定义独享 | ISP 专线固定出口，长期稳定会话 |
@@ -23,7 +23,7 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 * **住宅**：家庭宽带 IP。
 * **移动**：4G/5G 运营商 IP。
 * **商业**：写字楼、商业宽带 IP（动态代理）。
-* **ISP**：运营商 ISP 专线（静态独享 / 自定义独享）。
+* **ISP**：运营商 ISP 专线。
 * **数据中心**：数据中心 IP。
 
 三种代理产品的区别：

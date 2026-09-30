@@ -11,7 +11,7 @@
 在已配置代理的浏览器中访问以下检测服务：
 
 1. **<a href="https://ipinfo.io" target="_blank" rel="noopener noreferrer">ipinfo.io</a>**：
-   - 展示当前的公网 IP、国家（Country）、城市（City）、时区（Timezone）及网络运营商（Org）；
+   - 展示当前的公网 IP、国家、城市、时区及网络运营商；
    - 可用于核对住宅代理或商业专线代理的 ASN 归属。
 2. **<a href="https://whoer.net" target="_blank" rel="noopener noreferrer">whoer.net</a>**：
    - 综合检测网络伪装状态，核对 DNS 节点归属与系统本地时区是否匹配。

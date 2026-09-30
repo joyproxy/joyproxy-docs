@@ -2,7 +2,7 @@
 
 在共享网络、多人员办公场所或借用他人设备时，如果离开电脑而没有退出控制台，账户内的可用余额和代理配置可能面临被他人误操作或冒用的风险。
 
-为此，JoyProxy 控制台提供了可灵活配置的 **无操作退出时间（Session TTL）** 机制。
+为此，JoyProxy 控制台提供了可灵活配置的 **无操作退出时间** 机制。
 
 <a href="https://www.joyproxy.com/admin-settings.html" target="_blank" rel="noopener noreferrer">前往安全设置页面</a>
 

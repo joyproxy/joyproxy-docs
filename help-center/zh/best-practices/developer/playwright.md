@@ -4,7 +4,7 @@
 
 ---
 
-## 一、Playwright（Python）集成示例
+## 一、Playwright集成示例
 
 ```python
 from playwright.sync_api import sync_playwright
@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
 ---
 
-## 二、Puppeteer（Node.js）集成示例
+## 二、Puppeteer集成示例
 
 ```javascript
 const puppeteer = require('puppeteer');

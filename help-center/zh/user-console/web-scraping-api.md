@@ -27,7 +27,7 @@
 内置交互式调试测试台，无需编写任何代码即可在浏览器内检验抓取效果：
 - **在线试玩**：输入目标网页 URL，可一键开关 **render (JS)** 渲染、开启 **Super（住宅/移动）** 出口或指定出口国家代码，点击 **发送请求** 即可实时预览返回的页面 HTML 与状态码；
 - **Scraping API Token 管理**：专门用于调用公网 `/v1/fetch` 接口的唯一密钥，支持直接查看、复制或安全轮换；
-- **多语言代码一键生成**：页面会根据你当前配置的参数实时生成可直接运行的 **cURL**、**Python（requests）** 与 **Node.js（axios）** 代码范例。上手教程见 <a href="../getting-started/scraping-api/first-fetch.md" target="_blank" rel="noopener noreferrer">在控制台 API 中心测试抓取</a>。
+- **多语言代码一键生成**：页面会根据你当前配置的参数实时生成可直接运行的 **cURL**、**Python** 与 **Node.js** 代码范例。上手教程见 <a href="../getting-started/scraping-api/first-fetch.md" target="_blank" rel="noopener noreferrer">在控制台 API 中心测试抓取</a>。
 
 ### 3. 使用明细（余额、并发与用量查询）
 用于追踪和排查团队近期的抓取健康度：

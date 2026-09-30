@@ -1,6 +1,6 @@
 # 在 Cursor 及 AI 智能体中集成 JoyProxy 接口
 
-开发者可以在 **Cursor**、**VS Code**、**Claude Desktop** 等 AI 编程环境中接入 **JoyProxy AI MCP（Model Context Protocol）**，也可以在 **OpenClaw** 中接入 **OpenClaw Skill**，直接在对话或 Agent 自动化流程中安全调取代理网络能力（查询余额用量、按需提取动态/静态代理端点等）。
+开发者可以在 **Cursor**、**VS Code**、**Claude Desktop** 等 AI 编程环境中接入 **JoyProxy AI MCP**，也可以在 **OpenClaw** 中接入 **OpenClaw Skill**，直接在对话或 Agent 自动化流程中安全调取代理网络能力（查询余额用量、按需提取动态/静态代理端点等）。
 
 JoyProxy 的 AI 接口运行在只读与受限管理层，不涉及余额消费或核心账密变更，保障生产环境安全。
 
@@ -102,4 +102,4 @@ JoyProxy 提供标准的远程 **HTTP JSON-RPC MCP 服务**（Endpoint 为 `http
 - **提取特定地区代理**：
   > “使用 JoyProxy 提取一个美国加州洛杉矶、粘性会话 10 分钟的住宅代理端点，并用 Python requests 写一段测试连通性的脚本。”
 - **指定网络类型**：
-  > “提取一个日本东京的 ISP 代理 · 静态独享端点（network_type=isp）。”
+  > “提取一个日本东京的 ISP 代理端点（network_type=isp）。”

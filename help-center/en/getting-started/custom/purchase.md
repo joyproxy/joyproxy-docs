@@ -8,10 +8,9 @@ Custom Proxies are billed by **dedicated port count** and **plan duration**. One
 
 1. Log in to the JoyProxy console and open **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase Proxies</a>**.
 2. Choose a network tab:
-   - **Residential**
    - **ISP Proxies**
-   - **Datacenter**
-3. In product mode, select **Custom Dedicated Residential Proxies** (or **Custom Dedicated Business Proxies** / **Custom Dedicated Datacenter Proxies** for those networks).
+   - **Datacenter Proxies**
+3. In product mode, select **Custom Proxies**.
 4. Choose a validity plan:
    - **Daily Plan**
    - **Weekly Plan**

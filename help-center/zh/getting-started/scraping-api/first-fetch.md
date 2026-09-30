@@ -15,9 +15,9 @@ JoyProxy 控制台提供了可视化的 **<a href="https://www.joyproxy.com/admi
    - **geoCode**：填入指定的代理出口国家代码（如 `us` 美国、`jp` 日本）。
 4. 点击右侧操作栏的 **发送请求** 按钮。
 5. 查看返回结果：
-   - **响应（Response）**：实时预览返回的网页 HTML 或 JSON 数据。
-   - **状态码（Status）**：显示目标页面的响应码（如 `200`）。
-   - **消耗 Credits（Credits Used）**：实时展示本次抓取实际扣除的积分数。
+   - **响应**：实时预览返回的网页 HTML 或 JSON 数据。
+   - **状态码**：显示目标页面的响应码（如 `200`）。
+   - **消耗 Credits**：实时展示本次抓取实际扣除的积分数。
 
 ---
 
@@ -72,4 +72,4 @@ fetchPage();
 若你需要了解底层的 REST HTTP 路径、POST JSON 结构、请求头传递等原始接口说明：
 
 > 💡 **在线 API 文档**  
-> 请参阅控制台顶部的 **<a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">网页抓取 API 文档（API Documentation）</a>**，查阅完整的参数字典与响应规范。
+> 请参阅控制台顶部的 **<a href="https://www.joyproxy.com/admin-unblocker-documentation.html" target="_blank" rel="noopener noreferrer">网页抓取 API 文档</a>**，查阅完整的参数字典与响应规范。

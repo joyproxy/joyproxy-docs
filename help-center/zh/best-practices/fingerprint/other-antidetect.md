@@ -16,7 +16,7 @@
    - **Port**：填入端口号；
    - **Username / Password**：填入代理账号与密码；
 5. 点击 **Check proxy**，确认显示 `Connection test passed`；
-6. 确认 Timezone 与 Geolocation 设置为基于 IP 自动填充（Fill based on external IP）；
+6. 确认 Timezone 与 Geolocation 设置为基于 IP 自动填充；
 7. 点击 **Create profile** 保存并启动。
 
 ---

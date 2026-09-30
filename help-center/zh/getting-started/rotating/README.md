@@ -1,8 +1,8 @@
-# 动态代理（Rotating Proxies）
+# 动态代理
 
 动态代理按流量（GB）计费，所有请求统一连接 JoyProxy 共享网关 `gate.joyproxy.com:9001`。每次请求可自动随机更换出口 IP，也可以按需启用粘性会话保持同一个 IP 1–30 分钟。
 
-动态代理覆盖三类网络：**住宅代理（Residential Proxies）**、**移动代理（Mobile Proxies）** 以及 **商业代理（Business Proxies）**。如果你的业务需要长期固定不变的专用 `host:port`，请参考 <a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态独享代理</a> 或 <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">自定义独享代理</a>。
+动态代理覆盖三类网络：**住宅代理**、**移动代理** 以及 **商业代理**。如果你的业务需要长期固定不变的专用 `host:port`，请参考 <a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态独享代理</a> 或 <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">自定义独享代理</a>。
 
 ## 工作原理
 
@@ -13,9 +13,9 @@
                       └── 连接密码：在“账密与白名单”中设置的代理密码
 ```
 
-- **统一网关（Unified Gateway）**：无论切换哪个国家或城市，代理主机（Host）始终为 `gate.joyproxy.com`，端口（Port）始终为 `9001`。
-- **参数编码（Param Encoding）**：目标国家、省市、会话模式等均编码在生成的连接用户名中，无需修改主机与端口。
-- **协议兼容（Protocols）**：同时支持 HTTP 与 SOCKS5 协议，两种协议均可安全访问 HTTPS 目标网站。
+- **统一网关**：无论切换哪个国家或城市，代理主机始终为 `gate.joyproxy.com`，端口始终为 `9001`。
+- **参数编码**：目标国家、省市、会话模式等均编码在生成的连接用户名中，无需修改主机与端口。
+- **协议兼容**：同时支持 HTTP 与 SOCKS5 协议，两种协议均可安全访问 HTTPS 目标网站。
 
 ## 本章内容
 

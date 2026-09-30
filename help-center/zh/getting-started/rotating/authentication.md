@@ -43,5 +43,5 @@
 
 1. 获取你客户端或爬虫服务器的**固定公网 IPv4 地址**。
 2. 进入 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">账密与白名单</a>** → **IP 白名单** 页签。
-3. 在 **IP 地址（IP Address）** 输入框中填写 IP，在 **备注（Description）** 中填写备注。
-4. 点击 **添加 IP（Add IP）** 按钮保存。
+3. 在 **IP 地址** 输入框中填写 IP，在 **备注** 中填写备注。
+4. 点击 **添加 IP** 按钮保存。

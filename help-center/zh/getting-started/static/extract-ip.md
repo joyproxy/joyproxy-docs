@@ -1,4 +1,4 @@
-# 提取代理 IP（Extract IP）
+# 提取代理 IP
 
 在控制台中，你可以便捷地提取购买的静态独享代理端点列表。
 
@@ -6,8 +6,8 @@
 
 ## Web 提取（控制台操作）
 
-1. 打开控制台 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面。
-2. 选择对应的代理网络，并切到 **静态代理（Static Proxies）** 标签。
+1. 打开控制台 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取</a>** 页面。
+2. 选择对应的代理网络，并切到 **静态代理** 标签。
 3. 在筛选区域：
    - 可按国家/地区或搜索框筛选订单。
    - 选择 **协议**：`HTTP / HTTPS / SOCKS5`。

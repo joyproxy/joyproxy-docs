@@ -1,4 +1,4 @@
-# 提取代理 IP（Extract IP）
+# 提取代理 IP
 
 在 JoyProxy 控制台中，你可以方便地批量提取已购买的自定义独享代理端口地址与连接配置。
 
@@ -6,8 +6,8 @@
 
 ## 控制台 Web 提取流程
 
-1. 登录控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取（Endpoint Generator）</a>** 页面。
-2. 切换到 **自定义代理（Custom Proxies）** 标签页。
+1. 登录控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取</a>** 页面。
+2. 切换到 **自定义代理** 标签页。
 3. 配置提取筛选条件：
    - **选择订单**：勾选指定的自定义端口订单或选择全部。
    - **代理协议**：选择 `HTTP`、`HTTPS` 或 `SOCKS5`。

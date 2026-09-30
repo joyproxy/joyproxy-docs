@@ -1,4 +1,4 @@
-# 自定义独享代理 · 快速开始（Quick Start）
+# 自定义独享代理 · 快速开始
 
 本指南带你快速完成自定义独享代理的端口购买、地区分配、代理认证与连接测试。
 
@@ -11,7 +11,6 @@
 
 1. 登录 <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy 控制台</a>，点击左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>**。
 2. 选择需要的 IP 来源网络：
-   - **住宅代理**：真实家庭宽带 IP，信任度极高。
    - **ISP 代理**：运营商商业专线，兼具高速率与高信任度。
    - **数据中心代理**：托管机房 IP，超高性价比与低延迟。
 3. 切换到 **自定义独享代理** 标签页。

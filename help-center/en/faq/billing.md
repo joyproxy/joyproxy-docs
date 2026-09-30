@@ -46,10 +46,8 @@ Commercial ISP ASN, separate ladder:
 
 #### 4. Static and Custom (per IP/port × duration)
 
-- **Static Residential**: 1 IP about $1.00/day, $2.50/week, $5.00/month, $12.50/quarter, $50.00/year; volume discounts (100–499 volume price; 500+ best price);
-- **Custom Residential**: about **$1 extra per port per month** vs Static (about $6.00/port/month);
-- **ISP Proxies · Static Dedicated**: $3.00/IP/month; ISP Proxies · Custom $4.00/port/month;
-- **Static Datacenter**: $2.00/IP/month; Custom Datacenter $3.00/port/month.
+- **ISP Proxies**: Static $3.00/IP/month; Custom $4.00/port/month;
+- **Datacenter Proxies**: Static $2.00/IP/month; Custom $3.00/port/month.
 
 > Static and Custom have no traffic, concurrency, or bandwidth cap during the plan.
 

@@ -2,7 +2,7 @@
 
 当你的业务需要**大批量抓取（如一次性抓取数万个 URL）**，或者目标网页渲染时间较长时，使用同步 HTTP 请求可能会因为长连接超时或并发爆表而导致失败。
 
-JoyProxy 提供了 **异步队列任务 API（Async API）**。你可以将大批量的抓取任务提交到云端异步队列中，获取 Job ID 与 Task ID，后台会自动调度云端渲染集群完成抓取，你只需通过定时轮询或回调获取结果。
+JoyProxy 提供了 **异步队列任务 API**。你可以将大批量的抓取任务提交到云端异步队列中，获取 Job ID 与 Task ID，后台会自动调度云端渲染集群完成抓取，你只需通过定时轮询或回调获取结果。
 
 ---
 
@@ -27,7 +27,7 @@ JoyProxy 提供了 **异步队列任务 API（Async API）**。你可以将大�
 
 ## 关键端点与操作步骤
 
-### 1. 提交异步任务包（Submit Job）
+### 1. 提交异步任务包
 - **端点**：`POST /v1/fetch/async/jobs?token=YOUR_SCRAPING_TOKEN`
 - **请求头**：`Content-Type: application/json`
 - **请求体 (JSON)**：
@@ -41,11 +41,11 @@ JoyProxy 提供了 **异步队列任务 API（Async API）**。你可以将大�
   ```
 - **返回**：包含 `job_id` 和对应每个 URL 的 `task_id` 列表。
 
-### 2. 轮询任务状态（Poll Status）
+### 2. 轮询任务状态
 - **端点**：`GET /v1/fetch/async/jobs/{job_id}?token=YOUR_SCRAPING_TOKEN`
 - **返回**：当前 Job 的整体完成进度（如已完成数、等待中数、失败数）。
 
-### 3. 获取抓取结果（Fetch Result）
+### 3. 获取抓取结果
 - **端点**：`GET /v1/fetch/async/jobs/{job_id}/{task_id}?token=YOUR_SCRAPING_TOKEN`
 - **返回**：对应任务的抓取结果 HTML / JSON 内容。
 

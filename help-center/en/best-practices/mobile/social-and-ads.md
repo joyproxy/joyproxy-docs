@@ -8,10 +8,10 @@ For social operations, multi-account matrices, and ads, network stability and re
 
 | Scenario | Recommended network | Why |
 | :--- | :--- | :--- |
-| **Long-lived core accounts** (company main account, official store) | **Static Residential Proxies** | Fixed country and city, dedicated IP, looks like a resident visitor. |
+| **Long-lived core accounts** (company main account, official store) | **ISP Proxies** | Fixed country and city, dedicated IP, commercial ASN, stable exit. |
 | **Mobile apps and short-video testing** | **Mobile Proxies** (4G/5G) | Real carrier-base exits, strong reputation. |
 | **Large-scale collection and interaction** | **Residential Proxies** (session-based) | A different home-broadband node each time, so many accounts do not share one IP. |
-| **Business APIs and ads verification** | **ISP Proxies · Static Dedicated** | Enterprise broadband, stable path, commercial ASN. |
+| **Business APIs and ads verification** | **ISP Proxies** | Enterprise broadband, stable path, commercial ASN. |
 
 ---
 
