@@ -44,7 +44,7 @@ When a client connects to a cloud node:
 
 No. The rotating gateway requires Username/Password from **Users & Whitelist** so it can parse geo and session from the long username.
 
-Static Proxies and Custom Proxies support IP Whitelist, Username/Password, or both.
+Static Proxies support IP Whitelist, Username/Password, or both.
 
 ### How many whitelist IPs and credential pairs?
 

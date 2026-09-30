@@ -1,6 +1,6 @@
 # Extracting and using proxies
 
-This chapter covers generating and using Rotating Proxies, Static Proxies, and Custom Proxies: parameters, connection rules, and advanced tips.
+This chapter covers generating and using Rotating Proxies and Static Proxies: parameters, connection rules, and advanced tips.
 
 ---
 
@@ -52,7 +52,7 @@ The TCP session is not torn down. During the window the gateway keeps the exit I
 
 ---
 
-## Static Proxies and Custom Proxies
+## Static Proxies
 
 ### Entry Point vs Dedicated Exit IP?
 
@@ -66,7 +66,7 @@ Easy to mix up:
 ### Can Static Proxies change IP or region?
 
 - **Change exit IP**: yes. On **My Proxies**, open the line and click **Change IP** (or **New IP**). You get a new dedicated exit in the same region. Hostname and port stay the same.
-- **Change region**: no. Country and city are locked at purchase. If you need to move geo, buy **Custom Proxies**.
+- **Change region**: no. Country and city are locked at purchase. For another geo, buy a Static line in that region, or use Rotating Proxies and set the country when you generate endpoints.
 
 ### My Static Proxies exit IP changed. Did you swap it without asking?
 
@@ -77,22 +77,11 @@ We do not change a dedicated exit without cause. Rare cases:
 
 The new exit is still dedicated to you.
 
-### Custom Proxies show Unassigned after purchase. What does that mean?
+### Traffic or concurrency limits on Static Proxies?
 
-Custom is sold as **port quota**. Right after payment the port has no geo, so status is **Unassigned**.
+**None.** Billing is IP count × duration. During the plan there is no traffic, concurrency, or bandwidth cap.
 
-On **My Proxies**, click **Assign region**, pick country, state, or city, and save. The console attaches an exit and issues the Entry Point.
-
-### Custom region change and auto rotation?
-
-- **Change region**: you can reassign during the plan. After the first **Assign region**, if you picked **Standard Network** or **Premium Network**, later moves stay in that same network tier.
-- **Timed IP rotation**: interval must be a **multiple of 60 seconds, at least 300 seconds (5 minutes)**. You can also change IP by hand on the list.
-
-### Traffic or concurrency limits on Static / Custom?
-
-**None.** Billing is IP count / port count × duration. During the plan there is no traffic, concurrency, or bandwidth cap.
-
-### What happens when Static / Custom expire?
+### What happens when Static Proxies expire?
 
 Without renewal, forwarding stops at expiry. After a short hold, the port and underlying exit are released and cannot be recovered. To keep a line, turn on **Auto-renew**.
 
@@ -114,9 +103,9 @@ Without renewal, forwarding stops at expiry. After a short hold, the port and un
 
 Rotating host and credentials stay valid as long as you have traffic, so you do not need a tight poll loop. Too many calls return `429 Too Many Requests` — back off. Full parameters: <a href="https://www.joyproxy.com/admin-openapi.html" target="_blank" rel="noopener noreferrer">OpenAPI Center</a> or <a href="../best-practices/developer/build-proxy-list.md" target="_blank" rel="noopener noreferrer">programmatic extraction</a>.
 
-### Can I Change IP / Assign region via API?
+### Can I Change IP via API?
 
-Not yet. Static **Change IP**, Custom **Assign region**, and manual IP refresh are console actions on **My Proxies**. The extract API only reads the current Entry Point; it does not trigger a new exit.
+Not yet. Static **Change IP** is a console action on **My Proxies**. The extract API only reads the current Entry Point; it does not trigger a new exit.
 
 ### AdsPower, Hubstudio, Octobrowser, and similar?
 

@@ -1,6 +1,6 @@
 # Products and network choice
 
-This chapter covers JoyProxy’s role, the five networks, the three proxy products, compliance, new-user credit, and common pre-sales questions so you can pick a plan that fits the job.
+This chapter covers JoyProxy’s role, the five networks, Rotating vs Static Proxies, compliance, new-user credit, and common pre-sales questions so you can pick a plan that fits the job.
 
 ---
 
@@ -8,9 +8,9 @@ This chapter covers JoyProxy’s role, the five networks, the three proxy produc
 
 ### What does JoyProxy sell?
 
-JoyProxy is global proxy and collection infrastructure. Three product lines (plus AI for developers):
+JoyProxy is global proxy and collection infrastructure. Two proxy products (plus AI for developers):
 
-1. **Cloud proxy IP on five networks**: Residential, Mobile, Business, ISP, and Datacenter across 200+ countries and regions and 25,000+ cities. Products are traffic-billed **Rotating Proxies**, dedicated **Static Proxies**, and per-port **Custom Proxies** that can change region.
+1. **Cloud proxy IP on five networks**: Residential, Mobile, Business, ISP, and Datacenter across 200+ countries and regions and 25,000+ cities. Products are traffic-billed **Rotating Proxies** and dedicated **Static Proxies**.
 2. **Web Scraping API**: hosted collection. No proxy pool or headless browser of your own. It handles anti-bot and JS rendering. Credits are deducted only on HTTP 2xx success.
 3. **Free open-source software**: Android Client with per-app routing (no root), Proxy Tester for batch connectivity checks, Proxy Server as a lightweight gateway, and Browser Extension for Chromium.
 4. **AI for developers**: OpenClaw Skill, AI MCP, and 24/7 assistant chat.
@@ -22,23 +22,22 @@ Different jobs need different IP attributes:
 - **Residential**: home-broadband exits. High reputation; target sites treat them as ordinary visitors. Good for large e-commerce collection, multi-account social isolation, SERP, and locale checks.
 - **Mobile**: real 4G/5G carrier exits. Many handsets already share a public IP on a cell, so platforms are more tolerant. Good for mobile-app collection, mobile ads verification, and short-video automation.
 - **Business Proxies**: office and commercial broadband, billed by GB with rotation. Good when you need a commercial ASN and frequent IP changes.
-- **ISP Proxies**: dedicated carrier ISP lines (Static and Custom). Good for long-lived B2B portals, supplier systems, and overseas finance/tax APIs.
+- **ISP Proxies**: dedicated carrier ISP lines (Static). Good for long-lived B2B portals, supplier systems, and overseas finance/tax APIs.
 - **Datacenter**: cloud-facility exits. High bandwidth, low latency, low unit cost, high concurrency. Good when the target is lenient: bulk requests, index monitoring, high-throughput sync.
 
-### How do Rotating Proxies, Static Proxies, and Custom Proxies differ?
+### How do Rotating Proxies and Static Proxies differ?
 
 | Product | Billing | Line | How IP changes | Typical use |
 | :--- | :--- | :--- | :--- | :--- |
 | **Rotating Proxies** | Per GB used; traffic does not expire | Shared pool; new IP per request or sticky session | Automatic per request, or 1–30 minute sticky session | Crawlers, high concurrency, bulk checks |
-| **Static Proxies** | Per IP × plan period; no traffic/concurrency cap | Dedicated line for the plan (Entry Point stays) | Region locked; **Change IP** / **New IP** in the console for a new exit | Social warm-up, cross-border stores, long-lived identity |
-| **Custom Proxies** | Per port × plan period; no traffic/concurrency cap | Delivered as ports (assign a region after purchase) | Change country/city in the same network; timed or manual IP rotation | Automation that needs a stable port but flexible geo |
+| **Static Proxies** | Per IP × plan period; no traffic/concurrency cap | Dedicated line for the plan (Entry Point stays) | Region locked; **Change IP** / **New IP** in the console for a new exit | Long-lived identity, B2B portal access, high-throughput stable links |
 
 > **What each network sells**:
 > - Residential Proxies: Rotating only;
 > - Business Proxies: Rotating only;
 > - Mobile Proxies: Rotating only;
-> - ISP Proxies: Static and Custom. No Rotating traffic packs;
-> - Datacenter Proxies: Static and Custom. No Rotating traffic packs.
+> - ISP Proxies: Static only. No Rotating traffic packs;
+> - Datacenter Proxies: Static only. No Rotating traffic packs.
 
 ---
 
@@ -60,17 +59,17 @@ If you need frequent IP changes but the target (some B2B procurement portals, ta
 
 The network covers 200+ countries and regions and 25,000+ cities.
 
-In **Endpoint generator** (Rotating) or on **Purchase Proxies** (Static / Custom), you can set country (ISO-2), state/province, and city. Live stock is whatever the purchase and generator pages show that day.
+In **Endpoint generator** (Rotating) or on **Purchase Proxies** (Static), you can set country (ISO-2), state/province, and city. Live stock is whatever the purchase and generator pages show that day.
 
 ### Which protocols?
 
 Cloud nodes support **HTTP**, **HTTPS**, and **SOCKS5** (TCP/UDP). Browsers and most crawlers use HTTP/HTTPS. Use SOCKS5 when you need socket-level forwarding.
 
-### Static vs Custom? What is ISP Proxies for?
+### Need a long-lived IP: ISP Proxies or Datacenter Proxies?
 
-- **Static**: the country and city stay fixed (for example a long-lived enterprise login in one metro). Cheaper when geo never moves.
-- **Custom**: you keep the same port but move it between countries or cities, or rotate the exit IP on a timer.
-- **ISP Proxies**: when the target requires a commercial ASN (supplier systems that reject residential broadband). Prefer ISP Proxies. For higher throughput at lower cost, use Datacenter Proxies.
+- **ISP Proxies**: when the target requires a commercial ASN (supplier systems that reject residential broadband).
+- **Datacenter Proxies**: for public collection, API forwarding, and performance tests where hosting ASN is acceptable and cost/throughput matter more.
+- If you need frequent IP changes, use Rotating Proxies on Residential, Mobile, or Business — not Static.
 
 ### Can you guarantee the target will never block us?
 

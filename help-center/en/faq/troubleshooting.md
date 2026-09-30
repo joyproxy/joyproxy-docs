@@ -13,7 +13,7 @@ The gateway rejected the handshake. Check in this order:
 1. **Password**: it must be the proxy password from **Users & Whitelist** for that network — not the JoyProxy site login password.
 2. **Truncated username**: for Rotating Proxies, paste the full string from **Web generator** or **API generator**. Dropping one character, or editing country/session tags, causes 407.
 3. **IP Whitelist**: if you intended passwordless access, confirm this public IP is on **IP Whitelist** for that network. Rotating Proxies still require Username/Password.
-4. **Quota**: Rotating traffic exhausted, or Static / Custom expired without renewal.
+4. **Quota**: Rotating traffic exhausted, or Static Proxies expired without renewal.
 
 ### 401 Unauthorized / Invalid token
 

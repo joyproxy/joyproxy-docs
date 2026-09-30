@@ -44,12 +44,12 @@ Commercial ISP ASN, separate ladder:
 
 - 1 GB: $3.80/GB | 10 GB: $3.65/GB | 50 GB: $3.18/GB | 100 GB: $2.86/GB | 500 GB: $2.21/GB | 1000 GB: $1.94/GB
 
-#### 4. Static and Custom (per IP/port × duration)
+#### 4. Static Proxies (per IP × duration)
 
-- **ISP Proxies**: Static $3.00/IP/month; Custom $4.00/port/month;
-- **Datacenter Proxies**: Static $2.00/IP/month; Custom $3.00/port/month.
+- **ISP Proxies**: $3.00/IP/month;
+- **Datacenter Proxies**: $2.00/IP/month.
 
-> Static and Custom have no traffic, concurrency, or bandwidth cap during the plan.
+> Static Proxies have no traffic, concurrency, or bandwidth cap during the plan.
 
 ---
 
