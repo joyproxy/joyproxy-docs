@@ -15,11 +15,11 @@ This chapter covers billing, price tiers, payment methods, recharge bonuses, inv
 
 ### Does unused rotating traffic expire?
 
-**No.** Residential, Mobile, and Business Rotating packs **do not expire**. You use GB until it is gone. Web Scraping API Credits also have no expiry.
+**No.** Rotating traffic packs for Residential, Mobile, and Business **do not expire**. You use GB until it is gone. Web Scraping API Credits also have no expiry.
 
 ### Price ladders on the four networks?
 
-#### 1. Rotating Residential (per GB)
+#### 1. Residential Proxies (per GB)
 
 From about $3.50/GB; larger packs lower the unit price. Traffic until used:
 
@@ -32,13 +32,13 @@ From about $3.50/GB; larger packs lower the unit price. Traffic until used:
 - 500 GB: $2.05/GB ($1,025.00, save 41%)
 - 1000 GB: $1.80/GB ($1,800.00, save 49%)
 
-#### 2. Rotating Mobile (per GB)
+#### 2. Mobile Proxies (per GB)
 
 4G/5G cellular, separate ladder:
 
 - 1 GB: $4.00/GB | 10 GB: $3.80/GB | 50 GB: $3.20/GB | 100 GB: $2.85/GB | 500 GB: $2.20/GB | 1000 GB: $2.00/GB
 
-#### 3. Rotating Business / ISP (per GB)
+#### 3. Business Proxies (per GB)
 
 Commercial ISP ASN, separate ladder:
 
@@ -48,7 +48,7 @@ Commercial ISP ASN, separate ladder:
 
 - **Static Residential**: 1 IP about $1.00/day, $2.50/week, $5.00/month, $12.50/quarter, $50.00/year; volume discounts (100–499 volume price; 500+ best price);
 - **Custom Residential**: about **$1 extra per port per month** vs Static (about $6.00/port/month);
-- **Static Business / ISP**: $3.00/IP/month; Custom Business $4.00/port/month;
+- **ISP Proxies · Static Dedicated**: $3.00/IP/month; ISP Proxies · Custom $4.00/port/month;
 - **Static Datacenter**: $2.00/IP/month; Custom Datacenter $3.00/port/month.
 
 > Static and Custom have no traffic, concurrency, or bandwidth cap during the plan.

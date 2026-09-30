@@ -50,7 +50,7 @@ The extension treats every proxy source the same. A JoyProxy account is not requ
 2. **Extract API**  
    Paste a provider extract URL, optional regex, and shared username/password. You can test once then apply, or poll a new IP on a timer.
 3. **JoyProxy purchased lines**  
-   If this browser is already signed in on <a href="https://www.joyproxy.com" target="_blank" rel="noopener noreferrer">joyproxy.com</a>, the workbench loads your Rotating Residential traffic packs and Static / Custom ports. Pick country, city, and session type in the extension — no need to copy long URLs.
+   If this browser is already signed in on <a href="https://www.joyproxy.com" target="_blank" rel="noopener noreferrer">joyproxy.com</a>, the workbench loads your Residential Proxies traffic packs and Static / Custom ports. Pick country, city, and session type in the extension — no need to copy long URLs.
 
 ---
 

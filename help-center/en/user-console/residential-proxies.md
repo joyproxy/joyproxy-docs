@@ -27,7 +27,7 @@ The Residential console is six tabs from purchase through production:
 
 Residential offers three modes. Switch them at the top of each tab:
 
-1. **Rotating Residential Proxies** (billed by traffic):  
+1. **Residential Proxies** (billed by traffic):  
    Connect through the shared gateway (`gate.joyproxy.com:9001`). Target country, state, city, or ISP. Rotate every request or keep a sticky session for tens of minutes.  
    - Purchase: <a href="../getting-started/rotating/purchase.md" target="_blank" rel="noopener noreferrer">Purchase Rotating Proxies</a>
    - Parameters: <a href="../getting-started/rotating/extraction-parameters.md" target="_blank" rel="noopener noreferrer">Advanced extraction parameters</a>

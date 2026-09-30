@@ -2,7 +2,7 @@
 
 Static Proxies are billed by dedicated line (IP) and plan duration (daily / monthly / annual). For as long as the plan is active, you get an exclusive host and port (for example `us-ca.edge.joyproxy.com:10001`). That IP is 100% yours — it is never shared with another customer.
 
-Static Proxies cover three networks: **Static Residential Proxies**, **Static Business / ISP Proxies**, and **Static Datacenter Proxies**. If you need frequent IP rotation or GB billing, see <a href="../rotating/README.md" target="_blank" rel="noopener noreferrer">Rotating Proxies</a>. If you need to switch a port’s country at any time or set a rotation interval, see <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">Custom Proxies</a>.
+Static Proxies cover three networks: **Static Residential Proxies**, **ISP Proxies · Static Dedicated**, and **Static Datacenter Proxies**. If you need frequent IP rotation or GB billing, see <a href="../rotating/README.md" target="_blank" rel="noopener noreferrer">Rotating Proxies</a>. If you need to switch a port’s country at any time or set a rotation interval, see <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">Custom Proxies</a>.
 
 ## How it works
 
@@ -22,7 +22,7 @@ Your app / client  →  us-ca.edge.joyproxy.com:10001  →  target site
 Read in this order:
 
 1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">Quick start</a> — four steps from purchase to a working connection
-2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">Network types</a> — Residential, Business / ISP, and Datacenter dedicated lines
+2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">Network types</a> — Residential, ISP Proxies, and Datacenter dedicated lines
 3. <a href="purchase.md" target="_blank" rel="noopener noreferrer">Purchase dedicated lines</a> — order by country/region and quantity
 4. <a href="view-lines.md" target="_blank" rel="noopener noreferrer">View purchased lines</a> — live lines, ports, and expiry
 5. <a href="auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a> — renew from Account Balance before expiry

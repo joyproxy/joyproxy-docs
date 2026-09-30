@@ -25,7 +25,7 @@ legacyUrl: https://www.joyproxy.com/blog/proxy-quality-with-proxyip-io_tw.html
 
 在上面的診斷儀表盤中（以 Google 公共機房 IP `8.8.8.8` 為例），平台直接給出了 `Datacenter / Hosting`（資料中心/託管）的網絡類型標籤。對於主流電商、社交平台和金融支付系統而言，機房 ASN 天然屬於高疑慮對象——因為正常的海外真實消費者不會在雲端伺服器機房裡瀏覽 TikTok 或網購。
 
-**JoyProxy 的解決方案：** JoyProxy 的[動態輪換住宅代理](https://www.joyproxy.com/products/proxy-residential.html)與[靜態住宅代理](https://www.joyproxy.com/products/proxy-long-term.html)均直接來自全球本土家庭寬頻營運商（如 AT&T;、Comcast、Deutsche Telekom、Vodafone 等）。在 proxyip.io 上檢測時，會真實呈現為 **ISP / Residential** 屬性，從根源上獲得平台風控的第一層信任。
+**JoyProxy 的解決方案：** JoyProxy 的[住宅代理](https://www.joyproxy.com/products/proxy-residential.html)與[靜態住宅代理](https://www.joyproxy.com/products/proxy-long-term.html)均直接來自全球本土家庭寬頻營運商（如 AT&T;、Comcast、Deutsche Telekom、Vodafone 等）。在 proxyip.io 上檢測時，會真實呈現為 **ISP / Residential** 屬性，從根源上獲得平台風控的第一層信任。
 
 ### 2\. 代理 / VPN 可能性與 IP 風險評估（IP Risk Assessment）
 
@@ -65,7 +65,7 @@ proxyip.io 會根據當前檢測到的 IP 真實城市（例如 San Jose, Califo
 登入 JoyProxy 用戶控制台：
 
   * 如需做多帳號長期登入、電商店鋪或社媒營運，進入靜態住宅專區，購買並提取目標國家與城市（如美國洛杉磯、英國倫敦）的**獨享靜態住宅 IP** ；
-  * 如需做大規模公開資料抓取、競品監控或批次檢測，在動態住宅專區產生對應的**輪換住宅代理連接埠與認證帳密** （支援 HTTP/SOCKS5）。
+  * 如需做大規模公開資料抓取、競品監控或批次檢測，在住宅代理產生對應的**住宅代理連接埠與認證帳密** （支援 HTTP/SOCKS5）。
 
 
 

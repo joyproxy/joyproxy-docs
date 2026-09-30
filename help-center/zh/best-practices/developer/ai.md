@@ -98,8 +98,8 @@ JoyProxy 提供标准的远程 **HTTP JSON-RPC MCP 服务**（Endpoint 为 `http
 配置生效后，在 Cursor Chat 或 Claude 对话框中，你可以直接使用自然语言驱动工具：
 
 - **查询账户用量**：
-  > “帮我用 JoyProxy MCP 查询一下当前动态住宅代理的剩余可用流量。”
+  > “帮我用 JoyProxy MCP 查询一下当前住宅代理的剩余可用流量。”
 - **提取特定地区代理**：
   > “使用 JoyProxy 提取一个美国加州洛杉矶、粘性会话 10 分钟的住宅代理端点，并用 Python requests 写一段测试连通性的脚本。”
 - **指定网络类型**：
-  > “提取一个日本东京的商业 ISP 独享代理端点（network_type=business）。”
+  > “提取一个日本东京的 ISP 代理 · 静态独享端点（network_type=isp）。”

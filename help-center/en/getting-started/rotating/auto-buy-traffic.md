@@ -5,7 +5,7 @@ When remaining Rotating Proxies traffic (GB) hits the trigger you set, JoyProxy 
 ## Turn it on
 
 1. Open **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>**.
-2. Find the Rotating Proxies network you want (Residential / Mobile / Business / ISP).
+2. Find the Rotating Proxies network you want (Residential / Mobile / Business).
 3. Turn on **Auto-buy traffic**.
 4. In the settings dialog:
    - **Pack to buy each time**: the pack size to purchase when the rule fires.
@@ -15,5 +15,5 @@ When remaining Rotating Proxies traffic (GB) hits the trigger you set, JoyProxy 
 ## Notes
 
 - **Charged from Balance**: Auto-buy traffic deducts JoyProxy Balance first. Keep enough Balance for the next charge.
-- **Separate rules**: Rotating Residential, Rotating Mobile, and Rotating Business / ISP each have their own Auto-buy traffic switch. Configure them independently.
+- **Separate rules**: Residential Proxies, Mobile Proxies, and Business Proxies each have their own Auto-buy traffic switch. Configure them independently.
 - **Turn off anytime**: click **Turn off auto purchase** to stop. Remaining traffic is not affected.

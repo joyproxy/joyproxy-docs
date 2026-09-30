@@ -1,6 +1,6 @@
 # 概览
 
-JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数据抓取等场景下，提供高效、稳定的出口 IP 解决方案。我们提供三大核心能力：代理 IP 线路（住宅、移动、商业ISP、数据中心）、网页抓取 API 以及全平台免费客户端。
+JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数据抓取等场景下，提供高效、稳定的出口 IP 解决方案。我们提供三大核心能力：代理 IP 线路（住宅、移动、商业、ISP、数据中心）、网页抓取 API 以及全平台免费客户端。
 
 无论您是初次注册还是准备接入生产环境，本指南都将为您提供清晰的配置路径。
 
@@ -14,14 +14,16 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 | --- | --- | --- |
 | [住宅](https://www.joyproxy.com/products/proxy-residential.html) | 动态 · 静态独享 · 自定义独享 | 家庭宽带出口，地区可选范围大，防多账号关联 |
 | [移动](https://www.joyproxy.com/products/proxy-mobile.html) | 动态 | 4G/5G 运营商出口，移动端 App 测试、广告合规校验 |
-| [商业 / ISP](https://www.joyproxy.com/products/proxy-business.html) | 动态 · 静态独享 · 自定义独享 | 具备 ISP 资质的纯净线路、偏向于 B2B 门户访问、对接供应商系统 |
+| [商业](https://www.joyproxy.com/products/proxy-business.html) | 动态 | 写字楼与商业宽带出口，B2B 与商务账号 |
+| [ISP](https://www.joyproxy.com/products/proxy-isp.html) | 静态独享 · 自定义独享 | ISP 专线固定出口，长期稳定会话 |
 | [数据中心](https://www.joyproxy.com/products/proxy-datacenter.html) | 静态独享 · 自定义独享 | 高并发、极速响应、性价比之选 |
 
-四种网络类型的区别：
+五种网络类型的区别：
 
 * **住宅**：家庭宽带 IP。
 * **移动**：4G/5G 运营商 IP。
-* **商业 / ISP**：写字楼、商业 IP。
+* **商业**：写字楼、商业宽带 IP（动态代理）。
+* **ISP**：运营商 ISP 专线（静态独享 / 自定义独享）。
 * **数据中心**：数据中心 IP。
 
 三种代理产品的区别：

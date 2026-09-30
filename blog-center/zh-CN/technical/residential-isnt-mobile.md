@@ -1,6 +1,6 @@
 ---
 title: "住宅不是移动：目标系统要的是电信运营商 ASN"
-description: "家庭宽带和 4G/5G 处于完全不同的 ASN 体系。深入探讨何时必须使用移动动态代理，以及简单修改手机 UA 为何骗不过现代风控。"
+description: "家庭宽带和 4G/5G 处于完全不同的 ASN 体系。深入探讨何时必须使用移动代理，以及简单修改手机 UA 为何骗不过现代风控。"
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/residential-isnt-mobile_cn.html
 ---

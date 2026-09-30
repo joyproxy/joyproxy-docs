@@ -17,7 +17,7 @@ You can start a chat in two places:
 
 ## When Live Chat is the better fit
 
-- **Pre-sales**: Unsure whether fingerprint-browser isolation, multi-store e-commerce, or a crawler should use Rotating Residential or Static Dedicated;
+- **Pre-sales**: Unsure whether fingerprint-browser isolation, multi-store e-commerce, or a crawler should use Residential Proxies or Static Dedicated;
 - **Setup**: User/Pass failures in Chrome, Firefox, AdsPower, or Python/Scrapy that you want to debug live;
 - **Recharge and orders**: You just paid or bought a plan and want a human to confirm it landed;
 - **Incidents**: Sudden network errors — confirm whether a node is in maintenance or the whole service is degraded.
@@ -29,7 +29,7 @@ You can start a chat in two places:
 To help support diagnose in a few minutes, have ready:
 
 1. **The account email**;
-2. **The product line** (Rotating Residential, Static Dedicated, or Web Scraping API);
+2. **The product line** (Residential Proxies, Static Dedicated, or Web Scraping API);
 3. **The client** (Python requests, cURL, AdsPower, Browser Extension, and so on);
 4. **A full error screenshot or terminal output** (mask passwords and Master User Token).
 

@@ -54,7 +54,7 @@ Keep a clear runbook mapping Profile ID → Client/Account → Target Country �
 
 ## When does rotation still belong?
 
-Rotation is not useless—it is simply meant for **unauthenticated data collection**. If your team monitors competitor ad creatives, scrapes public e-commerce catalogs, or checks regional search rankings, use [rotating residential proxies](https://www.joyproxy.com/products/proxy-residential.html) with pay-as-you-go traffic. Save your static dedicated lines strictly for logged-in profile management.
+Rotation is not useless—it is simply meant for **unauthenticated data collection**. If your team monitors competitor ad creatives, scrapes public e-commerce catalogs, or checks regional search rankings, use [residential proxies](https://www.joyproxy.com/products/proxy-residential.html) with pay-as-you-go traffic. Save your static dedicated lines strictly for logged-in profile management.
 
 ## Summary
 

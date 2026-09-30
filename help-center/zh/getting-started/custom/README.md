@@ -36,7 +36,7 @@
 建议按顺序阅读以下指南：
 
 1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">快速开始</a> — 4 步极简接入指南
-2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">网络类型与选型指南</a> — 住宅、商业/ISP 与数据中心自定义端口包对比
+2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">网络类型与选型指南</a> — 住宅、ISP 与数据中心自定义端口包对比
 3. <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买端口</a> — 选择网络类型、端口数量与预分配选项下单
 4. <a href="view-ports.md" target="_blank" rel="noopener noreferrer">查看与管理端口</a> — 查看已购端口列表、生效状态与到期时间
 5. <a href="assign-region.md" target="_blank" rel="noopener noreferrer">分配地区</a> — 为端口分配或随时切换目标国家、省/州与城市

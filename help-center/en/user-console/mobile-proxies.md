@@ -10,7 +10,7 @@ In the left sidebar **Proxies** group, click **Mobile**:
 
 ## Rotating-only product
 
-Unlike Residential, cellular exits change with the tower. The **Mobile** console is **Rotating Mobile Proxies** billed by GB only. There is no long-lived dedicated port SKU:
+Unlike Residential, cellular exits change with the tower. The **Mobile** console is **Mobile Proxies** billed by GB only. There is no long-lived dedicated port SKU:
 
 - Billing: buy a prepaid traffic pack; GB is deducted from actual proxy traffic until the pack is empty;
 - Access: a global mobile gateway. Target country and city. Rotate per request or keep a sticky session.
@@ -20,7 +20,7 @@ Unlike Residential, cellular exits change with the tower. The **Mobile** console
 ## Common tasks
 
 ### 1. Buy Mobile traffic
-Open the **Buy** tab and pick a Rotating Mobile Proxies pack for your throughput. Network details: <a href="../getting-started/rotating/network-types.md" target="_blank" rel="noopener noreferrer">Network types</a>.
+Open the **Buy** tab and pick a Mobile Proxies pack for your throughput. Network details: <a href="../getting-started/rotating/network-types.md" target="_blank" rel="noopener noreferrer">Network types</a>.
 
 ### 2. Set authorization
 Open **Users & Whitelist** and complete authorization first. The rotating mobile gateway requires User/Pass. Create and manage credentials here. To call extract APIs from a fixed server without embedding a token, add the server IP to **IP Whitelist**. Full rules: <a href="../getting-started/rotating/authentication.md" target="_blank" rel="noopener noreferrer">Users & Whitelist</a>.

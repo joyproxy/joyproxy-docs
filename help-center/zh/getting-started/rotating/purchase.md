@@ -8,16 +8,16 @@ JoyProxy 提供三种动态代理网络，登录控制台后可在 **<a href="ht
 
 | 网络类型 | 选型建议 | 典型适用场景 |
 | --- | --- | --- |
-| **动态住宅代理（Rotating Residential Proxies）** | 真实家庭宽带 IP，覆盖 200+ 国家 | 数据采集、网页爬虫、电商比价、账号运营 |
-| **动态移动代理（Rotating Mobile Proxies）** | 真实 4G / 5G 运营商 IP，免封率极高 | 移动 App 测试、移动广告验证、高风控重试 |
-| **动态商业 / ISP 代理（Rotating Business / ISP Proxies）** | 企业专线 ISP 出口，兼具高速与高信任度 | B2B 门户对接、长效 API 调用、商务平台交互 |
+| **住宅代理（Residential Proxies）** | 真实家庭宽带 IP，覆盖 200+ 国家 | 数据采集、网页爬虫、电商比价、账号运营 |
+| **移动代理（Mobile Proxies）** | 真实 4G / 5G 运营商 IP，免封率极高 | 移动 App 测试、移动广告验证、高风控重试 |
+| **商业代理（Business Proxies）** | 企业专线 ISP 出口，兼具高速与高信任度 | B2B 门户对接、长效 API 调用、商务平台交互 |
 
 同一账户可同时持有多种不同网络的流量包，各订单独立计量。
 
 ## 控制台购买步骤
 
 1. 登录控制台，打开左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>** 页面。
-2. 选择要购买的网络类型（**住宅代理** / **移动代理** / **商业 / ISP 代理**）。
+2. 选择要购买的网络类型（**住宅代理** / **移动代理** / **商业代理**）。
 3. 选择 **动态代理** 标签页。
 4. 挑选符合业务规模的流量包（如 5 GB、10 GB、50 GB、100 GB 等）。
 5. 选择支付渠道并完成付款：

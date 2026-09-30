@@ -11,9 +11,9 @@
 
 1. 登录 <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy 控制台</a>，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>**。
 2. 根据业务选择网络类型：
-   - **动态住宅代理**：适合数据采集、社媒运营、电商比价（高隐蔽、性价比高）。
-   - **动态移动代理**：适合 App 测试、移动广告校验（真机 4G/5G IP，免封率极高）。
-   - **动态商业 / ISP 代理**：适合 B2B 门户与长效连接。
+   - **住宅代理**：适合数据采集、社媒运营、电商比价（高隐蔽、性价比高）。
+   - **移动代理**：适合 App 测试、移动广告校验（真机 4G/5G IP，免封率极高）。
+   - **商业代理**：适合 B2B 门户与长效连接。
 3. 选择需要的流量包（如 5 GB、10 GB 等），完成支付。
 
 ---

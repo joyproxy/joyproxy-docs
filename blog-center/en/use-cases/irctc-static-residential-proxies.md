@@ -41,7 +41,7 @@ JoyProxy names this line **Static Dedicated Residential Proxies** (dashboard tab
 
 
 
-JoyProxy also sells Business/ISP static and datacenter static. For IRCTC-style consumer logins, start with **residential**. Use business static only if you truly need an office/ISP ASN. Skip datacenter for this target.
+JoyProxy also sells ISP Proxies · Static Dedicated and datacenter static. For IRCTC-style consumer logins, start with **residential**. Use ISP Proxies only if you truly need an office/ISP ASN. Skip datacenter for this target.
 
 Line| Session identity| IRCTC logged-in flow  
 ---|---|---  
@@ -137,7 +137,7 @@ SOCKS5 is `socks5h://USER:PASS@HOST:PORT` (the `h` keeps DNS on the proxy side).
 
 ## FAQ
 
-### Can I just use rotating residential? It is cheaper per GB.
+### Can I just use residential proxies? It is cheaper per GB.
 
 Cheaper, and wrong for this. Rotating is for scrapes where each request can be a different house. IRCTC remembers the session. Pay for one static IP.
 

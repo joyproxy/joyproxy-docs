@@ -7,7 +7,7 @@ In the console you can check Rotating Proxies pack status, used traffic, and rem
 1. Log in to the JoyProxy console.
 2. Open **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" rel="noopener noreferrer">My Proxies</a>** in the left menu.
 3. Switch to the **Rotating Proxies** section. You will see cards for every active Rotating Proxies order:
-   - **Pack name and network type**: for example Rotating Residential Proxies.
+   - **Pack name and network type**: for example Residential Proxies.
    - **Traffic quota**: Used (GB) and Remaining (GB).
    - **Traffic progress bar**: share of the pack already consumed.
    - **Purchase Time and Validity**.

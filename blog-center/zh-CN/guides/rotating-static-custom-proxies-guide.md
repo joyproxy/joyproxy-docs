@@ -7,11 +7,11 @@ legacyUrl: https://www.joyproxy.com/blog/rotating-static-custom-proxies-guide_cn
 
 # 动态、静态与自定义住宅代理：哪款适合你的业务架构？
 
-在 JoyProxy 的产品体系中，代理服务被划分为三大核心线：**动态住宅代理（Rotating Residential）** 、**静态独享住宅代理（Static Residential）** 以及**自定义住宅代理（Custom Residential）** 。这些分类并非营销概念，而是直接对应了底层的技术实现、IP 轮换生命周期以及端口控制颗粒度。
+在 JoyProxy 的产品体系中，代理服务被划分为三大核心线：**住宅代理（Residential Proxies）** 、**静态独享住宅代理（Static Residential）** 以及**自定义住宅代理（Custom Residential）** 。这些分类并非营销概念，而是直接对应了底层的技术实现、IP 轮换生命周期以及端口控制颗粒度。
 
 在管理控制台中，无论选购哪款产品，都是在统一的「代理 IP」主菜单下完成。你均可以通过「购买代理」、「我的代理」、「白名单与用户」以及「端点生成器」这四个标准化模块来完成从采购到提取的全流程。
 
-## 1\. 动态住宅代理（按流量计费，海量池轮换）
+## 1\. 住宅代理（按流量计费，海量池轮换）
 
 **适用场景：** 每一次网络请求或每个短时任务都应当呈现为来自全球各地的不同真实家庭宽带出口。
 
@@ -47,7 +47,7 @@ legacyUrl: https://www.joyproxy.com/blog/rotating-static-custom-proxies-guide_cn
 
 产品类型| 核心计费维度| IP 身份存续周期| 典型运营团队  
 ---|---|---|---  
-**动态住宅代理**|  传输流量（GB）| 请求级或短时会话变动| 数据工程 / 增长研发  
+**住宅代理**|  传输流量（GB）| 请求级或短时会话变动| 数据工程 / 增长研发  
 **静态独享住宅**|  租赁时长（日/月/年）| 租期内绝对恒定| 电商运营 / 账号资产管理  
 **自定义住宅代理**|  端口数 × 时长| 固定槽位，可自主定时刷新| 跨国产品 QA / 自动化矩阵  
   
@@ -59,6 +59,6 @@ legacyUrl: https://www.joyproxy.com/blog/rotating-static-custom-proxies-guide_cn
 
 
 
-行业成熟团队的标准做法通常是：**用动态住宅流量池承载高并发的数据收集器，用静态住宅与自定义端口承载核心账号的登录与交互。** 新用户可以充分利用 [$5 美元新手体验金](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/)，分别提取动态和静态端点进行全链路验证。
+行业成熟团队的标准做法通常是：**用住宅代理流量池承载高并发的数据收集器，用静态住宅与自定义端口承载核心账号的登录与交互。** 新用户可以充分利用 [$5 美元新手体验金](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/)，分别提取动态和静态端点进行全链路验证。
 
 **准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)

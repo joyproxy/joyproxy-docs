@@ -1,17 +1,17 @@
 ---
 title: "Rotating, Static, and Custom Residential Proxies: Which Line Fits Your Stack?"
-description: "JoyProxy offers four proxy network families—Residential, Mobile, Business/ISP, and Datacenter—each with modes matched to your workflow (rotating traffic, static lines, or custom ports)."
+description: "JoyProxy offers five proxy network families—Residential, Mobile, Business, ISP, and Datacenter—each with modes matched to your workflow (rotating traffic, static lines, or custom ports)."
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/rotating-static-custom-proxies-guide.html
 ---
 
 # Rotating, Static, and Custom Residential Proxies: Which Line Fits Your Stack?
 
-JoyProxy groups residential proxy products into three lines: **Rotating Residential Proxies** , **Static Residential Proxies** , and **Custom Residential Proxies**. The names describe behavior, not marketing tiers—rotation frequency, session stability, and how much control you need per port.
+JoyProxy groups residential proxy products into three lines: **Residential Proxies** , **Static Residential Proxies** , and **Custom Residential Proxies**. The names describe behavior, not marketing tiers—rotation frequency, session stability, and how much control you need per port.
 
 If you are new to the dashboard, the parent menu stays **Proxy IP** (covering all proxy types today). Inside it you will see **Purchase Proxies** , **My Proxies** , **Whitelist & Users**, and **Endpoint generator** —the same workflow for every line.
 
-## Rotating Residential Proxies (pay per GB)
+## Residential Proxies (pay per GB)
 
 Use this when each request or short-lived session should look like a different household connection.
 
@@ -22,7 +22,7 @@ Use this when each request or short-lived session should look like a different h
 
 
 
-Start on the [Rotating Residential Proxies](https://www.joyproxy.com/proxy-products.html) product page or open [Purchase Proxies → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term) after login.
+Start on the [Residential Proxies](https://www.joyproxy.com/proxy-products.html) product page or open [Purchase Proxies → Rotating](https://www.joyproxy.com/admin-purchase.html?tab=short-term) after login.
 
 ## Static Residential Proxies (dedicated ports by duration)
 

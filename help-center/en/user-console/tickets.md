@@ -37,7 +37,7 @@ Keep the title short, for example:
 
 ### 3. Issue Description
 Give enough detail for a fast diagnosis:
-- **Proxy**: product line (Rotating Residential / Static Dedicated), auth (User/Pass or IP Whitelist), target host, status or cURL output, and time with timezone.
+- **Proxy**: product line (Residential Proxies / Static Dedicated), auth (User/Pass or IP Whitelist), target host, status or cURL output, and time with timezone.
 - **Billing**: recharge order id, method (PayPal / USDT-TRC20), TXID, or payment time.
 - **Web Scraping API**: endpoint, parameters, HTTP status, and a snippet of the error body.
 

@@ -24,7 +24,7 @@ The top of Overview shows your core balance board:
 
 The center panel summarizes proxy resources so you do not have to open every order:
 
-- **Rotating Proxies**: Prepaid traffic across Residential, Mobile, and Business / ISP, shown as **Total GB**, **Used GB**, and **Remaining GB**.
+- **Rotating Proxies**: Prepaid traffic across Residential, Mobile, and Business, shown as **Total GB**, **Used GB**, and **Remaining GB**.
 - **Dedicated Proxies**: Active Static Proxies and Custom Proxies counts, with **Expiring** and **Expired** markers.
 - **Web Scraping API**: Remaining Credits and the concurrency limit.
 
@@ -40,7 +40,8 @@ In the **Proxy networks** cards, you can jump into each product console:
 | :--- | :--- | :--- |
 | **Residential** | Real home broadband exits, large rotating pools, strong bypass for e-commerce, public-opinion crawl, and multi-account work | <a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">Open Residential console</a> |
 | **Mobile** | Clean 4G/5G carrier exits, high mobile trust — TikTok, Instagram, and other app workflows | <a href="mobile-proxies.md" target="_blank" rel="noopener noreferrer">Open Mobile console</a> |
-| **Business / ISP** | Office and enterprise ISP lines: residential-like reputation with leased-line latency and bandwidth | <a href="business-isp-proxies.md" target="_blank" rel="noopener noreferrer">Open Business / ISP console</a> |
+| **Business Proxies** | Office and commercial broadband rotation for B2B and jobs that need frequent IP changes | <a href="business-proxies.md" target="_blank" rel="noopener noreferrer">Open Business Proxies console</a> |
+| **ISP Proxies** | Dedicated carrier ISP exits for long-lived sessions and enterprise systems | <a href="isp-proxies.md" target="_blank" rel="noopener noreferrer">Open ISP Proxies console</a> |
 | **Datacenter** | Hosting ASN exits, gigabit throughput and low cost for high-volume crawls without strict anti-bot | <a href="datacenter-proxies.md" target="_blank" rel="noopener noreferrer">Open Datacenter console</a> |
 | **Web Scraping API** | Managed fetch API with JavaScript rendering, captcha handling, and proxy scheduling | <a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">Open Web Scraping API console</a> |
 

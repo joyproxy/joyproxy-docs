@@ -12,7 +12,7 @@ This guide walks you through purchasing Custom Proxies ports, assigning a region
 1. Log in to the <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy console</a> and open **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase Proxies</a>** in the left menu.
 2. Choose an IP network:
    - **Residential**: real home-broadband IPs, very high trust.
-   - **Business / ISP**: carrier business lines, high speed and high trust.
+   - **ISP Proxies**: carrier business lines, high speed and high trust.
    - **Datacenter**: hosting ASN IPs, strong value and low latency.
 3. Switch to the **Custom Dedicated Residential Proxies** tab (or **Custom Dedicated Business Proxies** / **Custom Dedicated Datacenter Proxies** if you selected those networks).
 4. Choose a validity plan (for example **Monthly Plan**). Under **Number of ports (this order)**, enter how many ports to buy (for example 5).

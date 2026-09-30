@@ -11,9 +11,9 @@ This guide walks you from buying traffic to your first Rotating Proxies connecti
 
 1. Log in to the <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy console</a> and open **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase Proxies</a>** in the left menu.
 2. Pick a network for your use case:
-   - **Rotating Residential Proxies**: data collection, social ops, e-commerce price checks (high trust, strong value).
-   - **Rotating Mobile Proxies**: app testing and mobile ad verification (real 4G/5G IPs, very hard to block).
-   - **Rotating Business / ISP Proxies**: B2B portals and long-lived connections.
+   - **Residential Proxies**: data collection, social ops, e-commerce price checks (high trust, strong value).
+   - **Mobile Proxies**: app testing and mobile ad verification (real 4G/5G IPs, very hard to block).
+   - **Business Proxies**: B2B portals and long-lived connections.
 3. Choose a traffic pack (for example 5 GB or 10 GB) and complete payment.
 
 ---

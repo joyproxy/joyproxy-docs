@@ -7,7 +7,7 @@ Static Proxies are billed by IP line count and plan duration. After checkout, ea
 1. Log in to the JoyProxy console and open **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase Proxies</a>** in the left menu.
 2. Choose a network:
    - **Residential**
-   - **Business / ISP**
+   - **ISP Proxies**
    - **Datacenter**
 3. Switch to the **Static Dedicated Residential Proxies** tab (or **Static Dedicated Business Proxies** / **Static Dedicated Datacenter Proxies** for those networks).
 4. Choose a validity plan:

@@ -1,6 +1,6 @@
 # Overview
 
-JoyProxy gives teams a stable, high-throughput exit-IP stack for automation, web collection, app testing, and data fetching. Three capabilities sit at the core: proxy IP networks (Residential, Mobile, Business / ISP, Datacenter), Web Scraping API, and free clients for every major platform.
+JoyProxy gives teams a stable, high-throughput exit-IP stack for automation, web collection, app testing, and data fetching. Three capabilities sit at the core: proxy IP networks (Residential, Mobile, Business, ISP, Datacenter), Web Scraping API, and free clients for every major platform.
 
 Whether you just signed up or you are wiring production, this guide is the path from first login to a working setup.
 
@@ -14,14 +14,16 @@ Each line is delivered as a standard hostname (Host), port (Port), and credentia
 | --- | --- | --- |
 | [Residential](https://www.joyproxy.com/products/proxy-residential.html) | Rotating · Static Proxies · Custom Proxies | Home-broadband exits, wide geo coverage, multi-account isolation |
 | [Mobile](https://www.joyproxy.com/products/proxy-mobile.html) | Rotating | 4G/5G carrier exits, mobile-app testing, ads compliance checks |
-| [Business / ISP](https://www.joyproxy.com/products/proxy-business.html) | Rotating · Static Proxies · Custom Proxies | Clean ISP-grade lines for B2B portals and supplier systems |
+| [Business](https://www.joyproxy.com/products/proxy-business.html) | Rotating | Office and commercial broadband for B2B and business accounts |
+| [ISP](https://www.joyproxy.com/products/proxy-isp.html) | Static Dedicated · Custom | Dedicated ISP lines for long-lived sessions |
 | [Datacenter](https://www.joyproxy.com/products/proxy-datacenter.html) | Static Proxies · Custom Proxies | High concurrency, low latency, cost-efficient throughput |
 
-How the four networks differ:
+How the five networks differ:
 
 * **Residential**: home broadband IPs.
 * **Mobile**: 4G/5G carrier IPs.
-* **Business / ISP**: office and commercial IPs.
+* **Business**: office and commercial broadband IPs (Rotating Proxies).
+* **ISP**: carrier ISP dedicated lines (Static Dedicated / Custom).
 * **Datacenter**: datacenter IPs.
 
 How the three proxy products differ:

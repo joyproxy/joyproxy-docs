@@ -9,7 +9,7 @@ In a crawler, pull endpoints from the extract API in batches and keep them in a 
 - **URL**: `https://api.joyproxy.com/v2/extract`
 - **Auth**: query `?token=API_Token` or header `Authorization: Bearer <API_Token>`
 - **Core parameters**:
-  - `network_type`: `residential` (Residential), `cellular` (Mobile), `business` (Business / ISP);
+  - `network_type`: `residential` (Residential), `cellular` (Mobile), `business` (Business Proxies), `isp` (ISP Proxies);
   - `country_iso`: exit country ISO code (`US`, `JP`, `DE`);
   - `count`: how many to pull per call;
   - `format`: `json` or `crlf`.

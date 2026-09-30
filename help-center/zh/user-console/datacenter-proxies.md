@@ -22,7 +22,7 @@
    - 批量管理：<a href="../getting-started/custom/view-ports.md" target="_blank" rel="noopener noreferrer">查看与管理自定义端口</a>
    - 续费说明：<a href="../getting-started/custom/auto-renew.md" target="_blank" rel="noopener noreferrer">自定义端口自动续费配置</a>
 
-> **选型建议**：如果你的业务场景涉及严格识别机房 IP 的目标网站（如 Google 搜索验证、Instagram、Facebook 等），建议优先选用 <a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">住宅代理控制台</a> 或 <a href="business-isp-proxies.md" target="_blank" rel="noopener noreferrer">商业 / ISP 代理控制台</a>；若仅用于常规公开网站、API 监控、竞品比价等场景，数据中心代理能为你节省超过 70% 的代理预算。
+> **选型建议**：如果你的业务场景涉及严格识别机房 IP 的目标网站（如 Google 搜索验证、Instagram、Facebook 等），建议优先选用 <a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">住宅代理控制台</a> 或 <a href="isp-proxies.md" target="_blank" rel="noopener noreferrer">ISP 代理控制台</a>；若仅用于常规公开网站、API 监控、竞品比价等场景，数据中心代理能为你节省超过 70% 的代理预算。
 
 ---
 

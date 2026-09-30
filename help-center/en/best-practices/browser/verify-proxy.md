@@ -12,7 +12,7 @@ In a browser that already uses the proxy, open:
 
 1. **<a href="https://ipinfo.io" target="_blank" rel="noopener noreferrer">ipinfo.io</a>**:
    - Shows public IP, Country, City, Timezone, and Org;
-   - Use it to confirm ASN for Residential or Business / ISP lines.
+   - Use it to confirm ASN for Residential, Business Proxies, or ISP Proxies lines.
 2. **<a href="https://whoer.net" target="_blank" rel="noopener noreferrer">whoer.net</a>**:
    - Broader leak check: DNS location vs system timezone.
 3. **<a href="https://browserleaks.com/webrtc" target="_blank" rel="noopener noreferrer">browserleaks.com/webrtc</a>**:

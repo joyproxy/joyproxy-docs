@@ -58,7 +58,7 @@ To avoid sending every app through the proxy, choose one of three routing modes:
 
 For cross-border marketing, multi-account anti-ban, and mobile data checks, the device fingerprint should match the network.
 
-Pair this client with JoyProxy <a href="../rotating/network-types.md" target="_blank" rel="noopener noreferrer">Rotating Mobile Proxies</a>:
+Pair this client with JoyProxy <a href="../rotating/network-types.md" target="_blank" rel="noopener noreferrer">Mobile Proxies</a>:
 - Install the client on a real Android phone and use the assigned mobile carrier IP (4G / 5G cellular exit).
 - With Whitelist routing, the target app sees ASN, IP, and environment consistent with a local mobile network, which lowers block rates.
 

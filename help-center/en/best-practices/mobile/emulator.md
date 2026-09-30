@@ -6,7 +6,7 @@ Configuring a proxy in an Android emulator (LDPlayer, MuMu, and similar) gives a
 
 ## Before you start
 
-- **Network type**: for mobile-app testing, prefer **Rotating Mobile Proxies** (4G/5G) or **Static Residential Proxies** — both look like real end-user networks;
+- **Network type**: for mobile-app testing, prefer **Mobile Proxies** (4G/5G) or **Static Residential Proxies** — both look like real end-user networks;
 - **IP Whitelist**: for Static Proxies, add the host PC’s public IP on JoyProxy **Users & Whitelist** so you do not have to type credentials. The Rotating Proxies gateway (`gate.joyproxy.com:9001`) always needs the long username and password in the client.
 
 ---

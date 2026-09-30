@@ -36,7 +36,7 @@ Your app / client  →  us-ca.edge.joyproxy.com:20001  →  target site (exit co
 Read in this order:
 
 1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">Quick start</a> — four steps from purchase to a working connection
-2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">Network types and how to choose</a> — Residential, Business / ISP, and Datacenter custom port packs
+2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">Network types and how to choose</a> — Residential, ISP Proxies, and Datacenter custom port packs
 3. <a href="purchase.md" target="_blank" rel="noopener noreferrer">Purchase ports</a> — network, port count, and pre-assign options
 4. <a href="view-ports.md" target="_blank" rel="noopener noreferrer">View and manage ports</a> — purchased ports, status, and expiry
 5. <a href="assign-region.md" target="_blank" rel="noopener noreferrer">Assign region</a> — set or switch country, state/province, and city

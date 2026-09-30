@@ -13,7 +13,7 @@ A lot of orders start the same way. Someone already has residential. The page th
 
 It isn’t. The city can match. The ASN still doesn’t. Residential exits as home broadband. Mobile exits as a carrier — Verizon, Vodafone, a local 4G/5G network, not your cable modem with an iPhone User-Agent taped on. Plenty of apps and ad stacks look that up. They are not impressed by `iPhone` in a header if the IP belongs to a household ISP.
 
-On JoyProxy the SKUs are also not mirrors of each other. Mobile is **rotating traffic only**. There is no dedicated 4G line, no Custom port that sits on one cell tower for a month. If you need one identity that does not wander, that is residential Static (or Business/ISP / datacenter Static). We will not invent a mobile-static SKU in the checkout to make the spreadsheet prettier.
+On JoyProxy the SKUs are also not mirrors of each other. Mobile is **rotating traffic only**. There is no dedicated 4G line, no Custom port that sits on one cell tower for a month. If you need one identity that does not wander, that is residential Static (or ISP Proxies / datacenter Static). We will not invent a mobile-static SKU in the checkout to make the spreadsheet prettier.
 
 ## Same city, different network
 
@@ -27,7 +27,7 @@ How you pay| GB pack, or per IP / port by duration| Its own GB ladder — not �
 Geo| Country, state, city (stock that day)| Same idea, different pool  
 Logged-in session| Static if the account has to stay put| A bad fit — the IP is supposed to move  
   
-Ballpark on the public list, not a contract: rotating residential starts around **$3.50/GB** on 1 GB and falls toward **$1.80** at 1000 GB. Mobile starts around **$4.00/GB** and around **$2.00** at the top tier. Packs do not expire; you burn GB until the balance is gone. Live numbers live on [pricing](https://www.joyproxy.com/pricing.html). Neither family includes mainland-China routes.
+Ballpark on the public list, not a contract: residential proxies starts around **$3.50/GB** on 1 GB and falls toward **$1.80** at 1000 GB. Mobile starts around **$4.00/GB** and around **$2.00** at the top tier. Packs do not expire; you burn GB until the balance is gone. Live numbers live on [pricing](https://www.joyproxy.com/pricing.html). Neither family includes mainland-China routes.
 
 ## When the target actually wants a carrier
 
@@ -69,11 +69,11 @@ No. It is a different network type. Some targets want that type. Others do not l
 
 ### Can I pick a city on mobile?
 
-Yes, when we have stock. Same country / state / city filters as rotating residential, different inventory.
+Yes, when we have stock. Same country / state / city filters as residential proxies, different inventory.
 
 ### Do you sell a dedicated mobile IP?
 
-Not today. Rotating traffic only. Dedicated lines are on residential, Business/ISP, or datacenter.
+Not today. Rotating traffic only. Dedicated lines are on residential, ISP Proxies, or datacenter.
 
 ### Does unused mobile GB expire?
 

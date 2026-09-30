@@ -24,7 +24,7 @@
 
 中央面板对你名下的各类代理资源进行了分类汇总，无需逐个翻查订单即可直观了解剩余额度：
 
-- **动态代理流量**：汇总统计住宅、移动及商业网络的预付流量包，清晰呈现 **总量 GB**、**已用 GB** 与 **剩余 GB**。
+- **动态代理流量**：汇总统计住宅、移动及商业代理的预付流量包，清晰呈现 **总量 GB**、**已用 GB** 与 **剩余 GB**。
 - **独享长效代理**：显示当前正在生效中的静态 ISP 独享线路与自定义定制端口总数，并对即将到期和已过期的资源进行预警标记。
 - **网页抓取 API（Web Scraping API）**：显示当前剩余可调用的 Credits 积分余额以及最高并发限制。
 
@@ -34,13 +34,14 @@
 
 ## 代理网络控制台入口
 
-在概览中部的 **代理网络** 卡片区域，你可以直达五大产品线的专用控制台：
+在概览中部的 **代理网络** 卡片区域，你可以直达各产品线的专用控制台：
 
 | 代理网络类型 | 业务特点与典型应用场景 | 快速入口 |
 | :--- | :--- | :--- |
 | **住宅代理** | 真实家庭宽带出口，海量轮换 IP 池，穿透力最强，适合电商风控、舆情采集与多账号运营 | <a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">进入住宅控制台</a> |
 | **移动代理** | 纯净 4G/5G 移动蜂窝基站出口，移动端高信任权重，适合 TikTok、Instagram 等移动业务 | <a href="mobile-proxies.md" target="_blank" rel="noopener noreferrer">进入移动控制台</a> |
-| **商业 / ISP 代理** | 写字楼及企业专线真实 ISP，兼备住宅信用与专线级低延迟稳定带宽 | <a href="business-isp-proxies.md" target="_blank" rel="noopener noreferrer">进入商业控制台</a> |
+| **商业代理** | 写字楼与商业宽带动态出口，适合 B2B 与需要频繁换 IP 的商务采集 | <a href="business-proxies.md" target="_blank" rel="noopener noreferrer">进入商业代理控制台</a> |
+| **ISP 代理** | 运营商 ISP 专线固定出口，适合长期稳定会话与企业系统对接 | <a href="isp-proxies.md" target="_blank" rel="noopener noreferrer">进入 ISP 代理控制台</a> |
 | **数据中心代理** | 托管机房 ASN 出口，千兆超大吞吐带宽与极低成本，适合无严格反爬的高速批量爬取 | <a href="datacenter-proxies.md" target="_blank" rel="noopener noreferrer">进入数据中心控制台</a> |
 | **网页抓取 API** | 开箱即用的智能抓取接口，内置全自动 JavaScript 动态渲染、验证码绕过与代理调度 | <a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">进入网页抓取 API 控制台</a> |
 

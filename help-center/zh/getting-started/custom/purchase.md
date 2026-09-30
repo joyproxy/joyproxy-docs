@@ -9,7 +9,7 @@
 1. 登录 JoyProxy 控制台，点击左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>**。
 2. 选择需要的网络类型选项卡：
    - **住宅代理**
-   - **商业 / ISP 代理**
+   - **ISP 代理**
    - **数据中心代理**
 3. 在产品模式中选择 **自定义独享代理**。
 4. 选择有效期套餐：

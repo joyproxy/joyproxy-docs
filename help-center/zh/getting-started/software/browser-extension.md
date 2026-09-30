@@ -50,7 +50,7 @@
 2. **提取 API（Extract API）**  
    支持填入第三方服务商提供的代理提取链接，并可指定正则表达式与预设账密。扩展支持单次测通后自动设为代理，也支持按照预定时间间隔自动轮询更换新 IP。
 3. **JoyProxy 已购线路**  
-   若当前浏览器已经在 <a href="https://www.joyproxy.com" target="_blank" rel="noopener noreferrer">joyproxy.com</a> 登录过控制台，工作台会自动识别用户凭据并加载名下的动态住宅流量包、静态独享或自定义端口线路。在扩展中按需选择国家、城市与会话类型即可，无需繁琐地手动复制长链接。
+   若当前浏览器已经在 <a href="https://www.joyproxy.com" target="_blank" rel="noopener noreferrer">joyproxy.com</a> 登录过控制台，工作台会自动识别用户凭据并加载名下的住宅代理流量包、静态独享或自定义端口线路。在扩展中按需选择国家、城市与会话类型即可，无需繁琐地手动复制长链接。
 
 ---
 

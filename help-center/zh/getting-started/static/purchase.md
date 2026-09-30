@@ -7,7 +7,7 @@
 1. 登录 JoyProxy 控制台，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>** 页面。
 2. 选择所需的网络类型：
    - **住宅代理**
-   - **商业 / ISP 代理**
+   - **ISP 代理**
    - **数据中心代理**
 3. 切换到 **静态独享代理** 标签页。
 4. 选择时长套餐：

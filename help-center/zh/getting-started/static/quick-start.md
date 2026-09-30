@@ -10,7 +10,7 @@
 ## 第一步：购买静态独享线路
 
 1. 登录 <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy 控制台</a>，进入左侧菜单 **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">购买代理</a>**。
-2. 选择需要的网络类型：**住宅代理** / **商业 / ISP 代理** / **数据中心代理**。
+2. 选择需要的网络类型：**住宅代理** / **ISP 代理** / **数据中心代理**。
 3. 切换到 **静态独享代理** 标签页。
 4. 选择套餐时长（如月套餐），在 **选择 IP 地区** 下选择目标国家/地区并设定购买 IP 数量。
 5. 完成支付。

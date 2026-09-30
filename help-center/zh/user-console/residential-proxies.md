@@ -27,7 +27,7 @@
 
 住宅网络针对不同业务架构提供了三种截然不同的产品模式，你可以在控制台各个页签的顶部随时切换：
 
-1. **动态住宅代理（按流量计费）**：  
+1. **住宅代理（按流量计费）**：  
    接入官方统一高可用网关（`gate.joyproxy.com:9001`），支持按国家、州省、城市甚至运营商指定出口，可随时按需轮换或保持最长数十分钟的黏性会话。  
    - 购买指南：<a href="../getting-started/rotating/purchase.md" target="_blank" rel="noopener noreferrer">动态代理购买指南</a>
    - 提取参数详解：<a href="../getting-started/rotating/extraction-parameters.md" target="_blank" rel="noopener noreferrer">高级提取参数配置</a>

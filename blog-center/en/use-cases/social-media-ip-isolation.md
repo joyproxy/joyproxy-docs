@@ -22,7 +22,7 @@ Rotation is the wrong default here. Scrapers rotate so each request looks unrela
 
 
 
-Hashtag harvesting and public profile collection belong on **rotating residential** , on a different IP than the one you post from. Mixing those jobs on the same exit is how “research” traffic lands on a client login.
+Hashtag harvesting and public profile collection belong on **residential proxies** , on a different IP than the one you post from. Mixing those jobs on the same exit is how “research” traffic lands on a client login.
 
 ## The isolation rule
 
@@ -50,7 +50,7 @@ Home broadband and 4G/5G are different ASNs—if the app literally wants a carri
 
 ## What not to do
 
-  * Do not run five client logins through one rotating residential username “because it is cheaper.”
+  * Do not run five client logins through one residential proxies username “because it is cheaper.”
   * Do not use datacenter IPs for posting, DMs, or ads manager.
   * Do not put public scraping and logged-in publishing on the same IP.
   * Do not treat this as a way to manufacture fake accounts or evade platform enforcement. JoyProxy’s [acceptable-use notes](https://www.joyproxy.com/blog/guides/residential-proxy-compliance/) and [Terms](https://www.joyproxy.com/terms.html) still apply; you remain responsible for the accounts you operate.

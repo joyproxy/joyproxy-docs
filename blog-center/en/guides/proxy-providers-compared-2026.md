@@ -9,14 +9,14 @@ legacyUrl: https://www.joyproxy.com/blog/proxy-providers-compared-2026.html
 
 JoyProxy Team compiled this from developer feedback and public internet sources. Prices change—confirm on each vendor’s official site before you buy.
 
-When you compare proxy vendors, **minimum checkout** and **typical 30-day cost** at the smallest tier matter more than headline **$/GB**. This guide compares **Bright Data** , **Oxylabs** , **Smartproxy (Decodo)** , and **JoyProxy** across rotating and static lines—residential, mobile, business/ISP, and datacenter.
+When you compare proxy vendors, **minimum checkout** and **typical 30-day cost** at the smallest tier matter more than headline **$/GB**. This guide compares **Bright Data** , **Oxylabs** , **Smartproxy (Decodo)** , and **JoyProxy** across rotating and static lines—residential, mobile, business, ISP, and datacenter.
 
 ## JoyProxy lines the others don’t match
 
 Three JoyProxy products have **no equivalent self-serve SKU** in this comparison:
 
-  * **Rotating business/ISP traffic** — prepaid GB on business ASN pools (`network_type=business`), separate from residential and mobile. Entry **$3.80** (1 GB).
-  * **[Custom IP ports](https://www.joyproxy.com/products/proxy-custom-ip.html)** — dedicated bundles on residential, business/ISP, and datacenter: per-port geo, **timed rotation (≥60s)** , and **change country/region on the same port** without buying a new IP.
+  * **Business Proxies traffic** — prepaid GB on business ASN pools (`network_type=business`), separate from residential and mobile. Entry **$3.80** (1 GB).
+  * **[Custom IP ports](https://www.joyproxy.com/products/proxy-custom-ip.html)** — dedicated bundles on residential, ISP, and datacenter: per-port geo, **timed rotation (≥60s)** , and **change country/region on the same port** without buying a new IP.
   * **Low payment threshold** — prepaid GB packs and per-IP lines (daily to annual). **$5 new-user credit** works on **all products**.
 
 
@@ -27,20 +27,20 @@ All figures USD. VAT may apply on competitor sites. **PAYG** (pay-as-you-go) = p
 
 Line| | Bright Data| Oxylabs| Smartproxy| JoyProxy  
 ---|---|---|---|---|---  
-**Residential rotating** | Min | **$4** PAYG | **$30/mo** (5 GB) | **$11.25/mo** or **$4** PAYG | **$3.50** (1 GB)  
+**Residential Proxies** | Min | **$4** PAYG | **$30/mo** (5 GB) | **$11.25/mo** or **$4** PAYG | **$3.50** (1 GB)  
 30-day | per GB used | **$30** | **$11.25** or **$4** /GB | **$3.50** (**$0** w/ credit)  
-**Mobile rotating** | Min | mobile PAYG | **$30/mo** (4 GB) | **$7.50/mo** or **$4** PAYG | **$4.00** (1 GB)  
+**Mobile Proxies** | Min | mobile PAYG | **$30/mo** (4 GB) | **$7.50/mo** or **$4** PAYG | **$4.00** (1 GB)  
 30-day | per GB used | **$30** | **$7.50** or **$4** /GB | **$4.00**  
-**ISP / business rotating (GB)** | Min | ISP from **$8/GB** PAYG | not offered | not offered | **$3.80** (1 GB)  
+**Business Proxies (GB)** | Min | ISP from **$8/GB** PAYG | not offered | not offered | **$3.80** (1 GB)  
 30-day | per GB used | — | — | **$3.80**  
   
 Sources: Bright Data, Oxylabs, Decodo public pricing pages · [JoyProxy pricing](https://www.joyproxy.com/pricing.html)
 
-**Rotating takeaway:** JoyProxy’s **$3.50** residential entry is the lowest checkout in this table. Oxylabs charges **$30** before 5 GB of residential traffic. JoyProxy is the only vendor here with a published **self-serve ISP/business rotating GB** line at **$3.80** for 1 GB.
+**Rotating takeaway:** JoyProxy’s **$3.50** residential entry is the lowest checkout in this table. Oxylabs charges **$30** before 5 GB of residential traffic. JoyProxy is the only vendor here with a published **self-serve Business Proxies GB** line at **$3.80** for 1 GB.
 
 ## Static IPs — minimum checkout & 30-day cost (per IP)
 
-“Static residential” at competitors is usually **ISP/static residential** (fixed ISP-registered IPs). JoyProxy lists separate **residential static** , **business/ISP static** , and **datacenter static** with published daily and monthly rates.
+“Static residential” at competitors is usually **ISP/static residential** (fixed ISP-registered IPs). JoyProxy lists separate **residential static** , **ISP Proxies · Static Dedicated** , and **datacenter static** with published daily and monthly rates.
 
 Line| | Bright Data| Oxylabs| Smartproxy| JoyProxy  
 ---|---|---|---|---|---  
@@ -51,7 +51,7 @@ Line| | Bright Data| Oxylabs| Smartproxy| JoyProxy
   
 JoyProxy static rates: [pricing page](https://www.joyproxy.com/pricing.html) (30-day and daily plans).
 
-**Static takeaway:** JoyProxy datacenter static starts at **$0.40/day** —lower than any competitor minimum in this table. For ISP-grade static, JoyProxy business lines are **$3/mo** vs Decodo’s **$9.99** minimum (3 IPs) and Bright Data/Oxylabs **$16–18** minimum (10 IPs).
+**Static takeaway:** JoyProxy datacenter static starts at **$0.40/day** —lower than any competitor minimum in this table. For ISP-grade static, JoyProxy ISP Proxies are **$3/mo** vs Decodo’s **$9.99** minimum (3 IPs) and Bright Data/Oxylabs **$16–18** minimum (10 IPs).
 
 ## Custom IP — JoyProxy only in this comparison
 
@@ -68,9 +68,9 @@ Details: [Custom Proxies](https://www.joyproxy.com/products/proxy-custom-ip.html
 
 Product| Bright Data| Oxylabs| Smartproxy| JoyProxy  
 ---|---|---|---|---  
-Residential rotating (GB)| Yes| Yes| Yes| Yes  
-Mobile rotating (GB)| Yes| Yes| Yes| Yes  
-**ISP/business rotating (GB)**|  ISP Pay/GB (different model)| **No**| **No**| **Yes**  
+Residential Proxies (GB)| Yes| Yes| Yes| Yes  
+Mobile Proxies (GB)| Yes| Yes| Yes| Yes  
+**Business Proxies (GB)**|  ISP Pay/GB (different model)| **No**| **No**| **Yes**  
 Static residential / ISP IP| Yes| Yes| Yes| Yes  
 Datacenter static IP| Yes| Yes| Yes| Yes  
 **Custom IP (rotate + change region)**| **No**| **No**| **No**| **Yes**  
@@ -87,26 +87,26 @@ Datacenter static IP| Yes| Yes| Yes| Yes
 ## Why teams choose JoyProxy
 
   * **Lowest rotating entry** — **$3.50** for 1 GB residential; first GB often free with **$5 credit**.
-  * **ISP dynamic + Custom IP** — product lines competitors do not sell the same way.
-  * **Cheapest static day-rate** — datacenter from **$0.40/day** ; business ISP static **$3/mo**.
+  * **ISP Proxies + Custom IP** — product lines competitors do not sell the same way.
+  * **Cheapest static day-rate** — datacenter from **$0.40/day** ; ISP Proxies · Static Dedicated **$3/mo**.
   * **No subscription lock-in** — prepaid GB until used; static/custom by duration you pick.
-  * **Full matrix** — residential, mobile, business/ISP, datacenter — rotating, static, and custom on one account.
+  * **Full matrix** — residential, mobile, business, ISP, datacenter — rotating, static, and custom on one account.
 
 
 
 ## FAQ
 
-### Does JoyProxy sell rotating ISP / business traffic?
+### Does JoyProxy sell Business Proxies traffic?
 
-Yes. Business/ISP rotating is a separate prepaid GB pool (**from $3.80/GB** on the 1 GB pack), billed like residential and mobile—not only static ISP lines. Oxylabs and Smartproxy do not publish an equivalent self-serve rotating GB product in this comparison.
+Yes. Business Proxies is a separate prepaid GB pool (**from $3.80/GB** on the 1 GB pack), billed like residential and mobile—not only static ISP lines. Oxylabs and Smartproxy do not publish an equivalent self-serve rotating GB product in this comparison.
 
 ### What is Custom IP—and can I change region without buying again?
 
-Custom IP is a dedicated port bundle on residential, business/ISP, or datacenter lines. You set geo per port, enable optional timed rotation (60s+), and **switch country/region on an existing port** without purchasing a new IP. Bright Data, Oxylabs, and Smartproxy do not offer the same self-serve Custom IP SKU. See [Custom Proxies](https://www.joyproxy.com/products/proxy-custom-ip.html).
+Custom IP is a dedicated port bundle on residential, ISP, or datacenter lines. You set geo per port, enable optional timed rotation (60s+), and **switch country/region on an existing port** without purchasing a new IP. Bright Data, Oxylabs, and Smartproxy do not offer the same self-serve Custom IP SKU. See [Custom Proxies](https://www.joyproxy.com/products/proxy-custom-ip.html).
 
 ### Can I start with $3.50 and use the $5 credit on everything?
 
-Yes. Rotating residential is **$3.50/GB** on the 1 GB pack. After email verification, claim the **$5 new-user credit** ; it applies to proxy IP packs, static lines, mobile traffic, and other JoyProxy products. At $3.50/GB, your first gigabyte of dynamic residential is covered by the credit, with ~$1.50 left for another product test.
+Yes. Residential Proxies is **$3.50/GB** on the 1 GB pack. After email verification, claim the **$5 new-user credit** ; it applies to proxy IP packs, static lines, mobile traffic, and other JoyProxy products. At $3.50/GB, your first gigabyte of residential proxies is covered by the credit, with ~$1.50 left for another product test.
 
 ### Can I use more than one provider?
 

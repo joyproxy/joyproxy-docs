@@ -68,7 +68,7 @@ If this list does not fix it:
 
 1. **Live Chat** (bottom-right):
    - Pre-sales, a live connectivity question, missing activation mail.
-   - Give registration email, network type (for example Rotating Residential), and a screenshot.
+   - Give registration email, network type (for example Residential Proxies), and a screenshot.
 2. **Tickets**:
    - Billing, refunds, hard technical cases, enterprise contracts.
    - Attach:

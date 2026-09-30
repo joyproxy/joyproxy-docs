@@ -81,7 +81,7 @@ function normalizeSidebarGroups(sidebar) {
   return sidebar.map((group) => {
     if (!group.items?.length) return group;
     if (group.text) {
-      group.collapsed = false;
+      group.collapsed = true;
     }
     group.items = group.items.map(normalizeSidebarItem);
     return group;

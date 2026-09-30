@@ -98,8 +98,8 @@ If you use OpenClaw:
 After MCP is connected, in Cursor Chat or Claude:
 
 - **Check remaining traffic**:
-  > “Use JoyProxy MCP to check remaining Rotating Residential Proxies traffic.”
+  > “Use JoyProxy MCP to check remaining Residential Proxies traffic.”
 - **Generate a geo endpoint**:
   > “Use JoyProxy to generate a Residential endpoint in Los Angeles, California, US, sticky session 10 minutes, then write a Python requests snippet to test connectivity.”
 - **Pick a network type**:
-  > “Generate a dedicated Business / ISP endpoint in Tokyo, Japan (network_type=business).”
+  > “Generate a dedicated ISP Proxies endpoint in Tokyo, Japan (network_type=isp).”

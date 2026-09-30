@@ -15,7 +15,7 @@ This is the only auth method the Rotating Proxies gateway accepts.
 2. Switch to the **Username/Password** tab.
 3. Choose **Credential mode**:
    - **Shared**: one User/Pass for every proxy network on the account (recommended when you start).
-   - **Per product**: separate User/Pass for Residential, Mobile, Business / ISP, and Datacenter.
+   - **Per product**: separate User/Pass for Residential, Mobile, Business Proxies, ISP Proxies, and Datacenter.
 4. In **Create User/Pass**, fill in:
    - **Product**: the proxy network (for example Residential).
    - **Username**: start with a lowercase letter; only lowercase letters and digits (`a–z`, `0–9`); max 16 characters.

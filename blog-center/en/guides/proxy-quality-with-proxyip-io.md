@@ -25,7 +25,7 @@ Unlike basic IP check websites that only display your external IP address and an
 
 As demonstrated in the diagnostic dashboard above (tested against a public datacenter IP like Google's `8.8.8.8`), the platform instantly identifies the **Network Type** as `Datacenter / Hosting`. Most e-commerce and social networks actively discriminate against datacenter ASNs because regular human consumers do not browse TikTok or Amazon from an AWS or Google Cloud server rack.
 
-**How JoyProxy solves this:** JoyProxy’s [Rotating Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) and [Static Residential Proxies](https://www.joyproxy.com/products/proxy-long-term.html) originate directly from real consumer broadband ISPs (Comcast, AT&T;, Vodafone, Deutsche Telekom, etc.). When checked via proxyip.io, JoyProxy residential IPs display as **ISP / Residential** , immediately establishing high trust with anti-fraud filters.
+**How JoyProxy solves this:** JoyProxy’s [Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) and [Static Residential Proxies](https://www.joyproxy.com/products/proxy-long-term.html) originate directly from real consumer broadband ISPs (Comcast, AT&T;, Vodafone, Deutsche Telekom, etc.). When checked via proxyip.io, JoyProxy residential IPs display as **ISP / Residential** , immediately establishing high trust with anti-fraud filters.
 
 ### 2\. Proxy / VPN Likelihood & IP Risk Assessment
 
@@ -65,7 +65,7 @@ Follow this 4-step routine whenever you deploy a new proxy endpoint for critical
 Log in to the JoyProxy dashboard. Depending on your workload:
 
   * For multi-account social management, e-commerce stores, or payment logins, select a **Static Residential IP** in your target country and city (e.g., United States → California).
-  * For large-scale data collection or public web scraping, generate a **Rotating Residential Proxy endpoint** with your required protocol (HTTP or SOCKS5) and session sticky settings.
+  * For large-scale data collection or public web scraping, generate a **Residential Proxies endpoint** with your required protocol (HTTP or SOCKS5) and session sticky settings.
 
 
 

@@ -2,7 +2,7 @@
 
 Rotating Proxies are billed by traffic (GB). Every request connects to the shared JoyProxy gateway `gate.joyproxy.com:9001`. The exit IP can rotate on each request, or you can keep the same IP for 1–30 minutes with a sticky session.
 
-Rotating Proxies cover three networks: **Rotating Residential Proxies**, **Rotating Mobile Proxies**, and **Rotating Business / ISP Proxies**. If you need a dedicated `host:port` that stays the same for a long time, see <a href="../static/README.md" target="_blank" rel="noopener noreferrer">Static Proxies</a> or <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">Custom Proxies</a>.
+Rotating Proxies cover three networks: **Residential Proxies**, **Mobile Proxies**, and **Business Proxies**. If you need a dedicated `host:port` that stays the same for a long time, see <a href="../static/README.md" target="_blank" rel="noopener noreferrer">Static Proxies</a> or <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">Custom Proxies</a>.
 
 ## How it works
 
@@ -22,7 +22,7 @@ Your app / client  →  gate.joyproxy.com:9001  →  target website
 Read in this order if you are new:
 
 1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">Quick start</a> — 4-step setup
-2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">Network types</a> — Residential, Mobile, and Business / ISP compared
+2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">Network types</a> — Residential, Mobile, and Business Proxies compared
 3. <a href="purchase.md" target="_blank" rel="noopener noreferrer">Purchase traffic</a> — pick a network and buy a GB pack
 4. <a href="view-traffic.md" target="_blank" rel="noopener noreferrer">View purchased traffic</a> — check active orders and remaining GB
 5. <a href="auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">Auto-buy traffic</a> — auto-charge Balance when traffic runs low

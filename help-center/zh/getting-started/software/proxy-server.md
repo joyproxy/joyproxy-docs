@@ -8,7 +8,7 @@
 <a href="https://www.joyproxy.com/products/proxy-server.html" target="_blank" rel="noopener noreferrer">产品页面与完整参数文档</a> · <a href="https://github.com/joyproxy/joyproxy-server" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> · <a href="https://github.com/joyproxy/joyproxy-server/releases/latest" target="_blank" rel="noopener noreferrer">最新 Releases 下载</a>
 
 > **计费说明**  
-> 网关程序本身开源免费，不限制部署实例数。当网关的上游配置为 JoyProxy 的动态住宅或静态云端节点时，实际消耗的网络流量仍由 JoyProxy 控制台订单统一扣除。
+> 网关程序本身开源免费，不限制部署实例数。当网关的上游配置为 JoyProxy 的住宅代理或静态云端节点时，实际消耗的网络流量仍由 JoyProxy 控制台订单统一扣除。
 
 ---
 

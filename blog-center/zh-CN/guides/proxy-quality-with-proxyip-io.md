@@ -25,7 +25,7 @@ legacyUrl: https://www.joyproxy.com/blog/proxy-quality-with-proxyip-io_cn.html
 
 在上面的示例报告中，测试 IP 被识别为 `Datacenter / Hosting`。这类 IP 适合很多服务器端任务，但在电商、社交平台和需要长期登录的业务中，往往更容易遇到额外验证。平台看到的不是“你人在什么国家”，还包括“你的请求从什么类型的网络发出”。
 
-**JoyProxy 的选择建议：** 需要长期登录、店铺管理或固定地区身份时，可以选择[静态住宅代理](https://www.joyproxy.com/products/proxy-long-term.html)；需要大规模公开数据采集、竞品监控或灵活切换地区时，可以选择[动态轮换住宅代理](https://www.joyproxy.com/products/proxy-residential.html)。两类线路都来自真实家庭宽带网络，在 proxyip.io 中应显示为 **ISP / Residential** 这类住宅或 ISP 属性。
+**JoyProxy 的选择建议：** 需要长期登录、店铺管理或固定地区身份时，可以选择[静态住宅代理](https://www.joyproxy.com/products/proxy-long-term.html)；需要大规模公开数据采集、竞品监控或灵活切换地区时，可以选择[住宅代理](https://www.joyproxy.com/products/proxy-residential.html)。两类线路都来自真实家庭宽带网络，在 proxyip.io 中应显示为 **ISP / Residential** 这类住宅或 ISP 属性。
 
 ### 2\. Proxy / VPN Likelihood 与 IP Risk：看线路的风险画像
 
@@ -71,7 +71,7 @@ proxyip.io 会根据检测到的 IP 城市，提供相应的地址格式、电�
 登录 JoyProxy 用户控制台，根据业务类型选择：
 
   * 多账号长期登录、电商店铺或社媒运营：选择目标国家和城市的**独享静态住宅 IP** ，让账号长期使用稳定的网络出口；
-  * 公开数据抓取、竞品监控或批量检测：生成**动态轮换住宅代理端口** ，按任务需求配置 HTTP 或 SOCKS5 认证。
+  * 公开数据抓取、竞品监控或批量检测：生成**住宅代理端口** ，按任务需求配置 HTTP 或 SOCKS5 认证。
 
 
 
@@ -96,6 +96,6 @@ proxyip.io 会根据检测到的 IP 城市，提供相应的地址格式、电�
 
 ## 总结：先检测，再把好线路用在关键业务上
 
-代理质量不只是“能不能连上”，还包括网络类型、IP 声誉、浏览器环境和泄漏情况。用 **[proxyip.io](https://proxyip.io/)** 做上线前检查，再根据业务选择 JoyProxy 动态住宅或独享静态住宅代理，你就能更快找到适合自己的线路，把时间花在运营和增长上，而不是反复排查代理问题。
+代理质量不只是“能不能连上”，还包括网络类型、IP 声誉、浏览器环境和泄漏情况。用 **[proxyip.io](https://proxyip.io/)** 做上线前检查，再根据业务选择 JoyProxy 住宅代理或独享静态住宅代理，你就能更快找到适合自己的线路，把时间花在运营和增长上，而不是反复排查代理问题。
 
 [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [购买静态住宅 IP](https://www.joyproxy.com/products/proxy-long-term.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)

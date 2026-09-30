@@ -22,7 +22,7 @@ Datacenter focuses on long-lived, high-concurrency dedicated ports. **Rotating i
    - Ports: <a href="../getting-started/custom/view-ports.md" target="_blank" rel="noopener noreferrer">View and manage ports</a>
    - Renew: <a href="../getting-started/custom/auto-renew.md" target="_blank" rel="noopener noreferrer">Auto-renew</a>
 
-> **Choosing a network**: If the target is strict about hosting IPs (Google Search challenges, Instagram, Facebook, and similar), prefer the <a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">Residential console</a> or the <a href="business-isp-proxies.md" target="_blank" rel="noopener noreferrer">Business / ISP console</a>. For public sites, API monitoring, and price comparison, Datacenter can cut more than 70% of proxy spend.
+> **Choosing a network**: If the target is strict about hosting IPs (Google Search challenges, Instagram, Facebook, and similar), prefer the <a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">Residential console</a> or the <a href="isp-proxies.md" target="_blank" rel="noopener noreferrer">ISP Proxies console</a>. For public sites, API monitoring, and price comparison, Datacenter can cut more than 70% of proxy spend.
 
 ---
 

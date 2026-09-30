@@ -56,7 +56,7 @@
 
 在跨境营销、多账号防封与移动端数据验证等场景中，移动设备的设备指纹必须与网络环境匹配。
 
-建议将本客户端与 JoyProxy 的 <a href="../rotating/network-types.md" target="_blank" rel="noopener noreferrer">动态移动代理（Mobile Proxy）</a> 配合使用：
+建议将本客户端与 JoyProxy 的 <a href="../rotating/network-types.md" target="_blank" rel="noopener noreferrer">移动代理（Mobile Proxy）</a> 配合使用：
 - 真实 Android 手机安装客户端，配置分配到的移动网络基站 IP（4G / 5G 蜂窝网络出口）。
 - 结合白名单分流，目标 App 即可获得与海外当地真实移动网络完全一致的 ASN、IP 与环境特征，大幅降低风控拦截率。
 
