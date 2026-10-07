@@ -77,6 +77,18 @@ export default defineConfig({
         logoLink: "/help/",
         nav: [
           { text: "JoyProxy", link: "https://www.joyproxy.com/" },
+          {
+            text: "Help",
+            link: "https://www.joyproxy.com/help/",
+            target: "_self",
+            noIcon: true,
+          },
+          {
+            text: "Blog",
+            link: "https://www.joyproxy.com/blog/",
+            target: "_self",
+            noIcon: true,
+          },
           { text: "Console", link: "https://www.joyproxy.com/admin-overview.html" },
         ],
         sidebar: sidebarEn,
@@ -91,6 +103,18 @@ export default defineConfig({
         logoLink: "/help/zh/",
         nav: [
           { text: "JoyProxy", link: "https://www.joyproxy.com/" },
+          {
+            text: "帮助中心",
+            link: "https://www.joyproxy.com/help/zh/",
+            target: "_self",
+            noIcon: true,
+          },
+          {
+            text: "博客",
+            link: "https://www.joyproxy.com/blog/zh-CN/",
+            target: "_self",
+            noIcon: true,
+          },
           { text: "控制台", link: "https://www.joyproxy.com/admin-overview.html" },
         ],
         sidebar: sidebarZh,

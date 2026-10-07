@@ -36,7 +36,19 @@ export default defineConfig({
         logoLink: "/blog/",
         nav: [
           { text: "JoyProxy", link: "https://www.joyproxy.com/" },
-          { text: "Help", link: "https://www.joyproxy.com/help/" },
+          {
+            text: "Help",
+            link: "https://www.joyproxy.com/help/",
+            target: "_self",
+            noIcon: true,
+          },
+          {
+            text: "Blog",
+            link: "https://www.joyproxy.com/blog/",
+            target: "_self",
+            noIcon: true,
+          },
+          { text: "Console", link: "https://www.joyproxy.com/admin-overview.html" },
         ],
         sidebar: sidebars.en,
       },
@@ -50,7 +62,19 @@ export default defineConfig({
         logoLink: "/blog/zh-CN/",
         nav: [
           { text: "JoyProxy", link: "https://www.joyproxy.com/zh-CN/" },
-          { text: "帮助中心", link: "https://www.joyproxy.com/help/" },
+          {
+            text: "帮助中心",
+            link: "https://www.joyproxy.com/help/zh/",
+            target: "_self",
+            noIcon: true,
+          },
+          {
+            text: "博客",
+            link: "https://www.joyproxy.com/blog/zh-CN/",
+            target: "_self",
+            noIcon: true,
+          },
+          { text: "控制台", link: "https://www.joyproxy.com/admin-overview.html" },
         ],
         sidebar: sidebars["zh-CN"],
       },
@@ -64,7 +88,19 @@ export default defineConfig({
         logoLink: "/blog/zh-TW/",
         nav: [
           { text: "JoyProxy", link: "https://www.joyproxy.com/" },
-          { text: "幫助中心", link: "https://www.joyproxy.com/help/" },
+          {
+            text: "幫助中心",
+            link: "https://www.joyproxy.com/help/zh/",
+            target: "_self",
+            noIcon: true,
+          },
+          {
+            text: "部落格",
+            link: "https://www.joyproxy.com/blog/zh-TW/",
+            target: "_self",
+            noIcon: true,
+          },
+          { text: "控制台", link: "https://www.joyproxy.com/admin-overview.html" },
         ],
         sidebar: sidebars["zh-TW"],
       },
