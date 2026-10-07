@@ -17,6 +17,7 @@
 * [SEO Rank Checks from Multiple Countries (Without Personalized Noise)](use-cases/geo-proxies-seo-monitoring.md)
 * [Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)](use-cases/fixed-ip-ecommerce-operations.md)
 ## Guides
+* [What Is an ISP Proxy? Residential Trust Meets Datacenter Speed (Complete 2026 Guide)](guides/what-is-an-isp-proxy-guide.md)
 * [How to Check Proxy Quality and IP Cleanliness with proxyip.io (Step-by-Step Guide)](guides/proxy-quality-with-proxyip-io.md)
 * [Antidetect Browsers and Residential Proxies: The Real Rules for Multi-Account Isolation](guides/antidetect-browsers-residential-proxies-guide.md)
 * [Web Scraping API: AI-Powered Page Fetching Without Proxy Plumbing](guides/web-unblocker-scraping-api.md)

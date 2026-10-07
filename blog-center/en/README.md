@@ -50,6 +50,9 @@ Guides, use cases, and technical articles for proxy operators.
 
 ## Guides
 
+- [What Is an ISP Proxy? Residential Trust Meets Datacenter Speed (Complete 2026 Guide)](guides/what-is-an-isp-proxy-guide.md)
+  Demystify ISP proxies (static residential proxies): discover how they bridge consumer ISP trust with enterprise datacenter speed, explore the underlying network topology, and master 1:1 dedicated IP operations for e-commerce, checkout, and automation.
+
 - [How to Check Proxy Quality and IP Cleanliness with proxyip.io (Step-by-Step Guide)](guides/proxy-quality-with-proxyip-io.md)
   Learn how to check proxy quality and IP cleanliness with proxyip.io: audit ASN types, fraud risk scores, platform block probability, WebRTC/DNS leaks, and verify JoyProxy endpoints.
 

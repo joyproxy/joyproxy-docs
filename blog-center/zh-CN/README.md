@@ -50,6 +50,9 @@
 
 ## 指南
 
+- [什么是 ISP 代理？兼具住宅信誉与机房高速的完整指南（2026）](guides/what-is-an-isp-proxy-guide.md)
+  全面拆解 ISP 代理（静态住宅代理）的底层网络拓扑：搞清它如何兼顾家庭宽带信誉与企业级机房高速，深入解析 1:1 独享固定 IP 在电商多店铺运营、支付结账与自动化业务中的防封实战。
+
 - [如何用 proxyip.io 全面检测代理质量与 IP 纯净度（实战指南）](guides/proxy-quality-with-proxyip-io.md)
   手把手教你使用 proxyip.io 深度评测代理纯净度：验证真实 ASN 网络类型、欺诈风险分、各平台风控拦截概率与 WebRTC/DNS 穿透泄漏，全面核验 JoyProxy 住宅端点。
 
