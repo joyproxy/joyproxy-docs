@@ -31,7 +31,7 @@ curl "https://api.joyproxy.com/v1/fetch/plugin/amazon/pdp?token=YOUR_SCRAPING_TO
 | 端点 | 返回内容 | 核心参数 |
 | --- | --- | --- |
 | `/v1/fetch/plugin/google/search` | SERP 自然结果、广告及相关搜索。 | `q=best+laptops&gl=us&hl=en` |
-| `/v1/fetch/plugin/google/search/ai-mode` | Google AI Mode / AI Overview 与引用来源。 | `q=how+to+learn+python` |
+| `/v1/fetch/plugin/google/search/ai-mode` | Gemini 回答与引用来源。 | `q=how+to+learn+python` |
 | `/v1/fetch/plugin/google/maps/search` | Maps 商家、地址、电话与评分。 | `q=pizza+in+new+york` |
 | `/v1/fetch/plugin/google/maps/place` | 地点详情。 | `place_id` 或 `data_cid` |
 | `/v1/fetch/plugin/google/maps/reviews` | 地点评论（可分页）。 | `data_id` 或 `place_id` |

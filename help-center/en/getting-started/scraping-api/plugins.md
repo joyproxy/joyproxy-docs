@@ -31,7 +31,7 @@ curl "https://api.joyproxy.com/v1/fetch/plugin/amazon/pdp?token=YOUR_SCRAPING_TO
 | Endpoint | What it returns | Core parameters |
 | --- | --- | --- |
 | `/v1/fetch/plugin/google/search` | SERP organic results, ads, and related searches. | `q=best+laptops&gl=us&hl=en` |
-| `/v1/fetch/plugin/google/search/ai-mode` | Google AI Mode / AI Overview and cited sources. | `q=how+to+learn+python` |
+| `/v1/fetch/plugin/google/search/ai-mode` | Gemini answers and cited sources. | `q=how+to+learn+python` |
 | `/v1/fetch/plugin/google/maps/search` | Maps businesses, address, phone, and ratings. | `q=pizza+in+new+york` |
 | `/v1/fetch/plugin/google/maps/place` | Place details. | `place_id` or `data_cid` |
 | `/v1/fetch/plugin/google/maps/reviews` | Place reviews (paginated). | `data_id` or `place_id` |
