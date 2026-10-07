@@ -1,58 +1,101 @@
 # Structured data plugins API
 
-Besides generic page fetches, Web Scraping API includes **Plugins** for major commerce, search, and social platforms.
+Besides generic page fetches, Web Scraping API includes **Plugins** for major commerce, search, and AI platforms.
 
-With Plugins you do not write regex or BeautifulSoup / Cheerio parsers. Submit a keyword or product ID and receive formatted JSON.
-
----
-
-## Plugin list and endpoints
+With Plugins you do not write regex or BeautifulSoup / Cheerio parsers. Submit a keyword, product ID, or prompt and receive formatted JSON.
 
 Call path: `GET /v1/fetch/plugin/{platform}/{endpoint}` or `POST /v1/fetch/plugin/{platform}/{endpoint}`
 
-| Platform | Endpoint | What it returns | Core parameters |
-| --- | --- | --- | --- |
-| **Amazon** | `/v1/fetch/plugin/amazon/pdp` | Amazon product detail (title, price, variants, rating, images). | `asin=B08N5WRWNW&geocode=us` |
-| **Amazon** | `/v1/fetch/plugin/amazon/search` | Amazon keyword search results. | `keyword=wireless+earbuds&geocode=us` |
-| **Amazon** | `/v1/fetch/plugin/amazon/offer-listing` | Amazon seller offers for a product. | `asin=B08N5WRWNW&geocode=us` |
-| **Google Search** | `/v1/fetch/plugin/google/search` | Google SERP organic results, ads, and related searches. | `q=best+laptops&gl=us` |
-| **Google Search** | `/v1/fetch/plugin/google/search/ai-mode` | Google AI Overview and cited sources. | `q=how+to+learn+python` |
-| **Google Maps** | `/v1/fetch/plugin/google/maps` | Google Maps business info, address, phone, and ratings. | `q=pizza+in+new+york` |
-| **YouTube** | `/v1/fetch/plugin/google/youtube` | YouTube video metadata, views, likes, and comments. | `v=VIDEO_ID` |
-| **Google News / Trends** | `/v1/fetch/plugin/google/news` | Google News headlines and topic streams. | `q=technology&gl=us` |
-| **Walmart** | `/v1/fetch/plugin/walmart/store` | Walmart product and store basics. | `item_id=12345678` |
+All plugins use the same **Scraping API Token**. Try them in <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API Center</a> (switch the API product tab).
 
 ---
 
-## How to call (example)
+## Amazon (~1 credit)
 
-Plugins use the same **Scraping API Token**:
+| Endpoint | What it returns | Core parameters |
+| --- | --- | --- |
+| `/v1/fetch/plugin/amazon/pdp` | Product detail (title, price, variants, rating, images). | `asin=B08N5WRWNW&geocode=us` |
+| `/v1/fetch/plugin/amazon/search` | Keyword search results. | `q=wireless+earbuds&geocode=us` |
+| `/v1/fetch/plugin/amazon/offer-listing` | Seller offers and buy box. | `asin=B08N5WRWNW&geocode=us` |
+
+Optional: `zipcode` for store-level pricing. `geocode` selects the marketplace (for example `us`, `de`, `jp`).
 
 ```bash
-# Amazon product detail as structured JSON
 curl "https://api.joyproxy.com/v1/fetch/plugin/amazon/pdp?token=YOUR_SCRAPING_TOKEN&asin=B08N5WRWNW&geocode=us"
 ```
 
-Example JSON:
+---
 
-```json
-{
-  "status": "success",
-  "asin": "B08N5WRWNW",
-  "title": "Example Wireless Earbuds Noise Cancelling",
-  "price": "$49.99",
-  "currency": "USD",
-  "rating": 4.5,
-  "reviews_count": 1280,
-  "in_stock": true,
-  "images": [
-    "https://m.media-amazon.com/images/I/example1.jpg"
-  ]
-}
+## Google suite (~10 credits)
+
+| Endpoint | What it returns | Core parameters |
+| --- | --- | --- |
+| `/v1/fetch/plugin/google/search` | SERP organic results, ads, and related searches. | `q=best+laptops&gl=us&hl=en` |
+| `/v1/fetch/plugin/google/search/ai-mode` | Google AI Mode / AI Overview and cited sources. | `q=how+to+learn+python` |
+| `/v1/fetch/plugin/google/maps/search` | Maps businesses, address, phone, and ratings. | `q=pizza+in+new+york` |
+| `/v1/fetch/plugin/google/maps/place` | Place details. | `place_id` or `data_cid` |
+| `/v1/fetch/plugin/google/maps/reviews` | Place reviews (paginated). | `data_id` or `place_id` |
+| `/v1/fetch/plugin/google/youtube` | YouTube video search. | `q=best+laptop+2025&hl=en&gl=us` |
+| `/v1/fetch/plugin/google/news` | Google News headlines and topic streams. | `q=technology&gl=us` |
+| `/v1/fetch/plugin/google/trends` | Google Trends series. | `q=openai&geo=US` |
+| `/v1/fetch/plugin/google/trending` | Trending Now. | `geo=US&hours=24` |
+| `/v1/fetch/plugin/google/flights` | Flight offers. | `departure_id=JFK&arrival_id=LAX&outbound_date=2026-06-15` |
+| `/v1/fetch/plugin/google/hotels` | Hotel listings. | `q=Bali+hotels&check_in_date=2026-05-01&check_out_date=2026-05-03` |
+| `/v1/fetch/plugin/google/shopping` | Shopping product results. | `q=wireless+headphones` |
+| `/v1/fetch/plugin/google/play-store` | Play Store search. | `q=weather` |
+
+Optional on most Google endpoints: `hl`, `gl`, `google_domain`, `device`. YouTube also supports `sp` (sort/filter or `next_page_token`).
+
+```bash
+curl "https://api.joyproxy.com/v1/fetch/plugin/google/search?token=YOUR_SCRAPING_TOKEN&q=wireless+headphones&gl=us&hl=en&device=desktop"
+```
+
+---
+
+## Walmart (~10 credits)
+
+Store-accurate US search and product JSON. Provide **exactly one** of `store` (Walmart store id) or `zipcode` (5-digit US ZIP). Passing both or neither returns `400`.
+
+| Endpoint | What it returns | Core parameters |
+| --- | --- | --- |
+| `/v1/fetch/plugin/walmart/search` | Keyword search on one store’s shelf. | `q=milk` + `store=3081` **or** `zipcode=10001` |
+| `/v1/fetch/plugin/walmart/product` | Product detail for an item id at that store. | `item=18611919209` + `store` **or** `zipcode` |
+| `/v1/fetch/plugin/walmart/store` | Any `walmart.com` / `walmart.ca` URL through a store-warmed session. | `url=https://www.walmart.com/ip/...` |
+
+For `/store` on `walmart.com`, pass `zipcode` and `storeid` together, or omit both. For `walmart.ca`, pass `storeid` only.
+
+```bash
+curl "https://api.joyproxy.com/v1/fetch/plugin/walmart/search?token=YOUR_SCRAPING_TOKEN&q=milk&zipcode=10001"
+curl "https://api.joyproxy.com/v1/fetch/plugin/walmart/product?token=YOUR_SCRAPING_TOKEN&item=18611919209&store=3081"
+```
+
+---
+
+## ChatGPT (~25 credits)
+
+One-shot prompt to `chatgpt.com`. No login, cookies, or conversation state on your side. Prompt (`q`) is required, maximum 1024 characters.
+
+| Endpoint | What it returns | Core parameters |
+| --- | --- | --- |
+| `/v1/fetch/plugin/chatgpt/chat` | Assistant reply as structured JSON (`output.markdown` / `output.html`, `sources`, `tool_data`). | `q=Explain+how+rainbows+form` |
+
+Optional: `model` (`auto`, `gpt-5`, `gpt-4o`), `geoCode` (locale signal, default `us`), `raw_sse=1`, `shopping_placeholders=1`. Typical latency 3–15 seconds.
+
+```bash
+curl "https://api.joyproxy.com/v1/fetch/plugin/chatgpt/chat?token=YOUR_SCRAPING_TOKEN&q=Explain+how+rainbows+form&model=auto&geoCode=us"
 ```
 
 ---
 
 ## Plugin billing
 
-Plugins combine dedicated proxies and parsers on JoyProxy’s side. Credits are deducted **only when structured JSON is returned successfully**. Parse failures or missing targets return an HTTP error and **are not charged**.
+Credits are deducted **only when the plugin returns successfully**. Input errors and plugin failures are not charged.
+
+| Plugin | Credits per success |
+| --- | --- |
+| Amazon | typically 1 |
+| Google suite / YouTube | typically 10 |
+| Walmart | 10 |
+| ChatGPT | 25 |
+
+Full parameter dictionary: <a href="https://www.joyproxy.com/admin-unblocker-documentation.html#plugins" target="_blank" rel="noopener noreferrer">Web Scraping API Documentation → Plugins</a>.

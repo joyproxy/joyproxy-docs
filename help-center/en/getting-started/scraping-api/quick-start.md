@@ -38,6 +38,16 @@ After you buy Credits, JoyProxy creates a **Scraping API Token** for your accoun
 3. Click **Send request**.
 4. Below the form you will see the response, HTTP status, and **Credits used**.
 
+You can also switch the **API product** tabs to try structured **Plugins** (Amazon, Google, YouTube, Walmart, ChatGPT) without writing code. See <a href="plugins.md" target="_blank" rel="noopener noreferrer">Structured data plugins API</a> for endpoints and parameters.
+
+```bash
+# Walmart search pinned to a ZIP (~10 credits)
+curl "https://api.joyproxy.com/v1/fetch/plugin/walmart/search?token=YOUR_SCRAPING_TOKEN&q=milk&zipcode=10001"
+
+# ChatGPT one-shot prompt (~25 credits)
+curl "https://api.joyproxy.com/v1/fetch/plugin/chatgpt/chat?token=YOUR_SCRAPING_TOKEN&q=Explain+how+rainbows+form&model=auto&geoCode=us"
+```
+
 ---
 
 ## Step 4: Call the API from code

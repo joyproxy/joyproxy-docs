@@ -38,6 +38,16 @@
 3. 点击 **发送请求** 按钮。
 4. 页面下方会即时展示响应数据、HTTP 状态码以及本次消耗的 Credits。
 
+也可以在 **API 产品** 页签切换到结构化 **插件**（Amazon、Google、YouTube、Walmart、ChatGPT）在线试跑，无需写代码。端点与参数见 <a href="plugins.md" target="_blank" rel="noopener noreferrer">结构化数据插件 API</a>。
+
+```bash
+# Walmart 按邮编搜索（约 10 Credits）
+curl "https://api.joyproxy.com/v1/fetch/plugin/walmart/search?token=YOUR_SCRAPING_TOKEN&q=milk&zipcode=10001"
+
+# ChatGPT 一次性提问（约 25 Credits）
+curl "https://api.joyproxy.com/v1/fetch/plugin/chatgpt/chat?token=YOUR_SCRAPING_TOKEN&q=Explain+how+rainbows+form&model=auto&geoCode=us"
+```
+
 ---
 
 ## 第四步：在代码中发起抓取

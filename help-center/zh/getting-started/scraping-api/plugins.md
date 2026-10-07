@@ -1,57 +1,101 @@
 # 结构化数据插件 API
 
-除了通用网页抓取外，JoyProxy 网页抓取 API 还提供了专门针对主流电商、搜索引擎与社交平台的 **结构化数据插件 API**。
+除了通用网页抓取外，JoyProxy 网页抓取 API 还提供针对主流电商、搜索引擎与 AI 平台的 **结构化数据插件 API**。
 
-使用插件 API，你无需编写复杂正则表达式或 BeautifulSoup / Cheerio 解析代码，提交目标搜索词或商品 ID 即可直接获取格式化好的 JSON 数据。
+使用插件 API，你无需编写正则或 BeautifulSoup / Cheerio 解析代码，提交搜索词、商品 ID 或 prompt 即可直接获取格式化 JSON。
 
----
+调用路径：`GET /v1/fetch/plugin/{platform}/{endpoint}` 或 `POST /v1/fetch/plugin/{platform}/{endpoint}`
 
-## 常用插件列表与端点
-
-调用路径规则：`GET /v1/fetch/plugin/{platform}/{endpoint}` 或 `POST /v1/fetch/plugin/{platform}/{endpoint}`
-
-| 目标平台 | 端点名称 | 插件作用描述 | 核心入参示例 |
-| --- | --- | --- | --- |
-| **Amazon** | `/v1/fetch/plugin/amazon/pdp` | 抓取 Amazon 商品详情页（标题、价格、变体、评分、图片列表）。 | `asin=B08N5WRWNW&geocode=us` |
-| **Amazon** | `/v1/fetch/plugin/amazon/search` | 抓取 Amazon 关键词搜索结果列表。 | `keyword=wireless+earbuds&geocode=us` |
-| **Amazon** | `/v1/fetch/plugin/amazon/offer-listing` | 抓取 Amazon 商品跟卖报价与卖家列表。 | `asin=B08N5WRWNW&geocode=us` |
-| **Google 搜索** | `/v1/fetch/plugin/google/search` | 抓取 Google SERP 自然搜索结果、广告及相关搜索。 | `q=best+laptops&gl=us` |
-| **Google 搜索** | `/v1/fetch/plugin/google/search/ai-mode` | 抓取 Google AI Overview 智能综述与引用来源。 | `q=how+to+learn+python` |
-| **Google Maps** | `/v1/fetch/plugin/google/maps` | 抓取 Google Maps 商家信息、地址、电话及用户评分。 | `q=pizza+in+new+york` |
-| **Google YouTube** | `/v1/fetch/plugin/google/youtube` | 抓取 YouTube 视频元数据、播放量、点赞数及评论列表。 | `v=VIDEO_ID` |
-| **Google 新闻/趋势** | `/v1/fetch/plugin/google/news` | 抓取 Google News 资讯流与头条新闻。 | `q=technology&gl=us` |
-| **Walmart** | `/v1/fetch/plugin/walmart/store` | 抓取 Walmart 商品与店铺基础信息。 | `item_id=12345678` |
+所有插件使用同一套 **Scraping API Token**。可在 <a href="https://www.joyproxy.com/admin-web-unblocker.html?view=playground" target="_blank" rel="noopener noreferrer">API 中心</a> 切换 API 产品页签后试跑。
 
 ---
 
-## 调用方式与代码示例
+## Amazon（约 1 Credit）
 
-插件 API 同样使用你的 **Scraping API Token** 进行认证：
+| 端点 | 返回内容 | 核心参数 |
+| --- | --- | --- |
+| `/v1/fetch/plugin/amazon/pdp` | 商品详情（标题、价格、变体、评分、图片）。 | `asin=B08N5WRWNW&geocode=us` |
+| `/v1/fetch/plugin/amazon/search` | 关键词搜索结果。 | `q=wireless+earbuds&geocode=us` |
+| `/v1/fetch/plugin/amazon/offer-listing` | 卖家报价与 Buy Box。 | `asin=B08N5WRWNW&geocode=us` |
+
+可选：`zipcode` 指定门店价格。`geocode` 选择站点（如 `us`、`de`、`jp`）。
 
 ```bash
-# 抓取 Amazon 商品详情结构化 JSON 示例
 curl "https://api.joyproxy.com/v1/fetch/plugin/amazon/pdp?token=YOUR_SCRAPING_TOKEN&asin=B08N5WRWNW&geocode=us"
 ```
 
-返回的 JSON 结构示例：
-```json
-{
-  "status": "success",
-  "asin": "B08N5WRWNW",
-  "title": "Example Wireless Earbuds Noise Cancelling",
-  "price": "$49.99",
-  "currency": "USD",
-  "rating": 4.5,
-  "reviews_count": 1280,
-  "in_stock": true,
-  "images": [
-    "https://m.media-amazon.com/images/I/example1.jpg"
-  ]
-}
+---
+
+## Google 套件（约 10 Credits）
+
+| 端点 | 返回内容 | 核心参数 |
+| --- | --- | --- |
+| `/v1/fetch/plugin/google/search` | SERP 自然结果、广告及相关搜索。 | `q=best+laptops&gl=us&hl=en` |
+| `/v1/fetch/plugin/google/search/ai-mode` | Google AI Mode / AI Overview 与引用来源。 | `q=how+to+learn+python` |
+| `/v1/fetch/plugin/google/maps/search` | Maps 商家、地址、电话与评分。 | `q=pizza+in+new+york` |
+| `/v1/fetch/plugin/google/maps/place` | 地点详情。 | `place_id` 或 `data_cid` |
+| `/v1/fetch/plugin/google/maps/reviews` | 地点评论（可分页）。 | `data_id` 或 `place_id` |
+| `/v1/fetch/plugin/google/youtube` | YouTube 视频搜索。 | `q=best+laptop+2025&hl=en&gl=us` |
+| `/v1/fetch/plugin/google/news` | Google 新闻头条与主题流。 | `q=technology&gl=us` |
+| `/v1/fetch/plugin/google/trends` | Google 趋势序列。 | `q=openai&geo=US` |
+| `/v1/fetch/plugin/google/trending` | Trending Now。 | `geo=US&hours=24` |
+| `/v1/fetch/plugin/google/flights` | 航班报价。 | `departure_id=JFK&arrival_id=LAX&outbound_date=2026-06-15` |
+| `/v1/fetch/plugin/google/hotels` | 酒店列表。 | `q=Bali+hotels&check_in_date=2026-05-01&check_out_date=2026-05-03` |
+| `/v1/fetch/plugin/google/shopping` | 购物商品结果。 | `q=wireless+headphones` |
+| `/v1/fetch/plugin/google/play-store` | Play 商店搜索。 | `q=weather` |
+
+多数 Google 端点可选 `hl`、`gl`、`google_domain`、`device`。YouTube 还支持 `sp`（排序/筛选或 `next_page_token`）。
+
+```bash
+curl "https://api.joyproxy.com/v1/fetch/plugin/google/search?token=YOUR_SCRAPING_TOKEN&q=wireless+headphones&gl=us&hl=en&device=desktop"
 ```
 
 ---
 
-## 插件 API 的扣费原则
+## Walmart（约 10 Credits）
 
-结构化数据插件在平台底层自动整合了专有代理与页面解析器。具体的积分扣除标准遵循**仅成功返回结构化 JSON 时才扣积分**的规则；解析失败或目标不存在时返回相应 HTTP 错误码且**不消耗积分**。
+按美国门店返回准确的搜索与商品 JSON。`store`（门店 ID）与 `zipcode`（5 位美国邮编）**必须且只能填一项**，都填或都不填会返回 `400`。
+
+| 端点 | 返回内容 | 核心参数 |
+| --- | --- | --- |
+| `/v1/fetch/plugin/walmart/search` | 指定门店货架上的关键词搜索。 | `q=milk` + `store=3081` **或** `zipcode=10001` |
+| `/v1/fetch/plugin/walmart/product` | 该店某个 item id 的商品详情。 | `item=18611919209` + `store` **或** `zipcode` |
+| `/v1/fetch/plugin/walmart/store` | 通过门店会话抓取任意 `walmart.com` / `walmart.ca` 页面。 | `url=https://www.walmart.com/ip/...` |
+
+`/store` 在 `walmart.com` 上：`zipcode` 与 `storeid` 成对填写，或两项都省略。`walmart.ca`：只填 `storeid`。
+
+```bash
+curl "https://api.joyproxy.com/v1/fetch/plugin/walmart/search?token=YOUR_SCRAPING_TOKEN&q=milk&zipcode=10001"
+curl "https://api.joyproxy.com/v1/fetch/plugin/walmart/product?token=YOUR_SCRAPING_TOKEN&item=18611919209&store=3081"
+```
+
+---
+
+## ChatGPT（约 25 Credits）
+
+向 `chatgpt.com` 发送一次性 prompt。无需登录、Cookie 或会话状态。`q` 必填，最多 1024 个字符。
+
+| 端点 | 返回内容 | 核心参数 |
+| --- | --- | --- |
+| `/v1/fetch/plugin/chatgpt/chat` | 助手回复的结构化 JSON（`output.markdown` / `output.html`、`sources`、`tool_data`）。 | `q=Explain+how+rainbows+form` |
+
+可选：`model`（`auto`、`gpt-5`、`gpt-4o`）、`geoCode`（语言地区信号，默认 `us`）、`raw_sse=1`、`shopping_placeholders=1`。典型耗时 3–15 秒。
+
+```bash
+curl "https://api.joyproxy.com/v1/fetch/plugin/chatgpt/chat?token=YOUR_SCRAPING_TOKEN&q=Explain+how+rainbows+form&model=auto&geoCode=us"
+```
+
+---
+
+## 插件计费
+
+**仅在插件成功返回时扣积分**。入参错误与插件失败不扣费。
+
+| 插件 | 成功一次消耗 |
+| --- | --- |
+| Amazon | 通常 1 Credit |
+| Google 套件 / YouTube | 通常 10 Credits |
+| Walmart | 10 Credits |
+| ChatGPT | 25 Credits |
+
+完整参数字典见 <a href="https://www.joyproxy.com/admin-unblocker-documentation.html#plugins" target="_blank" rel="noopener noreferrer">网页抓取 API 文档 → 插件</a>。
