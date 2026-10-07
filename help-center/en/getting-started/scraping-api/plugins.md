@@ -35,7 +35,6 @@ curl "https://api.joyproxy.com/v1/fetch/plugin/amazon/pdp?token=YOUR_SCRAPING_TO
 | `/v1/fetch/plugin/google/maps/search` | Maps businesses, address, phone, and ratings. | `q=pizza+in+new+york` |
 | `/v1/fetch/plugin/google/maps/place` | Place details. | `place_id` or `data_cid` |
 | `/v1/fetch/plugin/google/maps/reviews` | Place reviews (paginated). | `data_id` or `place_id` |
-| `/v1/fetch/plugin/google/youtube` | YouTube video search. | `q=best+laptop+2025&hl=en&gl=us` |
 | `/v1/fetch/plugin/google/news` | Google News headlines and topic streams. | `q=technology&gl=us` |
 | `/v1/fetch/plugin/google/trends` | Google Trends series. | `q=openai&geo=US` |
 | `/v1/fetch/plugin/google/trending` | Trending Now. | `geo=US&hours=24` |
@@ -44,10 +43,26 @@ curl "https://api.joyproxy.com/v1/fetch/plugin/amazon/pdp?token=YOUR_SCRAPING_TO
 | `/v1/fetch/plugin/google/shopping` | Shopping product results. | `q=wireless+headphones` |
 | `/v1/fetch/plugin/google/play-store` | Play Store search. | `q=weather` |
 
-Optional on most Google endpoints: `hl`, `gl`, `google_domain`, `device`. YouTube also supports `sp` (sort/filter or `next_page_token`).
+Optional on most Google endpoints: `hl`, `gl`, `google_domain`, `device`.
 
 ```bash
 curl "https://api.joyproxy.com/v1/fetch/plugin/google/search?token=YOUR_SCRAPING_TOKEN&q=wireless+headphones&gl=us&hl=en&device=desktop"
+```
+
+---
+
+## YouTube (~10 credits)
+
+Video search on YouTube. Use the search query `q` (not a `v=` video id).
+
+| Endpoint | What it returns | Core parameters |
+| --- | --- | --- |
+| `/v1/fetch/plugin/google/youtube` | YouTube video search results (title, channel, views, duration, pagination). | `q=best+laptop+2025&hl=en&gl=us` |
+
+Optional: `hl`, `gl`, `device`, `sp` (sort/filter). For the next page, pass `next_page_token` from the previous response.
+
+```bash
+curl "https://api.joyproxy.com/v1/fetch/plugin/google/youtube?token=YOUR_SCRAPING_TOKEN&q=best+laptop+2025&hl=en&gl=us&device=desktop"
 ```
 
 ---
@@ -94,7 +109,8 @@ Credits are deducted **only when the plugin returns successfully**. Input errors
 | Plugin | Credits per success |
 | --- | --- |
 | Amazon | typically 1 |
-| Google suite / YouTube | typically 10 |
+| Google suite | typically 10 |
+| YouTube | typically 10 |
 | Walmart | 10 |
 | ChatGPT | 25 |
 

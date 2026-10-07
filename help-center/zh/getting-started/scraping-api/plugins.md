@@ -35,7 +35,6 @@ curl "https://api.joyproxy.com/v1/fetch/plugin/amazon/pdp?token=YOUR_SCRAPING_TO
 | `/v1/fetch/plugin/google/maps/search` | Maps 商家、地址、电话与评分。 | `q=pizza+in+new+york` |
 | `/v1/fetch/plugin/google/maps/place` | 地点详情。 | `place_id` 或 `data_cid` |
 | `/v1/fetch/plugin/google/maps/reviews` | 地点评论（可分页）。 | `data_id` 或 `place_id` |
-| `/v1/fetch/plugin/google/youtube` | YouTube 视频搜索。 | `q=best+laptop+2025&hl=en&gl=us` |
 | `/v1/fetch/plugin/google/news` | Google 新闻头条与主题流。 | `q=technology&gl=us` |
 | `/v1/fetch/plugin/google/trends` | Google 趋势序列。 | `q=openai&geo=US` |
 | `/v1/fetch/plugin/google/trending` | Trending Now。 | `geo=US&hours=24` |
@@ -44,10 +43,26 @@ curl "https://api.joyproxy.com/v1/fetch/plugin/amazon/pdp?token=YOUR_SCRAPING_TO
 | `/v1/fetch/plugin/google/shopping` | 购物商品结果。 | `q=wireless+headphones` |
 | `/v1/fetch/plugin/google/play-store` | Play 商店搜索。 | `q=weather` |
 
-多数 Google 端点可选 `hl`、`gl`、`google_domain`、`device`。YouTube 还支持 `sp`（排序/筛选或 `next_page_token`）。
+多数 Google 端点可选 `hl`、`gl`、`google_domain`、`device`。
 
 ```bash
 curl "https://api.joyproxy.com/v1/fetch/plugin/google/search?token=YOUR_SCRAPING_TOKEN&q=wireless+headphones&gl=us&hl=en&device=desktop"
+```
+
+---
+
+## YouTube（约 10 Credits）
+
+YouTube 视频搜索。使用搜索词 `q`（不要用 `v=` 视频 ID）。
+
+| 端点 | 返回内容 | 核心参数 |
+| --- | --- | --- |
+| `/v1/fetch/plugin/google/youtube` | YouTube 视频搜索结果（标题、频道、播放量、时长、分页）。 | `q=best+laptop+2025&hl=en&gl=us` |
+
+可选：`hl`、`gl`、`device`、`sp`（排序/筛选）。翻页时把上一页返回的 `next_page_token` 传入。
+
+```bash
+curl "https://api.joyproxy.com/v1/fetch/plugin/google/youtube?token=YOUR_SCRAPING_TOKEN&q=best+laptop+2025&hl=en&gl=us&device=desktop"
 ```
 
 ---
@@ -94,7 +109,8 @@ curl "https://api.joyproxy.com/v1/fetch/plugin/chatgpt/chat?token=YOUR_SCRAPING_
 | 插件 | 成功一次消耗 |
 | --- | --- |
 | Amazon | 通常 1 Credit |
-| Google 套件 / YouTube | 通常 10 Credits |
+| Google 套件 | 通常 10 Credits |
+| YouTube | 通常 10 Credits |
 | Walmart | 10 Credits |
 | ChatGPT | 25 Credits |
 
