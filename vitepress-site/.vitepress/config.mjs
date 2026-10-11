@@ -67,7 +67,7 @@ export default defineConfig({
       faqAccordionPlugin(md);
     },
   },
-  head: [["link", { rel: "icon", href: "https://www.joyproxy.com/favicon.svg" }]],
+  head: [["link", { rel: "icon", href: "https://www.joyproxy.com/assets/favicon.svg?v=20261011", type: "image/svg+xml" }]],
   locales: {
     root: {
       label: "English",
@@ -122,7 +122,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
-    logo: "https://www.joyproxy.com/favicon.svg",
+    logo: "https://www.joyproxy.com/assets/favicon.svg?v=20261011",
     aside: false,
     outline: false,
     socialLinks: [],
