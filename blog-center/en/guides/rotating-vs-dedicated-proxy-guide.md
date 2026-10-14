@@ -3,6 +3,8 @@ title: "Rotating vs Dedicated Proxies: A Decision Framework for Operators"
 description: "Rotation reduces correlation; fixation builds trust with platforms. Most production stacks use both—here is how to split workloads."
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/rotating-vs-dedicated-proxy-guide.html
+date: 2026-07-30
+
 ---
 
 # Rotating vs Dedicated Proxies: A Decision Framework for Operators

@@ -3,6 +3,8 @@ title: "动态 vs 静态代理：技术负责人的架构决策指南"
 description: "代理选型的本质是网络身份的生命周期管理。平台看重身份稳定性，爬虫追求 IP 多样性，本文为你提供清晰决策矩阵。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/rotating-vs-dedicated-proxy-guide_cn.html
+date: 2026-07-30
+
 ---
 
 # 动态 vs 静态代理：技术负责人的架构决策指南

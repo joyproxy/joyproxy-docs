@@ -3,6 +3,8 @@ title: "407 與 403：代理網絡實際會回傳的 HTTP 狀態碼"
 description: "分清 407 代理鑑權失敗與 403 目標站風控攔截，以及 401、429、502、504 的真實發信方。請勿在密碼錯誤時盲目加購流量。"
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/proxy-http-status-codes_tw.html
+date: 2026-08-23
+
 ---
 
 # 407 與 403：代理網絡實際會回傳的 HTTP 狀態碼

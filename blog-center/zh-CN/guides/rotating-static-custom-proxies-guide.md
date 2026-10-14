@@ -3,6 +3,8 @@ title: "动态、静态与自定义住宅代理：哪款适合你的业务架构
 description: "全面对比计费模型、会话稳定性与地理控制度，助你在数据抓取、账号管理与自动化测试间做出精准选型。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/rotating-static-custom-proxies-guide_cn.html
+date: 2026-08-11
+
 ---
 
 # 动态、静态与自定义住宅代理：哪款适合你的业务架构？

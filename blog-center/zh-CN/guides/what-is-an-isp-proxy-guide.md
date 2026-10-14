@@ -3,6 +3,8 @@ title: "什么是 ISP 代理？兼具住宅信誉与机房高速的完整指南�
 description: "全面拆解 ISP 代理（静态住宅代理）的底层网络拓扑：搞清它如何兼顾家庭宽带信誉与企业级机房高速，深入解析 1:1 独享固定 IP 在电商多店铺运营、支付结账与自动化业务中的防封实战。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/what-is-an-isp-proxy-guide_cn.html
+date: 2026-10-07
+
 ---
 
 # 什么是 ISP 代理？兼具住宅信誉与机房高速的完整指南（2026）

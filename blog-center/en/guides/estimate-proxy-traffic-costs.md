@@ -3,6 +3,8 @@ title: "How to Estimate Short-Term Proxy Traffic (and Pick a GB Package)"
 description: "Pay-per-GB sounds simple until HTML page weight, retries, and images inflate usage. Here is a worksheet grounded in JoyProxy’s published tiers."
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/estimate-proxy-traffic-costs.html
+date: 2026-08-03
+
 ---
 
 # How to Estimate Short-Term Proxy Traffic (and Pick a GB Package)

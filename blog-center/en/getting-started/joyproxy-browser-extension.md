@@ -3,6 +3,8 @@ title: "JoyProxy Browser Extension: Switch IPs in Chrome Without Touching System
 description: "Paste a proxy, test the exit IP, apply it to Chrome / Edge / Brave only. Windows and macOS stay unchanged."
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/joyproxy-browser-extension.html
+date: 2026-09-06
+
 ---
 
 # JoyProxy Browser Extension: Switch IPs in Chrome Without Touching System Proxy

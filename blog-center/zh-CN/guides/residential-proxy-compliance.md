@@ -3,6 +3,8 @@ title: "住宅代理合规指南：可接受使用与风险边界"
 description: "真实住宅 IP 涉及严格的监管与运营合规。明确合法自动化边界、被严禁的行为范畴以及企业必须履行的合规职责。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/residential-proxy-compliance_cn.html
+date: 2026-07-20
+
 ---
 
 # 住宅代理合规指南：可接受使用与风险边界

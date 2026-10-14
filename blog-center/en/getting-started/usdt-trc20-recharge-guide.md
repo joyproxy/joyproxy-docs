@@ -3,6 +3,8 @@ title: "Top Up Your JoyProxy Balance with USDT (TRC20): A Step-by-Step Guide"
 description: "Pay for proxies with TRON USDT at 1 USDT = $1, no deposit fee. Get your deposit address, send from TronLink, and claim the credit in minutes."
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/usdt-trc20-recharge-guide.html
+date: 2026-09-14
+
 ---
 
 # Top Up Your JoyProxy Balance with USDT (TRC20): A Step-by-Step Guide

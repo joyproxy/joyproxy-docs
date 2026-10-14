@@ -3,6 +3,8 @@ title: "善用 JoyProxy 的 $5 新用户赠金，避免盲目消耗"
 description: "五美元测试额度足够验证网络链路与接口质量，但不适合盲目跑生产爬虫。这里为你提供一份清晰的第一周试用规划。"
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/five-dollar-credit-onboarding_cn.html
+date: 2026-08-06
+
 ---
 
 # 善用 JoyProxy 的 $5 新用户赠金，避免盲目消耗

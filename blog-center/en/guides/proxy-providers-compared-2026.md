@@ -3,6 +3,8 @@ title: "Bright Data, Oxylabs, Smartproxy (Decodo) & JoyProxy: Price Comparison"
 description: "Minimum checkout and 30-day cost by line—developer and public-source snapshots."
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/proxy-providers-compared-2026.html
+date: 2026-08-17
+
 ---
 
 # Bright Data, Oxylabs, Smartproxy (Decodo) & JoyProxy: Price Comparison

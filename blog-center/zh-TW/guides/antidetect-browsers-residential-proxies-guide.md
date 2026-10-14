@@ -3,6 +3,8 @@ title: "防關聯瀏覽器與住宅代理：多帳號隔離的底層防封鐵律
 description: "深入剖析即便偽裝了瀏覽器指紋仍被停權的根因：時區撕裂、WebRTC 穿透外洩，以及真正有效的 1:1 獨享靜態住宅 IP 隔離準則。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/antidetect-browsers-residential-proxies-guide_tw.html
+date: 2026-09-20
+
 ---
 
 # 防關聯瀏覽器與住宅代理：多帳號隔離的底層防封鐵律

@@ -3,6 +3,8 @@ title: "How to Check Proxy Quality and IP Cleanliness with proxyip.io (Step-by-S
 description: "Learn how to check proxy quality and IP cleanliness with proxyip.io: audit ASN types, fraud risk scores, platform block probability, WebRTC/DNS leaks, and verify JoyProxy endpoints."
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/proxy-quality-with-proxyip-io.html
+date: 2026-09-22
+
 ---
 
 # How to Check Proxy Quality and IP Cleanliness with proxyip.io (Step-by-Step Guide)

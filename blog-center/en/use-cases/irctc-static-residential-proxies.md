@@ -3,6 +3,8 @@ title: "Your IRCTC Script Died at 10:00 AM. The Proxy Was the Problem."
 description: "Tatkal windows kill sessions on VPN and datacenter IPs. How Indian developers keep IRCTC logins alive with JoyProxy Static Dedicated Residential Proxies."
 category: use-cases
 legacyUrl: https://www.joyproxy.com/blog/irctc-static-residential-proxies.html
+date: 2026-08-28
+
 ---
 
 # Your IRCTC Script Died at 10:00 AM. The Proxy Was the Problem.

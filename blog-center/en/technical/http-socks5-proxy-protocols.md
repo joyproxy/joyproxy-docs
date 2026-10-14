@@ -3,6 +3,8 @@ title: "HTTP, HTTPS, and SOCKS5: Choosing a Proxy Protocol in Production"
 description: "Your scraper framework usually picks the protocol for you—but misconfiguration silently routes traffic wrong or disables TLS features."
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/http-socks5-proxy-protocols.html
+date: 2026-07-22
+
 ---
 
 # HTTP, HTTPS, and SOCKS5: Choosing a Proxy Protocol in Production

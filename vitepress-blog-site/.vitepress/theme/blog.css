@@ -1,1 +1,67 @@
 .VPHero .text { max-width: 42rem; }
+
+.blog-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: 1.5rem;
+}
+
+.blog-feed-item {
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.blog-feed-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.blog-feed-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0 0 0.35rem;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--vp-c-text-2);
+}
+
+.blog-feed-meta time {
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-feed-tag {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+}
+
+.blog-feed-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.blog-feed-title a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+
+.blog-feed-title a:hover {
+  text-decoration: underline;
+}
+
+.blog-feed-desc {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--vp-c-text-2);
+}

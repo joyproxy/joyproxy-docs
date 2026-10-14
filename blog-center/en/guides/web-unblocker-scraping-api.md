@@ -3,6 +3,8 @@ title: "Web Scraping API: AI-Powered Page Fetching Without Proxy Plumbing"
 description: "Send a URL, get HTML or JSON back. JoyProxy handles anti-bot bypass, proxy rotation, and optional JS rendering — you pay only when the fetch succeeds."
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/web-unblocker-scraping-api.html
+date: 2026-08-16
+
 ---
 
 # Web Scraping API: AI-Powered Page Fetching Without Proxy Plumbing

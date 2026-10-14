@@ -3,6 +3,8 @@ title: "跨境电商为何青睐长期固定 IP（以及轮换代理的隐患）
 description: "长期独享住宅 IP 是跨境卖家账号稳定性的基石。深入探讨为何动态轮换会导致封店，以及如何为多店铺建立清晰的 IP 资产映射台账。"
 category: use-cases
 legacyUrl: https://www.joyproxy.com/blog/fixed-ip-ecommerce-operations_cn.html
+date: 2026-07-25
+
 ---
 
 # 跨境电商为何青睐长期固定 IP（以及轮换代理的隐患）

@@ -3,6 +3,8 @@ title: "Web Scraping API：無需操心代理管網的智慧頁面擷取"
 description: "發送目標 URL，直接回傳清洗後的 HTML、Markdown 或 JSON。僅在擷取成功時扣費，無需維護龐大的代理池與瀏覽器叢集。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/web-unblocker-scraping-api_tw.html
+date: 2026-08-16
+
 ---
 
 # Web Scraping API：無需操心代理管網的智慧頁面擷取

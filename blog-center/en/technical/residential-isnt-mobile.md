@@ -3,6 +3,8 @@ title: "Residential Isn’t Mobile: When the Target Wants a Carrier ASN"
 description: "Home broadband and 4G/5G are different ASNs. Mobile rotating is for carrier checks; residential is cheaper — and correct — for most desktop work."
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/residential-isnt-mobile.html
+date: 2026-09-06
+
 ---
 
 # Residential Isn’t Mobile: When the Target Wants a Carrier ASN

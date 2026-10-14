@@ -3,6 +3,8 @@ title: "407 vs 403: HTTP Status Codes Proxies Actually Return"
 description: "407 is the proxy. 403 is usually the site. A field guide to 401, 429, 502, 503, 504, and SOCKS5 errors that are not HTTP at all."
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/proxy-http-status-codes.html
+date: 2026-08-23
+
 ---
 
 # 407 vs 403: HTTP Status Codes Proxies Actually Return

@@ -3,6 +3,8 @@ title: "利用 OpenClaw 与 AI MCP 自动化生成代理端点"
 description: "为 Cursor、VS Code 和 Claude Desktop 的 AI 编程智能体赋予动态提取海外代理端点的能力，实现测试与爬虫的自然语言调度。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/openclaw-mcp-proxy-automation_cn.html
+date: 2026-08-02
+
 ---
 
 # 利用 OpenClaw 与 AI MCP 自动化生成代理端点

@@ -3,6 +3,8 @@ title: "Rotating, Static, and Custom Residential Proxies: Which Line Fits Your S
 description: "JoyProxy offers five proxy network families—Residential, Mobile, Business, ISP, and Datacenter—each with modes matched to your workflow (rotating traffic, static lines, or custom ports)."
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/rotating-static-custom-proxies-guide.html
+date: 2026-08-11
+
 ---
 
 # Rotating, Static, and Custom Residential Proxies: Which Line Fits Your Stack?

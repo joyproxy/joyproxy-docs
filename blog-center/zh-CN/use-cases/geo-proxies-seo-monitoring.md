@@ -3,6 +3,8 @@ title: "多国地理代理进行真实 SEO 排名监控：消除个性化噪音"
 description: "利用全球分布的真实住宅代理网络监控多语言 SERP 搜索排名，消除本地 Cookie 与机房 IP 带来的算法偏倚，获取最客观的排名走势图。"
 category: use-cases
 legacyUrl: https://www.joyproxy.com/blog/geo-proxies-seo-monitoring_cn.html
+date: 2026-08-05
+
 ---
 
 # 多国地理代理进行真实 SEO 排名监控：消除个性化噪音

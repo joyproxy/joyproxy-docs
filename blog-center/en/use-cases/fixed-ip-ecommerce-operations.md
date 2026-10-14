@@ -3,6 +3,8 @@ title: "Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)"
 description: "Marketplaces link sessions, devices, and IP history. Rotation solves scraping—but it can break seller workflows if applied blindly."
 category: use-cases
 legacyUrl: https://www.joyproxy.com/blog/fixed-ip-ecommerce-operations.html
+date: 2026-07-25
+
 ---
 
 # Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)

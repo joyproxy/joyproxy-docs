@@ -3,6 +3,8 @@ title: "Bright Data、Oxylabs、Smartproxy（Decodo）与 JoyProxy：价格对�
 description: "各产品线最低起付与 30 天花费——开发者与公开来源快照。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/proxy-providers-compared-2026_cn.html
+date: 2026-08-17
+
 ---
 
 # Bright Data、Oxylabs、Smartproxy（Decodo）与 JoyProxy：价格对比

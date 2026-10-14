@@ -3,6 +3,8 @@ title: "JoyProxy 浏览器扩展：换 IP 只改 Chrome，不动系统代理"
 description: "粘贴代理字符串、一键测试出口 IP 与延迟、仅对当前浏览器生效——Windows 与 macOS 全局网络保持原样。"
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/joyproxy-browser-extension_cn.html
+date: 2026-09-06
+
 ---
 
 # JoyProxy 浏览器扩展：换 IP 只改 Chrome，不动系统代理

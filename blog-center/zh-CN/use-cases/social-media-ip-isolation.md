@@ -3,6 +3,8 @@ title: "每个社媒登录一个静态 IP：代运营机构如何避免声誉串
 description: "办公室局域网 NAT 共享与频繁跳动的轮换 IP，是引发社媒异常登录与限流封禁的元凶。详解 1 账号 : 1 静态住宅 IP 的严格隔离架构。"
 category: use-cases
 legacyUrl: https://www.joyproxy.com/blog/social-media-ip-isolation_cn.html
+date: 2026-09-16
+
 ---
 
 # 每个社媒登录一个静态 IP：代运营机构如何避免声誉串联

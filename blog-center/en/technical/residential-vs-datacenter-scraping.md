@@ -3,6 +3,8 @@ title: "Residential vs Datacenter Proxies for Web Scraping: When Each Type Wins"
 description: "Datacenter IPs are cheaper and faster, but many targets treat them differently from household IPs. Here is how to decide before you buy traffic."
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/residential-vs-datacenter-scraping.html
+date: 2026-07-28
+
 ---
 
 # Residential vs Datacenter Proxies for Web Scraping: When Each Type Wins

@@ -3,6 +3,8 @@ title: "One Static IP Per Social Login: How Agencies Keep Accounts from Sharing 
 description: "Office NAT and rotating proxies trigger suspicious-login loops. One residential static IP per profile, country-matched, never rotated mid-session."
 category: use-cases
 legacyUrl: https://www.joyproxy.com/blog/social-media-ip-isolation.html
+date: 2026-09-16
+
 ---
 
 # One Static IP Per Social Login: How Agencies Keep Accounts from Sharing Reputation

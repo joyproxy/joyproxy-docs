@@ -3,6 +3,8 @@ title: "JoyProxy Whitelist, Credentials, and Your First Proxy Endpoint"
 description: "Before traffic flows, JoyProxy needs to know which client IPs may generate proxy endpoints and how apps authenticate. This walkthrough covers both paths."
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/whitelist-credentials-setup.html
+date: 2026-08-01
+
 ---
 
 # JoyProxy Whitelist, Credentials, and Your First Proxy Endpoint

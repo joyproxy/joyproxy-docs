@@ -3,6 +3,8 @@ title: "SEO Rank Checks from Multiple Countries (Without Personalized Noise)"
 description: "Search results change by location and device class. Geo proxies let you query from a target market—but methodology still matters."
 category: use-cases
 legacyUrl: https://www.joyproxy.com/blog/geo-proxies-seo-monitoring.html
+date: 2026-08-05
+
 ---
 
 # SEO Rank Checks from Multiple Countries (Without Personalized Noise)

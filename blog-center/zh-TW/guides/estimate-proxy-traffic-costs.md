@@ -3,6 +3,8 @@ title: "如何科學預估短期代理流量（並挑選最合適的 GB 套餐�
 description: "住宅代理按傳輸位元組計費而非按請求數計費。低估頁面靜態資源與重試開銷，往往是流量提前耗盡的主要原因。"
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/estimate-proxy-traffic-costs_tw.html
+date: 2026-08-03
+
 ---
 
 # 如何科學預估短期代理流量（並挑選最合適的 GB 套餐）

@@ -3,6 +3,8 @@ title: "Automating Endpoint Generation with OpenClaw Skill and AI MCP"
 description: "JoyProxy’s AI integrations are read-only by design: generate endpoints, check balance, query usage—without handing an agent full account control."
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/openclaw-mcp-proxy-automation.html
+date: 2026-08-02
+
 ---
 
 # Automating Endpoint Generation with OpenClaw Skill and AI MCP

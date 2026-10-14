@@ -3,6 +3,8 @@ title: "Residential Proxy Compliance: Acceptable Use and Risk Boundaries"
 description: "Residential IPs carry higher abuse visibility when misused. Legitimate automation stays on the right side of contracts, law, and platform rules."
 category: guides
 legacyUrl: https://www.joyproxy.com/blog/residential-proxy-compliance.html
+date: 2026-07-20
+
 ---
 
 # Residential Proxy Compliance: Acceptable Use and Risk Boundaries

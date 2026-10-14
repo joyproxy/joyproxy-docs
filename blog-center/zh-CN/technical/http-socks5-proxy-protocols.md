@@ -3,6 +3,8 @@ title: "HTTP、HTTPS 与 SOCKS5：生产环境如何正确选型代理协议"
 description: "深入拆解应用层与传输层代理差异。分析 Python 爬虫、无头浏览器与移动客户端下的最佳兼容实践与 TLS 陷阱。"
 category: technical
 legacyUrl: https://www.joyproxy.com/blog/http-socks5-proxy-protocols_cn.html
+date: 2026-07-22
+
 ---
 
 # HTTP、HTTPS 与 SOCKS5：生产环境如何正确选型代理协议

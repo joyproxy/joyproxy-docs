@@ -3,6 +3,8 @@ title: "Using JoyProxy's $5 New-User Credit Without Wasting It"
 description: "Five dollars of traffic is enough to validate integration quality—not to run production crawls. Here is a focused first-week plan."
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/five-dollar-credit-onboarding.html
+date: 2026-08-06
+
 ---
 
 # Using JoyProxy's $5 New-User Credit Without Wasting It
