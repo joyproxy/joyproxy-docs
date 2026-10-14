@@ -5,7 +5,7 @@
   "scripts": {
     "sync": "node scripts/sync-content.mjs",
     "dev": "npm run sync && vitepress dev",
-    "build": "npm run sync && vitepress build",
+    "build": "npm run sync && vitepress build && node scripts/copy-public-assets.mjs",
     "preview": "vitepress preview"
   },
   "devDependencies": {
