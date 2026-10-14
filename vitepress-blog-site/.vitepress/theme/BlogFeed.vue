@@ -13,11 +13,10 @@ const localeKey = computed(() => {
   return "en";
 });
 
-const posts = computed(() =>
-  allPosts
-    .filter((p) => p.locale === localeKey.value)
-    .sort((a, b) => b.date.localeCompare(a.date)),
-);
+const posts = computed(() => {
+  const list = Array.isArray(allPosts) ? allPosts : allPosts?.value ?? [];
+  return list.filter((p) => p.locale === localeKey.value);
+});
 
 function formatDate(iso) {
   try {
