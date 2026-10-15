@@ -9,6 +9,11 @@ outline: false
 <div class="blog-feed">
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">使用場景</span> <time datetime="2026-10-15">2026-10-15</time></p>
+<h3 class="blog-feed-title"><a href="use-cases/tiktok-zero-views-ip-pollution">TikTok / 海外社群新號遭遇「0 播放」與批次風控？90% 的死因在代理池的「IP 污染」</a></h3>
+<p class="blog-feed-desc">深度排查出海短影音與海外社群矩陣遭遇 0 播放、隱形限流與註冊即停權的底層根因：髒 IP 歷史黑名單、機房 ASN 偽裝、子網連坐機制，以及如何用純淨 ISP 獨享靜態住宅網路破局。</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">使用場景</span> <time datetime="2026-10-15">2026-10-15</time></p>
 <h3 class="blog-feed-title"><a href="use-cases/stripe-paypal-checkout-fraud-prevention">Stripe / PayPal 跨境結帳風控：為什麼你的獨立站代付卡單率高達 40%？</a></h3>
 <p class="blog-feed-desc">深度拆解跨境代採、獨立站代付與支付自動化測試中頻遭 card_declined 的根因：機房 ASN 攔截、動態輪換引發的會話撕裂，以及真正有效的 ISP 獨享靜態住宅網路防封實踐。</p>
 </article>
