@@ -8,6 +8,11 @@ Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Use Cases</span> <time datetime="2026-10-15">2026-10-15</time></p>
+<h3 class="blog-feed-title"><a href="use-cases/stripe-paypal-checkout-fraud-prevention">Stripe and PayPal Checkout Risk: Why Proxy-Based Payments See a 40% Decline Rate</a></h3>
+<p class="blog-feed-desc">Diagnose why overseas procurement, checkout automation, and cross-border payment testing trigger card_declined errors: datacenter ASNs, mid-session IP rotation, and how dedicated ISP residential proxies fix friction.</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-10-07">2026-10-07</time></p>
 <h3 class="blog-feed-title"><a href="guides/what-is-an-isp-proxy-guide">What Is an ISP Proxy? Residential Trust Meets Datacenter Speed (Complete 2026 Guide)</a></h3>
 <p class="blog-feed-desc">Demystify ISP proxies (static residential proxies): discover how they bridge consumer ISP trust with enterprise datacenter speed, explore the underlying network topology, and master 1:1 dedicated IP operations for e-commerce, checkout, and automation.</p>

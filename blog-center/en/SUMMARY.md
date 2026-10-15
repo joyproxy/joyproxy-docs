@@ -12,6 +12,7 @@
 * [Residential vs Datacenter Proxies for Web Scraping: When Each Type Wins](technical/residential-vs-datacenter-scraping.md)
 * [HTTP, HTTPS, and SOCKS5: Choosing a Proxy Protocol in Production](technical/http-socks5-proxy-protocols.md)
 ## Use Cases
+* [Stripe and PayPal Checkout Risk: Why Proxy-Based Payments See a 40% Decline Rate](use-cases/stripe-paypal-checkout-fraud-prevention.md)
 * [One Static IP Per Social Login: How Agencies Keep Accounts from Sharing Reputation](use-cases/social-media-ip-isolation.md)
 * [Your IRCTC Script Died at 10:00 AM. The Proxy Was the Problem.](use-cases/irctc-static-residential-proxies.md)
 * [SEO Rank Checks from Multiple Countries (Without Personalized Noise)](use-cases/geo-proxies-seo-monitoring.md)

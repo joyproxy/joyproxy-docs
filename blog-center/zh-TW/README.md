@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">使用場景</span> <time datetime="2026-10-15">2026-10-15</time></p>
+<h3 class="blog-feed-title"><a href="use-cases/stripe-paypal-checkout-fraud-prevention">Stripe / PayPal 跨境結帳風控：為什麼你的獨立站代付卡單率高達 40%？</a></h3>
+<p class="blog-feed-desc">深度拆解跨境代採、獨立站代付與支付自動化測試中頻遭 card_declined 的根因：機房 ASN 攔截、動態輪換引發的會話撕裂，以及真正有效的 ISP 獨享靜態住宅網路防封實踐。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-07">2026-10-07</time></p>
 <h3 class="blog-feed-title"><a href="guides/what-is-an-isp-proxy-guide">什麼是 ISP 代理？兼具住宅信譽與機房高速的完整指南（2026）</a></h3>
 <p class="blog-feed-desc">全面拆解 ISP 代理（靜態住宅代理）的底層網路拓撲：搞清它如何兼顧家庭寬頻信譽與企業級機房高速，深入解析 1:1 獨享固定 IP 在電商多店鋪運營、支付結賬與自動化業務中的防封實戰。</p>
