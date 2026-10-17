@@ -194,14 +194,6 @@ Key deployment flags and operational modes:
 
 ---
 
-## Operational Summary and Acceptable Use
-
-Operating your own proxy server streamlines network infrastructure by consolidating protocol handling, credential management, and multi-device routing at an intermediate tier. Pairing JoyProxy Server with JoyProxy Tester on desktop and the Android Client on mobile creates a reliable, flexible environment for web development, testing, and operations.
-
-**Compliance Notice:** Proxy software and networks must strictly serve lawful, authorized operations. JoyProxy software and proxy networks prohibit automated vulnerability scanning, brute-force exploits, unauthorized data harvesting, or any illicit activities. Operating within clean, legitimate network boundaries is the foundation of dependable cross-border infrastructure.
-
----
-
 **Official Software & Documentation Links:**
 
 * Server Binary & Documentation: [JoyProxy Server Details](https://www.joyproxy.com/products/proxy-server.html) · [GitHub Repository](https://github.com/joyproxy/joyproxy-server)
