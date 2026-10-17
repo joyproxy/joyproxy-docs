@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-17">2026-10-17</time></p>
+<h3 class="blog-feed-title"><a href="guides/build-your-own-proxy-server-guide">3分鐘在 Linux 與 Windows 上架設自己的代理伺服器（實戰指南2026版）</a></h3>
+<p class="blog-feed-desc">告別繁瑣的 Squid 與 Dante 複雜設定。手把手教您使用輕量開源工具在 Linux 雲端伺服器與 Windows 本地快速啟動 HTTP / SOCKS5 代理閘道，並透過桌面 Tester 與安卓用戶端完成檢測與分流驗證。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">使用場景</span> <time datetime="2026-10-15">2026-10-15</time></p>
 <h3 class="blog-feed-title"><a href="use-cases/tiktok-zero-views-ip-pollution">TikTok / 海外社群新號遭遇「0 播放」與批次風控？90% 的死因在代理池的「IP 污染」</a></h3>
 <p class="blog-feed-desc">深度排查出海短影音與海外社群矩陣遭遇 0 播放、隱形限流與註冊即停權的底層根因：髒 IP 歷史黑名單、機房 ASN 偽裝、子網連坐機制，以及如何用純淨 ISP 獨享靜態住宅網路破局。</p>
