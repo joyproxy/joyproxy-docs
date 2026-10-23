@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-23">2026-10-23</time></p>
+<h3 class="blog-feed-title"><a href="guides/payg-proxy-architectures-for-developers">不想被高額的起充月費綁架？5 款適合小團隊與獨立開發者的按量計費代理方案</a></h3>
+<p class="blog-feed-desc">告別傳統大廠 $300+ 的強制月費低消與月底流量歸零。深度解析 5 款真正適合輕量團隊與獨立開發者的隨收隨付（PAYG）代理架構，兼顧純淨網路信譽與極低試錯成本。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-17">2026-10-17</time></p>
 <h3 class="blog-feed-title"><a href="guides/build-your-own-proxy-server-guide">3分鐘在 Linux 與 Windows 上架設自己的代理伺服器（實戰指南2026版）</a></h3>
 <p class="blog-feed-desc">告別繁瑣的 Squid 與 Dante 複雜設定。手把手教您使用輕量開源工具在 Linux 雲端伺服器與 Windows 本地快速啟動 HTTP / SOCKS5 代理閘道，並透過桌面 Tester 與安卓用戶端完成檢測與分流驗證。</p>

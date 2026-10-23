@@ -19,6 +19,7 @@
 * [SEO Rank Checks from Multiple Countries (Without Personalized Noise)](use-cases/geo-proxies-seo-monitoring.md)
 * [Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)](use-cases/fixed-ip-ecommerce-operations.md)
 ## Guides
+* [Tired of High Monthly Commitments? 5 Pay-As-You-Go Proxy Architectures for Lean Teams & Solo Developers](guides/payg-proxy-architectures-for-developers.md)
 * [Build Your Own Proxy Server on Linux and Windows in 3 Minutes (Practical 2026 Guide)](guides/build-your-own-proxy-server-guide.md)
 * [What Is an ISP Proxy? Residential Trust Meets Datacenter Speed (Complete 2026 Guide)](guides/what-is-an-isp-proxy-guide.md)
 * [How to Check Proxy Quality and IP Cleanliness with proxyip.io (Step-by-Step Guide)](guides/proxy-quality-with-proxyip-io.md)

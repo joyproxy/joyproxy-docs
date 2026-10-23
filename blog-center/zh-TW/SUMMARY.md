@@ -19,6 +19,7 @@
 * [多國地理代理進行真實 SEO 排名監控：消除個人化雜訊](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境電商為何青睞長期固定 IP（以及輪換代理的隱患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [不想被高額的起充月費綁架？5 款適合小團隊與獨立開發者的按量計費代理方案](guides/payg-proxy-architectures-for-developers.md)
 * [3分鐘在 Linux 與 Windows 上架設自己的代理伺服器（實戰指南2026版）](guides/build-your-own-proxy-server-guide.md)
 * [什麼是 ISP 代理？兼具住宅信譽與機房高速的完整指南（2026）](guides/what-is-an-isp-proxy-guide.md)
 * [如何用 proxyip.io 全面檢測代理品質與 IP 純淨度（實戰指南）](guides/proxy-quality-with-proxyip-io.md)

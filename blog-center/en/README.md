@@ -8,6 +8,11 @@ Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-10-23">2026-10-23</time></p>
+<h3 class="blog-feed-title"><a href="guides/payg-proxy-architectures-for-developers">Tired of High Monthly Commitments? 5 Pay-As-You-Go Proxy Architectures for Lean Teams & Solo Developers</a></h3>
+<p class="blog-feed-desc">Ditch $300+ monthly minimum commits and expiring traffic quotas. Explore 5 flexible pay-as-you-go proxy architectures built for solo developers and lean teams balancing residential trust with zero wasted spend.</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-10-17">2026-10-17</time></p>
 <h3 class="blog-feed-title"><a href="guides/build-your-own-proxy-server-guide">Build Your Own Proxy Server on Linux and Windows in 3 Minutes (Practical 2026 Guide)</a></h3>
 <p class="blog-feed-desc">Ditch complex Squid and Dante configurations. Learn how to launch a high-performance HTTP / SOCKS5 proxy gateway on Linux cloud servers and Windows desktop, verify connectivity with JoyProxy Tester, and configure per-app routing on Android.</p>
