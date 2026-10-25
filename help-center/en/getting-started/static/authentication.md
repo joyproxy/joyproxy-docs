@@ -11,7 +11,7 @@ Static Proxies support Username/Password authentication or password-free access 
 3. Create User/Pass or pick an existing credential:
    - **Username**: for example `user123`.
    - **Password**: for example `pass123`.
-4. After saving, connect to the static dedicated endpoint `us-ca.edge.joyproxy.com:10001` with that Username and Password.
+4. After saving, connect to the static dedicated endpoint `us.edge.joyproxy.com:10001` with that Username and Password.
 
 ---
 

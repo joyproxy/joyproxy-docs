@@ -17,7 +17,7 @@ Configuring a proxy in an Android emulator (LDPlayer, MuMu, and similar) gives a
 2. Tap **Network & internet → WLAN**;
 3. Long-press the default virtual Wi-Fi name and tap **Modify network**;
 4. Expand advanced options and set Proxy to **Manual**;
-5. **Proxy hostname** = Entry Point (for example `us-ca.edge.joyproxy.com`); **Proxy port** = the port;
+5. **Proxy hostname** = Entry Point (for example `us.edge.joyproxy.com`); **Proxy port** = the port;
 6. Tap **Save**.
 
 ---

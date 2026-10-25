@@ -9,7 +9,7 @@ BitBrowser supports a single profile and bulk import. This page shows how to att
 1. Open BitBrowser and click **New browser**;
 2. In proxy settings, choose **Custom**;
 3. Protocol: `HTTP` or `SOCKS5`;
-4. Enter the Entry Point hostname (for example `us-ca.edge.joyproxy.com`), port, and Username/Password;
+4. Enter the Entry Point hostname (for example `us.edge.joyproxy.com`), port, and Username/Password;
 5. Click **Check proxy** to verify connectivity and exit IP;
 6. Confirm and save.
 

@@ -12,7 +12,7 @@ from playwright.sync_api import sync_playwright
 def run():
     with sync_playwright() as p:
         proxy_config = {
-            "server": "http://us-ca.edge.joyproxy.com:10001",
+            "server": "http://us.edge.joyproxy.com:10001",
             "username": "your_username",
             "password": "your_password"
         }
@@ -36,7 +36,7 @@ const puppeteer = require('puppeteer');
 (async () => {
   const browser = await puppeteer.launch({
     headless: false,
-    args: ['--proxy-server=http://us-ca.edge.joyproxy.com:10001']
+    args: ['--proxy-server=http://us.edge.joyproxy.com:10001']
   });
   const page = await browser.newPage();
   await page.authenticate({

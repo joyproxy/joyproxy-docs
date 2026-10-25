@@ -12,7 +12,7 @@
 2. 在左侧菜单选择 **Proxy**；
 3. 在 **Proxy type** 中选择 `HTTP proxy` 或 `SOCKS5 proxy`；
 4. 填入参数：
-   - **IP or host**：填入接入域名（如 `us-ca.edge.joyproxy.com`，请勿填写 Dedicated Exit IP）；
+   - **IP or host**：填入接入域名（如 `us.edge.joyproxy.com`，请勿填写 Dedicated Exit IP）；
    - **Port**：填入端口号；
    - **Username / Password**：填入代理账号与密码；
 5. 点击 **Check proxy**，确认显示 `Connection test passed`；

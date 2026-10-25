@@ -10,7 +10,7 @@ Mozilla Firefox has its own proxy settings. Unlike Chrome, Firefox can set HTTP,
 
 Sign in to the JoyProxy console and copy the endpoint you generated:
 
-- **Static Proxies**: on **My Proxies**, copy the **Entry Point** (for example `us-ca.edge.joyproxy.com:10001`) and credentials;
+- **Static Proxies**: on **My Proxies**, copy the **Entry Point** (for example `us.edge.joyproxy.com:10001`) and credentials;
 - **Rotating Proxies**: on **Endpoint generator**, generate an endpoint, then copy the long username and the password you set on **Users & Whitelist**.
 
 ---
@@ -30,7 +30,7 @@ In the **Connection Settings** dialog:
 1. Select **Manual proxy configuration**;
 2. Fill in the protocol you are using:
    - **HTTP / HTTPS**:
-     - **HTTP Proxy**: hostname (Static Proxies: `us-ca.edge.joyproxy.com`; Rotating gateway: `gate.joyproxy.com`);
+     - **HTTP Proxy**: hostname (Static Proxies: `us.edge.joyproxy.com`; Rotating gateway: `gate.joyproxy.com`);
      - **Port**: the port (`10001` or `9001`);
      - Check **Also use this proxy for HTTPS**;
    - **SOCKS5**:

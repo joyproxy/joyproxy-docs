@@ -26,7 +26,7 @@ Use `curl` to test the handshake:
 
 ### 1. Static Proxies:
 ```bash
-curl -x http://USERNAME:PASSWORD@us-ca.edge.joyproxy.com:10001 https://ipinfo.io
+curl -x http://USERNAME:PASSWORD@us.edge.joyproxy.com:10001 https://ipinfo.io
 ```
 
 ### 2. Rotating Proxies:

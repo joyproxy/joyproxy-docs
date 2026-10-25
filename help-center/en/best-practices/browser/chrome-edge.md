@@ -12,7 +12,7 @@ If you want the proxy on this browser only, without changing other apps on the O
 
 1. **Install the extension**: search for **JoyProxy** in the Chrome Web Store or the Edge Add-ons store and add it;
 2. **Copy connection details**:
-   - **Static Proxies**: sign in to the JoyProxy console, open **My Proxies**, and copy the line’s **Entry Point** (for example `us-ca.edge.joyproxy.com:10001`) plus Username/Password;
+   - **Static Proxies**: sign in to the JoyProxy console, open **My Proxies**, and copy the line’s **Entry Point** (for example `us.edge.joyproxy.com:10001`) plus Username/Password;
    - **Rotating Proxies**: open **Endpoint generator**, generate an endpoint, and copy the long username and password;
 3. **Configure and apply**:
    - Click the JoyProxy icon on the browser toolbar;
@@ -32,7 +32,7 @@ If you prefer not to install an extension, add a launch argument to the browser 
 2. Open the **Shortcut** tab and find the **Target** field;
 3. Add a **space** after the existing path, then append this argument (Static Proxies example):
    ```text
-   --proxy-server="http://us-ca.edge.joyproxy.com:10001"
+   --proxy-server="http://us.edge.joyproxy.com:10001"
    ```
 4. Click **Apply** and save;
 5. **Authentication**: launch flags cannot carry a password. For **Static Proxies or Custom Proxies**, open **Users & Whitelist** in the JoyProxy console and add this computer’s public IP to **IP Whitelist** so the connection can skip Username/Password. If the IP is not whitelisted, or you are using the **Rotating Proxies** gateway (Rotating always requires Username/Password), Chrome or Edge will show a native HTTP auth dialog on the first page load — enter the long proxy username and password.

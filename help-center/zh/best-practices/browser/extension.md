@@ -18,7 +18,7 @@ JoyProxy 官方浏览器扩展是轻量、高效的代理管理工具。使用�
 ## 步骤二：配置静态独享代理
 
 1. **获取代理参数**：
-   - 登录 JoyProxy 控制台，在「已购」列表中复制目标的 **Entry Point 接入域名与端口**（例如 `us-ca.edge.joyproxy.com:10001`）；
+   - 登录 JoyProxy 控制台，在「已购」列表中复制目标的 **Entry Point 接入域名与端口**（例如 `us.edge.joyproxy.com:10001`）；
    - 确认代理账密或白名单状态；
 2. **填入扩展**：
    - 点击工具栏的 JoyProxy 扩展图标；

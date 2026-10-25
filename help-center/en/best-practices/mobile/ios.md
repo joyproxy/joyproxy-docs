@@ -14,7 +14,7 @@ Quick HTTP proxy on Wi-Fi:
 4. Scroll to the bottom and tap **Configure Proxy**;
 5. Switch the mode to **Manual**;
 6. Fill in:
-   - **Server**: Entry Point hostname (for example `us-ca.edge.joyproxy.com`);
+   - **Server**: Entry Point hostname (for example `us.edge.joyproxy.com`);
    - **Port**: the port;
    - (If not on the whitelist) turn on **Authentication** and enter Username/Password;
 7. Tap **Save** in the top-right.

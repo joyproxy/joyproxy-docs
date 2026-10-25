@@ -46,7 +46,7 @@ Typical on REST (`/v2/extract` or `/v1/fetch`):
 ### After I generate and configure, the browser or script has no internet
 
 1. **Where you are**: test from outside mainland China (overseas VPS or office). Direct connects from mainland China to the gateway are blocked.
-2. **Port and protocol**: do not enable SOCKS5 on an HTTP proxy. For Static Proxies, the host:port must be the Entry Point (`us-ca.edge.joyproxy.com:10001` style). **Never use Dedicated Exit IP**.
+2. **Port and protocol**: do not enable SOCKS5 on an HTTP proxy. For Static Proxies, the host:port must be the Entry Point (`us.edge.joyproxy.com:10001` style). **Never use Dedicated Exit IP**.
 3. **Raw handshake**:
    ```bash
    curl -x http://USERNAME:PASSWORD@gate.joyproxy.com:9001 https://ipinfo.io

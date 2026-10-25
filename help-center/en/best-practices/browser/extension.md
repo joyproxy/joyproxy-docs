@@ -19,7 +19,7 @@ The extension is built for Chromium and works in mainstream browsers:
 ## Step 2: Configure Static Proxies
 
 1. **Copy connection details**:
-   - Sign in to the JoyProxy console, open **My Proxies**, and copy the **Entry Point** host and port (for example `us-ca.edge.joyproxy.com:10001`);
+   - Sign in to the JoyProxy console, open **My Proxies**, and copy the **Entry Point** host and port (for example `us.edge.joyproxy.com:10001`);
    - Confirm Username/Password or IP Whitelist status;
 2. **Fill in the extension**:
    - Click the JoyProxy toolbar icon;

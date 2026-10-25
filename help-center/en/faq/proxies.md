@@ -58,7 +58,7 @@ The TCP session is not torn down. During the window the gateway keeps the exit I
 
 Easy to mix up:
 
-- **Entry Point**: looks like `us-ca.edge.joyproxy.com:10001` (or `*.std.joyproxy.com:port`). This is the **only** host:port you put in a client, crawler, or Browser Extension.
+- **Entry Point**: looks like `us.edge.joyproxy.com:10001` (or `*.std.joyproxy.com:port`). This is the **only** host:port you put in a client, crawler, or Browser Extension.
 - **Dedicated Exit IP**: looks like `198.51.100.24`. That is the public IP the target sees. Use it to check geo. **Never use Dedicated Exit IP as the proxy host** — the connection will be refused.
 
 > **Console**: on **My Proxies**, use **Hide Exit IP** / **Show Exit IP** so you do not copy the wrong field.

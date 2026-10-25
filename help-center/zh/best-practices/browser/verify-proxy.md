@@ -26,7 +26,7 @@
 
 ### 1. 测试静态独享代理：
 ```bash
-curl -x http://代理用户名:代理密码@us-ca.edge.joyproxy.com:10001 https://ipinfo.io
+curl -x http://代理用户名:代理密码@us.edge.joyproxy.com:10001 https://ipinfo.io
 ```
 
 ### 2. 测试动态代理：

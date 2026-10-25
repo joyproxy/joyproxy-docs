@@ -24,7 +24,7 @@ For **Static Proxies or Custom Proxies**, add an IP Whitelist entry:
 2. Tap the **settings** or **advanced** icon next to the connected network;
 3. Find **Proxy** and change it from None to **Manual**;
 4. Fill in:
-   - **Proxy hostname**: JoyProxy Entry Point (for example `us-ca.edge.joyproxy.com`);
+   - **Proxy hostname**: JoyProxy Entry Point (for example `us.edge.joyproxy.com`);
    - **Proxy port**: the port (for example `10001`);
 5. Tap **Save**.
 

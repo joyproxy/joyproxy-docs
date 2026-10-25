@@ -6,18 +6,18 @@
 
 ## 代码示例
 
-请将 `USER`、`PASS` 和 `us-ca.edge.joyproxy.com:10001` 替换为你提取到的真实端点：
+请将 `USER`、`PASS` 和 `us.edge.joyproxy.com:10001` 替换为你提取到的真实端点：
 
 ### cURL
 ```bash
-curl -x http://USER:PASS@us-ca.edge.joyproxy.com:10001 https://api.ipify.org
+curl -x http://USER:PASS@us.edge.joyproxy.com:10001 https://api.ipify.org
 ```
 
 ### Python
 ```python
 import requests
 
-proxy = "http://USER:PASS@us-ca.edge.joyproxy.com:10001"
+proxy = "http://USER:PASS@us.edge.joyproxy.com:10001"
 res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
 print("静态出口 IP:", res.text)
 ```
@@ -26,7 +26,7 @@ print("静态出口 IP:", res.text)
 ```javascript
 const { HttpsProxyAgent } = require("https-proxy-agent");
 
-const agent = new HttpsProxyAgent("http://USER:PASS@us-ca.edge.joyproxy.com:10001");
+const agent = new HttpsProxyAgent("http://USER:PASS@us.edge.joyproxy.com:10001");
 const res = await fetch("https://api.ipify.org", { agent });
 console.log("静态出口 IP:", await res.text());
 ```

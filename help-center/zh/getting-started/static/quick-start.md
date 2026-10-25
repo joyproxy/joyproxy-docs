@@ -3,7 +3,7 @@
 本指南带你快速完成静态独享代理的购买、认证、提取与连接测试。
 
 > **什么是静态独享代理？**  
-> 静态独享代理按线路数量与时间（天/月/年）计费，在有效期内提供专属固定的主机与端口（如 `us-ca.edge.joyproxy.com:10001`），100% 专享独用。
+> 静态独享代理按线路数量与时间（天/月/年）计费，在有效期内提供专属固定的主机与端口（如 `us.edge.joyproxy.com:10001`），100% 专享独用。
 
 ---
 
@@ -31,7 +31,7 @@
 2. 筛选你购买的订单线路，在 **输出格式** 选择展示样式。
 3. 点击 **复制地址列表**，获取专属端点：
    ```text
-   http://user123:pass123@us-ca.edge.joyproxy.com:10001
+   http://user123:pass123@us.edge.joyproxy.com:10001
    ```
 
 ---
@@ -42,14 +42,14 @@
 
 ### cURL
 ```bash
-curl -x http://user123:pass123@us-ca.edge.joyproxy.com:10001 https://api.ipify.org
+curl -x http://user123:pass123@us.edge.joyproxy.com:10001 https://api.ipify.org
 ```
 
 ### Python
 ```python
 import requests
 
-proxy = "http://user123:pass123@us-ca.edge.joyproxy.com:10001"
+proxy = "http://user123:pass123@us.edge.joyproxy.com:10001"
 res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
 print("静态独享 IP:", res.text)
 ```

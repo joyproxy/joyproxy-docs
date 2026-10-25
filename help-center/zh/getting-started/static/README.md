@@ -1,13 +1,13 @@
 # 静态独享代理
 
-静态独享代理按固定线路（IP）与购买时长（日/月/年套餐）计费。在套餐有效期内，系统会为你分配专属固定的代理主机与端口（如 `us-ca.edge.joyproxy.com:10001`），且该 IP 100% 专属于你使用，绝不与他人共享。
+静态独享代理按固定线路（IP）与购买时长（日/月/年套餐）计费。在套餐有效期内，系统会为你分配专属固定的代理主机与端口（如 `us.edge.joyproxy.com:10001`），且该 IP 100% 专属于你使用，绝不与他人共享。
 
 静态独享代理覆盖 **ISP 代理** 与 **数据中心代理**。如果你的业务需要频繁轮换 IP 或按 GB 计费，请参考 <a href="../rotating/README.md" target="_blank" rel="noopener noreferrer">动态代理</a>；如果需要随时切换端口国家或设置定时轮换，请参考 <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">自定义独享代理</a>。
 
 ## 工作原理
 
 ```text
-你的程序 / 客户端  →  us-ca.edge.joyproxy.com:10001  →  目标网站
+你的程序 / 客户端  →  us.edge.joyproxy.com:10001  →  目标网站
                       ▲
                       ├── 代理用户名：在“账密与白名单”中设置的代理 Username
                       └── 代理密码：在“账密与白名单”中设置的代理 Password（或开启 IP 白名单免密）

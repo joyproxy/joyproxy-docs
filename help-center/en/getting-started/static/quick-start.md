@@ -3,7 +3,7 @@
 This guide walks you through purchasing Static Proxies, setting authentication, generating endpoints, and testing a connection.
 
 > **What are Static Proxies?**  
-> Static Proxies are billed by line count and duration (day / month / year). For as long as the plan is active, you get a dedicated host and port (for example `us-ca.edge.joyproxy.com:10001`) that only you can use.
+> Static Proxies are billed by line count and duration (day / month / year). For as long as the plan is active, you get a dedicated host and port (for example `us.edge.joyproxy.com:10001`) that only you can use.
 
 ---
 
@@ -31,7 +31,7 @@ This guide walks you through purchasing Static Proxies, setting authentication, 
 2. Filter the lines from your order and pick an **Output format**.
 3. Click **Generate now**, then **Copy host:port list** to get your dedicated endpoints:
    ```text
-   http://user123:pass123@us-ca.edge.joyproxy.com:10001
+   http://user123:pass123@us.edge.joyproxy.com:10001
    ```
 
 ---
@@ -42,14 +42,14 @@ Replace the host:port and credentials with the values you generated, then run a 
 
 ### cURL
 ```bash
-curl -x http://user123:pass123@us-ca.edge.joyproxy.com:10001 https://api.ipify.org
+curl -x http://user123:pass123@us.edge.joyproxy.com:10001 https://api.ipify.org
 ```
 
 ### Python
 ```python
 import requests
 
-proxy = "http://user123:pass123@us-ca.edge.joyproxy.com:10001"
+proxy = "http://user123:pass123@us.edge.joyproxy.com:10001"
 res = requests.get("https://api.ipify.org", proxies={"http": proxy, "https": proxy}, timeout=15)
 print("Static proxy IP:", res.text)
 ```

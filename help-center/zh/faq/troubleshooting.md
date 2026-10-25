@@ -39,7 +39,7 @@
 ### 代理提取并配置后，为什么浏览器或程序完全无法上网？
 请按照以下清单快速诊断：
 1. **确认本地网络环境**：请确保你当前测试的环境位于中国大陆以外（如境外 VPS、海外办公室网络）。从中国大陆境内直连代理网关会被阻断。
-2. **检查端口与协议匹配**：如果选择的是 HTTP 代理模式，软件中不要勾选 SOCKS5；如果是静态独享线路，必须填写形如 `us-ca.edge.joyproxy.com:10001` 的 Entry Point 接入地址，**绝对不能填写 Dedicated Exit IP**。
+2. **检查端口与协议匹配**：如果选择的是 HTTP 代理模式，软件中不要勾选 SOCKS5；如果是静态独享线路，必须填写形如 `us.edge.joyproxy.com:10001` 的 Entry Point 接入地址，**绝对不能填写 Dedicated Exit IP**。
 3. **测试底层端口通畅**：在终端中使用命令测试握手：
    ```bash
    curl -x http://用户名:密码@gate.joyproxy.com:9001 https://ipinfo.io

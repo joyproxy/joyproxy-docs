@@ -18,7 +18,7 @@
 
 1. 打开 JoyProxy 客户端，点击 **添加配置**；
 2. 填入参数：
-   - **静态独享代理**：选择 `HTTP` 或 `SOCKS5` 协议，服务器填入 Entry Point 接入域名（如 `us-ca.edge.joyproxy.com`），填入端口与代理凭据；
+   - **静态独享代理**：选择 `HTTP` 或 `SOCKS5` 协议，服务器填入 Entry Point 接入域名（如 `us.edge.joyproxy.com`），填入端口与代理凭据；
    - **动态代理**：服务器填 `gate.joyproxy.com`，端口填 `9001`，填入长用户名与代理密码；
 3. 保存配置。
 

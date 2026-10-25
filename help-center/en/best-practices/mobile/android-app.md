@@ -18,7 +18,7 @@ JoyProxy **Android Client** does that with **Per-App Routing**.
 
 1. Open JoyProxy Android Client and add a profile;
 2. Fill in:
-   - **Static Proxies**: protocol `HTTP` or `SOCKS5`, server = Entry Point hostname (for example `us-ca.edge.joyproxy.com`), then port and credentials;
+   - **Static Proxies**: protocol `HTTP` or `SOCKS5`, server = Entry Point hostname (for example `us.edge.joyproxy.com`), then port and credentials;
    - **Rotating Proxies**: server `gate.joyproxy.com`, port `9001`, long username and proxy password;
 3. Save the profile.
 

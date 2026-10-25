@@ -9,7 +9,7 @@
 1. 打开比特浏览器，点击 **新建窗口**；
 2. 在代理设置板块中选择 **自定义**；
 3. 协议选择 `HTTP` 或 `SOCKS5`；
-4. 填入 Entry Point 接入域名（如 `us-ca.edge.joyproxy.com`）、端口与代理账密；
+4. 填入 Entry Point 接入域名（如 `us.edge.joyproxy.com`）、端口与代理账密；
 5. 点击 **检测代理**，验证连通性与出口 IP；
 6. 点击确定保存。
 

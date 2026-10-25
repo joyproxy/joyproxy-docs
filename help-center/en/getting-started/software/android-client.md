@@ -28,7 +28,7 @@ The client accepts any standard HTTP / HTTPS or SOCKS5 proxy. For JoyProxy cloud
 - **Protocol**: **HTTP** or **SOCKS5**.
 - **Host** and **Port**:
   - Rotating Proxies example: Host `gate.joyproxy.com`, Port `9001`.
-  - Static Proxies example: Host such as `us-ca.edge.joyproxy.com`, Port the dedicated port from purchase (for example `10001`).
+  - Static Proxies example: Host such as `us.edge.joyproxy.com`, Port the dedicated port from purchase (for example `10001`).
 - **Username and password**: Rotating gateway connections need the long username and proxy Password. For Static Proxies already bound to **IP Whitelist**, you can leave credentials empty.
 
 ### 2. Connectivity test

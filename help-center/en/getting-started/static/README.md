@@ -1,13 +1,13 @@
 # Static Proxies
 
-Static Proxies are billed by dedicated line (IP) and plan duration (daily / monthly / annual). For as long as the plan is active, you get an exclusive host and port (for example `us-ca.edge.joyproxy.com:10001`). That IP is 100% yours — it is never shared with another customer.
+Static Proxies are billed by dedicated line (IP) and plan duration (daily / monthly / annual). For as long as the plan is active, you get an exclusive host and port (for example `us.edge.joyproxy.com:10001`). That IP is 100% yours — it is never shared with another customer.
 
 Static Proxies cover **ISP Proxies** and **Datacenter Proxies**. If you need frequent IP rotation or GB billing, see <a href="../rotating/README.md" target="_blank" rel="noopener noreferrer">Rotating Proxies</a>. If you need to switch a port’s country at any time or set a rotation interval, see <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">Custom Proxies</a>.
 
 ## How it works
 
 ```text
-Your app / client  →  us-ca.edge.joyproxy.com:10001  →  target site
+Your app / client  →  us.edge.joyproxy.com:10001  →  target site
                       ▲
                       ├── Username: the Username you set in Users & Whitelist
                       └── Password: the Password you set in Users & Whitelist (or skip credentials with IP Whitelist)

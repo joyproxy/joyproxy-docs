@@ -12,7 +12,7 @@ The UI differs; the proxy fields do not. This page uses Multilogin as the exampl
 2. In the left menu, choose **Proxy**;
 3. **Proxy type**: `HTTP proxy` or `SOCKS5 proxy`;
 4. Fill in:
-   - **IP or host**: Entry Point hostname (for example `us-ca.edge.joyproxy.com` — never Dedicated Exit IP);
+   - **IP or host**: Entry Point hostname (for example `us.edge.joyproxy.com` — never Dedicated Exit IP);
    - **Port**: the port;
    - **Username / Password**: proxy credentials;
 5. Click **Check proxy** and wait for `Connection test passed`;

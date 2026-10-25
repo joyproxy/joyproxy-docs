@@ -61,7 +61,7 @@ The extension treats every proxy source the same. A JoyProxy account is not requ
 ### Connect an own proxy
 
 1. Open the **Proxy Address** tab in the popup or workbench.
-2. Paste a node (for example `http://user:pass@us-ca.edge.joyproxy.com:10001`).
+2. Paste a node (for example `http://user:pass@us.edge.joyproxy.com:10001`).
 3. Click **Test** and wait for exit public IP, geo, and latency.
 4. If the result looks right, click **Set as proxy** to take over browser traffic.
 5. To stop, click **Restore direct** at the top.

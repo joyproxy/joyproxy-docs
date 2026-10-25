@@ -25,7 +25,7 @@ macOS proxy fields for username and password are not reliable in every app. For 
    - **HTTP / HTTPS**: turn on **Web proxy (HTTP)** and **Secure web proxy (HTTPS)**;
    - **SOCKS5**: turn on **SOCKS proxy**;
 7. Fill in server details:
-   - **Server**: the Entry Point hostname from the console (for example `us-ca.edge.joyproxy.com` — never the Dedicated Exit IP);
+   - **Server**: the Entry Point hostname from the console (for example `us.edge.joyproxy.com` — never the Dedicated Exit IP);
    - **Port**: the matching port;
    - (If not on the whitelist) check **Proxy server requires a password** and enter Username/Password;
 8. Click **OK**, then **Apply** on the main screen.

@@ -26,7 +26,7 @@ To use Static or Custom Proxies at the OS layer without a password, enable **IP 
 4. Next to **Manual proxy setup**, click **Set up**;
 5. In the dialog:
    - Turn the switch **On**;
-   - **Proxy IP address**: the **Entry Point** hostname from the JoyProxy console (for example `us-ca.edge.joyproxy.com` — no port, and never the Dedicated Exit IP);
+   - **Proxy IP address**: the **Entry Point** hostname from the JoyProxy console (for example `us.edge.joyproxy.com` — no port, and never the Dedicated Exit IP);
    - **Port**: the port number (for example `10001`);
    - Keep the default local bypass list (`localhost;127.0.0.1`);
 6. Click **Save**.
