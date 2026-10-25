@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-25">2026-10-25</time></p>
+<h3 class="blog-feed-title"><a href="guides/claude-code-account-ban-prevention-guide">深度排查：Claude Code 頻繁封號的底層邏輯與防封生存指南</a></h3>
+<p class="blog-feed-desc">為什麼剛儲值就遭停權、終端機頻繁斷線、甚至突發強制海外 KYC 證件審查？深入拆解 Anthropic 針對 Claude Code 的多維風控模型，詳解 ISP 獨享靜態住宅網路防封方案與專案安全移轉實務。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-23">2026-10-23</time></p>
 <h3 class="blog-feed-title"><a href="guides/payg-proxy-architectures-for-developers">不想被高額的起充月費綁架？5 款適合小團隊與獨立開發者的按量計費代理方案</a></h3>
 <p class="blog-feed-desc">告別傳統大廠 $300+ 的強制月費低消與月底流量歸零。深度解析 5 款真正適合輕量團隊與獨立開發者的隨收隨付（PAYG）代理架構，兼顧純淨網路信譽與極低試錯成本。</p>

@@ -8,6 +8,11 @@ Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-10-25">2026-10-25</time></p>
+<h3 class="blog-feed-title"><a href="guides/claude-code-account-ban-prevention-guide">Troubleshooting Claude Code Account Bans: Underlying Risk Logic and Survival Guide</a></h3>
+<p class="blog-feed-desc">Why are newly funded Claude Code accounts suspended, CLI sessions dropped, or hit with aggressive KYC identity audits? A comprehensive breakdown of Anthropic's multi-factor risk engine, dedicated ISP residential proxies, and safe project migration.</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-10-23">2026-10-23</time></p>
 <h3 class="blog-feed-title"><a href="guides/payg-proxy-architectures-for-developers">Tired of High Monthly Commitments? 5 Pay-As-You-Go Proxy Architectures for Lean Teams & Solo Developers</a></h3>
 <p class="blog-feed-desc">Ditch $300+ monthly minimum commits and expiring traffic quotas. Explore 5 flexible pay-as-you-go proxy architectures built for solo developers and lean teams balancing residential trust with zero wasted spend.</p>

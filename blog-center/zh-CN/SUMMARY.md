@@ -19,6 +19,7 @@
 * [多国地理代理进行真实 SEO 排名监控：消除个性化噪音](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境电商为何青睐长期固定 IP（以及轮换代理的隐患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [深度排查：Claude Code 频繁封号的底层逻辑与防封生存指南](guides/claude-code-account-ban-prevention-guide.md)
 * [不想被高额的起充月费绑架？5 款适合小团队与独立开发者的按量付费代理方案](guides/payg-proxy-architectures-for-developers.md)
 * [3分钟在 Linux 与 Windows 上搭建自己的代理服务器（实战指南2026版）](guides/build-your-own-proxy-server-guide.md)
 * [什么是 ISP 代理？兼具住宅信誉与机房高速的完整指南（2026）](guides/what-is-an-isp-proxy-guide.md)
