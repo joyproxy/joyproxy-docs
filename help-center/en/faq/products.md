@@ -79,7 +79,7 @@ Keep concurrency and rate reasonable, and treat fingerprint isolation as a separ
 
 ---
 
-## Compliance and new-user credit
+## Compliance and trial policy
 
 ### Can I connect from mainland China?
 
