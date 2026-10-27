@@ -79,7 +79,7 @@ Protocols (HTTP / HTTPS / SOCKS5), endpoint generator, and API are included. No 
 
 ## How to buy an India static line
 
-  1. [Create an account](https://www.joyproxy.com/register.html) and verify email. Claim the $5 credit if you are new.
+  1. [Create an account](https://www.joyproxy.com/register.html) and verify email. Buy a 1 GB starter pack to validate the path; the $5 sign-up credit has ended.
   2. Open [Purchase → Static](https://www.joyproxy.com/admin-purchase.html?tab=long-term).
   3. Set network type to **Residential** (this is Static Dedicated Residential Proxies, not mobile, not datacenter).
   4. Search **India**. Add a state or city if you want the IP to sit in a specific metro.
@@ -163,4 +163,4 @@ The free [Proxy Tester](https://www.joyproxy.com/products/tester.html) (HTTP / S
 
 If Tatkal is part of your week, stop sending that traffic through a German VPN and hoping. Rent one **Static Dedicated Residential** line in India, authorize it, generate the endpoint once, and keep that identity through the window.
 
-[Residential product page](https://www.joyproxy.com/products/proxy-residential.html) · [Buy static](https://www.joyproxy.com/admin-purchase.html?tab=long-term) · [Live pricing](https://www.joyproxy.com/pricing.html) · [$5 new-user credit](https://www.joyproxy.com/register.html)
+[Residential product page](https://www.joyproxy.com/products/proxy-residential.html) · [Buy static](https://www.joyproxy.com/admin-purchase.html?tab=long-term) · [Live pricing](https://www.joyproxy.com/pricing.html) · [Create an account](https://www.joyproxy.com/register.html)

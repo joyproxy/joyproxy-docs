@@ -13,7 +13,7 @@ date: 2026-08-01
 
 ## 第一步：注册账户并完成邮箱验证
 
-在 [register.html](https://www.joyproxy.com/register.html) 创建账户并完成邮箱激活。所有新完成验证的用户，控制台均会自动发放 **$5 美元新手体验赠金** （无需绑定信用卡）。这笔赠金足够你开通小额流量包或测试静态 IP，验证与自己业务栈的兼容性。
+在 [register.html](https://www.joyproxy.com/register.html) 创建账户并完成邮箱激活。平台不再发放新用户注册礼金；验证网络请直接购买 1 GB 入门包（住宅代理 $3.50 / GB 起），或使用充值满赠。企业大客户可提交工单申请测试额度。
 
 ## 第二步：在控制台添加客户端公网 IP 白名单
 
@@ -53,4 +53,4 @@ JoyProxy 支持两种主流认证路径：
 
 白名单与凭据生效迅速。当团队人员变动或测试服务器销毁后，建议及时在控制台移除无用 IP；若 CI/CD 日志不慎泄露了 Token，请第一时间在后台重新生成。
 
-**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)
+**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并开始使用](https://www.joyproxy.com/register.html)

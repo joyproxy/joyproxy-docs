@@ -4,7 +4,7 @@
 ## Getting Started
 * [Top Up Your JoyProxy Balance with USDT (TRC20): A Step-by-Step Guide](getting-started/usdt-trc20-recharge-guide.md)
 * [JoyProxy Browser Extension: Switch IPs in Chrome Without Touching System Proxy](getting-started/joyproxy-browser-extension.md)
-* [Using JoyProxy's $5 New-User Credit Without Wasting It](getting-started/five-dollar-credit-onboarding.md)
+* [New-User Quick Start: Low-Cost Validation and Plan Selection](getting-started/five-dollar-credit-onboarding.md)
 * [JoyProxy Whitelist, Credentials, and Your First Proxy Endpoint](getting-started/whitelist-credentials-setup.md)
 ## Technical
 * [Residential Isn’t Mobile: When the Target Wants a Carrier ASN](technical/residential-isnt-mobile.md)

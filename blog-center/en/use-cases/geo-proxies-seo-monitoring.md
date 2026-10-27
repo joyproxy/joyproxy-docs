@@ -42,4 +42,4 @@ JoyProxy exposes city-level short-term endpoints across [200+ countries](https:/
 
 Only monitor keywords and pages you are authorized to test. JoyProxy prohibits abusive or unauthorized access—see Acceptable Use in our [Terms](https://www.joyproxy.com/terms.html).
 
-**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Claim your $5 new-user credit](https://www.joyproxy.com/register.html)
+**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Register and get started](https://www.joyproxy.com/register.html)

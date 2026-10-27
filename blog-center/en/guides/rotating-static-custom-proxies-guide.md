@@ -75,6 +75,6 @@ Integration endpoints still use `short-term`, `long-term`, and `custom-ip` produ
 
 
 
-Most mature teams run **rotating pools for collectors** and **static or custom ports for operators** who sign in to accounts. If you are still on the $5 new-user credit, validate one rotating generation and one static or custom trial port before scaling—see our [$5 credit onboarding guide](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/).
+Most mature teams run **rotating pools for collectors** and **static or custom ports for operators** who sign in to accounts. Validate one rotating generation and one static or custom trial port with a 1 GB starter pack before scaling—see our [low-cost onboarding guide](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/).
 
-**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Claim your $5 new-user credit](https://www.joyproxy.com/register.html)
+**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Register and get started](https://www.joyproxy.com/register.html)

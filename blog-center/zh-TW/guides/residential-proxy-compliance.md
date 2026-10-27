@@ -38,4 +38,4 @@ JoyProxy 部署了全天候的自動化異常流量稽核閘道器，**嚴厲禁
 
 本文旨在闡述 JoyProxy 的產品合規紅線與通用技術規範，不構成正式的法律合規意見。涉及高度監管產業（金融、醫療、跨境支付等）的生產級資料作業，建議在部署前由企業內部法務團隊進行審閱確認。
 
-**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並開始使用](https://www.joyproxy.com/register.html)

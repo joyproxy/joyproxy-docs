@@ -100,4 +100,4 @@ proxyip.io 会根据检测到的 IP 城市，提供相应的地址格式、电�
 
 代理质量不只是“能不能连上”，还包括网络类型、IP 声誉、浏览器环境和泄漏情况。用 **[proxyip.io](https://proxyip.io/)** 做上线前检查，再根据业务选择 JoyProxy 住宅代理或独享静态住宅代理，你就能更快找到适合自己的线路，把时间花在运营和增长上，而不是反复排查代理问题。
 
-[了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [购买静态住宅 IP](https://www.joyproxy.com/products/proxy-long-term.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)
+[了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [购买静态住宅 IP](https://www.joyproxy.com/products/proxy-long-term.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并开始使用](https://www.joyproxy.com/register.html)

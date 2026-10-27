@@ -44,4 +44,4 @@ date: 2026-07-30
 
 在成熟的數位化出海或大數據企業中，單一模式十分少見。常見的架構實踐是在單一 JoyProxy 帳號下雙軌並行：**使用動態流量池作為外部資料收集引擎，使用專屬靜態連接埠為內部營運人員提供純淨的海外環境。**
 
-**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並開始使用](https://www.joyproxy.com/register.html)

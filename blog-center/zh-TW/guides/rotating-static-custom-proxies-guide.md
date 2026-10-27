@@ -61,6 +61,6 @@ date: 2026-08-11
 
 
 
-業界成熟團隊的標準做法通常是：**用住宅代理流量池承載高並發的資料收集器，用靜態住宅與自訂連接埠承載核心帳號的登入與互動。** 新用戶可充分利用 [$5 美元新手體驗金](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/)，分別擷取動態與靜態端點進行完整測試。
+業界成熟團隊的標準做法通常是：**用住宅代理流量池承載高並發的資料收集器，用靜態住宅與自訂連接埠承載核心帳號的登入與互動。** 新用戶可按 [低成本入門指南](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/) 購買 1 GB 入門包，分別擷取動態與靜態端點進行完整測試。
 
-**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並開始使用](https://www.joyproxy.com/register.html)

@@ -38,4 +38,4 @@ JoyProxy 部署了全天候的自动化异常流量审计网关，**严厉禁止
 
 本文旨在阐述 JoyProxy 的产品合规红线与通用技术规范，不构成正式的法律合规意见。涉及强监管行业（金融、医疗、跨境支付等）的生产级数据作业，建议在部署前由企业内部法务团队进行审阅确认。
 
-**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)
+**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并开始使用](https://www.joyproxy.com/register.html)

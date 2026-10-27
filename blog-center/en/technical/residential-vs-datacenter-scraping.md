@@ -53,4 +53,4 @@ Prototype on the smallest package that matches the target’s expectations. If y
 
 JoyProxy sells residential proxy IP (short-term, long-term, and custom geo). We do not offer datacenter-only pools; this article explains when our product category fits your scraping plan.
 
-**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Claim your $5 new-user credit](https://www.joyproxy.com/register.html)
+**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Register and get started](https://www.joyproxy.com/register.html)

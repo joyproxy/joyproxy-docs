@@ -39,4 +39,4 @@ date: 2026-07-28
 
 
 
-**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並開始使用](https://www.joyproxy.com/register.html)

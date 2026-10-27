@@ -54,4 +54,4 @@ JoyProxy 依然提供業界領先的住宅、行動與商業代理池，供喜�
 
 Web Scraping API 擁有專屬的 **Scraping API Token** ，權限嚴格隔離在資料擷取範疇內，盡量不涉及財務帳單或代理提取核心權限，可以非常放心地注入生產環境的程式碼庫與排程器中。在主控台的「API Center」中，您可以直接貼上測試網址，一鍵複製產生專屬的 cURL、Python 或 Node.js 呼叫程式碼。
 
-**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並開始使用](https://www.joyproxy.com/register.html)

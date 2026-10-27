@@ -94,8 +94,8 @@ outline: false
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">入门</span> <time datetime="2026-08-06">2026-08-06</time></p>
-<h3 class="blog-feed-title"><a href="getting-started/five-dollar-credit-onboarding">善用 JoyProxy 的 $5 新用户赠金，避免盲目消耗</a></h3>
-<p class="blog-feed-desc">五美元测试额度足够验证网络链路与接口质量，但不适合盲目跑生产爬虫。这里为你提供一份清晰的第一周试用规划。</p>
+<h3 class="blog-feed-title"><a href="getting-started/five-dollar-credit-onboarding">新用户快速上手：低成本验证与套餐选型指南</a></h3>
+<p class="blog-feed-desc">注册礼金活动已结束。用 1 GB 入门包验证链路，按量购买，充值可享最高 30% 赠送。</p>
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">使用场景</span> <time datetime="2026-08-05">2026-08-05</time></p>

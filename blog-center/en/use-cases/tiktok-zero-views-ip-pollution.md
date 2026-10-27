@@ -137,4 +137,4 @@ JoyProxy static dedicated residential proxies and network services are strictly 
 * Static residential infrastructure breakdown: [What Is an ISP Proxy? Residential Trust Meets Datacenter Speed (Complete 2026 Guide)](../guides/what-is-an-isp-proxy-guide.md)
 * Pre-onboarding IP verification: [How to Check Proxy Quality and IP Cleanliness with proxyip.io](../guides/proxy-quality-with-proxyip-io.md)
 
-**Ready to connect your social media matrix to clean overseas ISP residential connections?** [Explore JoyProxy Static Dedicated Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View Real-Time Pricing Plans](https://www.joyproxy.com/pricing.html) · [Register and Claim $5 New-User Credit](https://www.joyproxy.com/register.html)
+**Ready to connect your social media matrix to clean overseas ISP residential connections?** [Explore JoyProxy Static Dedicated Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View Real-Time Pricing Plans](https://www.joyproxy.com/pricing.html) · [Register and Get Started](https://www.joyproxy.com/register.html)

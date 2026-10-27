@@ -13,7 +13,7 @@ date: 2026-08-01
 
 ## 第一步：註冊帳戶並完成電子郵件驗證
 
-在 [register.html](https://www.joyproxy.com/register.html) 建立帳戶並完成信箱啟用。所有新完成驗證的用戶，主控台均會自動發放 **$5 美元新手體驗金** （無需綁定信用卡）。這筆額度足夠您開通小額流量包或測試靜態 IP，驗證與自身業務環境的相容性。
+在 [register.html](https://www.joyproxy.com/register.html) 建立帳戶並完成信箱啟用。平台不再發放新用戶註冊禮金；驗證網絡請直接購買 1 GB 入門包（住宅代理 $3.50 / GB 起），或使用儲值加贈。企業大客戶可提交工單申請測試額度。
 
 ## 第二步：在主控台加入客戶端公網 IP 白名單
 
@@ -53,4 +53,4 @@ JoyProxy 支援兩種主流認證路徑：
 
 白名單與憑證生效迅速。當團隊人員異動或測試伺服器銷毀後，建議即時在主控台移除無用 IP；若 CI/CD 紀錄不慎洩漏了 Token，請第一時間在後台重新產生。
 
-**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並開始使用](https://www.joyproxy.com/register.html)

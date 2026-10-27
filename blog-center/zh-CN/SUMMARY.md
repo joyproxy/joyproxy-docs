@@ -4,7 +4,7 @@
 ## 入门
 * [用 USDT（TRC20）为 JoyProxy 余额充值：分步指南](getting-started/usdt-trc20-recharge-guide.md)
 * [JoyProxy 浏览器扩展：换 IP 只改 Chrome，不动系统代理](getting-started/joyproxy-browser-extension.md)
-* [善用 JoyProxy 的 $5 新用户赠金，避免盲目消耗](getting-started/five-dollar-credit-onboarding.md)
+* [新用户快速上手：低成本验证与套餐选型指南](getting-started/five-dollar-credit-onboarding.md)
 * [JoyProxy 白名单、认证账密与首个代理端点提取](getting-started/whitelist-credentials-setup.md)
 ## 技术
 * [住宅不是移动：目标系统要的是电信运营商 ASN](technical/residential-isnt-mobile.md)

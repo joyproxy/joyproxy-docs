@@ -1,6 +1,6 @@
 # Products and network choice
 
-This chapter covers JoyProxy’s role, the five networks, Rotating vs Static Proxies, compliance, new-user credit, and common pre-sales questions so you can pick a plan that fits the job.
+This chapter covers JoyProxy’s role, the five networks, Rotating vs Static Proxies, compliance, trial policy, and common pre-sales questions so you can pick a plan that fits the job.
 
 ---
 
@@ -94,17 +94,15 @@ Use a server, VPS, or office network **outside** mainland China, and only for co
 
 **No.** The region catalog does not include mainland China.
 
-### Is there a free trial? How do I claim welcome credit?
+### Has the $5 new-user welcome credit ended? How can I test the proxies?
 
-New accounts can evaluate the network:
+Yes. The previous promotional campaign offering a $5 sign-up credit has officially ended. We no longer distribute free registration credits.
 
-1. **$5.00 welcome credit**: after you register and activate email, sign in and claim **$5.00** once from Overview or the prompt.
-2. **No card required**: you do not bind a card or recharge first. Spend the credit on Rotating traffic or Static lines.
-3. **Terms**:
-   - Credit is for in-console purchases only. Not withdrawable or transferable;
-   - Use it within 24 hours of claiming. Unused credit is reclaimed if there is no purchase in that window;
-   - One claim per real user. Multi-account, automated signup, or fingerprint spoofing to farm credit gets the account frozen.
-4. **Enterprise trial**: on **Purchase Proxies**, click **Apply for free trial**, describe the use case and volume, and a manager can open a test quota.
+To test our proxy quality and start your integration, we provide the following options:
+
+1. **Low-barrier entry packages**: You can get started with as little as 1 GB with no long-term commitment (e.g., Residential Proxies start at $3.50 / GB, and Mobile Proxies at $4.00 / GB).
+2. **Tiered recharge bonus**: We provide balance bonuses on account top-ups — +10% from $100, +20% from $1,000, and +30% from $10,000. Bonus credits are automatically applied to your account balance upon payment and have no expiration date.
+3. **Enterprise & High-volume testing**: If you are a business user with large-scale proxy requirements, you can submit a test request via the **Request a free trial** button in the console or open a support ticket with your company domain and project use case. Our sales team will evaluate and provide a dedicated testing quota.
 
 ### Can I talk to someone before I buy?
 

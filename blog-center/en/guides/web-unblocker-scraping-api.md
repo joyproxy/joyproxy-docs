@@ -76,7 +76,7 @@ Many teams run **both** : Web Scraping API for high-churn public page collection
 
 ## Getting started in ten minutes
 
-  1. Sign in at [login.html](https://www.joyproxy.com/login.html) (or register — new accounts still get the [$5 credit](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/) after email verification).
+  1. Sign in at [login.html](https://www.joyproxy.com/login.html) (or [register](https://www.joyproxy.com/register.html); the $5 sign-up credit has ended — buy a starter pack or use recharge bonuses).
   2. Open [Web Scraping API console](https://www.joyproxy.com/admin-web-unblocker.html) → buy the smallest credit pack (or apply account balance).
   3. Run one URL in **API Center** — try a simple HTML page first, then retry with `render=true` if the body is empty.
   4. Copy the curl example into your scheduler, LLM pipeline, or ETL job.

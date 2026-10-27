@@ -44,4 +44,4 @@ date: 2026-07-25
 
 在实际运营中，建议技术主管或运营总监在内部 Runbook 中维护一份清晰的 **IP 资产映射台账** ：精确记录「店铺编号 A -> 对应站点国别 -> 绑定指纹环境 ID -> JoyProxy 静态独享 IP -> 负责运营人员」。严禁不同店铺之间串用代理，一旦某个店铺因外部产品侵权等原因违规，也能在物理层面帮助其他健康店铺的独立与安全。
 
-**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)
+**准备开始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时价格](https://www.joyproxy.com/pricing.html) · [注册并开始使用](https://www.joyproxy.com/register.html)

@@ -28,4 +28,4 @@ HTTP 狀態碼| 真正發信方| 底層真實含義| 第一排查動作
 
 在反爬攻防中，最致命的失敗往往不是報錯，而是 HTTP 200：目標站點回傳了 200 狀態碼，但頁面內文其實是一張 **Cloudflare Turnstile 驗證盾、驗證碼滑塊，或者一個位元組大小為空的假樣板** 。爬蟲程式碼若不檢查頁面真實 DOM 元素或 JSON 結構，就會誤以為擷取成功，將無效資料注入下游資料庫。在編寫解析器時，務必對關鍵欄位進行有效性斷言。
 
-**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並開始使用](https://www.joyproxy.com/register.html)

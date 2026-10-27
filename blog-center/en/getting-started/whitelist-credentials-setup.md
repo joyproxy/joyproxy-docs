@@ -13,7 +13,7 @@ JoyProxy separates **who may ask for an IP** (whitelist / account security) from
 
 ## Step 1 — Register and verify email
 
-Create an account at [register.html](https://www.joyproxy.com/register.html) and complete email activation. New users receive **$5 free credit** after verification (no credit card required)—enough to run real tests on a small traffic package.
+Create an account at [register.html](https://www.joyproxy.com/register.html) and complete email activation. JoyProxy no longer distributes free registration credits. Validate with a 1 GB starter pack (Residential Proxies from $3.50 / GB) or use recharge bonuses. Enterprise users can open a ticket for a test quota.
 
 ## Step 2 — Add your client IP to the whitelist
 
@@ -47,4 +47,4 @@ The response should show an IP consistent with your chosen region. If you receiv
 
 Whitelist changes take effect quickly; remove old office IPs when staff leave. Rotate API tokens if a CI job leaked one into build logs.
 
-**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Claim your $5 new-user credit](https://www.joyproxy.com/register.html)
+**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Register and get started](https://www.joyproxy.com/register.html)

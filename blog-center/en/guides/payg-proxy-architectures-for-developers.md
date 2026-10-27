@@ -42,7 +42,7 @@ True pay-as-you-go infrastructure must adhere to simple rules: **pay only for co
 ### Why It Fits Lean Teams
 Dynamic residential proxies leverage authentic consumer broadband IPs (such as AT&T, Comcast, and Vodafone). Each request can route through a distinct residential connection, making it virtually indistinguishable from legitimate consumer traffic.
 
-Crucially, billing scales directly with throughput. On JoyProxy, new users receive a **$5 welcome credit**, and additional bandwidth can be purchased in increments as small as **1 GB ($3.50)** without a monthly commitment. For early-stage testing, consuming 100 MB costs pennies rather than dozens of dollars.
+Crucially, billing scales directly with throughput. On JoyProxy, bandwidth can be purchased in increments as small as **1 GB ($3.50)** without a monthly commitment, and top-ups earn a recharge bonus of up to 30%. For early-stage testing, consuming 100 MB costs pennies rather than dozens of dollars.
 
 ```text
 [Local Worker / Scraping Script]
@@ -187,7 +187,7 @@ Keep these three rules in mind to avoid common billing traps:
    * No anti-bot defenses: Use **Static Datacenter Proxies** ($2/month, unmetered).
    * Aggressive WAFs (Cloudflare/DataDome): Call a **Web Scraping API** (pay only for successes).
    * E-commerce and payment platforms (Amazon/Stripe): Strictly use **Dedicated ISP Proxies** (never dynamic rotating IPs).
-3. **Validate With Welcome Credits First**: Reputable providers offer testing credits (such as JoyProxy’s **$5 signup balance**). Run real worker scripts through your target environments to verify latency, exit ASN legitimacy, and bypass rates before committing production budget.
+3. **Validate With a 1 GB Starter Pack First**: JoyProxy no longer distributes signup credits. Buy a 1 GB starter pack, run real worker scripts through your target environments, and verify latency, exit ASN legitimacy, and bypass rates before committing production budget. Top-ups can add a recharge bonus of up to 30%.
 
 ---
 

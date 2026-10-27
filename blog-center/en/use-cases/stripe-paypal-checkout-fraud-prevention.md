@@ -110,4 +110,4 @@ JoyProxy ISP and residential proxy products are strictly provisioned for legitim
 * Proper isolation setup: [Antidetect Browsers and Residential Proxies: The Real Rules for Multi-Account Isolation](../guides/antidetect-browsers-residential-proxies-guide.md)
 * Verifying IP reputation: [How to Check Proxy Quality and IP Cleanliness with proxyip.io](../guides/proxy-quality-with-proxyip-io.md)
 
-**Ready to stabilize your cross-border checkout infrastructure?** [Explore JoyProxy Static Dedicated Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View Real-Time Pricing Plans](https://www.joyproxy.com/pricing.html) · [Register and Claim $5 New-User Credit](https://www.joyproxy.com/register.html)
+**Ready to stabilize your cross-border checkout infrastructure?** [Explore JoyProxy Static Dedicated Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View Real-Time Pricing Plans](https://www.joyproxy.com/pricing.html) · [Register and Get Started](https://www.joyproxy.com/register.html)

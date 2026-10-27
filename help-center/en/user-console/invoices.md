@@ -18,7 +18,7 @@ Invoices consists of two tabs: **Balance** and **Orders**. Traffic consumption c
 Tracks all credits and debits affecting your wallet balance, including:
 - **Top-ups**: Inbound deposits completed through PayPal, Credit / Debit cards, Apple Pay, Google Pay, WeChat Pay, UPI, or USDT.
 - **Balance spend**: Deductions when purchasing proxy packages or renewing plans using account balance.
-- **Adjustments**: Refunds, admin credits / deductions, and welcome credit claims or expirations.
+- **Adjustments**: Refunds, admin credits / deductions, and recharge bonus credits.
 
 ### 2. Orders
 

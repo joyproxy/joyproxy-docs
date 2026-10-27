@@ -41,4 +41,4 @@ JoyProxy’s [Privacy Policy](https://www.joyproxy.com/privacy.html) states that
 
 This article summarizes product policy, not legal counsel. For regulated industries (finance, health), involve your compliance team before production deployment.
 
-**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Claim your $5 new-user credit](https://www.joyproxy.com/register.html)
+**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Register and get started](https://www.joyproxy.com/register.html)

@@ -1,42 +1,38 @@
 ---
-title: "Using JoyProxy's $5 New-User Credit Without Wasting It"
-description: "Five dollars of traffic is enough to validate integration quality—not to run production crawls. Here is a focused first-week plan."
+title: "New-User Quick Start: Low-Cost Validation and Plan Selection"
+description: "The $5 sign-up credit has ended. Validate with a 1 GB starter pack, then scale with recharge bonuses of up to 30%."
 category: getting-started
 legacyUrl: https://www.joyproxy.com/blog/five-dollar-credit-onboarding.html
 date: 2026-08-06
 
 ---
 
-# Using JoyProxy's $5 New-User Credit Without Wasting It
+# New-User Quick Start: Low-Cost Validation and Plan Selection
 
-JoyProxy adds **$5 free credit** to new accounts after email verification. No credit card is required to register. The credit is meant to prove that your stack works with JoyProxy’s residential paths before you commit to a larger traffic pack or dedicated IP term.
+The previous promotional campaign offering a $5 sign-up credit has officially ended. We no longer distribute free registration credits. To test proxy quality and start integration, use the low-cost options below.
 
-## Registration checklist
+## How to test now
 
-  1. Sign up at [register.html](https://www.joyproxy.com/register.html) (Google/GitHub OAuth or email).
-  2. Activate via the email link—credit applies after verification, not at raw signup.
-  3. Log into the dashboard and confirm balance shows promotional credit.
+1. **Low-barrier entry packages**: start with as little as 1 GB and no long-term commitment. Residential Proxies start at $3.50 / GB; Mobile Proxies at $4.00 / GB.
+2. **Tiered recharge bonus**: balance bonuses on account top-ups — +10% from $100, +20% from $1,000, and +30% from $10,000. Bonus credits are applied on payment and have no expiration date.
+3. **Enterprise & high-volume testing**: business users with large-scale needs can submit a test request via **Request a free trial** in the console, or open a support ticket with company domain and use case. Sales evaluates and can open a dedicated testing quota.
 
+## What 1 GB is enough to prove
 
+On the **Residential Proxies 1 GB** starter pack ($3.50), a focused test is enough to validate the path:
 
-## What $5 buys (short-term traffic)
-
-At the list base rate of **$5 per GB** on the smallest pay-per-GB tier, five dollars roughly equals **one gigabyte** of short-term residential traffic before volume discounts—enough for thousands of lightweight HTML requests or a few hundred heavy pages. See live tiers on [pricing.html](https://www.joyproxy.com/pricing.html); larger packs lower the effective $/GB.
-
-The credit generally applies to purchasable products in the dashboard—use it for a small short-term pack or partial payment toward a larger order depending on current checkout rules.
+  * Lightweight HTML fetches: **thousands to tens of thousands** of real requests;
+  * Image-heavy or JS-rendered product pages: **hundreds** of key URLs;
+  * Fingerprint browsers (AdsPower, Multilogin, and similar): timezone and WebRTC checks.
 
 ## A sensible first-week plan
 
   * **Day 1:** Whitelist IP, create credentials, run one `curl` through the proxy (see our [setup walkthrough](https://www.joyproxy.com/blog/getting-started/whitelist-credentials-setup/)).
   * **Day 2–3:** Integrate your scraper framework on a 100-page sample; measure actual MB per page.
-  * **Day 4:** Extrapolate monthly GB and buy the right package—not the biggest “just in case.”
+  * **Day 4:** Extrapolate monthly GB and buy the right package—not the biggest “just in case.” See live tiers on [pricing.html](https://www.joyproxy.com/pricing.html).
 
+## When to skip rotating traffic
 
-
-## When to skip short-term and go dedicated
-
-If your first task is logging into a seller account, skip rotation experiments and evaluate [long-term dedicated IP](https://www.joyproxy.com/proxy-products.html) pricing instead—the $5 credit may not cover a full month of dedicated IP, but it can still fund diagnostic short-term tests for public pages.
-
-New users: $5 free credit after sign-up — no credit card required.
+If your first task is logging into a seller or social account, skip rotation experiments and evaluate [ISP Proxies (Dedicated Static Residential)](https://www.joyproxy.com/products/proxy-isp.html) or Datacenter static lines instead.
 
 [Create account](https://www.joyproxy.com/register.html)

@@ -19,7 +19,7 @@ Three JoyProxy products have **no equivalent self-serve SKU** in this comparison
 
   * **Business Proxies traffic** — prepaid GB on business ASN pools (`network_type=business`), separate from residential and mobile. Entry **$3.80** (1 GB).
   * **[Custom IP ports](https://www.joyproxy.com/products/proxy-custom-ip.html)** — dedicated bundles on residential, ISP, and datacenter: per-port geo, **timed rotation (≥60s)** , and **change country/region on the same port** without buying a new IP.
-  * **Low payment threshold** — prepaid GB packs and per-IP lines (daily to annual). **$5 new-user credit** works on **all products**.
+  * **Low payment threshold** — prepaid GB packs and per-IP lines (daily to annual). Residential Proxies from **$3.50** / 1 GB, plus recharge bonuses of up to 30%.
 
 
 
@@ -79,7 +79,7 @@ Datacenter static IP| Yes| Yes| Yes| Yes
   
 ## Service & onboarding
 
-  * **JoyProxy** — **$5 credit** (all products), 12-language support, live chat + AI Assistant, Endpoint generator, OpenAPI Center, OpenClaw Skill & MCP. Checkout from **$3.50**.
+  * **JoyProxy** — 12-language support, live chat + AI Assistant, Endpoint generator, OpenAPI Center, OpenClaw Skill & MCP. Checkout from **$3.50**, plus recharge bonuses of up to 30%.
   * **Bright Data** — broad docs; residential/mobile often require KYC; pay-as-you-go (PAYG) on several lines.
   * **Oxylabs** — 24/7 support and account managers on published plans; monthly GB model on rotating lines.
   * **Smartproxy** — dashboard-first; monthly tiers plus pay-as-you-go (PAYG) on Decodo; 3-day trial on some lines.
@@ -88,7 +88,7 @@ Datacenter static IP| Yes| Yes| Yes| Yes
 
 ## Why teams choose JoyProxy
 
-  * **Lowest rotating entry** — **$3.50** for 1 GB residential; first GB often free with **$5 credit**.
+  * **Lowest rotating entry** — **$3.50** for 1 GB residential, with no signup credit required to start.
   * **ISP Proxies + Custom IP** — product lines competitors do not sell the same way.
   * **Cheapest static day-rate** — datacenter from **$0.40/day** ; ISP Proxies · Static Dedicated **$3/mo**.
   * **No subscription lock-in** — prepaid GB until used; static/custom by duration you pick.
@@ -106,12 +106,12 @@ Yes. Business Proxies is a separate prepaid GB pool (**from $3.80/GB** on the 1 
 
 Custom IP is a dedicated port bundle on residential, ISP, or datacenter lines. You set geo per port, enable optional timed rotation (60s+), and **switch country/region on an existing port** without purchasing a new IP. Bright Data, Oxylabs, and Smartproxy do not offer the same self-serve Custom IP SKU. See [Custom Proxies](https://www.joyproxy.com/products/proxy-custom-ip.html).
 
-### Can I start with $3.50 and use the $5 credit on everything?
+### Can I start with $3.50? Is the $5 new-user credit still available?
 
-Yes. Residential Proxies is **$3.50/GB** on the 1 GB pack. After email verification, claim the **$5 new-user credit** ; it applies to proxy IP packs, static lines, mobile traffic, and other JoyProxy products. At $3.50/GB, your first gigabyte of residential proxies is covered by the credit, with ~$1.50 left for another product test.
+Yes, you can start at $3.50. Residential Proxies is **$3.50/GB** on the 1 GB pack. The $5 sign-up credit campaign has ended; we no longer distribute free registration credits. Buy a starter pack for small tests; top-ups of $100 / $1,000 / $10,000 earn +10% / +20% / +30%. Enterprise customers can open a ticket for a test quota.
 
 ### Can I use more than one provider?
 
 Yes. Many teams keep a second vendor for failover. JoyProxy’s low entry price makes it easy to keep a warm standby account.
 
-Next steps: [see pricing](https://www.joyproxy.com/pricing.html) · [use the $5 credit wisely](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/) · [rotating vs static vs custom](https://www.joyproxy.com/blog/guides/rotating-static-custom-proxies-guide/) · [set up authorization](https://www.joyproxy.com/blog/getting-started/whitelist-credentials-setup/).
+Next steps: [see pricing](https://www.joyproxy.com/pricing.html) · [new-user quick start](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/) · [rotating vs static vs custom](https://www.joyproxy.com/blog/guides/rotating-static-custom-proxies-guide/) · [set up authorization](https://www.joyproxy.com/blog/getting-started/whitelist-credentials-setup/).

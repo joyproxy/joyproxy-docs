@@ -94,8 +94,8 @@ Guides, use cases, and technical articles for proxy operators.
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Getting Started</span> <time datetime="2026-08-06">2026-08-06</time></p>
-<h3 class="blog-feed-title"><a href="getting-started/five-dollar-credit-onboarding">Using JoyProxy&#x27;s $5 New-User Credit Without Wasting It</a></h3>
-<p class="blog-feed-desc">Five dollars of traffic is enough to validate integration quality—not to run production crawls. Here is a focused first-week plan.</p>
+<h3 class="blog-feed-title"><a href="getting-started/five-dollar-credit-onboarding">New-User Quick Start: Low-Cost Validation and Plan Selection</a></h3>
+<p class="blog-feed-desc">The $5 sign-up credit has ended. Validate with a 1 GB starter pack, then scale with recharge bonuses of up to 30%.</p>
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Use Cases</span> <time datetime="2026-08-05">2026-08-05</time></p>

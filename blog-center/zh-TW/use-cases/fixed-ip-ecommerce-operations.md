@@ -44,4 +44,4 @@ date: 2026-07-25
 
 在實際營運中，建議技術主管或營運總監在內部手冊中維護一份清晰的 **IP 資產映射清冊** ：精確記錄「店鋪編號 A -> 對應站點國別 -> 綁定瀏覽器環境 ID -> JoyProxy 靜態獨享 IP -> 負責營運人員」。嚴禁不同店鋪之間串用代理，一旦某個店鋪因外部產品侵權等原因違規，也能在實體層面幫助其他健康店鋪的獨立與安全。
 
-**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)
+**準備開始使用？** [了解 JoyProxy 住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時價格](https://www.joyproxy.com/pricing.html) · [註冊並開始使用](https://www.joyproxy.com/register.html)

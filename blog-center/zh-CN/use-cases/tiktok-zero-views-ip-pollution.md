@@ -139,4 +139,4 @@ date: 2026-10-15
 * 全面掌握 ISP 代理底层机制：[什么是 ISP 代理？兼具住宅信誉与机房高速的完整指南（2026）](../guides/what-is-an-isp-proxy-guide.md)
 * 账号登录前专业核验流程：[如何用 proxyip.io 全面检测代理质量与 IP 纯净度](../guides/proxy-quality-with-proxyip-io.md)
 
-**准备好为你的社媒矩阵接入真正纯净的海外家庭出口？** [了解 JoyProxy 独享静态住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时套餐价格](https://www.joyproxy.com/pricing.html) · [注册并领取 $5 新用户赠金](https://www.joyproxy.com/register.html)
+**准备好为你的社媒矩阵接入真正纯净的海外家庭出口？** [了解 JoyProxy 独享静态住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看实时套餐价格](https://www.joyproxy.com/pricing.html) · [注册并开始使用](https://www.joyproxy.com/register.html)

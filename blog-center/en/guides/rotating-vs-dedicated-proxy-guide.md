@@ -46,4 +46,4 @@ A mature team often runs **both** under one JoyProxy account: rotating pools for
 
 If you need per-port geo control with optional minute-based rotation, review [Custom Residential Proxies](https://www.joyproxy.com/proxy-products.html)—it sits between pure rotation and pure fixation.
 
-**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Claim your $5 new-user credit](https://www.joyproxy.com/register.html)
+**Ready to get started?** [Explore JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) · [View live pricing](https://www.joyproxy.com/pricing.html) · [Register and get started](https://www.joyproxy.com/register.html)

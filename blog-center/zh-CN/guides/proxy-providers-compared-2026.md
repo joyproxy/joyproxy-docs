@@ -19,7 +19,7 @@ date: 2026-08-17
 
   * **商业代理流量** — 商业 ASN 池上的预付流量包（`network_type=business`），与住宅、移动分开计费。入门 **$3.80** （1 GB）。
   * **[自定义 IP 端口](https://www.joyproxy.com/products/proxy-custom-ip.html)** — 住宅、ISP、数据中心均可购买专用端口：按端口选地区、**定时自动换 IP（间隔 ≥60 秒）** 、**在同一端口上切换国家/地区** ，无需重新购买 IP。
-  * **低支付门槛** — 动态流量按 GB 预付，静态 IP 可按日/月/年购买。**$5 新用户赠金** 可用于**全部产品** 。
+  * **低支付门槛** — 动态流量按 GB 预付，静态 IP 可按日/月/年购买。住宅代理 1 GB **$3.50** 起，充值最高再赠 30%。
 
 
 
@@ -79,7 +79,7 @@ JoyProxy 静态价格见 [定价页](https://www.joyproxy.com/pricing.html)（�
   
 ## 服务与上手
 
-  * **JoyProxy** — **$5 赠金** （全产品可用）、12 种语言界面、在线聊天 + AI 客服、端点生成器、OpenAPI 中心、OpenClaw Skill 与 MCP。起付低至 **$3.50** 。
+  * **JoyProxy** — 12 种语言界面、在线聊天 + AI 客服、端点生成器、OpenAPI 中心、OpenClaw Skill 与 MCP。起付低至 **$3.50** ，充值最高再赠 30%。
   * **Bright Data** — 文档齐全；住宅/移动正式使用常需实名认证；多条产品线支持按量付费。
   * **Oxylabs** — 公开套餐含 7×24 客服与客户经理；动态流量多为「包月 GB」模式。
   * **Smartproxy** — 以控制台为主；Decodo 有月付套餐与按量付费；部分线路提供 3 天试用。
@@ -88,7 +88,7 @@ JoyProxy 静态价格见 [定价页](https://www.joyproxy.com/pricing.html)（�
 
 ## 团队为何选 JoyProxy
 
-  * **动态代理入门最低** — 住宅 1 GB **$3.50** ；**$5 赠金** 往往够付第一个 GB。
+  * **动态代理入门最低** — 住宅 1 GB **$3.50** ，无需注册礼金即可完成首包验证。
   * **ISP 代理 + 自定义 IP** — 竞品很少以同样方式在官网销售。
   * **静态日租门槛低** — 数据中心 **$0.40/天** ；ISP 代理 · 静态独享 **$3/月** 。
   * **无强制订阅** — 动态流量预付用完为止；静态/自定义按你选的时长计费。
@@ -106,12 +106,12 @@ JoyProxy 静态价格见 [定价页](https://www.joyproxy.com/pricing.html)（�
 
 自定义 IP 是在住宅、ISP 或数据中心上购买的专用端口包。你可以为每个端口指定地区、按需开启定时换 IP（60 秒起），并**在现有端口上切换国家/地区** ，无需再买新 IP。Bright Data、Oxylabs、Smartproxy 均无同类的官网自助产品。详见 [自定义代理](https://www.joyproxy.com/products/proxy-custom-ip.html)。
 
-### 能否 $3.50 起步，且 $5 赠金用于全部产品？
+### 能否 $3.50 起步？还有没有新用户礼金？
 
-可以。住宅代理 1 GB 档为 **$3.50/GB** 。完成邮箱验证后可领取 **$5 新用户赠金** ，可用于代理流量包、静态 IP、移动流量等全部 JoyProxy 产品。按 $3.50/GB 计算，首 GB 住宅代理可由赠金覆盖，大约还剩 $1.50 可试其他产品。
+可以 $3.50 起步。住宅代理 1 GB 档为 **$3.50/GB** 。原 $5 新用户注册礼金活动已结束，平台不再发放免费注册余额。小额需求直接买入门包；充值满 $100 / $1,000 / $10,000 分别赠送 10% / 20% / 30%。企业大客户可提交工单申请测试额度。
 
 ### 可以同时用多家厂商吗？
 
 可以。不少团队会留一家备用供应商做故障转移。JoyProxy 起付低，很适合养一个备用账户。
 
-下一步：[查看定价](https://www.joyproxy.com/pricing.html) · [善用 $5 赠金](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/) · [动态、静态与自定义](https://www.joyproxy.com/blog/guides/rotating-static-custom-proxies-guide/) · [配置授权](https://www.joyproxy.com/blog/getting-started/whitelist-credentials-setup/)。
+下一步：[查看定价](https://www.joyproxy.com/pricing.html) · [新用户快速上手](https://www.joyproxy.com/blog/getting-started/five-dollar-credit-onboarding/) · [动态、静态与自定义](https://www.joyproxy.com/blog/guides/rotating-static-custom-proxies-guide/) · [配置授权](https://www.joyproxy.com/blog/getting-started/whitelist-credentials-setup/)。

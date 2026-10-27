@@ -108,4 +108,4 @@ JoyProxy 提供的 ISP 代理與網路方案僅面向企業正規出海採購、
 * 搭建無懈可擊的隔離環境：[防關聯瀏覽器與住宅代理：多帳號隔離的底層防封鐵律](../guides/antidetect-browsers-residential-proxies-guide.md)
 * 結帳前全方位稽核出口信譽：[如何用 proxyip.io 全面檢測代理品質與 IP 純淨度](../guides/proxy-quality-with-proxyip-io.md)
 
-**準備好搭建高成功率的跨境結算網路？** [了解 JoyProxy 獨享靜態住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時套餐定價](https://www.joyproxy.com/pricing.html) · [註冊並領取 $5 新用戶體驗金](https://www.joyproxy.com/register.html)
+**準備好搭建高成功率的跨境結算網路？** [了解 JoyProxy 獨享靜態住宅代理](https://www.joyproxy.com/products/proxy-residential.html) · [查看即時套餐定價](https://www.joyproxy.com/pricing.html) · [註冊並開始使用](https://www.joyproxy.com/register.html)
