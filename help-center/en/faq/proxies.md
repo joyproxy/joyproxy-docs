@@ -77,9 +77,12 @@ We do not change a dedicated exit without cause. Rare cases:
 
 The new exit is still dedicated to you.
 
-### Traffic or concurrency limits on Static Proxies?
+### Can I check the IP range or ASN before purchasing Static Proxies?
+Yes. If you have specific requirements for a country, carrier, or ASN, open a ticket via **Tickets** in the left sidebar of the console. Provide your target location and carrier details, and our team will check and advise on availability.
 
-**None.** Billing is IP count × duration. During the plan there is no traffic, concurrency, or bandwidth cap.
+### Are there traffic, speed, or device limits on Static Proxies?
+**None.** There are no limits on traffic, bandwidth, concurrency, or the number of connected devices.
+Static Proxies are billed by IP count × subscription period. You can transfer unlimited data and connect your devices throughout the active plan.
 
 ### What happens when Static Proxies expire?
 

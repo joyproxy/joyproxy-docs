@@ -94,15 +94,13 @@ Use a server, VPS, or office network **outside** mainland China, and only for co
 
 **No.** The region catalog does not include mainland China.
 
-### Has the $5 new-user welcome credit ended? How can I test the proxies?
+### How can I test the proxies before buying?
+You can start with the smallest plan to verify connectivity and performance with no long-term commitment:
+- **Rotating Proxies (Residential, Mobile, Business)**: Purchase a 1 GB starter package in the console (Residential from $3.50, Mobile from $4.00) to generate live endpoints and test your setup.
+- **Static Proxies (ISP, Datacenter)**: Purchase a single IP on a 1-day plan. Verify the exit IP and stability before extending or ordering more lines.
 
-Yes. The previous promotional campaign offering a $5 sign-up credit has officially ended. We no longer distribute free registration credits.
-
-To test our proxy quality and start your integration, we provide the following options:
-
-1. **Low-barrier entry packages**: You can get started with as little as 1 GB with no long-term commitment (e.g., Residential Proxies start at $3.50 / GB, and Mobile Proxies at $4.00 / GB).
-2. **Tiered recharge bonus**: We provide balance bonuses on account top-ups — +10% from $100, +20% from $1,000, and +30% from $10,000. Bonus credits are automatically applied to your account balance upon payment and have no expiration date.
-3. **Enterprise & High-volume testing**: If you are a business user with large-scale proxy requirements, you can submit a test request via the **Request a free trial** button in the console or open a support ticket with your company domain and project use case. Our sales team will evaluate and provide a dedicated testing quota.
+### Has the $5 new-user welcome credit ended?
+Yes, the $5 sign-up credit promotion has officially ended, and we no longer distribute registration credits. To test our proxies, please purchase a starter package as described above.
 
 ### Can I talk to someone before I buy?
 

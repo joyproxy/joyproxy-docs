@@ -60,19 +60,24 @@ You asked for Los Angeles, US; some IP databases show another city:
 - **Database lag**: MaxMind GeoIP2, IP2Location, DB-IP, and others update days to weeks apart.
 - **JoyProxy routing**: we classify with current commercial libraries (MaxMind / IPinfo). Free lookup sites can be stale. Compare several reputable checkers.
 
+### Proxy CONNECT aborted or connection closed unexpectedly?
+If your client or crawler drops the connection during the handshake, check the following:
+1. **Entry Point vs. Exit IP**: For Static Proxies, you must connect to the **Entry Point** (`host:port`) shown in the console. Never enter the Dedicated Exit IP as the proxy host.
+2. **Authentication**: Rotating Proxies require the generated proxy username and password. For Static Proxies, ensure your local public IP is added to the IP Whitelist or use valid credentials.
+3. **Chained proxy configuration**: If JoyProxy is used as a secondary node in a proxy chain, verify that your first-hop proxy has normal internet access and properly forwards HTTP CONNECT or SOCKS5 handshakes.
+
+### Windows curl fails with CRYPT_E_REVOCATION_OFFLINE (0x80092013)?
+This error occurs when Windows fails to reach the certificate revocation list (CRL) servers for the target domain. It is a local Windows TLS verification failure, not an issue with the proxy tunnel.
+- Add `--ssl-no-revoke` to bypass the local revocation check:
+  ```bash
+  curl --ssl-no-revoke -x http://USERNAME:PASSWORD@ENTRY_HOST:PORT https://ipinfo.io/json
+  ```
+- If this returns public IP details in JSON, your proxy tunnel is functioning properly.
+
 ---
 
 ## Human support
 
-If this list does not fix it:
-
-1. **Live Chat** (bottom-right):
-   - Pre-sales, a live connectivity question, missing activation mail.
-   - Give registration email, network type (for example Residential Proxies), and a screenshot.
-2. **Tickets**:
-   - Billing, refunds, hard technical cases, enterprise contracts.
-   - Attach:
-     - Order ID;
-     - Full error screenshot or terminal output (including curl status);
-     - Target URL;
-     - Client proxy summary (redact the password).
+### How do I contact human support?
+- **Console Tickets**: Sign in to the console and click **Tickets** in the left sidebar to open a support ticket. You can attach error logs, screenshots, and target URLs for technical investigation.
+- **Live Chat**: Open the chat widget in the bottom-right corner of the website or console. You can also click the ticket button in the top-right corner of the chat window to submit a ticket directly.
