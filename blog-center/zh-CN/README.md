@@ -8,6 +8,16 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-29">2026-10-29</time></p>
+<h3 class="blog-feed-title"><a href="guides/tavily-firecrawl-alternatives-web-scraping-apis">Tavily 与 Firecrawl 太贵？2026 年 5 款适合 AI Agent 的网页数据抓取与提取 API 横评</a></h3>
+<p class="blog-feed-desc">告别高昂的月费门槛与隐藏的 LLM 格式转换开销。全面对比 Tavily、Firecrawl、Exa、Jina Reader 与 JoyProxy Web Scraping API，解析真实绕防能力、按成功扣费机制与 Agent 选型实战。</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-29">2026-10-29</time></p>
+<h3 class="blog-feed-title"><a href="guides/browser-use-agent-anti-ban-guide">为什么 80% 的 Browser-Use 自动化 Agent 活不过第三步？多步交互防封实战</a></h3>
+<p class="blog-feed-desc">Page 1 顺利加载，Page 2 点击就出验证码，Page 3 直接被 Cloudflare 拦截。深度排查 Browser-Use、Playwright、Stagehand 等多步自动化 Agent 频遭封禁的底层机理：CDP 运行时指纹泄漏、动态 IP 会话撕裂与行为轨迹僵硬，详解 ISP 独享静态住宅网络防封方案。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-25">2026-10-25</time></p>
 <h3 class="blog-feed-title"><a href="guides/claude-code-account-ban-prevention-guide">深度排查：Claude Code 频繁封号的底层逻辑与防封生存指南</a></h3>
 <p class="blog-feed-desc">为什么刚充值就被封、终端频繁掉线、甚至突发强制海外 KYC 审查？深度拆解 Anthropic 针对 Claude Code 的多维风控模型，详解 ISP 独享静态住宅网络防封方案与项目安全迁移实操。</p>

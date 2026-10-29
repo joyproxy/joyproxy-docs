@@ -8,6 +8,16 @@ Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-10-29">2026-10-29</time></p>
+<h3 class="blog-feed-title"><a href="guides/tavily-firecrawl-alternatives-web-scraping-apis">Tavily and Firecrawl Too Expensive? 5 Web Scraping APIs for AI Agents Compared (2026)</a></h3>
+<p class="blog-feed-desc">Ditch expensive monthly subscription commitments and wasted credits on Cloudflare 403 blocks. Compare Tavily, Firecrawl, Exa, Jina Reader, and JoyProxy Web Scraping API to lower AI agent data extraction costs.</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-10-29">2026-10-29</time></p>
+<h3 class="blog-feed-title"><a href="guides/browser-use-agent-anti-ban-guide">Why 80% of Browser-Use AI Agents Die on Step 3: Multi-Step Automation Anti-Ban Guide</a></h3>
+<p class="blog-feed-desc">Page 1 loads cleanly, Page 2 triggers a verification challenge, and Page 3 gets blocked by Cloudflare. A deep breakdown of why multi-step automation agents like Browser-Use and Playwright fail: CDP runtime leaks, rotating IP session tearing, and how dedicated ISP proxies keep agents alive.</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-10-25">2026-10-25</time></p>
 <h3 class="blog-feed-title"><a href="guides/claude-code-account-ban-prevention-guide">Troubleshooting Claude Code Account Bans: Underlying Risk Logic and Survival Guide</a></h3>
 <p class="blog-feed-desc">Why are newly funded Claude Code accounts suspended, CLI sessions dropped, or hit with aggressive KYC identity audits? A comprehensive breakdown of Anthropic's multi-factor risk engine, dedicated ISP residential proxies, and safe project migration.</p>

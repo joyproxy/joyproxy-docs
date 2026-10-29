@@ -19,6 +19,8 @@
 * [SEO Rank Checks from Multiple Countries (Without Personalized Noise)](use-cases/geo-proxies-seo-monitoring.md)
 * [Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)](use-cases/fixed-ip-ecommerce-operations.md)
 ## Guides
+* [Tavily and Firecrawl Too Expensive? 5 Web Scraping APIs for AI Agents Compared (2026)](guides/tavily-firecrawl-alternatives-web-scraping-apis.md)
+* [Why 80% of Browser-Use AI Agents Die on Step 3: Multi-Step Automation Anti-Ban Guide](guides/browser-use-agent-anti-ban-guide.md)
 * [Troubleshooting Claude Code Account Bans: Underlying Risk Logic and Survival Guide](guides/claude-code-account-ban-prevention-guide.md)
 * [Tired of High Monthly Commitments? 5 Pay-As-You-Go Proxy Architectures for Lean Teams & Solo Developers](guides/payg-proxy-architectures-for-developers.md)
 * [Build Your Own Proxy Server on Linux and Windows in 3 Minutes (Practical 2026 Guide)](guides/build-your-own-proxy-server-guide.md)
