@@ -30,7 +30,7 @@ All figures USD. VAT may apply on competitor sites. **PAYG** (pay-as-you-go) = p
 Line| | Bright Data| Oxylabs| Smartproxy| JoyProxy  
 ---|---|---|---|---|---  
 **Residential Proxies** | Min | **$4** PAYG | **$30/mo** (5 GB) | **$11.25/mo** or **$4** PAYG | **$3.50** (1 GB)  
-30-day | per GB used | **$30** | **$11.25** or **$4** /GB | **$3.50** (**$0** w/ credit)  
+30-day | per GB used | **$30** | **$11.25** or **$4** /GB | **$3.50**  
 **Mobile Proxies** | Min | mobile PAYG | **$30/mo** (4 GB) | **$7.50/mo** or **$4** PAYG | **$4.00** (1 GB)  
 30-day | per GB used | **$30** | **$7.50** or **$4** /GB | **$4.00**  
 **Business Proxies (GB)** | Min | ISP from **$8/GB** PAYG | not offered | not offered | **$3.80** (1 GB)  

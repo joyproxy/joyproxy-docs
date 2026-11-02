@@ -62,8 +62,8 @@ IPRoyal built a loyal following among bootstrapped indie hackers and small creat
 
 ### 5. JoyProxy: Agile Next-Gen Infrastructure with Zero Lock-In
 JoyProxy is built specifically for agile development teams, cross-border e-commerce operators, and AI engineers who need enterprise-grade IP hygiene without subscription lock-in.
-* **Key Advantage 1: True PAYG with Zero Commitments & $5 Free Credit**
-  * Dynamic residential proxies start at **$3.50 for a single 1 GB purchase**. No monthly base fees, and your balance never expires. Every new user receives a $5 welcome bonus for immediate production testing.
+* **Key Advantage 1: True PAYG with Zero Commitments & Low Testing Threshold**
+  * Dynamic residential proxies start at **$3.50 for a single 1 GB purchase**. No monthly base fees, and your balance never expires. You don't need expensive upfront commitments to validate proxy performance.
 * **Key Advantage 2: Single-IP Dedicated ISP Purchases with Free Replacement Guarantee**
   * For Amazon storefronts, Stripe checkout gateways, and Claude Code sessions, JoyProxy provides dedicated 1:1 static residential IPs from genuine telecom broadband ASNs.
   * **No 10-IP mandatory bundles—buy just 1 IP starting at $3/month**. Crucially, each IP includes **one free replacement within its active period**, allowing instant recovery if your local browser fingerprint setup triggers a temporary flag.
@@ -86,7 +86,7 @@ JoyProxy is built specifically for agile development teams, cross-border e-comme
 | **Free Static IP Replacement** | None (new charge applies) | None (re-purchase required) | None (re-purchase required) | None | **1 free IP replacement within validity period** |
 | **Static Datacenter Pricing** | ~$14/mo (10 shared min) | ~$6.75/mo (3 dedicated min) | ~$7.50/mo (3 dedicated min) | Per-month / per-IP rate | **From $2/mo or $0.40/day (Unmetered traffic)** |
 | **Web Scraping API Billing** | Per request (including failures) | Per request (including failures) | Per request | No standalone bypass API | **Per successful request (HTTP 200 only)** |
-| **Free Trial / Credit** | Requires sales approval | Limited trial upon review | 3-day money-back guarantee | None | **$5 free credit on signup (all products)** |
+| **Trial & Testing Barrier** | Requires sales approval | Limited trial upon review | 3-day money-back guarantee | $7 minimum deposit | **$3.50 starter pack (Enterprise test quota via ticket)** |
 | **Team Tools & Software** | Enterprise Proxy Manager | Enterprise API Dashboard | Chrome extension / Endpoints | Basic browser extension | **JoyProxy Server (Gateway) + Tester + Android Client** |
 
 ---
@@ -116,7 +116,7 @@ Different workloads require different proxy characteristics. Picking the right t
 
 ### Scenario 5: Indie Developer Prototyping & Low-Frequency Production Usage
 * **Recommended Choice**: **JoyProxy / IPRoyal**
-* **Why**: Eliminate recurring monthly fees. JoyProxy gives you a $5 initial credit, offers residential data starting at $3.50/GB, and never expires unconsumed funds.
+* **Why**: Eliminate recurring monthly fees. JoyProxy offers residential data starting at $3.50/GB without monthly minimums, and never expires unconsumed funds.
 
 ---
 
@@ -130,7 +130,7 @@ For lean teams, AI developers, and cross-border businesses, choosing an agile pr
 
 **Official Links & Resources:**
 
-* Real-Time Pricing & Tiers: [JoyProxy Pricing Page](https://www.joyproxy.com/pricing.html) ($5 free credit upon signup)
+* Real-Time Pricing & Tiers: [JoyProxy Pricing Page](https://www.joyproxy.com/pricing.html) (From $3.50 with PAYG billing)
 * Dedicated Static ISP Proxies: [JoyProxy ISP Proxies](https://www.joyproxy.com/products/proxy-isp.html) (From $3/mo with free replacement)
 * Rotating Residential Network: [JoyProxy Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html)
 * Web Scraping API: [JoyProxy Web Scraping API](https://www.joyproxy.com/products/web-scraping-api.html) (Billed on HTTP 200 only)

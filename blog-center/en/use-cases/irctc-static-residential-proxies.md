@@ -73,7 +73,7 @@ What you buy| Residential static (typical published rate)
 100+ IPs| From **$4.50 / IP / month**  
 500+ IPs| From **$4.00 / IP / month**  
 Daily / weekly / 180-day / annual| Shorter plans exist; daily is a fraction of the monthly rate (about **$1 / IP / day** on the current factor)  
-New-user credit| **$5** after email verification — usable on static lines, so you can trial a day or chip away at a month  
+Starter testing| Start with a 1 GB pack or single IP; promotional sign-up credits have ended  
   
 Protocols (HTTP / HTTPS / SOCKS5), endpoint generator, and API are included. No extra “India surcharge” on the public price list — you pick India as the geo, not a separate SKU.
 

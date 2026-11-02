@@ -96,7 +96,7 @@ Here is how the top 5 tools in 2026 evaluate across bypass reliability, pricing 
   * **Direct Residential Network Integration**: Powered directly by JoyProxy's global residential broadband IP pool, eliminating datacenter ASN blocks at the transport layer.
   * **Automated Headless Emulation & Challenge Solving**: Cloud-managed browser clusters execute complex JavaScript, emulate human fingerprint telemetry, and solve Cloudflare Turnstile challenges automatically.
   * **Pay-per-Success (Only HTTP 200 Charges)**: If a target website experiences an outage or blocks a request, **no credits are deducted**. Agents running automated retries never incur surprise penalties.
-  * **Accessible Onboarding**: Includes a **$5 welcome credit upon registration**, allowing teams to run production-scale tests before committing budget.
+  * **Accessible Onboarding**: Start testing immediately with flexible pay-as-you-go credit packages without upfront credit card subscriptions.
 
 ---
 
@@ -110,7 +110,7 @@ Here is how the top 5 tools in 2026 evaluate across bypass reliability, pricing 
 | **Unused Credit Expiry** | Expires monthly | Expires monthly | Expires monthly | N/A | **Never expires (permanent balance)** |
 | **Cloudflare / WAF Bypass** | Weak (Datacenter exit) | Moderate (Times out on heavy WAFs) | Weak (Not an unblocker) | Very weak (Frequent 403s) | **Superior (Global residential pool & fingerprint engine)** |
 | **Headless JS Rendering** | Basic | Supported (Multiplies credit burn) | N/A | Basic | **Native support (Single query parameter)** |
-| **Trial Barrier** | Limited Free Tier | Limited Free Tier | Trial credits | Free tier | **$5 Welcome Credit (All features unlocked)** |
+| **Trial Barrier** | Limited Free Tier | Limited Free Tier | Trial credits | Free tier | **Low Entry Cost (PAYG without monthly minimum)** |
 
 ---
 
