@@ -19,6 +19,7 @@
 * [SEO Rank Checks from Multiple Countries (Without Personalized Noise)](use-cases/geo-proxies-seo-monitoring.md)
 * [Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)](use-cases/fixed-ip-ecommerce-operations.md)
 ## Guides
+* [2026 Top Proxy Providers Compared: Bright Data, Oxylabs, Smartproxy (Decodo), IPRoyal, and JoyProxy](guides/proxy-providers-comparison-2026.md)
 * [Tavily and Firecrawl Too Expensive? 5 Web Scraping APIs for AI Agents Compared (2026)](guides/tavily-firecrawl-alternatives-web-scraping-apis.md)
 * [Why 80% of Browser-Use AI Agents Die on Step 3: Multi-Step Automation Anti-Ban Guide](guides/browser-use-agent-anti-ban-guide.md)
 * [Troubleshooting Claude Code Account Bans: Underlying Risk Logic and Survival Guide](guides/claude-code-account-ban-prevention-guide.md)

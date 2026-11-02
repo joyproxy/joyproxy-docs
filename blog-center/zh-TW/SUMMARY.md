@@ -19,6 +19,7 @@
 * [多國地理代理進行真實 SEO 排名監控：消除個人化雜訊](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境電商為何青睞長期固定 IP（以及輪換代理的隱患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [2026 年代理 IP 廠商大橫評：Bright Data、Oxylabs、Smartproxy（Decodo）、IPRoyal 與 JoyProxy 深度評測](guides/proxy-providers-comparison-2026.md)
 * [Tavily 與 Firecrawl 太貴？2026 年 5 款適合 AI Agent 的網頁資料擷取與提取 API 評測](guides/tavily-firecrawl-alternatives-web-scraping-apis.md)
 * [為什麼 80% 的 Browser-Use 自動化 Agent 活不過第三步？多步互動防封實戰](guides/browser-use-agent-anti-ban-guide.md)
 * [深度排查：Claude Code 頻繁封號的底層邏輯與防封生存指南](guides/claude-code-account-ban-prevention-guide.md)

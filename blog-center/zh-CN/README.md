@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-02">2026-11-02</time></p>
+<h3 class="blog-feed-title"><a href="guides/proxy-providers-comparison-2026">2026 年代理 IP 厂商大横评：Bright Data、Oxylabs、Smartproxy（Decodo）、IPRoyal 与 JoyProxy 深度对比</a></h3>
+<p class="blog-feed-desc">全面横评 2026 年 5 大主流代理 IP 服务商：从住宅网络规模、起充门槛、计费规则到高防穿透与静态防封能力，详解如何根据业务场景挑选性价比最高的代理网络。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-29">2026-10-29</time></p>
 <h3 class="blog-feed-title"><a href="guides/tavily-firecrawl-alternatives-web-scraping-apis">Tavily 与 Firecrawl 太贵？2026 年 5 款适合 AI Agent 的网页数据抓取与提取 API 横评</a></h3>
 <p class="blog-feed-desc">告别高昂的月费门槛与隐藏的 LLM 格式转换开销。全面对比 Tavily、Firecrawl、Exa、Jina Reader 与 JoyProxy Web Scraping API，解析真实绕防能力、按成功扣费机制与 Agent 选型实战。</p>
