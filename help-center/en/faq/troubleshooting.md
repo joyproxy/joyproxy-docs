@@ -74,6 +74,11 @@ This error occurs when Windows fails to reach the certificate revocation list (C
   ```
 - If this returns public IP details in JSON, your proxy tunnel is functioning properly.
 
+### What if Static Proxies (ISP / Datacenter) are slow, have high latency, or don't meet quality expectations?
+1. **Change IP**: Go to **My Proxies** in the console and click **New IP** on the line. The system will assign a fresh exit IP in the same region, bypassing transient congestion or target-site rate limits on the prior exit.
+2. **Verify environment and protocol**: Ensure testing is conducted from outside mainland China and test both HTTP and SOCKS5.
+3. **Apply for Private Proxies**: If standard ISP or Datacenter proxies do not meet your latency or throughput requirements, or if you require ultra-low latency and dedicated bandwidth, please submit a ticket to apply for Private Proxies. Our engineering team will evaluate your requirements and provision dedicated direct-connect resources.
+
 ---
 
 ## Human support

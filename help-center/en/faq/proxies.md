@@ -80,6 +80,9 @@ The new exit is still dedicated to you.
 ### Can I check the IP range or ASN before purchasing Static Proxies?
 Yes. If you have specific requirements for a country, carrier, or ASN, open a ticket via **Tickets** in the left sidebar of the console. Provide your target location and carrier details, and our team will check and advise on availability.
 
+### What if I am unsatisfied with the quality of an assigned ISP or Datacenter proxy, or need lower latency and higher bandwidth?
+You can first try **Change IP** in the console under **My Proxies** to obtain a fresh exit IP. If you require ultra-low latency or dedicated large bandwidth, please submit a ticket to apply for Private Proxies, and our team will evaluate and customize dedicated direct-connect resources for you.
+
 ### Are there traffic, speed, or device limits on Static Proxies?
 **None.** There are no limits on traffic, bandwidth, concurrency, or the number of connected devices.
 Static Proxies are billed by IP count × subscription period. You can transfer unlimited data and connect your devices throughout the active plan.

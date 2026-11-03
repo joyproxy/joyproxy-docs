@@ -18,4 +18,6 @@ Static Proxies are billed by line and duration. **ISP Proxies** and **Datacenter
 1. **Long-lived identity, enterprise links, and B2B data exchange** ➔ **ISP Proxies** (speed plus trust).
 2. **High concurrency, high throughput, budget-sensitive** ➔ **Datacenter Proxies**.
 
+> **Tip**: If you require ultra-low latency or high dedicated bandwidth, please submit a ticket to apply for Private Proxies.
+
 Next: go to **<a href="purchase.md" target="_blank" rel="noopener noreferrer">Purchase dedicated lines</a>** to place an order.

@@ -11,3 +11,9 @@ During an active Static Proxies plan, if a target site blocks the current exit I
 
 > **Note**  
 > After you change the exit IP, the proxy `host:port` stays the same. You do not need to edit client settings. The new IP usually applies within a few seconds to a couple of minutes; the line may drop briefly.
+
+---
+
+## Upgrade to Private Proxies
+
+If changing the exit IP still does not meet strict performance requirements, or if your workloads require ultra-low latency and dedicated large bandwidth, please submit a ticket to apply for Private Proxies. Our engineering team will evaluate your requirements and provision dedicated direct-connect resources.
