@@ -8,6 +8,21 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-03">2026-11-03</time></p>
+<h3 class="blog-feed-title"><a href="guides/why-fraud-engines-track-asns-isp-reputation">為什麼風控引擎緊盯 ASN？全球頂級營運商 AT&amp;T、Comcast、Verizon 選型與網路信譽實測</a></h3>
+<p class="blog-feed-desc">深入剖析現代反欺詐與風控防火牆如何透過自治系統編號（ASN）識別代理流量，實測 AT&amp;T、Comcast、Verizon 等全球頂級電信營運商的網路信譽與選型指南。</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-03">2026-11-03</time></p>
+<h3 class="blog-feed-title"><a href="guides/top-10-static-isp-proxy-cities">全球 10 大熱門靜態 ISP 代理城市解析：紐約、倫敦、東京、新加坡、孟買等節點的選型與實測</a></h3>
+<p class="blog-feed-desc">詳解全球 10 大主流靜態 ISP 代理城市節點的網路拓撲、本土電信營運商分佈與風控評級。分析紐約、倫敦、東京、新加坡等關鍵樞紐的選型策略與實操指南。</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-03">2026-11-03</time></p>
+<h3 class="blog-feed-title"><a href="guides/core-datacenter-proxy-hubs-guide">低延遲與零頻寬焦慮：芝加哥、洛杉磯、班加羅爾、阿姆斯特丹主力資料中心節點優勢解析</a></h3>
+<p class="blog-feed-desc">深度解析資料中心代理（Datacenter Proxies）的核心價值。實測芝加哥、洛杉磯、班加羅爾、阿姆斯特丹四大主力樞紐的網路互聯優勢、不限流量架構與低成本資料擷取實務。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-02">2026-11-02</time></p>
 <h3 class="blog-feed-title"><a href="guides/proxy-providers-comparison-2026">2026 年代理 IP 廠商大橫評：Bright Data、Oxylabs、Smartproxy（Decodo）、IPRoyal 與 JoyProxy 深度評測</a></h3>
 <p class="blog-feed-desc">全面橫評 2026 年 5 大主流代理 IP 服務商：從住宅網路規模、起充門檻、計費規則到高防穿透與靜態防封能力，詳解如何依據業務場景挑選性價比最高的代理網路。</p>

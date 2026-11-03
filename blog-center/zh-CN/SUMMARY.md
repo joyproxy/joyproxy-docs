@@ -19,6 +19,9 @@
 * [多国地理代理进行真实 SEO 排名监控：消除个性化噪音](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境电商为何青睐长期固定 IP（以及轮换代理的隐患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [为什么风控引擎紧盯 ASN？全球顶级运营商 AT&T、Comcast、Verizon 选型与网络信誉实测](guides/why-fraud-engines-track-asns-isp-reputation.md)
+* [全球 10 大热门静态 ISP 代理城市解析：纽约、伦敦、东京、新加坡、孟买等节点的选型与实测](guides/top-10-static-isp-proxy-cities.md)
+* [低延迟与零带宽焦虑：芝加哥、洛杉矶、班加罗尔、阿姆斯特丹主力数据中心节点优势解析](guides/core-datacenter-proxy-hubs-guide.md)
 * [2026 年代理 IP 厂商大横评：Bright Data、Oxylabs、Smartproxy（Decodo）、IPRoyal 与 JoyProxy 深度对比](guides/proxy-providers-comparison-2026.md)
 * [Tavily 与 Firecrawl 太贵？2026 年 5 款适合 AI Agent 的网页数据抓取与提取 API 横评](guides/tavily-firecrawl-alternatives-web-scraping-apis.md)
 * [为什么 80% 的 Browser-Use 自动化 Agent 活不过第三步？多步交互防封实战](guides/browser-use-agent-anti-ban-guide.md)

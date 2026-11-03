@@ -19,6 +19,9 @@
 * [多國地理代理進行真實 SEO 排名監控：消除個人化雜訊](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境電商為何青睞長期固定 IP（以及輪換代理的隱患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [為什麼風控引擎緊盯 ASN？全球頂級營運商 AT&T、Comcast、Verizon 選型與網路信譽實測](guides/why-fraud-engines-track-asns-isp-reputation.md)
+* [全球 10 大熱門靜態 ISP 代理城市解析：紐約、倫敦、東京、新加坡、孟買等節點的選型與實測](guides/top-10-static-isp-proxy-cities.md)
+* [低延遲與零頻寬焦慮：芝加哥、洛杉磯、班加羅爾、阿姆斯特丹主力資料中心節點優勢解析](guides/core-datacenter-proxy-hubs-guide.md)
 * [2026 年代理 IP 廠商大橫評：Bright Data、Oxylabs、Smartproxy（Decodo）、IPRoyal 與 JoyProxy 深度評測](guides/proxy-providers-comparison-2026.md)
 * [Tavily 與 Firecrawl 太貴？2026 年 5 款適合 AI Agent 的網頁資料擷取與提取 API 評測](guides/tavily-firecrawl-alternatives-web-scraping-apis.md)
 * [為什麼 80% 的 Browser-Use 自動化 Agent 活不過第三步？多步互動防封實戰](guides/browser-use-agent-anti-ban-guide.md)

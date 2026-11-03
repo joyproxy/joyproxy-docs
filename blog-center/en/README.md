@@ -8,6 +8,21 @@ Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-11-03">2026-11-03</time></p>
+<h3 class="blog-feed-title"><a href="guides/why-fraud-engines-track-asns-isp-reputation">Why Fraud Engines Scrutinize ASNs: Real-World Reputation Benchmark for AT&amp;T, Comcast, and Verizon</a></h3>
+<p class="blog-feed-desc">Discover how modern anti-fraud engines and WAFs use Autonomous System Numbers (ASNs) to evaluate proxy traffic. Real-world reputation benchmarks for AT&amp;T, Comcast, Verizon, and global Tier-1 carriers.</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-11-03">2026-11-03</time></p>
+<h3 class="blog-feed-title"><a href="guides/top-10-static-isp-proxy-cities">Top 10 Global Static ISP Proxy Cities: Real-World Testing Across New York, London, Tokyo, Singapore, and Mumbai</a></h3>
+<p class="blog-feed-desc">In-depth network topology, carrier landscape, and fraud tolerance across the top 10 static ISP proxy cities worldwide. A benchmark guide for New York, London, Tokyo, Singapore, and more.</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-11-03">2026-11-03</time></p>
+<h3 class="blog-feed-title"><a href="guides/core-datacenter-proxy-hubs-guide">Low Latency with Zero Bandwidth Anxiety: Evaluating Core Datacenter Nodes in Chicago, Los Angeles, Bangalore, and Amsterdam</a></h3>
+<p class="blog-feed-desc">Why datacenter proxies remain irreplaceable for high-volume data pipelines. Benchmarking network topology, unmetered bandwidth, and throughput across Los Angeles, Chicago, Amsterdam, and Bangalore.</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-11-02">2026-11-02</time></p>
 <h3 class="blog-feed-title"><a href="guides/proxy-providers-comparison-2026">2026 Top Proxy Providers Compared: Bright Data, Oxylabs, Smartproxy (Decodo), IPRoyal, and JoyProxy</a></h3>
 <p class="blog-feed-desc">In-depth benchmark of the top 5 proxy providers in 2026. Compare residential pool sizes, pricing models, monthly minimums, scraping APIs, and anti-ban capabilities to choose the most cost-effective provider.</p>

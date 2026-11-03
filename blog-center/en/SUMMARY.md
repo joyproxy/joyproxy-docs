@@ -19,6 +19,9 @@
 * [SEO Rank Checks from Multiple Countries (Without Personalized Noise)](use-cases/geo-proxies-seo-monitoring.md)
 * [Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)](use-cases/fixed-ip-ecommerce-operations.md)
 ## Guides
+* [Why Fraud Engines Scrutinize ASNs: Real-World Reputation Benchmark for AT&T, Comcast, and Verizon](guides/why-fraud-engines-track-asns-isp-reputation.md)
+* [Top 10 Global Static ISP Proxy Cities: Real-World Testing Across New York, London, Tokyo, Singapore, and Mumbai](guides/top-10-static-isp-proxy-cities.md)
+* [Low Latency with Zero Bandwidth Anxiety: Evaluating Core Datacenter Nodes in Chicago, Los Angeles, Bangalore, and Amsterdam](guides/core-datacenter-proxy-hubs-guide.md)
 * [2026 Top Proxy Providers Compared: Bright Data, Oxylabs, Smartproxy (Decodo), IPRoyal, and JoyProxy](guides/proxy-providers-comparison-2026.md)
 * [Tavily and Firecrawl Too Expensive? 5 Web Scraping APIs for AI Agents Compared (2026)](guides/tavily-firecrawl-alternatives-web-scraping-apis.md)
 * [Why 80% of Browser-Use AI Agents Die on Step 3: Multi-Step Automation Anti-Ban Guide](guides/browser-use-agent-anti-ban-guide.md)
