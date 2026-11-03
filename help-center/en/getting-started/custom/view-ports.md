@@ -11,7 +11,7 @@ Open **<a href="https://www.joyproxy.com/admin-my-orders.html" target="_blank" r
 | Field | Meaning |
 | --- | --- |
 | **Id** | Unique identifier for the port in the system. |
-| **Dedicated connection address (Host:Port)** | Host and port your client uses (for example `us-ca.edge.joyproxy.com:20001`). |
+| **Dedicated connection address (Host:Port)** | Host and port your client uses (for example `isp.joyproxy.com:20001`). |
 | **Dedicated Exit IP** | The public exit IP currently bound to this port. |
 | **Assign region** | Country / state / city bound to the port (`Unassigned` if you have not set one). |
 | **Rotation** | Automatic exit-IP policy (`Rotate: Off` or `Rotate: Every 600s`). |

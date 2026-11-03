@@ -36,7 +36,7 @@
 2. 进入 **<a href="https://www.joyproxy.com/admin-ip-extraction-center.html" target="_blank" rel="noopener noreferrer">提取</a>** 页面，切换到 **自定义代理** 标签。
 3. 选择协议（`HTTP` 或 `SOCKS5`），点击 **复制地址列表**，获取端口专属端点：
    ```text
-   http://user123:pass123@us-ca.edge.joyproxy.com:20001
+   http://user123:pass123@isp.joyproxy.com:20001
    ```
 
 ---
@@ -47,14 +47,14 @@
 
 ### cURL
 ```bash
-curl -x http://user123:pass123@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
+curl -x http://user123:pass123@isp.joyproxy.com:20001 https://api.ipify.org
 ```
 
 ### Python
 ```python
 import requests
 
-proxy_url = "http://user123:pass123@us-ca.edge.joyproxy.com:20001"
+proxy_url = "http://user123:pass123@isp.joyproxy.com:20001"
 proxies = {
     "http": proxy_url,
     "https": proxy_url,
@@ -68,7 +68,7 @@ print("当前自定义端口出口 IP:", response.text)
 ```javascript
 const { HttpsProxyAgent } = require('https-proxy-agent');
 
-const proxyUrl = 'http://user123:pass123@us-ca.edge.joyproxy.com:20001';
+const proxyUrl = 'http://user123:pass123@isp.joyproxy.com:20001';
 const agent = new HttpsProxyAgent(proxyUrl);
 
 async function testProxy() {

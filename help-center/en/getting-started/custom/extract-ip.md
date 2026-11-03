@@ -13,7 +13,7 @@ In the JoyProxy console, you can generate connection strings for the Custom Prox
    - **Protocol**: `HTTP`, `HTTPS`, or `SOCKS5`.
    - **Credentials**: pick a Username/Password from Users & Whitelist.
    - **Output format**:
-     - `Host:Port` (for example `us-ca.edge.joyproxy.com:20001`)
+     - `Host:Port` (for example `isp.joyproxy.com:20001`)
      - `Host:Port:User:Pass`
      - `http://User:Pass@Host:Port`
 4. Generate and export:

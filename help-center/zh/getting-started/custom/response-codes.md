@@ -20,7 +20,7 @@
 ### 1. 如何确认是代理故障还是目标网站屏蔽？
 先在终端执行通用 IP 检测命令：
 ```bash
-curl -x http://USER:PASS@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
+curl -x http://USER:PASS@isp.joyproxy.com:20001 https://api.ipify.org
 ```
 - 如果能够成功返回 IP 地址，说明 **代理线路与认证完全正常**，访问特定网站返回 403 / 503 是目标网站基于行为或 IP 的封禁，请手动点击 **<a href="rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">更换 IP</a>**。
 - 如果直接返回 407，说明是 Username / Password 凭据错误，请检查认证配置。

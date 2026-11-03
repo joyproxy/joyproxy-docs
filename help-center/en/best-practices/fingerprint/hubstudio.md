@@ -11,7 +11,7 @@ Hubstudio is an antidetect browser built for teams. This page shows how to attac
 3. In **Proxy settings**:
    - **Proxy type**: custom proxy;
    - **Protocol**: `HTTP` or `Socks5`;
-   - **IP / domain**: Entry Point hostname (for example `us.edge.joyproxy.com`);
+   - **IP / domain**: Entry Point hostname (for example `isp.joyproxy.com`);
    - **Port**: the port (for example `10001`);
    - **Username and password**: credentials (leave blank if this IP is on **IP Whitelist**);
 4. Click **Test connection** and confirm the handshake;

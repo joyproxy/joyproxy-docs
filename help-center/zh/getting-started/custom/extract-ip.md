@@ -13,7 +13,7 @@
    - **代理协议**：选择 `HTTP`、`HTTPS` 或 `SOCKS5`。
    - **代理鉴权凭证**：选择你在「账密与白名单」中创建的代理 Username / Password。
    - **输出格式**：
-     - `Host:Port`（如 `us-ca.edge.joyproxy.com:20001`）
+     - `Host:Port`（如 `isp.joyproxy.com:20001`）
      - `Host:Port:User:Pass`
      - `http://User:Pass@Host:Port`
 4. 提取与导出：

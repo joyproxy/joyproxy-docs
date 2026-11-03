@@ -9,7 +9,7 @@ If you need many dedicated ports and want each one to use a different geo — or
 ## How it works
 
 ```text
-Your app / client  →  us-ca.edge.joyproxy.com:20001  →  target site (exit country assigned on the port)
+Your app / client  →  isp.joyproxy.com:20001  →  target site (exit country assigned on the port)
                       ▲
                       ├── Country/region bound on the port in the console (you can switch it anytime)
                       ├── Optional per-port rotation (for example every 5, 10, or 30 minutes)

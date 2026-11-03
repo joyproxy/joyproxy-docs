@@ -1,8 +1,8 @@
 # Send your first proxy request
 
-Once you have a Custom Proxies endpoint (for example `us-ca.edge.joyproxy.com:20001`) and credentials, you can send HTTP / SOCKS5 requests from common languages and third-party apps.
+Once you have a Custom Proxies endpoint (for example `isp.joyproxy.com:20001`) and credentials, you can send HTTP / SOCKS5 requests from common languages and third-party apps.
 
-Replace `USER`, `PASS`, and `us-ca.edge.joyproxy.com:20001` in the samples with your real credentials and port:
+Replace `USER`, `PASS`, and `isp.joyproxy.com:20001` in the samples with your real credentials and port:
 
 ---
 
@@ -11,16 +11,16 @@ Replace `USER`, `PASS`, and `us-ca.edge.joyproxy.com:20001` in the samples with 
 ### cURL
 ```bash
 # HTTP proxy test
-curl -x http://USER:PASS@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
+curl -x http://USER:PASS@isp.joyproxy.com:20001 https://api.ipify.org
 
 # SOCKS5 proxy test
-curl --socks5 http://USER:PASS@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
+curl --socks5 http://USER:PASS@isp.joyproxy.com:20001 https://api.ipify.org
 ```
 ### Python (Requests)
 ```python
 import requests
 
-proxy_url = "http://USER:PASS@us-ca.edge.joyproxy.com:20001"
+proxy_url = "http://USER:PASS@isp.joyproxy.com:20001"
 proxies = {
     "http": proxy_url,
     "https": proxy_url,
@@ -37,7 +37,7 @@ except requests.exceptions.RequestException as e:
 const axios = require('axios');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 
-const proxyUrl = 'http://USER:PASS@us-ca.edge.joyproxy.com:20001';
+const proxyUrl = 'http://USER:PASS@isp.joyproxy.com:20001';
 const agent = new HttpsProxyAgent(proxyUrl);
 
 axios.get('https://api.ipify.org', { httpAgent: agent, httpsAgent: agent })
@@ -56,7 +56,7 @@ import (
 )
 
 func main() {
-	proxyUrl, _ := url.Parse("http://USER:PASS@us-ca.edge.joyproxy.com:20001")
+	proxyUrl, _ := url.Parse("http://USER:PASS@isp.joyproxy.com:20001")
 	client := &http.Client{
 		Transport: &http.Transport{
 			Proxy: http.ProxyURL(proxyUrl),
@@ -77,7 +77,7 @@ func main() {
 ```php
 <?php
 $ch = curl_init('https://api.ipify.org');
-curl_setopt($ch, CURLOPT_PROXY, 'http://us-ca.edge.joyproxy.com:20001');
+curl_setopt($ch, CURLOPT_PROXY, 'http://isp.joyproxy.com:20001');
 curl_setopt($ch, CURLOPT_PROXYUSERPWD, 'USER:PASS');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_TIMEOUT, 15);

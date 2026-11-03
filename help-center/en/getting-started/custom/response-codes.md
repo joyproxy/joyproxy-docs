@@ -20,7 +20,7 @@ When you connect through Custom Proxies, you may see HTTP status errors. Use thi
 ### 1. Is it the proxy, or did the target block you?
 Run a generic IP check:
 ```bash
-curl -x http://USER:PASS@us-ca.edge.joyproxy.com:20001 https://api.ipify.org
+curl -x http://USER:PASS@isp.joyproxy.com:20001 https://api.ipify.org
 ```
 - If you get an IP back, **the proxy line and authentication are fine**. A 403 / 503 on a specific site is that site blocking the exit — click **<a href="rotation-and-refresh.md" target="_blank" rel="noopener noreferrer">New IP</a>**.
 - If you get 407, the Username/Password is wrong — check authentication.

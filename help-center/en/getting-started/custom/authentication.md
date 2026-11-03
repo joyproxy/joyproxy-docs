@@ -15,7 +15,7 @@ This is the usual method for code, desktop clients, and antidetect browsers.
    - Set **Password**: for example `pass123`.
 4. After it is saved, every Custom Proxies port on the account can use these credentials:
    ```text
-   http://user123:pass123@us-ca.edge.joyproxy.com:20001
+   http://user123:pass123@isp.joyproxy.com:20001
    ```
 
 ---
@@ -27,7 +27,7 @@ If your app runs on a server with a fixed public IPv4 (for example AWS EC2, Alib
 1. Open **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">Users & Whitelist</a>**.
 2. Switch to the **IP Whitelist** tab.
 3. Click **Add IP**, enter the server’s public IPv4 address, and save.
-4. After it is added, connections from that server do not need a Username and Password — connect to `us-ca.edge.joyproxy.com:20001` directly.
+4. After it is added, connections from that server do not need a Username and Password — connect to `isp.joyproxy.com:20001` directly.
 
 ---
 

@@ -20,6 +20,6 @@ A core Custom Proxies advantage: **after you buy a port, you can Assign region �
 
 ## Hot switching notes
 
-- **Connection address does not change**: After you change the country or city, the Host and Port your client uses (for example `us-ca.edge.joyproxy.com:20001`) **stay the same**. You do not need to edit code or reconfigure the client.
+- **Connection address does not change**: After you change the country or city, the Host and Port your client uses (for example `isp.joyproxy.com:20001`) **stay the same**. You do not need to edit code or reconfigure the client.
 - **How fast it applies**: A region switch usually takes 3–10 seconds. In-flight TCP connections may drop once; send a new request to use the new region’s exit IP.
 - **Network tier lock**: If the first assignment used a given network tier (**Standard Network** or **Premium Network**), later Assign region choices must stay on that same tier.

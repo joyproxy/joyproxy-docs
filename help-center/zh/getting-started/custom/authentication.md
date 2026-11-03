@@ -15,7 +15,7 @@
    - 设置 **代理密码**：如 `pass123`。
 4. 保存成功后，你在账户下购买的所有自定义端口均可使用此账密建立连接：
    ```text
-   http://user123:pass123@us-ca.edge.joyproxy.com:20001
+   http://user123:pass123@isp.joyproxy.com:20001
    ```
 
 ---
@@ -27,7 +27,7 @@
 1. 打开 **<a href="https://www.joyproxy.com/admin-authorization.html" target="_blank" rel="noopener noreferrer">账密与白名单</a>** 页面。
 2. 切换到 **IP 白名单** 页签。
 3. 点击 **添加 IP**，输入你服务器的真实公网 IPv4 地址并保存。
-4. 添加成功后，在该服务器发起代理连接时无需输入代理 Username 和 Password，直接连接 `us-ca.edge.joyproxy.com:20001` 即可自动通过鉴权。
+4. 添加成功后，在该服务器发起代理连接时无需输入代理 Username 和 Password，直接连接 `isp.joyproxy.com:20001` 即可自动通过鉴权。
 
 ---
 
