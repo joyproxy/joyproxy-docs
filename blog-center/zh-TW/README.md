@@ -8,6 +8,16 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-05">2026-11-05</time></p>
+<h3 class="blog-feed-title"><a href="guides/stop-407-rotating-proxy-extraction-guide">別再被 407 擋住：JoyProxy 住宅、移動、商業代理提取指南</a></h3>
+<p class="blog-feed-desc">深度拆解 407 Proxy Authentication Required 的根本原因，詳解 JoyProxy 動態住宅、移動與商業代理的閘道架構、帳密語法、城市精準定位與 1~30 分鐘黏性工作階段設定。</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-05">2026-11-05</time></p>
+<h3 class="blog-feed-title"><a href="guides/static-isp-datacenter-proxy-setup-guide">別把出口 IP 當入口：JoyProxy 靜態 ISP 與資料中心代理設定全解</a></h3>
+<p class="blog-feed-desc">排查靜態代理連線逾時與拒絕連線的頭號元兇：釐清 Entry Point（入口）與 Dedicated Exit IP（出口）的差異。詳解靜態 ISP 與資料中心代理的白名單免密、防關聯瀏覽器綁定與免費換 IP 容災實操。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-03">2026-11-03</time></p>
 <h3 class="blog-feed-title"><a href="guides/why-fraud-engines-track-asns-isp-reputation">為什麼風控引擎緊盯 ASN？全球頂級營運商 AT&amp;T、Comcast、Verizon 選型與網路信譽實測</a></h3>
 <p class="blog-feed-desc">深入剖析現代反欺詐與風控防火牆如何透過自治系統編號（ASN）識別代理流量，實測 AT&amp;T、Comcast、Verizon 等全球頂級電信營運商的網路信譽與選型指南。</p>

@@ -19,6 +19,8 @@
 * [多国地理代理进行真实 SEO 排名监控：消除个性化噪音](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境电商为何青睐长期固定 IP（以及轮换代理的隐患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [别再被 407 拦住：JoyProxy 住宅、移动、商业代理提取指南](guides/stop-407-rotating-proxy-extraction-guide.md)
+* [别把出口 IP 当入口：JoyProxy 静态 ISP 与数据中心代理配置全解](guides/static-isp-datacenter-proxy-setup-guide.md)
 * [为什么风控引擎紧盯 ASN？全球顶级运营商 AT&T、Comcast、Verizon 选型与网络信誉实测](guides/why-fraud-engines-track-asns-isp-reputation.md)
 * [全球 10 大热门静态 ISP 代理城市解析：纽约、伦敦、东京、新加坡、孟买等节点的选型与实测](guides/top-10-static-isp-proxy-cities.md)
 * [低延迟与零带宽焦虑：芝加哥、洛杉矶、班加罗尔、阿姆斯特丹主力数据中心节点优势解析](guides/core-datacenter-proxy-hubs-guide.md)

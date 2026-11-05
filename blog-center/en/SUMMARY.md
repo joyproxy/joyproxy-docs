@@ -19,6 +19,8 @@
 * [SEO Rank Checks from Multiple Countries (Without Personalized Noise)](use-cases/geo-proxies-seo-monitoring.md)
 * [Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)](use-cases/fixed-ip-ecommerce-operations.md)
 ## Guides
+* [Stop Getting 407 Errors: The Practical Guide to JoyProxy Rotating, Mobile, and Business Proxy Extraction](guides/stop-407-rotating-proxy-extraction-guide.md)
+* [Never Mistake Exit IP for Entry Point: Complete Setup Guide for JoyProxy Static ISP & Datacenter Proxies](guides/static-isp-datacenter-proxy-setup-guide.md)
 * [Why Fraud Engines Scrutinize ASNs: Real-World Reputation Benchmark for AT&T, Comcast, and Verizon](guides/why-fraud-engines-track-asns-isp-reputation.md)
 * [Top 10 Global Static ISP Proxy Cities: Real-World Testing Across New York, London, Tokyo, Singapore, and Mumbai](guides/top-10-static-isp-proxy-cities.md)
 * [Low Latency with Zero Bandwidth Anxiety: Evaluating Core Datacenter Nodes in Chicago, Los Angeles, Bangalore, and Amsterdam](guides/core-datacenter-proxy-hubs-guide.md)

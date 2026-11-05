@@ -8,6 +8,16 @@ Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-11-05">2026-11-05</time></p>
+<h3 class="blog-feed-title"><a href="guides/stop-407-rotating-proxy-extraction-guide">Stop Getting 407 Errors: The Practical Guide to JoyProxy Rotating, Mobile, and Business Proxy Extraction</a></h3>
+<p class="blog-feed-desc">Resolve HTTP 407 Proxy Authentication Required errors once and for all. Master JoyProxy gateway architecture, username encoding syntax, city-level targeting, and 1–30 minute sticky sessions.</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-11-05">2026-11-05</time></p>
+<h3 class="blog-feed-title"><a href="guides/static-isp-datacenter-proxy-setup-guide">Never Mistake Exit IP for Entry Point: Complete Setup Guide for JoyProxy Static ISP &amp; Datacenter Proxies</a></h3>
+<p class="blog-feed-desc">Resolve connection timeouts and refused connections on static proxies. Understand the critical difference between Entry Point and Dedicated Exit IP, passwordless IP whitelisting, antidetect browser integration, and free IP replacement.</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-11-03">2026-11-03</time></p>
 <h3 class="blog-feed-title"><a href="guides/why-fraud-engines-track-asns-isp-reputation">Why Fraud Engines Scrutinize ASNs: Real-World Reputation Benchmark for AT&amp;T, Comcast, and Verizon</a></h3>
 <p class="blog-feed-desc">Discover how modern anti-fraud engines and WAFs use Autonomous System Numbers (ASNs) to evaluate proxy traffic. Real-world reputation benchmarks for AT&amp;T, Comcast, Verizon, and global Tier-1 carriers.</p>
