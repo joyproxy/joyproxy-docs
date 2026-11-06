@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-07">2026-11-07</time></p>
+<h3 class="blog-feed-title"><a href="guides/how-to-use-isp-proxies-for-chatgpt-claude">告別 Access Denied：如何使用靜態 ISP 代理穩定解鎖 ChatGPT 與 Claude（全鏈路防封實戰）</a></h3>
+<p class="blog-feed-desc">深度剖析 OpenAI 與 Anthropic 的多維複合風控體系：破除單一 IP 迷信，結合 ISP 獨享靜態住宅代理、WebRTC 阻斷、指紋環境與支付一致性，構建真正穩固的 AI 訪問架構。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-05">2026-11-05</time></p>
 <h3 class="blog-feed-title"><a href="guides/stop-407-rotating-proxy-extraction-guide">別再被 407 擋住：JoyProxy 住宅、移動、商業代理提取指南</a></h3>
 <p class="blog-feed-desc">深度拆解 407 Proxy Authentication Required 的根本原因，詳解 JoyProxy 動態住宅、移動與商業代理的閘道架構、帳密語法、城市精準定位與 1~30 分鐘黏性工作階段設定。</p>
@@ -55,7 +60,7 @@ outline: false
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-23">2026-10-23</time></p>
 <h3 class="blog-feed-title"><a href="guides/payg-proxy-architectures-for-developers">不想被高額的起充月費綁架？5 款適合小團隊與獨立開發者的按量計費代理方案</a></h3>
-<p class="blog-feed-desc">告別傳統大廠 $300+ 的強制月費低消與月底流量歸零。深度解析 5 款真正適合輕量團隊與獨立開發者的隨收隨付（PAYG）代理架構，兼顧純淨網路信譽與極低試錯成本。</p>
+<p class="blog-feed-desc">告別傳統大廠 $300+ 的強制月費低消與月底流量歸零。深度解析 5 款真正適合輕量團隊與獨立開發者的彈性代理架構，兼顧純淨網路信譽與極低試錯成本。</p>
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-17">2026-10-17</time></p>
@@ -65,12 +70,12 @@ outline: false
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">使用場景</span> <time datetime="2026-10-15">2026-10-15</time></p>
 <h3 class="blog-feed-title"><a href="use-cases/tiktok-zero-views-ip-pollution">TikTok / 海外社群新號遭遇「0 播放」與批次風控？90% 的死因在代理池的「IP 污染」</a></h3>
-<p class="blog-feed-desc">深度排查出海短影音與海外社群矩陣遭遇 0 播放、隱形限流與註冊即停權的底層根因：髒 IP 歷史黑名單、機房 ASN 偽裝、子網連坐機制，以及如何用純淨 ISP 獨享靜態住宅網路破局。</p>
+<p class="blog-feed-desc">深度排查出海短影音與海外社群矩陣遭遇 0 播放、隱形限流（Shadowban）與註冊即停權的底層根因：髒 IP 歷史黑名單、機房 ASN 偽裝、子網連坐機制，以及如何用純淨 ISP 獨享靜態住宅網路破局。</p>
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">使用場景</span> <time datetime="2026-10-15">2026-10-15</time></p>
 <h3 class="blog-feed-title"><a href="use-cases/stripe-paypal-checkout-fraud-prevention">Stripe / PayPal 跨境結帳風控：為什麼你的獨立站代付卡單率高達 40%？</a></h3>
-<p class="blog-feed-desc">深度拆解跨境代採、獨立站代付與支付自動化測試中頻遭 card_declined 的根因：機房 ASN 攔截、動態輪換引發的會話撕裂，以及真正有效的 ISP 獨享靜態住宅網路防封實踐。</p>
+<p class="blog-feed-desc">排查跨境代採、獨立站代付與海外結帳測試中頻繁觸發 card_declined 的根因：機房 ASN 攔截、動態輪換引發的會話撕裂，以及真正有效的 ISP 獨享靜態住宅網路防封實踐。</p>
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-07">2026-10-07</time></p>

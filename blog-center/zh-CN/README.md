@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-07">2026-11-07</time></p>
+<h3 class="blog-feed-title"><a href="guides/how-to-use-isp-proxies-for-chatgpt-claude">告别 Access Denied：如何使用静态 ISP 代理稳定解锁 ChatGPT 与 Claude（全链路防封实战）</a></h3>
+<p class="blog-feed-desc">深度剖析 OpenAI 与 Anthropic 的多维复合风控体系：破除单一 IP 迷信，结合 ISP 独享静态住宅代理、WebRTC 阻断、指纹环境与支付一致性，构建真正稳固的 AI 访问架构。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-05">2026-11-05</time></p>
 <h3 class="blog-feed-title"><a href="guides/stop-407-rotating-proxy-extraction-guide">别再被 407 拦住：JoyProxy 住宅、移动、商业代理提取指南</a></h3>
 <p class="blog-feed-desc">深度拆解 407 Proxy Authentication Required 的根因，详解 JoyProxy 动态住宅、移动与商业代理的网关架构、账密语法、城市精准定位与 1~30 分钟粘性会话配置。</p>
@@ -50,7 +55,7 @@ outline: false
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-25">2026-10-25</time></p>
 <h3 class="blog-feed-title"><a href="guides/claude-code-account-ban-prevention-guide">深度排查：Claude Code 频繁封号的底层逻辑与防封生存指南</a></h3>
-<p class="blog-feed-desc">为什么刚充值就被封、终端频繁掉线、甚至突发强制海外 KYC 审查？深度拆解 Anthropic 针对 Claude Code 的多维风控模型，详解 ISP 独享静态住宅网络防封方案与项目安全迁移实操。</p>
+<p class="blog-feed-desc">为什么刚充值就被封、终端频繁掉线、甚至突发强制 KYC 证件审查？深入拆解 Anthropic 针对 Claude Code 的多维风控模型，详解 ISP 独享静态住宅网络防封方案与项目安全迁移实操。</p>
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-23">2026-10-23</time></p>
@@ -65,12 +70,12 @@ outline: false
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">使用场景</span> <time datetime="2026-10-15">2026-10-15</time></p>
 <h3 class="blog-feed-title"><a href="use-cases/tiktok-zero-views-ip-pollution">TikTok / 海外社媒新号遭遇“0 播放”与批量风控？90% 的死因在代理池的“IP 污染”</a></h3>
-<p class="blog-feed-desc">深度排查出海短视频与海外社媒矩阵遭遇 0 播放、隐形限流与注册即封的底层根因：脏 IP 历史黑名单、机房 ASN 伪装、子网连坐机制，以及如何用纯净 ISP 独享静态住宅网络破局。</p>
+<p class="blog-feed-desc">深度排查出海短视频与海外社媒矩阵遭遇 0 播放、隐形限流（Shadowban）与注册即封的底层根因：脏 IP 历史黑名单、机房 ASN 伪装、子网连坐机制，以及如何用纯净 ISP 独享静态住宅网络破局。</p>
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">使用场景</span> <time datetime="2026-10-15">2026-10-15</time></p>
 <h3 class="blog-feed-title"><a href="use-cases/stripe-paypal-checkout-fraud-prevention">Stripe / PayPal 跨境结账风控：为什么你的独立站代付卡单率高达 40%？</a></h3>
-<p class="blog-feed-desc">深度拆解跨境代采、独立站代付与支付自动化测试中频遭 card_declined 的根因：机房 ASN 拦截、动态轮换引发的会话撕裂，以及真正有效的 ISP 独享静态住宅网络防封实践。</p>
+<p class="blog-feed-desc">排查跨境代采、独立站代付与海外结账测试中频繁触发 card_declined 的根因：机房 ASN 拦截、动态轮换引发的会话撕裂，以及真正有效的 ISP 独享静态住宅网络防封实践。</p>
 </article>
 <article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-10-07">2026-10-07</time></p>
