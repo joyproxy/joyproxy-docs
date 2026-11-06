@@ -19,6 +19,7 @@
 * [多國地理代理進行真實 SEO 排名監控：消除個人化雜訊](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境電商為何青睞長期固定 IP（以及輪換代理的隱患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [告別 Access Denied：如何使用靜態 ISP 代理穩定解鎖 ChatGPT 與 Claude（全鏈路防封實戰）](guides/how-to-use-isp-proxies-for-chatgpt-claude.md)
 * [別再被 407 擋住：JoyProxy 住宅、移動、商業代理提取指南](guides/stop-407-rotating-proxy-extraction-guide.md)
 * [別把出口 IP 當入口：JoyProxy 靜態 ISP 與資料中心代理設定全解](guides/static-isp-datacenter-proxy-setup-guide.md)
 * [為什麼風控引擎緊盯 ASN？全球頂級營運商 AT&T、Comcast、Verizon 選型與網路信譽實測](guides/why-fraud-engines-track-asns-isp-reputation.md)
