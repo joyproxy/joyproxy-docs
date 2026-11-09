@@ -8,6 +8,16 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">入门</span> <time datetime="2026-11-09">2026-11-09</time></p>
+<h3 class="blog-feed-title"><a href="getting-started/quickstart-proxy-python-nodejs-curl">零基础 5 分钟在 Python、Node.js 与 Curl 中跑通你的首个代理请求</a></h3>
+<p class="blog-feed-desc">新手极简实战指南：手把手教你获取 JoyProxy 代理端点，在 Curl 终端、Python（requests/httpx）与 Node.js（fetch/axios）中完成快速配置，并学会验证真实出口 IP 与排除常见 407 错误。</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">入门</span> <time datetime="2026-11-09">2026-11-09</time></p>
+<h3 class="blog-feed-title"><a href="getting-started/rotating-residential-vs-static-isp-vs-datacenter">动态住宅 vs 静态 ISP vs 独享机房：3 分钟测出你的业务最该买哪种代理</a></h3>
+<p class="blog-feed-desc">新手选型避坑全指南：深入对比动态住宅代理（按流量）、静态 ISP 独享住宅代理与数据中心机房代理的底层差异，提供 3 分钟场景自测决策树与成本账本，帮你告别套餐买错与账号风控。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">指南</span> <time datetime="2026-11-07">2026-11-07</time></p>
 <h3 class="blog-feed-title"><a href="guides/how-to-use-isp-proxies-for-chatgpt-claude">告别 Access Denied：如何使用静态 ISP 代理稳定解锁 ChatGPT 与 Claude（全链路防封实战）</a></h3>
 <p class="blog-feed-desc">深度剖析 OpenAI 与 Anthropic 的多维复合风控体系：破除单一 IP 迷信，结合 ISP 独享静态住宅代理、WebRTC 阻断、指纹环境与支付一致性，构建真正稳固的 AI 访问架构。</p>

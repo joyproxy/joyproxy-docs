@@ -2,6 +2,8 @@
 
 * [Home](README.md)
 ## 入门
+* [零基础 5 分钟在 Python、Node.js 与 Curl 中跑通你的首个代理请求](getting-started/quickstart-proxy-python-nodejs-curl.md)
+* [动态住宅 vs 静态 ISP vs 独享机房：3 分钟测出你的业务最该买哪种代理](getting-started/rotating-residential-vs-static-isp-vs-datacenter.md)
 * [用 USDT（TRC20）为 JoyProxy 余额充值：分步指南](getting-started/usdt-trc20-recharge-guide.md)
 * [JoyProxy 浏览器扩展：换 IP 只改 Chrome，不动系统代理](getting-started/joyproxy-browser-extension.md)
 * [新用户快速上手：低成本验证与套餐选型指南](getting-started/five-dollar-credit-onboarding.md)

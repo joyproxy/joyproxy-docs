@@ -2,6 +2,8 @@
 
 * [Home](README.md)
 ## Getting Started
+* [5-Minute Quickstart: Running Your First Proxy Request in Python, Node.js, and Curl](getting-started/quickstart-proxy-python-nodejs-curl.md)
+* [Rotating Residential vs Static ISP vs Datacenter Proxies: The 3-Minute Decision Framework](getting-started/rotating-residential-vs-static-isp-vs-datacenter.md)
 * [Top Up Your JoyProxy Balance with USDT (TRC20): A Step-by-Step Guide](getting-started/usdt-trc20-recharge-guide.md)
 * [JoyProxy Browser Extension: Switch IPs in Chrome Without Touching System Proxy](getting-started/joyproxy-browser-extension.md)
 * [New-User Quick Start: Low-Cost Validation and Plan Selection](getting-started/five-dollar-credit-onboarding.md)

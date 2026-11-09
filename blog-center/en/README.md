@@ -8,6 +8,16 @@ Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Getting Started</span> <time datetime="2026-11-09">2026-11-09</time></p>
+<h3 class="blog-feed-title"><a href="getting-started/quickstart-proxy-python-nodejs-curl">5-Minute Quickstart: Running Your First Proxy Request in Python, Node.js, and Curl</a></h3>
+<p class="blog-feed-desc">A beginner-friendly practical guide on how to extract JoyProxy endpoints, configure proxies across Curl, Python (requests/httpx), and Node.js (fetch/axios), verify real exit IPs, and debug common 407 errors.</p>
+</article>
+<article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Getting Started</span> <time datetime="2026-11-09">2026-11-09</time></p>
+<h3 class="blog-feed-title"><a href="getting-started/rotating-residential-vs-static-isp-vs-datacenter">Rotating Residential vs Static ISP vs Datacenter Proxies: The 3-Minute Decision Framework</a></h3>
+<p class="blog-feed-desc">A comprehensive beginner&#x27;s selection guide comparing rotating residential (pay-per-GB), dedicated static ISP residential, and datacenter proxies. Includes a 3-minute workflow decision tree to stop wasting budget on the wrong proxy stack.</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Guides</span> <time datetime="2026-11-07">2026-11-07</time></p>
 <h3 class="blog-feed-title"><a href="guides/how-to-use-isp-proxies-for-chatgpt-claude">Say Goodbye to Access Denied: How to Use Static ISP Proxies for Reliable ChatGPT and Claude Access (Full-Stack Anti-Ban Guide)</a></h3>
 <p class="blog-feed-desc">A deep dive into OpenAI and Anthropic&#x27;s multi-dimensional risk models. Debunk the single-IP myth and combine dedicated static ISP proxies, WebRTC protection, fingerprint isolation, and billing consistency for bulletproof AI access.</p>
