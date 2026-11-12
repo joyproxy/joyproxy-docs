@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">技术</span> <time datetime="2026-11-12">2026-11-12</time></p>
+<h3 class="blog-feed-title"><a href="technical/sticky-session-technical-architecture">粘性会话（Sticky Session）的技术底层：动态住宅代理如何做到 1~1440 分钟不换 IP？</a></h3>
+<p class="blog-feed-desc">深入剖析动态住宅代理网关的会话控制机制：从 Session ID 与 sessTime 语法、入口网关路由哈希表，到家庭节点偶发下线时的智能容灾转移（Failover），彻底解密长效粘性会话的技术实现。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">入门</span> <time datetime="2026-11-09">2026-11-09</time></p>
 <h3 class="blog-feed-title"><a href="getting-started/quickstart-proxy-python-nodejs-curl">零基础 5 分钟在 Python、Node.js 与 Curl 中跑通你的首个代理请求</a></h3>
 <p class="blog-feed-desc">新手极简实战指南：手把手教你获取 JoyProxy 代理端点，在 Curl 终端、Python（requests/httpx）与 Node.js（fetch/axios）中完成快速配置，并学会验证真实出口 IP 与排除常见 407 错误。</p>

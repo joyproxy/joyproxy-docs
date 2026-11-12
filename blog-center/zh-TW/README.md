@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">技術</span> <time datetime="2026-11-12">2026-11-12</time></p>
+<h3 class="blog-feed-title"><a href="technical/sticky-session-technical-architecture">黏性工作階段（Sticky Session）的技術底層：動態住宅代理如何做到 1~1440 分鐘不換 IP？</a></h3>
+<p class="blog-feed-desc">深入剖析動態住宅代理閘道的會話控制機制：從 Session ID 與 sessTime 語法、入口閘道路由雜湊表，到家庭節點偶發離線時的智慧容災轉移（Failover），徹底解密長效黏性會話的技術實現。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">入門</span> <time datetime="2026-11-09">2026-11-09</time></p>
 <h3 class="blog-feed-title"><a href="getting-started/quickstart-proxy-python-nodejs-curl">零基礎 5 分鐘在 Python、Node.js 與 Curl 中跑通你的首個代理請求</a></h3>
 <p class="blog-feed-desc">新手極簡實戰指南：手把手教你取得 JoyProxy 代理端點，在 Curl 終端機、Python（requests/httpx）與 Node.js（fetch/axios）中完成快速設定，並學會驗證真實出口 IP 與排除常見 407 錯誤。</p>

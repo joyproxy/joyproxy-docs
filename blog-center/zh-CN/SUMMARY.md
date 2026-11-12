@@ -9,6 +9,7 @@
 * [新用户快速上手：低成本验证与套餐选型指南](getting-started/five-dollar-credit-onboarding.md)
 * [JoyProxy 白名单、认证账密与首个代理端点提取](getting-started/whitelist-credentials-setup.md)
 ## 技术
+* [粘性会话（Sticky Session）的技术底层：动态住宅代理如何做到 1~1440 分钟不换 IP？](technical/sticky-session-technical-architecture.md)
 * [住宅不是移动：目标系统要的是电信运营商 ASN](technical/residential-isnt-mobile.md)
 * [407 与 403：代理网络实际会返回的 HTTP 状态码](technical/proxy-http-status-codes.md)
 * [住宅代理 vs 数据中心代理：网页抓取在何时各显神通？](technical/residential-vs-datacenter-scraping.md)

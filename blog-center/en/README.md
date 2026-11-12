@@ -8,6 +8,11 @@ Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Technical</span> <time datetime="2026-11-12">2026-11-12</time></p>
+<h3 class="blog-feed-title"><a href="technical/sticky-session-technical-architecture">Under the Hood of Sticky Sessions: How Rotating Residential Proxies Keep the Same IP for Up to 1,440 Minutes</a></h3>
+<p class="blog-feed-desc">A deep dive into session control architecture in rotating residential proxy networks: from username syntax and distributed gateway state tables to graceful failover mechanisms during node disconnects.</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Getting Started</span> <time datetime="2026-11-09">2026-11-09</time></p>
 <h3 class="blog-feed-title"><a href="getting-started/quickstart-proxy-python-nodejs-curl">5-Minute Quickstart: Running Your First Proxy Request in Python, Node.js, and Curl</a></h3>
 <p class="blog-feed-desc">A beginner-friendly practical guide on how to extract JoyProxy endpoints, configure proxies across Curl, Python (requests/httpx), and Node.js (fetch/axios), verify real exit IPs, and debug common 407 errors.</p>

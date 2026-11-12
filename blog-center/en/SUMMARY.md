@@ -9,6 +9,7 @@
 * [New-User Quick Start: Low-Cost Validation and Plan Selection](getting-started/five-dollar-credit-onboarding.md)
 * [JoyProxy Whitelist, Credentials, and Your First Proxy Endpoint](getting-started/whitelist-credentials-setup.md)
 ## Technical
+* [Under the Hood of Sticky Sessions: How Rotating Residential Proxies Keep the Same IP for Up to 1,440 Minutes](technical/sticky-session-technical-architecture.md)
 * [Residential Isn’t Mobile: When the Target Wants a Carrier ASN](technical/residential-isnt-mobile.md)
 * [407 vs 403: HTTP Status Codes Proxies Actually Return](technical/proxy-http-status-codes.md)
 * [Residential vs Datacenter Proxies for Web Scraping: When Each Type Wins](technical/residential-vs-datacenter-scraping.md)
