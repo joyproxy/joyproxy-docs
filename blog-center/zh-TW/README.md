@@ -8,6 +8,11 @@ outline: false
 
 <div class="blog-feed">
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">技術</span> <time datetime="2026-11-13">2026-11-13</time></p>
+<h3 class="blog-feed-title"><a href="technical/ja4-tls-fingerprinting-cloudflare-bypass">解密 JA4 與 TLS 指紋：為什麼換了純淨住宅代理依然被 Cloudflare 識破？</a></h3>
+<p class="blog-feed-desc">深入剖析現代反爬防火牆（Cloudflare、DataDome、Akamai）的協定層審訊機制：詳解從 JA3 到 JA4 的 TLS Client Hello 握手指紋、HTTP/2 訊框特徵，以及如何結合 curl_cffi 與 JoyProxy 住宅代理徹底攻克 403 攔截。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">技術</span> <time datetime="2026-11-12">2026-11-12</time></p>
 <h3 class="blog-feed-title"><a href="technical/sticky-session-technical-architecture">黏性工作階段（Sticky Session）的技術底層：動態住宅代理如何做到 1~1440 分鐘不換 IP？</a></h3>
 <p class="blog-feed-desc">深入剖析動態住宅代理閘道的會話控制機制：從 Session ID 與 sessTime 語法、入口閘道路由雜湊表，到家庭節點偶發離線時的智慧容災轉移（Failover），徹底解密長效黏性會話的技術實現。</p>
