@@ -16,6 +16,7 @@
 * [Residential vs Datacenter Proxies for Web Scraping: When Each Type Wins](technical/residential-vs-datacenter-scraping.md)
 * [HTTP, HTTPS, and SOCKS5: Choosing a Proxy Protocol in Production](technical/http-socks5-proxy-protocols.md)
 ## Use Cases
+* [Reddit and X (Twitter) Shadowbans Explained: How High-Reputation Static ISP Proxies Power Social Media Growth](use-cases/reddit-twitter-shadowban-high-reputation-isp-proxies.md)
 * [TikTok and Social Media Zero-Views and Mass Bans: Why 90% Trace Back to Proxy IP Pollution](use-cases/tiktok-zero-views-ip-pollution.md)
 * [Stripe and PayPal Checkout Risk: Why Proxy-Based Payments See a 40% Decline Rate](use-cases/stripe-paypal-checkout-fraud-prevention.md)
 * [One Static IP Per Social Login: How Agencies Keep Accounts from Sharing Reputation](use-cases/social-media-ip-isolation.md)

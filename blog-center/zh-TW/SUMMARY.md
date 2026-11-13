@@ -16,6 +16,7 @@
 * [住宅代理 vs 資料中心代理：網頁擷取在何時各顯神通？](technical/residential-vs-datacenter-scraping.md)
 * [HTTP、HTTPS 與 SOCKS5：生產環境如何正確選型代理協定](technical/http-socks5-proxy-protocols.md)
 ## 使用場景
+* [Reddit 與 X (Twitter) 帳號秒封、隱形限流？如何用高信譽度靜態 ISP 代理破局海外社群矩陣](use-cases/reddit-twitter-shadowban-high-reputation-isp-proxies.md)
 * [TikTok / 海外社群新號遭遇「0 播放」與批次風控？90% 的死因在代理池的「IP 污染」](use-cases/tiktok-zero-views-ip-pollution.md)
 * [Stripe / PayPal 跨境結帳風控：為什麼你的獨立站代付卡單率高達 40%？](use-cases/stripe-paypal-checkout-fraud-prevention.md)
 * [每個社媒登入一個靜態 IP：代理商如何避免聲譽串連](use-cases/social-media-ip-isolation.md)

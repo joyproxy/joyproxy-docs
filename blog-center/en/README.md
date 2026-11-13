@@ -13,6 +13,11 @@ Guides, use cases, and technical articles for proxy operators.
 <p class="blog-feed-desc">An in-depth technical breakdown of how modern WAFs (Cloudflare, DataDome, Akamai) inspect TLS Client Hello packets (JA3/JA4) and HTTP/2 frames, and how to pair curl_cffi with JoyProxy residential proxies to eliminate 403 blocks.</p>
 </article>
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">Use Cases</span> <time datetime="2026-11-13">2026-11-13</time></p>
+<h3 class="blog-feed-title"><a href="use-cases/reddit-twitter-shadowban-high-reputation-isp-proxies">Reddit and X (Twitter) Shadowbans Explained: How High-Reputation Static ISP Proxies Power Social Media Growth</a></h3>
+<p class="blog-feed-desc">An inside look at Reddit (CQS) and X anti-Sybil fraud engines: why fake residential and shared proxies trigger instant shadowbans, and how JoyProxy high-reputation dedicated static ISP proxies (AT&amp;T/Comcast ASNs) build high-trust accounts.</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">Technical</span> <time datetime="2026-11-12">2026-11-12</time></p>
 <h3 class="blog-feed-title"><a href="technical/sticky-session-technical-architecture">Under the Hood of Sticky Sessions: How Rotating Residential Proxies Keep the Same IP for Up to 1,440 Minutes</a></h3>
 <p class="blog-feed-desc">A deep dive into session control architecture in rotating residential proxy networks: from username syntax and distributed gateway state tables to graceful failover mechanisms during node disconnects.</p>

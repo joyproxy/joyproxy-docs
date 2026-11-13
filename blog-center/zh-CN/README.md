@@ -13,6 +13,11 @@ outline: false
 <p class="blog-feed-desc">深入剖析现代反爬防火墙（Cloudflare、DataDome、Akamai）的协议层审讯机制：详解从 JA3 到 JA4 的 TLS Client Hello 握手指纹、HTTP/2 帧特征，以及如何结合 curl_cffi 与 JoyProxy 住宅代理彻底攻克 403 拦截。</p>
 </article>
 <article class="blog-feed-item">
+<p class="blog-feed-meta"><span class="blog-feed-tag">使用场景</span> <time datetime="2026-11-13">2026-11-13</time></p>
+<h3 class="blog-feed-title"><a href="use-cases/reddit-twitter-shadowban-high-reputation-isp-proxies">Reddit 与 X (Twitter) 账号秒封、隐形限流？如何用高信誉度静态 ISP 代理破局海外社媒矩阵</a></h3>
+<p class="blog-feed-desc">深度拆解 Reddit（CQS 评分）与 X 的反女巫风控底层：详解为什么假住宅与共享节点会导致 Shadowban，以及如何利用 JoyProxy 高信誉度独享静态 ISP 代理（AT&amp;T/Comcast 原生 ASN）打造高权重出海社媒矩阵。</p>
+</article>
+<article class="blog-feed-item">
 <p class="blog-feed-meta"><span class="blog-feed-tag">技术</span> <time datetime="2026-11-12">2026-11-12</time></p>
 <h3 class="blog-feed-title"><a href="technical/sticky-session-technical-architecture">粘性会话（Sticky Session）的技术底层：动态住宅代理如何做到 1~1440 分钟不换 IP？</a></h3>
 <p class="blog-feed-desc">深入剖析动态住宅代理网关的会话控制机制：从 Session ID 与 sessTime 语法、入口网关路由哈希表，到家庭节点偶发下线时的智能容灾转移（Failover），彻底解密长效粘性会话的技术实现。</p>
