@@ -24,6 +24,7 @@
 * [SEO Rank Checks from Multiple Countries (Without Personalized Noise)](use-cases/geo-proxies-seo-monitoring.md)
 * [Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)](use-cases/fixed-ip-ecommerce-operations.md)
 ## Guides
+* [Playwright and Puppeteer Proxy Setup Guide: Anti-Detection, Per-Context Rotation, and 70% Bandwidth Savings (2026)](guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide.md)
 * [Say Goodbye to Access Denied: How to Use Static ISP Proxies for Reliable ChatGPT and Claude Access (Full-Stack Anti-Ban Guide)](guides/how-to-use-isp-proxies-for-chatgpt-claude.md)
 * [Stop Getting 407 Errors: The Practical Guide to JoyProxy Rotating, Mobile, and Business Proxy Extraction](guides/stop-407-rotating-proxy-extraction-guide.md)
 * [Never Mistake Exit IP for Entry Point: Complete Setup Guide for JoyProxy Static ISP & Datacenter Proxies](guides/static-isp-datacenter-proxy-setup-guide.md)

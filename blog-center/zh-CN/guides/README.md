@@ -9,14 +9,19 @@ next: false
 静态 ISP 节点、AI Agent 防封集成、住宅代理提取与成本合规系统指南。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="guides">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/guides" data-topic="all">全部 <span class="blog-topic-count">22</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/guides" data-topic="all">全部 <span class="blog-topic-count">23</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=isp-nodes" data-topic="isp-nodes">静态 ISP 与核心节点 <span class="blog-topic-count">6</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=ai-agents" data-topic="ai-agents">AI Agent 与抓取 API <span class="blog-topic-count">5</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=ai-agents" data-topic="ai-agents">AI Agent 与抓取 API <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=residential-ops" data-topic="residential-ops">住宅提取与实操工具 <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=pricing-compliance" data-topic="pricing-compliance">价格对比与合规预算 <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="guides">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/guides?topic=ai-agents">AI Agent 与抓取 API</a> <time datetime="2026-11-14">2026-11-14</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide">Playwright 与 Puppeteer 代理配置实战：无头浏览器防检测、IP 隔离轮换与省流 70% 技巧（2026）</a></h3>
+<p class="blog-feed-desc">深度解析 Playwright 与 Puppeteer 接入账密代理的常见报错根因，提供 Python/Node.js 单 Context 粘性 IP 隔离代码、WebRTC/时区防泄露加固方案，以及拦截冗余资源节省 70%+ 住宅代理流量的实战指南。</p>
+</article>
 <article class="blog-feed-item" data-topic="isp-nodes">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/guides?topic=isp-nodes">静态 ISP 与核心节点</a> <time datetime="2026-11-07">2026-11-07</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/guides/how-to-use-isp-proxies-for-chatgpt-claude">告别 Access Denied：如何使用静态 ISP 代理稳定解锁 ChatGPT 与 Claude（全链路防封实战）</a></h3>

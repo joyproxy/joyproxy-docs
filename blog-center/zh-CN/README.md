@@ -9,14 +9,19 @@ next: false
 代理运营相关的指南、场景与技术文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">41</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">42</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/getting-started">入门 <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">22</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/guides">指南</a> <a class="blog-feed-subtag" href="/blog/zh-CN/guides?topic=ai-agents">AI Agent 与抓取 API</a> <time datetime="2026-11-14">2026-11-14</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide">Playwright 与 Puppeteer 代理配置实战：无头浏览器防检测、IP 隔离轮换与省流 70% 技巧（2026）</a></h3>
+<p class="blog-feed-desc">深度解析 Playwright 与 Puppeteer 接入账密代理的常见报错根因，提供 Python/Node.js 单 Context 粘性 IP 隔离代码、WebRTC/时区防泄露加固方案，以及拦截冗余资源节省 70%+ 住宅代理流量的实战指南。</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical">技术</a> <a class="blog-feed-subtag" href="/blog/zh-CN/technical?topic=fingerprints-networks">指纹与网络底层</a> <time datetime="2026-11-13">2026-11-13</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/ja4-tls-fingerprinting-cloudflare-bypass">解密 JA4 与 TLS 指纹：为什么换了纯净住宅代理依然被 Cloudflare 识破？</a></h3>

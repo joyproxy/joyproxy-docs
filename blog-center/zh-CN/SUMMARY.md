@@ -24,6 +24,7 @@
 * [多国地理代理进行真实 SEO 排名监控：消除个性化噪音](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境电商为何青睐长期固定 IP（以及轮换代理的隐患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [Playwright 与 Puppeteer 代理配置实战：无头浏览器防检测、IP 隔离轮换与省流 70% 技巧（2026）](guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide.md)
 * [告别 Access Denied：如何使用静态 ISP 代理稳定解锁 ChatGPT 与 Claude（全链路防封实战）](guides/how-to-use-isp-proxies-for-chatgpt-claude.md)
 * [别再被 407 拦住：JoyProxy 住宅、移动、商业代理提取指南](guides/stop-407-rotating-proxy-extraction-guide.md)
 * [别把出口 IP 当入口：JoyProxy 静态 ISP 与数据中心代理配置全解](guides/static-isp-datacenter-proxy-setup-guide.md)

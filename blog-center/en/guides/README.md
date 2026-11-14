@@ -9,14 +9,19 @@ next: false
 In-depth operational playbooks for static ISP nodes, AI agents, residential extraction, and cost optimization.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="guides">
-<a class="blog-topic-chip is-active" href="/blog/guides" data-topic="all">All <span class="blog-topic-count">22</span></a>
+<a class="blog-topic-chip is-active" href="/blog/guides" data-topic="all">All <span class="blog-topic-count">23</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=isp-nodes" data-topic="isp-nodes">Static ISP &amp; Core Nodes <span class="blog-topic-count">6</span></a>
-<a class="blog-topic-chip" href="/blog/guides?topic=ai-agents" data-topic="ai-agents">AI Agents &amp; Scraping <span class="blog-topic-count">5</span></a>
+<a class="blog-topic-chip" href="/blog/guides?topic=ai-agents" data-topic="ai-agents">AI Agents &amp; Scraping <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=residential-ops" data-topic="residential-ops">Residential Ops &amp; Tools <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=pricing-compliance" data-topic="pricing-compliance">Pricing &amp; Compliance <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="guides">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides?topic=ai-agents">AI Agents &amp; Scraping</a> <time datetime="2026-11-14">2026-11-14</time></p>
+<h3 class="blog-feed-title"><a href="/blog/guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide">Playwright and Puppeteer Proxy Setup Guide: Anti-Detection, Per-Context Rotation, and 70% Bandwidth Savings (2026)</a></h3>
+<p class="blog-feed-desc">Learn how to configure authenticated proxies in Playwright and Puppeteer without Chromium auth failures, isolate per-context sticky residential IPs, prevent WebRTC leaks, and cut proxy bandwidth costs by 70%.</p>
+</article>
 <article class="blog-feed-item" data-topic="isp-nodes">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides?topic=isp-nodes">Static ISP &amp; Core Nodes</a> <time datetime="2026-11-07">2026-11-07</time></p>
 <h3 class="blog-feed-title"><a href="/blog/guides/how-to-use-isp-proxies-for-chatgpt-claude">Say Goodbye to Access Denied: How to Use Static ISP Proxies for Reliable ChatGPT and Claude Access (Full-Stack Anti-Ban Guide)</a></h3>

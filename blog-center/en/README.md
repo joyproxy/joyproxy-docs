@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">41</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">42</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">22</span></a>
+<a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides">Guides</a> <a class="blog-feed-subtag" href="/blog/guides?topic=ai-agents">AI Agents &amp; Scraping</a> <time datetime="2026-11-14">2026-11-14</time></p>
+<h3 class="blog-feed-title"><a href="/blog/guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide">Playwright and Puppeteer Proxy Setup Guide: Anti-Detection, Per-Context Rotation, and 70% Bandwidth Savings (2026)</a></h3>
+<p class="blog-feed-desc">Learn how to configure authenticated proxies in Playwright and Puppeteer without Chromium auth failures, isolate per-context sticky residential IPs, prevent WebRTC leaks, and cut proxy bandwidth costs by 70%.</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical">Technical</a> <a class="blog-feed-subtag" href="/blog/technical?topic=fingerprints-networks">Fingerprints &amp; ASNs</a> <time datetime="2026-11-13">2026-11-13</time></p>
 <h3 class="blog-feed-title"><a href="/blog/technical/ja4-tls-fingerprinting-cloudflare-bypass">Demystifying JA4 and TLS Fingerprinting: Why Clean Residential Proxies Still Get Blocked by Cloudflare</a></h3>
