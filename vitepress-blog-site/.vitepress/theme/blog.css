@@ -1,15 +1,63 @@
 .VPHero .text { max-width: 42rem; }
 
+/* ---- Topic filter chips (Home & Category hubs) ---- */
+.blog-topic-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.blog-topic-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.78rem;
+  border-radius: 999px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none !important;
+  transition: border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+}
+
+.blog-topic-chip:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.blog-topic-chip.is-active {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+.blog-topic-count {
+  font-size: 0.72rem;
+  opacity: 0.78;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Article feed cards ---- */
 .blog-feed {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .blog-feed-item {
   padding-bottom: 1.75rem;
   border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.blog-feed-item.is-filtered-out,
+.blog-feed-item[hidden] {
+  display: none !important;
 }
 
 .blog-feed-item:last-child {
@@ -21,8 +69,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.65rem;
-  margin: 0 0 0.35rem;
+  gap: 0.5rem;
+  margin: 0 0 0.4rem;
   font-size: 0.8125rem;
   line-height: 1.4;
   color: var(--vp-c-text-2);
@@ -30,17 +78,38 @@
 
 .blog-feed-meta time {
   font-variant-numeric: tabular-nums;
+  margin-left: 0.15rem;
 }
 
-.blog-feed-tag {
+.blog-feed-tag,
+.blog-feed-subtag {
   display: inline-block;
   padding: 0.12rem 0.55rem;
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.01em;
+  text-decoration: none !important;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.blog-feed-tag {
   color: var(--vp-c-brand-1);
   background: var(--vp-c-brand-soft);
+}
+
+.blog-feed-subtag {
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  font-weight: 500;
+}
+
+.blog-feed-tag:hover,
+.blog-feed-subtag:hover {
+  opacity: 0.85;
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
 }
 
 .blog-feed-title {
@@ -64,4 +133,51 @@
   font-size: 0.9375rem;
   line-height: 1.55;
   color: var(--vp-c-text-2);
+}
+
+/* ---- 2-level Topic Sidebar refinement ---- */
+.VPSidebar .VPSidebarItem.level-0 {
+  padding-bottom: 10px;
+}
+
+.VPSidebar .VPSidebarItem.level-0 > .item > .link > .text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.VPSidebar .VPSidebarItem.level-1 > .item > .link > .text {
+  font-size: 0.84rem;
+  padding: 4px 0;
+  line-height: 1.35;
+}
+
+/* Suppress query-blind VitePress active highlights so only exact topic/category lights up */
+html.jp-sidebar-enhanced .VPSidebar .VPSidebarItem.level-0.is-active > .item > .link > .text,
+html.jp-sidebar-enhanced .VPSidebar .VPSidebarItem.level-0.has-active > .item > .link > .text,
+html.jp-sidebar-enhanced .VPSidebar .VPSidebarItem.level-1.is-active > .item > .link > .text {
+  color: var(--vp-c-text-2);
+  font-weight: 500;
+}
+
+html.jp-sidebar-enhanced .VPSidebar .VPSidebarItem.level-0 > .item > .link > .text {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+}
+
+html.jp-sidebar-enhanced .VPSidebar .VPSidebarItem.is-active > .item > .indicator {
+  background-color: transparent;
+}
+
+html.jp-sidebar-enhanced .VPSidebar .VPSidebarItem.level-0.jp-group-active > .item > .link > .text {
+  color: var(--vp-c-brand-1);
+}
+
+html.jp-sidebar-enhanced .VPSidebar a.VPLink.jp-nav-active > .text {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600 !important;
+}
+
+html.jp-sidebar-enhanced .VPSidebar .item:has(> a.jp-nav-active) > .indicator {
+  background-color: var(--vp-c-brand-1);
 }

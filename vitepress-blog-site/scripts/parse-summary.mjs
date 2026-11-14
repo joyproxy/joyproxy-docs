@@ -1,13 +1,15 @@
 /**
- * Parse blog-center SUMMARY.md into VitePress DefaultTheme sidebar groups.
- * Nested lines use 4 spaces per level (GitBook-style).
+ * Build 2-level Category -> Topic sidebars from blog-topics.json,
+ * keeping article URLs & SUMMARY.md completely decoupled and intact.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(HERE, "..");
 const HC = path.resolve(ROOT, "..", "blog-center");
+const TAXONOMY_PATH = path.join(HERE, "blog-topics.json");
 
 const LINK_RE = /^\s*\*\s+\[([^\]]+)\]\(([^)]+\.md)\)/;
 const SECTION_RE = /^##\s+(.+)$/;
@@ -67,10 +69,8 @@ function insertIntoGroup(group, node, localePrefix) {
   parent.items.push(link);
 }
 
-/** Groups with children are expand/collapse only — never bind a page URL. */
 function normalizeSidebarItem(item) {
   if (!item.items?.length) return item;
-
   item.collapsed = true;
   delete item.link;
   item.items = item.items.map(normalizeSidebarItem);
@@ -111,10 +111,33 @@ export function parseSummaryFile(summaryPath, localePrefix = "") {
   return normalizeSidebarGroups(sidebar);
 }
 
+export function buildTopicSidebar(locale, localePrefix = "") {
+  const taxonomy = JSON.parse(fs.readFileSync(TAXONOMY_PATH, "utf8"));
+  const items = [
+    {
+      text: taxonomy.allLabel[locale] || "All Posts",
+      link: localePrefix ? `${localePrefix}/` : "/",
+    },
+  ];
+  for (const cat of taxonomy.categories) {
+    const catBase = localePrefix ? `${localePrefix}/${cat.id}` : `/${cat.id}`;
+    items.push({
+      text: cat.label[locale] || cat.id,
+      link: catBase,
+      collapsed: false,
+      items: cat.topics.map((topic) => ({
+        text: topic.label[locale] || topic.id,
+        link: `${catBase}?topic=${topic.id}`,
+      })),
+    });
+  }
+  return items;
+}
+
 export function buildSidebars() {
   return {
-    en: parseSummaryFile(path.join(HC, "en", "SUMMARY.md"), ""),
-    "zh-CN": parseSummaryFile(path.join(HC, "zh-CN", "SUMMARY.md"), "/zh-CN"),
-    "zh-TW": parseSummaryFile(path.join(HC, "zh-TW", "SUMMARY.md"), "/zh-TW"),
+    en: buildTopicSidebar("en", ""),
+    "zh-CN": buildTopicSidebar("zh-CN", "/zh-CN"),
+    "zh-TW": buildTopicSidebar("zh-TW", "/zh-TW"),
   };
 }
