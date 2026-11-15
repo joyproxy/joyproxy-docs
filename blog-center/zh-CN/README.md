@@ -9,14 +9,19 @@ next: false
 代理运营相关的指南、场景与技术文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">42</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">43</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/getting-started">入门 <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">6</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="seo-concurrency">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/use-cases">使用场景</a> <a class="blog-feed-subtag" href="/blog/zh-CN/use-cases?topic=seo-concurrency">SEO 与高并发业务</a> <time datetime="2026-11-15">2026-11-15</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/use-cases/ai-rag-serp-crawling-proxy-architecture">AI 搜索（RAG）与高并发 SERP 抓取架构：如何告别 429 限流与验证码死循环？</a></h3>
+<p class="blog-feed-desc">拆解大模型联网检索（RAG）与搜索引擎高并发抓取触发 HTTP 429 和验证码的根本原因，提供 JoyProxy 动态住宅 + 数据中心双层路由与 Web Scraping API 降本稳态架构。</p>
+</article>
 <article class="blog-feed-item" data-topic="ai-agents">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/guides">指南</a> <a class="blog-feed-subtag" href="/blog/zh-CN/guides?topic=ai-agents">AI Agent 与抓取 API</a> <time datetime="2026-11-14">2026-11-14</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide">Playwright 与 Puppeteer 代理配置实战：无头浏览器防检测、IP 隔离轮换与省流 70% 技巧（2026）</a></h3>

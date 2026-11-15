@@ -9,13 +9,18 @@ next: false
 Real-world workflows across social media growth, e-commerce, payment verification, SEO, and ticketing.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="use-cases">
-<a class="blog-topic-chip is-active" href="/blog/use-cases" data-topic="all">All <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip is-active" href="/blog/use-cases" data-topic="all">All <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases?topic=social-anti-ban" data-topic="social-anti-ban">Social &amp; Anti-Ban <span class="blog-topic-count">3</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">E-Commerce &amp; Payments <span class="blog-topic-count">2</span></a>
-<a class="blog-topic-chip" href="/blog/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO &amp; Ticketing <span class="blog-topic-count">2</span></a>
+<a class="blog-topic-chip" href="/blog/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO &amp; Ticketing <span class="blog-topic-count">3</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="use-cases">
+<article class="blog-feed-item" data-topic="seo-concurrency">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases?topic=seo-concurrency">SEO &amp; Ticketing</a> <time datetime="2026-11-15">2026-11-15</time></p>
+<h3 class="blog-feed-title"><a href="/blog/use-cases/ai-rag-serp-crawling-proxy-architecture">AI Search, RAG &amp; High-Concurrency SERP Crawling: Eliminating 429s and CAPTCHA Loops With Hybrid Proxy Pools</a></h3>
+<p class="blog-feed-desc">Why high-concurrency LLM web search (RAG) and SERP pipelines hit HTTP 429 and CAPTCHA walls—and how to build a dual-tier architecture using JoyProxy Rotating Residential, Datacenter Proxies, and Web Scraping API.</p>
+</article>
 <article class="blog-feed-item" data-topic="social-anti-ban">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases?topic=social-anti-ban">Social &amp; Anti-Ban</a> <time datetime="2026-11-13">2026-11-13</time></p>
 <h3 class="blog-feed-title"><a href="/blog/use-cases/reddit-twitter-shadowban-high-reputation-isp-proxies">Reddit and X (Twitter) Shadowbans Explained: How High-Reputation Static ISP Proxies Power Social Media Growth</a></h3>

@@ -9,13 +9,18 @@ next: false
 海外社群養號、跨境電商、支付風控、多區 SEO 監控與高併發業務實戰。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="use-cases">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/use-cases" data-topic="all">全部 <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/use-cases" data-topic="all">全部 <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=social-anti-ban" data-topic="social-anti-ban">社群養號與防封 <span class="blog-topic-count">3</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">電商與支付風控 <span class="blog-topic-count">2</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO 與高併發業務 <span class="blog-topic-count">2</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO 與高併發業務 <span class="blog-topic-count">3</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="use-cases">
+<article class="blog-feed-item" data-topic="seo-concurrency">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases?topic=seo-concurrency">SEO 與高併發業務</a> <time datetime="2026-11-15">2026-11-15</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/ai-rag-serp-crawling-proxy-architecture">AI 搜尋（RAG）與高併發 SERP 擷取架構：如何告別 429 限流與驗證碼死循環？</a></h3>
+<p class="blog-feed-desc">拆解大型語言模型聯網檢索（RAG）與搜尋引擎高併發擷取觸發 HTTP 429 和驗證碼的根本原因，提供 JoyProxy 動態住宅 + 資料中心雙層路由與 Web Scraping API 降本穩態架構。</p>
+</article>
 <article class="blog-feed-item" data-topic="social-anti-ban">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases?topic=social-anti-ban">社群養號與防封</a> <time datetime="2026-11-13">2026-11-13</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/reddit-twitter-shadowban-high-reputation-isp-proxies">Reddit 與 X (Twitter) 帳號秒封、隱形限流？如何用高信譽度靜態 ISP 代理破局海外社群矩陣</a></h3>

@@ -16,6 +16,7 @@
 * [住宅代理 vs 数据中心代理：网页抓取在何时各显神通？](technical/residential-vs-datacenter-scraping.md)
 * [HTTP、HTTPS 与 SOCKS5：生产环境如何正确选型代理协议](technical/http-socks5-proxy-protocols.md)
 ## 使用场景
+* [AI 搜索（RAG）与高并发 SERP 抓取架构：如何告别 429 限流与验证码死循环？](use-cases/ai-rag-serp-crawling-proxy-architecture.md)
 * [Reddit 与 X (Twitter) 账号秒封、隐形限流？如何用高信誉度静态 ISP 代理破局海外社媒矩阵](use-cases/reddit-twitter-shadowban-high-reputation-isp-proxies.md)
 * [TikTok / 海外社媒新号遭遇“0 播放”与批量风控？90% 的死因在代理池的“IP 污染”](use-cases/tiktok-zero-views-ip-pollution.md)
 * [Stripe / PayPal 跨境结账风控：为什么你的独立站代付卡单率高达 40%？](use-cases/stripe-paypal-checkout-fraud-prevention.md)
