@@ -9,12 +9,17 @@ next: false
 Protocol internals, sticky session architecture, TLS/JA4 fingerprinting, and ASN classification.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="technical">
-<a class="blog-topic-chip is-active" href="/blog/technical" data-topic="all">All <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip is-active" href="/blog/technical" data-topic="all">All <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/technical?topic=protocols-sessions" data-topic="protocols-sessions">Protocols &amp; Sessions <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">Fingerprints &amp; ASNs <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip" href="/blog/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">Fingerprints &amp; ASNs <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="technical">
+<article class="blog-feed-item" data-topic="fingerprints-networks">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical?topic=fingerprints-networks">Fingerprints &amp; ASNs</a> <time datetime="2026-11-16">2026-11-16</time></p>
+<h3 class="blog-feed-title"><a href="/blog/technical/dns-webrtc-ipv6-proxy-leaks">DNS Leaks, WebRTC Exposure, and IPv6 Bypass: Why Proxies Leak Your Real IP and How to Build Zero-Leak Architectures</a></h3>
+<p class="blog-feed-desc">A deep technical dissection of the three major proxy blind spots: SOCKS5 local vs remote DNS resolution, WebRTC STUN UDP bypass, and IPv6 Happy Eyeballs fallback. Includes production-ready Python and Playwright configs plus JoyProxy zero-leak selection guidance.</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical?topic=fingerprints-networks">Fingerprints &amp; ASNs</a> <time datetime="2026-11-13">2026-11-13</time></p>
 <h3 class="blog-feed-title"><a href="/blog/technical/ja4-tls-fingerprinting-cloudflare-bypass">Demystifying JA4 and TLS Fingerprinting: Why Clean Residential Proxies Still Get Blocked by Cloudflare</a></h3>

@@ -9,12 +9,17 @@ next: false
 代理协议、粘性会话底层机制、JA4/TLS 指纹与 ASN 网络特征深度解析。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="technical">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/technical" data-topic="all">全部 <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/technical" data-topic="all">全部 <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/technical?topic=protocols-sessions" data-topic="protocols-sessions">协议与会话 <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">指纹与网络底层 <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">指纹与网络底层 <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="technical">
+<article class="blog-feed-item" data-topic="fingerprints-networks">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical?topic=fingerprints-networks">指纹与网络底层</a> <time datetime="2026-11-16">2026-11-16</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/dns-webrtc-ipv6-proxy-leaks">DNS 泄漏、WebRTC 穿透与 IPv6 绕过：为什么配置了代理仍然暴露真实 IP？全链路防泄漏与底层检测架构解析</a></h3>
+<p class="blog-feed-desc">深度解析代理网络的三大陆空泄漏盲区：从 SOCKS5 远程与本地 DNS 解析差异、WebRTC STUN 穿透机制，到 IPv6 双栈回落绕过。提供 Python、Playwright、Puppeteer 生产级防泄漏配置及 JoyProxy 零泄漏架构选型指南。</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical?topic=fingerprints-networks">指纹与网络底层</a> <time datetime="2026-11-13">2026-11-13</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/ja4-tls-fingerprinting-cloudflare-bypass">解密 JA4 与 TLS 指纹：为什么换了纯净住宅代理依然被 Cloudflare 识破？</a></h3>

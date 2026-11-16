@@ -9,14 +9,19 @@ next: false
 代理營運相關的指南、場景與技術文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">43</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">44</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/getting-started">入門 <span class="blog-topic-count">6</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/technical">技術 <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/technical">技術 <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases">使用場景 <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides">指南 <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="fingerprints-networks">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/technical">技術</a> <a class="blog-feed-subtag" href="/blog/zh-TW/technical?topic=fingerprints-networks">指紋與網路底層</a> <time datetime="2026-11-16">2026-11-16</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/technical/dns-webrtc-ipv6-proxy-leaks">DNS 洩漏、WebRTC 穿透與 IPv6 繞過：為什麼配置了代理仍然暴露真實 IP？全鏈路防洩漏與底層檢測架構解析</a></h3>
+<p class="blog-feed-desc">深度解析代理網路的三大陸空洩漏盲區：從 SOCKS5 遠端與本地 DNS 解析差異、WebRTC STUN 穿透機制，到 IPv6 雙棧回落繞過。提供 Python、Playwright、Puppeteer 生產級防洩漏配置及 JoyProxy 零洩漏架構選型指南。</p>
+</article>
 <article class="blog-feed-item" data-topic="seo-concurrency">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases">使用場景</a> <a class="blog-feed-subtag" href="/blog/zh-TW/use-cases?topic=seo-concurrency">SEO 與高併發業務</a> <time datetime="2026-11-15">2026-11-15</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/ai-rag-serp-crawling-proxy-architecture">AI 搜尋（RAG）與高併發 SERP 擷取架構：如何告別 429 限流與驗證碼死循環？</a></h3>
