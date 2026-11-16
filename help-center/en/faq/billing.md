@@ -103,16 +103,28 @@ Sign in and open **Invoices** in the sidebar:
 - **PDFs**: **Download invoice (PDF)** per order (standard reimbursement layout). Select a date range and **Batch download invoices (ZIP)**.
 
 ### Refund policy? Partial use?
-
-1. **7-day window**: within **7 days** of purchase, open **Tickets** if you are not satisfied;
-2. **Amount**:
-   - Unused order: full refund to Balance;
-   - Partial use (some GB or some days on a Static line): unused remainder to Balance after actual usage at the order unit price;
-3. **After 7 days**: no refund;
-4. **How**: **Tickets**, finance category, reason and order ID.
+Eligible orders have a **7-day refund window** subject to the strict rules in our [Terms & Conditions — Refund Policy](https://www.joyproxy.com/terms.html#refund):
+1. **7-day window**: refund requests for eligible orders must be opened within **7 days** of payment; orders older than 7 days are strictly non-refundable.
+2. **General connectivity vs. specific targets**: proxy availability is determined by whether the proxy can normally connect to standard, unrestricted public websites. If general connectivity works normally and only specific target websites, apps, or ports requested by the customer fail to connect, **this is not a service failure and is not eligible for a refund**.
+3. **Non-refundable & non-withdrawable exclusions**:
+   - **1-day orders** (unless due to a verified general network failure);
+   - **USDT (TRC20)** and **UPI** payments (unless due to a verified general network failure);
+   - **Account balance top-ups and orders paid with Balance** (**no cash withdrawal and no refund**);
+   - Claims based on specific target site/network blocks while general connectivity is normal;
+   - Requests past 7 days, accounts terminated for policy violations, or promotional bonus credits.
+4. **Amount calculation for eligible orders**:
+   - **Unused order**: full refund (returned to the original payment method where supported, otherwise to non-withdrawable Balance);
+   - **Partial use**: remaining value (> 0) after deducting consumed usage at your actual paid unit price — **duration-based plans round up to whole days (under 1 day counts as 1 day)**, and **traffic-based plans round up to whole GB (under 1 GB counts as 1 GB)**.
+5. **How to request**: open **Tickets** under the finance category with your reason and order ID (for claimed general network failures, include test logs or error screenshots).
 
 ### Paid, but Balance or the order did not land?
 
 Check PayPal or the card statement first.
 
 - If more than 30 minutes have passed, open **Tickets** with the in-console order ID plus PayPal Capture ID, card transaction ID, or USDT TxID. Support will match and credit.
+
+### How is Rotating Proxy traffic calculated? Are both upload and download billed? Do failed requests cost traffic?
+1. **Total traffic billing (Up + Down)**: Rotating Proxies (Residential, Mobile, Business) are billed on the sum of **upload requests + download responses** routed through the gateway (including HTTP headers and payload bodies).
+2. **Gateway failures are free**: If a connection is rejected at the proxy gateway (such as a 407 authentication failure), no external traffic is consumed, and **zero GB is deducted**.
+3. **Target site responses**: If the gateway successfully contacts the target site, whatever bytes the target returns (even 403, 404, or 500 status pages) consumed real broadband node bandwidth and are billed at actual transfer size.
+4. **Bandwidth saving tip**: Always enable compression in your requests (`Accept-Encoding: gzip, deflate, br`) to reduce response transfer sizes by up to 70%.
