@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">44</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">45</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ecommerce-payments">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases">Use Cases</a> <a class="blog-feed-subtag" href="/blog/use-cases?topic=ecommerce-payments">E-Commerce &amp; Payments</a> <time datetime="2026-11-18">2026-11-18</time></p>
+<h3 class="blog-feed-title"><a href="/blog/use-cases/ecommerce-price-monitoring-anti-bot-architecture">E-Commerce Price Monitoring &amp; Competitor Scraping: Bypassing Amazon, Walmart &amp; Shopify Anti-Bot Defenses (2026)</a></h3>
+<p class="blog-feed-desc">Why e-commerce price scrapers fail with 503 CAPTCHAs, localized ZIP-code pricing drift, and bandwidth blowups. Learn a three-tier proxy routing architecture combining Rotating Residential, 4G/5G Mobile, Datacenter, and Web Scraping API.</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical">Technical</a> <a class="blog-feed-subtag" href="/blog/technical?topic=fingerprints-networks">Fingerprints &amp; ASNs</a> <time datetime="2026-11-16">2026-11-16</time></p>
 <h3 class="blog-feed-title"><a href="/blog/technical/dns-webrtc-ipv6-proxy-leaks">DNS Leaks, WebRTC Exposure, and IPv6 Bypass: Why Proxies Leak Your Real IP and How to Build Zero-Leak Architectures</a></h3>

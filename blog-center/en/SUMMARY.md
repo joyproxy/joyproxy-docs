@@ -17,6 +17,7 @@
 * [Residential vs Datacenter Proxies for Web Scraping: When Each Type Wins](technical/residential-vs-datacenter-scraping.md)
 * [HTTP, HTTPS, and SOCKS5: Choosing a Proxy Protocol in Production](technical/http-socks5-proxy-protocols.md)
 ## Use Cases
+* [E-Commerce Price Monitoring & Competitor Scraping: Bypassing Amazon, Walmart & Shopify Anti-Bot Defenses (2026)](use-cases/ecommerce-price-monitoring-anti-bot-architecture.md)
 * [AI Search, RAG & High-Concurrency SERP Crawling: Eliminating 429s and CAPTCHA Loops With Hybrid Proxy Pools](use-cases/ai-rag-serp-crawling-proxy-architecture.md)
 * [Reddit and X (Twitter) Shadowbans Explained: How High-Reputation Static ISP Proxies Power Social Media Growth](use-cases/reddit-twitter-shadowban-high-reputation-isp-proxies.md)
 * [TikTok and Social Media Zero-Views and Mass Bans: Why 90% Trace Back to Proxy IP Pollution](use-cases/tiktok-zero-views-ip-pollution.md)

@@ -17,6 +17,7 @@
 * [住宅代理 vs 資料中心代理：網頁擷取在何時各顯神通？](technical/residential-vs-datacenter-scraping.md)
 * [HTTP、HTTPS 與 SOCKS5：生產環境如何正確選型代理協定](technical/http-socks5-proxy-protocols.md)
 ## 使用場景
+* [跨境電商價格監控與競品擷取實戰：如何繞過 Amazon、Walmart 與 Shopify 反爬風控（2026）](use-cases/ecommerce-price-monitoring-anti-bot-architecture.md)
 * [AI 搜尋（RAG）與高併發 SERP 擷取架構：如何告別 429 限流與驗證碼死循環？](use-cases/ai-rag-serp-crawling-proxy-architecture.md)
 * [Reddit 與 X (Twitter) 帳號秒封、隱形限流？如何用高信譽度靜態 ISP 代理破局海外社群矩陣](use-cases/reddit-twitter-shadowban-high-reputation-isp-proxies.md)
 * [TikTok / 海外社群新號遭遇「0 播放」與批次風控？90% 的死因在代理池的「IP 污染」](use-cases/tiktok-zero-views-ip-pollution.md)

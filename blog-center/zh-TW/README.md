@@ -9,14 +9,19 @@ next: false
 代理營運相關的指南、場景與技術文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">44</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">45</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/getting-started">入門 <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/technical">技術 <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/use-cases">使用場景 <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/use-cases">使用場景 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides">指南 <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ecommerce-payments">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases">使用場景</a> <a class="blog-feed-subtag" href="/blog/zh-TW/use-cases?topic=ecommerce-payments">電商與支付風控</a> <time datetime="2026-11-18">2026-11-18</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/ecommerce-price-monitoring-anti-bot-architecture">跨境電商價格監控與競品擷取實戰：如何繞過 Amazon、Walmart 與 Shopify 反爬風控（2026）</a></h3>
+<p class="blog-feed-desc">解析電商比價與 MAP 合規監控遭遇 503 驗證碼、郵遞區號區域定價漂移與住宅流量暴漲的根因。提供基於動態住宅、4G/5G 行動、獨享資料中心與網頁擷取 API 的三層混合路由架構。</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/technical">技術</a> <a class="blog-feed-subtag" href="/blog/zh-TW/technical?topic=fingerprints-networks">指紋與網路底層</a> <time datetime="2026-11-16">2026-11-16</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/technical/dns-webrtc-ipv6-proxy-leaks">DNS 洩漏、WebRTC 穿透與 IPv6 繞過：為什麼配置了代理仍然暴露真實 IP？全鏈路防洩漏與底層檢測架構解析</a></h3>

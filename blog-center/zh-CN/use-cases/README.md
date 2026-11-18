@@ -9,13 +9,18 @@ next: false
 海外社媒养号、跨境电商、支付风控、多区 SEO 监控与高并发业务实战。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="use-cases">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/use-cases" data-topic="all">全部 <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/use-cases" data-topic="all">全部 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases?topic=social-anti-ban" data-topic="social-anti-ban">社媒养号与防封 <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">电商与支付风控 <span class="blog-topic-count">2</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">电商与支付风控 <span class="blog-topic-count">3</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO 与高并发业务 <span class="blog-topic-count">3</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="use-cases">
+<article class="blog-feed-item" data-topic="ecommerce-payments">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/use-cases?topic=ecommerce-payments">电商与支付风控</a> <time datetime="2026-11-18">2026-11-18</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/use-cases/ecommerce-price-monitoring-anti-bot-architecture">跨境电商价格监控与竞品抓取实战：如何绕过 Amazon、Walmart 与 Shopify 反爬风控（2026）</a></h3>
+<p class="blog-feed-desc">解析电商比价与 MAP 合规监控遭遇 503 验证码、邮编区域定价漂移与住宅流量暴涨的根因。提供基于动态住宅、4G/5G 移动、独享数据中心与网页抓取 API 的三层混合路由架构。</p>
+</article>
 <article class="blog-feed-item" data-topic="seo-concurrency">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/use-cases?topic=seo-concurrency">SEO 与高并发业务</a> <time datetime="2026-11-15">2026-11-15</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/use-cases/ai-rag-serp-crawling-proxy-architecture">AI 搜索（RAG）与高并发 SERP 抓取架构：如何告别 429 限流与验证码死循环？</a></h3>
