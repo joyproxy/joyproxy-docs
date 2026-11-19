@@ -9,12 +9,17 @@ next: false
 代理选型决策、充值认证与 5 分钟快速接入实战。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="getting-started">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/getting-started" data-topic="all">全部 <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/getting-started" data-topic="all">全部 <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/getting-started?topic=onboarding" data-topic="onboarding">选型与开户 <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/getting-started?topic=integration" data-topic="integration">快速接入 <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/getting-started?topic=integration" data-topic="integration">快速接入 <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="getting-started">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-19">2026-11-19</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/getting-started/proxy-environment-variables-docker-terminal-ai-tools">环境变量配置代理全解：Linux、macOS、Windows、Docker 与 AI 工具中的 HTTP_PROXY / ALL_PROXY / NO_PROXY 实战指南</a></h3>
+<p class="blog-feed-desc">系统讲解终端、Python、Node.js、Git、Docker 与 AI CLI 工具中的 HTTP_PROXY、HTTPS_PROXY、ALL_PROXY 和 NO_PROXY 配置细节，涵盖大小写优先级、socks5h:// 防 DNS 泄漏、密码转义与 JoyProxy 接入实战。</p>
+</article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-09">2026-11-09</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/getting-started/quickstart-proxy-python-nodejs-curl">零基础 5 分钟在 Python、Node.js 与 Curl 中跑通你的首个代理请求</a></h3>

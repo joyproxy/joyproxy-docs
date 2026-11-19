@@ -9,14 +9,19 @@ next: false
 代理營運相關的指南、場景與技術文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">45</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/getting-started">入門 <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">46</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/getting-started">入門 <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/technical">技術 <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases">使用場景 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides">指南 <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/getting-started">入門</a> <a class="blog-feed-subtag" href="/blog/zh-TW/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-19">2026-11-19</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/getting-started/proxy-environment-variables-docker-terminal-ai-tools">環境變數設定代理全解：Linux、macOS、Windows、Docker 與 AI 工具中的 HTTP_PROXY / ALL_PROXY / NO_PROXY 實戰指南</a></h3>
+<p class="blog-feed-desc">系統講解終端機、Python、Node.js、Git、Docker 與 AI CLI 工具中的 HTTP_PROXY、HTTPS_PROXY、ALL_PROXY 和 NO_PROXY 設定細節，涵蓋大小寫優先權、socks5h:// 防 DNS 洩漏、密碼跳脫與 JoyProxy 接入實戰。</p>
+</article>
 <article class="blog-feed-item" data-topic="ecommerce-payments">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases">使用場景</a> <a class="blog-feed-subtag" href="/blog/zh-TW/use-cases?topic=ecommerce-payments">電商與支付風控</a> <time datetime="2026-11-18">2026-11-18</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/ecommerce-price-monitoring-anti-bot-architecture">跨境電商價格監控與競品擷取實戰：如何繞過 Amazon、Walmart 與 Shopify 反爬風控（2026）</a></h3>

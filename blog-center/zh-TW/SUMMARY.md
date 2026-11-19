@@ -2,6 +2,7 @@
 
 * [Home](README.md)
 ## 入門
+* [環境變數設定代理全解：Linux、macOS、Windows、Docker 與 AI 工具中的 HTTP_PROXY / ALL_PROXY / NO_PROXY 實戰指南](getting-started/proxy-environment-variables-docker-terminal-ai-tools.md)
 * [零基礎 5 分鐘在 Python、Node.js 與 Curl 中跑通你的首個代理請求](getting-started/quickstart-proxy-python-nodejs-curl.md)
 * [動態住宅 vs 靜態 ISP vs 獨享機房：3 分鐘測出你的業務最該買哪種代理](getting-started/rotating-residential-vs-static-isp-vs-datacenter.md)
 * [用 USDT（TRC20）為 JoyProxy 餘額儲值：分步指南](getting-started/usdt-trc20-recharge-guide.md)

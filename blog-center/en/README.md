@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">45</span></a>
-<a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">46</span></a>
+<a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started">Getting Started</a> <a class="blog-feed-subtag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-19">2026-11-19</time></p>
+<h3 class="blog-feed-title"><a href="/blog/getting-started/proxy-environment-variables-docker-terminal-ai-tools">Proxy Environment Variables Explained: Configuring HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, and NO_PROXY Across Terminal, Docker, and AI Tools</a></h3>
+<p class="blog-feed-desc">A practical developer guide to HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, and NO_PROXY across Linux, macOS, Windows PowerShell, Git, Docker, Python, Node.js, and AI CLI tools—covering case sensitivity, socks5h:// DNS resolution, URL-encoding, and JoyProxy endpoint setup.</p>
+</article>
 <article class="blog-feed-item" data-topic="ecommerce-payments">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases">Use Cases</a> <a class="blog-feed-subtag" href="/blog/use-cases?topic=ecommerce-payments">E-Commerce &amp; Payments</a> <time datetime="2026-11-18">2026-11-18</time></p>
 <h3 class="blog-feed-title"><a href="/blog/use-cases/ecommerce-price-monitoring-anti-bot-architecture">E-Commerce Price Monitoring &amp; Competitor Scraping: Bypassing Amazon, Walmart &amp; Shopify Anti-Bot Defenses (2026)</a></h3>

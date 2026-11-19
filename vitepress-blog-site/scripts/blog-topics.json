@@ -44,6 +44,7 @@
             "zh-TW": "快速接入"
           },
           "articles": [
+            "getting-started/proxy-environment-variables-docker-terminal-ai-tools",
             "getting-started/quickstart-proxy-python-nodejs-curl",
             "getting-started/whitelist-credentials-setup",
             "getting-started/joyproxy-browser-extension"

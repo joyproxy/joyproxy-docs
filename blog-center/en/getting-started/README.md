@@ -9,12 +9,17 @@ next: false
 Proxy selection frameworks, account billing, and your first working endpoint in minutes.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="getting-started">
-<a class="blog-topic-chip is-active" href="/blog/getting-started" data-topic="all">All <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip is-active" href="/blog/getting-started" data-topic="all">All <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started?topic=onboarding" data-topic="onboarding">Selection &amp; Billing <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/getting-started?topic=integration" data-topic="integration">Quick Integration <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip" href="/blog/getting-started?topic=integration" data-topic="integration">Quick Integration <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="getting-started">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-19">2026-11-19</time></p>
+<h3 class="blog-feed-title"><a href="/blog/getting-started/proxy-environment-variables-docker-terminal-ai-tools">Proxy Environment Variables Explained: Configuring HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, and NO_PROXY Across Terminal, Docker, and AI Tools</a></h3>
+<p class="blog-feed-desc">A practical developer guide to HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, and NO_PROXY across Linux, macOS, Windows PowerShell, Git, Docker, Python, Node.js, and AI CLI tools—covering case sensitivity, socks5h:// DNS resolution, URL-encoding, and JoyProxy endpoint setup.</p>
+</article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-09">2026-11-09</time></p>
 <h3 class="blog-feed-title"><a href="/blog/getting-started/quickstart-proxy-python-nodejs-curl">5-Minute Quickstart: Running Your First Proxy Request in Python, Node.js, and Curl</a></h3>
