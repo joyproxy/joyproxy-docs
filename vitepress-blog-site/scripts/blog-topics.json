@@ -73,6 +73,7 @@
             "zh-TW": "協定與工作階段"
           },
           "articles": [
+            "technical/proxy-connection-pooling-keepalive-timeouts-retries",
             "technical/sticky-session-technical-architecture",
             "technical/proxy-http-status-codes",
             "technical/http-socks5-proxy-protocols"

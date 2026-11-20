@@ -10,6 +10,7 @@
 * [新用戶快速上手：低成本驗證與套餐選型指南](getting-started/five-dollar-credit-onboarding.md)
 * [JoyProxy 白名單、認證帳密與首個代理端點擷取](getting-started/whitelist-credentials-setup.md)
 ## 技術
+* [代理連線池、Keep-Alive 陷阱與逾時重試架構：徹底解決 502、ECONNRESET 與「IP 不切換」故障](technical/proxy-connection-pooling-keepalive-timeouts-retries.md)
 * [DNS 洩漏、WebRTC 穿透與 IPv6 繞過：為什麼配置了代理仍然暴露真實 IP？全鏈路防洩漏與底層檢測架構解析](technical/dns-webrtc-ipv6-proxy-leaks.md)
 * [解密 JA4 與 TLS 指紋：為什麼換了純淨住宅代理依然被 Cloudflare 識破？](technical/ja4-tls-fingerprinting-cloudflare-bypass.md)
 * [黏性工作階段（Sticky Session）的技術底層：動態住宅代理如何做到 1~1440 分鐘不換 IP？](technical/sticky-session-technical-architecture.md)

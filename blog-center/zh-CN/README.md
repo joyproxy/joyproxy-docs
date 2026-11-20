@@ -9,14 +9,19 @@ next: false
 代理运营相关的指南、场景与技术文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">46</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">47</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/getting-started">入门 <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="protocols-sessions">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical">技术</a> <a class="blog-feed-subtag" href="/blog/zh-CN/technical?topic=protocols-sessions">协议与会话</a> <time datetime="2026-11-20">2026-11-20</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/proxy-connection-pooling-keepalive-timeouts-retries">代理连接池、Keep-Alive 陷阱与超时重试架构：彻底解决 502、ECONNRESET 与“IP 不切换”故障</a></h3>
+<p class="blog-feed-desc">深度解析 HTTP CONNECT 隧道复用机制、为什么 Keep-Alive 会导致动态代理“IP 不切换”、Python httpx 与 Node.js undici 在动态与静态代理下的连接池调优，以及 502/ECONNRESET 的四层超时与精准重试架构。</p>
+</article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/getting-started">入门</a> <a class="blog-feed-subtag" href="/blog/zh-CN/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-19">2026-11-19</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/getting-started/proxy-environment-variables-docker-terminal-ai-tools">环境变量配置代理全解：Linux、macOS、Windows、Docker 与 AI 工具中的 HTTP_PROXY / ALL_PROXY / NO_PROXY 实战指南</a></h3>

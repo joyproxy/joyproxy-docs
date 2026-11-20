@@ -10,6 +10,7 @@
 * [New-User Quick Start: Low-Cost Validation and Plan Selection](getting-started/five-dollar-credit-onboarding.md)
 * [JoyProxy Whitelist, Credentials, and Your First Proxy Endpoint](getting-started/whitelist-credentials-setup.md)
 ## Technical
+* [Proxy Connection Pooling, Keep-Alive Traps & Timeout Engineering: Eliminating 502, ECONNRESET, and Stale IP Leaks](technical/proxy-connection-pooling-keepalive-timeouts-retries.md)
 * [DNS Leaks, WebRTC Exposure, and IPv6 Bypass: Why Proxies Leak Your Real IP and How to Build Zero-Leak Architectures](technical/dns-webrtc-ipv6-proxy-leaks.md)
 * [Demystifying JA4 and TLS Fingerprinting: Why Clean Residential Proxies Still Get Blocked by Cloudflare](technical/ja4-tls-fingerprinting-cloudflare-bypass.md)
 * [Under the Hood of Sticky Sessions: How Rotating Residential Proxies Keep the Same IP for Up to 1,440 Minutes](technical/sticky-session-technical-architecture.md)

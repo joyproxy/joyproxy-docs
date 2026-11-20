@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">46</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">47</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">23</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="protocols-sessions">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical">Technical</a> <a class="blog-feed-subtag" href="/blog/technical?topic=protocols-sessions">Protocols &amp; Sessions</a> <time datetime="2026-11-20">2026-11-20</time></p>
+<h3 class="blog-feed-title"><a href="/blog/technical/proxy-connection-pooling-keepalive-timeouts-retries">Proxy Connection Pooling, Keep-Alive Traps &amp; Timeout Engineering: Eliminating 502, ECONNRESET, and Stale IP Leaks</a></h3>
+<p class="blog-feed-desc">Deep technical guide to HTTP CONNECT tunnel reuse, why HTTP keep-alive breaks per-request IP rotation, how to tune Python httpx and Node.js undici connection pools for JoyProxy rotating vs static proxies, and production timeout/retry architectures for 502 and ECONNRESET errors.</p>
+</article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started">Getting Started</a> <a class="blog-feed-subtag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-19">2026-11-19</time></p>
 <h3 class="blog-feed-title"><a href="/blog/getting-started/proxy-environment-variables-docker-terminal-ai-tools">Proxy Environment Variables Explained: Configuring HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, and NO_PROXY Across Terminal, Docker, and AI Tools</a></h3>

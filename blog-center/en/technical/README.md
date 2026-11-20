@@ -9,12 +9,17 @@ next: false
 Protocol internals, sticky session architecture, TLS/JA4 fingerprinting, and ASN classification.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="technical">
-<a class="blog-topic-chip is-active" href="/blog/technical" data-topic="all">All <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/technical?topic=protocols-sessions" data-topic="protocols-sessions">Protocols &amp; Sessions <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip is-active" href="/blog/technical" data-topic="all">All <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip" href="/blog/technical?topic=protocols-sessions" data-topic="protocols-sessions">Protocols &amp; Sessions <span class="blog-topic-count">4</span></a>
 <a class="blog-topic-chip" href="/blog/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">Fingerprints &amp; ASNs <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="technical">
+<article class="blog-feed-item" data-topic="protocols-sessions">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical?topic=protocols-sessions">Protocols &amp; Sessions</a> <time datetime="2026-11-20">2026-11-20</time></p>
+<h3 class="blog-feed-title"><a href="/blog/technical/proxy-connection-pooling-keepalive-timeouts-retries">Proxy Connection Pooling, Keep-Alive Traps &amp; Timeout Engineering: Eliminating 502, ECONNRESET, and Stale IP Leaks</a></h3>
+<p class="blog-feed-desc">Deep technical guide to HTTP CONNECT tunnel reuse, why HTTP keep-alive breaks per-request IP rotation, how to tune Python httpx and Node.js undici connection pools for JoyProxy rotating vs static proxies, and production timeout/retry architectures for 502 and ECONNRESET errors.</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical?topic=fingerprints-networks">Fingerprints &amp; ASNs</a> <time datetime="2026-11-16">2026-11-16</time></p>
 <h3 class="blog-feed-title"><a href="/blog/technical/dns-webrtc-ipv6-proxy-leaks">DNS Leaks, WebRTC Exposure, and IPv6 Bypass: Why Proxies Leak Your Real IP and How to Build Zero-Leak Architectures</a></h3>

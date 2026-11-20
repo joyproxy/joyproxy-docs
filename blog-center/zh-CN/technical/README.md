@@ -9,12 +9,17 @@ next: false
 代理协议、粘性会话底层机制、JA4/TLS 指纹与 ASN 网络特征深度解析。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="technical">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/technical" data-topic="all">全部 <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/technical?topic=protocols-sessions" data-topic="protocols-sessions">协议与会话 <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/technical" data-topic="all">全部 <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/technical?topic=protocols-sessions" data-topic="protocols-sessions">协议与会话 <span class="blog-topic-count">4</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">指纹与网络底层 <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="technical">
+<article class="blog-feed-item" data-topic="protocols-sessions">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical?topic=protocols-sessions">协议与会话</a> <time datetime="2026-11-20">2026-11-20</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/proxy-connection-pooling-keepalive-timeouts-retries">代理连接池、Keep-Alive 陷阱与超时重试架构：彻底解决 502、ECONNRESET 与“IP 不切换”故障</a></h3>
+<p class="blog-feed-desc">深度解析 HTTP CONNECT 隧道复用机制、为什么 Keep-Alive 会导致动态代理“IP 不切换”、Python httpx 与 Node.js undici 在动态与静态代理下的连接池调优，以及 502/ECONNRESET 的四层超时与精准重试架构。</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical?topic=fingerprints-networks">指纹与网络底层</a> <time datetime="2026-11-16">2026-11-16</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/dns-webrtc-ipv6-proxy-leaks">DNS 泄漏、WebRTC 穿透与 IPv6 绕过：为什么配置了代理仍然暴露真实 IP？全链路防泄漏与底层检测架构解析</a></h3>
