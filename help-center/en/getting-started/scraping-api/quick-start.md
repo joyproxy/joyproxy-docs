@@ -12,7 +12,7 @@ This guide walks you through buying Credits, copying your Scraping API Token, te
 1. Log in to the <a href="https://www.joyproxy.com/admin-overview.html" target="_blank" rel="noopener noreferrer">JoyProxy console</a> and open **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase Proxies</a>** in the left menu.
 2. Open the **Web Scraping API** tab.
 3. Choose a preset pack (for example **$5 / 50K credits**) or enter a custom amount (minimum 10K credits).
-4. Choose a payment method: **Balance**, **Credit Card**, **PayPal**, **Apple Pay**, **Google Pay**, **WeChat Pay**, **USDT (TRC20)**, or **UPI**.
+4. Choose a payment method: **Balance**, **Credit Card**, **PayPal**, **Apple Pay**, **Google Pay**, **WeChat Pay**, **Multi-chain Crypto (USDT / USDC / TRX / BNB / ETH / SOL / BTC)**, or **UPI**.
 5. After payment, Credits are added immediately. **They never expire**.
 
 ---

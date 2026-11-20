@@ -11,7 +11,7 @@ Web Scraping API is billed with prepaid credit packs. Credits pay for cloud comp
 3. Choose a pack:
    - **Preset packs**: for example $5 / $20 / $50 / $100.
    - **Custom pack**: enter any credit amount (minimum 10,000 credits).
-4. Complete payment: **Balance**, **Credit Card**, **PayPal**, **Apple Pay**, **Google Pay**, **WeChat Pay**, **USDT (TRC20)**, or **UPI**.
+4. Complete payment: **Balance**, **Credit Card**, **PayPal**, **Apple Pay**, **Google Pay**, **WeChat Pay**, **Multi-chain Crypto (USDT / USDC / TRX / BNB / ETH / SOL / BTC)**, or **UPI**.
 5. **Credit validity**: purchased Credits **never expire**.
 
 ---

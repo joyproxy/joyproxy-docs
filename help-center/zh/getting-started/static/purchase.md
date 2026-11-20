@@ -25,7 +25,7 @@
    - **Apple Pay** / **Google Pay**
    - **微信支付**
    - **UPI**
-   - **USDT（TRC20）**
+   - **多链加密货币（USDT / USDC / TRX / BNB / ETH / SOL / BTC）**
 7. 支付成功后，线路将即时分配开通。
 
 下一步：进入 **<a href="view-lines.md" target="_blank" rel="noopener noreferrer">查看已购线路</a>** 确认已分配的端点。

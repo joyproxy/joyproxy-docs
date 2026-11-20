@@ -27,7 +27,7 @@ On **Support**, click **+ New Ticket** and fill in:
 ### 1. Subject
 Keep the title short, for example:
 - `[Static] Order #1024 exit IP connect timeout`
-- `[Invoices] USDT confirmed on-chain but balance not updated`
+- `[Invoices] Crypto transfer confirmed on-chain but balance not updated`
 - `[Web Scraping API] /v1/fetch returns 502 on a specific target`
 
 ### 2. Priority
@@ -38,7 +38,7 @@ Keep the title short, for example:
 ### 3. Issue Description
 Give enough detail for a fast diagnosis:
 - **Proxy**: product line (Residential Proxies / Static Proxies), auth (User/Pass or IP Whitelist), target host, status or cURL output, and time with timezone.
-- **Billing**: recharge order id, method (PayPal / USDT-TRC20), TXID, or payment time.
+- **Billing**: recharge order id, method (PayPal / Crypto coin & network such as USDT-TRC20, USDT-BSC, USDC-Polygon, SOL), sent amount, TXID, or payment time.
 - **Web Scraping API**: endpoint, parameters, HTTP status, and a snippet of the error body.
 
 ### 4. Attach Image (optional)

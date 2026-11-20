@@ -30,7 +30,7 @@ Custom Proxies are billed by **dedicated port count** and **plan duration**. One
    - **Apple Pay** / **Google Pay**
    - **WeChat Pay**
    - **UPI**
-   - **USDT (TRC20)**
+   - **Multi-chain Crypto (USDT / USDC / TRX / BNB / ETH / SOL / BTC)**
 8. After payment succeeds, the ports are created and appear in your console.
 
 ---

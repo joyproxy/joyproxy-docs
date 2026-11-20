@@ -27,7 +27,7 @@ One account can hold traffic packs for several networks at the same time. Each o
    - **Apple Pay** / **Google Pay**
    - **WeChat Pay**
    - **UPI** (India)
-   - **USDT (TRC20)** (TRON, 1 USDT = $1)
+   - **Multi-chain Crypto** (**USDT / USDC / TRX / BNB / ETH / SOL / BTC** across TRC20, BEP20, Polygon, Arbitrum, Solana, ERC20, and Bitcoin)
 6. After payment succeeds, the pack is activated immediately in the console.
 
 ## After you buy

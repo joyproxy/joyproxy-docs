@@ -25,7 +25,7 @@ Static Proxies are billed by IP line count and plan duration. After checkout, ea
    - **Apple Pay** / **Google Pay**
    - **WeChat Pay**
    - **UPI**
-   - **USDT (TRC20)**
+   - **Multi-chain Crypto (USDT / USDC / TRX / BNB / ETH / SOL / BTC)**
 7. After payment succeeds, the lines are assigned and go live immediately.
 
 Next: open **<a href="view-lines.md" target="_blank" rel="noopener noreferrer">View purchased lines</a>** to confirm the assigned endpoints.

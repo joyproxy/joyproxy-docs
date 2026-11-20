@@ -27,7 +27,7 @@ JoyProxy 提供三种动态代理网络，登录控制台后可在 **<a href="ht
    - **Apple Pay** / **Google Pay**
    - **微信支付**
    - **UPI**（印度本地支付）
-   - **USDT（TRC20）**（波场链数字货币，1 USDT = $1）
+   - **多链加密货币**（支持 **USDT / USDC / TRX / BNB / ETH / SOL / BTC**，涵盖 TRC20、BEP20、Polygon、Arbitrum、Solana、ERC20 与 Bitcoin）
 6. 支付成功后，流量包将立即开通并在控制台中生效。
 
 ## 购买完成后

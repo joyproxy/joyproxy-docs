@@ -10,7 +10,7 @@ The JoyProxy console lists full transaction history and lets you download offici
 2. In the list you can inspect each transaction:
    - **Order ID**
    - **Type**: Purchase, Recharge, Renew, and others.
-   - **Amount and channel**: USD amount and method (Credit Card, PayPal, WeChat Pay, USDT, and others).
+   - **Amount and channel**: USD amount and method (Credit Card, PayPal, WeChat Pay, Crypto such as USDT/USDC, and others).
    - **Time and status**.
 
 ---

@@ -11,7 +11,7 @@
 The top of Overview shows your core balance board:
 
 - **Available Balance**: The USD amount you can spend on proxy plans, dedicated ports, or Web Scraping API Credits. Click the figure to open the ledger.
-- **Recharge Account**: Opens Payment Hub. Supported methods include PayPal, Credit Card, WeChat Pay, UPI, and USDT (TRC20).
+- **Recharge Account**: Opens Payment Hub. Supported methods include PayPal, Credit Card, WeChat Pay, UPI, and Multi-chain Crypto (**USDT / USDC / TRX / BNB / ETH / SOL / BTC** across TRC20, BEP20, Polygon, Arbitrum, Solana, ERC20, and Bitcoin).
 - **Recharge bonus tiers**: Larger single top-ups add extra balance automatically:
   - **$100** in one payment: extra **10%**;
   - **$1,000** in one payment: extra **20%**;

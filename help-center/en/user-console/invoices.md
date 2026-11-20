@@ -16,7 +16,7 @@ Invoices consists of two tabs: **Balance** and **Orders**. Traffic consumption c
 ### 1. Balance
 
 Tracks all credits and debits affecting your wallet balance, including:
-- **Top-ups**: Inbound deposits completed through PayPal, Credit / Debit cards, Apple Pay, Google Pay, WeChat Pay, UPI, or USDT.
+- **Top-ups**: Inbound deposits completed through PayPal, Credit / Debit cards, Apple Pay, Google Pay, WeChat Pay, UPI, or Multi-chain Crypto (USDT, USDC, TRX, BNB, ETH, SOL, BTC).
 - **Balance spend**: Deductions when purchasing proxy packages or renewing plans using account balance.
 - **Adjustments**: Refunds, admin credits / deductions, and recharge bonus credits.
 
@@ -42,6 +42,6 @@ Official PDF invoices with transaction IDs and company letterhead are provided f
 
 ## Frequently asked questions
 
-- **USDT deposit not showing**: If you closed the payment window after transferring funds, open **My Account** → **Profile** and click **Claim USDT** to trigger an on-chain scan.
+- **Crypto deposit not showing**: Multi-chain crypto intents scan automatically within 25 minutes when you send the exact decimals shown. If the sent amount differed or more than 10 minutes passed, submit a Ticket with coin, network, sent amount, and TxID (for legacy TRON child-wallet deposits, open **My Account** → **Profile** and click **Claim USDT** to scan on-chain).
 - **Billing discrepancies**: If you have questions about any charge, note the order ID or timestamp and submit a <a href="tickets.md" target="_blank" rel="noopener noreferrer">Ticket</a> for support.
 - **Company tax invoices**: If you need a formal invoice issued to a specific business name and tax ID, contact us via <a href="live-chat.md" target="_blank" rel="noopener noreferrer">Live Chat</a>.

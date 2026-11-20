@@ -30,7 +30,7 @@
    - **Apple Pay** / **Google Pay**
    - **微信支付**
    - **UPI**
-   - **USDT（TRC20）**
+   - **多链加密货币（USDT / USDC / TRX / BNB / ETH / SOL / BTC）**
 8. 付款成功后，系统会自动创建端口资源并显示在你的控制台中。
 
 ---

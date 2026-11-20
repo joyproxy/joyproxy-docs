@@ -60,7 +60,7 @@ Commercial ISP ASN, separate ladder:
 - **Balance**: preferred. No extra processing fee. One-click checkout.
 - **Credit Card**: Visa, Mastercard, American Express, JCB.
 - **Wallets**: PayPal, Apple Pay, Google Pay.
-- **Crypto**: **USDT (TRON / TRC20 only)** to Balance.
+- **Crypto**: Multi-chain payments supporting **USDT, USDC, TRX, BNB, ETH, SOL, and BTC** across **TRON (TRC20)**, **BSC (BEP20)**, **Polygon**, **Arbitrum One**, **Solana (SPL)**, **Ethereum (ERC20)**, and **Bitcoin (Native SegWit)** for Balance top-ups and direct checkout.
 - **WeChat Pay**.
 - **UPI**: India.
 
@@ -76,15 +76,21 @@ Commercial ISP ASN, separate ladder:
 
    Gift credit lands in Available Balance with the principal after payment.
 
-### USDT (TRC20) recharge? Not credited automatically?
+### Which cryptocurrencies and networks are supported? What if a deposit isn't credited automatically?
 
-1. **Path**: Overview → **Recharge** → USDT (TRC20). The console shows a dedicated address and QR code.
-2. **TRC20 only**: send via TronLink or another TRON wallet/exchange on **TRC20**. Official rate **1 USDT = $1.00 USD**. JoyProxy does not charge a deposit fee (keep a little TRX in the wallet for chain gas). Do **not** use ERC20, BEP20, or other chains — funds cannot be recovered.
-3. **Confirm payment**: keep the recharge window open about 8 seconds, then click **I have paid**. The console scans the chain and credits within about 5 minutes.
-4. **Claim USDT**: if you closed the dialog or the chain is congested for more than 10 minutes:
-   - Open **My Account**;
-   - Use the **Claim USDT** card: amount or TxID, then **Claim**;
-   - Still stuck? Open **Tickets** with the TxID.
+1. **Supported coins and networks** (minimum `$1 USD` equivalent, usable for both Balance top-up and direct order checkout):
+   - **USDT (Tether)**: **TRON (TRC20)**, **BSC (BEP20)**, **Polygon**, **Arbitrum One**, **Solana (SPL)**, **Ethereum (ERC20)**
+   - **USDC (USD Coin)**: **BSC (BEP20)**, **Polygon**, **Arbitrum One**, **Solana (SPL)**, **Ethereum (ERC20)** *(TRC20 is not supported for USDC)*
+   - **TRX**: TRON Network (TRC20)
+   - **BNB**: BSC (BEP20)
+   - **ETH**: Arbitrum One, Ethereum Mainnet (ERC20)
+   - **SOL**: Solana Mainnet
+   - **BTC**: Bitcoin (Native SegWit)
+2. **Match the selected network exactly**: after picking a coin and network, the checkout displays the destination address and QR code. Make sure your wallet or exchange sends on the **exact same network** (e.g., send on BEP20 when BSC is selected). Cross-chain or wrong-network transfers cannot be recovered.
+3. **Send the exact decimal amount shown**: each payment intent assigns a **unique decimal amount** (such as `10.01 USDT` for a `$10.00` order; non-stablecoins lock the live conversion rate) with a **25-minute** timer. Send the **exact decimals without rounding** so the system matches your deposit automatically (the full received amount is credited to your account).
+4. **Auto-detection & troubleshooting**: after sending, click **I Have Paid**. Our scanner checks supported chains every few seconds and credits upon confirmation. If the window was closed, the network is congested, or the sent decimals differed after 10–30 minutes:
+   - For legacy TRON child wallet deposits, open **My Account** → **Profile** and use **Claim USDT** with your amount or TxID;
+   - For any multi-chain crypto deposit or order, open **Tickets** with the **coin, network (e.g. `USDT-BSC`, `USDC-Polygon`, `SOL`), exact sent amount, and transaction hash (TxID)** so support can match and credit it.
 
 ### Does the unit price on an existing order rise when the site reprices?
 
@@ -108,7 +114,7 @@ Eligible orders have a **7-day refund window** subject to the strict rules in ou
 2. **General connectivity vs. specific targets**: proxy availability is determined by whether the proxy can normally connect to standard, unrestricted public websites. If general connectivity works normally and only specific target websites, apps, or ports requested by the customer fail to connect, **this is not a service failure and is not eligible for a refund**.
 3. **Non-refundable & non-withdrawable exclusions**:
    - **1-day orders** (unless due to a verified general network failure);
-   - **USDT (TRC20)** and **UPI** payments (unless due to a verified general network failure);
+   - **Crypto (all chains: USDT, USDC, TRX, BNB, ETH, SOL, BTC)** and **UPI** payments (unless due to a verified general network failure);
    - **Account balance top-ups and orders paid with Balance** (**no cash withdrawal and no refund**);
    - Claims based on specific target site/network blocks while general connectivity is normal;
    - Requests past 7 days, accounts terminated for policy violations, or promotional bonus credits.
@@ -121,7 +127,7 @@ Eligible orders have a **7-day refund window** subject to the strict rules in ou
 
 Check PayPal or the card statement first.
 
-- If more than 30 minutes have passed, open **Tickets** with the in-console order ID plus PayPal Capture ID, card transaction ID, or USDT TxID. Support will match and credit.
+- If more than 30 minutes have passed, open **Tickets** with the in-console order ID plus PayPal Capture ID, card transaction ID, or Crypto TxID (with coin & network). Support will match and credit.
 
 ### How is Rotating Proxy traffic calculated? Are both upload and download billed? Do failed requests cost traffic?
 1. **Total traffic billing (Up + Down)**: Rotating Proxies (Residential, Mobile, Business) are billed on the sum of **upload requests + download responses** routed through the gateway (including HTTP headers and payload bodies).
