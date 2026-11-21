@@ -186,6 +186,7 @@
             "zh-TW": "AI Agent 與擷取 API"
           },
           "articles": [
+            "guides/n8n-dify-langchain-proxy-scraping-api-guide",
             "guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide",
             "guides/tavily-firecrawl-alternatives-web-scraping-apis",
             "guides/browser-use-agent-anti-ban-guide",

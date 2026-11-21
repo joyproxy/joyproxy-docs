@@ -9,14 +9,19 @@ next: false
 靜態 ISP 節點、AI Agent 防封整合、住宅代理擷取與成本合規系統指南。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="guides">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/guides" data-topic="all">全部 <span class="blog-topic-count">23</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/guides" data-topic="all">全部 <span class="blog-topic-count">24</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=isp-nodes" data-topic="isp-nodes">靜態 ISP 與核心節點 <span class="blog-topic-count">6</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=ai-agents" data-topic="ai-agents">AI Agent 與擷取 API <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=ai-agents" data-topic="ai-agents">AI Agent 與擷取 API <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=residential-ops" data-topic="residential-ops">住宅擷取與實操工具 <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=pricing-compliance" data-topic="pricing-compliance">價格對比與合規預算 <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="guides">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/guides?topic=ai-agents">AI Agent 與擷取 API</a> <time datetime="2026-11-21">2026-11-21</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/guides/n8n-dify-langchain-proxy-scraping-api-guide">n8n、Dify 與 LangChain 代理及擷取 API 設定實戰：徹底解決 AI 工作流 403/429 攔截（2026）</a></h3>
+<p class="blog-feed-desc">解決 n8n HTTP Request 節點、Dify 工作流與 LangChain WebBaseLoader 在雲端伺服器上頻繁遭遇 403 Forbidden、429 限流與 SPA 空殼頁面的問題，詳解 JoyProxy Web Scraping API、動態住宅與靜態 ISP 代理的生產級接入方案。</p>
+</article>
 <article class="blog-feed-item" data-topic="ai-agents">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/guides?topic=ai-agents">AI Agent 與擷取 API</a> <time datetime="2026-11-14">2026-11-14</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide">Playwright 與 Puppeteer 代理配置實戰：無頭瀏覽器防檢測、IP 隔離輪換與省流 70% 技巧（2026）</a></h3>

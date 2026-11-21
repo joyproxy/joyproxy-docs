@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">47</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">48</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">9</span></a>
-<a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">23</span></a>
+<a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">24</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides">Guides</a> <a class="blog-feed-subtag" href="/blog/guides?topic=ai-agents">AI Agents &amp; Scraping</a> <time datetime="2026-11-21">2026-11-21</time></p>
+<h3 class="blog-feed-title"><a href="/blog/guides/n8n-dify-langchain-proxy-scraping-api-guide">n8n, Dify, and LangChain Proxy Integration Guide: Fixing 403/429 Blocks in AI Workflows (2026)</a></h3>
+<p class="blog-feed-desc">Stop n8n HTTP Request nodes, Dify knowledge workflows, and LangChain WebBaseLoader tools from failing with 403 Forbidden, 429 rate limits, or empty SPA shells. Production architectures using JoyProxy Web Scraping API, Rotating Residential, and Static ISP proxies.</p>
+</article>
 <article class="blog-feed-item" data-topic="protocols-sessions">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical">Technical</a> <a class="blog-feed-subtag" href="/blog/technical?topic=protocols-sessions">Protocols &amp; Sessions</a> <time datetime="2026-11-20">2026-11-20</time></p>
 <h3 class="blog-feed-title"><a href="/blog/technical/proxy-connection-pooling-keepalive-timeouts-retries">Proxy Connection Pooling, Keep-Alive Traps &amp; Timeout Engineering: Eliminating 502, ECONNRESET, and Stale IP Leaks</a></h3>

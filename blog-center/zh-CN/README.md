@@ -9,14 +9,19 @@ next: false
 代理运营相关的指南、场景与技术文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">47</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">48</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/getting-started">入门 <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">9</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">23</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">24</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/guides">指南</a> <a class="blog-feed-subtag" href="/blog/zh-CN/guides?topic=ai-agents">AI Agent 与抓取 API</a> <time datetime="2026-11-21">2026-11-21</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/guides/n8n-dify-langchain-proxy-scraping-api-guide">n8n、Dify 与 LangChain 代理及抓取 API 配置实战：彻底解决 AI 工作流 403/429 拦截（2026）</a></h3>
+<p class="blog-feed-desc">解决 n8n HTTP Request 节点、Dify 工作流与 LangChain WebBaseLoader 在云服务器上频繁遭遇 403 Forbidden、429 限流与 SPA 空壳页面的问题，详解 JoyProxy Web Scraping API、动态住宅与静态 ISP 代理的生产级接入方案。</p>
+</article>
 <article class="blog-feed-item" data-topic="protocols-sessions">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical">技术</a> <a class="blog-feed-subtag" href="/blog/zh-CN/technical?topic=protocols-sessions">协议与会话</a> <time datetime="2026-11-20">2026-11-20</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/proxy-connection-pooling-keepalive-timeouts-retries">代理连接池、Keep-Alive 陷阱与超时重试架构：彻底解决 502、ECONNRESET 与“IP 不切换”故障</a></h3>

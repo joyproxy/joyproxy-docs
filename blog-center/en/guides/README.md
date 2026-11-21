@@ -9,14 +9,19 @@ next: false
 In-depth operational playbooks for static ISP nodes, AI agents, residential extraction, and cost optimization.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="guides">
-<a class="blog-topic-chip is-active" href="/blog/guides" data-topic="all">All <span class="blog-topic-count">23</span></a>
+<a class="blog-topic-chip is-active" href="/blog/guides" data-topic="all">All <span class="blog-topic-count">24</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=isp-nodes" data-topic="isp-nodes">Static ISP &amp; Core Nodes <span class="blog-topic-count">6</span></a>
-<a class="blog-topic-chip" href="/blog/guides?topic=ai-agents" data-topic="ai-agents">AI Agents &amp; Scraping <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip" href="/blog/guides?topic=ai-agents" data-topic="ai-agents">AI Agents &amp; Scraping <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=residential-ops" data-topic="residential-ops">Residential Ops &amp; Tools <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=pricing-compliance" data-topic="pricing-compliance">Pricing &amp; Compliance <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="guides">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides?topic=ai-agents">AI Agents &amp; Scraping</a> <time datetime="2026-11-21">2026-11-21</time></p>
+<h3 class="blog-feed-title"><a href="/blog/guides/n8n-dify-langchain-proxy-scraping-api-guide">n8n, Dify, and LangChain Proxy Integration Guide: Fixing 403/429 Blocks in AI Workflows (2026)</a></h3>
+<p class="blog-feed-desc">Stop n8n HTTP Request nodes, Dify knowledge workflows, and LangChain WebBaseLoader tools from failing with 403 Forbidden, 429 rate limits, or empty SPA shells. Production architectures using JoyProxy Web Scraping API, Rotating Residential, and Static ISP proxies.</p>
+</article>
 <article class="blog-feed-item" data-topic="ai-agents">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides?topic=ai-agents">AI Agents &amp; Scraping</a> <time datetime="2026-11-14">2026-11-14</time></p>
 <h3 class="blog-feed-title"><a href="/blog/guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide">Playwright and Puppeteer Proxy Setup Guide: Anti-Detection, Per-Context Rotation, and 70% Bandwidth Savings (2026)</a></h3>
