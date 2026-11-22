@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">48</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">49</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">8</span></a>
-<a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">9</span></a>
+<a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">24</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="seo-concurrency">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases">Use Cases</a> <a class="blog-feed-subtag" href="/blog/use-cases?topic=seo-concurrency">SEO &amp; Ticketing</a> <time datetime="2026-11-22">2026-11-22</time></p>
+<h3 class="blog-feed-title"><a href="/blog/use-cases/ad-verification-cloaking-detection-proxy-architecture">Ad Verification, Cloaking Detection &amp; Brand Protection: Multi-Geo Residential and 4G/5G Mobile Proxy Architecture (2026)</a></h3>
+<p class="blog-feed-desc">Why ad verification crawlers miss geo-fenced cloaking, affiliate hijacking, and mobile carrier redirects when run from cloud IPs. Build an accurate auditing pipeline using JoyProxy Rotating Residential, 4G/5G Mobile, Business, and Web Scraping API.</p>
+</article>
 <article class="blog-feed-item" data-topic="ai-agents">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides">Guides</a> <a class="blog-feed-subtag" href="/blog/guides?topic=ai-agents">AI Agents &amp; Scraping</a> <time datetime="2026-11-21">2026-11-21</time></p>
 <h3 class="blog-feed-title"><a href="/blog/guides/n8n-dify-langchain-proxy-scraping-api-guide">n8n, Dify, and LangChain Proxy Integration Guide: Fixing 403/429 Blocks in AI Workflows (2026)</a></h3>

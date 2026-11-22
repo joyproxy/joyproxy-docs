@@ -9,13 +9,18 @@ next: false
 海外社群養號、跨境電商、支付風控、多區 SEO 監控與高併發業務實戰。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="use-cases">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/use-cases" data-topic="all">全部 <span class="blog-topic-count">9</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/use-cases" data-topic="all">全部 <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=social-anti-ban" data-topic="social-anti-ban">社群養號與防封 <span class="blog-topic-count">3</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">電商與支付風控 <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO 與高併發業務 <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO 與高併發業務 <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="use-cases">
+<article class="blog-feed-item" data-topic="seo-concurrency">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases?topic=seo-concurrency">SEO 與高併發業務</a> <time datetime="2026-11-22">2026-11-22</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/ad-verification-cloaking-detection-proxy-architecture">廣告驗證、惡意偽裝（Cloaking）偵測與品牌保護：多地區住宅與 4G/5G 行動代理架構實戰（2026）</a></h3>
+<p class="blog-feed-desc">解析廣告合規巡檢與聯盟劫持監測在機房 IP 下漏報的底層原因。結合 JoyProxy 動態住宅、4G/5G 行動代理、商業代理與網頁擷取 API，建構真實還原桌面與行動端廣告落地頁的全鏈路稽核系統。</p>
+</article>
 <article class="blog-feed-item" data-topic="ecommerce-payments">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases?topic=ecommerce-payments">電商與支付風控</a> <time datetime="2026-11-18">2026-11-18</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/ecommerce-price-monitoring-anti-bot-architecture">跨境電商價格監控與競品擷取實戰：如何繞過 Amazon、Walmart 與 Shopify 反爬風控（2026）</a></h3>

@@ -9,13 +9,18 @@ next: false
 Real-world workflows across social media growth, e-commerce, payment verification, SEO, and ticketing.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="use-cases">
-<a class="blog-topic-chip is-active" href="/blog/use-cases" data-topic="all">All <span class="blog-topic-count">9</span></a>
+<a class="blog-topic-chip is-active" href="/blog/use-cases" data-topic="all">All <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases?topic=social-anti-ban" data-topic="social-anti-ban">Social &amp; Anti-Ban <span class="blog-topic-count">3</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">E-Commerce &amp; Payments <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO &amp; Ticketing <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip" href="/blog/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO &amp; Ticketing <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="use-cases">
+<article class="blog-feed-item" data-topic="seo-concurrency">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases?topic=seo-concurrency">SEO &amp; Ticketing</a> <time datetime="2026-11-22">2026-11-22</time></p>
+<h3 class="blog-feed-title"><a href="/blog/use-cases/ad-verification-cloaking-detection-proxy-architecture">Ad Verification, Cloaking Detection &amp; Brand Protection: Multi-Geo Residential and 4G/5G Mobile Proxy Architecture (2026)</a></h3>
+<p class="blog-feed-desc">Why ad verification crawlers miss geo-fenced cloaking, affiliate hijacking, and mobile carrier redirects when run from cloud IPs. Build an accurate auditing pipeline using JoyProxy Rotating Residential, 4G/5G Mobile, Business, and Web Scraping API.</p>
+</article>
 <article class="blog-feed-item" data-topic="ecommerce-payments">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases?topic=ecommerce-payments">E-Commerce &amp; Payments</a> <time datetime="2026-11-18">2026-11-18</time></p>
 <h3 class="blog-feed-title"><a href="/blog/use-cases/ecommerce-price-monitoring-anti-bot-architecture">E-Commerce Price Monitoring &amp; Competitor Scraping: Bypassing Amazon, Walmart &amp; Shopify Anti-Bot Defenses (2026)</a></h3>

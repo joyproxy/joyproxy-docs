@@ -9,14 +9,19 @@ next: false
 代理營運相關的指南、場景與技術文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">48</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">49</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/getting-started">入門 <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/technical">技術 <span class="blog-topic-count">8</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/use-cases">使用場景 <span class="blog-topic-count">9</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/use-cases">使用場景 <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides">指南 <span class="blog-topic-count">24</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="seo-concurrency">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases">使用場景</a> <a class="blog-feed-subtag" href="/blog/zh-TW/use-cases?topic=seo-concurrency">SEO 與高併發業務</a> <time datetime="2026-11-22">2026-11-22</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/ad-verification-cloaking-detection-proxy-architecture">廣告驗證、惡意偽裝（Cloaking）偵測與品牌保護：多地區住宅與 4G/5G 行動代理架構實戰（2026）</a></h3>
+<p class="blog-feed-desc">解析廣告合規巡檢與聯盟劫持監測在機房 IP 下漏報的底層原因。結合 JoyProxy 動態住宅、4G/5G 行動代理、商業代理與網頁擷取 API，建構真實還原桌面與行動端廣告落地頁的全鏈路稽核系統。</p>
+</article>
 <article class="blog-feed-item" data-topic="ai-agents">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/guides">指南</a> <a class="blog-feed-subtag" href="/blog/zh-TW/guides?topic=ai-agents">AI Agent 與擷取 API</a> <time datetime="2026-11-21">2026-11-21</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/guides/n8n-dify-langchain-proxy-scraping-api-guide">n8n、Dify 與 LangChain 代理及擷取 API 設定實戰：徹底解決 AI 工作流 403/429 攔截（2026）</a></h3>

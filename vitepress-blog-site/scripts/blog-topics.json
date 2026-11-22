@@ -142,6 +142,7 @@
             "zh-TW": "SEO 與高併發業務"
           },
           "articles": [
+            "use-cases/ad-verification-cloaking-detection-proxy-architecture",
             "use-cases/ai-rag-serp-crawling-proxy-architecture",
             "use-cases/geo-proxies-seo-monitoring",
             "use-cases/irctc-static-residential-proxies"
