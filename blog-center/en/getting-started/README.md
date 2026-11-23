@@ -9,12 +9,17 @@ next: false
 Proxy selection frameworks, account billing, and your first working endpoint in minutes.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="getting-started">
-<a class="blog-topic-chip is-active" href="/blog/getting-started" data-topic="all">All <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip is-active" href="/blog/getting-started" data-topic="all">All <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started?topic=onboarding" data-topic="onboarding">Selection &amp; Billing <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/getting-started?topic=integration" data-topic="integration">Quick Integration <span class="blog-topic-count">4</span></a>
+<a class="blog-topic-chip" href="/blog/getting-started?topic=integration" data-topic="integration">Quick Integration <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="getting-started">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-23">2026-11-23</time></p>
+<h3 class="blog-feed-title"><a href="/blog/getting-started/proxy-geo-targeting-country-city-asn-setup">Proxy Geo-Targeting Quickstart: Country, State, City, and Carrier ASN Setup Without Geo-Mismatch Blocks</a></h3>
+<p class="blog-feed-desc">Learn how to configure country, state, city, and carrier ASN proxy geo-targeting in JoyProxy, align Accept-Language, timezone, and remote DNS (socks5h://), and avoid GeoIP mismatch blocks across Curl, Python, and Node.js.</p>
+</article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-19">2026-11-19</time></p>
 <h3 class="blog-feed-title"><a href="/blog/getting-started/proxy-environment-variables-docker-terminal-ai-tools">Proxy Environment Variables Explained: Configuring HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, and NO_PROXY Across Terminal, Docker, and AI Tools</a></h3>

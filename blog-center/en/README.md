@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">49</span></a>
-<a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">50</span></a>
+<a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">24</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started">Getting Started</a> <a class="blog-feed-subtag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-23">2026-11-23</time></p>
+<h3 class="blog-feed-title"><a href="/blog/getting-started/proxy-geo-targeting-country-city-asn-setup">Proxy Geo-Targeting Quickstart: Country, State, City, and Carrier ASN Setup Without Geo-Mismatch Blocks</a></h3>
+<p class="blog-feed-desc">Learn how to configure country, state, city, and carrier ASN proxy geo-targeting in JoyProxy, align Accept-Language, timezone, and remote DNS (socks5h://), and avoid GeoIP mismatch blocks across Curl, Python, and Node.js.</p>
+</article>
 <article class="blog-feed-item" data-topic="seo-concurrency">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases">Use Cases</a> <a class="blog-feed-subtag" href="/blog/use-cases?topic=seo-concurrency">SEO &amp; Ticketing</a> <time datetime="2026-11-22">2026-11-22</time></p>
 <h3 class="blog-feed-title"><a href="/blog/use-cases/ad-verification-cloaking-detection-proxy-architecture">Ad Verification, Cloaking Detection &amp; Brand Protection: Multi-Geo Residential and 4G/5G Mobile Proxy Architecture (2026)</a></h3>

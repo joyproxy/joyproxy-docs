@@ -9,14 +9,19 @@ next: false
 代理运营相关的指南、场景与技术文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">49</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/getting-started">入门 <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">50</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/getting-started">入门 <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">24</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/getting-started">入门</a> <a class="blog-feed-subtag" href="/blog/zh-CN/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-23">2026-11-23</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/getting-started/proxy-geo-targeting-country-city-asn-setup">代理地理定位实战入门：国家、州省、城市与运营商 ASN 精准选型及防地域穿帮指南</a></h3>
+<p class="blog-feed-desc">手把手教你配置 JoyProxy 国家、州省、城市与运营商 ASN 代理地理定位，统一 Accept-Language、时区与 socks5h:// 远端 DNS 解析，并附 Curl、Python 与 Node.js 验证代码，彻底避免 GeoIP 穿帮风控。</p>
+</article>
 <article class="blog-feed-item" data-topic="seo-concurrency">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/use-cases">使用场景</a> <a class="blog-feed-subtag" href="/blog/zh-CN/use-cases?topic=seo-concurrency">SEO 与高并发业务</a> <time datetime="2026-11-22">2026-11-22</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/use-cases/ad-verification-cloaking-detection-proxy-architecture">广告验证、恶意伪装（Cloaking）检测与品牌保护：多地区住宅与 4G/5G 移动代理架构实战（2026）</a></h3>

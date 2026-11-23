@@ -2,6 +2,7 @@
 
 * [Home](README.md)
 ## 入门
+* [代理地理定位实战入门：国家、州省、城市与运营商 ASN 精准选型及防地域穿帮指南](getting-started/proxy-geo-targeting-country-city-asn-setup.md)
 * [环境变量配置代理全解：Linux、macOS、Windows、Docker 与 AI 工具中的 HTTP_PROXY / ALL_PROXY / NO_PROXY 实战指南](getting-started/proxy-environment-variables-docker-terminal-ai-tools.md)
 * [零基础 5 分钟在 Python、Node.js 与 Curl 中跑通你的首个代理请求](getting-started/quickstart-proxy-python-nodejs-curl.md)
 * [动态住宅 vs 静态 ISP vs 独享机房：3 分钟测出你的业务最该买哪种代理](getting-started/rotating-residential-vs-static-isp-vs-datacenter.md)

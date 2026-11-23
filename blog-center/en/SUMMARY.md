@@ -2,6 +2,7 @@
 
 * [Home](README.md)
 ## Getting Started
+* [Proxy Geo-Targeting Quickstart: Country, State, City, and Carrier ASN Setup Without Geo-Mismatch Blocks](getting-started/proxy-geo-targeting-country-city-asn-setup.md)
 * [Proxy Environment Variables Explained: Configuring HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, and NO_PROXY Across Terminal, Docker, and AI Tools](getting-started/proxy-environment-variables-docker-terminal-ai-tools.md)
 * [5-Minute Quickstart: Running Your First Proxy Request in Python, Node.js, and Curl](getting-started/quickstart-proxy-python-nodejs-curl.md)
 * [Rotating Residential vs Static ISP vs Datacenter Proxies: The 3-Minute Decision Framework](getting-started/rotating-residential-vs-static-isp-vs-datacenter.md)
