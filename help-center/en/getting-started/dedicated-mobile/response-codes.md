@@ -2,7 +2,7 @@
 
 | Symptom / Status Code | Likely Cause | Resolution |
 | :--- | :--- | :--- |
-| **`407 Proxy Authentication Required`** | Incorrect username/password or trailing spaces | Re-copy credentials from **My Dedicated Mobile Proxies**; credentials are case-sensitive |
+| **`407 Proxy Authentication Required`** | Incorrect username/password or trailing spaces | Re-copy credentials from **My Proxies**; credentials are case-sensitive |
 | **Timeout / `502` / `504`** | On-demand IP switch in progress (5–15s) or wrong protocol port | Wait 15 seconds and retry; verify HTTP port vs SOCKS5 port |
 | **Switch API `429`** | 45-second cooldown between switches | Wait at least 45 seconds before triggering another IP switch |
 | **Status `Expired`** | Rental term has ended | Check expiry timestamp in console and place a new order or renew in advance |

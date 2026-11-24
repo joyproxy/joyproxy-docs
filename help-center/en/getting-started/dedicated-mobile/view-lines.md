@@ -1,6 +1,6 @@
 # View Purchased Ports
 
-Open **Dedicated Mobile → My Dedicated Mobile Proxies** (`/admin-proxy-mobile-dedicated.html?tab=orders`) to monitor and manage all ports in one dashboard.
+Open **Dedicated 4G/5G → My Proxies** (`/admin-proxy-mobile-dedicated.html?tab=orders`) to monitor and manage all ports in one dashboard.
 
 ## Status Summary Bar
 

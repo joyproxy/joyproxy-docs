@@ -69,7 +69,7 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 | 需要每隔 1 - 30 分钟更换一次 IP | [动态代理 · 快速开始](getting-started/rotating/quick-start.md) |
 | 需要同时发起 200 次请求，并使用不同的 IP | [动态代理 · 快速开始](getting-started/rotating/quick-start.md) |
 | 需要长期固定某个地区的代理 IP | [静态独享 · 快速开始](getting-started/static/quick-start.md) |
-| 需要真机 4G/5G 独享静态移动 IP（无限流量、高防封、按需换 IP） | [独享移动代理](getting-started/dedicated-mobile/) |
+| 需要真机 4G/5G 独享静态移动 IP（无限流量、高防封、按需换 IP） | [真机独享 4G/5G 代理](getting-started/dedicated-mobile/) |
 | 需要长期固定某个地区的代理 IP + 自定义频率轮换 | [自定义独享 · 快速开始](getting-started/custom/quick-start.md) |
 | 需要长期固定某个地区的代理 IP + 随时切换地区 | [自定义独享 · 快速开始](getting-started/custom/quick-start.md) |
 | 需要直接传入 URL 返回数据 | [网页抓取 API · 快速开始](getting-started/scraping-api/quick-start.md) |

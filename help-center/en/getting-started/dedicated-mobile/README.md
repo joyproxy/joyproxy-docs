@@ -1,6 +1,6 @@
-# Dedicated Mobile Proxies
+# Dedicated 4G/5G Mobile Proxies
 
-**Dedicated Mobile Proxies** are powered by real physical 4G/5G smartphone SIM card slots on genuine carrier networks. Each port is **100% exclusive** to your account with **unlimited bandwidth (∞)** and direct **HTTP/HTTPS & SOCKS5** support.
+**Dedicated 4G/5G Mobile Proxies** are powered by real physical 4G/5G smartphone SIM card slots on genuine carrier networks. Each port is **100% exclusive** to your account with **unlimited bandwidth (∞)** and direct **HTTP/HTTPS & SOCKS5** support.
 
 Backed by carrier-grade NAT (**CGNAT**) trust, real mobile IPs carry the highest anti-ban reputation online. Your connection stays static and stable by default, and you can switch to a fresh carrier IP on demand whenever your workflow requires it.
 

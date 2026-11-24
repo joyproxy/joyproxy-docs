@@ -1,6 +1,6 @@
 # Restricted Targets
 
-To maintain carrier compliance and network integrity, Dedicated Mobile Proxies must not be used for:
+To maintain carrier compliance and network integrity, Dedicated 4G/5G Mobile Proxies must not be used for:
 
 - Illegal activity under applicable laws (fraud, unauthorized access, phishing, malware, carding);
 - Bulk spam email (SMTP ports 25/465/587 are blocked), DDoS attacks, port scanning, or credential stuffing;

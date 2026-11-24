@@ -1,10 +1,10 @@
 # Authentication and Formats
 
-Dedicated Mobile Proxies use **per-port Username / Password authentication**. No IP whitelisting is required, so you can connect seamlessly from office networks, home broadband, cloud servers, or mobile devices.
+Dedicated 4G/5G Mobile Proxies use **per-port Username / Password authentication**. No IP whitelisting is required, so you can connect seamlessly from office networks, home broadband, cloud servers, or mobile devices.
 
 ## Credential Fields
 
-Every active port under **My Dedicated Mobile Proxies** provides:
+Every active port under **My Proxies** provides:
 - **Host**: Fixed proxy server address
 - **HTTP Port**: Endpoint for HTTP/HTTPS traffic
 - **SOCKS5 Port**: Endpoint for SOCKS5 traffic

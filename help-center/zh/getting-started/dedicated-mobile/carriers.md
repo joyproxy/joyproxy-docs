@@ -1,6 +1,6 @@
 # 国家与运营商选型
 
-JoyProxy 独享移动代理覆盖 **17 个国家、31 个主流 4G/5G 运营商**，全部为真实物理 SIM 线路且无限流量。您无需登录即可在 [独享移动代理产品页](https://www.joyproxy.com/zh-CN/products/proxy-mobile-dedicated.html) 或 [定价页](https://www.joyproxy.com/zh-CN/pricing.html?network_type=mobile-dedicated) 查看实时价格。
+JoyProxy 真机独享 4G/5G 代理覆盖 **17 个国家、31 个主流 4G/5G 运营商**，全部为真实物理 SIM 线路且无限流量。您无需登录即可在 [真机独享 4G/5G 代理产品页](https://www.joyproxy.com/zh-CN/products/proxy-mobile-dedicated.html) 或 [定价页](https://www.joyproxy.com/zh-CN/pricing.html?network_type=mobile-dedicated) 查看实时价格。
 
 ## 主要地区与代表运营商
 
@@ -14,7 +14,7 @@ JoyProxy 独享移动代理覆盖 **17 个国家、31 个主流 4G/5G 运营商*
 
 ## 4G 与 5G 如何选择？
 
-- **4G 独享静态移动**：延迟稳定、性价比高，已覆盖绝大多数 AI 账号、跨境店铺与社媒日常养号需求。
-- **5G 旗舰独享移动**：更高上下行吞吐带宽与更低抖动，适合高清短视频频繁上传、直播推流或对美区高端运营商（AT&T 5G / T-Mobile 5G）有明确要求的业务。
+- **4G 静态真机**：延迟稳定、性价比高，已覆盖绝大多数 AI 账号、跨境店铺与社媒日常养号需求。
+- **5G 旗舰**：更高上下行吞吐带宽与更低抖动，适合高清短视频频繁上传、直播推流或对美区高端运营商（AT&T 5G / T-Mobile 5G）有明确要求的业务。
 
 > **选型建议**：首次接入新业务或新目标平台时，建议先选购 **2 天短租套餐** 进行实测验证，确认完全匹配后再续费或采购 30 天月付套餐。

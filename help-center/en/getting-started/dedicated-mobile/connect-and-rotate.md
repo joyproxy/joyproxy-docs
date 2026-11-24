@@ -1,10 +1,10 @@
 # Switch Exit IP on Demand
 
-Dedicated Mobile Proxies remain on a **stable static mobile exit** by default. Whenever your workflow needs a fresh IP from the same carrier, trigger an on-demand switch via either method below:
+Dedicated 4G/5G Mobile Proxies remain on a **stable static mobile exit** by default. Whenever your workflow needs a fresh IP from the same carrier, trigger an on-demand switch via either method below:
 
 ## Option 1: One-Click Switch in Console
 
-1. Open **Dedicated Mobile → My Dedicated Mobile Proxies**.
+1. Open **Dedicated 4G/5G → My Proxies**.
 2. Click **↻ Switch IP** on the target port row.
 3. The carrier baseband reconnects and assigns a new mobile exit IP within **5–15 seconds** (your Host, ports, and credentials remain unchanged).
 

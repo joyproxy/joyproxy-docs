@@ -1,6 +1,6 @@
 # 查看已购端口
 
-进入控制台 **独享移动代理 → 我的独享移动代理**（`/admin-proxy-mobile-dedicated.html?tab=orders`），即可集中管理您名下的全部端口资产。
+进入控制台 **真机 4G/5G 代理 → 我的代理**（`/admin-proxy-mobile-dedicated.html?tab=orders`），即可集中管理您名下的全部端口资产。
 
 ## 顶部状态看板
 

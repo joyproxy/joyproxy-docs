@@ -1,6 +1,6 @@
 # Countries and Carriers
 
-JoyProxy Dedicated Mobile Proxies cover **17 countries and 31 real-device 4G/5G carriers**, all with unlimited bandwidth. You can browse live pricing openly on the [Dedicated Mobile product page](https://www.joyproxy.com/products/proxy-mobile-dedicated.html) or [Pricing page](https://www.joyproxy.com/pricing.html?network_type=mobile-dedicated).
+JoyProxy Dedicated 4G/5G Mobile Proxies cover **17 countries and 31 real-device 4G/5G carriers**, all with unlimited bandwidth. You can browse live pricing openly on the [Dedicated 4G/5G product page](https://www.joyproxy.com/products/proxy-mobile-dedicated.html) or [Pricing page](https://www.joyproxy.com/pricing.html?network_type=mobile-dedicated).
 
 ## Featured Regions & Carriers
 
@@ -14,7 +14,7 @@ JoyProxy Dedicated Mobile Proxies cover **17 countries and 31 real-device 4G/5G 
 
 ## 4G vs 5G Selection
 
-- **4G Dedicated Static Mobile**: Reliable latency and strong cost efficiency — ideal for AI accounts, e-commerce stores, and everyday social operations.
-- **5G Flagship Dedicated Mobile**: Higher throughput and lower jitter for heavy HD video uploads, streaming, or workflows specifically requiring US 5G carriers (AT&T 5G / T-Mobile 5G).
+- **4G static real-device**: Reliable latency and strong cost efficiency — ideal for AI accounts, e-commerce stores, and everyday social operations.
+- **5G Flagship**: Higher throughput and lower jitter for heavy HD video uploads, streaming, or workflows specifically requiring US 5G carriers (AT&T 5G / T-Mobile 5G).
 
 > **Tip**: When testing a new platform or workflow, start with a **2-day** plan to validate compatibility before upgrading to a 30-day term.

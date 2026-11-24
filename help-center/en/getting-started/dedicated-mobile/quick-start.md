@@ -1,10 +1,10 @@
 # Quick Start
 
-Follow these 4 steps to order, configure, and verify your Dedicated Mobile Proxy:
+Follow these 4 steps to order, configure, and verify your Dedicated 4G/5G Mobile Proxy:
 
 ## Step 1: Pick Country, Carrier & Term
 
-1. Sign in to the [JoyProxy Console](https://www.joyproxy.com/admin-proxy-mobile-dedicated.html) and open **Dedicated Mobile** in the left sidebar.
+1. Sign in to the [JoyProxy Console](https://www.joyproxy.com/admin-proxy-mobile-dedicated.html) and open **Dedicated 4G/5G** in the left sidebar.
 2. Filter by country or **5G Only** to select your target carrier.
 3. Choose a rental period (**2 / 7 / 14 / 30 days**) and quantity.
 
@@ -15,7 +15,7 @@ Follow these 4 steps to order, configure, and verify your Dedicated Mobile Proxy
 
 ## Step 3: Copy Credentials
 
-Once the port status turns **Active**, open the **My Dedicated Mobile Proxies** tab to view:
+Once the port status turns **Active**, open the **My Proxies** tab to view:
 - `Host` (fixed server address)
 - `HTTP Port` and `SOCKS5 Port`
 - `Username` and `Password`
