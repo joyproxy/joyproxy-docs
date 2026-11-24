@@ -1,6 +1,6 @@
 # Purchase and Reservation
 
-Dedicated 4G/5G Mobile Proxies support both **direct instant purchase** and **reservation checkout** across **2, 7, 14, and 30-day** unlimited plans.
+Dedicated Real-Device 4G/5G Proxies support both **direct instant purchase** and **reservation checkout** across **2, 7, 14, and 30-day** unlimited plans.
 
 ## 1. Direct Purchase vs Reservation (When Sold Out)
 
@@ -18,4 +18,4 @@ Ordering quantity > 1 automatically creates separate port records so each port h
 
 Checkout runs through JoyProxy Payment Hub supporting **Account Balance** (including top-up bonuses), **WeChat Pay**, **Multi-chain Crypto (USDT/USDC)**, **Credit Cards**, and **PayPal**.
 
-> **Before You Order**: Dedicated 4G/5G Mobile Proxies allocate exclusive physical SIM hardware and are **non-refundable once provisioned and delivered**. Please double-check country, carrier, and duration before checkout. See [Renewal and refund policy](renew-and-refund.md).
+> **Before You Order**: Dedicated Real-Device 4G/5G Proxies allocate exclusive physical SIM hardware and are **non-refundable once provisioned and delivered**. Please double-check country, carrier, and duration before checkout. See [Renewal and refund policy](renew-and-refund.md).

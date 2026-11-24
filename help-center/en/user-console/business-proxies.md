@@ -1,5 +1,8 @@
 # Business Proxies console
 
+> **Product Notice**: Legacy Business / Business ISP consoles have been consolidated into our active product lines. For rotating traffic, use **[Residential Proxies](../getting-started/residential/)** or **[Mobile Proxies](../getting-started/mobile/)**; for static dedicated lines, use **[ISP (Static Residential) Proxies](../getting-started/isp/)**.
+
+
 Business Proxies use office and commercial broadband exits. They are billed by traffic (GB) and rotate through a shared gateway. They fit B2B portals, business accounts, and collection jobs that need a commercial ASN with frequent IP changes.
 
 In the left sidebar **Proxies** group, click **Business Proxies**:

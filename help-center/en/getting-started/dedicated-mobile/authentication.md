@@ -1,6 +1,6 @@
 # Authentication and Formats
 
-Dedicated 4G/5G Mobile Proxies use **per-port Username / Password authentication**. No IP whitelisting is required, so you can connect seamlessly from office networks, home broadband, cloud servers, or mobile devices.
+Dedicated Real-Device 4G/5G Proxies use **per-port Username / Password authentication**. No IP whitelisting is required, so you can connect seamlessly from office networks, home broadband, cloud servers, or mobile devices.
 
 ## Credential Fields
 

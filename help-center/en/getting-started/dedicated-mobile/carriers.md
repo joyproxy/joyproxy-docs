@@ -1,6 +1,6 @@
 # Countries and Carriers
 
-JoyProxy Dedicated 4G/5G Mobile Proxies cover **17 countries and 31 real-device 4G/5G carriers**, all with unlimited bandwidth. You can browse live pricing openly on the [Dedicated 4G/5G product page](https://www.joyproxy.com/products/proxy-mobile-dedicated.html) or [Pricing page](https://www.joyproxy.com/pricing.html?network_type=mobile-dedicated).
+JoyProxy Dedicated Real-Device 4G/5G Proxies cover **17 countries and 31 real-device 4G/5G carriers**, all with unlimited bandwidth. You can browse live pricing openly on the [Dedicated 4G/5G product page](https://www.joyproxy.com/products/proxy-mobile-dedicated.html) or [Pricing page](https://www.joyproxy.com/pricing.html?network_type=mobile-dedicated).
 
 ## Featured Regions & Carriers
 

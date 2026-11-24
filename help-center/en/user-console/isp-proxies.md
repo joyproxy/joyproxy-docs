@@ -1,5 +1,8 @@
 # ISP Proxies console
 
+> **Product documentation**：[ISP (Static Residential) Proxies指南](../getting-started/isp/) · [Quick Start](../getting-started/isp/quick-start.md)
+
+
 ISP Proxies are carrier ISP dedicated exits. Modes are **Static** and **Custom**. They fit B2B portals, enterprise systems, and sessions that must keep the same `host:port`.
 
 In the left sidebar **Proxies** group, click **ISP Proxies**:

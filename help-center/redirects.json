@@ -24,9 +24,9 @@
   "custom-extract": "getting-started/custom/extract-ip.md",
   "custom-code": "getting-started/custom/first-request.md",
   "custom-third-party": "best-practices/fingerprint/adspower.md",
-  "mobile-guide": "getting-started/rotating/network-types.md",
+  "mobile-guide": "getting-started/mobile/README.md",
   "business-guide": "getting-started/rotating/network-types.md",
-  "datacenter-guide": "getting-started/static/network-types.md",
+  "datacenter-guide": "getting-started/datacenter/README.md",
   "scraping-guide": "getting-started/scraping-api/README.md",
   "scraping-purchase": "getting-started/scraping-api/buy-credits.md",
   "scraping-api": "getting-started/scraping-api/first-fetch.md",
@@ -90,5 +90,8 @@
   "pinyin-yong-hu-kong-zhi-tai": "user-console/overview.md",
   "pinyin-zui-jia-shi-jian": "best-practices/browser/chrome-edge.md",
   "pinyin-chang-jian-wen-ti": "faq/README.md",
-  "pinyin-fu-wu-yu-zhi-chi": "user-console/tickets.md"
+  "pinyin-fu-wu-yu-zhi-chi": "user-console/tickets.md",
+  "residential-guide": "getting-started/residential/README.md",
+  "isp-guide": "getting-started/isp/README.md",
+  "dedicated-mobile-guide": "getting-started/dedicated-mobile/README.md"
 }

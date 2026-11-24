@@ -1,44 +1,30 @@
 # Overview
 
-JoyProxy gives teams a stable, high-throughput exit-IP stack for automation, web collection, app testing, and data fetching. Three capabilities sit at the core: proxy IP networks (Residential, Mobile, ISP, Datacenter), Web Scraping API, and free clients for every major platform.
+JoyProxy gives teams a stable, high-throughput exit-IP stack for automation, web collection, app testing, and data fetching. Three capabilities sit at the core: five proxy IP product lines, Web Scraping API, and free open-source clients for every major platform.
 
 Whether you just signed up or you are wiring production, this guide is the path from first login to a working setup.
 
 ## What we offer
 
-### Proxy IP
+### Five Proxy IP Products
 
 Each line is delivered as a standard hostname (Host), port (Port), and credentials so you can drop it into existing tools and code.
 
-| Network type | Proxy products | Best for |
-| --- | --- | --- |
-| [Residential](https://www.joyproxy.com/products/proxy-residential.html) | Rotating | Home-broadband exits, wide geo coverage, multi-account isolation |
-| [Mobile](https://www.joyproxy.com/products/proxy-mobile.html) | Rotating · [Dedicated 4G/5G Mobile (4G/5G)](https://www.joyproxy.com/products/proxy-mobile-dedicated.html) | 4G/5G carrier exits; per-GB rotating for testing/scraping, dedicated physical-SIM static (unlimited data, on-demand IP switch) for AI, social media & anti-ban |
-| [ISP](https://www.joyproxy.com/products/proxy-isp.html) | Static · Custom | Dedicated ISP lines for long-lived sessions |
-| [Datacenter](https://www.joyproxy.com/products/proxy-datacenter.html) | Static Proxies · Custom Proxies | High concurrency, low latency, cost-efficient throughput |
+| Category | Proxy Product | Billing & Architecture | Best For | Guide |
+| --- | --- | --- | --- | --- |
+| **Rotating** | [Residential Proxies](https://www.joyproxy.com/products/proxy-residential.html) | Pay-per-GB (never expires), shared gateway `gate.joyproxy.com:9001` | Real home broadband IPs across 200+ countries for scraping and verification | [Residential Guide](getting-started/residential/) |
+| **Rotating** | [Mobile Proxies](https://www.joyproxy.com/products/proxy-mobile.html) | Pay-per-GB (never expires), shared gateway `gate.joyproxy.com:9001` | Real 4G/5G carrier exits for mobile app scraping and ad verification | [Mobile Guide](getting-started/mobile/) |
+| **Static** | [Dedicated Real-Device 4G/5G Proxies](https://www.joyproxy.com/products/proxy-mobile-dedicated.html) | Per port × rental (2/7/14/30d), **unlimited traffic**, physical SIM slot | Highest carrier CGNAT anti-ban trust with on-demand IP switch for AI, social & e-commerce | [Dedicated 4G/5G Guide](getting-started/dedicated-mobile/) |
+| **Static** | [ISP (Static Residential) Proxies](https://www.joyproxy.com/products/proxy-isp.html) | Per IP × period (1–365d), **unlimited traffic**, fixed `host:port` | Carrier ISP static residential lines for antidetect browsers and stable sessions | [ISP Guide](getting-started/isp/) |
+| **Static** | [Datacenter Proxies](https://www.joyproxy.com/products/proxy-datacenter.html) | Per IP × period (1–365d), **unlimited traffic**, fixed `host:port` | High bandwidth, low latency, cost-efficient throughput for monitoring & APIs | [Datacenter Guide](getting-started/datacenter/) |
 
-How the four networks differ:
-
-* **Residential**: home broadband IPs.
-* **Mobile**: 4G/5G carrier IPs.
-* **ISP**: carrier ISP dedicated lines.
-* **Datacenter**: datacenter IPs.
-
-How the three proxy products differ:
-
-* **Rotating Proxies**: billed by traffic. Shared gateway `gate.joyproxy.com:9001`. Target region and session lifetime are encoded in the generated username.
-* **Static Proxies**: billed by time. Fixed `host:port` for the plan period. You can change the exit IP by hand.
-* **Custom Proxies**: billed by time. Fixed `host:port` for the plan period. You can change region at any time and rotate the exit IP on a schedule.
-
-[Pricing](https://www.joyproxy.com/pricing.html) · [Available regions](https://www.joyproxy.com/admin-purchase.html)
+[Pricing](https://www.joyproxy.com/pricing.html) · [Compare all proxy products](https://www.joyproxy.com/proxy-products.html)
 
 ### Web Scraping API
 
 Submit a target URL and receive rendered HTML or JSON. JoyProxy handles IP rotation, retries, JavaScript rendering, and common anti-bot challenges. Web Scraping API is billed in Credits: **you pay only for successful responses**; failures are not charged.
 
-* [Product page](https://www.joyproxy.com/products/web-unblocker.html)
-* [Console](https://www.joyproxy.com/admin-web-unblocker.html)
-* [Pricing](https://www.joyproxy.com/pricing.html?network_type=smart-fetch)
+* [Product page](https://www.joyproxy.com/products/web-unblocker.html) · [Console](https://www.joyproxy.com/admin-web-unblocker.html) · [Pricing](https://www.joyproxy.com/pricing.html?network_type=smart-fetch) · [Guide](getting-started/scraping-api/)
 
 ### Companion tools
 
@@ -55,9 +41,7 @@ Use them with JoyProxy proxy IPs, or as standalone local clients with third-part
 
 ### AI integration
 
-Use proxy IPs from Cursor, VS Code, or OpenClaw with natural language.
-
-See: [Use JoyProxy in Cursor and AI agents](best-practices/developer/ai.md).
+Use proxy IPs from Cursor, VS Code, or OpenClaw with natural language. See: [Use JoyProxy in Cursor and AI agents](best-practices/developer/ai.md).
 
 ## Quick start
 
@@ -65,11 +49,9 @@ Pick the path that matches what you need:
 
 | You need to | Start here |
 | --- | --- |
-| Change IP on every request | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
-| Change IP every 1–1440 minutes | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
-| Send 200 concurrent requests, each on a different IP | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
-| Keep a long-lived proxy IP in one region | [Static Proxies · Quick start](getting-started/static/quick-start.md) |
-| Need an exclusive real-device 4G/5G static mobile IP (unlimited data, on-demand IP switch) | [Dedicated 4G/5G Mobile Proxies](getting-started/dedicated-mobile/) |
-| Keep a long-lived regional IP and rotate it on your schedule | [Custom Proxies · Quick start](getting-started/custom/quick-start.md) |
-| Keep a long-lived regional IP and switch regions anytime | [Custom Proxies · Quick start](getting-started/custom/quick-start.md) |
-| Pass a URL and get the page back | [Web Scraping API · Quick start](getting-started/scraping-api/quick-start.md) |
+| Rotate home broadband IPs per request or keep sticky sessions | [Residential Proxies · Quick start](getting-started/residential/quick-start.md) |
+| Use pay-per-GB 4G/5G cellular IPs for scraping or ad checks | [Mobile Proxies · Quick start](getting-started/mobile/quick-start.md) |
+| Use an exclusive real-device 4G/5G static IP (unlimited data, on-demand IP switch) | [Dedicated Real-Device 4G/5G Proxies · Quick start](getting-started/dedicated-mobile/quick-start.md) |
+| Keep a long-lived static residential IP (antidetect browsers / B2B portals) | [ISP (Static Residential) Proxies · Quick start](getting-started/isp/quick-start.md) |
+| Run high-throughput, low-latency static datacenter lines | [Datacenter Proxies · Quick start](getting-started/datacenter/quick-start.md) |
+| Pass a URL and get rendered HTML or structured JSON back | [Web Scraping API · Quick start](getting-started/scraping-api/quick-start.md) |

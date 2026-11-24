@@ -2,7 +2,7 @@
 
 静态独享代理按固定线路（IP）与购买时长（日/月/年套餐）计费。在套餐有效期内，系统会为你分配专属固定的代理主机与端口（如 `isp.joyproxy.com:10001`），且该 IP 100% 专属于你使用，绝不与他人共享。
 
-静态独享代理覆盖 **ISP 代理** 与 **数据中心代理**。如果你的业务需要频繁轮换 IP 或按 GB 计费，请参考 <a href="../rotating/README.md" target="_blank" rel="noopener noreferrer">动态代理</a>；如果需要随时切换端口国家或设置定时轮换，请参考 <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">自定义独享代理</a>。
+静态独享代理通用指南适用于 **[ISP（静态住宅）代理](../isp/)** 与 **[数据中心代理](../datacenter/)**（物理手机卡槽静态产品请直接参考 **[真机独享 4G/5G 代理](../dedicated-mobile/)**）。如果你的业务需要按 GB 流量计费与高频轮换，请参考 **[住宅代理（动态）](../residential/)** 或 **[移动代理（动态）](../mobile/)**。
 
 ## 工作原理
 

@@ -1,5 +1,8 @@
 # Custom Proxies
 
+> **Product Notice**: Custom Proxies are no longer available for new orders. Please choose from our five active proxy lines: **[Residential Proxies](../residential/)**, **[Mobile Proxies](../mobile/)**, **[Dedicated Real-Device 4G/5G Proxies](../dedicated-mobile/)**, **[ISP (Static Residential) Proxies](../isp/)**, or **[Datacenter Proxies](../datacenter/)**.
+
+
 Custom Proxies are billed by **dedicated port count** and plan duration (Daily / Weekly / Monthly / Quarterly / Annual). Each port is 100% yours for the plan period. You can **Assign region** (country, state/province, or city) at any time, set a **Rotation interval** per port, or replace the exit IP by hand.
 
 If you need many dedicated ports and want each one to use a different geo — or to rotate the exit IP on a schedule — Custom Proxies is the right product. If you only need one country and rarely change IPs, see <a href="../static/README.md" target="_blank" rel="noopener noreferrer">Static Proxies</a>. If you need millions of pooled IPs billed by GB, see <a href="../rotating/README.md" target="_blank" rel="noopener noreferrer">Rotating Proxies</a>.

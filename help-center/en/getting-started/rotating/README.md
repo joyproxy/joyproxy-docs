@@ -2,7 +2,7 @@
 
 Rotating Proxies are billed by traffic (GB). Every request connects to the shared JoyProxy gateway `gate.joyproxy.com:9001`. The exit IP can rotate on each request, or you can keep the same IP for 1–1440 minutes with a sticky session.
 
-Rotating Proxies cover two networks: **Residential Proxies** and **Mobile Proxies**. If you need a dedicated `host:port` that stays the same for a long time, see <a href="../static/README.md" target="_blank" rel="noopener noreferrer">Static Proxies</a> or <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">Custom Proxies</a>.
+Rotating Proxies cover two networks: **Residential Proxies** and **Mobile Proxies**. If you need a dedicated `host:port` that stays the same for a long time, see <a href="../static/README.md" target="_blank" rel="noopener noreferrer">Static Proxies</a> .
 
 ## How it works
 

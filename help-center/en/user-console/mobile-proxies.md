@@ -1,5 +1,8 @@
 # Mobile Proxies console
 
+> **Product documentation**：[Mobile Proxies指南](../getting-started/mobile/) · [Quick Start](../getting-started/mobile/quick-start.md)
+
+
 Mobile Proxies use real 4G / 5G carrier exits worldwide. Mobile ASN IPs have high anti-bot trust and rarely trigger captchas. They fit Instagram and TikTok operations, mobile ad verification, and localized mobile search.
 
 In the left sidebar **Proxies** group, click **Mobile**:

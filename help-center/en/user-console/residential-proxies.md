@@ -1,5 +1,8 @@
 # Residential Proxies console
 
+> **Product documentation**：[Residential Proxies指南](../getting-started/residential/) · [Quick Start](../getting-started/residential/quick-start.md)
+
+
 Residential Proxies use real home broadband IPs worldwide. They have high anti-bot pass rates and commercial reputation, and they fit large-scale e-commerce scraping, social multi-account isolation, and search-result collection.
 
 In the left sidebar **Proxies** group, click **Residential**:

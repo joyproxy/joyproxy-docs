@@ -1,5 +1,8 @@
 # Datacenter Proxies console
 
+> **Product documentation**：[Datacenter Proxies指南](../getting-started/datacenter/) · [Quick Start](../getting-started/datacenter/quick-start.md)
+
+
 Datacenter Proxies run on top-tier hosting infrastructure. The strengths are low unit cost, gigabit unmetered-class bandwidth, and millisecond latency. They fit high-throughput downloads, connectivity tests, and market monitoring when the target does not apply strict anti-bot checks.
 
 In the left sidebar **Proxies** group, click **Datacenter Proxies**:

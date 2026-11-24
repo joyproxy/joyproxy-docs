@@ -2,7 +2,7 @@
 
 动态代理按流量（GB）计费，所有请求统一连接 JoyProxy 共享网关 `gate.joyproxy.com:9001`。每次请求可自动随机更换出口 IP，也可以按需启用粘性会话保持同一个 IP 1–1440 分钟（最长 24 小时，支持自定义更长时间）。
 
-动态代理覆盖两类网络：**住宅代理** 与 **移动代理**。如果你的业务需要长期固定不变的专用 `host:port`，请参考 <a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态独享代理</a> 或 <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">自定义独享代理</a>。
+动态代理覆盖两类产品：**[住宅代理（动态）](../residential/)** 与 **[移动代理（动态）](../mobile/)**。如果你的业务需要长期固定不变的专用 `host:port`，请参考 **[真机独享 4G/5G 代理](../dedicated-mobile/)**、**[ISP（静态住宅）代理](../isp/)** 或 **[数据中心代理](../datacenter/)**。
 
 ## 工作原理
 
