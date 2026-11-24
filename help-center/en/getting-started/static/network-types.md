@@ -8,7 +8,7 @@ Static Proxies are billed by line and duration. **Dedicated Mobile Proxies (Stat
 
 | Network | IP source and trust | Strengths | Typical use |
 | --- | --- | --- | --- |
-| **Dedicated Mobile Proxies** | Real physical 4G/5G SIM card slots (carrier CGNAT) | **Highest mobile trust + fixed static port + unlimited traffic + on-demand IP switch**. | High-trust AI accounts, TikTok/Instagram social media, Amazon/PayPal e-commerce anti-ban (<a href="../dedicated-mobile/README.md">see guide</a>). |
+| **Dedicated Mobile Proxies** | Real physical 4G/5G SIM card slots (carrier CGNAT) | **Highest mobile trust + fixed static port + unlimited traffic + on-demand IP switch**. | High-trust AI accounts, TikTok/Instagram social media, Amazon/PayPal e-commerce anti-ban (<a href="../dedicated-mobile/">see guide</a>). |
 | **ISP Proxies** | Carrier business ISP dedicated lines | **High trust + dedicated bandwidth**. Faster and more stable than typical residential, with a business ISP identity. | Long-lived B2B portal access, cross-border enterprise logins, high-throughput stable transfers, accounts that need a fixed identity. |
 | **Datacenter Proxies** | Enterprise datacenter ASN lines | **Very low latency, high throughput, strong value**. | Large-scale public data monitoring, API forwarding, performance tests. |
 
