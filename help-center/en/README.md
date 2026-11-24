@@ -69,7 +69,7 @@ Pick the path that matches what you need:
 | Change IP every 1–1440 minutes | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
 | Send 200 concurrent requests, each on a different IP | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
 | Keep a long-lived proxy IP in one region | [Static Proxies · Quick start](getting-started/static/quick-start.md) |
-| Need an exclusive real-device 4G/5G static mobile IP (unlimited data, on-demand IP switch) | [Dedicated Mobile Proxies (4G/5G)](getting-started/dedicated-mobile/) |
+| Need an exclusive real-device 4G/5G static mobile IP (unlimited data, on-demand IP switch) | [Dedicated Mobile Proxies](getting-started/dedicated-mobile/) |
 | Keep a long-lived regional IP and rotate it on your schedule | [Custom Proxies · Quick start](getting-started/custom/quick-start.md) |
 | Keep a long-lived regional IP and switch regions anytime | [Custom Proxies · Quick start](getting-started/custom/quick-start.md) |
 | Pass a URL and get the page back | [Web Scraping API · Quick start](getting-started/scraping-api/quick-start.md) |

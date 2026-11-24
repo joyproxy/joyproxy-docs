@@ -1,27 +1,16 @@
-# Connection Setup & On-Demand IP Switch
+# Switch Exit IP on Demand
 
-## 1. Retrieve Static Mobile Credentials
+Dedicated Mobile Proxies remain on a **stable static mobile exit** by default. Whenever your workflow needs a fresh IP from the same carrier, trigger an on-demand switch via either method below:
 
-Once your port status is **Active**, open [Dedicated Mobile → My Dedicated Mobile Proxies](https://www.joyproxy.com/admin-proxy-mobile-dedicated.html?tab=orders) to view your fixed endpoint credentials:
+## Option 1: One-Click Switch in Console
 
-- **Host** (fixed server IP)
-- **HTTP Port** and **SOCKS5 Port** (direct connection, unlimited traffic)
-- **Username / Password** (unique per port)
+1. Open **Dedicated Mobile → My Dedicated Mobile Proxies**.
+2. Click **↻ Switch IP** on the target port row.
+3. The carrier baseband reconnects and assigns a new mobile exit IP within **5–15 seconds** (your Host, ports, and credentials remain unchanged).
 
-Use the one-click copy buttons:
-- **Copy HTTP**: `http://user:pass@host:http_port`
-- **Copy SOCKS5**: `socks5://user:pass@host:socks5_port`
-- **Copy Antidetect**: `host:port:user:pass` (ready for AdsPower, BitBrowser, HubStudio)
+## Option 2: Private Switch API URL
 
-## 2. On-Demand IP Switch (Static by Default)
-
-Your Dedicated Mobile Proxy stays on a stable mobile exit by default. Whenever you decide you need a new IP, click **↻ Switch IP** on that port row in **My Dedicated Mobile Proxies** to trigger a carrier baseband reconnect (takes **5–15 seconds** to assign a fresh IP on the same carrier).
-
-> A **45-second** cooldown applies between switches to protect physical modem stability.
-
-## 3. Private On-Demand Switch API
-
-Click **Copy Switch API** to get your private JoyProxy endpoint for scripts or antidetect browsers:
+Click **Copy Switch API** to obtain your private JoyProxy refresh endpoint:
 
 ```bash
 curl "https://api.joyproxy.com/api/v1/mobile-dedicated/rotate/<your_rotate_token>"
@@ -37,3 +26,7 @@ Example response:
   "cooldown_sec": 45
 }
 ```
+
+You can paste this URL directly into the "Change IP URL" field in AdsPower or BitBrowser.
+
+> **Cooldown**: A **45-second cooldown** applies between consecutive switches to protect physical modem stability. Expect a brief 5–15 second reconnect window during each switch.
