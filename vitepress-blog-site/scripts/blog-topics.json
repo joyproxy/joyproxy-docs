@@ -88,6 +88,7 @@
             "zh-TW": "指紋與網路底層"
           },
           "articles": [
+            "technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection",
             "technical/dns-webrtc-ipv6-proxy-leaks",
             "technical/ja4-tls-fingerprinting-cloudflare-bypass",
             "technical/residential-isnt-mobile",

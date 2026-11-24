@@ -11,6 +11,7 @@
 * [New-User Quick Start: Low-Cost Validation and Plan Selection](getting-started/five-dollar-credit-onboarding.md)
 * [JoyProxy Whitelist, Credentials, and Your First Proxy Endpoint](getting-started/whitelist-credentials-setup.md)
 ## Technical
+* [TCP/IP Fingerprinting (p0f), RTT Latency Gap & OS Mismatch: How Anti-Bot Systems Detect Proxies Below TLS](technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection.md)
 * [Proxy Connection Pooling, Keep-Alive Traps & Timeout Engineering: Eliminating 502, ECONNRESET, and Stale IP Leaks](technical/proxy-connection-pooling-keepalive-timeouts-retries.md)
 * [DNS Leaks, WebRTC Exposure, and IPv6 Bypass: Why Proxies Leak Your Real IP and How to Build Zero-Leak Architectures](technical/dns-webrtc-ipv6-proxy-leaks.md)
 * [Demystifying JA4 and TLS Fingerprinting: Why Clean Residential Proxies Still Get Blocked by Cloudflare](technical/ja4-tls-fingerprinting-cloudflare-bypass.md)

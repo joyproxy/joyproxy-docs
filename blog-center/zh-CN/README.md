@@ -9,14 +9,19 @@ next: false
 代理运营相关的指南、场景与技术文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">50</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">51</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/getting-started">入门 <span class="blog-topic-count">8</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">24</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="fingerprints-networks">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical">技术</a> <a class="blog-feed-subtag" href="/blog/zh-CN/technical?topic=fingerprints-networks">指纹与网络底层</a> <time datetime="2026-11-24">2026-11-24</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection">TCP/IP 指纹（p0f）、RTT 延迟差与 OS 错配：反爬系统如何在 TLS 之下识破代理？</a></h3>
+<p class="blog-feed-desc">深度解析 L3/L4 层代理检测机制：反爬风控如何通过 p0f/JA4T TCP SYN 指纹、MSS/MTU 缩减以及 TCP 与 TLS 握手延迟差（ΔRTT）识别代理流量，并给出 JoyProxy 就近部署与 Python 分层测速诊断脚本。</p>
+</article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/getting-started">入门</a> <a class="blog-feed-subtag" href="/blog/zh-CN/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-23">2026-11-23</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/getting-started/proxy-geo-targeting-country-city-asn-setup">代理地理定位实战入门：国家、州省、城市与运营商 ASN 精准选型及防地域穿帮指南</a></h3>

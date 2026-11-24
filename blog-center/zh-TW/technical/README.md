@@ -9,12 +9,17 @@ next: false
 代理協定、黏性工作階段底層機制、JA4/TLS 指紋與 ASN 網路特徵深度解析。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="technical">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/technical" data-topic="all">全部 <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/technical" data-topic="all">全部 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/technical?topic=protocols-sessions" data-topic="protocols-sessions">協定與工作階段 <span class="blog-topic-count">4</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">指紋與網路底層 <span class="blog-topic-count">4</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">指紋與網路底層 <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="technical">
+<article class="blog-feed-item" data-topic="fingerprints-networks">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/technical?topic=fingerprints-networks">指紋與網路底層</a> <time datetime="2026-11-24">2026-11-24</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection">TCP/IP 指紋（p0f）、RTT 延遲差與 OS 錯配：反爬系統如何在 TLS 之下識破代理？</a></h3>
+<p class="blog-feed-desc">深度解析 L3/L4 層代理偵測機制：反爬風控如何透過 p0f/JA4T TCP SYN 指紋、MSS/MTU 縮減以及 TCP 與 TLS 握手延遲差（ΔRTT）識別代理流量，並提供 JoyProxy 就近部署與 Python 分層測速診斷腳本。</p>
+</article>
 <article class="blog-feed-item" data-topic="protocols-sessions">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/technical?topic=protocols-sessions">協定與工作階段</a> <time datetime="2026-11-20">2026-11-20</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/technical/proxy-connection-pooling-keepalive-timeouts-retries">代理連線池、Keep-Alive 陷阱與逾時重試架構：徹底解決 502、ECONNRESET 與「IP 不切換」故障</a></h3>
