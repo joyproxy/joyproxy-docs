@@ -15,39 +15,44 @@ This chapter covers billing, price tiers, payment methods, recharge bonuses, inv
 
 ### Does unused rotating traffic expire?
 
-**No.** Rotating traffic packs for Residential, Mobile, and Business **do not expire**. You use GB until it is gone. Web Scraping API Credits also have no expiry.
+**No.** Rotating traffic packs for Residential and Mobile **do not expire**. You use GB until it is gone. Web Scraping API Credits also have no expiry.
 
 ### Price ladders on the four networks?
 
 #### 1. Residential Proxies (per GB)
 
-From about $3.50/GB; larger packs lower the unit price. Traffic until used:
+From $3.50/GB for 1 GB; larger packs lower the unit price down to $1.00/GB. Traffic until used:
 
 - 1 GB: $3.50/GB ($3.50)
-- 10 GB: $3.35/GB ($33.50, save 4%)
-- 20 GB: $3.20/GB ($64.00, save 9%)
-- 50 GB: $2.95/GB ($147.50, save 16%)
-- 100 GB: $2.65/GB ($265.00, save 24%)
-- 200 GB: $2.35/GB ($470.00, save 33%)
-- 500 GB: $2.05/GB ($1,025.00, save 41%)
-- 1000 GB: $1.80/GB ($1,800.00, save 49%)
+- 10 GB: $2.40/GB ($24.00, save 31%)
+- 20 GB: $2.10/GB ($42.00, save 40%)
+- 50 GB: $1.80/GB ($90.00, save 49%)
+- 100 GB: $1.60/GB ($160.00, save 54%)
+- 200 GB: $1.40/GB ($280.00, save 60%)
+- 500 GB: $1.20/GB ($600.00, save 66%)
+- 1000 GB: $1.00/GB ($1,000.00, save 71%)
 
 #### 2. Mobile Proxies (per GB)
 
 4G/5G cellular, separate ladder:
 
-- 1 GB: $4.00/GB | 10 GB: $3.80/GB | 50 GB: $3.20/GB | 100 GB: $2.85/GB | 500 GB: $2.20/GB | 1000 GB: $2.00/GB
+- 1 GB: $4.00/GB ($4.00)
+- 10 GB: $2.80/GB ($28.00, save 30%)
+- 20 GB: $2.40/GB ($48.00, save 40%)
+- 50 GB: $2.10/GB ($105.00, save 48%)
+- 100 GB: $1.90/GB ($190.00, save 53%)
+- 200 GB: $1.70/GB ($340.00, save 58%)
+- 500 GB: $1.40/GB ($700.00, save 65%)
+- 1000 GB: $1.20/GB ($1,200.00, save 70%)
 
-#### 3. Business Proxies (per GB)
+#### 3. Static Proxies (per IP × duration)
 
-Commercial ISP ASN, separate ladder:
-
-- 1 GB: $3.80/GB | 10 GB: $3.65/GB | 50 GB: $3.18/GB | 100 GB: $2.86/GB | 500 GB: $2.21/GB | 1000 GB: $1.94/GB
-
-#### 4. Static Proxies (per IP × duration)
-
-- **ISP Proxies**: $3.00/IP/month;
-- **Datacenter Proxies**: $2.00/IP/month.
+- **ISP Proxies**: $3.00/IP/month (volume discounts down to $2.40/IP/month);
+- **Datacenter Proxies**:
+  - 1–9 IPs: $2.00/IP/month
+  - 10–49 IPs: $1.80/IP/month (10 IPs = $18.00/month)
+  - 50–99 IPs: $1.20/IP/month (50 IPs = $60.00/month)
+  - 100+ IPs: $1.00/IP/month (100 IPs = $100.00/month)
 
 > Static Proxies have no traffic, concurrency, or bandwidth cap during the plan.
 

@@ -6,8 +6,6 @@ In the left sidebar **Proxies** group, click **ISP Proxies**:
 
 <a href="https://www.joyproxy.com/admin-proxy-isp.html" target="_blank" rel="noopener noreferrer">Open the ISP Proxies console</a> · <a href="https://www.joyproxy.com/products/proxy-isp.html" target="_blank" rel="noopener noreferrer">ISP Proxies product page</a>
 
-For GB-billed commercial broadband rotation, use the <a href="business-proxies.md" target="_blank" rel="noopener noreferrer">Business Proxies console</a>.
-
 ---
 
 ## Product modes

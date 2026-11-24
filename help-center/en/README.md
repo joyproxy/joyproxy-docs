@@ -1,6 +1,6 @@
 # Overview
 
-JoyProxy gives teams a stable, high-throughput exit-IP stack for automation, web collection, app testing, and data fetching. Three capabilities sit at the core: proxy IP networks (Residential, Mobile, Business, ISP, Datacenter), Web Scraping API, and free clients for every major platform.
+JoyProxy gives teams a stable, high-throughput exit-IP stack for automation, web collection, app testing, and data fetching. Three capabilities sit at the core: proxy IP networks (Residential, Mobile, ISP, Datacenter), Web Scraping API, and free clients for every major platform.
 
 Whether you just signed up or you are wiring production, this guide is the path from first login to a working setup.
 
@@ -14,15 +14,13 @@ Each line is delivered as a standard hostname (Host), port (Port), and credentia
 | --- | --- | --- |
 | [Residential](https://www.joyproxy.com/products/proxy-residential.html) | Rotating | Home-broadband exits, wide geo coverage, multi-account isolation |
 | [Mobile](https://www.joyproxy.com/products/proxy-mobile.html) | Rotating | 4G/5G carrier exits, mobile-app testing, ads compliance checks |
-| [Business](https://www.joyproxy.com/products/proxy-business.html) | Rotating | Office and commercial broadband for B2B and business accounts |
 | [ISP](https://www.joyproxy.com/products/proxy-isp.html) | Static · Custom | Dedicated ISP lines for long-lived sessions |
 | [Datacenter](https://www.joyproxy.com/products/proxy-datacenter.html) | Static Proxies · Custom Proxies | High concurrency, low latency, cost-efficient throughput |
 
-How the five networks differ:
+How the four networks differ:
 
 * **Residential**: home broadband IPs.
 * **Mobile**: 4G/5G carrier IPs.
-* **Business**: office and commercial broadband IPs (Rotating Proxies).
 * **ISP**: carrier ISP dedicated lines.
 * **Datacenter**: datacenter IPs.
 
@@ -68,7 +66,7 @@ Pick the path that matches what you need:
 | You need to | Start here |
 | --- | --- |
 | Change IP on every request | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
-| Change IP every 1–30 minutes | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
+| Change IP every 1–1440 minutes | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
 | Send 200 concurrent requests, each on a different IP | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
 | Keep a long-lived proxy IP in one region | [Static Proxies · Quick start](getting-started/static/quick-start.md) |
 | Keep a long-lived regional IP and rotate it on your schedule | [Custom Proxies · Quick start](getting-started/custom/quick-start.md) |

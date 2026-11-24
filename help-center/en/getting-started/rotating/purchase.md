@@ -4,20 +4,19 @@ Rotating Proxies are billed by **GB**. The full pack is available during the val
 
 ## Choose a network type
 
-JoyProxy offers three Rotating Proxies networks. After you log in, compare and buy them on **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase Proxies</a>** (<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">see current pricing</a>):
+JoyProxy offers two Rotating Proxies networks. After you log in, compare and buy them on **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase Proxies</a>** (<a href="https://www.joyproxy.com/pricing.html" target="_blank" rel="noopener noreferrer">see current pricing</a>):
 
 | Network type | How to choose | Typical use cases |
 | --- | --- | --- |
 | **Residential Proxies** | Real home-broadband IPs in 200+ countries | Data collection, web crawling, e-commerce price checks, account ops |
 | **Mobile Proxies** | Real 4G / 5G carrier IPs, very hard to block | Mobile app testing, mobile ad verification, high-risk retries |
-| **Business Proxies** | Enterprise ISP exits — fast and high-trust | B2B portal integration, long-lived API calls, business-platform workflows |
 
 One account can hold traffic packs for several networks at the same time. Each order is metered on its own.
 
 ## Buy in the console
 
 1. Log in and open **<a href="https://www.joyproxy.com/admin-purchase.html" target="_blank" rel="noopener noreferrer">Purchase Proxies</a>** in the left menu.
-2. Choose a network (**Residential** / **Mobile** / **Business Proxies**).
+2. Choose a network (**Residential** / **Mobile**).
 3. Open the **Rotating Proxies** tab.
 4. Pick a traffic pack that matches your scale (for example 5 GB, 10 GB, 50 GB, or 100 GB).
 5. Choose a payment method and complete checkout:

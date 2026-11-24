@@ -59,7 +59,6 @@
 * [代理控制台](user-console/residential-proxies.md)
     * [住宅代理](user-console/residential-proxies.md)
     * [移动代理](user-console/mobile-proxies.md)
-    * [商业代理](user-console/business-proxies.md)
     * [ISP 代理](user-console/isp-proxies.md)
     * [数据中心代理](user-console/datacenter-proxies.md)
     * [网页抓取 API](user-console/web-scraping-api.md)

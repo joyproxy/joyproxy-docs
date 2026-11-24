@@ -1,8 +1,8 @@
 # 动态代理
 
-动态代理按流量（GB）计费，所有请求统一连接 JoyProxy 共享网关 `gate.joyproxy.com:9001`。每次请求可自动随机更换出口 IP，也可以按需启用粘性会话保持同一个 IP 1–30 分钟。
+动态代理按流量（GB）计费，所有请求统一连接 JoyProxy 共享网关 `gate.joyproxy.com:9001`。每次请求可自动随机更换出口 IP，也可以按需启用粘性会话保持同一个 IP 1–1440 分钟（最长 24 小时，支持自定义更长时间）。
 
-动态代理覆盖三类网络：**住宅代理**、**移动代理** 以及 **商业代理**。如果你的业务需要长期固定不变的专用 `host:port`，请参考 <a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态独享代理</a> 或 <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">自定义独享代理</a>。
+动态代理覆盖两类网络：**住宅代理** 与 **移动代理**。如果你的业务需要长期固定不变的专用 `host:port`，请参考 <a href="../static/README.md" target="_blank" rel="noopener noreferrer">静态独享代理</a> 或 <a href="../custom/README.md" target="_blank" rel="noopener noreferrer">自定义独享代理</a>。
 
 ## 工作原理
 
@@ -22,7 +22,7 @@
 建议首次使用时按顺序阅读：
 
 1. <a href="quick-start.md" target="_blank" rel="noopener noreferrer">快速开始</a> — 4 步极简接入指南
-2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">网络类型</a> — 住宅、移动、商业代理选型对比
+2. <a href="network-types.md" target="_blank" rel="noopener noreferrer">网络类型</a> — 住宅与移动代理选型对比
 3. <a href="purchase.md" target="_blank" rel="noopener noreferrer">购买流量</a> — 选择网络类型与购买 GB 流量包
 4. <a href="view-traffic.md" target="_blank" rel="noopener noreferrer">查看已购流量</a> — 在控制台查看生效订单与剩余 GB
 5. <a href="auto-buy-traffic.md" target="_blank" rel="noopener noreferrer">自动购买流量</a> — 流量不足时从余额自动扣费续包

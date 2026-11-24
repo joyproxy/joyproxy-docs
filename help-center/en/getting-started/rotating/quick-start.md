@@ -3,7 +3,7 @@
 This guide walks you from buying traffic to your first Rotating Proxies connection.
 
 > **What are Rotating Proxies?**  
-> Rotating Proxies are billed by traffic (GB). Every request connects to `gate.joyproxy.com:9001`. The exit IP can change on each request, or stay the same for 1–30 minutes.
+> Rotating Proxies are billed by traffic (GB). Every request connects to `gate.joyproxy.com:9001`. The exit IP can change on each request, or stay the same for 1–1440 minutes (up to 24h, custom sesstime supported).
 
 ---
 
@@ -13,7 +13,6 @@ This guide walks you from buying traffic to your first Rotating Proxies connecti
 2. Pick a network for your use case:
    - **Residential Proxies**: data collection, social ops, e-commerce price checks (high trust, strong value).
    - **Mobile Proxies**: app testing and mobile ad verification (real 4G/5G IPs, very hard to block).
-   - **Business Proxies**: B2B portals and long-lived connections.
 3. Choose a traffic pack (for example 5 GB or 10 GB) and complete payment.
 
 ---
@@ -35,7 +34,7 @@ This guide walks you from buying traffic to your first Rotating Proxies connecti
    - **Country**: the exit country you need (for example United States).
    - **Session**:
      - **Rotate IPs on every request**: a new IP for each request.
-     - **Sticky session**: keep the same IP for 1–30 minutes.
+     - **Sticky session**: keep the same IP for 1–1440 minutes (up to 24h, custom sesstime supported).
 3. Click **Generate now** and copy the connection string.
 
 Standard format:

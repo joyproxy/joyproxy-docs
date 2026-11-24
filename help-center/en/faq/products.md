@@ -1,6 +1,6 @@
 # Products and network choice
 
-This chapter covers JoyProxy’s role, the five networks, Rotating vs Static Proxies, compliance, trial policy, and common pre-sales questions so you can pick a plan that fits the job.
+This chapter covers JoyProxy’s role, the four networks, Rotating vs Static Proxies, compliance, trial policy, and common pre-sales questions so you can pick a plan that fits the job.
 
 ---
 
@@ -10,18 +10,17 @@ This chapter covers JoyProxy’s role, the five networks, Rotating vs Static Pro
 
 JoyProxy is global proxy and collection infrastructure. Two proxy products (plus AI for developers):
 
-1. **Cloud proxy IP on five networks**: Residential, Mobile, Business, ISP, and Datacenter across 200+ countries and regions and 25,000+ cities. Products are traffic-billed **Rotating Proxies** and dedicated **Static Proxies**.
+1. **Cloud proxy IP on four networks**: Residential, Mobile, ISP, and Datacenter across 200+ countries and regions and 25,000+ cities. Products are traffic-billed **Rotating Proxies** and dedicated **Static Proxies**.
 2. **Web Scraping API**: hosted collection. No proxy pool or headless browser of your own. It handles anti-bot and JS rendering. Credits are deducted only on HTTP 2xx success.
 3. **Free open-source software**: Android Client with per-app routing (no root), Proxy Tester for batch connectivity checks, Proxy Server as a lightweight gateway, and Browser Extension for Chromium.
 4. **AI for developers**: OpenClaw Skill, AI MCP, and 24/7 assistant chat.
 
-### How do Residential, Mobile, Business, ISP, and Datacenter differ?
+### How do Residential, Mobile, ISP, and Datacenter differ?
 
 Different jobs need different IP attributes:
 
 - **Residential**: home-broadband exits. High reputation; target sites treat them as ordinary visitors. Good for large e-commerce collection, multi-account social isolation, SERP, and locale checks.
 - **Mobile**: real 4G/5G carrier exits. Many handsets already share a public IP on a cell, so platforms are more tolerant. Good for mobile-app collection, mobile ads verification, and short-video automation.
-- **Business Proxies**: office and commercial broadband, billed by GB with rotation. Good when you need a commercial ASN and frequent IP changes.
 - **ISP Proxies**: dedicated carrier ISP lines (Static). Good for long-lived B2B portals, supplier systems, and overseas finance/tax APIs.
 - **Datacenter**: cloud-facility exits. High bandwidth, low latency, low unit cost, high concurrency. Good when the target is lenient: bulk requests, index monitoring, high-throughput sync.
 
@@ -34,7 +33,6 @@ Different jobs need different IP attributes:
 
 > **What each network sells**:
 > - Residential Proxies: Rotating only;
-> - Business Proxies: Rotating only;
 > - Mobile Proxies: Rotating only;
 > - ISP Proxies: Static only. No Rotating traffic packs;
 > - Datacenter Proxies: Static only. No Rotating traffic packs.
@@ -42,12 +40,6 @@ Different jobs need different IP attributes:
 ---
 
 ## Choosing a product
-
-### What is Business Proxies, and how is it different from Residential Proxies?
-
-Business Proxies combine a commercial ISP line with rotation. The exit ASN looks like enterprise Commercial ISP, while you still rotate per session or per request. Billing is per GB.
-
-If you need frequent IP changes but the target (some B2B procurement portals, tax/compliance sites) rejects residential ASN, Business Proxies is the fit.
 
 ### How is Web Scraping API different from proxy IP?
 

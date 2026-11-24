@@ -59,7 +59,6 @@
 * [Proxy consoles](user-console/residential-proxies.md)
     * [Residential](user-console/residential-proxies.md)
     * [Mobile](user-console/mobile-proxies.md)
-    * [Business Proxies](user-console/business-proxies.md)
     * [ISP Proxies](user-console/isp-proxies.md)
     * [Datacenter Proxies](user-console/datacenter-proxies.md)
     * [Web Scraping API](user-console/web-scraping-api.md)

@@ -6,8 +6,6 @@ ISP 代理提供运营商 ISP 专线固定出口，形态为 **静态独享** �
 
 <a href="https://www.joyproxy.com/admin-proxy-isp.html" target="_blank" rel="noopener noreferrer">直接打开 ISP 代理控制台</a> · <a href="https://www.joyproxy.com/products/proxy-isp.html" target="_blank" rel="noopener noreferrer">查看 ISP 代理产品详情</a>
 
-需要按 GB 轮换的商业宽带出口，请使用 <a href="business-proxies.md" target="_blank" rel="noopener noreferrer">商业代理控制台</a>。
-
 ---
 
 ## 产品形态
