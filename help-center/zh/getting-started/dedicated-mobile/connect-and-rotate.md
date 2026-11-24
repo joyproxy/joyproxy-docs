@@ -1,11 +1,11 @@
-# 连接配置与一键 / API 换 IP
+# 连接配置与按需切换 IP
 
-## 1. 获取直连代理凭据
+## 1. 获取静态移动代理凭据
 
-端口状态变为 **运行中** 后，前往控制台 [独享移动代理 → 我的独享移动代理](https://www.joyproxy.com/admin-proxy-mobile-dedicated.html?tab=orders)，可直接查看：
+端口状态变为 **运行中** 后，前往控制台 [独享移动代理 → 我的独享移动代理](https://www.joyproxy.com/admin-proxy-mobile-dedicated.html?tab=orders)，可直接查看固定入口凭据：
 
-- **Host**（服务器 IP）
-- **HTTP 端口** 与 **SOCKS5 端口**（全协议直连，不限流量）
+- **Host**（固定服务器 IP）
+- **HTTP 端口** 与 **SOCKS5 端口**（全协议直连，无限流量）
 - **Username / Password**（端口独立账密）
 
 点击列表中的快捷按钮可一键复制：
@@ -13,15 +13,15 @@
 - **复制 SOCKS5**：`socks5://user:pass@host:socks5_port`
 - **复制指纹格式**：`host:port:user:pass`（可直接粘贴至 AdsPower、比特浏览器 BitBrowser、HubStudio）
 
-## 2. 控制台一键换 IP
+## 2. 按需一键切换 IP（保持静态，需要时再换）
 
-点击端口行的 **「↻ 一键换 IP」** 按钮，JoyProxy 后端会向运营商基带触发重拨，约 **5–15 秒** 后即会分配同国家同运营商下的全新 4G/5G 移动出口 IP。
+独享静态移动代理默认保持稳定出口；仅当您的业务需要更换新 IP 时，可在 **我的独享移动代理** 点击对应端口行的 **「↻ 切换 IP」** 按钮，系统会向运营商基带触发重拨，约 **5–15 秒** 后即分配同国家同运营商下的全新 4G/5G 移动出口 IP。
 
-> 为保护物理设备与基带稳定，每次换 IP 之间设有 **45 秒** 防抖冷却时间。
+> 为保护物理 SIM 设备与基带稳定，每次切换 IP 之间设有 **45 秒** 防抖冷却时间。
 
-## 3. 专属 API 轮换链接（适配指纹浏览器与脚本）
+## 3. 专属按需切换 API 链接
 
-点击 **「复制换 IP API」** 可获得专属于该端口的 JoyProxy 轮换链接：
+如需在指纹浏览器或脚本中按需触发换 IP，可点击 **「复制切换 API」** 获取专属白标 URL：
 
 ```bash
 curl "https://api.joyproxy.com/api/v1/mobile-dedicated/rotate/<your_rotate_token>"
@@ -37,5 +37,3 @@ curl "https://api.joyproxy.com/api/v1/mobile-dedicated/rotate/<your_rotate_token
   "cooldown_sec": 45
 }
 ```
-
-可将该 URL 直接填入 AdsPower / BitBrowser 的「刷新 IP URL / Change IP URL」字段中，实现打开浏览器环境前自动换 IP。

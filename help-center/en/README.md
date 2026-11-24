@@ -13,7 +13,7 @@ Each line is delivered as a standard hostname (Host), port (Port), and credentia
 | Network type | Proxy products | Best for |
 | --- | --- | --- |
 | [Residential](https://www.joyproxy.com/products/proxy-residential.html) | Rotating | Home-broadband exits, wide geo coverage, multi-account isolation |
-| [Mobile](https://www.joyproxy.com/products/proxy-mobile.html) | Rotating | 4G/5G carrier exits, mobile-app testing, ads compliance checks |
+| [Mobile](https://www.joyproxy.com/products/proxy-mobile.html) | Rotating · [Dedicated Static Mobile (4G/5G)](https://www.joyproxy.com/products/proxy-mobile-dedicated.html) | 4G/5G carrier exits; per-GB rotating for testing/scraping, dedicated physical-SIM static (unlimited data, on-demand IP switch) for AI, social media & anti-ban |
 | [ISP](https://www.joyproxy.com/products/proxy-isp.html) | Static · Custom | Dedicated ISP lines for long-lived sessions |
 | [Datacenter](https://www.joyproxy.com/products/proxy-datacenter.html) | Static Proxies · Custom Proxies | High concurrency, low latency, cost-efficient throughput |
 
@@ -69,6 +69,7 @@ Pick the path that matches what you need:
 | Change IP every 1–1440 minutes | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
 | Send 200 concurrent requests, each on a different IP | [Rotating Proxies · Quick start](getting-started/rotating/quick-start.md) |
 | Keep a long-lived proxy IP in one region | [Static Proxies · Quick start](getting-started/static/quick-start.md) |
+| Need an exclusive real-device 4G/5G static mobile IP (unlimited data, on-demand IP switch) | [Dedicated Mobile Proxies (4G/5G)](getting-started/dedicated-mobile/README.md) |
 | Keep a long-lived regional IP and rotate it on your schedule | [Custom Proxies · Quick start](getting-started/custom/quick-start.md) |
 | Keep a long-lived regional IP and switch regions anytime | [Custom Proxies · Quick start](getting-started/custom/quick-start.md) |
 | Pass a URL and get the page back | [Web Scraping API · Quick start](getting-started/scraping-api/quick-start.md) |

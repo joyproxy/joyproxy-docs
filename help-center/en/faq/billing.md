@@ -118,6 +118,7 @@ Eligible orders have a **7-day refund window** subject to the strict rules in ou
 1. **7-day window**: refund requests for eligible orders must be opened within **7 days** of payment; orders older than 7 days are strictly non-refundable.
 2. **General connectivity vs. specific targets**: proxy availability is determined by whether the proxy can normally connect to standard, unrestricted public websites. If general connectivity works normally and only specific target websites, apps, or ports requested by the customer fail to connect, **this is not a service failure and is not eligible for a refund**.
 3. **Non-refundable & non-withdrawable exclusions**:
+   - **Dedicated Mobile Proxies (4G/5G Real-Device Static)**: custom-provisioned physical SIM hardware resources — **strictly non-refundable once provisioned and delivered** (only if JoyProxy cannot provision within 24 hours due to upstream unavailability may you open a ticket for a balance refund);
    - **1-day orders** (unless due to a verified general network failure);
    - **Crypto (all chains: USDT, USDC, TRX, BNB, ETH, SOL, BTC)** and **UPI** payments (unless due to a verified general network failure);
    - **Account balance top-ups and orders paid with Balance** (**no cash withdrawal and no refund**);

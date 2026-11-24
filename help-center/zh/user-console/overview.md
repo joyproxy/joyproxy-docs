@@ -25,7 +25,7 @@
 中央面板对你名下的各类代理资源进行了分类汇总，无需逐个翻查订单即可直观了解剩余额度：
 
 - **动态代理流量**：汇总统计住宅与移动代理的预付流量包，清晰呈现 **总量 GB**、**已用 GB** 与 **剩余 GB**。
-- **独享长效代理**：显示当前正在生效中的静态 ISP 独享线路与自定义定制端口总数，并对即将到期和已过期的资源进行预警标记。
+- **独享长效代理**：显示当前正在生效中的独享静态移动代理、静态 ISP / 数据中心独享线路与自定义定制端口总数，并对即将到期和已过期的资源进行预警标记。
 - **网页抓取 API**：显示当前剩余可调用的 Credits 积分余额以及最高并发限制。
 
 > **提示**：若需查看各批次订单的详细过期时间、具体 IP 地址或按小时划分的流量消耗趋势，请进入对应代理网络的专用控制台进行深入查看。
@@ -40,6 +40,7 @@
 | :--- | :--- | :--- |
 | **住宅代理** | 真实家庭宽带出口，海量轮换 IP 池，穿透力最强，适合电商风控、舆情采集与多账号运营 | <a href="residential-proxies.md" target="_blank" rel="noopener noreferrer">进入住宅控制台</a> |
 | **移动代理** | 纯净 4G/5G 移动蜂窝基站出口，移动端高信任权重，适合 TikTok、Instagram 等移动业务 | <a href="mobile-proxies.md" target="_blank" rel="noopener noreferrer">进入移动控制台</a> |
+| **独享移动代理** | 真实物理 4G/5G SIM 卡静态独享端口，无限流量、按需一键切换 IP，适合 AI 账号、海外社媒与跨境电商防封 | <a href="dedicated-mobile-proxies.md" target="_blank" rel="noopener noreferrer">进入独享移动控制台</a> |
 | **ISP 代理** | 运营商 ISP 专线固定出口，适合长期稳定会话与企业系统对接 | <a href="isp-proxies.md" target="_blank" rel="noopener noreferrer">进入 ISP 代理控制台</a> |
 | **数据中心代理** | 托管机房 ASN 出口，千兆超大吞吐带宽与极低成本，适合无严格反爬的高速批量爬取 | <a href="datacenter-proxies.md" target="_blank" rel="noopener noreferrer">进入数据中心控制台</a> |
 | **网页抓取 API** | 开箱即用的智能抓取接口，内置全自动 JavaScript 动态渲染、验证码绕过与代理调度 | <a href="web-scraping-api.md" target="_blank" rel="noopener noreferrer">进入网页抓取 API 控制台</a> |

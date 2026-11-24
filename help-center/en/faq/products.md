@@ -30,10 +30,11 @@ Different jobs need different IP attributes:
 | :--- | :--- | :--- | :--- | :--- |
 | **Rotating Proxies** | Per GB used; traffic does not expire | Shared pool; new IP per request or sticky session | Automatic per request, or 1–30 minute sticky session | Crawlers, high concurrency, bulk checks |
 | **Static Proxies** | Per IP × plan period; no traffic/concurrency cap | Dedicated line for the plan (Entry Point stays) | Region locked; **Change IP** / **New IP** in the console for a new exit | Long-lived identity, B2B portal access, high-throughput stable links |
+| **Dedicated Mobile Proxies (4G/5G Static)** | Per port × rental period (2/7/14/30d); unlimited traffic | Exclusive physical 4G/5G SIM slot for stable static mobile sessions | Static by default; switch to a fresh carrier IP on demand via console or API | AI anti-ban, social media matrices, strict e-commerce risk controls |
 
 > **What each network sells**:
 > - Residential Proxies: Rotating only;
-> - Mobile Proxies: Rotating only;
+> - Mobile Proxies: both **Rotating Mobile (per GB)** and **Dedicated Static Mobile (4G/5G physical SIM, unlimited)**;
 > - ISP Proxies: Static only. No Rotating traffic packs;
 > - Datacenter Proxies: Static only. No Rotating traffic packs.
 

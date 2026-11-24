@@ -13,7 +13,7 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 | 网络类型 | 代理产品 | 适合做什么 |
 | --- | --- | --- |
 | [住宅](https://www.joyproxy.com/products/proxy-residential.html) | 动态 | 家庭宽带出口，地区可选范围大，防多账号关联 |
-| [移动](https://www.joyproxy.com/products/proxy-mobile.html) | 动态 | 4G/5G 运营商出口，移动端 App 测试、广告合规校验 |
+| [移动](https://www.joyproxy.com/products/proxy-mobile.html) | 动态 · [独享静态移动 (4G/5G 真机)](https://www.joyproxy.com/products/proxy-mobile-dedicated.html) | 4G/5G 运营商出口；按流量动态用于采集测活，独享真机静态（无限流量、按需换 IP）用于 AI、社媒与高风控防封 |
 | [ISP](https://www.joyproxy.com/products/proxy-isp.html) | 静态独享 · 自定义独享 | ISP 专线固定出口，长期稳定会话 |
 | [数据中心](https://www.joyproxy.com/products/proxy-datacenter.html) | 静态独享 · 自定义独享 | 高并发、极速响应、性价比之选 |
 
@@ -69,6 +69,7 @@ JoyProxy 旨在为团队在自动化流程、网页采集、应用测试及数�
 | 需要每隔 1 - 30 分钟更换一次 IP | [动态代理 · 快速开始](getting-started/rotating/quick-start.md) |
 | 需要同时发起 200 次请求，并使用不同的 IP | [动态代理 · 快速开始](getting-started/rotating/quick-start.md) |
 | 需要长期固定某个地区的代理 IP | [静态独享 · 快速开始](getting-started/static/quick-start.md) |
+| 需要真机 4G/5G 独享静态移动 IP（无限流量、高防封、按需换 IP） | [独享移动代理（4G/5G 真机）](getting-started/dedicated-mobile/README.md) |
 | 需要长期固定某个地区的代理 IP + 自定义频率轮换 | [自定义独享 · 快速开始](getting-started/custom/quick-start.md) |
 | 需要长期固定某个地区的代理 IP + 随时切换地区 | [自定义独享 · 快速开始](getting-started/custom/quick-start.md) |
 | 需要直接传入 URL 返回数据 | [网页抓取 API · 快速开始](getting-started/scraping-api/quick-start.md) |

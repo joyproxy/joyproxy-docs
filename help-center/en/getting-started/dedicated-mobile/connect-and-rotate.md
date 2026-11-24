@@ -1,23 +1,39 @@
-# Connection Setup & One-Click / API IP Rotation
+# Connection Setup & On-Demand IP Switch
 
-## 1. Direct HTTP / SOCKS5 Credentials
+## 1. Retrieve Static Mobile Credentials
 
-Once your port status changes to **Active** under **Dedicated Mobile → My Proxies** (`/admin-proxy-mobile-dedicated.html?tab=orders`), you can view and one-click copy:
+Once your port status is **Active**, open [Dedicated Mobile → My Dedicated Mobile Proxies](https://www.joyproxy.com/admin-proxy-mobile-dedicated.html?tab=orders) to view your fixed endpoint credentials:
 
-- **HTTP URL**: `http://user:pass@host:http_port`
-- **SOCKS5 URL**: `socks5://user:pass@host:socks5_port`
-- **Anti-detect format**: `host:port:user:pass` (ready for AdsPower, BitBrowser, HubStudio)
+- **Host** (fixed server IP)
+- **HTTP Port** and **SOCKS5 Port** (direct connection, unlimited traffic)
+- **Username / Password** (unique per port)
 
-## 2. One-Click Console Rotation
+Use the one-click copy buttons:
+- **Copy HTTP**: `http://user:pass@host:http_port`
+- **Copy SOCKS5**: `socks5://user:pass@host:socks5_port`
+- **Copy Antidetect**: `host:port:user:pass` (ready for AdsPower, BitBrowser, HubStudio)
 
-Click **Rotate IP** on any active port to trigger a cellular network reconnect. A fresh 4G/5G carrier IP becomes active within **5–15 seconds** (45-second cooldown between rotations).
+## 2. On-Demand IP Switch (Static by Default)
 
-## 3. Private Rotation API URL
+Your Dedicated Mobile Proxy stays on a stable mobile exit by default. Whenever you decide you need a new IP, click **↻ Switch IP** on that port row in **My Dedicated Mobile Proxies** to trigger a carrier baseband reconnect (takes **5–15 seconds** to assign a fresh IP on the same carrier).
 
-Click **Copy Rotate API** to get your port's private JoyProxy rotation endpoint:
+> A **45-second** cooldown applies between switches to protect physical modem stability.
+
+## 3. Private On-Demand Switch API
+
+Click **Copy Switch API** to get your private JoyProxy endpoint for scripts or antidetect browsers:
 
 ```bash
 curl "https://api.joyproxy.com/api/v1/mobile-dedicated/rotate/<your_rotate_token>"
 ```
 
-Paste this URL into your anti-detect browser's "Change IP URL" field or automation scripts to switch IPs programmatically.
+Example response:
+
+```json
+{
+  "success": true,
+  "order_no": "MD261124-XXXXXX",
+  "message": "IP rotation triggered. New mobile IP will be active in 5-15 seconds.",
+  "cooldown_sec": 45
+}
+```
