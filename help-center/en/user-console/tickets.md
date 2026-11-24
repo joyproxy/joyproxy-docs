@@ -61,5 +61,6 @@ After submit, watch progress in **My Tickets**:
 | After support replies | Open **View**. If they asked for more detail, reply in the same thread. |
 | **Closed** | The issue is resolved or both sides agreed to stop. If the same issue returns, reply within 7 days to reopen. |
 
-### 2. Replies
-Click **View** on the right of the list to open the thread. Add text or a new screenshot at the bottom. Keep the conversation on one ticket instead of opening duplicates for the same incident.
+### 2. Response time and follow-up replies
+- **Response time**: Our 24/7 support and engineering team responds to routine tickets typically within **a few minutes**; complex routing diagnostics, subnet stock checks, or billing reviews are usually handled within **a few hours** (and within 24 hours at most), with email and in-console notifications.
+- **Replies**: Click **View** on the right of the list to open the thread. Add text or a new screenshot at the bottom. Keep the conversation on one ticket instead of opening duplicates for the same incident.

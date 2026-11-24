@@ -45,16 +45,20 @@ From $3.50/GB for 1 GB; larger packs lower the unit price down to $1.00/GB. Traf
 - 500 GB: $1.40/GB ($700.00, save 65%)
 - 1000 GB: $1.20/GB ($1,200.00, save 70%)
 
-#### 3. Static Proxies (per IP × duration)
+#### 3. Static Proxies (per IP × duration, unlimited traffic during plan)
 
-- **ISP Proxies**: $3.00/IP/month (volume discounts down to $2.40/IP/month);
-- **Datacenter Proxies**:
+- **ISP Proxies (30-day monthly rate)**:
+  - 1–99 IPs: $3.00/IP/month
+  - 100–499 IPs: $2.70/IP/month
+  - 500+ IPs: $2.40/IP/month
+- **Datacenter Proxies (30-day monthly rate)**:
   - 1–9 IPs: $2.00/IP/month
   - 10–49 IPs: $1.80/IP/month (10 IPs = $18.00/month)
   - 50–99 IPs: $1.20/IP/month (50 IPs = $60.00/month)
   - 100+ IPs: $1.00/IP/month (100 IPs = $100.00/month)
+- **Duration multipliers** (applied to the monthly rate above): 1 day (`0.2x`), 7 days (`0.5x`), 30 days (`1x`), 90 days (`2.5x`), 180 days (`5x`), 365 days (`10x`).
 
-> Static Proxies have no traffic, concurrency, or bandwidth cap during the plan.
+> Static Proxies include unlimited traffic and concurrency during the active period — no separate traffic pack needed.
 
 ---
 
@@ -66,10 +70,16 @@ From $3.50/GB for 1 GB; larger packs lower the unit price down to $1.00/GB. Traf
 - **Credit Card**: Visa, Mastercard, American Express, JCB.
 - **Wallets**: PayPal, Apple Pay, Google Pay.
 - **Crypto**: Multi-chain payments supporting **USDT, USDC, TRX, BNB, ETH, SOL, and BTC** across **TRON (TRC20)**, **BSC (BEP20)**, **Polygon**, **Arbitrum One**, **Solana (SPL)**, **Ethereum (ERC20)**, and **Bitcoin (Native SegWit)** for Balance top-ups and direct checkout.
-- **WeChat Pay**.
-- **UPI**: India.
+- **WeChat Pay (CNY / RMB supported)**: supports paying in Chinese Yuan (CNY) via WeChat Pay QR code for Balance top-ups, direct orders, and renewals.
+- **UPI**: India local instant payment.
 
-> UnionPay and large bank-transfer rails are rolling out.
+> For enterprise bank transfers or custom contracts, please submit a support ticket.
+
+### Do you offer promo codes or seasonal coupons?
+
+We do not currently issue public promo codes or Black Friday coupons. The best ongoing savings are:
+1. **Balance recharge bonuses (never expire)**: top up `$100` for **+10%**, `$1,000` for **+20%**, or `$10,000` for **+30%** bonus credit;
+2. **Volume price tiers**: larger GB packs and multi-IP static orders automatically receive lower unit rates, which stack with Balance recharge bonuses.
 
 ### Why recharge Balance first?
 
@@ -111,7 +121,7 @@ Sign in and open **Invoices** in the sidebar:
 
 - **Balance ledger**: recharge, bonus credit, and order deductions;
 - **Orders**: start time, product, amount paid;
-- **PDFs**: **Download invoice (PDF)** per order (standard reimbursement layout). Select a date range and **Batch download invoices (ZIP)**.
+- **PDFs & custom / local invoices**: **Download invoice (PDF)** per external payment order (international business receipt layout, plus batch ZIP download). For custom company tax headers or local China VAT invoice inquiries, open a support ticket for our billing team.
 
 ### Refund policy? Partial use?
 Eligible orders have a **7-day refund window** subject to the strict rules in our [Terms & Conditions — Refund Policy](https://www.joyproxy.com/terms.html#refund):

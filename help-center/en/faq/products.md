@@ -48,15 +48,21 @@ Different jobs need different IP attributes:
 - **Web Scraping API**: hosted fetch. You send a URL. The service picks an exit, handles common bot defenses, runs JavaScript, and returns HTML or structured JSON.
 - **Rule of thumb**: if the job is “give me this page” and you do not want to run a proxy pool and crawler, use Web Scraping API. If you need TCP/SOCKS control, a desktop app, or to log into a site yourself, use proxy IP.
 
-### How many countries? Can I target a city?
+### How many countries? Can I choose a city or carrier (ASN) before buying Static Proxies?
 
 The network covers 200+ countries and regions and 25,000+ cities.
+- **Rotating Proxies**: target country (ISO-2), state/province, city, and ASN/carrier in **Endpoint generator**.
+- **Static Proxies (ISP / Datacenter)**: the checkout page lets you choose **country, state/province, city, and specific carrier/ASN** (such as AT&T, Verizon, Comcast) directly from the live dropdown options. Only **an exact single IP address or a specific `/24` subnet** cannot be hand-picked before checkout — submit a support ticket if you need to check a specific subnet range in advance.
 
-In **Endpoint generator** (Rotating) or on **Purchase Proxies** (Static), you can set country (ISO-2), state/province, and city. Live stock is whatever the purchase and generator pages show that day.
+### Which protocols are supported? Do you provide `.ovpn` (OpenVPN) or WireGuard files?
 
-### Which protocols?
+Cloud nodes support **HTTP**, **HTTPS**, and **SOCKS5** (TCP/UDP). Browsers and most crawlers use HTTP/HTTPS; use SOCKS5 when you need socket-level forwarding.
+- **No `.ovpn` / OpenVPN / WireGuard configs**: JoyProxy provides standard proxy endpoints (`host:port` with username/password or IP whitelist), not VPN profiles.
 
-Cloud nodes support **HTTP**, **HTTPS**, and **SOCKS5** (TCP/UDP). Browsers and most crawlers use HTTP/HTTPS. Use SOCKS5 when you need socket-level forwarding.
+### What is the bandwidth? Do Static Proxies include traffic or require re-extraction?
+
+- **Reference bandwidth**: Rotating Proxies ~**10–20 Mbps** per connection; Static ISP Proxies ~**10–100 Mbps**; Static Datacenter Proxies ~**20–300 Mbps** (actual speed varies by client region and target host). For live streaming or guaranteed ultra-low latency / high dedicated bandwidth, submit a ticket to apply for **Private Proxies**.
+- **Static traffic & extraction**: Static Proxies are billed by IP × duration with **unlimited traffic and concurrency (no extra GB pack required)**. After purchase, you get a fixed `host:port` directly in **My Proxies** — you do not need to re-extract endpoints like Rotating Proxies.
 
 ### Need a long-lived IP: ISP Proxies or Datacenter Proxies?
 
