@@ -93,9 +93,9 @@ Without renewal, forwarding stops at expiry. After a short hold, the port and un
 
 ---
 
-## Dedicated Real-Device 4G/5G Proxies
+## Dedicated 4G/5G Mobile Proxy
 
-### Does a Dedicated Real-Device 4G/5G Proxy rotate automatically? How do I switch the exit IP?
+### Does a Dedicated 4G/5G Mobile Proxy rotate automatically? How do I switch the exit IP?
 - **Static by default**: Your exclusive physical 4G/5G SIM port keeps a stable mobile exit IP by default without unexpected rotation — ideal for AI accounts, social media, and e-commerce stores.
 - **On-demand switch via console or API**: Whenever you need a fresh carrier IP, click **Switch IP** on your port in the console or call the port's private IP-switch API URL. The cellular modem re-registers on the carrier network and returns with a fresh IP in **5–15 seconds**.
 

@@ -10,7 +10,7 @@ Renew at least **24 hours before expiry** (or 12 hours for 2-day plans) to avoid
 
 ## 2. Non-Refundable Special Product Policy
 
-> **Important Notice**: **Dedicated Real-Device 4G/5G Proxies** allocate exclusive physical 4G/5G SIM slots whose carrier costs are incurred immediately upon activation. **Once provisioned and delivered, orders are strictly non-refundable** (no free trial, no balance refund, and no refund to the original payment method). See our [Terms of Service — Refund Policy](https://www.joyproxy.com/terms.html#refund).
+> **Important Notice**: **Dedicated 4G/5G Mobile Proxy** allocate exclusive physical 4G/5G SIM slots whose carrier costs are incurred immediately upon activation. **Once provisioned and delivered, orders are strictly non-refundable** (no free trial, no balance refund, and no refund to the original payment method). See our [Terms of Service — Refund Policy](https://www.joyproxy.com/terms.html#refund).
 
 We recommend starting with a **2-day** plan when testing a new platform or carrier.
 

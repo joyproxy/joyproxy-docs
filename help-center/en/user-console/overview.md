@@ -25,7 +25,7 @@ The top of Overview shows your core balance board:
 The center panel summarizes proxy resources so you do not have to open every order:
 
 - **Rotating Proxies**: Prepaid traffic across Residential and Mobile, shown as **Total GB**, **Used GB**, and **Remaining GB**.
-- **Dedicated Proxies**: Active Dedicated Real-Device 4G/5G Proxies, Static ISP/Datacenter Proxies, and Custom Proxies counts, with **Expiring** and **Expired** markers.
+- **Dedicated Proxies**: Active Dedicated 4G/5G Mobile Proxy, Static ISP/Datacenter Proxies, and Custom Proxies counts, with **Expiring** and **Expired** markers.
 - **Web Scraping API**: Remaining Credits and the concurrency limit.
 
 > **Tip**: For per-order expiry, concrete IP addresses, or hourly traffic curves, open that network’s console.

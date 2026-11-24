@@ -2,7 +2,7 @@
 
 **Mobile Proxies** exit through real 4G/5G cellular carrier networks with natural CGNAT anti-ban trust. Traffic is billed per GB and **never expires**. All connections route through `gate.joyproxy.com:9001` with per-request rotation or sticky sessions.
 
-> **Choosing between Mobile lines**: If you need an **exclusive physical 4G/5G SIM card slot, unlimited traffic, static mobile stability, and on-demand IP switching** (for AI accounts, TikTok/social matrices, or strict e-commerce stores), choose **[Dedicated Real-Device 4G/5G Proxies](../dedicated-mobile/)**.
+> **Choosing between Mobile lines**: If you need an **exclusive physical 4G/5G SIM card slot, unlimited traffic, static mobile stability, and on-demand IP switching** (for AI accounts, TikTok/social matrices, or strict e-commerce stores), choose **[Dedicated 4G/5G Mobile Proxy](../dedicated-mobile/)**.
 
 ---
 

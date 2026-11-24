@@ -45,7 +45,7 @@ From $3.50/GB for 1 GB; larger packs lower the unit price down to $1.00/GB. Traf
 - 500 GB: $1.40/GB ($700.00, save 65%)
 - 1000 GB: $1.20/GB ($1,200.00, save 70%)
 
-#### 3. Dedicated Real-Device 4G/5G Proxies (per port × rental period, unlimited traffic)
+#### 3. Dedicated 4G/5G Mobile Proxy (per port × rental period, unlimited traffic)
 
 Exclusive physical 4G/5G SIM slots across 17 countries and 31 carriers with **2 / 7 / 14 / 30-day** rentals — starting from **$25 / 2 days** and **$75 / 30 days** with unlimited data ([view live carrier pricing](https://www.joyproxy.com/pricing.html?network_type=mobile-dedicated)).
 
@@ -132,7 +132,7 @@ Eligible orders have a **7-day refund window** subject to the strict rules in ou
 1. **7-day window**: refund requests for eligible orders must be opened within **7 days** of payment; orders older than 7 days are strictly non-refundable.
 2. **General connectivity vs. specific targets**: proxy availability is determined by whether the proxy can normally connect to standard, unrestricted public websites. If general connectivity works normally and only specific target websites, apps, or ports requested by the customer fail to connect, **this is not a service failure and is not eligible for a refund**.
 3. **Non-refundable & non-withdrawable exclusions**:
-   - **Dedicated Real-Device 4G/5G Proxies (4G/5G Real-Device Static)**: custom-provisioned physical SIM hardware resources — **strictly non-refundable once provisioned and delivered** (only if JoyProxy cannot provision within 24 hours due to upstream unavailability may you open a ticket for a balance refund);
+   - **Dedicated 4G/5G Mobile Proxy (4G/5G Real-Device Static)**: custom-provisioned physical SIM hardware resources — **strictly non-refundable once provisioned and delivered** (only if JoyProxy cannot provision within 24 hours due to upstream unavailability may you open a ticket for a balance refund);
    - **1-day orders** (unless due to a verified general network failure);
    - **Crypto (all chains: USDT, USDC, TRX, BNB, ETH, SOL, BTC)** and **UPI** payments (unless due to a verified general network failure);
    - **Account balance top-ups and orders paid with Balance** (**no cash withdrawal and no refund**);

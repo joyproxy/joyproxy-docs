@@ -30,4 +30,4 @@
 curl -x http://<USERNAME>:<PASSWORD>@dc.joyproxy.com:<PORT> https://api.ipify.org?format=json
 ```
 
-如需批量拉取列表、自动续费或更换出口 IP，请参考 [静态独享通用指南](../static/)。
+如需批量拉取列表、自动续费或更换出口 IP，请参考 [静态代理通用指南](../static/)。

@@ -42,7 +42,7 @@
     * [受限目标](getting-started/rotating/restricted-targets.md)
     * [查询用量](getting-started/rotating/usage.md)
     * [查询支付记录与下载凭证](getting-started/rotating/payments-and-invoices.md)
-* [静态独享通用指南](getting-started/static/README.md)
+* [静态代理通用指南](getting-started/static/README.md)
     * [快速开始](getting-started/static/quick-start.md)
     * [网络类型](getting-started/static/network-types.md)
     * [购买独享线路](getting-started/static/purchase.md)
