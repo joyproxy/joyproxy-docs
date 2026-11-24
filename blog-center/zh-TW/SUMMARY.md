@@ -32,6 +32,7 @@
 * [多國地理代理進行真實 SEO 排名監控：消除個人化雜訊](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境電商為何青睞長期固定 IP（以及輪換代理的隱患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [真機獨享 4G/5G 代理完全指南：實體 SIM 卡槽、無限流量與電信商 CGNAT 防封實戰（2026）](guides/dedicated-mobile-proxies-complete-guide.md)
 * [n8n、Dify 與 LangChain 代理及擷取 API 設定實戰：徹底解決 AI 工作流 403/429 攔截（2026）](guides/n8n-dify-langchain-proxy-scraping-api-guide.md)
 * [Playwright 與 Puppeteer 代理配置實戰：無頭瀏覽器防檢測、IP 隔離輪換與省流 70% 技巧（2026）](guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide.md)
 * [告別 Access Denied：如何使用靜態 ISP 代理穩定解鎖 ChatGPT 與 Claude（全鏈路防封實戰）](guides/how-to-use-isp-proxies-for-chatgpt-claude.md)

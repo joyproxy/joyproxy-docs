@@ -9,14 +9,19 @@ next: false
 In-depth operational playbooks for static ISP nodes, AI agents, residential extraction, and cost optimization.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="guides">
-<a class="blog-topic-chip is-active" href="/blog/guides" data-topic="all">All <span class="blog-topic-count">24</span></a>
-<a class="blog-topic-chip" href="/blog/guides?topic=isp-nodes" data-topic="isp-nodes">Static ISP &amp; Core Nodes <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip is-active" href="/blog/guides" data-topic="all">All <span class="blog-topic-count">25</span></a>
+<a class="blog-topic-chip" href="/blog/guides?topic=isp-nodes" data-topic="isp-nodes">Static ISP &amp; Core Nodes <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=ai-agents" data-topic="ai-agents">AI Agents &amp; Scraping <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=residential-ops" data-topic="residential-ops">Residential Ops &amp; Tools <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=pricing-compliance" data-topic="pricing-compliance">Pricing &amp; Compliance <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="guides">
+<article class="blog-feed-item" data-topic="isp-nodes">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides?topic=isp-nodes">Static ISP &amp; Core Nodes</a> <time datetime="2026-11-24">2026-11-24</time></p>
+<h3 class="blog-feed-title"><a href="/blog/guides/dedicated-mobile-proxies-complete-guide">Dedicated 4G/5G Mobile Proxies Guide: Real SIM Slots, Unlimited Bandwidth, and Carrier CGNAT Anti-Detection (2026)</a></h3>
+<p class="blog-feed-desc">A comprehensive deep dive into Dedicated 4G/5G Mobile Proxies: exclusive physical SIM hardware isolation, carrier CGNAT trust profile, unlimited bandwidth, and on-demand IP switching. Solve AI account bans, TikTok/social media growth, and cross-border store security.</p>
+</article>
 <article class="blog-feed-item" data-topic="ai-agents">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides?topic=ai-agents">AI Agents &amp; Scraping</a> <time datetime="2026-11-21">2026-11-21</time></p>
 <h3 class="blog-feed-title"><a href="/blog/guides/n8n-dify-langchain-proxy-scraping-api-guide">n8n, Dify, and LangChain Proxy Integration Guide: Fixing 403/429 Blocks in AI Workflows (2026)</a></h3>

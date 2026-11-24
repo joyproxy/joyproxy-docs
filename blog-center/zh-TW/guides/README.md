@@ -9,14 +9,19 @@ next: false
 靜態 ISP 節點、AI Agent 防封整合、住宅代理擷取與成本合規系統指南。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="guides">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/guides" data-topic="all">全部 <span class="blog-topic-count">24</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=isp-nodes" data-topic="isp-nodes">靜態 ISP 與核心節點 <span class="blog-topic-count">6</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/guides" data-topic="all">全部 <span class="blog-topic-count">25</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=isp-nodes" data-topic="isp-nodes">靜態 ISP 與核心節點 <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=ai-agents" data-topic="ai-agents">AI Agent 與擷取 API <span class="blog-topic-count">7</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=residential-ops" data-topic="residential-ops">住宅擷取與實操工具 <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides?topic=pricing-compliance" data-topic="pricing-compliance">價格對比與合規預算 <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="guides">
+<article class="blog-feed-item" data-topic="isp-nodes">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/guides?topic=isp-nodes">靜態 ISP 與核心節點</a> <time datetime="2026-11-24">2026-11-24</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/guides/dedicated-mobile-proxies-complete-guide">真機獨享 4G/5G 代理完全指南：實體 SIM 卡槽、無限流量與電信商 CGNAT 防封實戰（2026）</a></h3>
+<p class="blog-feed-desc">深度剖析真機獨享 4G/5G 代理的技術底層：實體 SIM 獨享隔離、行動電信商 CGNAT 信譽背書、無限流量與依需一鍵更換 IP 實操。手把手解決高階 AI 帳號風控、TikTok/海外社群矩陣與跨境電商店鋪防封難題。</p>
+</article>
 <article class="blog-feed-item" data-topic="ai-agents">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/guides?topic=ai-agents">AI Agent 與擷取 API</a> <time datetime="2026-11-21">2026-11-21</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/guides/n8n-dify-langchain-proxy-scraping-api-guide">n8n、Dify 與 LangChain 代理及擷取 API 設定實戰：徹底解決 AI 工作流 403/429 攔截（2026）</a></h3>

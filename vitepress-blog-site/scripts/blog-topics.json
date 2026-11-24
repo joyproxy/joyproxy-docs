@@ -173,6 +173,7 @@
             "zh-TW": "靜態 ISP 與核心節點"
           },
           "articles": [
+            "guides/dedicated-mobile-proxies-complete-guide",
             "guides/how-to-use-isp-proxies-for-chatgpt-claude",
             "guides/static-isp-datacenter-proxy-setup-guide",
             "guides/why-fraud-engines-track-asns-isp-reputation",

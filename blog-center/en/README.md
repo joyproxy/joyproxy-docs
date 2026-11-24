@@ -9,11 +9,11 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">51</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">52</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">10</span></a>
-<a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">24</span></a>
+<a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">25</span></a>
 </div>
 
 <div class="blog-feed">
@@ -21,6 +21,11 @@ Guides, use cases, and technical articles for proxy operators.
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical">Technical</a> <a class="blog-feed-subtag" href="/blog/technical?topic=fingerprints-networks">Fingerprints &amp; ASNs</a> <time datetime="2026-11-24">2026-11-24</time></p>
 <h3 class="blog-feed-title"><a href="/blog/technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection">TCP/IP Fingerprinting (p0f), RTT Latency Gap &amp; OS Mismatch: How Anti-Bot Systems Detect Proxies Below TLS</a></h3>
 <p class="blog-feed-desc">Deep technical analysis of Layer 3/4 proxy detection—how anti-bot engines inspect p0f/JA4T TCP SYN signatures, MSS/MTU clamping, and TCP-vs-TLS RTT differentials (ΔRTT), plus production worker co-location and Python diagnostic scripts for JoyProxy.</p>
+</article>
+<article class="blog-feed-item" data-topic="isp-nodes">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides">Guides</a> <a class="blog-feed-subtag" href="/blog/guides?topic=isp-nodes">Static ISP &amp; Core Nodes</a> <time datetime="2026-11-24">2026-11-24</time></p>
+<h3 class="blog-feed-title"><a href="/blog/guides/dedicated-mobile-proxies-complete-guide">Dedicated 4G/5G Mobile Proxies Guide: Real SIM Slots, Unlimited Bandwidth, and Carrier CGNAT Anti-Detection (2026)</a></h3>
+<p class="blog-feed-desc">A comprehensive deep dive into Dedicated 4G/5G Mobile Proxies: exclusive physical SIM hardware isolation, carrier CGNAT trust profile, unlimited bandwidth, and on-demand IP switching. Solve AI account bans, TikTok/social media growth, and cross-border store security.</p>
 </article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started">Getting Started</a> <a class="blog-feed-subtag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-23">2026-11-23</time></p>
