@@ -131,6 +131,7 @@
             "zh-TW": "電商與支付風控"
           },
           "articles": [
+            "use-cases/travel-ota-dynamic-pricing-scraping-proxy-architecture",
             "use-cases/ecommerce-price-monitoring-anti-bot-architecture",
             "use-cases/stripe-paypal-checkout-fraud-prevention",
             "use-cases/fixed-ip-ecommerce-operations"

@@ -21,6 +21,7 @@
 * [住宅代理 vs 数据中心代理：网页抓取在何时各显神通？](technical/residential-vs-datacenter-scraping.md)
 * [HTTP、HTTPS 与 SOCKS5：生产环境如何正确选型代理协议](technical/http-socks5-proxy-protocols.md)
 ## 使用场景
+* [机酒与 OTA 动态定价抓取架构：如何绕过航司、Booking 与 Expedia 反爬并消除地域差价偏差（2026）](use-cases/travel-ota-dynamic-pricing-scraping-proxy-architecture.md)
 * [广告验证、恶意伪装（Cloaking）检测与品牌保护：多地区住宅与 4G/5G 移动代理架构实战（2026）](use-cases/ad-verification-cloaking-detection-proxy-architecture.md)
 * [跨境电商价格监控与竞品抓取实战：如何绕过 Amazon、Walmart 与 Shopify 反爬风控（2026）](use-cases/ecommerce-price-monitoring-anti-bot-architecture.md)
 * [AI 搜索（RAG）与高并发 SERP 抓取架构：如何告别 429 限流与验证码死循环？](use-cases/ai-rag-serp-crawling-proxy-architecture.md)

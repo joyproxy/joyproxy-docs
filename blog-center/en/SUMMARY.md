@@ -21,6 +21,7 @@
 * [Residential vs Datacenter Proxies for Web Scraping: When Each Type Wins](technical/residential-vs-datacenter-scraping.md)
 * [HTTP, HTTPS, and SOCKS5: Choosing a Proxy Protocol in Production](technical/http-socks5-proxy-protocols.md)
 ## Use Cases
+* [Travel, Flight & Hotel Dynamic Pricing Aggregation: Multi-Geo OTA Scraping Proxy Architecture (2026)](use-cases/travel-ota-dynamic-pricing-scraping-proxy-architecture.md)
 * [Ad Verification, Cloaking Detection & Brand Protection: Multi-Geo Residential and 4G/5G Mobile Proxy Architecture (2026)](use-cases/ad-verification-cloaking-detection-proxy-architecture.md)
 * [E-Commerce Price Monitoring & Competitor Scraping: Bypassing Amazon, Walmart & Shopify Anti-Bot Defenses (2026)](use-cases/ecommerce-price-monitoring-anti-bot-architecture.md)
 * [AI Search, RAG & High-Concurrency SERP Crawling: Eliminating 429s and CAPTCHA Loops With Hybrid Proxy Pools](use-cases/ai-rag-serp-crawling-proxy-architecture.md)

@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">52</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">53</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">9</span></a>
-<a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">10</span></a>
+<a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">11</span></a>
 <a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">25</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ecommerce-payments">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases">Use Cases</a> <a class="blog-feed-subtag" href="/blog/use-cases?topic=ecommerce-payments">E-Commerce &amp; Payments</a> <time datetime="2026-11-25">2026-11-25</time></p>
+<h3 class="blog-feed-title"><a href="/blog/use-cases/travel-ota-dynamic-pricing-scraping-proxy-architecture">Travel, Flight &amp; Hotel Dynamic Pricing Aggregation: Multi-Geo OTA Scraping Proxy Architecture (2026)</a></h3>
+<p class="blog-feed-desc">Why airline, hotel, and OTA fare scrapers trigger Akamai/DataDome 403s and return geo-skewed prices from cloud IPs. Build a Point-of-Sale (POS) accurate fare monitoring pipeline with JoyProxy Rotating Residential, 4G/5G Mobile, Static ISP, Datacenter, and Web Scraping API.</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical">Technical</a> <a class="blog-feed-subtag" href="/blog/technical?topic=fingerprints-networks">Fingerprints &amp; ASNs</a> <time datetime="2026-11-24">2026-11-24</time></p>
 <h3 class="blog-feed-title"><a href="/blog/technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection">TCP/IP Fingerprinting (p0f), RTT Latency Gap &amp; OS Mismatch: How Anti-Bot Systems Detect Proxies Below TLS</a></h3>

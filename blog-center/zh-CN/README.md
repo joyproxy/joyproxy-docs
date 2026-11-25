@@ -9,14 +9,19 @@ next: false
 代理运营相关的指南、场景与技术文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">52</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">53</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/getting-started">入门 <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">9</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">10</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">11</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">25</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ecommerce-payments">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/use-cases">使用场景</a> <a class="blog-feed-subtag" href="/blog/zh-CN/use-cases?topic=ecommerce-payments">电商与支付风控</a> <time datetime="2026-11-25">2026-11-25</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/use-cases/travel-ota-dynamic-pricing-scraping-proxy-architecture">机酒与 OTA 动态定价抓取架构：如何绕过航司、Booking 与 Expedia 反爬并消除地域差价偏差（2026）</a></h3>
+<p class="blog-feed-desc">深度解析航司、酒店与 OTA 平台（Booking、Expedia、Airbnb、Skyscanner）如何通过 POS 地域定价、移动端专属折扣与 Akamai/DataDome 风控拦截爬虫，并基于 JoyProxy 住宅代理、移动代理、ISP 代理、数据中心代理与网页抓取 API 构建高精度比价架构。</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical">技术</a> <a class="blog-feed-subtag" href="/blog/zh-CN/technical?topic=fingerprints-networks">指纹与网络底层</a> <time datetime="2026-11-24">2026-11-24</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection">TCP/IP 指纹（p0f）、RTT 延迟差与 OS 错配：反爬系统如何在 TLS 之下识破代理？</a></h3>

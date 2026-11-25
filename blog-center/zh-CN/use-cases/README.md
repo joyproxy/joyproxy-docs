@@ -9,13 +9,18 @@ next: false
 海外社媒养号、跨境电商、支付风控、多区 SEO 监控与高并发业务实战。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="use-cases">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/use-cases" data-topic="all">全部 <span class="blog-topic-count">10</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/use-cases" data-topic="all">全部 <span class="blog-topic-count">11</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases?topic=social-anti-ban" data-topic="social-anti-ban">社媒养号与防封 <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">电商与支付风控 <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">电商与支付风控 <span class="blog-topic-count">4</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO 与高并发业务 <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="use-cases">
+<article class="blog-feed-item" data-topic="ecommerce-payments">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/use-cases?topic=ecommerce-payments">电商与支付风控</a> <time datetime="2026-11-25">2026-11-25</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/use-cases/travel-ota-dynamic-pricing-scraping-proxy-architecture">机酒与 OTA 动态定价抓取架构：如何绕过航司、Booking 与 Expedia 反爬并消除地域差价偏差（2026）</a></h3>
+<p class="blog-feed-desc">深度解析航司、酒店与 OTA 平台（Booking、Expedia、Airbnb、Skyscanner）如何通过 POS 地域定价、移动端专属折扣与 Akamai/DataDome 风控拦截爬虫，并基于 JoyProxy 住宅代理、移动代理、ISP 代理、数据中心代理与网页抓取 API 构建高精度比价架构。</p>
+</article>
 <article class="blog-feed-item" data-topic="seo-concurrency">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/use-cases?topic=seo-concurrency">SEO 与高并发业务</a> <time datetime="2026-11-22">2026-11-22</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/use-cases/ad-verification-cloaking-detection-proxy-architecture">广告验证、恶意伪装（Cloaking）检测与品牌保护：多地区住宅与 4G/5G 移动代理架构实战（2026）</a></h3>

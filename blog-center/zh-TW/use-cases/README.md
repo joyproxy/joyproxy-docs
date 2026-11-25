@@ -9,13 +9,18 @@ next: false
 海外社群養號、跨境電商、支付風控、多區 SEO 監控與高併發業務實戰。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="use-cases">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/use-cases" data-topic="all">全部 <span class="blog-topic-count">10</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/use-cases" data-topic="all">全部 <span class="blog-topic-count">11</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=social-anti-ban" data-topic="social-anti-ban">社群養號與防封 <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">電商與支付風控 <span class="blog-topic-count">3</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=ecommerce-payments" data-topic="ecommerce-payments">電商與支付風控 <span class="blog-topic-count">4</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases?topic=seo-concurrency" data-topic="seo-concurrency">SEO 與高併發業務 <span class="blog-topic-count">4</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="use-cases">
+<article class="blog-feed-item" data-topic="ecommerce-payments">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases?topic=ecommerce-payments">電商與支付風控</a> <time datetime="2026-11-25">2026-11-25</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/travel-ota-dynamic-pricing-scraping-proxy-architecture">機酒與 OTA 動態定價擷取架構：如何繞過航空官網、Booking 與 Expedia 反爬並消除地域價差偏差（2026）</a></h3>
+<p class="blog-feed-desc">深度解析航空官網、飯店與 OTA 平台（Booking、Expedia、Airbnb、Skyscanner）如何透過 POS 地域定價、行動端專屬折扣與 Akamai/DataDome 風控攔截爬蟲，並基於 JoyProxy 住宅代理、移動代理、ISP 代理、資料中心代理與網頁擷取 API 建構高精度比價架構。</p>
+</article>
 <article class="blog-feed-item" data-topic="seo-concurrency">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases?topic=seo-concurrency">SEO 與高併發業務</a> <time datetime="2026-11-22">2026-11-22</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/ad-verification-cloaking-detection-proxy-architecture">廣告驗證、惡意偽裝（Cloaking）偵測與品牌保護：多地區住宅與 4G/5G 行動代理架構實戰（2026）</a></h3>
