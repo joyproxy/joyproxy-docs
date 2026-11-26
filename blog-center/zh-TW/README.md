@@ -9,14 +9,19 @@ next: false
 代理營運相關的指南、場景與技術文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">53</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/getting-started">入門 <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">54</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/getting-started">入門 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/technical">技術 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases">使用場景 <span class="blog-topic-count">11</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/guides">指南 <span class="blog-topic-count">25</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/getting-started">入門</a> <a class="blog-feed-subtag" href="/blog/zh-TW/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-26">2026-11-26</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/getting-started/mobile-proxy-setup-android-ios-emulators">手機與模擬器代理設定入門：Android 分應用代理、iPhone (iOS) 與安卓模擬器防洩漏實戰（2026）</a></h3>
+<p class="blog-feed-desc">手把手教你設定 Android、iPhone/iPad (iOS) 與安卓模擬器（LDPlayer 雷電、MuMu、Android Studio/ADB）的 HTTP/SOCKS5 代理。詳解分應用白名單防偷跑流量、IP 白名單 vs 帳密認證及行動端防穿幫檢測。</p>
+</article>
 <article class="blog-feed-item" data-topic="ecommerce-payments">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/use-cases">使用場景</a> <a class="blog-feed-subtag" href="/blog/zh-TW/use-cases?topic=ecommerce-payments">電商與支付風控</a> <time datetime="2026-11-25">2026-11-25</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/use-cases/travel-ota-dynamic-pricing-scraping-proxy-architecture">機酒與 OTA 動態定價擷取架構：如何繞過航空官網、Booking 與 Expedia 反爬並消除地域價差偏差（2026）</a></h3>

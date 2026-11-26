@@ -9,12 +9,17 @@ next: false
 代理选型决策、充值认证与 5 分钟快速接入实战。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="getting-started">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/getting-started" data-topic="all">全部 <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/getting-started" data-topic="all">全部 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/getting-started?topic=onboarding" data-topic="onboarding">选型与开户 <span class="blog-topic-count">3</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/getting-started?topic=integration" data-topic="integration">快速接入 <span class="blog-topic-count">5</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/getting-started?topic=integration" data-topic="integration">快速接入 <span class="blog-topic-count">6</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="getting-started">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-26">2026-11-26</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/getting-started/mobile-proxy-setup-android-ios-emulators">手机与模拟器代理配置入门：Android 分应用代理、iPhone (iOS) 与安卓模拟器防泄漏实战（2026）</a></h3>
+<p class="blog-feed-desc">手把手教你配置 Android、iPhone/iPad (iOS) 与安卓模拟器（LDPlayer 雷电、MuMu、Android Studio/ADB）的 HTTP/SOCKS5 代理。详解分应用白名单防偷跑流量、IP 白名单 vs 账密认证及移动端防穿帮检测。</p>
+</article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-23">2026-11-23</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/getting-started/proxy-geo-targeting-country-city-asn-setup">代理地理定位实战入门：国家、州省、城市与运营商 ASN 精准选型及防地域穿帮指南</a></h3>

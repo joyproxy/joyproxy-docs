@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">53</span></a>
-<a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">8</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">54</span></a>
+<a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">11</span></a>
 <a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">25</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="integration">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started">Getting Started</a> <a class="blog-feed-subtag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-26">2026-11-26</time></p>
+<h3 class="blog-feed-title"><a href="/blog/getting-started/mobile-proxy-setup-android-ios-emulators">Mobile Device Proxy Setup Quickstart: Android, iPhone (iOS), and Emulators With Per-App Routing (2026)</a></h3>
+<p class="blog-feed-desc">Step-by-step guide to configuring HTTP and SOCKS5 proxies on Android, iPhone/iPad (iOS), and Android emulators (LDPlayer, MuMu, ADB). Learn per-app whitelist routing, IP whitelist vs username/password auth, and mobile anti-leak checks.</p>
+</article>
 <article class="blog-feed-item" data-topic="ecommerce-payments">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/use-cases">Use Cases</a> <a class="blog-feed-subtag" href="/blog/use-cases?topic=ecommerce-payments">E-Commerce &amp; Payments</a> <time datetime="2026-11-25">2026-11-25</time></p>
 <h3 class="blog-feed-title"><a href="/blog/use-cases/travel-ota-dynamic-pricing-scraping-proxy-architecture">Travel, Flight &amp; Hotel Dynamic Pricing Aggregation: Multi-Geo OTA Scraping Proxy Architecture (2026)</a></h3>

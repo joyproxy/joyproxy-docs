@@ -2,6 +2,7 @@
 
 * [Home](README.md)
 ## 入門
+* [手機與模擬器代理設定入門：Android 分應用代理、iPhone (iOS) 與安卓模擬器防洩漏實戰（2026）](getting-started/mobile-proxy-setup-android-ios-emulators.md)
 * [代理地理定位實戰入門：國家、州省、城市與營運商 ASN 精準選型及防地域穿幫指南](getting-started/proxy-geo-targeting-country-city-asn-setup.md)
 * [環境變數設定代理全解：Linux、macOS、Windows、Docker 與 AI 工具中的 HTTP_PROXY / ALL_PROXY / NO_PROXY 實戰指南](getting-started/proxy-environment-variables-docker-terminal-ai-tools.md)
 * [零基礎 5 分鐘在 Python、Node.js 與 Curl 中跑通你的首個代理請求](getting-started/quickstart-proxy-python-nodejs-curl.md)
