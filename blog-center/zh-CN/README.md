@@ -9,14 +9,19 @@ next: false
 代理运营相关的指南、场景与技术文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">54</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/">全部文章 <span class="blog-topic-count">55</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/getting-started">入门 <span class="blog-topic-count">9</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">9</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/technical">技术 <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/use-cases">使用场景 <span class="blog-topic-count">11</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides">指南 <span class="blog-topic-count">25</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="protocols-sessions">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical">技术</a> <a class="blog-feed-subtag" href="/blog/zh-CN/technical?topic=protocols-sessions">协议与会话</a> <time datetime="2026-11-27">2026-11-27</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/http3-quic-udp-proxying-connect-fallback-architecture">HTTP/3 (QUIC)、UDP 代理与 CONNECT 协议回退机制：为什么代理流量会降级到 HTTP/2？如何防范 QUIC 泄漏与握手异常</a></h3>
+<p class="blog-feed-desc">深度解析 HTTP/3（基于 UDP 443）为何无法直接穿过标准 HTTP CONNECT 隧道，拆解 SOCKS5 UDP ASSOCIATE 与 MASQUE (CONNECT-UDP) 协议原理、浏览器 Alt-Svc 降级与本地 QUIC 泄漏隐患，并提供 Playwright、curl_cffi 与 curl 在 JoyProxy 节点上的生产级验证配置。</p>
+</article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/getting-started">入门</a> <a class="blog-feed-subtag" href="/blog/zh-CN/getting-started?topic=integration">快速接入</a> <time datetime="2026-11-26">2026-11-26</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/getting-started/mobile-proxy-setup-android-ios-emulators">手机与模拟器代理配置入门：Android 分应用代理、iPhone (iOS) 与安卓模拟器防泄漏实战（2026）</a></h3>

@@ -75,6 +75,7 @@
             "zh-TW": "協定與工作階段"
           },
           "articles": [
+            "technical/http3-quic-udp-proxying-connect-fallback-architecture",
             "technical/proxy-connection-pooling-keepalive-timeouts-retries",
             "technical/sticky-session-technical-architecture",
             "technical/proxy-http-status-codes",

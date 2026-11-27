@@ -12,6 +12,7 @@
 * [新用户快速上手：低成本验证与套餐选型指南](getting-started/five-dollar-credit-onboarding.md)
 * [JoyProxy 白名单、认证账密与首个代理端点提取](getting-started/whitelist-credentials-setup.md)
 ## 技术
+* [HTTP/3 (QUIC)、UDP 代理与 CONNECT 协议回退机制：为什么代理流量会降级到 HTTP/2？如何防范 QUIC 泄漏与握手异常](technical/http3-quic-udp-proxying-connect-fallback-architecture.md)
 * [TCP/IP 指纹（p0f）、RTT 延迟差与 OS 错配：反爬系统如何在 TLS 之下识破代理？](technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection.md)
 * [代理连接池、Keep-Alive 陷阱与超时重试架构：彻底解决 502、ECONNRESET 与“IP 不切换”故障](technical/proxy-connection-pooling-keepalive-timeouts-retries.md)
 * [DNS 泄漏、WebRTC 穿透与 IPv6 绕过：为什么配置了代理仍然暴露真实 IP？全链路防泄漏与底层检测架构解析](technical/dns-webrtc-ipv6-proxy-leaks.md)

@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">54</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">55</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">9</span></a>
-<a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">9</span></a>
+<a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">11</span></a>
 <a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">25</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="protocols-sessions">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical">Technical</a> <a class="blog-feed-subtag" href="/blog/technical?topic=protocols-sessions">Protocols &amp; Sessions</a> <time datetime="2026-11-27">2026-11-27</time></p>
+<h3 class="blog-feed-title"><a href="/blog/technical/http3-quic-udp-proxying-connect-fallback-architecture">HTTP/3 (QUIC), UDP Proxying &amp; CONNECT Fallback: Why Proxied Traffic Drops to HTTP/2—and How to Prevent QUIC Leaks</a></h3>
+<p class="blog-feed-desc">Deep technical breakdown of why HTTP/3 (UDP/443) cannot traverse standard HTTP CONNECT tunnels, how SOCKS5 UDP ASSOCIATE and MASQUE (CONNECT-UDP) work, why browsers leak QUIC UDP packets or hit Alt-Svc stalls, and production Playwright, curl_cffi, and curl verification configs for JoyProxy.</p>
+</article>
 <article class="blog-feed-item" data-topic="integration">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/getting-started">Getting Started</a> <a class="blog-feed-subtag" href="/blog/getting-started?topic=integration">Quick Integration</a> <time datetime="2026-11-26">2026-11-26</time></p>
 <h3 class="blog-feed-title"><a href="/blog/getting-started/mobile-proxy-setup-android-ios-emulators">Mobile Device Proxy Setup Quickstart: Android, iPhone (iOS), and Emulators With Per-App Routing (2026)</a></h3>

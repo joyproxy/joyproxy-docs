@@ -9,12 +9,17 @@ next: false
 代理協定、黏性工作階段底層機制、JA4/TLS 指紋與 ASN 網路特徵深度解析。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="technical">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/technical" data-topic="all">全部 <span class="blog-topic-count">9</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/technical?topic=protocols-sessions" data-topic="protocols-sessions">協定與工作階段 <span class="blog-topic-count">4</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/technical" data-topic="all">全部 <span class="blog-topic-count">10</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/technical?topic=protocols-sessions" data-topic="protocols-sessions">協定與工作階段 <span class="blog-topic-count">5</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">指紋與網路底層 <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="technical">
+<article class="blog-feed-item" data-topic="protocols-sessions">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/technical?topic=protocols-sessions">協定與工作階段</a> <time datetime="2026-11-27">2026-11-27</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/technical/http3-quic-udp-proxying-connect-fallback-architecture">HTTP/3 (QUIC)、UDP 代理與 CONNECT 協定回退機制：為什麼代理流量會降級到 HTTP/2？如何防範 QUIC 洩漏與交握異常</a></h3>
+<p class="blog-feed-desc">深度解析 HTTP/3（基於 UDP 443）為何無法直接穿過標準 HTTP CONNECT 隧道，拆解 SOCKS5 UDP ASSOCIATE 與 MASQUE (CONNECT-UDP) 協定原理、瀏覽器 Alt-Svc 降級與本地 QUIC 洩漏隱患，並提供 Playwright、curl_cffi 與 curl 在 JoyProxy 節點上的生產級驗證配置。</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/technical?topic=fingerprints-networks">指紋與網路底層</a> <time datetime="2026-11-24">2026-11-24</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection">TCP/IP 指紋（p0f）、RTT 延遲差與 OS 錯配：反爬系統如何在 TLS 之下識破代理？</a></h3>

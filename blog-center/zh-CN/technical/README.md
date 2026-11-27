@@ -9,12 +9,17 @@ next: false
 代理协议、粘性会话底层机制、JA4/TLS 指纹与 ASN 网络特征深度解析。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="technical">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/technical" data-topic="all">全部 <span class="blog-topic-count">9</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/technical?topic=protocols-sessions" data-topic="protocols-sessions">协议与会话 <span class="blog-topic-count">4</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/technical" data-topic="all">全部 <span class="blog-topic-count">10</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/technical?topic=protocols-sessions" data-topic="protocols-sessions">协议与会话 <span class="blog-topic-count">5</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">指纹与网络底层 <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="technical">
+<article class="blog-feed-item" data-topic="protocols-sessions">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical?topic=protocols-sessions">协议与会话</a> <time datetime="2026-11-27">2026-11-27</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/http3-quic-udp-proxying-connect-fallback-architecture">HTTP/3 (QUIC)、UDP 代理与 CONNECT 协议回退机制：为什么代理流量会降级到 HTTP/2？如何防范 QUIC 泄漏与握手异常</a></h3>
+<p class="blog-feed-desc">深度解析 HTTP/3（基于 UDP 443）为何无法直接穿过标准 HTTP CONNECT 隧道，拆解 SOCKS5 UDP ASSOCIATE 与 MASQUE (CONNECT-UDP) 协议原理、浏览器 Alt-Svc 降级与本地 QUIC 泄漏隐患，并提供 Playwright、curl_cffi 与 curl 在 JoyProxy 节点上的生产级验证配置。</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/technical?topic=fingerprints-networks">指纹与网络底层</a> <time datetime="2026-11-24">2026-11-24</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection">TCP/IP 指纹（p0f）、RTT 延迟差与 OS 错配：反爬系统如何在 TLS 之下识破代理？</a></h3>

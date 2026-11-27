@@ -9,12 +9,17 @@ next: false
 Protocol internals, sticky session architecture, TLS/JA4 fingerprinting, and ASN classification.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="technical">
-<a class="blog-topic-chip is-active" href="/blog/technical" data-topic="all">All <span class="blog-topic-count">9</span></a>
-<a class="blog-topic-chip" href="/blog/technical?topic=protocols-sessions" data-topic="protocols-sessions">Protocols &amp; Sessions <span class="blog-topic-count">4</span></a>
+<a class="blog-topic-chip is-active" href="/blog/technical" data-topic="all">All <span class="blog-topic-count">10</span></a>
+<a class="blog-topic-chip" href="/blog/technical?topic=protocols-sessions" data-topic="protocols-sessions">Protocols &amp; Sessions <span class="blog-topic-count">5</span></a>
 <a class="blog-topic-chip" href="/blog/technical?topic=fingerprints-networks" data-topic="fingerprints-networks">Fingerprints &amp; ASNs <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="technical">
+<article class="blog-feed-item" data-topic="protocols-sessions">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical?topic=protocols-sessions">Protocols &amp; Sessions</a> <time datetime="2026-11-27">2026-11-27</time></p>
+<h3 class="blog-feed-title"><a href="/blog/technical/http3-quic-udp-proxying-connect-fallback-architecture">HTTP/3 (QUIC), UDP Proxying &amp; CONNECT Fallback: Why Proxied Traffic Drops to HTTP/2—and How to Prevent QUIC Leaks</a></h3>
+<p class="blog-feed-desc">Deep technical breakdown of why HTTP/3 (UDP/443) cannot traverse standard HTTP CONNECT tunnels, how SOCKS5 UDP ASSOCIATE and MASQUE (CONNECT-UDP) work, why browsers leak QUIC UDP packets or hit Alt-Svc stalls, and production Playwright, curl_cffi, and curl verification configs for JoyProxy.</p>
+</article>
 <article class="blog-feed-item" data-topic="fingerprints-networks">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical?topic=fingerprints-networks">Fingerprints &amp; ASNs</a> <time datetime="2026-11-24">2026-11-24</time></p>
 <h3 class="blog-feed-title"><a href="/blog/technical/tcp-ip-fingerprinting-rtt-mismatch-proxy-detection">TCP/IP Fingerprinting (p0f), RTT Latency Gap &amp; OS Mismatch: How Anti-Bot Systems Detect Proxies Below TLS</a></h3>
