@@ -193,6 +193,7 @@
             "zh-TW": "AI Agent 與擷取 API"
           },
           "articles": [
+            "guides/scrapy-crawl4ai-crawlee-proxy-rotation-guide",
             "guides/n8n-dify-langchain-proxy-scraping-api-guide",
             "guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide",
             "guides/tavily-firecrawl-alternatives-web-scraping-apis",

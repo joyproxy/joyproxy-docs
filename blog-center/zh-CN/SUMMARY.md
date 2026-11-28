@@ -35,6 +35,7 @@
 * [多国地理代理进行真实 SEO 排名监控：消除个性化噪音](use-cases/geo-proxies-seo-monitoring.md)
 * [跨境电商为何青睐长期固定 IP（以及轮换代理的隐患）](use-cases/fixed-ip-ecommerce-operations.md)
 ## 指南
+* [Scrapy、Crawl4AI 与 Crawlee 代理配置实战：高并发轮换、重试中间件与省流架构指南（2026）](guides/scrapy-crawl4ai-crawlee-proxy-rotation-guide.md)
 * [真机独享 4G/5G 代理完全指南：物理 SIM 卡槽、无限流量与运营商 CGNAT 防封实战（2026）](guides/dedicated-mobile-proxies-complete-guide.md)
 * [n8n、Dify 与 LangChain 代理及抓取 API 配置实战：彻底解决 AI 工作流 403/429 拦截（2026）](guides/n8n-dify-langchain-proxy-scraping-api-guide.md)
 * [Playwright 与 Puppeteer 代理配置实战：无头浏览器防检测、IP 隔离轮换与省流 70% 技巧（2026）](guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide.md)

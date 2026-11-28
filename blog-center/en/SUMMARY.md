@@ -35,6 +35,7 @@
 * [SEO Rank Checks from Multiple Countries (Without Personalized Noise)](use-cases/geo-proxies-seo-monitoring.md)
 * [Why E-commerce Teams Buy Long-Term Fixed IPs (and When Rotation Hurts)](use-cases/fixed-ip-ecommerce-operations.md)
 ## Guides
+* [Scrapy, Crawl4AI & Crawlee Proxy Setup Guide: High-Concurrency Rotation, Retry Middleware & Bandwidth Control (2026)](guides/scrapy-crawl4ai-crawlee-proxy-rotation-guide.md)
 * [Dedicated 4G/5G Mobile Proxies Guide: Real SIM Slots, Unlimited Bandwidth, and Carrier CGNAT Anti-Detection (2026)](guides/dedicated-mobile-proxies-complete-guide.md)
 * [n8n, Dify, and LangChain Proxy Integration Guide: Fixing 403/429 Blocks in AI Workflows (2026)](guides/n8n-dify-langchain-proxy-scraping-api-guide.md)
 * [Playwright and Puppeteer Proxy Setup Guide: Anti-Detection, Per-Context Rotation, and 70% Bandwidth Savings (2026)](guides/playwright-puppeteer-proxy-anti-detection-bandwidth-guide.md)

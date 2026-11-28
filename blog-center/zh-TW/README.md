@@ -9,14 +9,19 @@ next: false
 代理營運相關的指南、場景與技術文章。
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">55</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-TW/">全部文章 <span class="blog-topic-count">56</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/getting-started">入門 <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/technical">技術 <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/zh-TW/use-cases">使用場景 <span class="blog-topic-count">11</span></a>
-<a class="blog-topic-chip" href="/blog/zh-TW/guides">指南 <span class="blog-topic-count">25</span></a>
+<a class="blog-topic-chip" href="/blog/zh-TW/guides">指南 <span class="blog-topic-count">26</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/guides">指南</a> <a class="blog-feed-subtag" href="/blog/zh-TW/guides?topic=ai-agents">AI Agent 與擷取 API</a> <time datetime="2026-11-28">2026-11-28</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-TW/guides/scrapy-crawl4ai-crawlee-proxy-rotation-guide">Scrapy、Crawl4AI 與 Crawlee 代理配置實戰：高併發輪換、重試中介軟體與省流架構指南（2026）</a></h3>
+<p class="blog-feed-desc">詳解如何在 Python Scrapy、Crawl4AI 與 Node.js Crawlee 中接入 JoyProxy 動態住宅、商業、靜態 ISP、資料中心、行動代理及 Web Scraping API，徹底解決 407 驗證失敗、Keep-Alive 鎖死 IP 與無頭瀏覽器流量暴漲問題。</p>
+</article>
 <article class="blog-feed-item" data-topic="protocols-sessions">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-TW/technical">技術</a> <a class="blog-feed-subtag" href="/blog/zh-TW/technical?topic=protocols-sessions">協定與工作階段</a> <time datetime="2026-11-27">2026-11-27</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-TW/technical/http3-quic-udp-proxying-connect-fallback-architecture">HTTP/3 (QUIC)、UDP 代理與 CONNECT 協定回退機制：為什麼代理流量會降級到 HTTP/2？如何防範 QUIC 洩漏與交握異常</a></h3>

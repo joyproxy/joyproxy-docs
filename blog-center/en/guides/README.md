@@ -9,14 +9,19 @@ next: false
 In-depth operational playbooks for static ISP nodes, AI agents, residential extraction, and cost optimization.
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="guides">
-<a class="blog-topic-chip is-active" href="/blog/guides" data-topic="all">All <span class="blog-topic-count">25</span></a>
+<a class="blog-topic-chip is-active" href="/blog/guides" data-topic="all">All <span class="blog-topic-count">26</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=isp-nodes" data-topic="isp-nodes">Static ISP &amp; Core Nodes <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/guides?topic=ai-agents" data-topic="ai-agents">AI Agents &amp; Scraping <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip" href="/blog/guides?topic=ai-agents" data-topic="ai-agents">AI Agents &amp; Scraping <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=residential-ops" data-topic="residential-ops">Residential Ops &amp; Tools <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/guides?topic=pricing-compliance" data-topic="pricing-compliance">Pricing &amp; Compliance <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="guides">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides?topic=ai-agents">AI Agents &amp; Scraping</a> <time datetime="2026-11-28">2026-11-28</time></p>
+<h3 class="blog-feed-title"><a href="/blog/guides/scrapy-crawl4ai-crawlee-proxy-rotation-guide">Scrapy, Crawl4AI &amp; Crawlee Proxy Setup Guide: High-Concurrency Rotation, Retry Middleware &amp; Bandwidth Control (2026)</a></h3>
+<p class="blog-feed-desc">Configure Rotating Residential, Business, Static ISP, Datacenter, Mobile proxies, and Web Scraping API across Python Scrapy, Crawl4AI, and Node.js Crawlee. Eliminate 407 auth failures, Keep-Alive sticky-IP bugs, and wasted headless bandwidth.</p>
+</article>
 <article class="blog-feed-item" data-topic="isp-nodes">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides?topic=isp-nodes">Static ISP &amp; Core Nodes</a> <time datetime="2026-11-24">2026-11-24</time></p>
 <h3 class="blog-feed-title"><a href="/blog/guides/dedicated-mobile-proxies-complete-guide">Dedicated 4G/5G Mobile Proxies Guide: Real SIM Slots, Unlimited Bandwidth, and Carrier CGNAT Anti-Detection (2026)</a></h3>

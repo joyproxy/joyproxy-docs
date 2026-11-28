@@ -9,14 +9,19 @@ next: false
 静态 ISP 节点、AI Agent 防封集成、住宅代理提取与成本合规系统指南。
 
 <div class="blog-topic-bar" data-blog-topic-bar data-category="guides">
-<a class="blog-topic-chip is-active" href="/blog/zh-CN/guides" data-topic="all">全部 <span class="blog-topic-count">25</span></a>
+<a class="blog-topic-chip is-active" href="/blog/zh-CN/guides" data-topic="all">全部 <span class="blog-topic-count">26</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=isp-nodes" data-topic="isp-nodes">静态 ISP 与核心节点 <span class="blog-topic-count">7</span></a>
-<a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=ai-agents" data-topic="ai-agents">AI Agent 与抓取 API <span class="blog-topic-count">7</span></a>
+<a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=ai-agents" data-topic="ai-agents">AI Agent 与抓取 API <span class="blog-topic-count">8</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=residential-ops" data-topic="residential-ops">住宅提取与实操工具 <span class="blog-topic-count">6</span></a>
 <a class="blog-topic-chip" href="/blog/zh-CN/guides?topic=pricing-compliance" data-topic="pricing-compliance">价格对比与合规预算 <span class="blog-topic-count">5</span></a>
 </div>
 
 <div class="blog-feed" data-blog-feed data-category="guides">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/guides?topic=ai-agents">AI Agent 与抓取 API</a> <time datetime="2026-11-28">2026-11-28</time></p>
+<h3 class="blog-feed-title"><a href="/blog/zh-CN/guides/scrapy-crawl4ai-crawlee-proxy-rotation-guide">Scrapy、Crawl4AI 与 Crawlee 代理配置实战：高并发轮换、重试中间件与省流架构指南（2026）</a></h3>
+<p class="blog-feed-desc">详解如何在 Python Scrapy、Crawl4AI 与 Node.js Crawlee 中接入 JoyProxy 动态住宅、商业、静态 ISP、数据中心、移动代理及 Web Scraping API，彻底解决 407 鉴权失败、Keep-Alive 锁死 IP 与无头浏览器流量暴涨问题。</p>
+</article>
 <article class="blog-feed-item" data-topic="isp-nodes">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/zh-CN/guides?topic=isp-nodes">静态 ISP 与核心节点</a> <time datetime="2026-11-24">2026-11-24</time></p>
 <h3 class="blog-feed-title"><a href="/blog/zh-CN/guides/dedicated-mobile-proxies-complete-guide">真机独享 4G/5G 代理完全指南：物理 SIM 卡槽、无限流量与运营商 CGNAT 防封实战（2026）</a></h3>

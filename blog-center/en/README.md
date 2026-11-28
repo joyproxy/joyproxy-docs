@@ -9,14 +9,19 @@ next: false
 Guides, use cases, and technical articles for proxy operators.
 
 <div class="blog-topic-bar">
-<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">55</span></a>
+<a class="blog-topic-chip is-active" href="/blog/">All Posts <span class="blog-topic-count">56</span></a>
 <a class="blog-topic-chip" href="/blog/getting-started">Getting Started <span class="blog-topic-count">9</span></a>
 <a class="blog-topic-chip" href="/blog/technical">Technical <span class="blog-topic-count">10</span></a>
 <a class="blog-topic-chip" href="/blog/use-cases">Use Cases <span class="blog-topic-count">11</span></a>
-<a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">25</span></a>
+<a class="blog-topic-chip" href="/blog/guides">Guides <span class="blog-topic-count">26</span></a>
 </div>
 
 <div class="blog-feed">
+<article class="blog-feed-item" data-topic="ai-agents">
+<p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/guides">Guides</a> <a class="blog-feed-subtag" href="/blog/guides?topic=ai-agents">AI Agents &amp; Scraping</a> <time datetime="2026-11-28">2026-11-28</time></p>
+<h3 class="blog-feed-title"><a href="/blog/guides/scrapy-crawl4ai-crawlee-proxy-rotation-guide">Scrapy, Crawl4AI &amp; Crawlee Proxy Setup Guide: High-Concurrency Rotation, Retry Middleware &amp; Bandwidth Control (2026)</a></h3>
+<p class="blog-feed-desc">Configure Rotating Residential, Business, Static ISP, Datacenter, Mobile proxies, and Web Scraping API across Python Scrapy, Crawl4AI, and Node.js Crawlee. Eliminate 407 auth failures, Keep-Alive sticky-IP bugs, and wasted headless bandwidth.</p>
+</article>
 <article class="blog-feed-item" data-topic="protocols-sessions">
 <p class="blog-feed-meta"><a class="blog-feed-tag" href="/blog/technical">Technical</a> <a class="blog-feed-subtag" href="/blog/technical?topic=protocols-sessions">Protocols &amp; Sessions</a> <time datetime="2026-11-27">2026-11-27</time></p>
 <h3 class="blog-feed-title"><a href="/blog/technical/http3-quic-udp-proxying-connect-fallback-architecture">HTTP/3 (QUIC), UDP Proxying &amp; CONNECT Fallback: Why Proxied Traffic Drops to HTTP/2—and How to Prevent QUIC Leaks</a></h3>
