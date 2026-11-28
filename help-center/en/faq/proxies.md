@@ -65,8 +65,8 @@ Easy to mix up:
 
 ### Can Static Proxies change IP or region?
 
-- **Change exit IP**: yes. On **My Proxies**, open the line and click **Change IP** (or **New IP**). You get a new dedicated exit in the same region. Hostname and port stay the same.
-- **Change region**: no. Country and city are locked at purchase. For another geo, buy a Static line in that region, or use Rotating Proxies and set the country when you generate endpoints.
+- **Change exit IP**: available only on **30-day (monthly) or longer** Static plans. On **My Proxies**, click **Change IP** (or **New IP**) to receive a free new dedicated exit IP in the **same region** once every **30 days** per line (hostname and port stay the same). Short-term plans under 30 days (1-day or 7-day) do not support self-service IP swaps.
+- **Change region**: no. Country and city are locked at purchase and self-service **Change IP** cannot switch countries. If you selected the wrong country at checkout, please open a support ticket for assistance; for multi-region switching, use Rotating Proxies and set the country when generating endpoints.
 
 ### My Static Proxies exit IP changed. Did you swap it without asking?
 
@@ -77,8 +77,27 @@ We do not change a dedicated exit without cause. Rare cases:
 
 The new exit is still dedicated to you.
 
-### Can I check the IP range or ASN before purchasing Static Proxies?
-Yes. If you have specific requirements for a country, carrier, or ASN, open a ticket via **Tickets** in the left sidebar of the console. Provide your target location and carrier details, and our team will check and advise on availability.
+### Can I buy a 1-day Static Proxy to test and keep the same IP when renewing for 30 days?
+
+Yes. You can purchase a 1-day Static Proxy (for example, $0.60 for 1 ISP IP) to verify connectivity and target-site compatibility. If you renew that line to a 30-day plan **before the 1-day plan expires**, you will keep the exact same exit IP and port (expired lines without renewal are released back to the pool).
+
+### Why do Static ISP Proxies sometimes show as "hosting / datacenter / broadcast" or not "double ISP" on third-party IP checkers (such as Scamalytics, IPQS, or ping0)?
+
+Static ISP Proxies use carrier-assigned bandwidth hosted in data centers, so different third-party IP databases (each with their own update cycles and scoring rules) may label them as commercial/hosting or non-residential.
+- If your workflow values a fixed dedicated IP and unlimited high bandwidth, Static ISP Proxies are ideal.
+- If a strict target platform (such as certain payment gateways or AI platforms) requires pure home broadband with zero hosting/commercial flags, use **Residential Proxies** or **Mobile Proxies** with a long sticky session (such as `sesstime-1440` or longer).
+
+### Can I select a carrier/ASN or check IP ranges before purchasing Static Proxies?
+
+Yes. On the Static Proxies checkout page, you can directly select the target **country, state/province, city, and specific carrier/ASN** from the live dropdown menus. Only an exact single IP or a specific `/24` subnet cannot be pre-locked before checkout. If you have strict requirements for a specific `/24` subnet or ASN stock check, open a ticket via **Tickets** in the left sidebar of the console.
+
+### Are Static Proxy usernames and passwords per-IP or per-product?
+
+Proxy credentials in **Users & Whitelist** apply at the account/product level rather than per individual static IP. Different static lines are separated by their assigned **Port** (or entry host). You can also bind your server or local public IP in **Users & Whitelist** for passwordless authentication.
+
+### Does the proxy gateway support direct client-to-proxy TLS (`https://HOST:PORT`)?
+
+JoyProxy gateways use standard **HTTP `CONNECT` tunneling** and **SOCKS5**. When accessing HTTPS websites, your client opens a standard HTTP `CONNECT` (or SOCKS5) tunnel through the gateway and completes end-to-end TLS directly with the destination website (no custom root certificate installation needed). Direct TLS encryption from your client to the proxy gateway itself (`https://HOST:PORT`) is not standard/supported.
 
 ### What if I am unsatisfied with the quality of an assigned ISP or Datacenter proxy, or need lower latency and higher bandwidth?
 You can first try **Change IP** in the console under **My Proxies** to obtain a fresh exit IP. If you require ultra-low latency or dedicated large bandwidth, please submit a ticket to apply for Private Proxies, and our team will evaluate and customize dedicated direct-connect resources for you.
